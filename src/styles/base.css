@@ -1,0 +1,33 @@
+@import "./tokens.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+}
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.2em;
+}
+a:hover {
+  text-decoration-thickness: 0.15em;
+}
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.entry {
+  max-inline-size: 60rem;
+  margin-inline: auto;
+  padding: 3rem 1.5rem;
+}

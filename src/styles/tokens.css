@@ -1,0 +1,12 @@
+:root {
+  color-scheme: light;
+  --color-background: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-text: #192b35;
+  --color-muted: #4a5c66;
+  --color-accent: #165a56;
+  --color-border: #c9d3d8;
+  --font-body:
+    system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", sans-serif;
+  --font-code: ui-monospace, "Cascadia Code", monospace;
+}

@@ -1,0 +1,112 @@
+.docs-shell {
+  max-inline-size: 76rem;
+  margin-inline: auto;
+}
+.docs-shell header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-block-end: 1px solid var(--color-border);
+}
+.docs-shell .brand {
+  font-weight: 750;
+  margin-inline-end: auto;
+}
+.docs-shell main {
+  max-inline-size: 54rem;
+  margin-inline: auto;
+  padding: 2rem 1.5rem 5rem;
+  overflow-wrap: anywhere;
+}
+.docs-shell main:focus {
+  outline: none;
+}
+.docs-shell h1 {
+  line-height: 1.35;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+.docs-shell h2 {
+  line-height: 1.5;
+  margin-block-start: 2rem;
+}
+.docs-shell .notice {
+  padding: 1rem 1.25rem;
+  border-inline-start: 3px solid var(--color-accent);
+  background: var(--color-surface);
+  color: var(--color-muted);
+}
+.docs-shell .form-nav {
+  margin-block: 1.5rem;
+}
+.docs-shell [aria-current="page"] {
+  font-weight: 750;
+}
+.docs-shell .course-list {
+  padding-inline-start: 0;
+  list-style: none;
+}
+.docs-shell .course-list li {
+  border-block-end: 1px solid var(--color-border);
+  padding-block-end: 1rem;
+}
+.docs-shell .prose {
+  font-size: 1.08rem;
+}
+.docs-shell .prose[lang="ar"] {
+  font-size: 1.15rem;
+  line-height: 1.95;
+}
+.docs-shell pre {
+  padding: 1rem;
+  overflow-x: auto;
+  text-align: start;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.docs-shell code {
+  font-family: var(--font-code);
+  unicode-bidi: isolate;
+}
+.docs-shell .table-scroll {
+  overflow-x: auto;
+  max-inline-size: 100%;
+}
+.docs-shell table {
+  border-collapse: collapse;
+  inline-size: 100%;
+}
+.docs-shell th,
+.docs-shell td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  text-align: start;
+}
+.docs-shell img {
+  max-inline-size: 100%;
+  height: auto;
+}
+.docs-shell .glossary-entry {
+  padding-block: 1rem;
+  border-block-end: 1px solid var(--color-border);
+  scroll-margin-block-start: 1rem;
+}
+.docs-shell dt {
+  font-weight: 700;
+}
+.docs-shell dd {
+  margin-inline: 0;
+  margin-block-start: 0.5rem;
+}
+.docs-shell .skip-link {
+  position: fixed;
+  inset-block-start: -10rem;
+  inset-inline-start: 1rem;
+  background: var(--color-surface);
+  padding: 0.75rem 1rem;
+  z-index: 10;
+}
+.docs-shell .skip-link:focus {
+  inset-block-start: 1rem;
+}
