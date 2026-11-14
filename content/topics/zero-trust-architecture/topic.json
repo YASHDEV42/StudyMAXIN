@@ -1,0 +1,78 @@
+{
+  "id": "zero-trust-architecture",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Zero Trust Mimarisi",
+    "ar": "بنية الثقة المعدومة"
+  },
+  "order": 10,
+  "prerequisites": [
+    "access-control-models",
+    "phishing-resistant-authentication"
+  ],
+  "related": [
+    "risk-management",
+    "identity-authentication-authorization",
+    "security-design-principles"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ما في شبكة داخلية موثوقة تلقائياً",
+      "summary": "قارن نموذج القلعة بـZero Trust، واربط قرار كل طلب بالهوية والجهاز والسياق والتجزئة الدقيقة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 6,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Zero Trust: Her İsteği Yeniden Değerlendirmek",
+      "summary": "Çevre güvenliğinin sınırlamalarını ve kimlik, cihaz, kaynak bağlamı ile mikro-segmentasyonu açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 6,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Zero Trust — Sınav Özeti",
+      "summary": "Temel ilkeler, geleneksel çevre modeli farkı ve uygulama bileşenleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 6,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

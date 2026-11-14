@@ -1,0 +1,74 @@
+{
+  "id": "threat-modeling-stride",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Tehdit Modelleme: DFD ve STRIDE ile Sistematik Düşünmek",
+    "ar": "نمذجة التهديدات: فهم تدفق البيانات وSTRIDE"
+  },
+  "order": 50,
+  "prerequisites": [
+    "security-core-vocabulary",
+    "identity-access-accountability"
+  ],
+  "related": ["threat-prioritization-methods", "attack-trees-portal-model"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "نمذجة التهديدات: فهم تدفق البيانات وSTRIDE",
+      "summary": "قسّم النظام لمكوّنات وحدود ثقة، واربط فئات STRIDE الست بأهداف الحماية المناسبة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 27,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Tehdit Modelleme: DFD ve STRIDE ile Sistematik Düşünmek",
+      "summary": "Sistemi bileşenlere ve güven sınırlarına ayır; altı STRIDE tehdidini doğru güvenlik hedefiyle ilişkilendir.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 27,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Tehdit Modelleme: DFD ve STRIDE ile Sistematik Düşünmek — Sınav Özeti",
+      "summary": "Tanımlar, tablolar, işlem sıraları ve sık karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 27,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

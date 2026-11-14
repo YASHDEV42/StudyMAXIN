@@ -1,0 +1,101 @@
+{
+  "id": "vpn-ipsec-wireguard",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "VPN, IPsec ve WireGuard Tünelleri",
+    "ar": "أنفاق VPN وIPsec وWireGuard"
+  },
+  "order": 80,
+  "prerequisites": ["tls-13", "diffie-hellman-key-exchange"],
+  "related": [
+    "network-foundations-and-protocol-layers",
+    "zero-trust-architecture"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أنفاق VPN وIPsec وWireGuard",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 38,
+              "to": 39
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 1,
+              "to": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "VPN, IPsec ve WireGuard Tünelleri",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 38,
+              "to": 39
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 1,
+              "to": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "VPN, IPsec ve WireGuard Tünelleri — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 38,
+              "to": 39
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 1,
+              "to": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

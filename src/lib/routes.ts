@@ -5,6 +5,8 @@ export const routes = {
   home: (locale: Locale) => `/${locale}/`,
   docs: (locale: Locale) => `/${locale}/docs/`,
   glossary: (locale: Locale) => `/${locale}/docs/glossary/`,
+  search: (locale: Locale) => `/${locale}/docs/search/`,
+  labs: (locale: Locale) => `/${locale}/docs/labs/`,
   course: (locale: Locale, courseId: string) =>
     `/${locale}/docs/courses/${courseId}/`,
   topic: (
@@ -29,6 +31,8 @@ export function docsSegments(content: Content): string[][] {
   return [
     [],
     ["glossary"],
+    ["search"],
+    ["labs"],
     ...content.courses.map((course) => ["courses", course.id]),
     ...content.topics
       .filter(isPublished)
@@ -47,6 +51,8 @@ export function docsSegments(content: Content): string[][] {
 export type DocsRoute =
   | { kind: "index" }
   | { kind: "glossary" }
+  | { kind: "search" }
+  | { kind: "labs" }
   | { kind: "course"; courseId: string }
   | { kind: "topic"; topicId: string; form: "lesson" | "cheat-sheet" };
 
@@ -55,6 +61,11 @@ export function resolveDocsRoute(
   content: Content,
 ): DocsRoute | undefined {
   if (segments.length === 0) return { kind: "index" };
+  if (
+    segments.length === 1 &&
+    (segments[0] === "search" || segments[0] === "labs")
+  )
+    return { kind: segments[0] };
   if (segments.length === 1 && segments[0] === "glossary")
     return { kind: "glossary" };
   if (segments[0] !== "courses") return;

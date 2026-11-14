@@ -1,0 +1,71 @@
+{
+  "id": "security-core-vocabulary",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Varlık, Tehdit, Zafiyet ve Risk",
+    "ar": "الأصول والتهديدات والثغرات والمخاطر"
+  },
+  "order": 40,
+  "prerequisites": ["cia-security-goals"],
+  "related": ["identity-access-accountability"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الأصول والتهديدات والثغرات والمخاطر",
+      "summary": "حلّل الحادث بمصطلحات دقيقة: الأصل المحمي، التهديد، نقطة الضعف، الاستغلال، المخاطر والأثر المرصود.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 26,
+              "to": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Varlık, Tehdit, Zafiyet ve Risk",
+      "summary": "Bir güvenlik olayını doğru terimlerle çözümle: korunacak varlık, tehdit, zayıflık, sömürü, risk ve gözlenen iz.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 26,
+              "to": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Varlık, Tehdit, Zafiyet ve Risk — Sınav Özeti",
+      "summary": "Tanımlar, ayrımlar ve sınavda karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 26,
+              "to": 27
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

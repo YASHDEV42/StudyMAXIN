@@ -1,0 +1,71 @@
+{
+  "id": "elliptic-curve-cryptography",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Eliptik Eğriler: Aynı Güvenlik, Daha Kısa Anahtar",
+    "ar": "المنحنيات الإهليلجية: أمان قوي بمفاتيح أقصر"
+  },
+  "order": 40,
+  "prerequisites": ["public-key-foundations", "diffie-hellman-key-exchange"],
+  "related": ["rsa-cryptosystem", "digital-signatures"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بتعطينا ECC أمانًا مشابهًا بمفتاح أصغر؟",
+      "summary": "افهم جمع نقاط المنحنى، مسألة ECDLP، وECDH وECDSA ومخاطر nonce.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Eliptik Eğri Kriptografisi: Kısa Anahtarla Güvenlik",
+      "summary": "ECC’de nokta toplamayı ve skaler çarpımı; X25519/ECDH ile ECDSA/Ed25519 rollerini örneklerle ayırt et.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Eliptik Eğriler: Aynı Güvenlik, Daha Kısa Anahtar — Sınav Özeti",
+      "summary": "ECC’de nokta toplamayı ve skaler çarpımı; X25519/ECDH ile ECDSA/Ed25519 rollerini örneklerle ayırt et.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

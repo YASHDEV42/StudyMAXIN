@@ -1,0 +1,71 @@
+{
+  "id": "sandboxing-isolation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Sandbox ve Süreç Yalıtımı",
+    "ar": "العزل وبيئات الحماية"
+  },
+  "order": 6,
+  "prerequisites": ["privilege-escalation"],
+  "related": ["privilege-escalation", "firewalls-segmentation"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "العزل وبيئات الحماية",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 47,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sandbox ve Süreç Yalıtımı",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 47,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sandbox ve Süreç Yalıtımı — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 47,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

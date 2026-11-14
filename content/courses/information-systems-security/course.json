@@ -1,0 +1,126 @@
+{
+  "id": "information-systems-security",
+  "title": {
+    "tr": "Bilgi Sistemleri ve Güvenliği",
+    "ar": "نظم المعلومات وأمنها"
+  },
+  "description": {
+    "tr": "On dört haftalık teori notları. İlk sekiz haftanın içeriği kaynaklara göre ilk incelemeden geçirilip yayımlandı; diğer haftalar incelendikçe ekleniyor. Her konu için Arapça ve Türkçe ders ile ayrı Türkçe sınav özeti sunulur.",
+    "ar": "ملاحظات نظرية لأربعة عشر أسبوعًا. نُشر محتوى الأسابيع الثمانية الأولى بعد مراجعته أوليًا وفق المصادر، وتُضاف بقية الأسابيع بعد مراجعتها. لكل موضوع درس عربي وآخر تركي وملخص امتحان تركي مستقل."
+  },
+  "order": 0,
+  "chapters": [
+    {
+      "id": "week-01",
+      "title": {
+        "tr": "Bilgi Güvenliğine Giriş: Zihniyet, Modeller ve Ekonomi",
+        "ar": "مدخل لأمن المعلومات: التفكير والنماذج والاقتصاد"
+      },
+      "order": 0
+    },
+    {
+      "id": "week-02",
+      "title": {
+        "tr": "Kriptografi I — Simetrik Şifreleme ve Bütünlük",
+        "ar": "التشفير ١: التشفير المتماثل وسلامة البيانات"
+      },
+      "order": 1
+    },
+    {
+      "id": "week-03",
+      "title": {
+        "tr": "Kriptografi II — Açık Anahtar, PKI ve TLS",
+        "ar": "التشفير ٢: المفتاح العام وPKI وTLS"
+      },
+      "order": 2
+    },
+    {
+      "id": "week-04",
+      "title": {
+        "tr": "Kimlik Doğrulama ve Erişim Kontrolü",
+        "ar": "التحقق من الهوية والتحكم بالوصول"
+      },
+      "order": 3
+    },
+    {
+      "id": "week-05",
+      "title": {
+        "tr": "Web Güvenliği I — OWASP ve Klasik Açıklar",
+        "ar": "أمن الويب ١: OWASP والثغرات الأساسية"
+      },
+      "order": 4
+    },
+    {
+      "id": "week-06",
+      "title": {
+        "tr": "Web Güvenliği II — API ve Güvenli Geliştirme",
+        "ar": "أمن الويب ٢: واجهات API والتطوير الآمن"
+      },
+      "order": 5
+    },
+    {
+      "id": "week-07",
+      "title": {
+        "tr": "Ağ Güvenliği",
+        "ar": "أمن الشبكات"
+      },
+      "order": 6
+    },
+    {
+      "id": "week-08",
+      "title": {
+        "tr": "İşletim Sistemi ve Sistem Güvenliği",
+        "ar": "أمن أنظمة التشغيل والأنظمة"
+      },
+      "order": 7
+    },
+    {
+      "id": "week-09",
+      "title": {
+        "tr": "Kötücül Yazılım Analizi ve Savunma",
+        "ar": "تحليل البرمجيات الخبيثة والدفاع"
+      },
+      "order": 8
+    },
+    {
+      "id": "week-10",
+      "title": {
+        "tr": "Bulut, Konteyner ve Tedarik Zinciri Güvenliği",
+        "ar": "أمن السحابة والحاويات وسلسلة التوريد"
+      },
+      "order": 9
+    },
+    {
+      "id": "week-11",
+      "title": {
+        "tr": "Uygulamalı Kriptografi ve Mahremiyet",
+        "ar": "التشفير التطبيقي والخصوصية"
+      },
+      "order": 10
+    },
+    {
+      "id": "week-12",
+      "title": {
+        "tr": "Yapay Zekâ ve Güvenlik",
+        "ar": "الذكاء الاصطناعي والأمن"
+      },
+      "order": 11
+    },
+    {
+      "id": "week-13",
+      "title": {
+        "tr": "Saldırı ve Savunma Operasyonları",
+        "ar": "عمليات الهجوم والدفاع"
+      },
+      "order": 12
+    },
+    {
+      "id": "week-14",
+      "title": {
+        "tr": "Güvenlik Yönetişimi, Risk ve Uyum",
+        "ar": "حوكمة الأمن والمخاطر والامتثال"
+      },
+      "order": 13
+    }
+  ]
+}

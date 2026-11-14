@@ -1,0 +1,55 @@
+{
+  "id": "ssrf-cloud-metadata",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "SSRF ve Bulut Metadata Güvenliği",
+    "ar": "تزوير الطلبات من جهة الخادم وحماية بيانات السحابة"
+  },
+  "order": 0,
+  "prerequisites": [
+    "web-security-foundations",
+    "secure-web-design",
+    "zero-trust-architecture"
+  ],
+  "related": [
+    "broken-access-control-idor",
+    "risk-management",
+    "secure-web-design"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تزوير الطلبات من جهة الخادم (SSRF)",
+      "summary": "كيف يحوّل SSRF الخادم إلى وسيط موثوق يصل إلى الشبكات الداخلية وخدمات بيانات السحابة، وما حدود كل طبقة دفاع.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 14, "to": 21 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sunucu Taraflı İstek Sahteciliği (SSRF)",
+      "summary": "SSRF’nin güven sınırlarını nasıl aştığını, bulut metadata riskini ve katmanlı savunmanın koşullarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 14, "to": 21 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "SSRF ve Bulut Metadata — Sınav Özeti",
+      "summary": "SSRF türleri, metadata zinciri ve savunma katmanlarının kısa tekrarı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 14, "to": 21 }] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "public-key-foundations",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Açık Anahtar Kriptografisinin Temelleri",
+    "ar": "أساسيات التشفير بالمفتاح العام"
+  },
+  "order": 10,
+  "prerequisites": [
+    "symmetric-encryption-foundations",
+    "modern-cryptography-rules"
+  ],
+  "related": ["diffie-hellman-key-exchange"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منتفق على سرّ من دون قناة سرّية؟",
+      "summary": "ابدأ من مشكلة توزيع المفاتيح، وافهم الدوال أحادية الاتجاه والحساب المعياري كأساس لـDH وRSA.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 13,
+              "to": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Açık Anahtar Kriptografisinin Temelleri",
+      "summary": "Simetrik anahtar dağıtımının ölçek sorunundan tek yönlü ve tuzak kapılı fonksiyonlara, modüler aritmetiğe ve ayrık logaritmaya ilerle.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 13,
+              "to": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Açık Anahtar Kriptografisinin Temelleri — Sınav Özeti",
+      "summary": "Simetrik anahtar dağıtımının ölçek sorunundan tek yönlü ve tuzak kapılı fonksiyonlara, modüler aritmetiğe ve ayrık logaritmaya ilerle.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 13,
+              "to": 17
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "modern-cryptography-rules",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Modern Kriptografinin Güvenlik Kuralları",
+    "ar": "قواعد التشفير الحديث"
+  },
+  "order": 20,
+  "prerequisites": ["cryptography-history"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "متى منقدر نقول عن التشفير آمن؟",
+      "summary": "مبدأ كيركهوفس ونماذج الهجوم والسرية المثالية والأمان الحسابي.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Modern Kriptografide Güvenlik Ne Demektir?",
+      "summary": "Kerckhoffs ilkesini, saldırgan modellerini ve mükemmel ya da hesaplamalı güvenliği kavra.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Modern Kriptografinin Kuralları — Sınav Özeti",
+      "summary": "Saldırı modelleri, OTP koşulları, XOR ve anahtar boyu karşılaştırması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "security-history",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Paylaşılan Bilgisayardan Küresel Güvenlik Sorununa",
+    "ar": "من الحاسوب المشترك لمشكلة أمن عالمية"
+  },
+  "order": 10,
+  "prerequisites": [],
+  "related": [
+    "log4shell-trust-boundaries",
+    "cia-security-goals",
+    "security-mindset"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من الحاسوب المشترك لمشكلة أمن عالمية",
+      "summary": "اربط Multics ودودة Morris وCERT وحوادث العصر الحديث بتغيّر حدود الثقة وأهداف الحماية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Paylaşılan Bilgisayardan Küresel Güvenlik Sorununa",
+      "summary": "Multics, Morris/CERT ve modern olaylar üzerinden hangi yeni kullanımın hangi güvenlik ihtiyacını doğurduğunu izle.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Paylaşılan Bilgisayardan Küresel Güvenlik Sorununa — Sınav Özeti",
+      "summary": "Temel mekanizmalar, tarihsel sıra, kavram ayrımları ve önemli koşullar için hızlı tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "os-security-synthesis",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "İşletim Sistemi Güvenliği: Bütünleştirici Sorular",
+    "ar": "خلاصة أمن أنظمة التشغيل"
+  },
+  "order": 10,
+  "prerequisites": [
+    "exploit-mitigations",
+    "sandboxing-isolation",
+    "system-hardening"
+  ],
+  "related": ["chapter-seven-worked-exercises", "trusting-trust"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "خلاصة أمن أنظمة التشغيل",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi Güvenliği: Bütünleştirici Sorular",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi Güvenliği: Bütünleştirici Sorular — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

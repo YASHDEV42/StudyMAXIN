@@ -1,0 +1,58 @@
+{
+  "id": "api-security-authorization-abuse",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "API Güvenliği ve Yetkilendirme",
+    "ar": "أمن واجهات API والتحكم بالوصول"
+  },
+  "order": 3,
+  "prerequisites": [
+    "web-security-foundations",
+    "identity-authentication-authorization",
+    "broken-access-control-idor",
+    "jwt-validation"
+  ],
+  "related": [
+    "ssrf-cloud-metadata",
+    "oauth-authorization",
+    "session-security",
+    "csrf",
+    "secure-web-design"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أمن واجهات API: الهوية والصلاحيات والبيانات",
+      "summary": "نموذج تهديد API، ثغرات BOLA/BFLA والحقول، JWT، تحديد المعدل، REST وGraphQL وCORS.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 32, "to": 40 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "API Güvenliği: Yetkilendirme ve Saldırı Yüzeyi",
+      "summary": "API’lerde kimlik, nesne/işlev yetkisi, alan filtreleme, JWT, hız sınırlama ve CORS kontrollerini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 32, "to": 40 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "API Güvenliği — Sınav Özeti",
+      "summary": "BOLA/BFLA, özellik yetkisi, JWT, rate limit ve REST/GraphQL/CORS farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 32, "to": 40 }] }
+      ]
+    }
+  ]
+}

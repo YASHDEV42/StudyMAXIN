@@ -1,0 +1,75 @@
+{
+  "id": "web-authentication-hardening",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Web Kimlik Doğrulamasını Güçlendirmek",
+    "ar": "تقوية التحقق من الهوية على الويب"
+  },
+  "order": 7,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "password-attacks-and-entropy",
+    "session-security"
+  ],
+  "related": ["broken-access-control-idor", "multi-factor-authentication"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تقوية التحقق من الهوية على الويب",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 4,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Web Kimlik Doğrulamasını Güçlendirmek",
+      "summary": "Bu bölüm, 4. haftadaki parola ve oturum kavramlarını web uç noktalarına taşır. Kaba kuvvet aynı hesabı çok sayıda parola ile denemektir; parola doldurma (credential stuffing) başka ihlallerde sızmış p",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 4,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Web Kimlik Doğrulamasını Güçlendirmek — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 4,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "aes-encryption",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "AES: Modern Dünyanın Kilidi",
+    "ar": "AES: قفل العالم الحديث"
+  },
+  "order": 40,
+  "prerequisites": ["symmetric-encryption-foundations"],
+  "related": ["block-cipher-modes"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بيخلط AES البايتات والمفتاح؟",
+      "summary": "تتبّع حالة AES وجولاته، وافهم دور الاستبدال والتبديل وتوسيع المفتاح.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 27,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "AES: Modern Dünyanın Kilidi",
+      "summary": "AES’in durum tablosunu, dört tur adımını, anahtar genişletmesini ve güvenlik sezgisini örneklerle öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 27,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "AES: Modern Dünyanın Kilidi — Sınav Özeti",
+      "summary": "AES’in durum tablosunu, dört tur adımını, anahtar genişletmesini ve güvenlik sezgisini örneklerle öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 27,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

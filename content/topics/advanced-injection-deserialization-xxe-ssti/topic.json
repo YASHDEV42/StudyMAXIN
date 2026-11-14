@@ -1,0 +1,55 @@
+{
+  "id": "advanced-injection-deserialization-xxe-ssti",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Güvensiz Serileştirme, XXE ve SSTI",
+    "ar": "إزالة التسلسل غير الآمنة وXXE وSSTI"
+  },
+  "order": 1,
+  "prerequisites": [
+    "sql-injection",
+    "cross-site-scripting",
+    "secure-web-design"
+  ],
+  "related": [
+    "ssrf-cloud-metadata",
+    "cryptographic-hash-functions",
+    "message-authentication"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ثلاثة أشكال متقدمة من الحقن",
+      "summary": "الخلل المشترك بين إزالة التسلسل غير الآمنة وXXE وSSTI، وآلية كل منها ودفاعاتها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 22, "to": 27 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvensiz Serileştirme, XXE ve SSTI",
+      "summary": "Veri ile çalıştırılabilir yorumun karışmasından doğan üç enjeksiyon ailesini ve savunmalarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 22, "to": 27 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Gelişmiş Enjeksiyonlar — Sınav Özeti",
+      "summary": "Insecure deserialization, XXE ve SSTI için kök neden, etki ve savunma karşılaştırması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 22, "to": 27 }] }
+      ]
+    }
+  ]
+}

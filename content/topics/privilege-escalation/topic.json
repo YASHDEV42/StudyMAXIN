@@ -1,0 +1,71 @@
+{
+  "id": "privilege-escalation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Ayrıcalık Yükseltme ve İşletim Sistemi Yetkileri",
+    "ar": "تصعيد الصلاحيات وأذونات النظام"
+  },
+  "order": 5,
+  "prerequisites": ["exploit-mitigations"],
+  "related": ["access-control-models", "sandboxing-isolation"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تصعيد الصلاحيات وأذونات النظام",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 41,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Ayrıcalık Yükseltme ve İşletim Sistemi Yetkileri",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 41,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Ayrıcalık Yükseltme ve İşletim Sistemi Yetkileri — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 41,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

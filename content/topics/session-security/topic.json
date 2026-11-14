@@ -1,0 +1,78 @@
+{
+  "id": "session-security",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Oturum Güvenliği",
+    "ar": "أمن الجلسات"
+  },
+  "order": 8,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "openid-connect-jwt"
+  ],
+  "related": [
+    "phishing-resistant-authentication",
+    "access-control-models",
+    "oauth-authorization"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "بعد تسجيل الدخول، مين شايل دليلك؟",
+      "summary": "قارن جلسة الخادم وJWT، واضبط خصائص الكوكيز وتجديد معرّف الجلسة ومخاطر السرقة والتثبيت.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 2,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Oturum Yönetimi ve Çerez Güvenliği",
+      "summary": "Durumlu oturum ile JWT yaklaşımını, çerez bayraklarını ve session fixation savunmasını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 2,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Oturum Güvenliği — Sınav Özeti",
+      "summary": "Stateful/stateless karşılaştırması, HttpOnly/Secure/SameSite ve oturum kimliği yenileme.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 2,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

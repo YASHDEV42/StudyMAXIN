@@ -1,0 +1,64 @@
+{
+  "id": "chapter-one-worked-exercises",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Bölüm 1 Bütünleme Alıştırmaları",
+    "ar": "تمارين تطبيقية شاملة للفصل الأول"
+  },
+  "order": 150,
+  "prerequisites": [
+    "cia-security-goals",
+    "security-design-principles",
+    "threat-modeling-stride",
+    "threat-prioritization-methods",
+    "attack-trees-portal-model",
+    "risk-management",
+    "threat-actors",
+    "cyber-kill-chain",
+    "security-economics-human-factor",
+    "security-governance-ethics-law",
+    "course-roadmap"
+  ],
+  "related": [
+    "security-mindset",
+    "security-history",
+    "security-core-vocabulary",
+    "identity-access-accountability"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من المفهوم إلى القرار: تمارين الفصل الأول محلولة",
+      "summary": "طبّق أهداف CIA وSTRIDE وDREAD والمخاطر وROA والأشجار وKill Chain على 15 موقفًا، ثم راجع أسئلة التحقق وملخص الأسبوع.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 11 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kavramdan Karara: Birinci Bölümün Çözümlü Alıştırmaları",
+      "summary": "CIA, STRIDE, DREAD, risk, ROA, saldırı ağaçları ve Kill Chain’i 15 durumda uygula; öz değerlendirme soruları ve hafta özetini gözden geçir.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 11 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bölüm 1 Çözümlü Alıştırmalar — Sınav Özeti",
+      "summary": "15 alıştırmanın kararları ve hesapları, sekiz öz değerlendirme yanıtı, formüller ve sık karıştırılan ayrımlar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 11 }] }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,171 @@
-[]
+[
+  {
+    "id": "teori-1-1-42",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-1-42.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-1-42.pdf",
+      "pageCount": 42,
+      "sha256": "637247b15e9c2f239ae9d012373fcc2b83f7eaaa525907fcae5e083e3a90f128",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-43-89",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-43-89.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-43-89.pdf",
+      "pageCount": 47,
+      "sha256": "29489e38a2fc1aeffae47b199dc29d1de22e61f3944511d523fe64ca45a446db",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-90-142",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-90-142.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-90-142.pdf",
+      "pageCount": 53,
+      "sha256": "c5f2a855d23ae35adc6e6e7aee57d8873299b3e9e7be400d151f6daf615c899a",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-143-178",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-143-178.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-143-178.pdf",
+      "pageCount": 36,
+      "sha256": "8cb5eea00c9028a37af054d14a244731e10937e131e27e6148d92798e8a41a15",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-179-221",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-179-221.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-179-221.pdf",
+      "pageCount": 43,
+      "sha256": "31177daace333b66843fb4dff996e5fb81ab3cfe225e47f8d5344b022a239309",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-222-268",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-222-268.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-222-268.pdf",
+      "pageCount": 47,
+      "sha256": "99f40be5fb66b4094f81d44b6feaf0fa6fae321e45e88f23e6e11f3998c86c87",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-269-307",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-269-307.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-269-307.pdf",
+      "pageCount": 39,
+      "sha256": "66f2d3c1ee2d7893909799f518fee114227247a8699389a3fea36c85c14cd2a4",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-307-359",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-307-359.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-307-359.pdf",
+      "pageCount": 53,
+      "sha256": "ffaf46f05a01818c2f768792f73e3b52c87f3b11a45accff54c27a2b5acde023",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-360-397",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-360-397.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-360-397.pdf",
+      "pageCount": 38,
+      "sha256": "3ceee2cbdc2a3d6938fec49d4493d544927817e8890e41291940feefa8f5da4d",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-398-447",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-398-447.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-398-447.pdf",
+      "pageCount": 50,
+      "sha256": "83dd6e9b091640f6c6a58041538067957ed4016d21013b1dbcca5db6ea9b2449",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-448-489",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-448-489.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-448-489.pdf",
+      "pageCount": 42,
+      "sha256": "aa1c30111a1677ff3feda4f3a2ad685d34d2fd0d5de3e2e7881a9e42a430c6d5",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-490-529",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-490-529.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-490-529.pdf",
+      "pageCount": 40,
+      "sha256": "4ce2c521d32e9fe205dc5e4afd07aa7328c11dc60df01daee2126abf246b3f0d",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "teori-1-530-632",
+    "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-530-632.pdf",
+    "language": "tr",
+    "courseIds": ["information-systems-security"],
+    "location": {
+      "kind": "private",
+      "filename": "teori-1-530-632.pdf",
+      "pageCount": 103,
+      "sha256": "c186531e401068adc2531003058b9ff2bd4870ec2c013dd644c02b69c8b57efa",
+      "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  }
+]

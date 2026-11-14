@@ -1,0 +1,1 @@
+Brute force: çok parola/tek hesap. Credential stuffing: sızmış kullanıcı-parola çiftleri. Password spraying: az sayıda yaygın parola/çok hesap. Savunma: hız sınırlama + izleme + MFA + güvenli parola saklama + güvenli kurtarma akışı. Kilitleme DoS’a dönüşebilir. Oturum ID’sini giriş ve ayrıcalık değişiminde yenile; çıkışta iptal et. MFA yetkilendirmenin yerine geçmez.

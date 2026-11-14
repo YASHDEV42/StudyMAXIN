@@ -1,0 +1,71 @@
+{
+  "id": "identity-access-accountability",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Kimlik, Yetki ve Hesap Verebilirlik",
+    "ar": "الهوية والصلاحيات والمساءلة"
+  },
+  "order": 30,
+  "prerequisites": ["cia-security-goals"],
+  "related": ["security-core-vocabulary"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الهوية والصلاحيات والمساءلة",
+      "summary": "افهم الفرق بين التحقق من الهوية والصلاحيات وMFA والسجلات والتوقيع الرقمي، وشو السؤال اللي بيجاوب عليه كل واحد.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 25,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kimlik, Yetki ve Hesap Verebilirlik",
+      "summary": "Kimlik doğrulama, yetkilendirme, MFA, kayıtlar ve dijital imzaların hangi farklı soruları yanıtladığını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 25,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kimlik, Yetki ve Hesap Verebilirlik — Sınav Özeti",
+      "summary": "Tanımlar, ayrımlar ve sınavda karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 25,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

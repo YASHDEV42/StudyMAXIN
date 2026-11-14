@@ -67,6 +67,14 @@ export const sourceSchema = z.strictObject({
   courseIds: ids.min(1),
   location: z.discriminatedUnion("kind", [
     z.strictObject({
+      // Reviewed original, retained privately; never copied into public/.
+      kind: z.literal("private"),
+      filename: z.string().regex(/^[a-zA-Z0-9][a-zA-Z0-9_-]*\.pdf$/),
+      pageCount: z.number().int().positive(),
+      sha256: z.string().regex(/^[a-f0-9]{64}$/),
+      reason: text,
+    }),
+    z.strictObject({
       kind: z.literal("local"),
       path: z.string().regex(/^\/sources\/[a-zA-Z0-9][a-zA-Z0-9_/-]*\.pdf$/),
       pageCount: z.number().int().positive(),

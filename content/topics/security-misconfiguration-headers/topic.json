@@ -1,0 +1,56 @@
+{
+  "id": "security-misconfiguration-headers",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Güvenlik Yanlış Yapılandırması ve HTTP Başlıkları",
+    "ar": "سوء إعداد الأمان وترويسات HTTP"
+  },
+  "order": 5,
+  "prerequisites": [
+    "secure-web-design",
+    "tls-13",
+    "cross-site-scripting",
+    "csrf"
+  ],
+  "related": [
+    "web-security-foundations",
+    "session-security",
+    "ssrf-cloud-metadata"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "سوء إعداد الأمان وترويسات المتصفح",
+      "summary": "كيف تسبب الإعدادات الافتراضية والميزات المكشوفة مخاطر، وما الذي تضيفه ترويسات HSTS وCSP وغيرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 44, "to": 45 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Yanlış Yapılandırması ve HTTP Başlıkları",
+      "summary": "Güvenli varsayılanları, HSTS/CSP ve diğer tarayıcı başlıklarının sağladığı ek katmanları ve sınırlarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 44, "to": 45 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Başlıkları — Sınav Özeti",
+      "summary": "Başlıkların amaçları, hedef saldırılar ve savunma sınırlamaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 44, "to": 45 }] }
+      ]
+    }
+  ]
+}

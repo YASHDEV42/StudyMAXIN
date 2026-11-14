@@ -1,0 +1,3060 @@
+{
+  "updated": "2026-11-14",
+  "courseId": "information-systems-security",
+  "inventory": {
+    "fileCount": 13,
+    "physicalPageInstances": 633,
+    "uniquePagePositions": 632,
+    "overlap": "teori-1-269-307.pdf page 39 and teori-1-307-359.pdf page 1 have identical extracted text; filename position 307 occurs twice. Full bitmap identity not asserted.",
+    "pagination": "First file physical page 12 is printed page 1. Use each split PDF’s physical pages for citations; never use the filename range as printed pagination."
+  },
+  "rights": "No redistribution license found on inspected cover/imprint/guide. Originals ignored under materials/, never copied to public/. Rights elsewhere in the book have not been exhaustively checked.",
+  "files": [
+    {
+      "sourceId": "teori-1-1-42",
+      "file": "materials/teori-1-1-42.pdf",
+      "physicalPages": 42,
+      "bytes": 1077946,
+      "sha256": "637247b15e9c2f239ae9d012373fcc2b83f7eaaa525907fcae5e083e3a90f128",
+      "discoveredWeeksFromRunningHeaders": [1],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Sections 1.1–1.8 reviewed and taught with within-page boundaries, including physical pages 34–42; 1.9 continues in the next split PDF."
+    },
+    {
+      "sourceId": "teori-1-43-89",
+      "file": "materials/teori-1-43-89.pdf",
+      "physicalPages": 47,
+      "bytes": 1419533,
+      "sha256": "29489e38a2fc1aeffae47b199dc29d1de22e61f3944511d523fe64ca45a446db",
+      "discoveredWeeksFromRunningHeaders": [1, 2],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Sections 1.9–1.13 and Chapter 2 sections 2.1–2.6 reviewed with within-page boundaries; Chapter 2 physical pages 13–47 cover printed pp.44–78."
+    },
+    {
+      "sourceId": "teori-1-90-142",
+      "file": "materials/teori-1-90-142.pdf",
+      "physicalPages": 53,
+      "bytes": 1440298,
+      "sha256": "c5f2a855d23ae35adc6e6e7aee57d8873299b3e9e7be400d151f6daf615c899a",
+      "discoveredWeeksFromRunningHeaders": [2, 3],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 2 sections 2.7–2.11 and Chapter 3 sections 3.1–3.8 reviewed; Chapter 3 source span physical pages 13–37. Review in progress."
+    },
+    {
+      "sourceId": "teori-1-143-178",
+      "file": "materials/teori-1-143-178.pdf",
+      "physicalPages": 36,
+      "bytes": 1333402,
+      "sha256": "8cb5eea00c9028a37af054d14a244731e10937e131e27e6148d92798e8a41a15",
+      "discoveredWeeksFromRunningHeaders": [3, 4],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 4 sections 4.1–4.7 reviewed against extracted text and rendered physical pages 13–36, including biometric/factor figures, password entropy and attack descriptions, password-storage comparison/code, HOTP/TOTP diagram and code, factor comparison, WebAuthn ceremonies/JSON, SSO/Kerberos flow, OAuth HTTP exchange and scope/error discussion, and OIDC/JWT structure. Chapter 4 sections 4.1–4.7 reviewed; 4.7 continues in the next split PDF."
+    },
+    {
+      "sourceId": "teori-1-179-221",
+      "file": "materials/teori-1-179-221.pdf",
+      "physicalPages": 43,
+      "bytes": 1074809,
+      "sha256": "31177daace333b66843fb4dff996e5fb81ab3cfe225e47f8d5344b022a239309",
+      "discoveredWeeksFromRunningHeaders": [4, 5],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 4 reviewed on physical pages 1–11. Chapter 5 sections 5.1–5.6 reviewed on physical pages 13–43, including HTTP request/response and method tables, cookie/session/HTTPS examples, browser-origin and CORS diagrams/tables/code, OWASP 2017/2021 table, SQLi variants and safe/unsafe query code, and XSS types, output-context examples and CSP. Section 5.7 continues in the next split PDF."
+    },
+    {
+      "sourceId": "teori-1-222-268",
+      "file": "materials/teori-1-222-268.pdf",
+      "physicalPages": 47,
+      "bytes": 925058,
+      "sha256": "99f40be5fb66b4094f81d44b6feaf0fa6fae321e45e88f23e6e11f3998c86c87",
+      "discoveredWeeksFromRunningHeaders": [5, 6],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 5 section 5.7 completion and sections 5.8–5.12 reviewed on physical pages 1–11, including CSRF flow/token and XSS comparison, horizontal/vertical access-control and IDOR diagrams/query examples, authentication/session code, allowlist/denylist comparison, all solved exercises/answers and chapter summary. Physical page 12 is Chapter 6 divider; section 6.1 begins on page 14."
+    },
+    {
+      "sourceId": "teori-1-269-307",
+      "file": "materials/teori-1-269-307.pdf",
+      "physicalPages": 39,
+      "bytes": 1430923,
+      "sha256": "66f2d3c1ee2d7893909799f518fee114227247a8699389a3fea36c85c14cd2a4",
+      "discoveredWeeksFromRunningHeaders": [6, 7],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 7 sections 7.1–7.9 reviewed on physical pages 13–39; physical page 13 contains the objectives and opening of section 7.1, and 7.1.1 begins on physical page 14; page 39 is the split-position overlap with teori-1-307-359.pdf physical page 1. Rendered IPv4/TCP header, ARP MITM, DNS resolution/trust chain, Wireshark, firewall/DMZ and IDS materials reviewed."
+    },
+    {
+      "sourceId": "teori-1-307-359",
+      "file": "materials/teori-1-307-359.pdf",
+      "physicalPages": 53,
+      "bytes": 1226199,
+      "sha256": "ffaf46f05a01818c2f768792f73e3b52c87f3b11a45accff54c27a2b5acde023",
+      "discoveredWeeksFromRunningHeaders": [7, 8],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 7 sections 7.9–7.13 reviewed on physical pages 1–12. Chapter 8 sections 8.1–8.7 reviewed on physical pages 15–51 and 8.8 begins at page 52; printed pages 309–345. Rendered key memory/ring, stack overflow, mitigation, privilege and isolation figures/tables/code/exercise pages; Chapter 8 continues in the next split PDF."
+    },
+    {
+      "sourceId": "teori-1-360-397",
+      "file": "materials/teori-1-360-397.pdf",
+      "physicalPages": 38,
+      "bytes": 809820,
+      "sha256": "3ceee2cbdc2a3d6938fec49d4493d544927817e8890e41291940feefa8f5da4d",
+      "discoveredWeeksFromRunningHeaders": [8, 9],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "Chapter 8 section 8.8 concludes on physical page 1; sections 8.9–8.11 reviewed on physical pages 1–11 (printed pages 349–359). Rendered hardening examples, Thompson compiler thought-experiment code, all integrative exercise solutions, review answer key and summary. Chapter 9 divider is page 12, objectives page 13, section 9.1 begins page 14 (printed 361)."
+    },
+    {
+      "sourceId": "teori-1-398-447",
+      "file": "materials/teori-1-398-447.pdf",
+      "physicalPages": 50,
+      "bytes": 1061991,
+      "sha256": "83dd6e9b091640f6c6a58041538067957ed4016d21013b1dbcca5db6ea9b2449",
+      "discoveredWeeksFromRunningHeaders": [9, 10],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "not studied"
+    },
+    {
+      "sourceId": "teori-1-448-489",
+      "file": "materials/teori-1-448-489.pdf",
+      "physicalPages": 42,
+      "bytes": 727358,
+      "sha256": "aa1c30111a1677ff3feda4f3a2ad685d34d2fd0d5de3e2e7881a9e42a430c6d5",
+      "discoveredWeeksFromRunningHeaders": [10, 11],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "not studied"
+    },
+    {
+      "sourceId": "teori-1-490-529",
+      "file": "materials/teori-1-490-529.pdf",
+      "physicalPages": 40,
+      "bytes": 1039364,
+      "sha256": "4ce2c521d32e9fe205dc5e4afd07aa7328c11dc60df01daee2126abf246b3f0d",
+      "discoveredWeeksFromRunningHeaders": [11, 12],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "not studied"
+    },
+    {
+      "sourceId": "teori-1-530-632",
+      "file": "materials/teori-1-530-632.pdf",
+      "physicalPages": 103,
+      "bytes": 2864579,
+      "sha256": "c186531e401068adc2531003058b9ff2bd4870ec2c013dd644c02b69c8b57efa",
+      "discoveredWeeksFromRunningHeaders": [12, 13, 14],
+      "textExtraction": "pdftotext -layout succeeded; extraction does not mean reviewed",
+      "sourceReview": "not studied"
+    }
+  ],
+  "chapters": [
+    {
+      "chapterId": "week-01",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-02",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-03",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-04",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-05",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-06",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-07",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-08",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "completed-first-pass"
+    },
+    {
+      "chapterId": "week-09",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-10",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-11",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-12",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-13",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    },
+    {
+      "chapterId": "week-14",
+      "discovery": "front-matter table of contents and extracted running headers",
+      "status": "unprocessed"
+    }
+  ],
+  "identifiedSourceSections": [
+    {
+      "section": "1.1",
+      "title": "Neden Güvenlik? Bir Açılış Hikâyesi",
+      "printedStart": 2,
+      "status": "completed-first-pass",
+      "topicIds": ["log4shell-trust-boundaries", "security-mindset"]
+    },
+    {
+      "section": "1.2",
+      "title": "Bilgi Güvenliğinin Kısa Tarihi",
+      "printedStart": 7,
+      "status": "completed-first-pass",
+      "topicIds": ["security-history"]
+    },
+    {
+      "section": "1.3",
+      "title": "Güvenliğin Üç Temel Direği: CIA Üçlüsü",
+      "printedStart": 10,
+      "status": "completed-first-pass",
+      "topicIds": ["cia-security-goals", "identity-access-accountability"]
+    },
+    {
+      "section": "1.4",
+      "title": "Ortak Sözlük: Güvenliğin Temel Kavramları",
+      "printedStart": 15,
+      "status": "completed-first-pass",
+      "topicIds": ["security-core-vocabulary"]
+    },
+    {
+      "section": "1.5",
+      "title": "Tehdit Modelleme: Neyi, Kime Karşı, Ne Kadar Koruyoruz?",
+      "printedStart": 16,
+      "status": "completed-first-pass",
+      "topicIds": [
+        "threat-modeling-stride",
+        "threat-prioritization-methods",
+        "attack-trees-portal-model"
+      ]
+    },
+    {
+      "section": "1.6",
+      "title": "Risk Yönetimine Giriş",
+      "printedStart": 23,
+      "status": "completed-first-pass",
+      "topicIds": ["risk-management"]
+    },
+    {
+      "section": "1.7",
+      "title": "Güvenlik Tasarım İlkeleri: Saltzer ve Schroeder",
+      "printedStart": 27,
+      "status": "completed-first-pass",
+      "topicIds": ["security-design-principles"]
+    },
+    {
+      "section": "1.8",
+      "title": "Saldırganı Tanımak: Tehdit Aktörleri",
+      "printedStart": 30,
+      "status": "completed-first-pass",
+      "topicIds": ["threat-actors"]
+    },
+    {
+      "section": "1.9",
+      "title": "Saldırı Yaşam Döngüsü: Kill Chain’e Giriş",
+      "printedStart": 32,
+      "status": "completed-first-pass",
+      "topicIds": ["cyber-kill-chain"]
+    },
+    {
+      "section": "1.10",
+      "title": "Güvenliğin Ekonomisi ve İnsan Boyutu",
+      "printedStart": 33,
+      "status": "completed-first-pass",
+      "topicIds": ["security-economics-human-factor"]
+    },
+    {
+      "section": "1.11",
+      "title": "Yönetişim, Etik ve Hukuk",
+      "printedStart": 37,
+      "status": "completed-first-pass",
+      "topicIds": ["security-governance-ethics-law"]
+    },
+    {
+      "section": "1.12",
+      "title": "Bu Dönem Nereye Gidiyoruz?",
+      "printedStart": 38,
+      "status": "completed-first-pass",
+      "topicIds": ["course-roadmap"]
+    },
+    {
+      "section": "1.13",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 38,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-one-worked-exercises"]
+    },
+    {
+      "section": "2.1",
+      "title": "Gizlemenin Uzun Tarihi",
+      "printedStart": 44,
+      "status": "completed-first-pass",
+      "topicIds": ["cryptography-history"]
+    },
+    {
+      "section": "2.2",
+      "title": "Modern Kriptografinin Kuralları",
+      "printedStart": 51,
+      "status": "completed-first-pass",
+      "topicIds": ["modern-cryptography-rules"]
+    },
+    {
+      "section": "2.3",
+      "title": "Simetrik Şifrelemenin Temeli",
+      "printedStart": 54,
+      "status": "completed-first-pass",
+      "topicIds": ["symmetric-encryption-foundations"]
+    },
+    {
+      "section": "2.4",
+      "title": "AES: Modern Dünyanın Kilidi",
+      "printedStart": 58,
+      "status": "completed-first-pass",
+      "topicIds": ["aes-encryption"]
+    },
+    {
+      "section": "2.5",
+      "title": "Çalışma Modları: Şifreyi Doğru Kullanmak",
+      "printedStart": 64,
+      "status": "completed-first-pass",
+      "topicIds": ["block-cipher-modes"]
+    },
+    {
+      "section": "2.6",
+      "title": "Karma Fonksiyonları: Verinin Parmak İzi",
+      "printedStart": 71,
+      "status": "completed-first-pass",
+      "topicIds": ["cryptographic-hash-functions"]
+    },
+    {
+      "section": "2.7",
+      "title": "Mesaj Kimlik Doğrulama: MAC ve HMAC",
+      "printedStart": 77,
+      "status": "completed-first-pass",
+      "topicIds": ["message-authentication", "encrypt-then-mac"]
+    },
+    {
+      "section": "2.8",
+      "title": "Parola Saklama: Karma Yetmez",
+      "printedStart": 79,
+      "status": "completed-first-pass",
+      "topicIds": ["password-storage"]
+    },
+    {
+      "section": "2.9",
+      "title": "Rastgelelik: Görünmeyen Temel",
+      "printedStart": 82,
+      "status": "completed-first-pass",
+      "topicIds": ["randomness-foundations"]
+    },
+    {
+      "section": "2.10",
+      "title": "Kuantum Gölgesi: Simetrik Tarafa Etki",
+      "printedStart": 84,
+      "status": "completed-first-pass",
+      "topicIds": ["quantum-symmetric-impact"]
+    },
+    {
+      "section": "2.11",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 84,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-two-worked-exercises"]
+    },
+    {
+      "section": "3.1",
+      "title": "Kilit Var, Ama Anahtar Nasıl Ulaşacak?",
+      "printedStart": 91,
+      "status": "completed-first-pass",
+      "topicIds": ["public-key-foundations"]
+    },
+    {
+      "section": "3.2",
+      "title": "Modüler Aritmetik: Kriptografinin Saat Matematiği",
+      "printedStart": 95,
+      "status": "completed-first-pass",
+      "topicIds": ["public-key-foundations"]
+    },
+    {
+      "section": "3.3",
+      "title": "Diffie–Hellman: Gizliyi Açıkta Kurmak",
+      "printedStart": 96,
+      "status": "completed-first-pass",
+      "topicIds": ["diffie-hellman-key-exchange"]
+    },
+    {
+      "section": "3.4",
+      "title": "RSA: Çarpması Kolay, Çarpanına Ayırması Zor",
+      "printedStart": 100,
+      "status": "completed-first-pass",
+      "topicIds": ["rsa-cryptosystem"]
+    },
+    {
+      "section": "3.5",
+      "title": "Eliptik Eğriler: Aynı Güvenlik, Çok Daha Kısa Anahtar",
+      "printedStart": 107,
+      "status": "completed-first-pass",
+      "topicIds": ["elliptic-curve-cryptography"]
+    },
+    {
+      "section": "3.6",
+      "title": "Rastgeleliğin Sessiz Gücü: Anahtarlar Nereden Gelir?",
+      "printedStart": 110,
+      "status": "completed-first-pass",
+      "topicIds": ["cryptographic-randomness"]
+    },
+    {
+      "section": "3.7",
+      "title": "Dijital İmzalar ve İnkâr Edilemezlik",
+      "printedStart": 111,
+      "status": "completed-first-pass",
+      "topicIds": ["digital-signatures"]
+    },
+    {
+      "section": "3.8",
+      "title": "PGP, Güven Ağı ve Kripto Savaşları",
+      "printedStart": 113,
+      "status": "completed-first-pass",
+      "topicIds": ["pgp-and-web-of-trust"]
+    },
+    {
+      "section": "3.9",
+      "title": "PKI: Güveni Kime Devrediyoruz?",
+      "printedStart": 115,
+      "status": "completed-first-pass",
+      "topicIds": ["pki-certificates"]
+    },
+    {
+      "section": "3.10",
+      "title": "TLS 1.3: HTTPS Güveni Nasıl Kurar?",
+      "printedStart": 120,
+      "status": "completed-first-pass",
+      "topicIds": ["tls-13"]
+    },
+    {
+      "section": "3.11",
+      "title": "Heartbleed: Matematik Kusursuz, Kod Hatalı",
+      "printedStart": 124,
+      "status": "completed-first-pass",
+      "topicIds": ["heartbleed-memory-disclosure"]
+    },
+    {
+      "section": "3.12",
+      "title": "Yan Kanal Saldırıları: Sırlar Yan Kapıdan Sızınca",
+      "printedStart": 127,
+      "status": "completed-first-pass",
+      "topicIds": ["side-channel-attacks"]
+    },
+    {
+      "section": "3.13",
+      "title": "Anahtar Yönetimi: Üretimden İmhaya",
+      "printedStart": 128,
+      "status": "completed-first-pass",
+      "topicIds": ["key-management-lifecycle"]
+    },
+    {
+      "section": "3.14",
+      "title": "Post‑Kuantum Çağı: Yarının Bilgisayarı Bugünün Sırrını Kırınca",
+      "printedStart": 129,
+      "status": "completed-first-pass",
+      "topicIds": ["quantum-threat-and-pqc", "pqc-algorithms-migration"]
+    },
+    {
+      "section": "3.15",
+      "title": "Yaygın Tuzaklar ve En İyi Uygulamalar",
+      "printedStart": 136,
+      "status": "completed-first-pass",
+      "topicIds": ["public-key-cryptography-practices"]
+    },
+    {
+      "section": "3.16",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 136,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-three-worked-exercises"]
+    },
+    {
+      "section": "3.17",
+      "title": "Toparlarken",
+      "printedStart": 141,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-three-review"]
+    },
+    {
+      "section": "4.1",
+      "title": "İki Farklı Soru: “Kimsin?” ve “Neye İznin Var?”",
+      "printedStart": 144,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.2",
+      "title": "Parolanın Uzun ve Sorunlu Hikâyesi",
+      "printedStart": 148,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.3",
+      "title": "İkinci Bir Duvar: Çok Faktörlü Kimlik Doğrulama",
+      "printedStart": 154,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.4",
+      "title": "Oltalamaya Dayanıklı Kimlik Doğrulama: FIDO2, WebAuthn ve Passkey’ler",
+      "printedStart": 157,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.5",
+      "title": "Tek Oturum Açma, Kerberos ve Federasyon",
+      "printedStart": 162,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.6",
+      "title": "OAuth 2.0: Yetki Devri, Kimlik Doğrulama Değil",
+      "printedStart": 163,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.7",
+      "title": "OpenID Connect ve JWT: Kimliği Taşıyan Jeton",
+      "printedStart": 166,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.8",
+      "title": "Oturum Yönetimi: Doğrulamadan Sonra Ne Olur?",
+      "printedStart": 169,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.9",
+      "title": "Yetkilendirmenin Modelleri: Kim, Neye, Nasıl Erişir?",
+      "printedStart": 171,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.10",
+      "title": "Zero Trust: “Asla Güvenme, Daima Doğrula”",
+      "printedStart": 173,
+      "status": "unprocessed"
+    },
+    {
+      "section": "4.11",
+      "title": "Bölüm Sonu: Bir Araya Getirmek",
+      "printedStart": 174,
+      "status": "unprocessed"
+    },
+    {
+      "section": "5.1",
+      "title": "Web: Dünyanın En Büyük Saldırı Yüzeyi",
+      "printedStart": 180,
+      "status": "completed-first-pass",
+      "topicIds": ["web-security-foundations"]
+    },
+    {
+      "section": "5.2",
+      "title": "HTTP Protokolü: İstek ve Yanıtın Anatomisi",
+      "printedStart": 183,
+      "status": "completed-first-pass",
+      "topicIds": ["web-security-foundations"]
+    },
+    {
+      "section": "5.3",
+      "title": "Tarayıcının Güvenlik Modeli: Aynı Köken Politikası",
+      "printedStart": 191,
+      "status": "completed-first-pass",
+      "topicIds": ["web-security-foundations"]
+    },
+    {
+      "section": "5.4",
+      "title": "Bir Harita: OWASP Top 10",
+      "printedStart": 194,
+      "status": "completed-first-pass",
+      "topicIds": ["owasp-top-10-map"]
+    },
+    {
+      "section": "5.5",
+      "title": "Enjeksiyon ve SQL Enjeksiyonu: Girdinin Koda Karışması",
+      "printedStart": 196,
+      "status": "completed-first-pass",
+      "topicIds": ["sql-injection"]
+    },
+    {
+      "section": "5.6",
+      "title": "Cross‑Site Scripting (XSS): Saldırganın Kodu Kurbanın Tarayıcısında",
+      "printedStart": 204,
+      "status": "completed-first-pass",
+      "topicIds": ["cross-site-scripting"]
+    },
+    {
+      "section": "5.7",
+      "title": "Cross‑Site Request Forgery (CSRF): Tarayıcının Güvenini Kötüye Kullanmak",
+      "printedStart": 209,
+      "status": "completed-first-pass",
+      "topicIds": ["csrf"]
+    },
+    {
+      "section": "5.8",
+      "title": "Bozuk Erişim Denetimi ve IDOR: 2021’in Bir Numarası",
+      "printedStart": 212,
+      "status": "completed-first-pass",
+      "topicIds": ["broken-access-control-idor"]
+    },
+    {
+      "section": "5.9",
+      "title": "Kimlik Doğrulama Zayıflıkları: 4. Haftaya Bir Köprü",
+      "printedStart": 214,
+      "status": "completed-first-pass",
+      "topicIds": ["web-authentication-hardening"]
+    },
+    {
+      "section": "5.10",
+      "title": "Her Şeyin Altındaki İlke: Güvenli Tasarım ve Girdiye Güvenmeme",
+      "printedStart": 215,
+      "status": "completed-first-pass",
+      "topicIds": ["secure-web-design"]
+    },
+    {
+      "section": "5.11",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 217,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-five-synthesis"]
+    },
+    {
+      "section": "5.12",
+      "title": "Nereye Gidiyoruz?",
+      "printedStart": 220,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-five-synthesis"]
+    },
+    {
+      "section": "6.1",
+      "title": "Kod Yazmayı Bıraktığımızda Bile Var Olan Açıklar",
+      "printedStart": 223,
+      "status": "completed-first-pass",
+      "topicIds": ["ssrf-cloud-metadata"]
+    },
+    {
+      "section": "6.2",
+      "title": "Sunucuyu Silah Olarak Kullanmak: SSRF",
+      "printedStart": 225,
+      "status": "completed-first-pass",
+      "topicIds": ["ssrf-cloud-metadata"]
+    },
+    {
+      "section": "6.3",
+      "title": "Enjeksiyon Ailesinin İleri Üyeleri",
+      "printedStart": 232,
+      "status": "completed-first-pass",
+      "topicIds": ["advanced-injection-deserialization-xxe-ssti"]
+    },
+    {
+      "section": "6.4",
+      "title": "Güncellenmeyen Bileşenler ve Log4Shell",
+      "printedStart": 238,
+      "status": "completed-first-pass",
+      "topicIds": ["dependency-supply-chain-log4shell"]
+    },
+    {
+      "section": "6.5",
+      "title": "API Güvenliği: Görünmeyen Arka Kapı",
+      "printedStart": 242,
+      "status": "completed-first-pass",
+      "topicIds": ["api-security-authorization-abuse"]
+    },
+    {
+      "section": "6.6",
+      "title": "Sırların Yönetimi: Anahtarı Kapının Altına Koymak",
+      "printedStart": 251,
+      "status": "completed-first-pass",
+      "topicIds": ["secrets-management-rotation"]
+    },
+    {
+      "section": "6.7",
+      "title": "Güvenlik Yanlış Yapılandırması ve Güvenlik Başlıkları",
+      "printedStart": 254,
+      "status": "completed-first-pass",
+      "topicIds": ["security-misconfiguration-headers"]
+    },
+    {
+      "section": "6.8",
+      "title": "Güvenliği Sürece Gömmek: Secure SDLC ve DevSecOps",
+      "printedStart": 256,
+      "status": "completed-first-pass",
+      "topicIds": ["secure-sdlc-devsecops"]
+    },
+    {
+      "section": "6.9",
+      "title": "Diğer Yarısı: Sorumlu Açıklama ve Ödül Programları",
+      "printedStart": 259,
+      "status": "completed-first-pass",
+      "topicIds": ["coordinated-vulnerability-disclosure"]
+    },
+    {
+      "section": "6.10",
+      "title": "Bölüm Sonu: Çözümlü Alıştırmalar",
+      "printedStart": 262,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-six-synthesis"]
+    },
+    {
+      "section": "6.11",
+      "title": "Nereden Geldik, Nereye Gidiyoruz",
+      "printedStart": 266,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-six-synthesis"]
+    },
+    {
+      "section": "7.1",
+      "title": "İnternet Neden Güvensiz Doğdu?",
+      "printedStart": 270,
+      "status": "completed-first-pass",
+      "topicIds": ["network-foundations-and-protocol-layers"]
+    },
+    {
+      "section": "7.2",
+      "title": "TCP Bağlantı Yaşam Döngüsü ve SYN Flood",
+      "printedStart": 275,
+      "status": "completed-first-pass",
+      "topicIds": ["tcp-handshake-syn-flood"]
+    },
+    {
+      "section": "7.3",
+      "title": "Katman 2 Saldırıları: Yerel Ağın Karanlık Tarafı",
+      "printedStart": 280,
+      "status": "completed-first-pass",
+      "topicIds": ["layer2-lan-attacks"]
+    },
+    {
+      "section": "7.4",
+      "title": "DNS Güvenliği: İnternetin Telefon Rehberi",
+      "printedStart": 283,
+      "status": "completed-first-pass",
+      "topicIds": ["dns-security-and-encrypted-dns"]
+    },
+    {
+      "section": "7.5",
+      "title": "Trafiği Görmek: Sniffing ve Wireshark",
+      "printedStart": 286,
+      "status": "completed-first-pass",
+      "topicIds": ["packet-capture-wireshark"]
+    },
+    {
+      "section": "7.6",
+      "title": "Keşif: Port Tarama ve nmap",
+      "printedStart": 288,
+      "status": "completed-first-pass",
+      "topicIds": ["network-reconnaissance-nmap"]
+    },
+    {
+      "section": "7.7",
+      "title": "Perimetre Savunması: Güvenlik Duvarları ve Segmentasyon",
+      "printedStart": 290,
+      "status": "completed-first-pass",
+      "topicIds": ["firewalls-segmentation"]
+    },
+    {
+      "section": "7.8",
+      "title": "Saldırıyı Görmek: IDS ve IPS",
+      "printedStart": 293,
+      "status": "completed-first-pass",
+      "topicIds": ["intrusion-detection-prevention"]
+    },
+    {
+      "section": "7.9",
+      "title": "Güvenli Tüneller: VPN, IPsec ve WireGuard",
+      "printedStart": 295,
+      "status": "completed-first-pass",
+      "topicIds": ["vpn-ipsec-wireguard"]
+    },
+    {
+      "section": "7.10",
+      "title": "Kablosuz Güvenlik: WEP’ten WPA3’e",
+      "printedStart": 298,
+      "status": "completed-first-pass",
+      "topicIds": ["wireless-security-wpa3-krack"]
+    },
+    {
+      "section": "7.11",
+      "title": "Sağanağı Durdurmak: DDoS ve Savunması",
+      "printedStart": 300,
+      "status": "completed-first-pass",
+      "topicIds": ["ddos-defense"]
+    },
+    {
+      "section": "7.12",
+      "title": "Yaygın Yanılgılar ve Hatalar",
+      "printedStart": 302,
+      "status": "completed-first-pass",
+      "topicIds": ["network-security-misconceptions"]
+    },
+    {
+      "section": "7.13",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 303,
+      "status": "completed-first-pass",
+      "topicIds": ["chapter-seven-worked-exercises"]
+    },
+    {
+      "section": "8.1",
+      "title": "İşletim Sistemi: Sistemin Görünmez Hakemi",
+      "printedStart": 309,
+      "status": "completed-first-pass",
+      "topicIds": ["os-security-boundaries"]
+    },
+    {
+      "section": "8.2",
+      "title": "Bellek Neden Merkezî Bir Savaş Alanı?",
+      "printedStart": 315,
+      "status": "completed-first-pass",
+      "topicIds": ["memory-safety-foundations"]
+    },
+    {
+      "section": "8.3",
+      "title": "Yığın Tabanlı Arabellek Taşması",
+      "printedStart": 318,
+      "status": "completed-first-pass",
+      "topicIds": ["stack-buffer-overflow"]
+    },
+    {
+      "section": "8.4",
+      "title": "Bellek Hatalarının Ailesi",
+      "printedStart": 325,
+      "status": "completed-first-pass",
+      "topicIds": ["memory-bug-families"]
+    },
+    {
+      "section": "8.5",
+      "title": "Savunmalar: Modern Bir Kalenin Katmanları",
+      "printedStart": 329,
+      "status": "completed-first-pass",
+      "topicIds": ["exploit-mitigations"]
+    },
+    {
+      "section": "8.6",
+      "title": "Ayrıcalık Yükseltme",
+      "printedStart": 336,
+      "status": "completed-first-pass",
+      "topicIds": ["privilege-escalation"]
+    },
+    {
+      "section": "8.7",
+      "title": "Sanal Alanlama ve İzolasyon",
+      "printedStart": 342,
+      "status": "completed-first-pass",
+      "topicIds": ["sandboxing-isolation"]
+    },
+    {
+      "section": "8.8",
+      "title": "Donanım Güven Kökü ve Güvenli Önyükleme",
+      "printedStart": 347,
+      "status": "completed-first-pass",
+      "topicIds": ["hardware-root-of-trust"]
+    },
+    {
+      "section": "8.9",
+      "title": "Sistem Sertleştirme",
+      "printedStart": 349,
+      "status": "completed-first-pass",
+      "topicIds": ["system-hardening"]
+    },
+    {
+      "section": "8.10",
+      "title": "Güvene Güvenmek: Ken Thompson ve Nihai Soru",
+      "printedStart": 352,
+      "status": "completed-first-pass",
+      "topicIds": ["trusting-trust"]
+    },
+    {
+      "section": "8.11",
+      "title": "Bütünleştirici Çözümlü Alıştırmalar",
+      "printedStart": 355,
+      "status": "completed-first-pass",
+      "topicIds": ["os-security-synthesis"]
+    },
+    {
+      "section": "9.1",
+      "title": "Yazılımın Karanlık İkizi",
+      "printedStart": 361,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.2",
+      "title": "Bir Taksonomi: Zararlıyı Türlerine Ayırmak",
+      "printedStart": 364,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.3",
+      "title": "Tarihten Dersler: Zararlının Evrimi",
+      "printedStart": 368,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.4",
+      "title": "Fidye Yazılımı Ekonomisi ve WannaCry",
+      "printedStart": 371,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.5",
+      "title": "Bulaşma Vektörleri ve Yaşam Döngüsü",
+      "printedStart": 374,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.6",
+      "title": "Statik Analiz: Dosyayı Çalıştırmadan Anlamak",
+      "printedStart": 376,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.7",
+      "title": "Dinamik Analiz: Zararlıyı İzleyerek Anlamak",
+      "printedStart": 382,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.8",
+      "title": "Tersine Mühendisliğin Temelleri",
+      "printedStart": 385,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.9",
+      "title": "Modern Savunma: İmzadan Davranışa",
+      "printedStart": 387,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.10",
+      "title": "Kurumsal Koruma: Katmanlı Önleme",
+      "printedStart": 390,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.11",
+      "title": "Yaygın Hatalar ve İyi Uygulamalar",
+      "printedStart": 392,
+      "status": "unprocessed"
+    },
+    {
+      "section": "9.12",
+      "title": "Bölüm Sonu: Çözümlü Alıştırmalar",
+      "printedStart": 393,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.1",
+      "title": "Sunucu Odasından Bulutun İçine",
+      "printedStart": 399,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.2",
+      "title": "Paylaşılan Sorumluluk: Kim Neyden Sorumlu?",
+      "printedStart": 402,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.3",
+      "title": "Kimlik ve Erişim Yönetimi: Bulutun Yeni Güvenlik Duvarı",
+      "printedStart": 404,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.4",
+      "title": "Bulut Ağı: VPC, Güvenlik Grupları ve Görünmez Bir Kapı",
+      "printedStart": 411,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.5",
+      "title": "Bulut Veri Koruması: Şifreleme ve Anahtar Yönetimi",
+      "printedStart": 414,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.6",
+      "title": "Konteynerler: Yazılımı Paketlemenin Yeni Yolu",
+      "printedStart": 416,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.7",
+      "title": "Konteyner Güvenliği: Neyi İnşa Ettiğine Dikkat Et",
+      "printedStart": 422,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.8",
+      "title": "Kubernetes Güvenliği: Orkestranın Kuralları",
+      "printedStart": 426,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.9",
+      "title": "Sunucusuz Bilişim: Kaybolan Sunucu, Kalan Sorumluluk",
+      "printedStart": 432,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.10",
+      "title": "Altyapı, Kod Olarak: Güvenliği Sola Kaydırmak",
+      "printedStart": 432,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.11",
+      "title": "Yazılım Tedarik Zinciri: En Zayıf Halka Sen Olmayabilirsin",
+      "printedStart": 435,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.12",
+      "title": "Bulut Güvenlik Duruşu: Karmaşayı Yönetmek",
+      "printedStart": 440,
+      "status": "unprocessed"
+    },
+    {
+      "section": "10.13",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 442,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.1",
+      "title": "Şifreli, Ama Kime Karşı? Güvenin Yer Değiştirmesi",
+      "printedStart": 449,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.2",
+      "title": "Kriptografik Yapı Taşlarını Uygulamaya Dökmek",
+      "printedStart": 454,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.3",
+      "title": "Signal Protokolü: Modern E2EE’nin Kalbi",
+      "printedStart": 457,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.4",
+      "title": "PGP, GPG ve Güven Ağı: E‑posta Şifrelemenin Uzun Hikâyesi",
+      "printedStart": 465,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.5",
+      "title": "Metadata: İçeriği Sakladın, Peki Ya İzler?",
+      "printedStart": 470,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.6",
+      "title": "Anonimlik Ağları: Tor ve Soğan Yönlendirme",
+      "printedStart": 471,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.7",
+      "title": "Gizlilik Artırıcı Teknolojiler: Veriyi Görmeden Kullanmak",
+      "printedStart": 476,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.8",
+      "title": "Kitlesel Gözetim ve Güvenlik–Mahremiyet Dengesi",
+      "printedStart": 482,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.9",
+      "title": "Hukuki Çerçeve: GDPR ve KVKK",
+      "printedStart": 484,
+      "status": "unprocessed"
+    },
+    {
+      "section": "11.10",
+      "title": "Toparlama: Mahremiyet Bir Sistem Özelliğidir",
+      "printedStart": 486,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.1",
+      "title": "İki Yönlü Bir İlişkinin Anatomisi",
+      "printedStart": 491,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.2",
+      "title": "Yapay Zekayı Güvenlik Gözüyle Anlamak",
+      "printedStart": 493,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.3",
+      "title": "Makine Öğrenmesinin Tehdit Modeli",
+      "printedStart": 495,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.4",
+      "title": "Çekişmeli Örnekler: Gözle Görülemeyen Bir Tedirginlik",
+      "printedStart": 497,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.5",
+      "title": "Eğitim Aşaması Saldırıları: Zehirleme ve Arka Kapılar",
+      "printedStart": 504,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.6",
+      "title": "Gizliliği Hedef Alan Saldırılar",
+      "printedStart": 507,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.7",
+      "title": "Büyük Dil Modeli Güvenliği ve OWASP LLM Top 10 (2025)",
+      "printedStart": 510,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.8",
+      "title": "RAG Sistemleri ve Ajan Güvenliği",
+      "printedStart": 516,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.9",
+      "title": "Üretken Yapay Zeka ve Sosyal Mühendisliğin Yeni Yüzü",
+      "printedStart": 518,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.10",
+      "title": "Savunma İçin Yapay Zeka: Güç ve Sınırlar",
+      "printedStart": 519,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.11",
+      "title": "Güvenli Yapay Zeka Dağıtımı ve Yönetişim",
+      "printedStart": 521,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.12",
+      "title": "Tarihsel Gelişim: Kısa Bir Kronoloji",
+      "printedStart": 523,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.13",
+      "title": "Bütünü Bağlamak",
+      "printedStart": 524,
+      "status": "unprocessed"
+    },
+    {
+      "section": "12.14",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 524,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.1",
+      "title": "Silahların Konuştuğu Gece: Bir Operasyon Hikâyesi",
+      "printedStart": 531,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.2",
+      "title": "Saldırgan Zihniyeti Operasyonel Çerçevede: Sızma Testi Metodolojisi",
+      "printedStart": 533,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.3",
+      "title": "Saldırıyı Haritalamak: Kill Chain ve MITRE ATT&CK",
+      "printedStart": 544,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.4",
+      "title": "Renkli Takımlar: Kırmızı, Mavi ve Mor",
+      "printedStart": 548,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.5",
+      "title": "Savunmanın Kalbi: SOC ve SIEM",
+      "printedStart": 550,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.6",
+      "title": "Tespit Mühendisliği: Savunmayı Koda Dökmek",
+      "printedStart": 558,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.7",
+      "title": "Tehdit Avcılığı: Beklemeyi Bırakmak",
+      "printedStart": 561,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.8",
+      "title": "Zil Çaldığında: Olay Müdahalesi",
+      "printedStart": 563,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.9",
+      "title": "Kanıtın Bütünlüğü: Dijital Adli Bilişimin Temeli",
+      "printedStart": 566,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.10",
+      "title": "Düşmanı Tanımak: Tehdit İstihbaratı ve Sorumlu Açıklama",
+      "printedStart": 569,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.11",
+      "title": "Uçtan Uca Bir Vaka: Kırmızı ve Mavi Aynı Anda",
+      "printedStart": 572,
+      "status": "unprocessed"
+    },
+    {
+      "section": "13.12",
+      "title": "Çözümlü Alıştırmalar",
+      "printedStart": 575,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.1",
+      "title": "Teknikten Yönetime: Güvenlik Bir Yönetişim Meselesidir",
+      "printedStart": 581,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.2",
+      "title": "Riskin Dili: Olasılık, Etki ve İşleme",
+      "printedStart": 586,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.3",
+      "title": "Ortak Dil: Standartlar ve Çerçeveler",
+      "printedStart": 593,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.4",
+      "title": "Uyum ve Hukuk: Yasanın Çizdiği Sınır",
+      "printedStart": 598,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.5",
+      "title": "Politikadan Kültüre: İnsan Katmanına Dönüş",
+      "printedStart": 602,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.6",
+      "title": "Kötü Gün İçin Plan: İş Sürekliliği ve Felaket Kurtarma",
+      "printedStart": 603,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.7",
+      "title": "Sınırların Ötesi: Tedarik Zinciri, Sigorta ve Metrikler",
+      "printedStart": 607,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.8",
+      "title": "Kariyer ve Etik: Bu Yolun Neresindesin?",
+      "printedStart": 610,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.9",
+      "title": "Geleceğe Bakış: Ufuktaki Tehditler",
+      "printedStart": 613,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.10",
+      "title": "On Dört Haftanın Sentezi",
+      "printedStart": 616,
+      "status": "unprocessed"
+    },
+    {
+      "section": "14.11",
+      "title": "Bölüm Sonu: Çözümlü Alıştırmalar",
+      "printedStart": 617,
+      "status": "unprocessed"
+    }
+  ],
+  "completedUnits": [
+    {
+      "topicId": "log4shell-trust-boundaries",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 13,
+        "to": 16
+      },
+      "scope": "1.1 opening Log4Shell case through information-security definition box; excludes weekly objectives above 1.1 and 1.1.1 starting inside page 16.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with newly authored TR/EN examples; previous entries reused",
+      "sourceVerification": "all text and rendered pages 13–21 reviewed; bilingual essential facts and exam sheet compared; selected factual corrections checked with primary online references; independent educator review pending",
+      "nonText": "Code 1.1 logger call retained; simplified Code 1.2 call chain explained; Code 1.3 LDAP reference fields mapped to roles; request syntax shown as data rather than running curl. All six steps and historical patch/mitigation details preserved with explicit corrections and runtime conditions."
+    },
+    {
+      "topicId": "security-mindset",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 16,
+        "to": 18
+      },
+      "scope": "1.1.1 and 1.1.2 including ethical warning before 1.2 inside page 18; excludes preceding case conclusion.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with newly authored TR/EN examples; previous entries reused",
+      "sourceVerification": "all text and rendered pages 13–21 reviewed; bilingual essential facts and exam sheet compared; selected factual corrections checked with primary online references; independent educator review pending",
+      "nonText": "Parking-lot box fully explained through repeat-visit, identity/read-failure and two-car assumptions; ethical warning retained. Fail-closed distinguished from physical fail-safe behavior; percentages and test completeness qualified."
+    },
+    {
+      "topicId": "security-history",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 18,
+        "to": 21
+      },
+      "scope": "1.2 opening and 1.2.1–1.2.3, ending before 1.3 inside page 21.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with newly authored TR/EN examples; previous entries reused",
+      "sourceVerification": "all text and rendered pages 13–21 reviewed; bilingual essential facts and exam sheet compared; selected factual corrections checked with primary online references; independent educator review pending",
+      "nonText": "Morris portrait/caption contextualized; Stuxnet diagram inspected at enlarged resolution (WinCC/SCADA, PLC S7-300/S7-400 and I/O/physical layer); WannaCry map described without inventing counts; NSA photograph/caption interpreted as context, not technical evidence. No source images redistributed."
+    },
+    {
+      "topicId": "cia-security-goals",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 21,
+        "to": 25
+      },
+      "scope": "1.3 opening through CIA tradeoff warning; stops before 1.3.4 on page 25. History above 1.3 on page 21 excluded.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples",
+      "sourceVerification": "text reviewed and all unit pages visually inspected; independent educator review pending",
+      "nonText": "CIA triangle restated in prose and comparison table; mechanism table preserved in rewritten form. Data-center photograph explained in availability discussion; history/NSA photograph excluded as prior-section content."
+    },
+    {
+      "topicId": "identity-access-accountability",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 25,
+        "to": 26
+      },
+      "scope": "1.3.4 on page 25 through AAA/Parker paragraph on page 26; stops before 1.4.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples",
+      "sourceVerification": "text reviewed and all unit pages visually inspected; independent educator review pending",
+      "nonText": "No essential diagram or code in this subsection."
+    },
+    {
+      "topicId": "security-core-vocabulary",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 26,
+        "to": 27
+      },
+      "scope": "1.4 on page 26 through terminology example/warning on page 27; stops before 1.5.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples",
+      "sourceVerification": "text reviewed and all unit pages visually inspected; independent educator review pending",
+      "nonText": "Definition/example/warning boxes interpreted and explained; no code/diagram omitted."
+    },
+    {
+      "topicId": "threat-modeling-stride",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 27,
+        "to": 29
+      },
+      "scope": "1.5 opening and 1.5.1; excludes 1.4 above the heading on page 27 and DREAD beginning on page 30.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples; existing concepts reused",
+      "sourceVerification": "text read and all pages 27–34 visually inspected this session; matching Arabic/Turkish core coverage and cheat-sheet facts reviewed; independent educator review pending",
+      "nonText": "Four-question cycle restated; both STRIDE category/goal and per-element matrices reproduced in rewritten teaching tables; data-store R(log) annotation retained."
+    },
+    {
+      "topicId": "threat-prioritization-methods",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 30,
+        "to": 31
+      },
+      "scope": "1.5.2 DREAD and 1.5.3 PASTA, ending before attack trees on page 32.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples; existing concepts reused",
+      "sourceVerification": "text read and all pages 27–34 visually inspected this session; matching Arabic/Turkish core coverage and cheat-sheet facts reviewed; independent educator review pending",
+      "nonText": "DREAD dimensions, all three score rows, weights and seven PASTA stages checked; method comparison table retained. Damage x2 ties A/B, x3 puts A ahead."
+    },
+    {
+      "topicId": "attack-trees-portal-model",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 32,
+        "to": 34
+      },
+      "scope": "1.5.4 through 1.5.6; excludes 1.6 beginning inside page 34.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "extracted with author-added TR/EN examples; existing concepts reused",
+      "sourceVerification": "text read and all pages 27–34 visually inspected this session; matching Arabic/Turkish core coverage and cheat-sheet facts reviewed; independent educator review pending",
+      "nonText": "Both attack and attack-defense diagrams reconstructed as text/tree/table with explicit gate assumptions; leaf costs, AND sums, OR minimum and full portal risk register preserved. Source simplifications explicitly qualified."
+    },
+    {
+      "topicId": "risk-management",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 34,
+        "to": 38
+      },
+      "scope": "1.6 heading on physical page 34 through residual-risk conclusion on page 38; excludes 1.5 above the heading and 1.7 below the conclusion.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "nine entries added with newly authored TR/EN examples",
+      "sourceVerification": "text and rendered physical pages 34–38 reviewed; formula arithmetic checked; independent educator review pending",
+      "nonText": "Risk matrix and code example re-expressed in teaching tables/prose; no source image/code asset copied."
+    },
+    {
+      "topicId": "security-design-principles",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 38,
+        "to": 40
+      },
+      "scope": "1.7 and 1.7.1 through the three contemporary complementary principles; starts after 1.6 residual-risk conclusion and ends before 1.8 on physical page 41.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "eight entries added; least privilege, attack surface and zero trust reused and associated",
+      "sourceVerification": "Text and rendered physical pages 38–40 reviewed, including the design-principle examples and defense-in-depth ring diagram; Arabic/Turkish essential concepts and exam sheet compared. Independent educator review pending.",
+      "nonText": "The ring diagram is explained in prose; defense in depth is explicitly distinguished from Saltzer and Schroeder’s eight classical principles. No source images copied."
+    },
+    {
+      "topicId": "threat-actors",
+      "sourceId": "teori-1-1-42",
+      "pdfPages": {
+        "from": 41,
+        "to": 42
+      },
+      "scope": "Section 1.8 and its subsections, ending before the 1.9 heading printed on page 32 in the next split PDF.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "nine entries added; least privilege, supply-chain attack, threat intelligence, software dependency and other existing concepts reused",
+      "sourceVerification": "Text and rendered physical pages 41–42 reviewed, including the actor comparison matrix, provider naming table, SolarWinds callout and insider-threat distinctions. Arabic/Turkish core coverage and exam sheet compared. Independent educator review pending.",
+      "nonText": "Both comparison tables are reconstructed as accessible Markdown tables. Provider labels are attributed to the source’s stated scheme and date; no attribution certainty is added. SolarWinds is described only to the level supported by the source."
+    },
+    {
+      "topicId": "cyber-kill-chain",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 1,
+        "to": 2
+      },
+      "scope": "Section 1.9 from its heading on physical page 1 through the Kill Chain diagram and closing discussion on physical page 2; stops before section 1.10’s heading on the same page.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "eight stage/model entries added; attack tree, defense in depth and threat actor entries reused",
+      "sourceVerification": "Text and rendered physical pages 1–2 of the second split PDF reviewed. All seven labels and descriptions in the colored sequence diagram were checked against the text; bilingual essential concepts and the exam sheet were compared. Independent educator review pending.",
+      "nonText": "Seven-stage diagram reconstructed as a teaching table. Source examples of phishing filters, patching and anomalous C2 traffic are retained; the model’s linear limitations and MITRE ATT&CK cross-reference are stated without expanding into later content."
+    },
+    {
+      "topicId": "security-economics-human-factor",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 2,
+        "to": 5
+      },
+      "scope": "Section 1.10 and subsections 1.10.1–1.10.3, beginning at the 1.10 heading on printed page 33 and ending with the process conclusion on printed page 36, before 1.11.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "13 entries added for ROA, work factor, social-engineering forms and security culture; ROSI and MFA reused",
+      "sourceVerification": "Text and rendered physical pages 2–5 reviewed, including the ROA equation/example, Mitnick and Schneier captions, social-engineering taxonomy and persuasion callout, and SOC illustration/caption. Arabic/Turkish essential concepts and exam sheet compared. Independent educator review pending.",
+      "nonText": "ROA arithmetic (5 before MFA, 0.1 after in the source scenario) checked. The source’s AI-enabled phishing and voice-cloning statements are attributed to the textbook and are not presented as measured success rates. No source images copied."
+    },
+    {
+      "topicId": "security-governance-ethics-law",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 6,
+        "to": 7
+      },
+      "scope": "Section 1.11, 1.11.1 and 1.11.2 through the legal/authorization warning box, ending before 1.12 on physical page 7.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "nine entries added for governance, ethics, personal data, the named legal frameworks, NIST CSF and CTF; existing authorization and responsible-disclosure concepts reused",
+      "sourceVerification": "Text and rendered physical pages 6–7 reviewed, including the NIST CSF 2.0 function diagram and authorization warning. The TCK, KVKK, GDPR and NIST clarifications were checked against official sources; Arabic/Turkish essential concepts and the exam sheet were compared. Independent educator review pending.",
+      "nonText": "The PDF’s six-function arrow diagram is presented as a map, not a required sequence; official NIST describes functions as concurrent. Legal material stays at the source’s overview level and adds no deadlines or case-specific advice. No source images copied."
+    },
+    {
+      "topicId": "course-roadmap",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 7,
+        "to": 7
+      },
+      "scope": "Section 1.12, from the roadmap heading through all seven week-group rows, ending before the 1.13 heading on the same physical page.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "existing encryption, post-quantum, zero-trust and security-governance terms reused and associated; no new term needed for a schedule overview",
+      "sourceVerification": "Text and rendered physical page 7 reviewed; all seven schedule rows and listed subtopics checked against the roadmap graphic. Arabic/Turkish interpretation and concise reference compared. Independent educator review pending.",
+      "nonText": "The schedule is reconstructed as a table and not expanded into undocumented future-week lessons or prerequisites. The source gives a roadmap, not a strict dependency order."
+    },
+    {
+      "topicId": "chapter-one-worked-exercises",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 7,
+        "to": 11
+      },
+      "scope": "Section 1.13 from its heading after the 1.12 roadmap on physical page 7 through all 15 solved exercises, eight self-test questions and answer key, and the week summary ending on physical page 11. Chapter 1 ends after this summary; no Chapter 2 material is included.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "existing CIA, STRIDE, DREAD, risk, ROA, attack-tree, Kill Chain and security-culture entries reused; no duplicate terms needed",
+      "sourceVerification": "Text and rendered physical pages 7–11 reviewed; all 15 worked examples, eight self-test items, answer key and summary checked. Chapter 2 divider and 2.1 opening inspected to establish boundary. Arabic/Turkish essential coverage and exam sheet compared. Independent educator review pending.",
+      "nonText": "The exercises, source formulas and answer key are preserved in rewritten teaching explanations. DREAD exercise 6 has an arithmetic discrepancy: provided values produce a 44–44 tie when Damage is tripled, despite the source prose suggesting X leads; lessons disclose the recalculation. The printed week summary was visually checked. No source images copied."
+    },
+    {
+      "topicId": "cryptography-history",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 13,
+        "to": 19
+      },
+      "scope": "Section 2.1, opening on physical page 13 through the historical conclusion on physical page 19; stops before section 2.2 on physical page 20. Printed pages 44–50.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Added cryptanalysis, substitution cipher, transposition cipher, frequency analysis, Vigenère cipher, Enigma machine, and crib; linked to cryptography-history.",
+      "sourceVerification": "Rendered pages 14–20 and section text reviewed; scytale, Alberti disk, Enigma, Bletchley Park, Colossus and comparison table inspected. Arabic/Turkish core concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "modern-cryptography-rules",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 20,
+        "to": 22
+      },
+      "scope": "Section 2.2 begins on physical page 20; includes Kerckhoffs, attack models, perfect secrecy/OTP and computational security, ending before 2.3 on physical page 23. Printed pages 51–53.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Section 2.2 glossary was already counted in the 131-entry working glossary; reused existing concepts and linked security assumptions.",
+      "sourceVerification": "Existing authored topic files and citations checked against the source boundary; independent educator review pending."
+    },
+    {
+      "topicId": "symmetric-encryption-foundations",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 23,
+        "to": 26
+      },
+      "scope": "Section 2.3; Printed pp.54–57; section ends before 2.4 on physical p.27.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "aes-encryption",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 27,
+        "to": 33
+      },
+      "scope": "Section 2.4; Printed pp.58–64; starts at 2.4 on physical p.27 and ends before 2.5 on physical p.33.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "block-cipher-modes",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 33,
+        "to": 39
+      },
+      "scope": "Section 2.5; Printed pp.64–70; starts after 2.4 on physical p.33 and ends before 2.6 on physical p.40.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "cryptographic-hash-functions",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 40,
+        "to": 45
+      },
+      "scope": "Section 2.6, beginning on physical page 40 through SHA family and its comparison table on physical page 45; ends before 2.7 on physical page 46. Printed pages 71–76.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "message-authentication",
+      "sourceId": "teori-1-43-89",
+      "pdfPages": {
+        "from": 46,
+        "to": 47
+      },
+      "scope": "Section 2.7.1, MAC and HMAC, on teori-1-43-89.pdf physical pages 46–47; 2.7.2 continues in the next split PDF.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "encrypt-then-mac",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 1,
+        "to": 1
+      },
+      "scope": "Section 2.7.2 continuation and conclusion on teori-1-90-142.pdf physical page 1 (printed page 79), before section 2.8. The section heading and preceding EtM introduction begin on the prior split PDF physical page 47; the source handoff is explained in topic scope.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Existing AEAD/HMAC concepts reused; EtM associated with the section 2.7.2 topic.",
+      "sourceVerification": "Rendered source pages 47 and 1 across both split PDFs reviewed for section boundary and EtM conclusion. Independent educator review pending."
+    },
+    {
+      "topicId": "password-storage",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 1,
+        "to": 3
+      },
+      "scope": "Section 2.8; Printed pp.79–81; ends before 2.9 on physical p.4.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "randomness-foundations",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 4,
+        "to": 5
+      },
+      "scope": "Section 2.9; Printed pp.82–83; ends before 2.10 on physical p.6.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "quantum-symmetric-impact",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 6,
+        "to": 6
+      },
+      "scope": "Section 2.10; Printed p.84; ends before 2.11 on the same page.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "chapter-two-worked-exercises",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 6,
+        "to": 11
+      },
+      "scope": "Section 2.11; Printed pp.84–89; begins after 2.10 on physical p.6; twelve worked problems, nine self-test questions/answer key and week summary end on p.11. Physical p.12 begins Chapter 3 and is excluded.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms and associations recorded in the global TR–EN glossary; see topic associations.",
+      "sourceVerification": "Section text and rendered source pages reviewed, including applicable figures, tables, code/examples and exercise answers; Arabic/Turkish essential concepts and cheat sheet compared. Independent educator review pending."
+    },
+    {
+      "topicId": "public-key-foundations",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 13,
+        "to": 17
+      },
+      "scope": "Chapter 3 sections 3.1 and 3.2: key-distribution motivation and history through one-way/trapdoor functions on physical pages 13–16; modular arithmetic, modular exponentiation and discrete logarithm on page 17. Printed pp.91–95. Ends before 3.3 on physical page 18.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Seven new TR–EN entries added; existing symmetric-encryption, encryption and cryptography-history associations reused where applicable.",
+      "sourceVerification": "Extracted source text and rendered page boundaries reviewed. The key-count table, historical timeline and modular arithmetic examples were checked. Independent educator review pending."
+    },
+    {
+      "topicId": "diffie-hellman-key-exchange",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 18,
+        "to": 21
+      },
+      "scope": "Section 3.3 and 3.3.1–3.3.6: color-mixing intuition, modular DH steps/example/diagram, DHE forward secrecy, MITM and Logjam, authentication and group parameters; ends before 3.4 on physical page 22. Printed pp.96–99.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Five new terms added; discrete logarithm, public-key, certificate/signature and randomness concepts reused.",
+      "sourceVerification": "Rendered physical pages 18–21 and extracted text reviewed. Diffie–Hellman numeric example and message-flow diagram checked; security assumptions and authentication limitation included. Independent educator review pending."
+    },
+    {
+      "topicId": "rsa-cryptosystem",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 22,
+        "to": 29
+      },
+      "scope": "Section 3.4 and subsections 3.4.1–3.4.11: RSA key generation/example, modular exponentiation, textbook-RSA/OAEP, signature overview, hybrid-use comparison, CRT and Bellcore fault warning; ends on physical page 29 before 3.5 heading. Printed pp.100–107.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Eight new terms added; hash, digital-signature, public-key and modular-arithmetic entries reused/associated.",
+      "sourceVerification": "Rendered pages 22–29 and extracted text reviewed. Key-generation arithmetic, encryption example, padding risks, hybrid comparison, CRT equations and Bellcore gcd relation checked. Independent educator review pending."
+    },
+    {
+      "topicId": "elliptic-curve-cryptography",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 29,
+        "to": 31
+      },
+      "scope": "Section 3.5 and 3.5.1–3.5.5: curve point arithmetic/security-size table, worked 2P calculation, ECDH/X25519 and ECDSA nonce-reuse warning; ends before 3.6 on physical page 32. Printed pp.107–109.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Nine new ECC/nonce terms added; nonce, digital signature and forward secrecy entries associated.",
+      "sourceVerification": "Rendered pages 29–31 and extracted text reviewed. Security-size comparison, mod-17 point-doubling arithmetic, X25519 example and nonce-reuse implication checked. Independent educator review pending."
+    },
+    {
+      "topicId": "cryptographic-randomness",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 32,
+        "to": 33
+      },
+      "scope": "Section 3.6 and 3.6.1–3.6.3: PRNG/CSPRNG, Debian OpenSSL failure and Dual EC DRBG concerns; ends before 3.7 heading on physical page 33. Printed pp.110–111.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Two terms added; CSPRNG and entropy entries reused and associated. Dual EC uncertainty is qualified.",
+      "sourceVerification": "Rendered pages 32–33 and extracted text reviewed, including both historical cases and warning box. The Dual EC backdoor claim is attributed as suspicion rather than established attribution. Independent educator review pending."
+    },
+    {
+      "topicId": "digital-signatures",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 33,
+        "to": 35
+      },
+      "scope": "Section 3.7 and 3.7.1–3.7.3, including RSA-PSS/ECDSA/Ed25519 code comparison and PS3 nonce-reuse case; ends before 3.8 heading on physical page 35. Printed pp.111–113.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "RSA-PSS and EdDSA added; digital-signature and non-repudiation entries associated.",
+      "sourceVerification": "Rendered pages 33–35 and extracted text reviewed, including signing code and PS3 example. Signature scheme shorthand and identity/non-repudiation claims are explicitly qualified; RFC 8017, RFC 8032 and RFC 6979 checked as supplementary primary references. Independent educator review pending."
+    },
+    {
+      "topicId": "pgp-and-web-of-trust",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 35,
+        "to": 37
+      },
+      "scope": "Section 3.8 and 3.8.1–3.8.3: PGP/OpenPGP hybrid use, web-of-trust comparison table, crypto wars/Clipper/export-grade cryptography; ends before 3.9 on physical page 37. Printed pp.113–115.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Five entries added for PGP/OpenPGP, web of trust, key escrow and Clipper; existing digital-signature concepts reused.",
+      "sourceVerification": "Rendered pages 35–37 and extracted text reviewed, including GPG workflow, PKI/web-of-trust comparison and historical crypto-war discussion. Historical material is not presented as current legal guidance. Independent educator review pending."
+    },
+    {
+      "topicId": "pki-certificates",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 37,
+        "to": 41
+      },
+      "scope": "Section 3.9 and 3.9.1–3.9.7; X.509 fields/diagram, validation pseudocode and CA-compromise/CT example. Printed pp.115–119.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 37–41 and extracted text reviewed, including chain diagram, certificate fields, validation pseudocode and revocation/CT explanations. Example validation code is labeled as pedagogical, not a complete production path validator. Independent educator review pending."
+    },
+    {
+      "topicId": "tls-13",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 42,
+        "to": 46
+      },
+      "scope": "Section 3.10 and 3.10.1–3.10.10; handshake diagram, cipher-suite example, openssl s_client output, HKDF/nonce, 0-RTT, HSTS/CAA and mTLS. Printed pp.120–124.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 42–46 and extracted text reviewed, including handshake diagram, CLI transcript and explanatory boxes. 0-RTT replay limits and PSK forward-secrecy conditions preserved. Independent educator review pending."
+    },
+    {
+      "topicId": "heartbleed-memory-disclosure",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 46,
+        "to": 49
+      },
+      "scope": "Section 3.11 and 3.11.1–3.11.2; Heartbleed figure, heartbeat structs, vulnerable/fixed code, malformed record bytes and effects. Printed pp.124–126.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 46–49 and code/byte diagrams reviewed against extracted text. Described as historical bounds-check memory disclosure; no exploit run; algorithms are not claimed broken. Independent educator review pending."
+    },
+    {
+      "topicId": "side-channel-attacks",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 49,
+        "to": 50
+      },
+      "scope": "Section 3.12 and 3.12.1–3.12.2: timing, constant-time execution, padding oracle, Bleichenbacher/Lucky Thirteen, power/EM/cache. Printed pp.127–128.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 49–50 and extracted text reviewed. Side-channel leakage distinguished from direct memory disclosure. Independent educator review pending."
+    },
+    {
+      "topicId": "key-management-lifecycle",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 50,
+        "to": 51
+      },
+      "scope": "Section 3.13 and 3.13.1–3.13.3: lifecycle, HSM/TPM/Secure Enclave and root key ceremony/split knowledge. Printed pp.128–129; page 51 attribution limited to section text above 3.14.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 50–51 and hardware photo/caption reviewed. HSM threat limits and M-of-N purpose clarified as supplementary teaching. Independent educator review pending."
+    },
+    {
+      "topicId": "quantum-threat-and-pqc",
+      "sourceId": "teori-1-90-142",
+      "pdfPages": {
+        "from": 51,
+        "to": 53
+      },
+      "scope": "Section 3.14 introduction and 3.14.1–3.14.4 through the NIST standards heading/table introduction; Shor period example, Grover comparison and harvest-now/decrypt-later. Printed pp.129–131; boundary stops at split PDF.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 51–53 and quantum hardware image/caption, period equations and timeline reviewed. Qubit/resource estimates are not presented as a current forecast. Independent educator review pending."
+    },
+    {
+      "topicId": "pqc-algorithms-migration",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 1,
+        "to": 4
+      },
+      "scope": "Section 3.14 continuation (3.14.4 standards table and 3.14.5–3.14.9): LWE, ML-KEM/ML-DSA/SLH-DSA, sizes, hybrid code, transition diagram and crypto-agility. Printed pp.132–135.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 1–4 and all algorithm/size tables, conceptual hybrid code, timeline and warning box reviewed. NIST FIPS 203/204/205 official publications checked; LWE security is qualified as an assumption, hybrid deployment claims contextualized, and 2030/2035 dates labeled roadmap anchors rather than universal deadlines. Independent educator review pending."
+    },
+    {
+      "topicId": "public-key-cryptography-practices",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 5,
+        "to": 5
+      },
+      "scope": "Section 3.15, complete pitfalls/results/practices comparison table and closing “do not write your own crypto” guidance. Printed p.136; section 3.16 begins later on same physical page.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered page 5 and full comparison table reviewed. Library names treated as examples, not an unqualified current deployment recommendation. Independent educator review pending."
+    },
+    {
+      "topicId": "chapter-three-worked-exercises",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 5,
+        "to": 10
+      },
+      "scope": "Section 3.16.1–3.16.15, all fifteen worked exercises: key count, DH/RSA, key roles/certificate, forward secrecy/PQC, modular exponentiation, textbook RSA, ECDSA nonce algebra, TLS suites/revocation, ECC addition, RSA-CRT, TLS key schedule. Printed pp.136–140.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 5–10 and all worked equations/results reviewed. Recomputed modular examples including 7^13 mod 11=2, ECC 3P=(10,6), RSA inverse d=103 and DH shared result; exercises are explicitly didactic parameter sizes. Independent educator review pending."
+    },
+    {
+      "topicId": "chapter-three-review",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 10,
+        "to": 11
+      },
+      "scope": "Section 3.17 summary, all ten self-test questions and source answer key, including week summary completion. Printed pp.141–142.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added; existing concepts reused and associated where relevant.",
+      "sourceVerification": "Rendered pages 10–11 and question/answer layout reviewed. All ten answers are explicitly supplied as retrieval practice; page 12 Chapter 4 divider excluded. Independent educator review pending."
+    },
+    {
+      "topicId": "identity-authentication-authorization",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 13,
+        "to": 16
+      },
+      "scope": "Section 4.1, identity/identification/authentication/authorization, historical authentication path, factor classes, biometric verification vs identification and FAR/FRR. Printed pp.144–147.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "password-attacks-and-entropy",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 17,
+        "to": 22
+      },
+      "scope": "Section 4.2, password entropy and examples, attacks, storage design and comparison/code (cross-reference to existing Chapter 2 password-storage topic), password policy and human factors. Printed pp.148–153.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "multi-factor-authentication",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 23,
+        "to": 25
+      },
+      "scope": "Section 4.3, OTP history, HOTP/TOTP formulas/code/diagram and time window, SMS/SIM swap, push fatigue, TOTP and FIDO factor comparison. Printed pp.154–156.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "phishing-resistant-authentication",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 26,
+        "to": 30
+      },
+      "scope": "Section 4.4, FIDO2 components, registration/assertion ceremonies, WebAuthn option/response structures, origin binding, synced vs device-bound passkeys and comparison table. Printed pp.157–161.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text, WebAuthn ceremony diagrams and JSON examples reviewed. Source statement that passkeys make phishing impossible qualified: origin binding resists cross-origin credential phishing, but not all account compromise paths. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "sso-kerberos-federation",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 31,
+        "to": 31
+      },
+      "scope": "Section 4.5, SSO roles and centralization risk, KDC/AS/TGS/TGT/service-ticket flow, federation and SAML/OAuth/OIDC transition. Printed p.162.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "oauth-authorization",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 32,
+        "to": 34
+      },
+      "scope": "Section 4.6, four OAuth roles, authorization-code flow, token exchange request/response, bearer token risk, scopes, redirect URI, state, PKCE and misconfiguration examples. Printed pp.163–165.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "openid-connect-jwt",
+      "sourceId": "teori-1-143-178",
+      "pdfPages": {
+        "from": 35,
+        "to": 36
+      },
+      "scope": "Section 4.7 begins: OAuth/OIDC/SAML distinction and JWT anatomy. JWT structure section 4.7.1 through the end of the first PDF split. Printed pp.166–167.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "session-security",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 2,
+        "to": 3
+      },
+      "scope": "Section 4.8, stateful opaque session vs stateless JWT table, cookie Secure/HttpOnly/SameSite, session fixation and lifecycle practices. Printed pp.169–170.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "access-control-models",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 4,
+        "to": 5
+      },
+      "scope": "Section 4.9, access matrix, ACL/capability, DAC/MAC/RBAC/ABAC table, Bell–LaPadula confidentiality and Biba integrity rules, least privilege/separation of duties/need to know. Printed pp.171–172.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "zero-trust-architecture",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 6,
+        "to": 7
+      },
+      "scope": "Section 4.10, perimeter model/lateral movement, request-level identity/device/resource/context checks, micro-segmentation and BeyondCorp. Printed pp.173–174.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "chapter-four-synthesis",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 7,
+        "to": 11
+      },
+      "scope": "Section 4.11, synthesis, all 10 worked exercises (including entropy, MFA, JWT, TOTP, credential stuffing, cookie flags and access-model selection), all 8 self-test questions and answer key, and week summary. Printed pp.174–178.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New terms added where needed; existing entries reused and associated with Chapter 4 topics.",
+      "sourceVerification": "Text and rendered source pages reviewed. Independent educator/editorial review pending.",
+      "nonText": "Figures/tables/code reviewed where present; original PDFs remain private."
+    },
+    {
+      "topicId": "jwt-validation",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 1,
+        "to": 1
+      },
+      "scope": "Section 4.7.2 JWT verification errors and secure validation example, including algorithm pinning, issuer/audience/expiry checks and signature verification. Printed p.168.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Existing JWT glossary entry reused and associated with this topic.",
+      "sourceVerification": "Rendered code and verification warnings reviewed; clarified that alg=none succeeds only when verification is skipped or misconfigured. Independent educator/editorial review pending.",
+      "nonText": "JWT code sample and highlighted security warning reviewed."
+    },
+    {
+      "topicId": "web-security-foundations",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 13,
+        "to": 25
+      },
+      "scope": "Sections 5.1–5.3: web origin/surface and history, HTTP requests/responses and methods, stateless sessions, HTTPS, SOP and CORS. Arabic/Turkish lessons and sheet cover all concepts.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "owasp-top-10-map",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 26,
+        "to": 28
+      },
+      "scope": "Section 5.4: 2021 categories, 2017 comparison and category examples.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "sql-injection",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 29,
+        "to": 36
+      },
+      "scope": "Section 5.5: root cause, classic/UNION/blind/second-order and other injection, parameterized-query code and limitations.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "cross-site-scripting",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 37,
+        "to": 41
+      },
+      "scope": "Section 5.6: reflected/stored/DOM types, impact, context-sensitive output encoding and CSP.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "csrf",
+      "sourceId": "teori-1-179-221",
+      "pdfPages": {
+        "from": 42,
+        "to": 43
+      },
+      "scope": "Section 5.7 first part: scenario and defenses; continues in second source physical page 1.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md.",
+      "additionalSources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pdfPages": {
+            "from": 1,
+            "to": 1
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "broken-access-control-idor",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 1,
+        "to": 3
+      },
+      "scope": "Section 5.8: horizontal/vertical authorization bypass, IDOR and server-side per-request object authorization.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "web-authentication-hardening",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 4,
+        "to": 4
+      },
+      "scope": "Section 5.9: brute force patterns, authentication and session hardening, security code example.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "secure-web-design",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 5,
+        "to": 6
+      },
+      "scope": "Section 5.10: allowlist/denylist, secure design, untrusted-input and layered-defense principles.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "chapter-five-synthesis",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 7,
+        "to": 11
+      },
+      "scope": "Sections 5.11–5.12: worked exercises and solutions, review answers and chapter transition.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 5 terms added where needed; existing related terms reused and associated.",
+      "sourceVerification": "Extracted text and rendered source pages reviewed; all three documents compared for core technical facts. Independent educator review pending.",
+      "nonText": "Relevant figures, tables, code, exercises and answer material reviewed as identified in source-coverage.md."
+    },
+    {
+      "topicId": "ssrf-cloud-metadata",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 14,
+        "to": 21
+      },
+      "scope": "Sections 6.1–6.2: trust-boundary framing, SSRF prerequisites/types, cloud metadata, provider controls, DNS rebinding, defense code and limitations.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "advanced-injection-deserialization-xxe-ssti",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 22,
+        "to": 27
+      },
+      "scope": "Section 6.3: insecure deserialization/gadget chains, XML external entities and entity-expansion DoS, SSTI, code comparisons and defenses.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "dependency-supply-chain-log4shell",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 28,
+        "to": 31
+      },
+      "scope": "Section 6.4: vulnerable/outdated direct and transitive components, Log4Shell mechanism/patch sequence, SBOM, dependency confusion, typosquatting and historical comparisons.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "api-security-authorization-abuse",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 32,
+        "to": 40
+      },
+      "scope": "Section 6.5: API risk taxonomy, BOLA/BFLA, excessive exposure/mass assignment, JWT validation, authentication abuse/rate limiting, REST/GraphQL, inventory and CORS.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "secrets-management-rotation",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 41,
+        "to": 43
+      },
+      "scope": "Section 6.6: secrets in source/Git history, .env exposure, scanning, vaults, dynamic credentials, rotation and response.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "security-misconfiguration-headers",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 44,
+        "to": 45
+      },
+      "scope": "Section 6.7: secure defaults and misconfiguration; HSTS, CSP, frame protections, nosniff and Referrer-Policy purposes and limits.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "secure-sdlc-devsecops",
+      "sourceId": "teori-1-222-268",
+      "pdfPages": {
+        "from": 46,
+        "to": 47
+      },
+      "scope": "Section 6.8 across the PDF split: shift-left, STRIDE, SAST/DAST/IAST/SCA, CI/CD gates, pipeline security, build provenance and SBOM.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private.",
+      "additionalSources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pdfPages": {
+            "from": 1,
+            "to": 1
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "coordinated-vulnerability-disclosure",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 2,
+        "to": 4
+      },
+      "scope": "Section 6.9: full/coordinated disclosure, process, bug bounty, researcher scope and ecosystem rationale.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "chapter-six-synthesis",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 5,
+        "to": 11
+      },
+      "scope": "Sections 6.10–6.11: all 12 worked exercises, all 8 self-test questions and answer key, weekly summary and transition; Chapter 6 ends on physical page 11.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "New Chapter 6 terms added; existing entries reused and associated with the relevant topics.",
+      "sourceVerification": "Extracted text and rendered pages reviewed; relevant diagrams, tables and code checked. Independent educator/editorial review pending.",
+      "nonText": "Figures, tables, code snippets, exercises and answers reviewed in the cited section range; source images/PDF bytes remain private."
+    },
+    {
+      "topicId": "network-foundations-and-protocol-layers",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 13,
+        "to": 18
+      },
+      "scope": "Section 7.1 opening on the objectives page, then: ARPANET/TCP-IP security history; TCP/IP layers, encapsulation, MAC/IP/port roles; IPv4/TCP header fields; TCP vs UDP; NAT and IPv6 qualifications.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "tcp-handshake-syn-flood",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 18,
+        "to": 23
+      },
+      "scope": "Section 7.2: TCP three-way handshake and sequence/acknowledgement numbers; SYN flood and backlog; SYN cookies and source-address validation; RST injection and session hijacking.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "layer2-lan-attacks",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 23,
+        "to": 26
+      },
+      "scope": "Section 7.3: ARP and unauthenticated local trust; two-way ARP poisoning/MITM; MAC flooding, rogue DHCP/starvation, VLAN hopping and switch controls.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "dns-security-and-encrypted-dns",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 26,
+        "to": 29
+      },
+      "scope": "Section 7.4: recursive DNS chain and cache poisoning/Kaminsky; DNSSEC DNSKEY/DS/RRSIG trust chain; DoH/DoT privacy versus DNSSEC integrity.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "packet-capture-wireshark",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 29,
+        "to": 31
+      },
+      "scope": "Section 7.5: packet capture, promiscuous/monitor modes, Wireshark layers and figures, BPF capture versus display filters, passive versus active sniffing.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "network-reconnaissance-nmap",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 31,
+        "to": 33
+      },
+      "scope": "Section 7.6: authorized reconnaissance; nmap host/TCP SYN/connect/UDP/service/OS/all-port scans; interpretation limits and version fingerprinting.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "firewalls-segmentation",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 33,
+        "to": 36
+      },
+      "scope": "Section 7.7: packet-filter/stateful/NGFW/WAF distinctions; default-deny firewall example; DMZ, VLAN, microsegmentation and SASE.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "intrusion-detection-prevention",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 36,
+        "to": 38
+      },
+      "scope": "Section 7.8: IDS versus inline IPS; signature versus anomaly detection; Snort/Suricata rule fields and threshold/low-and-slow limitations; WannaCry illustration.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "vpn-ipsec-wireguard",
+      "sourceId": "teori-1-269-307",
+      "pdfPages": {
+        "from": 38,
+        "to": 39
+      },
+      "scope": "Section 7.9 opening and IPsec modes/AH/ESP; WireGuard continues across split PDF.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied.",
+      "additionalSources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pdfPages": {
+            "from": 1,
+            "to": 2
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "wireless-security-wpa3-krack",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 3,
+        "to": 5
+      },
+      "scope": "Section 7.10: WEP/RC4/IV weakness; WPA2 four-way handshake, PMK/PTK/GTK; KRACK key reinstall/nonce reset; WPA3 SAE/OWE and limits.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "ddos-defense",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 5,
+        "to": 7
+      },
+      "scope": "Section 7.11: Mirai illustration; volumetric/protocol/application DDoS; amplification table and arithmetic; CDN/scrubbing/rate limits/BCP 38 defenses.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "network-security-misconceptions",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 7,
+        "to": 8
+      },
+      "scope": "Section 7.12: VPN versus HTTPS, DNSSEC versus encrypted DNS, firewall versus segmentation, switch/NAT assumptions and layered-defense misconceptions.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "chapter-seven-worked-exercises",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 8,
+        "to": 12
+      },
+      "scope": "Section 7.13: all 10 worked exercises, 8 self-test questions with answer key, weekly synthesis; Chapter 7 ends on physical p.12; Chapter 8 divider follows on p.13.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "38 new Chapter 7 entries added; existing terms reused and associated with relevant topics.",
+      "sourceVerification": "Extracted text and relevant rendered pages reviewed; section boundaries, diagrams, tables, packet/header formats, examples, exercises and answers checked as applicable. Independent educator/editorial review pending.",
+      "nonText": "Relevant figures, diagrams, tables, protocol flows, code/examples, exercises, answer key and weekly summary reviewed where present; no source images or private PDF bytes copied."
+    },
+    {
+      "topicId": "os-security-boundaries",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 15,
+        "to": 19
+      },
+      "scope": "Section 8.1: user/kernel mode, system-call trust boundary and x86-64 flow, protection rings, process virtual memory/MMU/R/W/X, Meltdown/Spectre distinctions, KPTI, both solved exercises.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered processor/ring illustrations and relevant page text/table; virtual-memory and trust-boundary diagrams; syscall tracing/code and Meltdown/Spectre explanation; both exercises."
+    },
+    {
+      "topicId": "memory-safety-foundations",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 20,
+        "to": 22
+      },
+      "scope": "Section 8.2: manual C/C++ memory management and undefined behavior; managed/ownership-based memory safety comparison; source statistics and qualifications; code/data/BSS/heap/stack map and network parser exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered DDR image, memory-safety comparison table and address-space layout diagram; checked parser exercise and extracted text."
+    },
+    {
+      "topicId": "stack-buffer-overflow",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 23,
+        "to": 29
+      },
+      "scope": "Section 8.3: stack-frame and call/return model; bounded/unbounded copy examples; local gdb observation, shellcode/NOP sled as concepts, dangerous C APIs and bounded alternatives, solved exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered stack-frame, normal/corrupted return-address diagrams, C examples, gdb output and safe-copy comparison; reviewed full section and exercise."
+    },
+    {
+      "topicId": "memory-bug-families",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 30,
+        "to": 33
+      },
+      "scope": "Section 8.4: format-string, integer-overflow, use-after-free and heap-overflow families; comparison table and browser-object lifetime exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Checked format-string code, integer-size arithmetic and overflow code, UAF example, heap diagram/comparison table and exercise."
+    },
+    {
+      "topicId": "exploit-mitigations",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 34,
+        "to": 40
+      },
+      "scope": "Section 8.5: canary, DEP/NX, ret2libc/ROP, ASLR+PIE, CFI/CET/PAC, RELRO, mitigation comparison/compiler flags, checksec output, ASan/UBSan and fuzzing; solved exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered mitigation sequence diagram, canary pseudocode, ASLR map, CFI/RELRO discussion, comparison/compiler-flag tables, checksec and sanitizer output/fuzzing material."
+    },
+    {
+      "topicId": "privilege-escalation",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 41,
+        "to": 46
+      },
+      "scope": "Section 8.6: horizontal/vertical escalation; Linux owner/group/other permissions, setuid/setgid/sticky, capabilities; Windows token/SYSTEM/UAC comparison; misconfiguration, Dirty COW, race/TOCTOU and confused deputy; solved exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered Linux permission/capability examples, setuid PATH and privilege tables, Windows token comparison, Dirty COW/race discussion and exercise."
+    },
+    {
+      "topicId": "sandboxing-isolation",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 47,
+        "to": 51
+      },
+      "scope": "Section 8.7: seccomp-BPF allowlist example, namespaces table and unshare/cgroup demonstration, SELinux/AppArmor comparison, container hardening layers, gVisor/microVM/eBPF discussion and container-vs-VM exercise.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "36 new bilingual Turkish-English entries added; existing trust-boundary, least-privilege, memory-isolation, defense-in-depth, TPM and side-channel entries reused and associated.",
+      "sourceVerification": "Original extracted text and the relevant rendered pages were reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered seccomp filter flow and code, namespaces/cgroup table and terminal example, MAC comparison and container-hardening layer table; checked exercise."
+    },
+    {
+      "topicId": "hardware-root-of-trust",
+      "sourceId": "teori-1-307-359",
+      "pdfPages": {
+        "from": 52,
+        "to": 53
+      },
+      "additionalSources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pdfPages": {
+            "from": 1,
+            "to": 1
+          }
+        }
+      ],
+      "scope": "Section 8.8: root-of-trust motivation, TPM/PCR extension and sealing/attestation, measured-boot flow diagram, Secure Boot chain, TrustZone/SGX TEE comparison and solved exercise; section continues onto next split PDF p.1.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Included in 36 new terms; existing TPM entry associated.",
+      "sourceVerification": "Both split-file portions were reviewed in extracted text and rendered pages. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered PCR extension code, boot-chain diagram and TPM/Secure Boot/TrustZone/SGX threat-model table; checked exercise across PDF split."
+    },
+    {
+      "topicId": "system-hardening",
+      "sourceId": "teori-1-360-397",
+      "pdfPages": {
+        "from": 1,
+        "to": 3
+      },
+      "scope": "Section 8.9: least-services, patch lifecycle/WannaCry case, CIS baseline, command-line hardening examples, auditd/log review and allowlist principle.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Included in 36 new terms; relevant existing entries extended.",
+      "sourceVerification": "Original extracted text and relevant rendered pages reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered hardening command examples, WannaCry callout and auditd rules/log sample; checked CIS and allowlist discussion."
+    },
+    {
+      "topicId": "trusting-trust",
+      "sourceId": "teori-1-360-397",
+      "pdfPages": {
+        "from": 4,
+        "to": 6
+      },
+      "scope": "Section 8.10: Thompson’s three-stage compiler-trust thought experiment and code (quine, pattern trigger, self-propagation), DDC/reproducible-build qualification, XZ CVE-2024-3094 and SolarWinds as distinct supply-chain cases.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Included in 36 new terms; relevant existing entries extended.",
+      "sourceVerification": "Original extracted text and relevant rendered pages reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered Thompson portrait/caption and all three code blocks plus DDC callout; checked XZ/SolarWinds discussion."
+    },
+    {
+      "topicId": "os-security-synthesis",
+      "sourceId": "teori-1-360-397",
+      "pdfPages": {
+        "from": 7,
+        "to": 11
+      },
+      "scope": "Section 8.11: all seven integrative solved exercises, all eight review questions and answer key, weekly summary; Chapter 8 ends physical p.11, Chapter 9 divider p.12.",
+      "arabicLesson": "completed-first-pass",
+      "turkishLesson": "completed-first-pass",
+      "turkishCheatSheet": "completed-first-pass",
+      "glossary": "Included in 36 new terms; relevant existing entries extended.",
+      "sourceVerification": "Original extracted text and relevant rendered pages reviewed. Independent educator/editorial review remains pending.",
+      "nonText": "Rendered all seven worked solutions, eight self-test questions and answer key, and full weekly summary."
+    }
+  ],
+  "limitations": [
+    "Sections 1.1–1.13 are taught with exact within-page boundaries. Page 34 material before the 1.6 heading belongs to 1.5; page 38 material after the 1.6 conclusion belongs to 1.7; page 41 begins 1.8; 1.9–1.10 share physical page 2 of teori-1-43-89.pdf; 1.11, 1.12 and the start of 1.13 share physical page 7, with each section boundary checked against the source.",
+    "All completion states mean reviewed first-pass authoring, not independent educator approval or a full-book factual audit.",
+    "The separate Laboratory Workbook was not supplied; no completed practical lab is claimed.",
+    "STRIDE tables guide questioning, not proofs of threat absence. DREAD scores are judgments; attack-tree gates/costs are explicit source assumptions, not universal attack paths. Control effectiveness is not assumed perfect.",
+    "Log4Shell is a historical explanation, not a current patch runbook. The source’s 2.15.0 date/protocol simplification is explicitly corrected; legacy mitigation/version summaries are qualified.",
+    "History statistics are estimates; attributed motives and possible Stuxnet USB entry are not presented as certain. Source diagrams/maps are not treated as quantitative measurements.",
+    "In section 1.13 exercise 6, the textbook's stated DREAD outcome at triple Damage weight conflicts with its own listed scores: both totals equal 44. This is disclosed and corrected in the teaching documents.",
+    "Chapter 1 sections 1.1–1.13 and Chapter 2 sections 2.1–2.11 are covered on a reviewed first-pass basis. Chapter 2 begins at teori-1-43-89.pdf physical page 13 (printed 44); its week summary ends on teori-1-90-142.pdf physical page 11 (printed 89). Physical page 12 is the Chapter 3 divider; section 3.1 begins on physical page 13 (printed 91). Chapter 3 sections 3.1–3.17 and Chapter 6 sections 6.1–6.11 now also have reviewed first-pass coverage.",
+    "Chapter 7 sections 7.1–7.13 were reviewed and authored as first-pass coverage. The chapter spans teori-1-269-307.pdf physical pages 13–39 and teori-1-307-359.pdf physical pages 1–12; physical page 13 contains both objectives and the section 7.1 opening, although subsection 7.1.1 starts on page 14. Position 307 is an extracted-text overlap, not asserted bitmap identity. Chapter 8 begins on the second PDF physical page 13. Independent educator review remains pending.",
+    "Chapter 8 sections 8.1–8.11 were authored on a reviewed first-pass basis across teori-1-307-359.pdf physical pp.15–53 and teori-1-360-397.pdf pp.1–11. Rendered diagrams, tables, code examples and exercises were checked. The separate Laboratory Workbook was not supplied; interactive lab completion is not claimed. The C/C++ open-vulnerability examples are explained as root-cause/defense material, not exploit recipes.",
+    "Chapter 8 qualifications: source memory-error percentages are period/product-specific, not universal rates; C signed overflow is not guaranteed to wrap, and `strncpy` may fail to NUL-terminate; ASLR entropy, compiler flags and mitigation defaults vary by platform/toolchain; a canary does not guarantee control-flow safety and CFI coverage differs by implementation; seccomp actions/policies need precise configuration; namespaces/cgroups/MAC do not make a container equivalent to a separate kernel; TPM PCR measurements support evidence but require event logs/reference policy and do not alone prove a platform is uncompromised; XZ CVE-2024-3094 affected build/release artifacts and is not technically the same mechanism as Thompson’s self-propagating compiler thought experiment."
+  ],
+  "nextUnit": "Chapter 8 complete on reviewed first-pass basis. Chapter 9 divider: teori-1-360-397.pdf physical p.12 (printed p.360); objectives p.13; section 9.1 begins p.14 (printed p.361). Chapter 9 not authored.",
+  "glossary": {
+    "entryCount": 356,
+    "scope": "Bilingual Turkish-English terms/examples associated with reviewed first-pass topics in Chapters 1–8.",
+    "status": "36 new Chapter 8 entries added; existing concepts reused and associated."
+  },
+  "supplementaryVerification": [
+    {
+      "topicId": "security-governance-ethics-law",
+      "checked": "2026-11-13",
+      "reference": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+      "finding": "NIST CSF 2.0 (2024) has six functions; the official framework says they are concurrent, Govern is cross-cutting, Identify/Protect/Detect are continuous, and Respond/Recover should be ready for incidents. The lesson avoids reading the PDF arrows as a mandated linear process."
+    },
+    {
+      "topicId": "security-governance-ethics-law",
+      "checked": "2026-11-13",
+      "reference": "https://mevzuat.adalet.gov.tr/mevzuat/103228",
+      "finding": "Official UYAP legislation entry for Turkish Penal Code 5237 checked for current computer-crime provisions; the lesson retains only the source’s high-level examples and gives no penalty or case-specific interpretation."
+    },
+    {
+      "topicId": "security-governance-ethics-law",
+      "checked": "2026-11-13",
+      "reference": "https://www.kvkk.gov.tr/Icerik/6649/Personal-Data-Protection-Law",
+      "finding": "KVKK Institution’s official Law No. 6698 text checked for personal-data processing and data-security framing."
+    },
+    {
+      "topicId": "security-governance-ethics-law",
+      "checked": "2026-11-13",
+      "reference": "https://www.kvkk.gov.tr/Icerik/8595/kamuoyu-duyurusu",
+      "finding": "KVKK Institution’s official breach-notification explanation confirms the controller notification framework; no deadline is added to the teaching lesson."
+    },
+    {
+      "topicId": "security-governance-ethics-law",
+      "checked": "2026-11-13",
+      "reference": "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "finding": "Official EUR-Lex text checked for GDPR principles. The lesson describes it as a related European framework, not as identical to KVKK."
+    },
+    {
+      "topicId": "log4shell-trust-boundaries",
+      "checked": "2026-11-13",
+      "reference": "https://logging.apache.org/log4j/2.x/release-notes.html#release-notes-2-15-0",
+      "finding": "2.15.0 release date/protocol detail corrected against release notes; other historical milestones checked. Release notes retain 2.17.1 for the JDBC follow-up; the current central security table has an inconsistent 44832 fixed-version row and is not used to override that chronology."
+    },
+    {
+      "topicId": "log4shell-trust-boundaries",
+      "checked": "2026-11-13",
+      "reference": "https://logging.apache.org/security.html#CVE-2021-44228",
+      "finding": "Core/API-only distinction and maintenance-branch nuance checked; JDBC configuration-write condition distinguished from log-message input."
+    },
+    {
+      "topicId": "log4shell-trust-boundaries",
+      "checked": "2026-11-13",
+      "reference": "https://raw.githubusercontent.com/openjdk/jdk8u/jdk8u191-b12/jdk/src/share/classes/com/sun/jndi/ldap/VersionHelper12.java",
+      "finding": "The exact historical tag confirms default false for LDAP remote codebase trust; source code read, not executed."
+    },
+    {
+      "topicId": "security-history",
+      "checked": "2026-11-13",
+      "reference": "https://www.fbi.gov/history/cases-and-criminals/morris-worm",
+      "finding": "Date, approximate scale and historical conviction checked; intent distinguished from observed harm."
+    },
+    {
+      "topicId": "security-history",
+      "checked": "2026-11-13",
+      "reference": "https://www.sei.cmu.edu/history-of-innovation/fostering-growth-in-professional-cyber-incident-management/",
+      "finding": "CERT/CC origin after Morris checked."
+    },
+    {
+      "topicId": "security-history",
+      "checked": "2026-11-13",
+      "reference": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010",
+      "finding": "MS17-010 identified as multi-vulnerability bulletin/update, not one CVE."
+    },
+    {
+      "topicId": "security-history",
+      "checked": "2026-11-13",
+      "reference": "https://csrc.nist.gov/pubs/fips/203/final",
+      "finding": "ML-KEM identified as key encapsulation."
+    },
+    {
+      "topicId": "security-history",
+      "checked": "2026-11-13",
+      "reference": "https://csrc.nist.gov/pubs/fips/204/final",
+      "finding": "ML-DSA identified as digital signature."
+    },
+    {
+      "topicId": "digital-signatures",
+      "checked": "2026-11-13",
+      "reference": "https://www.rfc-editor.org/rfc/rfc8017.html",
+      "finding": "RFC 8017 defines RSA-PSS as a signature encoding plus RSA private-key signature primitive, not generic private-key encryption of a hash; author wording distinguishes the textbook shorthand."
+    },
+    {
+      "topicId": "digital-signatures",
+      "checked": "2026-11-13",
+      "reference": "https://www.rfc-editor.org/rfc/rfc8032.html",
+      "finding": "RFC 8032 specifies EdDSA/Ed25519 and deterministic signing behavior; the lesson limits the claim to deterministic nonce derivation and does not imply all implementation risks disappear."
+    },
+    {
+      "topicId": "digital-signatures",
+      "checked": "2026-11-13",
+      "reference": "https://www.rfc-editor.org/rfc/rfc6979.html",
+      "finding": "RFC 6979 defines deterministic DSA/ECDSA nonce generation; added as supplementary context to the textbook’s ECDSA-randomness versus Ed25519 comparison."
+    },
+    {
+      "topicId": "pqc-algorithms-migration",
+      "url": "https://csrc.nist.gov/News/2024/postquantum-cryptography-fips-approved/",
+      "finding": "NIST announced FIPS 203 ML-KEM, FIPS 204 ML-DSA and FIPS 205 SLH-DSA on 2024-08-13; used to verify names and algorithm roles."
+    },
+    {
+      "topicId": "pqc-algorithms-migration",
+      "url": "https://csrc.nist.gov/pubs/fips/203/final",
+      "finding": "Official ML-KEM standard; describes KEM role, parameter sets and Module-LWE relation. NIST planning note identifies a potential update, so pedagogical text avoids claims of absolute proof."
+    },
+    {
+      "topicId": "pqc-algorithms-migration",
+      "url": "https://csrc.nist.gov/pubs/fips/204/final",
+      "finding": "Official ML-DSA digital-signature standard."
+    },
+    {
+      "topicId": "pqc-algorithms-migration",
+      "url": "https://csrc.nist.gov/pubs/fips/205/final",
+      "finding": "Official SLH-DSA stateless hash-based signature standard derived from SPHINCS+."
+    },
+    {
+      "topicId": "dns-security-and-encrypted-dns",
+      "checked": "2026-11-14",
+      "reference": "https://www.rfc-editor.org/info/rfc4033/",
+      "finding": "IETF RFC 4033 confirms DNSSEC data-origin authentication and integrity, and explicitly excludes confidentiality and DoS protection; used to qualify the lesson scope."
+    },
+    {
+      "topicId": "dns-security-and-encrypted-dns",
+      "checked": "2026-11-14",
+      "reference": "https://www.rfc-editor.org/info/rfc8484/",
+      "finding": "IETF RFC 8484 defines DNS over HTTPS and notes TLS confidentiality/integrity for the HTTPS exchange; lesson distinguishes transport protection from DNSSEC record validation and notes traffic analysis metadata."
+    },
+    {
+      "topicId": "dns-security-and-encrypted-dns",
+      "checked": "2026-11-14",
+      "reference": "https://www.rfc-editor.org/info/rfc7858/",
+      "finding": "IETF RFC 7858 specifies default DoT over TCP port 853; used to check the source’s port statement."
+    },
+    {
+      "topicId": "tcp-handshake-syn-flood",
+      "checked": "2026-11-14",
+      "reference": "https://www.rfc-editor.org/info/rfc2827/",
+      "finding": "BCP 38 ingress filtering is a best-practice recommendation to reduce packets with forged source addresses; the lesson presents it as mitigation, not universal deployment."
+    },
+    {
+      "topicId": "network-reconnaissance-nmap",
+      "checked": "2026-11-14",
+      "reference": "https://nmap.org/book/man-port-scanning-techniques.html",
+      "finding": "Official Nmap guide confirms SYN/connect scan mechanics and state interpretation. The lesson qualifies “stealth” as relative: detection/logging can still occur."
+    },
+    {
+      "topicId": "vpn-ipsec-wireguard",
+      "checked": "2026-11-14",
+      "reference": "https://www.wireguard.com/protocol/",
+      "finding": "WireGuard protocol specification confirms Noise_IKpsk2_25519_ChaChaPoly_BLAKE2s construction and the protocol’s fixed primitive suite; lesson avoids treating formal/model analysis or smaller code as proof of absolute superiority."
+    },
+    {
+      "topicId": "wireless-security-wpa3-krack",
+      "checked": "2026-11-14",
+      "reference": "https://www.krackattacks.com/",
+      "finding": "Original KRACK researchers describe replayed handshake messages causing key reinstallation and reset of nonce/replay counters. Lesson frames impact as implementation-dependent and does not say WPA2’s cipher was broken."
+    },
+    {
+      "topicId": "os-security-boundaries",
+      "checked": "2026-11-14",
+      "reference": "https://www.usenix.org/conference/usenixsecurity19/presentation/canella",
+      "finding": "Systematization paper supports the distinction that transient/speculative execution can leave secret-dependent microarchitectural traces; the lesson distinguishes Meltdown from Spectre and avoids treating one mitigation as universal."
+    },
+    {
+      "topicId": "sandboxing-isolation",
+      "checked": "2026-11-14",
+      "reference": "https://docs.kernel.org/userspace-api/seccomp_filter.html",
+      "finding": "Linux kernel documentation confirms seccomp filter decisions use syscall metadata/arguments, BPF filter actions are configurable, and installation has privilege/no_new_privs conditions; lesson avoids claiming every denied syscall must kill the process."
+    },
+    {
+      "topicId": "hardware-root-of-trust",
+      "checked": "2026-11-14",
+      "reference": "https://trustedcomputinggroup.org/production/TCG_Guidance_for_Securing_Industrial_Control_Systems_v1_r109_pub10jan2022_a3d08f932f.pdf",
+      "finding": "TCG guidance distinguishes Secure Boot (verify next-stage signature before execution) from Measured Boot (record measurements); measured boot alone does not prevent execution."
+    },
+    {
+      "topicId": "trusting-trust",
+      "checked": "2026-11-14",
+      "reference": "https://security-tracker.debian.org/tracker/CVE-2024-3094",
+      "finding": "Debian tracker describes malicious code in upstream xz tarballs extracted by the liblzma build process; the text distinguishes this release/build compromise from Thompson’s compiler self-propagation thought experiment."
+    },
+    {
+      "topicId": "memory-safety-foundations",
+      "checked": "2026-11-14",
+      "reference": "https://www.kernel.org/doc/html/v6.7/rust/index.html",
+      "finding": "Linux kernel documentation says Rust was merged in v6.1 to assess suitability and describes support as under development/experimental for some configurations; lesson does not imply general production readiness."
+    },
+    {
+      "topicId": "trusting-trust",
+      "checked": "2026-11-14",
+      "reference": "https://lists.debian.org/debian-security-announce/2024/msg00057.html",
+      "finding": "Debian security advisory corroborates that compromised upstream xz source tarballs injected malicious code into the resulting library at build time."
+    }
+  ]
+}

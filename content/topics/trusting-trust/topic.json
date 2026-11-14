@@ -1,0 +1,71 @@
+{
+  "id": "trusting-trust",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Güvene Güvenmek: Derleyici ve Tedarik Zinciri",
+    "ar": "الثقة في الثقة وسلسلة بناء البرمجيات"
+  },
+  "order": 9,
+  "prerequisites": ["memory-safety-foundations"],
+  "related": ["dependency-supply-chain-log4shell", "system-hardening"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الثقة في الثقة وسلسلة بناء البرمجيات",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 4,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvene Güvenmek: Derleyici ve Tedarik Zinciri",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 4,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvene Güvenmek: Derleyici ve Tedarik Zinciri — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 4,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

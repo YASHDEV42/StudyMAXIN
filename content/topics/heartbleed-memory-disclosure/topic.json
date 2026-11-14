@@ -1,0 +1,71 @@
+{
+  "id": "heartbleed-memory-disclosure",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Heartbleed ve Bellek Sızıntısı",
+    "ar": "Heartbleed وتسرب الذاكرة"
+  },
+  "order": 100,
+  "prerequisites": ["tls-13"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Heartbleed: لما طول الرسالة يكذب على الذاكرة",
+      "summary": "تفكيك بنية heartbeat، خطأ فحص الحدود، وأثره الأمني من دون الخلط بين خلل الشيفرة وكسر التشفير.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 46,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Heartbleed: Sınır Denetimi Hatası",
+      "summary": "CVE-2014-0160 açığının hatalı uzunluk beyanını bellek dışına okuma olarak nasıl kullandığını ve kriptografik algoritmaları neden kırmadığını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 46,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Heartbleed ve Bellek Sızıntısı — Sınav Özeti",
+      "summary": "CVE-2014-0160 açığının hatalı uzunluk beyanını bellek dışına okuma olarak nasıl kullandığını ve kriptografik algoritmaları neden kırmadığını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 46,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

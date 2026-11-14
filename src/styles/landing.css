@@ -1,0 +1,734 @@
+/*
+ * Landing hero — "Equipotential lines".
+ * A two-colour plate: ink on paper, with rubric red reserved for the pole and
+ * the one action. The plate is still: a few hairline rings and dotted field
+ * arcs, drawn once on arrival, fading out before they reach the type.
+ * Everything is scoped under .landing; the :has() rule below only applies
+ * while the hero is in the document, so it cannot leak into the docs shell.
+ * Palettes follow the shared theme (system preference or explicit choice).
+ */
+
+body:has(.landing) {
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: var(--landing-paper-root, #f1ece1);
+}
+
+.landing {
+  --landing-paper: #f1ece1;
+  --landing-ink: #16252d;
+  --landing-ink-soft: #45545b;
+  --landing-rubric: #c4351d;
+  --landing-rubric-deep: #a92a15;
+  --landing-on-rubric: #fdf8ee;
+  --landing-hair: rgb(22 37 45 / 0.3);
+  --landing-plate: rgb(22 37 45 / 0.34);
+  --landing-plate-faint: rgb(22 37 45 / 0.42);
+  --landing-grain: 0.42;
+  --landing-grain-blend: multiply;
+  --landing-pad-x: clamp(1.25rem, 3.6vw, 3.5rem);
+  --landing-pad-y: clamp(1rem, 3.4vh, 2.25rem);
+  --landing-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --landing-latin: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --landing-arabic: var(--font-amiri), "Geeza Pro", "Noto Naskh Arabic", serif;
+  --landing-title-size: clamp(2.5rem, min(10.2vw, 18.5vh), 13rem);
+
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  isolation: isolate;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
+  padding-block: max(var(--landing-pad-y), env(safe-area-inset-top))
+    max(var(--landing-pad-y), env(safe-area-inset-bottom));
+  padding-inline: max(
+    var(--landing-pad-x),
+    env(safe-area-inset-left),
+    env(safe-area-inset-right)
+  );
+  background: var(--landing-paper);
+  color: var(--landing-ink);
+  font-family: var(--landing-latin);
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body:has(.landing) {
+    --landing-paper-root: #0e161a;
+  }
+  :root:not([data-theme="light"]) .landing {
+    --landing-paper: #0e161a;
+    --landing-ink: #e9e3d4;
+    --landing-ink-soft: #a7afac;
+    --landing-rubric: #f0603c;
+    --landing-rubric-deep: #ff7650;
+    --landing-on-rubric: #10181c;
+    --landing-hair: rgb(233 227 212 / 0.34);
+    --landing-plate: rgb(233 227 212 / 0.3);
+    --landing-plate-faint: rgb(233 227 212 / 0.36);
+    --landing-grain: 0.3;
+    --landing-grain-blend: screen;
+  }
+}
+:root[data-theme="dark"] body:has(.landing) {
+  --landing-paper-root: #0e161a;
+}
+:root[data-theme="dark"] .landing {
+  --landing-paper: #0e161a;
+  --landing-ink: #e9e3d4;
+  --landing-ink-soft: #a7afac;
+  --landing-rubric: #f0603c;
+  --landing-rubric-deep: #ff7650;
+  --landing-on-rubric: #10181c;
+  --landing-hair: rgb(233 227 212 / 0.34);
+  --landing-plate: rgb(233 227 212 / 0.3);
+  --landing-plate-faint: rgb(233 227 212 / 0.36);
+  --landing-grain: 0.3;
+  --landing-grain-blend: screen;
+}
+
+.landing[data-locale="ar"],
+.landing [lang="ar"] {
+  font-family: var(--landing-arabic);
+}
+.landing [lang="en"],
+.landing [lang="tr"] {
+  font-family: var(--landing-latin);
+}
+
+.landing *,
+.landing *::before,
+.landing *::after {
+  box-sizing: border-box;
+}
+
+/* Paper tooth: a static grain so the flat colour reads as a printed sheet. */
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: var(--landing-grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: var(--landing-grain-blend);
+}
+
+/* ---------- Plate ----------
+   A square centred on the pole; its position and size are set per composition.
+   The mask fades every line well before it reaches the type column. */
+
+.landing__plate {
+  --landing-pole-x: 71%;
+  --landing-pole-y: 47%;
+  --landing-plate-size: max(118vh, 64vw);
+  position: absolute;
+  z-index: -1;
+  inset-block-start: var(--landing-pole-y);
+  left: var(--landing-pole-x);
+  inline-size: var(--landing-plate-size);
+  block-size: var(--landing-plate-size);
+  translate: -50% -50%;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(
+    closest-side,
+    #000 0%,
+    #000 34%,
+    rgb(0 0 0 / 0.55) 62%,
+    transparent 92%
+  );
+  mask-image: radial-gradient(
+    closest-side,
+    #000 0%,
+    #000 34%,
+    rgb(0 0 0 / 0.55) 62%,
+    transparent 92%
+  );
+}
+/* Arabic reads from the right, so the plate opens on the left. */
+.landing[data-locale="ar"] .landing__plate {
+  left: calc(100% - var(--landing-pole-x));
+  scale: -1 1;
+}
+.landing__plate-svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: visible;
+  fill: none;
+}
+.landing__equipotentials circle {
+  stroke: var(--landing-plate);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+.landing__field-lines circle {
+  stroke: var(--landing-plate-faint);
+  stroke-width: 1.15px;
+  stroke-dasharray: 0 7px;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.75;
+}
+.landing__pole {
+  fill: var(--landing-rubric);
+}
+.landing__pole-ring {
+  stroke: var(--landing-rubric);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.55;
+}
+
+.landing__sr {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- Bar ---------- */
+
+.landing__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.landing__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.34em;
+  margin: 0;
+  font-size: clamp(1.0625rem, 0.96rem + 0.4vw, 1.375rem);
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+  white-space: nowrap;
+}
+.landing__brand em {
+  font-style: italic;
+}
+.landing__brand-mark {
+  align-self: center;
+  inline-size: 0.44em;
+  block-size: 0.44em;
+  margin-inline-end: 0.22em;
+  border-radius: 50%;
+  background: var(--landing-rubric);
+}
+
+.landing__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-block: -0.5rem;
+  margin-inline-end: -0.6rem;
+}
+
+.landing__languages {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  line-height: 1.2;
+}
+.landing__languages a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-block-size: 2.75rem;
+  padding-inline: 0.6rem;
+  border-radius: 0.5rem;
+  color: var(--landing-ink-soft);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.landing__languages a[lang="ar"] {
+  font-size: 1.16em;
+}
+.landing__languages a + a::before {
+  content: "";
+  position: absolute;
+  inset-block: 34%;
+  left: 0;
+  border-left: 1px solid var(--landing-hair);
+}
+/* Each link carries its own dir, so the divider follows the page, not the link. */
+html[dir="rtl"] .landing__languages a + a::before {
+  right: 0;
+  left: auto;
+}
+.landing__languages a::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0.6rem;
+  inset-block-end: 0.55rem;
+  block-size: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.45s var(--landing-ease);
+}
+.landing__languages a:hover,
+.landing__languages a[aria-current="page"] {
+  color: var(--landing-ink);
+}
+.landing__languages a:hover::after,
+.landing__languages a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+.landing__languages a:focus-visible {
+  outline: 2px solid var(--landing-ink);
+  outline-offset: -4px;
+}
+
+/* Theme choice: a quiet ink icon, same hit size as the language links. */
+.landing__theme {
+  position: relative;
+  font-family: var(--font-body);
+}
+.landing__theme .theme-toggle__button {
+  display: grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--landing-ink-soft);
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.landing__theme .theme-toggle__button:hover,
+.landing__theme .theme-toggle__button[aria-expanded="true"] {
+  color: var(--landing-ink);
+}
+.landing__theme .theme-toggle__button:focus-visible {
+  outline: 2px solid var(--landing-ink);
+  outline-offset: -4px;
+}
+.landing__theme .theme-toggle__menu {
+  position: absolute;
+  z-index: 5;
+  inset-block-start: calc(100% + 0.35rem);
+  inset-inline-end: 0;
+  display: grid;
+  gap: 0.1rem;
+  min-inline-size: 10rem;
+  padding: 0.35rem;
+  border: 1px solid var(--landing-hair);
+  border-radius: 0.75rem;
+  background: var(--landing-paper);
+  box-shadow: 0 18px 50px -24px rgb(0 0 0 / 0.45);
+}
+.landing__theme .theme-toggle__menu[hidden] {
+  display: none;
+}
+.landing__theme .theme-toggle__menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-block-size: 2.5rem;
+  padding: 0 0.7rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--landing-ink-soft);
+  font: inherit;
+  font-size: 0.9375rem;
+  text-align: start;
+  cursor: pointer;
+}
+.landing__theme .theme-toggle__menu button:hover,
+.landing__theme .theme-toggle__menu button:focus-visible {
+  outline: none;
+  background: color-mix(in srgb, var(--landing-ink) 7%, transparent);
+  color: var(--landing-ink);
+}
+.landing__theme .theme-toggle__menu button[aria-pressed="true"] {
+  color: var(--landing-ink);
+  font-weight: 600;
+}
+.landing__theme .theme-toggle__menu button[aria-pressed="true"]::after {
+  content: "";
+  inline-size: 0.4rem;
+  block-size: 0.4rem;
+  margin-inline-start: auto;
+  border-radius: 50%;
+  background: var(--landing-rubric);
+}
+
+/* ---------- Type ---------- */
+
+.landing__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-block-size: 0;
+  padding-block: clamp(0.5rem, 2vh, 1.5rem) clamp(1.25rem, 6vh, 4.25rem);
+}
+
+.landing__title {
+  margin: 0;
+  font-size: var(--landing-title-size);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.034em;
+}
+.landing__title em {
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+/* Each line is a window the ink rises through; the padding keeps accents,
+   descenders and italic overhang from being cut by that window. */
+.landing__line {
+  display: block;
+  inline-size: fit-content;
+  overflow: hidden;
+  margin-block: -0.1em -0.16em;
+  margin-inline: -0.08em;
+  padding-block: 0.1em 0.16em;
+  padding-inline: 0.08em;
+}
+.landing__line-ink {
+  display: block;
+  white-space: nowrap;
+}
+
+.landing[data-locale="ar"] .landing__title {
+  font-size: calc(var(--landing-title-size) * 1.04);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+.landing[data-locale="ar"] .landing__title em {
+  font-style: normal;
+  letter-spacing: 0;
+}
+.landing[data-locale="ar"] .landing__line {
+  margin-block: -0.2em -0.36em;
+  padding-block: 0.2em 0.36em;
+}
+
+.landing__lede {
+  max-inline-size: 31em;
+  margin: clamp(0.9rem, 3.4vh, 2.1rem) 0 0;
+  color: var(--landing-ink-soft);
+  font-size: clamp(1.0625rem, 0.97rem + 0.42vw, 1.375rem);
+  line-height: 1.46;
+  text-wrap: pretty;
+}
+.landing[data-locale="ar"] .landing__lede {
+  max-inline-size: 29em;
+  font-size: clamp(1.1875rem, 1.08rem + 0.5vw, 1.5625rem);
+  line-height: 1.72;
+}
+
+.landing__action {
+  margin-block-start: clamp(1.2rem, 4.4vh, 2.6rem);
+}
+
+/* ---------- The magnetic call to action ---------- */
+
+.landing__cta {
+  /* Hit area that stays put while the pill travels inside it.
+     Keep above MAX_PULL in magnetic-link.tsx. */
+  --landing-cta-reach: 18px;
+  position: relative;
+  display: inline-flex;
+  margin: calc(var(--landing-cta-reach) * -1);
+  padding: var(--landing-cta-reach);
+  border-radius: 999px;
+  color: var(--landing-on-rubric);
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.landing__cta:focus-visible {
+  outline: none;
+}
+
+.landing__cta-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72em;
+  padding-block: 0.92em;
+  padding-inline: 1.7em 1.45em;
+  border-radius: 999px;
+  background: var(--landing-rubric);
+  font-size: clamp(1.125rem, 1.02rem + 0.44vw, 1.4375rem);
+  line-height: 1;
+  white-space: nowrap;
+  will-change: transform;
+  transition: background-color 0.35s ease;
+}
+.landing[data-locale="ar"] .landing__cta-pill {
+  padding-block: 0.62em 0.86em;
+  font-size: clamp(1.3125rem, 1.2rem + 0.5vw, 1.6875rem);
+  font-weight: 700;
+}
+.landing__cta-label {
+  display: block;
+  will-change: transform;
+}
+.landing__cta-arrow {
+  flex: none;
+  inline-size: 1.02em;
+  block-size: 1.02em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  will-change: transform;
+}
+[dir="rtl"] .landing__cta-arrow {
+  scale: -1 1;
+}
+
+.landing__cta-ring {
+  position: absolute;
+  inset: calc(var(--landing-cta-reach) - 7px);
+  border: 1px solid var(--landing-hair);
+  border-radius: 999px;
+  pointer-events: none;
+  will-change: transform;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+  .landing__cta:hover .landing__cta-pill {
+    background: var(--landing-rubric-deep);
+  }
+  .landing__cta:hover .landing__cta-ring {
+    border-color: var(--landing-ink-soft);
+  }
+}
+.landing__cta:active .landing__cta-pill {
+  background: var(--landing-rubric-deep);
+}
+.landing__cta:focus-visible .landing__cta-ring {
+  border-color: var(--landing-ink);
+  box-shadow: 0 0 0 1px var(--landing-ink);
+}
+@media (forced-colors: active) {
+  .landing__cta-pill {
+    border: 1px solid ButtonText;
+  }
+  .landing__cta:focus-visible .landing__cta-pill {
+    outline: 3px solid Highlight;
+    outline-offset: 3px;
+  }
+}
+
+/* ---------- Foot ---------- */
+
+.landing__foot {
+  display: flex;
+  align-items: flex-end;
+  min-block-size: 1.4rem;
+}
+.landing__foot p {
+  inline-size: fit-content;
+  margin: 0;
+  color: var(--landing-ink-soft);
+  font-size: clamp(0.8125rem, 0.79rem + 0.14vw, 0.9375rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+.landing[data-locale="ar"] .landing__foot p {
+  font-size: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* ---------- Entrance ----------
+   Hidden until the stage sets data-ready (fonts in, field igniting). If script
+   never runs, the failsafe shows everything; <noscript> removes even that wait. */
+
+@keyframes landing-failsafe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes landing-rise {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes landing-ink {
+  from {
+    translate: 0 112%;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+.landing__reveal,
+.landing__line-ink {
+  animation: landing-failsafe 0.6s ease 3.2s both;
+}
+.landing[data-ready] .landing__reveal {
+  animation: landing-rise 1.2s ease 0.55s both;
+}
+.landing[data-ready] .landing__lede {
+  animation-delay: 0.42s;
+}
+.landing[data-ready] .landing__action {
+  animation-delay: 0.3s;
+}
+.landing[data-ready] .landing__line-ink {
+  animation: landing-ink 1.3s var(--landing-ease)
+    calc(0.05s + var(--landing-line, 0) * 0.12s) both;
+}
+
+/* The plate settles once, ring by ring from the pole outward, then rests. */
+@keyframes landing-settle {
+  from {
+    opacity: 0;
+    scale: 0.94;
+  }
+}
+@keyframes landing-fade {
+  from {
+    opacity: 0;
+  }
+}
+.landing__equipotentials circle {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+  animation: landing-failsafe 0.6s ease 3.2s both;
+}
+.landing[data-ready] .landing__equipotentials circle {
+  animation: landing-settle 2.2s var(--landing-ease)
+    calc(0.1s + var(--i) * 0.12s) both;
+}
+.landing__field-lines,
+.landing__pole,
+.landing__pole-ring {
+  animation: landing-failsafe 0.6s ease 3.2s both;
+}
+.landing[data-ready] .landing__field-lines {
+  animation: landing-fade 2.4s ease 0.9s both;
+}
+.landing[data-ready] .landing__pole,
+.landing[data-ready] .landing__pole-ring {
+  animation: landing-fade 1s ease both;
+}
+
+/* ---------- Composition by viewport ---------- */
+
+/* Tall and narrow: the plate opens above, the type and action sit in thumb reach. */
+@media (max-aspect-ratio: 4 / 5) {
+  .landing {
+    --landing-title-size: clamp(2.5rem, min(16.4vw, 10.5vh), 7rem);
+    --landing-pad-y: clamp(0.9rem, 2.4vh, 1.75rem);
+  }
+  .landing__plate {
+    --landing-pole-x: 66%;
+    --landing-pole-y: 27%;
+    --landing-plate-size: max(150vw, 72vh);
+  }
+  .landing__main {
+    padding-block-end: clamp(1.1rem, 4.5vh, 3rem);
+  }
+}
+
+/* Short and wide (a phone on its side): trade the caption for breathing room. */
+@media (max-height: 30rem) {
+  .landing {
+    --landing-title-size: clamp(2.25rem, min(9vw, 17vh), 5rem);
+    --landing-pad-y: 0.75rem;
+  }
+  .landing__main {
+    padding-block: 0.25rem 0.75rem;
+  }
+  .landing__lede {
+    max-inline-size: 38em;
+    margin-block-start: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .landing[data-locale="ar"] .landing__title {
+    font-size: calc(var(--landing-title-size) * 0.86);
+  }
+  .landing[data-locale="ar"] .landing__lede {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  .landing__action {
+    margin-block-start: 0.9rem;
+  }
+  .landing__cta-pill {
+    padding-block: 0.78em;
+  }
+  .landing__foot-note {
+    display: none;
+  }
+}
+@media (max-height: 23rem) {
+  .landing__foot {
+    display: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .landing {
+    --landing-ink-soft: var(--landing-ink);
+    --landing-hair: var(--landing-ink);
+  }
+}
+
+/* ---------- Reduced motion: a still plate ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .landing__reveal,
+  .landing__line-ink,
+  .landing[data-ready] .landing__reveal,
+  .landing[data-ready] .landing__line-ink {
+    animation: none;
+  }
+  .landing__languages a,
+  .landing__languages a::after,
+  .landing__cta-pill,
+  .landing__cta-ring,
+  .landing__theme .theme-toggle__button {
+    transition: none;
+  }
+  .landing__equipotentials circle,
+  .landing[data-ready] .landing__equipotentials circle,
+  .landing__field-lines,
+  .landing__pole,
+  .landing__pole-ring,
+  .landing[data-ready] .landing__field-lines,
+  .landing[data-ready] .landing__pole,
+  .landing[data-ready] .landing__pole-ring {
+    animation: none;
+  }
+}

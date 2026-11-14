@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { fontVariables } from "@/fonts";
 import { direction, isLocale, locales } from "@/lib/i18n";
+import { themeScript } from "@/lib/theme";
 import "@/styles/base.css";
 
 export const metadata: Metadata = {
-  title: { default: "StudyLike Genius", template: "%s | StudyLike Genius" },
-  description: "StudyLike Genius",
+  title: { default: "StudyMAXIN", template: "%s | StudyMAXIN" },
 };
 export const dynamicParams = false;
 
@@ -23,7 +24,16 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   return (
-    <html lang={locale} dir={direction(locale)}>
+    // data-theme is set before paint by themeScript, so React must not reconcile it.
+    <html
+      lang={locale}
+      dir={direction(locale)}
+      className={fontVariables}
+      suppressHydrationWarning
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>{children}</body>
     </html>
   );

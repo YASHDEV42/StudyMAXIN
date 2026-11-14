@@ -5,10 +5,16 @@ import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/lib/i18n";
 import { switchLocale } from "@/lib/routes";
 
-export function LanguageSwitch({ locale }: { locale: Locale }) {
+export function LanguageSwitch({
+  locale,
+  className = "language-switch",
+}: {
+  locale: Locale;
+  className?: string;
+}) {
   const pathname = usePathname();
   return (
-    <nav aria-label={locale === "ar" ? "اللغة" : "Dil"}>
+    <nav className={className} aria-label={locale === "ar" ? "اللغة" : "Dil"}>
       {locales.map((target) => (
         <Link
           key={target}

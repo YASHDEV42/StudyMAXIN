@@ -1,0 +1,71 @@
+{
+  "id": "firewalls-segmentation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Güvenlik Duvarları, DMZ ve Ağ Segmentasyonu",
+    "ar": "الجدران النارية وتقسيم الشبكات وDMZ"
+  },
+  "order": 60,
+  "prerequisites": ["zero-trust-architecture", "security-design-principles"],
+  "related": ["network-reconnaissance-nmap", "intrusion-detection-prevention"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الجدران النارية وتقسيم الشبكات وDMZ",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 33,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Duvarları, DMZ ve Ağ Segmentasyonu",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 33,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Duvarları, DMZ ve Ağ Segmentasyonu — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 33,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

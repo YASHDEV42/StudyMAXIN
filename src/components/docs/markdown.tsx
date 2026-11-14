@@ -2,6 +2,7 @@ import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Content } from "@/lib/content/schema";
 import type { Locale } from "@/lib/i18n";
+import { remarkHeadingIds } from "@/lib/docs/markdown";
 import { contentLink } from "@/lib/routes";
 
 export function ContentMarkdown({
@@ -15,7 +16,7 @@ export function ContentMarkdown({
 }) {
   return (
     <Markdown
-      remarkPlugins={[remarkGfm]}
+      remarkPlugins={[remarkGfm, remarkHeadingIds]}
       skipHtml
       urlTransform={(url, key) =>
         key === "src" && /^https:\/\//.test(url)
@@ -23,6 +24,17 @@ export function ContentMarkdown({
           : (contentLink(url, locale, content) ?? "")
       }
       components={{
+        a: ({ href, children }) => (
+          <a
+            href={
+              href?.startsWith("/")
+                ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${href}`
+                : href
+            }
+          >
+            {children}
+          </a>
+        ),
         pre: ({ children }) => <pre dir="ltr">{children}</pre>,
         code: ({ children, className }) => (
           <code dir="ltr" className={className}>

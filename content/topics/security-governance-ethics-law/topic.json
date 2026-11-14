@@ -1,0 +1,51 @@
+{
+  "id": "security-governance-ethics-law",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Güvenlik Yönetişimi, Meslek Etiği ve Hukuk",
+    "ar": "حوكمة الأمن وأخلاقيات المهنة والقانون"
+  },
+  "order": 130,
+  "prerequisites": ["security-mindset", "security-economics-human-factor"],
+  "related": [
+    "risk-management",
+    "identity-access-accountability",
+    "threat-actors"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حوكمة الأمن والأخلاق والقانون: المعرفة معها مسؤولية",
+      "summary": "اربط قرارات الإدارة بإطار NIST CSF 2.0، وافهم حدود الإذن المهني والخطوط العامة للقانون التركي وحماية البيانات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 6, "to": 7 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Yönetişimi, Etik ve Hukuk: Bilgi Sorumluluk Getirir",
+      "summary": "Yönetim kararlarını NIST CSF 2.0 ile ilişkilendir; açık izin, sorumlu açıklama ve Türkiye’deki hukuk çerçevesini ayırt et.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 6, "to": 7 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Yönetişimi, Etik ve Hukuk — Sınav Özeti",
+      "summary": "Yönetişim tanımı, NIST CSF 2.0’ın altı işlevi, meslek etiği ilkeleri ve TCK/KVKK/GDPR ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 6, "to": 7 }] }
+      ]
+    }
+  ]
+}

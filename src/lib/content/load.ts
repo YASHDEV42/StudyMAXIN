@@ -108,6 +108,29 @@ export async function loadContent(
   };
   const errors = validateContent(content);
   for (const source of content.sources) {
+    if (source.location.kind === "private") {
+      const directory = path.join(contentRoot, "..", "materials");
+      const file = path.join(directory, source.location.filename);
+      try {
+        if (
+          (await lstat(directory)).isSymbolicLink() ||
+          !(await lstat(file)).isFile()
+        )
+          throw new Error("Private original must be a regular file");
+        const bytes = await readFile(file);
+        if (
+          !bytes.subarray(0, 5).equals(Buffer.from("%PDF-")) ||
+          createHash("sha256").update(bytes).digest("hex") !==
+            source.location.sha256
+        )
+          throw new Error("Private original PDF header or SHA-256 mismatch");
+      } catch (error) {
+        // CI and public checkouts need no copyrighted originals. If present, verify them.
+        if ((error as NodeJS.ErrnoException).code !== "ENOENT")
+          errors.push(`source ${source.id}: ${String(error)}`);
+      }
+      continue;
+    }
     if (source.location.kind !== "local") continue;
     const file = path.join(publicRoot, source.location.path);
     try {

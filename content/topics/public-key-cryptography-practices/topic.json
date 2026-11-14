@@ -1,0 +1,71 @@
+{
+  "id": "public-key-cryptography-practices",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Açık Anahtar Kriptografisinde İyi Uygulamalar",
+    "ar": "أفضل ممارسات المفتاح العام"
+  },
+  "order": 150,
+  "prerequisites": ["pqc-algorithms-migration", "key-management-lifecycle"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أخطاء بتوقعنا وحلولها",
+      "summary": "خريطة تربط أخطاء RSA وECDSA وDH والعشوائية والقنوات الجانبية وإدارة المفاتيح بممارسات تخفف المخاطر.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Açık Anahtar Kriptografisinde Tuzaklar",
+      "summary": "Bölümde görülen uygulama hatalarını sonuçları ve azaltıcı ilkelerle eşleştirir; sınanmış kütüphane kullanımını vurgular.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Açık Anahtar Kriptografisinde İyi Uygulamalar — Sınav Özeti",
+      "summary": "Bölümde görülen uygulama hatalarını sonuçları ve azaltıcı ilkelerle eşleştirir; sınanmış kütüphane kullanımını vurgular.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

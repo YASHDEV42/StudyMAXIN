@@ -1,0 +1,75 @@
+{
+  "id": "log4shell-trust-boundaries",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Log4Shell: Günlük Verisinden Çalıştırılan Koda",
+    "ar": "Log4Shell: كيف نص السجل صار طريقًا لتنفيذ كود؟"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [
+    "security-mindset",
+    "security-core-vocabulary",
+    "threat-modeling-stride"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Log4Shell: كيف نص السجل صار طريقًا لتنفيذ كود؟",
+      "summary": "افهم سلسلة Log4Shell وحدود الثقة بين السجل وJNDI وJVM، والفرق بين تخفيف مؤقت وإصلاح الخلل.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 13,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Log4Shell: Günlük Verisinden Çalıştırılan Koda",
+      "summary": "Log4Shell zincirini, JNDI ve JVM koşullarını, ardışık düzeltmeleri ve azaltım–yama ayrımını mekanizmasıyla öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 13,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Log4Shell: Günlük Verisinden Çalıştırılan Koda — Sınav Özeti",
+      "summary": "Temel mekanizmalar, tarihsel sıra, kavram ayrımları ve önemli koşullar için hızlı tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 13,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

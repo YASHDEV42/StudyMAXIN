@@ -1,0 +1,55 @@
+{
+  "id": "dependency-supply-chain-log4shell",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Bağımlılık Güvenliği ve Log4Shell",
+    "ar": "أمن الاعتماديات وLog4Shell"
+  },
+  "order": 2,
+  "prerequisites": [
+    "log4shell-trust-boundaries",
+    "heartbleed-memory-disclosure",
+    "secure-web-design"
+  ],
+  "related": [
+    "key-management-lifecycle",
+    "pqc-algorithms-migration",
+    "ssrf-cloud-metadata"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أمن الاعتماديات وسلسلة توريد البرمجيات",
+      "summary": "لماذا تنتقل ثغرات المكتبات إلى التطبيقات، وكيف تكشف حالة Log4Shell مخاطر المكونات والتحديثات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 28, "to": 31 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bağımlılık Güvenliği ve Log4Shell",
+      "summary": "Geçişli bağımlılıkları, Log4Shell’in mekanizmasını ve yazılım tedarik zinciri savunmalarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 28, "to": 31 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bağımlılık Güvenliği — Sınav Özeti",
+      "summary": "Log4Shell, SBOM, geçişli bağımlılık ve paket kaynağı risklerinin kısa özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 28, "to": 31 }] }
+      ]
+    }
+  ]
+}

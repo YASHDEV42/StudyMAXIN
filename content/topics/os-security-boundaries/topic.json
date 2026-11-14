@@ -1,0 +1,74 @@
+{
+  "id": "os-security-boundaries",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "İşletim Sistemi: Güven Sınırları",
+    "ar": "حدود الثقة في نظام التشغيل"
+  },
+  "order": 0,
+  "prerequisites": ["network-foundations-and-protocol-layers"],
+  "related": [
+    "network-foundations-and-protocol-layers",
+    "side-channel-attacks"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حدود الثقة في نظام التشغيل",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 15,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi: Güven Sınırları",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 15,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi: Güven Sınırları — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 15,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

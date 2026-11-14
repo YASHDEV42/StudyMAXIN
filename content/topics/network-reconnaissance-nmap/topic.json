@@ -1,0 +1,71 @@
+{
+  "id": "network-reconnaissance-nmap",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Ağ Keşfi, Port Taraması ve nmap",
+    "ar": "استكشاف الشبكات ومسح المنافذ باستخدام nmap"
+  },
+  "order": 50,
+  "prerequisites": ["network-foundations-and-protocol-layers"],
+  "related": ["packet-capture-wireshark", "firewalls-segmentation"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "استكشاف الشبكات ومسح المنافذ باستخدام nmap",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Ağ Keşfi, Port Taraması ve nmap",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Ağ Keşfi, Port Taraması ve nmap — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

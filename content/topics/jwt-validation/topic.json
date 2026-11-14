@@ -1,0 +1,71 @@
+{
+  "id": "jwt-validation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "JWT'yi Güvenli Doğrulama",
+    "ar": "التحقق الآمن من JWT"
+  },
+  "order": 7,
+  "prerequisites": ["openid-connect-jwt", "digital-signatures"],
+  "related": ["session-security", "oauth-authorization"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "وقّعته؟ طيب لمين ومتى؟",
+      "summary": "تحقق من الخوارزمية والتوقيع وiss/aud/exp، وافهم أخطاء none وخلط الخوارزميات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "JWT Doğrulamasında Algoritma ve Claim Kontrolü",
+      "summary": "İmzayı, algoritma sabitlemesini, issuer/audience/süre iddialarını ve yaygın doğrulama hatalarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "JWT Doğrulama — Sınav Özeti",
+      "summary": "Sunucu tarafı algoritma sabitleme ve gerekli claim kontrolleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

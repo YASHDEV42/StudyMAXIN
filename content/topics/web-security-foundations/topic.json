@@ -1,0 +1,75 @@
+{
+  "id": "web-security-foundations",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Web’in Saldırı Yüzeyi, HTTP ve Tarayıcı Sınırları",
+    "ar": "سطح هجوم الويب وHTTP وحدود المتصفح"
+  },
+  "order": 8,
+  "prerequisites": [
+    "session-security",
+    "tls-13",
+    "identity-authentication-authorization"
+  ],
+  "related": ["cross-site-scripting", "csrf"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الويب مفتوح… ولهيك صار سطح هجوم واسع",
+      "summary": "ليش أمان الويب مهم؟",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 13,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Web’in Saldırı Yüzeyi, HTTP ve Tarayıcı Sınırları",
+      "summary": "Web’in saldırı yüzeyi neden geniş?",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 13,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Web’in Saldırı Yüzeyi, HTTP ve Tarayıcı Sınırları — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 13,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

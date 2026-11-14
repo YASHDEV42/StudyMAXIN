@@ -1,0 +1,71 @@
+{
+  "id": "encrypt-then-mac",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Şifrele-sonra-MAC ile Güvenli Birleştirme",
+    "ar": "التشفير ثم MAC: ترتيب التحقق مهم"
+  },
+  "order": 75,
+  "prerequisites": ["message-authentication", "block-cipher-modes"],
+  "related": ["cryptographic-hash-functions"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش منتأكد من MAC قبل ما نفك التشفير؟",
+      "summary": "افهم ترتيب encrypt-then-MAC وعلاقته بـAEAD ورفض البيانات المعدلة قبل فكها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Encrypt-then-MAC: Güvenli Birleştirme Sırası",
+      "summary": "Şifreleme ve MAC’in sırasını; önce doğrulamanın padding oracle ve çözme sırasında bilgi sızmasını nasıl azalttığını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Şifrele-sonra-MAC ile Güvenli Birleştirme — Sınav Özeti",
+      "summary": "Şifreleme ve MAC’in sırasını; önce doğrulamanın padding oracle ve çözme sırasında bilgi sızmasını nasıl azalttığını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

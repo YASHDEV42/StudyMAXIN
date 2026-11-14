@@ -35,7 +35,7 @@ test("every generated route resolves; empty catalogs and unknown routes are safe
   assert.equal(resolveDocsRoute(["glossary", "extra"], content), undefined);
   assert.deepEqual(
     docsSegments({ ...content, courses: [], topics: [], glossary: [] }),
-    [[], ["glossary"]],
+    [[], ["glossary"], ["search"], ["labs"]],
   );
   content.topics[0].documents.forEach((document) => {
     document.status = "draft";

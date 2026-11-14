@@ -1,0 +1,9 @@
+## Kaynağı denetlemek neden yetmeyebilir?
+
+Ken Thompson’ın “Reflections on Trusting Trust” düşünce deneyi, kaynak kodu incelense bile çalıştırılabilir programın güvenilirliğinin otomatik kanıtlanmadığını gösterir. Bir derleyici belirli bir kaynak kalıbını gördüğünde arka kapı ekleyecek şekilde değiştirilmiş olabilir; daha da inceliklisi, derleyicinin kendi kaynak kodu “temiz” görünürken, derlenmiş derleyici bu davranışı sonraki derleyiciye yeniden ekleyebilir. Böylece güvenilmeyen davranış, kaynakta görünmeden ikili dosyada kalır.
+
+Zincir: derleyici T0 saldırgan davranışı içerir → temiz görünen kaynak derleyici T0 ile derlenir → çıkan derleyici T1 davranışı taşır → T1 hedef programı derlerken arka kapıyı enjekte eder. Kaynağın gösterdiği kod parçaları bu fikri pedagojik olarak kurar; tek başına her gerçek derleyicinin tehlikeli olduğunu kanıtlamaz. Güven varsayımı derleyici, assembler, linker, kütüphaneler, build scriptleri, CI kimlik bilgileri ve yayımlanan ikiliye kadar uzanır.
+
+Reproducible builds, bağımsız ortamda aynı girdilerden aynı ikiliyi üretip karşılaştırmaya yardım eder; ancak bütün derleme zincirinin güvenilirliğini tek başına kanıtlamaz. Diverse double compiling (DDC) fikri, iki bağımsız derleyici zinciriyle derleyip beklenen eşitliği sınayarak derleyici arka kapılarını araştırır; bootstrap kökü varsayımlarını dikkatle ele almak gerekir. İmzalı sürüm, provenance/attestation, bağımlılık kilidi ve izole CI izlenebilirliği artırır; imza sadece imzalayana güveni taşır.
+
+Bu düşünce deneyi, önceki bölümlerdeki güven sınırlarının üretim araçlarına uygulanmasıdır: “kaynağa baktım” ile “üretilen ikiliyi ve onu üreten zinciri doğruladım” aynı iddia değildir. Savunma katmanı; kaynağın incelenmesi, build tekrar üretilebilirliği, bağımsız karşılaştırma, imza doğrulaması ve tedarikçi/CI erişim denetimidir.

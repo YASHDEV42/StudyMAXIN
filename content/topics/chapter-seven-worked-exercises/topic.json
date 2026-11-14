@@ -1,0 +1,79 @@
+{
+  "id": "chapter-seven-worked-exercises",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Ağ Güvenliği: Çözümlü Alıştırmalar ve Bölüm Sentezi",
+    "ar": "تمارين محلولة وخلاصة أمن الشبكات"
+  },
+  "order": 120,
+  "prerequisites": [
+    "network-foundations-and-protocol-layers",
+    "intrusion-detection-prevention"
+  ],
+  "related": [
+    "tcp-handshake-syn-flood",
+    "ddos-defense",
+    "firewalls-segmentation",
+    "wireless-security-wpa3-krack"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تمارين محلولة وخلاصة أمن الشبكات",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 8,
+              "to": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Ağ Güvenliği: Çözümlü Alıştırmalar ve Bölüm Sentezi",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 8,
+              "to": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Ağ Güvenliği: Çözümlü Alıştırmalar ve Bölüm Sentezi — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 8,
+              "to": 12
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

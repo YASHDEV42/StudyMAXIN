@@ -1,0 +1,74 @@
+{
+  "id": "chapter-three-review",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Kriptografi II: Bölüm Özeti",
+    "ar": "مراجعة التشفير II"
+  },
+  "order": 170,
+  "prerequisites": [
+    "public-key-cryptography-practices",
+    "chapter-three-worked-exercises"
+  ],
+  "related": ["chapter-three-worked-exercises"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الخيط اللي بيربط مواضيع الفصل",
+      "summary": "مراجعة مترابطة من مشكلة توزيع المفاتيح إلى PKI وTLS وأخطاء التطبيق وانتقال ما بعد الكم، مع أسئلة استرجاع ذاتي.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 10,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kriptografi II: Bölüm Özeti ve Kendini Sına",
+      "summary": "Bölümün ana kavramlarını bir güven mimarisi olarak birbirine bağlar ve kaynakta verilen on öz denetim sorusunu cevap anahtarıyla çözer.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 10,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kriptografi II: Bölüm Özeti — Sınav Özeti",
+      "summary": "Bölümün ana kavramlarını bir güven mimarisi olarak birbirine bağlar ve kaynakta verilen on öz denetim sorusunu cevap anahtarıyla çözer.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 10,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

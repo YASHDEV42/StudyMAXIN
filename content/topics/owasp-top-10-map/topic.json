@@ -1,0 +1,71 @@
+{
+  "id": "owasp-top-10-map",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "OWASP Top 10: Riskleri Haritalamak",
+    "ar": "خريطة مخاطر OWASP Top 10"
+  },
+  "order": 4,
+  "prerequisites": ["security-core-vocabulary", "risk-management"],
+  "related": ["sql-injection", "broken-access-control-idor"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "خريطة مخاطر OWASP Top 10",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 26,
+              "to": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "OWASP Top 10: Riskleri Haritalamak",
+      "summary": "OWASP Top 10, web uygulaması risklerini konuşmak ve önceliklendirmek için bir farkındalık listesidir; eksiksiz bir güvenlik standardı ya da tüm uygulamalar için birebir sıralama değildir. 2021 sürümün",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 26,
+              "to": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OWASP Top 10: Riskleri Haritalamak — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 26,
+              "to": 28
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

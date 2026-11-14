@@ -1,0 +1,52 @@
+{
+  "id": "cyber-kill-chain",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Saldırı Yaşam Döngüsü: Cyber Kill Chain",
+    "ar": "دورة الهجوم: سلسلة الهجوم السيبراني"
+  },
+  "order": 110,
+  "prerequisites": ["threat-actors", "security-design-principles"],
+  "related": [
+    "threat-modeling-stride",
+    "threat-prioritization-methods",
+    "attack-trees-portal-model",
+    "security-history"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "سلسلة الهجوم السيبراني: سبع فرص لقطع الهجوم",
+      "summary": "تتبّع مراحل الهجوم من الاستطلاع إلى تحقيق الهدف، وافهم كيف تمنح كل مرحلة فرصة دفاعية وما حدود النموذج الخطي.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 1, "to": 2 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Cyber Kill Chain: Saldırıyı Yedi Aşamada Kesmek",
+      "summary": "Keşiften hedef eylemine uzanan aşamaları ve savunma fırsatlarını incele; modelin doğrusal varsayımlarını değerlendir.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 1, "to": 2 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Cyber Kill Chain — Sınav Özeti",
+      "summary": "Yedi saldırı aşaması, her aşamanın amacı, örnek ve zinciri kesebilecek savunma noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 1, "to": 2 }] }
+      ]
+    }
+  ]
+}

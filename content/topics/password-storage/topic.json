@@ -1,0 +1,71 @@
+{
+  "id": "password-storage",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Parola Saklama: Karma Yetmez",
+    "ar": "تخزين كلمات المرور: التجزئة وحدها ما بتكفي"
+  },
+  "order": 80,
+  "prerequisites": ["cryptographic-hash-functions"],
+  "related": ["randomness-foundations"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش SHA-256 مش طريقة لتخزين كلمات المرور؟",
+      "summary": "قارن salt وpepper ودوال كلمات المرور، وافهم إعدادات Argon2id.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Parola Saklama: Karma Yetmez",
+      "summary": "Salt, yavaşlık ve bellek maliyetinin parola saldırılarını nasıl etkisizleştirdiğini; PBKDF2, bcrypt, scrypt ve Argon2id farklarını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Parola Saklama: Karma Yetmez — Sınav Özeti",
+      "summary": "Salt, yavaşlık ve bellek maliyetinin parola saldırılarını nasıl etkisizleştirdiğini; PBKDF2, bcrypt, scrypt ve Argon2id farklarını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "system-hardening",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Sistem Sertleştirme ve Güvenli Taban Yapılandırma",
+    "ar": "تقوية النظام والتكوين الآمن"
+  },
+  "order": 8,
+  "prerequisites": ["hardware-root-of-trust"],
+  "related": ["sandboxing-isolation", "secure-sdlc-devsecops"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تقوية النظام والتكوين الآمن",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sistem Sertleştirme ve Güvenli Taban Yapılandırma",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sistem Sertleştirme ve Güvenli Taban Yapılandırma — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

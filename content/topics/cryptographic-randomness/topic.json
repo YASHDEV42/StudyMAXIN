@@ -1,0 +1,71 @@
+{
+  "id": "cryptographic-randomness",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Rastgeleliğin Sessiz Gücü: Anahtarlar Nereden Gelir?",
+    "ar": "قوة العشوائية الخفية: من وين بيجوا المفاتيح؟"
+  },
+  "order": 50,
+  "prerequisites": ["randomness-foundations", "elliptic-curve-cryptography"],
+  "related": ["elliptic-curve-cryptography"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش جودة العشوائية بتحدد قوة المفتاح؟",
+      "summary": "اربط CSPRNG بمفاتيح RSA وDH وnonce، وشوف كيف أخطاء Debian وDual EC كشفت الخطر.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 32,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kriptografik Rastgelelik: Anahtarlar Nereden Gelir?",
+      "summary": "PRNG ile CSPRNG farkını; Debian OpenSSL olayını ve Dual EC DRBG şüphelerini kaynak sınırlarıyla açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 32,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Rastgeleliğin Sessiz Gücü: Anahtarlar Nereden Gelir? — Sınav Özeti",
+      "summary": "PRNG ile CSPRNG farkını; Debian OpenSSL olayını ve Dual EC DRBG şüphelerini kaynak sınırlarıyla açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 32,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

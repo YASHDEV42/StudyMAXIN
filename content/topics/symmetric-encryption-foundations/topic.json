@@ -1,0 +1,71 @@
+{
+  "id": "symmetric-encryption-foundations",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Simetrik Şifrelemenin Temeli",
+    "ar": "أساسيات التشفير المتماثل"
+  },
+  "order": 30,
+  "prerequisites": ["modern-cryptography-rules"],
+  "related": ["aes-encryption"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بيشتغل التشفير المتماثل؟",
+      "summary": "افهم الفرق بين تشفير الكتل وتشفير التدفق، وليش لازم نضيف سلامة للبيانات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Simetrik Şifrelemenin Temeli",
+      "summary": "Blok ve akış şifrelerinin çalışma biçimini, temel mimarileri ve kullanım sınırlarını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Simetrik Şifrelemenin Temeli — Sınav Özeti",
+      "summary": "Blok ve akış şifrelerinin çalışma biçimini, temel mimarileri ve kullanım sınırlarını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

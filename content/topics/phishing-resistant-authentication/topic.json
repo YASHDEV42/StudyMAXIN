@@ -1,0 +1,51 @@
+{
+  "id": "phishing-resistant-authentication",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "FIDO2, WebAuthn ve Passkey",
+    "ar": "FIDO2 وWebAuthn ومفاتيح المرور"
+  },
+  "order": 3,
+  "prerequisites": ["public-key-foundations", "multi-factor-authentication"],
+  "related": [
+    "pki-certificates",
+    "session-security",
+    "password-attacks-and-entropy"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف الـPasskey بتربط تسجيل الدخول بالموقع؟",
+      "summary": "اتبع تسجيل مفتاح عام والتحقق بالتحدي والتوقيع، وافهم مقاومة التصيد وحدود هذا الضمان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 26, "to": 30 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "FIDO2 ve Passkey ile Oltalamaya Dayanıklı Giriş",
+      "summary": "WebAuthn kayıt ve doğrulama törenlerinde özel anahtar, challenge ve origin bağının rolünü açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 26, "to": 30 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "FIDO2 ve Passkey — Sınav Özeti",
+      "summary": "Kayıt/doğrulama adımları, temel WebAuthn verileri ve güvenlik sınırları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 26, "to": 30 }] }
+      ]
+    }
+  ]
+}

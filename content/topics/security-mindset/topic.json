@@ -1,0 +1,71 @@
+{
+  "id": "security-mindset",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Güvenlik Zihniyeti: Varsayımları ve Hata Durumlarını Sorgulamak",
+    "ar": "التفكير الأمني: اسأل عن الافتراضات وحالات الفشل"
+  },
+  "order": 5,
+  "prerequisites": [],
+  "related": ["log4shell-trust-boundaries", "threat-modeling-stride"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "التفكير الأمني: اسأل عن الافتراضات وحالات الفشل",
+      "summary": "ميّز متطلبات الوظيفة عن شروط المنع، وافهم كيف المهاجم بيتكيّف وليش سلوك الفشل جزء من التصميم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 16,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Zihniyeti: Varsayımları ve Hata Durumlarını Sorgulamak",
+      "summary": "Pozitif ve negatif gereksinimleri, uyarlanan saldırganı ve güvenli hata davranışını günlük bir örnek üzerinden ayır.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 16,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Zihniyeti: Varsayımları ve Hata Durumlarını Sorgulamak — Sınav Özeti",
+      "summary": "Temel mekanizmalar, tarihsel sıra, kavram ayrımları ve önemli koşullar için hızlı tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 16,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

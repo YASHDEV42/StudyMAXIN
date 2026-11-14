@@ -1,0 +1,71 @@
+{
+  "id": "message-authentication",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Mesaj Kimlik Doğrulama: MAC ve HMAC",
+    "ar": "مصادقة الرسائل: MAC وHMAC"
+  },
+  "order": 70,
+  "prerequisites": ["cryptographic-hash-functions", "block-cipher-modes"],
+  "related": ["password-storage"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منعرف إن الرسالة ما تغيّرت؟",
+      "summary": "فرّق بين السرية والتوثيق، وافهم MAC وHMAC وخيار encrypt-then-MAC.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 46,
+              "to": 47
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "MAC ve HMAC ile Mesaj Doğrulama",
+      "summary": "MAC’in paylaşılan anahtarla bütünlük sağladığını, HMAC’in yapısını ve güvenli birleştirme sırasını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 46,
+              "to": 47
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Mesaj Kimlik Doğrulama: MAC ve HMAC — Sınav Özeti",
+      "summary": "MAC’in paylaşılan anahtarla bütünlük sağladığını, HMAC’in yapısını ve güvenli birleştirme sırasını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 46,
+              "to": 47
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

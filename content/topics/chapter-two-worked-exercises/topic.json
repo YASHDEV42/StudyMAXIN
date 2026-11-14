@@ -1,0 +1,81 @@
+{
+  "id": "chapter-two-worked-exercises",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Kriptografi I: Çözümlü Alıştırmalar",
+    "ar": "تطبيقات محلولة: التشفير ١"
+  },
+  "order": 110,
+  "prerequisites": [
+    "symmetric-encryption-foundations",
+    "aes-encryption",
+    "block-cipher-modes",
+    "cryptographic-hash-functions",
+    "message-authentication",
+    "password-storage",
+    "randomness-foundations",
+    "quantum-symmetric-impact",
+    "encrypt-then-mac"
+  ],
+  "related": ["cryptography-history", "modern-cryptography-rules"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منربط أفكار التشفير بالأمثلة؟",
+      "summary": "راجع حلول القسم 2.11: XOR، AES، الأوضاع، التجزئة، كلمات المرور والكم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kriptografi I — Çözümlü Alıştırmalar",
+      "summary": "Kaynağın 12 çözümlü sorusunu işlem adımlarıyla pekiştir; öz sınav sorularını ve yanıt anahtarını kullan.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kriptografi I: Çözümlü Alıştırmalar — Sınav Özeti",
+      "summary": "Kaynağın 12 çözümlü sorusunu işlem adımlarıyla pekiştir; öz sınav sorularını ve yanıt anahtarını kullan.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "access-control-models",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Erişim Kontrol Modelleri",
+    "ar": "نماذج التحكم بالوصول"
+  },
+  "order": 9,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "security-design-principles"
+  ],
+  "related": [
+    "oauth-authorization",
+    "zero-trust-architecture",
+    "risk-management"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مين بيقرر مين يوصل لأي مورد؟",
+      "summary": "افهم مصفوفة الوصول وACL والقدرات، وقارن DAC وMAC وRBAC وABAC ونموذجي Bell–LaPadula وBiba.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Erişim Kontrol Modelleri ve Bilgi Akışı",
+      "summary": "Erişim matrisi, ACL/capability temsilleri, dört politika modeli ve gizlilik/bütünlük kurallarını karşılaştırır.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Erişim Kontrolü — Sınav Özeti",
+      "summary": "DAC/MAC/RBAC/ABAC ve Bell–LaPadula/Biba kurallarını karşılaştırır.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

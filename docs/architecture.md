@@ -54,3 +54,29 @@ The [react-markdown security guidance](https://github.com/remarkjs/react-markdow
 - No fonts are fetched during builds. System Arabic/Turkish-capable font stacks are the foundation; final typography and self-hosted fonts belong to Phase 2/3.
 - Search indexes, glossary filters/TSV, Markdown copy bundles, polished reading UI, and a basic Labs section belong to Issue #2. The catalog already exposes associations, citations, bodies, and relationships needed by those features. No search engine is selected prematurely.
 - Issue #3 owns the marketing entry/landing presentation and uses the shared route helper for its CTA. See [integration.md](integration.md).
+
+## Phase 2 addendum — 2026-11-13
+
+The Phase 1 decisions above remain in force. The production catalog is no longer empty; consult the coverage ledger for actual source scope rather than the historical status statements above.
+
+- Docs remain under the optional catch-all route and static export. Search and Labs extend the same route registry. Landing/entry presentation, base styles and shared tokens were left untouched.
+- No docs framework migration: Server Components render Markdown and relationships; small Client Components own search, glossary controls, copy/download, sidebar state and local PDF selection. The Markdown parser is used at build time for search indexing and exports, outside the search/filter client graph.
+- A single publication projection removes draft documents, draft-only topics and unused source records before discovery or export. `getContent()` remains server-only; no filesystem loader reaches a client graph. The search index is built per UI locale over published document text and associated TR/EN terms. Search is deterministic lexical AND matching with Turkish/Arabic normalization and title/term ranking, not semantic search or stemming. Results identify their actual content language.
+- A necessary additive source-schema variant, `private`, supports reviewed copyrighted originals without redistributing them. It records a safe filename, physical page count, SHA-256 and reason. Existing `local`, `remote`, `unavailable` variants keep their meaning; existing records require no migration. Schema version remains 1. Present private originals must match the digest/header; missing private bytes are allowed in public/CI checkouts because review evidence and fingerprints are durable. This does not automatically prove factual fidelity or page counts.
+- Cited private originals expose no hosted URL. A browser-local picker verifies the fingerprint and creates a temporary blob PDF URL for the cited physical page. No source upload or backend is added. Local/remote public citations retain ordinary page links. This tradeoff preserves traceability while redistribution permission is unresolved.
+- Markdown and bundles include provenance and page references; parsed concept links become site-relative URLs. TSV exports preserve both examples and neutralize formula-like cells. No progress/accounts/chat/exercise system was added. Labs accurately states that the separate workbook was not supplied.
+- Pinned `@playwright/test` 1.65.0 is development-only, with browser acceptance over exported output. Python 3 serves that disposable preview; production remains static. `npm run check` retains its existing checks; `npm run test:e2e` runs browser acceptance after building. The matching-private-original test is conditional on those bytes being present.
+
+## UI/UX refinement addendum — 2026-11-14
+
+Earlier decisions stand. This pass replaces several Phase 2/3 presentation choices; the integration contract records the file-level changes.
+
+- **Themes.** Light and dark palettes are shared tokens. The system preference is the default; an explicit choice is stored in `localStorage` and applied by a tiny inline `<head>` script before paint (no cookie, server or account). This supersedes the earlier "docs stay light, no theme system" note.
+- **Search in the navbar.** A native `<dialog>` command palette (combobox + listbox ARIA, `⌘K` on Apple platforms, `Ctrl K` elsewhere, `/` outside text fields) reuses the existing lexical search. No UI library was added: native `dialog` provides the top layer, inert background, focus return and Escape. The index ships as a static per-locale JSON route handler fetched on first use, which also removed the ~2 MB inline index from the search page.
+- **Sources.** The browser-local PDF picker was removed from reading pages. Citations show the source title and physical PDF pages only. The `private` source variant, SHA-256 validation, citation bounds checks and export provenance are unchanged.
+- **Hero.** The canvas field was replaced by a static SVG plate (see `landing.md`).
+- **No new dependencies.**
+
+## StudyMAXIN identity and hosting — 2026-11-14
+
+Current identity is **StudyMAXIN**; earlier phase notes describe historical states. See [deployment readiness](deployment.md) for build-time base paths, optional origin/canonical/hreflang configuration, and separate GitHub Pages/Vercel instructions. Static export and stable content routes remain unchanged.

@@ -1,0 +1,83 @@
+{
+  "id": "chapter-four-synthesis",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "4. Bölüm: Bütünleştirme ve Çözümlü Alıştırmalar",
+    "ar": "الفصل الرابع: الربط والتمارين المحلولة"
+  },
+  "order": 11,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "password-attacks-and-entropy",
+    "multi-factor-authentication",
+    "phishing-resistant-authentication",
+    "sso-kerberos-federation",
+    "oauth-authorization",
+    "openid-connect-jwt",
+    "session-security",
+    "access-control-models",
+    "jwt-validation",
+    "zero-trust-architecture"
+  ],
+  "related": ["chapter-three-review", "chapter-three-worked-exercises"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من إثبات الهوية لقرار الوصول",
+      "summary": "اربط وسائل الدخول والتفويض والجلسة، وراجع مسائل الإنتروبيا وTOTP وJWT والكوكيز والنماذج الأمنية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kimlikten Erişim Kararına: Bölüm 4 Uygulamaları",
+      "summary": "Bölümün temel katmanlarını birbirine bağlar ve entropi, MFA, JWT, oturum, RBAC/ABAC sorularını çözümler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "4. Bölüm Bütünleştirme — Sınav Özeti",
+      "summary": "Bölümün kısa kavram haritası, seçilmiş hesaplar ve öz-sınama yanıtlarını içerir.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
