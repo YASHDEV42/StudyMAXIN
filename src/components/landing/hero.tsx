@@ -84,12 +84,7 @@ export function Hero({
         </div>
       </main>
 
-      <footer className="landing__foot landing__reveal">
-        <p>
-          {copy.figure}{" "}
-          <span className="landing__foot-note">{copy.figureNote}</span>
-        </p>
-      </footer>
+      <footer className="landing__foot landing__reveal"></footer>
 
       <noscript>
         <style>{`.landing .landing__reveal,.landing .landing__line-ink{animation:none!important;opacity:1!important;transform:none!important}.landing .landing__plate *{animation:none!important}`}</style>
