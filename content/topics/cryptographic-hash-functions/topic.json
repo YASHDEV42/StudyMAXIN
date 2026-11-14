@@ -1,0 +1,71 @@
+{
+  "id": "cryptographic-hash-functions",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Karma Fonksiyonları: Verinin Parmak İzi",
+    "ar": "دوال التجزئة: بصمة البيانات"
+  },
+  "order": 60,
+  "prerequisites": ["modern-cryptography-rules"],
+  "related": ["message-authentication", "password-storage"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو بتثبت دالة التجزئة وشو ما بتثبت؟",
+      "summary": "تعلّم مقاومة الصورة السابقة والتصادم، وحدّ عيد الميلاد، وسبب استخدام HMAC.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 40,
+              "to": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Karma Fonksiyonları: Verinin Parmak İzi",
+      "summary": "Özet fonksiyonlarının güvenlik özelliklerini, çakışma sınırını, SHA ailelerini ve uzunluk uzatma riskini kavra.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 40,
+              "to": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Karma Fonksiyonları: Verinin Parmak İzi — Sınav Özeti",
+      "summary": "Özet fonksiyonlarının güvenlik özelliklerini, çakışma sınırını, SHA ailelerini ve uzunluk uzatma riskini kavra.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 40,
+              "to": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

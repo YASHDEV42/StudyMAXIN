@@ -1,0 +1,11 @@
+## Yığın taşması hangi zincirle oluşur?
+
+Bir fonksiyon çağrıldığında işlemci dönüş noktasını kaydeder; derleyici yerel değişkenler için bir çağrı çerçevesi kurar. Örneğin sekiz baytlık `char buffer[8]` içine uzunluğu kontrol edilmeden `strcpy` ile veri kopyalanması, nesnenin sınırını aşan yazmaya neden olur. Geleneksel bir yığın düzeninde çerçevenin komşu alanları arasında kayıtlı çerçeve işaretçisi ve dönüş adresi bulunabilir. Ancak gerçek yerleşim mimariye, ABI’ye, derleyiciye ve optimizasyona göre değişir.
+
+Mekanizma şu şekilde okunur: güvenilmeyen girdi → sınır denetimsiz kopya → nesne dışına yazma → komşu çerçeve verisinin bozulması → hatalı dönüş veya süreç çökmesi. `AAAA` gibi test girdisi ve yerel `gdb` incelemesi, bellekte hangi alanın bozulduğunu öğretmek için kullanılır. Bir çökme, tek başına uzaktan kod yürütülebileceğinin kanıtı değildir; hizmet reddi, veri bozulması veya başka sonuçlar mümkünken istismar edilebilirlik kontrol edilebilirlik ve savunmalara bağlıdır.
+
+Kaynak, shellcode ve NOP kızağını tarihsel kavramlar olarak tanıtır. Modern sistemlerde DEP/NX veri sayfalarında kod yürütmeyi sınırlar; ASLR adresleri rastgeleleştirir; PIE ana programın da yeniden konumlandırılmasını sağlar; yığın kanaryası bazı taşmaları dönüşten önce fark eder. Kod yeniden kullanımı (ROP gibi) tek bir korumayı aşabilen bir sınıf olduğundan savunma katmanları gerekir. Bu başlıklar savunma mantığını anlamak içindir.
+
+Kök nedeni düzeltmek için hedef boyuta göre güvenli kopyalama, her giriş uzunluğunu doğrulama, taşma olasılığını hesaba katma ve bellek güvenli dilleri/kütüphaneleri tercih etme gerekir. Derleyici korumaları, ASan/UBSan ve fuzzing kusurları yakalar; seccomp olası ele geçirmenin sistem çağrısı yüzeyini kısıtlar. Bir ağ hizmetinde boyut alanını doğrulamadan paketi yerel tampona kopyalamak, ağ girdisini doğrudan süreç belleği güven sınırına taşır. Kaynak, 1988 Morris solucanının fingerd hizmetindeki sınırsız girdi okumasından yararlandığını tarihsel bir örnek olarak verir; ayrıntı, güvenilmeyen girdinin sınırını doğrulama dersini gösterir.
+
+Daha geniş kusur ailesi için [bellek hata türlerine](topic:memory-bug-families), savunma katmanları için [istismar azaltımlarına](topic:exploit-mitigations) bak.

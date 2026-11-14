@@ -1,0 +1,75 @@
+{
+  "id": "secure-web-design",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Güvenli Tasarım ve Girdiye Güvenmeme",
+    "ar": "التصميم الآمن وعدم الثقة بالمدخلات"
+  },
+  "order": 5,
+  "prerequisites": ["security-design-principles", "threat-modeling-stride"],
+  "related": [
+    "sql-injection",
+    "cross-site-scripting",
+    "broken-access-control-idor"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "التصميم الآمن وعدم الثقة بالمدخلات",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 5,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenli Tasarım ve Girdiye Güvenmeme",
+      "summary": "Web uygulamasının her girdisi bir güven sınırını geçer: URL, form, cookie, başlık, API veya saklanıp sonra kullanılan veri. “Kötü karakterleri kara listeye al” yaklaşımı kırılgandır; yorumlayıcıların ",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 5,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenli Tasarım ve Girdiye Güvenmeme — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 5,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

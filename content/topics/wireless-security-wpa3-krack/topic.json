@@ -1,0 +1,74 @@
+{
+  "id": "wireless-security-wpa3-krack",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Kablosuz Ağ Güvenliği: WEP, WPA2, KRACK ve WPA3",
+    "ar": "أمن الشبكات اللاسلكية من WEP إلى WPA3"
+  },
+  "order": 90,
+  "prerequisites": [
+    "network-foundations-and-protocol-layers",
+    "diffie-hellman-key-exchange"
+  ],
+  "related": ["tls-13", "packet-capture-wireshark"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أمن الشبكات اللاسلكية من WEP إلى WPA3",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 3,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kablosuz Ağ Güvenliği: WEP, WPA2, KRACK ve WPA3",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 3,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kablosuz Ağ Güvenliği: WEP, WPA2, KRACK ve WPA3 — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 3,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

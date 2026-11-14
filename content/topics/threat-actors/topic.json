@@ -1,0 +1,51 @@
+{
+  "id": "threat-actors",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Tehdit Aktörleri: Motivasyon, Yetenek ve Israr",
+    "ar": "الجهات المهدِّدة: الدافع والقدرة والإصرار"
+  },
+  "order": 100,
+  "prerequisites": ["threat-modeling-stride", "risk-management"],
+  "related": [
+    "security-design-principles",
+    "security-history",
+    "security-core-vocabulary"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مين ممكن يهاجم النظام؟ فهم الجهات المهدِّدة",
+      "summary": "قارن المهاجمين بحسب الدافع والقدرة والإصرار، وتعرّف على APT والتهديد الداخلي والباحث الأمني.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 41, "to": 42 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sistemi Kim Hedef Alabilir? Tehdit Aktörlerini Tanımak",
+      "summary": "Aktörleri motivasyon, yetenek ve ısrarla karşılaştır; APT, iç tehdit ve güvenlik araştırmacısı ayrımlarını kavra.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 41, "to": 42 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Tehdit Aktörleri — Sınav Özeti",
+      "summary": "Altı aktör türünün amaç, kapasite ve ısrar karşılaştırması; APT adlandırması ve iç tehdit türleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 41, "to": 42 }] }
+      ]
+    }
+  ]
+}

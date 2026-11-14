@@ -1,0 +1,51 @@
+{
+  "id": "security-design-principles",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Güvenlik Tasarım İlkeleri: Saltzer ve Schroeder",
+    "ar": "مبادئ التصميم الآمن: سالتزر وشرويدر"
+  },
+  "order": 90,
+  "prerequisites": ["security-mindset", "cia-security-goals"],
+  "related": [
+    "identity-access-accountability",
+    "attack-trees-portal-model",
+    "risk-management"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مبادئ التصميم الآمن: كيف نبني نظامًا يصعب إساءة استخدامه؟",
+      "summary": "افهم المبادئ الكلاسيكية الثمانية للتصميم الآمن، وما الذي تضيفه طبقات الدفاع والثقة الصفرية وتقليل سطح الهجوم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 38, "to": 40 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Tasarım İlkeleri: Güvenli Sistem Nasıl Kurulur?",
+      "summary": "Saltzer ve Schroeder’in sekiz ilkesini, katmanlı savunmayı ve güncel tamamlayıcı yaklaşımları örneklerle birbirine bağla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 38, "to": 40 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Tasarım İlkeleri — Sınav Özeti",
+      "summary": "Sekiz klasik ilke, kritik ayrımlar, katmanlı savunma ve tasarım kontrol listesi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 38, "to": 40 }] }
+      ]
+    }
+  ]
+}

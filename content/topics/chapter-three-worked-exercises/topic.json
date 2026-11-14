@@ -1,0 +1,77 @@
+{
+  "id": "chapter-three-worked-exercises",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Kriptografi II: Çözümlü Alıştırmalar",
+    "ar": "تطبيقات محلولة في التشفير II"
+  },
+  "order": 160,
+  "prerequisites": [
+    "public-key-foundations",
+    "diffie-hellman-key-exchange",
+    "rsa-cryptosystem",
+    "elliptic-curve-cryptography",
+    "tls-13"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من المعادلة للممارسة",
+      "summary": "خمسة عشر تمريناً موثقاً يغطي المفاتيح وDH وRSA والتوقيع وECC وTLS مع خطوات الحساب والاستدلال.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kriptografi II: Çözümlü Alıştırmalar",
+      "summary": "On beş kaynak alıştırmasını anahtar sayımı, DH/RSA hesabı, ECC, nonce sızıntısı, sertifika ve TLS anahtar türetme adımlarıyla çözer.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kriptografi II: Çözümlü Alıştırmalar — Sınav Özeti",
+      "summary": "On beş kaynak alıştırmasını anahtar sayımı, DH/RSA hesabı, ECC, nonce sızıntısı, sertifika ve TLS anahtar türetme adımlarıyla çözer.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 5,
+              "to": 10
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

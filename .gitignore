@@ -8,3 +8,8 @@ coverage/
 !.env.example
 .DS_Store
 npm-debug.log*
+
+# Private course originals: permission to redistribute has not been established.
+materials/
+test-results/
+playwright-report/

@@ -1,0 +1,71 @@
+{
+  "id": "dns-security-and-encrypted-dns",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "DNS Güvenliği: Zehirleme, DNSSEC ve Şifreli DNS",
+    "ar": "أمن DNS: التسميم وDNSSEC وDNS المشفّر"
+  },
+  "order": 30,
+  "prerequisites": ["pki-certificates", "digital-signatures"],
+  "related": ["network-foundations-and-protocol-layers", "tls-13"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أمن DNS: التسميم وDNSSEC وDNS المشفّر",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 26,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "DNS Güvenliği: Zehirleme, DNSSEC ve Şifreli DNS",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 26,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "DNS Güvenliği: Zehirleme, DNSSEC ve Şifreli DNS — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 26,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "sql-injection",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "SQL Enjeksiyonu ve Parametreli Sorgular",
+    "ar": "حقن SQL والاستعلامات المعلّمة"
+  },
+  "order": 6,
+  "prerequisites": ["security-design-principles"],
+  "related": ["cross-site-scripting", "owasp-top-10-map"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حقن SQL والاستعلامات المعلّمة",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 29,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "SQL Enjeksiyonu ve Parametreli Sorgular",
+      "summary": "SQL enjeksiyonu, uygulamanın kullanıcı girdisini SQL komutuyla birleştirip veritabanına göndermesiyle oluşur. Sorun özel karakterin varlığı değil, sorgu yapısının değişebilmesidir. Metin birleştirme i",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 29,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "SQL Enjeksiyonu ve Parametreli Sorgular — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 29,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

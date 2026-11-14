@@ -1,0 +1,71 @@
+{
+  "id": "tcp-handshake-syn-flood",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "TCP El Sıkışması, SYN Flood ve Durum Saldırıları",
+    "ar": "مصافحة TCP وهجوم SYN Flood"
+  },
+  "order": 10,
+  "prerequisites": ["network-foundations-and-protocol-layers"],
+  "related": ["ddos-defense", "packet-capture-wireshark"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مصافحة TCP وهجوم SYN Flood",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 18,
+              "to": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "TCP El Sıkışması, SYN Flood ve Durum Saldırıları",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 18,
+              "to": 23
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "TCP El Sıkışması, SYN Flood ve Durum Saldırıları — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 18,
+              "to": 23
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

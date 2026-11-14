@@ -2,7 +2,7 @@
 
 The authoritative schema is [`src/lib/content/schema.ts`](../src/lib/content/schema.ts), with graph/Markdown rules in `validate.ts` and filesystem rules in `load.ts`. Content is UTF-8. Run `npm run content:check` before reviewing content and `npm run check` before integration.
 
-The production collection starts empty. Examples below describe metadata structure using clearly synthetic identifiers; they are not university teaching material and do not assert source processing. `tests/fixtures.ts` provides executable, valid technical examples without entering the application catalog.
+The production collection now contains a first source-based unit; exact coverage is recorded in `docs/source-coverage.json`. Examples below describe metadata structure using clearly synthetic identifiers; they are not university teaching material and do not assert source processing. `tests/fixtures.ts` provides executable, valid technical examples without entering the application catalog.
 
 ## Layout and identity
 
@@ -108,11 +108,12 @@ They resolve in the current UI language, including inside Turkish cheat sheets u
 
 `sources.json` is an array. Each source has `id`, original `title`, `language` (`ar`, `tr`, or `en`), `courseIds` (one or more), and `location`:
 
-| Location kind | Required fields               | Meaning                                                                     |
-| ------------- | ----------------------------- | --------------------------------------------------------------------------- |
-| `local`       | `path`, `pageCount`, `sha256` | Existing tracked file under `public/sources/`, public URL `/sources/...pdf` |
-| `remote`      | `url`, `pageCount`            | HTTPS original; reviewer verifies it manually                               |
-| `unavailable` | `reason`                      | Known source cannot yet be accessed; never pretend it was processed         |
+| Location kind | Required fields                             | Meaning                                                                     |
+| ------------- | ------------------------------------------- | --------------------------------------------------------------------------- |
+| `local`       | `path`, `pageCount`, `sha256`               | Existing tracked file under `public/sources/`, public URL `/sources/...pdf` |
+| `remote`      | `url`, `pageCount`                          | HTTPS original; reviewer verifies it manually                               |
+| `private`     | `filename`, `pageCount`, `sha256`, `reason` | Reviewed original in ignored `materials/`; no public asset or upload        |
+| `unavailable` | `reason`                                    | Known source cannot yet be accessed; never pretend it was processed         |
 
 Page counts are positive integers checked manually against the actual PDF. Local `sha256` is the lowercase 64-character digest from `sha256sum public/sources/file.pdf`. Local paths allow nested safe ASCII names and `.pdf`, without `..`, query strings, or fragments. The loader checks existence, a PDF header, digest, and symlink exclusion. It does not parse PDF contents or prove a page count. Remote URLs are not fetched during a build; use local files when reproducible source bytes are important and redistribution is permitted.
 
@@ -130,7 +131,7 @@ Document citations have this structure (the synthetic source ID must be replaced
 
 Use **physical PDF pages**, starting at 1, including cover pages. Each range must ascend and fit the registered page count. A single page repeats `from`/`to`. Source `courseIds` must include the topic's course. Cite a source once per document with multiple ranges. Clicking a range opens the original with `#page=<from>`; browser PDF viewer support varies. Preserve printed page numbers in explanatory prose when they differ.
 
-Published `source-based` documents require at least one citation. Any published document's cited sources must be available. When a real PDF is missing, register its known metadata only if supplied, use `location.kind: "unavailable"`, and leave the source-based document draft. An honestly illustrative document can be published with no citations but must be visibly identified as illustrative. Metadata validation cannot judge pedagogical accuracy: human review remains required.
+Published `source-based` documents require at least one citation. Any published document’s cited sources must be available publicly or recorded as reviewed private originals. When no original has been obtained for review, register its known metadata only if supplied, use `location.kind: "unavailable"`, and leave the source-based document draft. An honestly illustrative document can be published with no citations but must be visibly identified as illustrative. Metadata validation cannot judge pedagogical accuracy: human review remains required.
 
 ## Global Turkish–English glossary
 
@@ -146,4 +147,14 @@ Published `source-based` documents require at least one citation. Any published 
 }
 ```
 
-Both terms/examples are mandatory nonempty text. At least one course is required; topic associations may be empty. Referenced courses/topics must exist, and every associated topic's course must appear in `courseIds`. Topic associations must have public documents. Duplicate IDs and duplicate term pairs are rejected, using Turkish casing for Turkish terms. Chapter filters can be derived from topic associations; do not store a second divergent chapter relationship. Glossary filtering, TSV export, and richer discovery are Phase 2 work.
+Both terms/examples are mandatory nonempty text. At least one course is required; topic associations may be empty. Referenced courses/topics must exist, and every associated topic's course must appear in `courseIds`. Topic associations must have public documents. Duplicate IDs and duplicate term pairs are rejected, using Turkish casing for Turkish terms. Chapter filters can be derived from topic associations; do not store a second divergent chapter relationship. Glossary filtering and TSV export are implemented in Phase 2.
+
+## Private originals and the coverage workflow (Phase 2)
+
+`location.kind: "private"` is an additive variant of the authoritative source schema, not a new metadata format. `filename` is a safe basename under `materials/`; `pageCount` and `sha256` identify the exact reviewed split PDF, and `reason` explains why it is not hosted. This differs from `unavailable`: the original was supplied and reviewed, but permission to distribute its bytes has not been established. Public checkouts need no private PDFs. If the local file exists, the loader verifies its header/digest and rejects symlinks or changed bytes. The build does not parse the PDF or independently validate pedagogical claims.
+
+The public citation interface shows the bibliography and physical ranges, then lets a reader choose their own original. SHA-256 is checked in the browser before exposing a blob URL with `#page=`. No selected bytes leave the browser. Bundles retain the original filename, fingerprint and physical ranges; private sources never acquire a fabricated download URL. Browser PDF viewer page-fragment support varies. Only switch to `local` after redistribution permission is established, then add the actual public file with its digest.
+
+Before each content unit, consult `docs/source-coverage.json` and inspect the original text **and** relevant rendered pages. Inventory discovery/extraction is not source review. Record the exact section boundaries inside shared pages, diagrams/tables/code handling, all three document states, glossary extraction, factual qualifications and remaining work. The ledger is operational review evidence referring to stable schema-owned IDs; production UI metadata remains exclusively in `content/` under `schema.ts`.
+
+Rendered heading anchors (`section-1`, etc.) are generated in document order with a matching table of contents. Authors continue using `topic:` and `glossary:` identity links; arbitrary fragment links in authored Markdown remain unsupported. Exports rewrite parsed concept-link destinations to site-relative routes without altering code blocks. They retain provenance/citations and explicitly identify their relative-link base. All glossary examples in the first unit were newly authored, not quoted from the source.

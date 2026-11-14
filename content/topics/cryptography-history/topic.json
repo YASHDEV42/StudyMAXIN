@@ -1,0 +1,71 @@
+{
+  "id": "cryptography-history",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Klasik Şifrelerden Enigma’ya",
+    "ar": "من الشيفرات الكلاسيكية إلى إنغما"
+  },
+  "order": 10,
+  "prerequisites": ["security-mindset", "cia-security-goals"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من قيصر إلى إنغما: كيف تعلّمنا تاريخ التشفير",
+      "summary": "افهم كيف تطورت الشيفرات، وكيف كشفت طرق كسرها مبادئ التصميم الآمن.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 13,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sezar’dan Enigma’ya: Şifreleme Tarihinin Dersleri",
+      "summary": "Klasik şifrelerin çalışma biçimlerini, kırılma nedenlerini ve modern tasarıma bıraktıkları ilkeleri öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 13,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Klasik Şifrelerden Enigma’ya — Sınav Özeti",
+      "summary": "Temel yöntemleri, saldırıları ve tarihsel çıkarımları hızlıca yinele.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 13,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

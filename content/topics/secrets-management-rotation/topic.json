@@ -1,0 +1,51 @@
+{
+  "id": "secrets-management-rotation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Sır Yönetimi ve Anahtar Döndürme",
+    "ar": "إدارة الأسرار وتدوير المفاتيح"
+  },
+  "order": 4,
+  "prerequisites": ["key-management-lifecycle", "cryptographic-randomness"],
+  "related": [
+    "dependency-supply-chain-log4shell",
+    "ssrf-cloud-metadata",
+    "jwt-validation"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "إدارة الأسرار وتدوير المفاتيح",
+      "summary": "كيف تتسرب الأسرار من الشيفرة وتاريخ Git، وكيف نقلل مدة الخطر بالخزائن والإبطال والتدوير.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 41, "to": 43 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sır Yönetimi: Kodu, Kasayı ve Rotasyonu Ayırmak",
+      "summary": "Kod deposuna sızan sırların neden iptal edilmesi gerektiğini ve merkezi/dinamik sır yönetimini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 41, "to": 43 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sır Yönetimi — Sınav Özeti",
+      "summary": "Gömülü sırlar, Git geçmişi, kasa ve döndürme için kısa kontrol özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 41, "to": 43 }] }
+      ]
+    }
+  ]
+}

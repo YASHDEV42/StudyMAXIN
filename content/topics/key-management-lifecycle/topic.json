@@ -1,0 +1,71 @@
+{
+  "id": "key-management-lifecycle",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Anahtar Yönetimi",
+    "ar": "إدارة المفاتيح"
+  },
+  "order": 120,
+  "prerequisites": ["pki-certificates", "cryptographic-randomness"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حماية المفتاح من التوليد للإتلاف",
+      "summary": "دورة حياة المفتاح، العتاد الآمن، مراسم الجذر وتقاسم المسؤولية؛ لأن قوة الخوارزمية لا تنفع إذا ضاع المفتاح.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 50,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Anahtar Yönetimi: Üretimden İmhaya",
+      "summary": "Anahtarların üretilmesi, saklanması, dağıtımı, döndürülmesi ve imhasıyla HSM/TPM ve çoklu görevli süreçlerin riskleri nasıl azalttığını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 50,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Anahtar Yönetimi — Sınav Özeti",
+      "summary": "Anahtarların üretilmesi, saklanması, dağıtımı, döndürülmesi ve imhasıyla HSM/TPM ve çoklu görevli süreçlerin riskleri nasıl azalttığını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 50,
+              "to": 51
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

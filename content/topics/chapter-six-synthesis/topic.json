@@ -1,0 +1,56 @@
+{
+  "id": "chapter-six-synthesis",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "6. Hafta Tekrarı ve Alıştırmalar",
+    "ar": "مراجعة الأسبوع السادس وتمارينه"
+  },
+  "order": 8,
+  "prerequisites": [
+    "ssrf-cloud-metadata",
+    "advanced-injection-deserialization-xxe-ssti",
+    "dependency-supply-chain-log4shell",
+    "api-security-authorization-abuse",
+    "secrets-management-rotation",
+    "security-misconfiguration-headers",
+    "secure-sdlc-devsecops",
+    "coordinated-vulnerability-disclosure"
+  ],
+  "related": ["chapter-five-synthesis", "threat-modeling-stride", "tls-13"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مراجعة أمن الويب المتقدم: تمارين الفصل السادس",
+      "summary": "حلول تعليمية للتمارين الاثني عشر وأسئلة المراجعة الثمانية، مع خلاصة المفاهيم والانتقال إلى أمن الشبكات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 5, "to": 11 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "6. Hafta Sentezi: Çözümlü Alıştırmalar ve Tekrar",
+      "summary": "On iki çözümlü örneği, sekiz öz değerlendirme sorusunu ve haftanın özetini kavramlar arasında ilişki kurarak işler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 5, "to": 11 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "6. Hafta — Sınav Tekrarı",
+      "summary": "Chapter 6 kapsamındaki temel ayrımlar, 12 alıştırmanın cevap çekirdeği ve 8 öz değerlendirme yanıtı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 5, "to": 11 }] }
+      ]
+    }
+  ]
+}

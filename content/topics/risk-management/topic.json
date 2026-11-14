@@ -1,0 +1,52 @@
+{
+  "id": "risk-management",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Risk Yönetimi: Ölçme, Önceliklendirme ve İşleme",
+    "ar": "إدارة المخاطر: القياس وترتيب الأولويات والمعالجة"
+  },
+  "order": 80,
+  "prerequisites": [
+    "cia-security-goals",
+    "threat-modeling-stride",
+    "threat-prioritization-methods",
+    "attack-trees-portal-model"
+  ],
+  "related": ["identity-access-accountability", "security-core-vocabulary"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "إدارة المخاطر: القياس وترتيب الأولويات والمعالجة",
+      "summary": "انتقل من تحديد التهديدات إلى تقدير الخسارة، ومقارنة المخاطر، واختيار الاستجابة المناسبة مع فهم حدود الأرقام والتصنيفات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 34, "to": 38 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Risk Yönetimi: Ölçme, Önceliklendirme ve İşleme",
+      "summary": "Tehditleri kayıp tahmini, risk matrisi ve dört işleme stratejisiyle karara dönüştür; nicel ve nitel modellerin sınırlarını gör.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 34, "to": 38 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Risk Yönetimi — Sınav Özeti",
+      "summary": "SLE, ARO, ALE ve ROSI formülleri; matris yorumu ve dört risk işleme seçeneği.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-1-42", "pages": [{ "from": 34, "to": 38 }] }
+      ]
+    }
+  ]
+}

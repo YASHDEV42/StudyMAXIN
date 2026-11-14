@@ -1,0 +1,71 @@
+{
+  "id": "network-foundations-and-protocol-layers",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "İnternetin Güvenlik Mirası ve TCP/IP Katmanları",
+    "ar": "كيف صُمّمت الإنترنت وكيف نفهم طبقات الشبكة"
+  },
+  "order": 0,
+  "prerequisites": ["tls-13"],
+  "related": ["ssrf-cloud-metadata", "security-misconfiguration-headers"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف صُمّمت الإنترنت وكيف نفهم طبقات الشبكة",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 13,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İnternetin Güvenlik Mirası ve TCP/IP Katmanları",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 13,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İnternetin Güvenlik Mirası ve TCP/IP Katmanları — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 13,
+              "to": 18
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

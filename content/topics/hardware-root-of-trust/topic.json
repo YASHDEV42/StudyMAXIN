@@ -1,0 +1,98 @@
+{
+  "id": "hardware-root-of-trust",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "TPM, Güvenli Önyükleme ve TEE",
+    "ar": "جذر الثقة العتادي والإقلاع الآمن"
+  },
+  "order": 7,
+  "prerequisites": ["os-security-boundaries"],
+  "related": ["system-hardening", "trusting-trust"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "جذر الثقة العتادي والإقلاع الآمن",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "TPM, Güvenli Önyükleme ve TEE",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "TPM, Güvenli Önyükleme ve TEE — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-360-397",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

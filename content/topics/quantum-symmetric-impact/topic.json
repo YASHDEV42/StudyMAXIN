@@ -1,0 +1,71 @@
+{
+  "id": "quantum-symmetric-impact",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Kuantum Gölgesi: Simetrik Tarafa Etki",
+    "ar": "ظل الحوسبة الكمومية على التشفير المتماثل"
+  },
+  "order": 100,
+  "prerequisites": ["aes-encryption", "cryptographic-hash-functions"],
+  "related": ["chapter-two-worked-exercises"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو بيعمل Grover بالتشفير المتماثل؟",
+      "summary": "قارن أثر Grover على AES بأثر Shor على RSA وECC، بدون خلط بين التهديدين.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kuantum Gölgesi: Simetrik Kriptografiye Etki",
+      "summary": "Grover’ın simetrik anahtar aramasına sınırlı hızlanmasını, Shor’un açık anahtarlı sistemlere etkisini ve çözüm farkını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kuantum Gölgesi: Simetrik Tarafa Etki — Sınav Özeti",
+      "summary": "Grover’ın simetrik anahtar aramasına sınırlı hızlanmasını, Shor’un açık anahtarlı sistemlere etkisini ve çözüm farkını öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 6,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

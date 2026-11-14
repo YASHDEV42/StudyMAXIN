@@ -1,0 +1,50 @@
+{
+  "id": "password-attacks-and-entropy",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Parola Entropisi ve Saldırıları",
+    "ar": "إنتروبيا كلمات المرور والهجمات عليها"
+  },
+  "order": 1,
+  "prerequisites": ["password-storage", "cryptographic-randomness"],
+  "related": [
+    "multi-factor-authentication",
+    "phishing-resistant-authentication"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش طول كلمة المرور لحاله مش كل القصة؟",
+      "summary": "احسب فضاء كلمات المرور، وافهم هجمات التخمين وإعادة الاستخدام وسياسات إنشاء كلمات قابلة للاستمرار.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 17, "to": 22 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Parola Entropisi ve Saldırılar",
+      "summary": "Entropi hesabını, tahmin modellerini ve parola politikalarının insan davranışıyla ilişkisini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 17, "to": 22 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Parola Entropisi — Sınav Özeti",
+      "summary": "Entropi formülü ve parola saldırılarının ayırt edici özellikleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 17, "to": 22 }] }
+      ]
+    }
+  ]
+}

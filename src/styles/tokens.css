@@ -1,12 +1,105 @@
+/*
+ * Shared design tokens. Two equally intentional palettes: warm paper (light)
+ * and deep slate ink (dark). The system preference applies unless the reader
+ * chose a theme explicitly; `src/lib/theme.ts` sets `data-theme` on <html>
+ * before first paint, so there is no flash on either path.
+ */
 :root {
   color-scheme: light;
-  --color-background: #f7f8fa;
+  /* Surfaces */
+  --color-background: #faf8f3;
+  --color-sunken: #f2eee6;
   --color-surface: #ffffff;
-  --color-text: #192b35;
-  --color-muted: #4a5c66;
-  --color-accent: #165a56;
-  --color-border: #c9d3d8;
+  --color-raised: #ffffff;
+  --color-overlay: rgb(26 36 42 / 0.32);
+  /* Ink */
+  --color-text: #1a2830;
+  --color-muted: #4b585e;
+  --color-faint: #616d72;
+  /* Lines */
+  --color-border: #e3ded3;
+  --color-border-strong: #cfc7b8;
+  /* Rubric accent (the hero's poles) and its quiet tints */
+  --color-accent: #b0331d;
+  --color-accent-strong: #922713;
+  --color-accent-soft: #f7e6de;
+  --color-accent-line: rgb(176 51 29 / 0.38);
+  --color-on-accent: #fffaf2;
+  /* Reading helpers */
+  --color-code-bg: #f3efe7;
+  --color-code-text: #23323a;
+  --color-mark: #f8e3a6;
+  --color-focus: #1d5c86;
+  --shadow-raised:
+    0 1px 2px rgb(40 34 20 / 0.06), 0 8px 28px -12px rgb(40 34 20 / 0.18);
+  --shadow-dialog:
+    0 2px 6px rgb(30 26 18 / 0.08), 0 28px 80px -24px rgb(30 26 18 / 0.38);
+
   --font-body:
-    system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", sans-serif;
-  --font-code: ui-monospace, "Cascadia Code", monospace;
+    system-ui, -apple-system, "Segoe UI", "Noto Sans", "Noto Sans Arabic",
+    "Helvetica Neue", sans-serif;
+  --font-display:
+    var(--font-newsreader, "Iowan Old Style"), "Iowan Old Style",
+    "Palatino Linotype", Georgia, serif;
+  --font-display-ar:
+    var(--font-amiri, "Noto Naskh Arabic"), "Geeza Pro", "Noto Naskh Arabic",
+    serif;
+  --font-code:
+    ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Menlo, Consolas,
+    monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-background: #11181c;
+    --color-sunken: #0d1316;
+    --color-surface: #161f24;
+    --color-raised: #1b252b;
+    --color-overlay: rgb(3 7 9 / 0.62);
+    --color-text: #e8e3d8;
+    --color-muted: #b2b8b4;
+    --color-faint: #929b98;
+    --color-border: #243038;
+    --color-border-strong: #34434b;
+    --color-accent: #f07152;
+    --color-accent-strong: #ff8a6b;
+    --color-accent-soft: rgb(240 113 82 / 0.13);
+    --color-accent-line: rgb(240 113 82 / 0.45);
+    --color-on-accent: #14100d;
+    --color-code-bg: #0b1114;
+    --color-code-text: #d9dfdc;
+    --color-mark: rgb(240 190 82 / 0.32);
+    --color-focus: #7cb8e6;
+    --shadow-raised:
+      0 1px 2px rgb(0 0 0 / 0.3), 0 10px 30px -12px rgb(0 0 0 / 0.55);
+    --shadow-dialog:
+      0 2px 6px rgb(0 0 0 / 0.35), 0 32px 90px -20px rgb(0 0 0 / 0.75);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-background: #11181c;
+  --color-sunken: #0d1316;
+  --color-surface: #161f24;
+  --color-raised: #1b252b;
+  --color-overlay: rgb(3 7 9 / 0.62);
+  --color-text: #e8e3d8;
+  --color-muted: #b2b8b4;
+  --color-faint: #929b98;
+  --color-border: #243038;
+  --color-border-strong: #34434b;
+  --color-accent: #f07152;
+  --color-accent-strong: #ff8a6b;
+  --color-accent-soft: rgb(240 113 82 / 0.13);
+  --color-accent-line: rgb(240 113 82 / 0.45);
+  --color-on-accent: #14100d;
+  --color-code-bg: #0b1114;
+  --color-code-text: #d9dfdc;
+  --color-mark: rgb(240 190 82 / 0.32);
+  --color-focus: #7cb8e6;
+  --shadow-raised:
+    0 1px 2px rgb(0 0 0 / 0.3), 0 10px 30px -12px rgb(0 0 0 / 0.55);
+  --shadow-dialog:
+    0 2px 6px rgb(0 0 0 / 0.35), 0 32px 90px -20px rgb(0 0 0 / 0.75);
 }

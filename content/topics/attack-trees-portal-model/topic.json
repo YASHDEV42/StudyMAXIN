@@ -1,0 +1,71 @@
+{
+  "id": "attack-trees-portal-model",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Saldırı Ağaçları ve Not Portalının Tehdit Modeli",
+    "ar": "أشجار الهجوم ونموذج تهديدات بوابة العلامات"
+  },
+  "order": 70,
+  "prerequisites": ["threat-modeling-stride", "threat-prioritization-methods"],
+  "related": ["cia-security-goals", "identity-access-accountability"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أشجار الهجوم ونموذج تهديدات بوابة العلامات",
+      "summary": "حلّل مسارات AND وOR وكلفتها، واربط إجراءات الدفاع وسجل المخاطر بمثال بوابة الجامعة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 32,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Saldırı Ağaçları ve Not Portalının Tehdit Modeli",
+      "summary": "VE/VEYA yollarını ve maliyet hesabını çöz; savunmaları ve risk kaydını üniversite portalı örneğinde birleştir.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 32,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Saldırı Ağaçları ve Not Portalının Tehdit Modeli — Sınav Özeti",
+      "summary": "Tanımlar, tablolar, işlem sıraları ve sık karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 32,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

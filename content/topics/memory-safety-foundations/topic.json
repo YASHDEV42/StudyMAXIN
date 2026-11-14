@@ -1,0 +1,71 @@
+{
+  "id": "memory-safety-foundations",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Bellek Güvenliği ve Program Belleği",
+    "ar": "سلامة الذاكرة وتنظيمها"
+  },
+  "order": 1,
+  "prerequisites": ["os-security-boundaries"],
+  "related": ["network-foundations-and-protocol-layers"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "سلامة الذاكرة وتنظيمها",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bellek Güvenliği ve Program Belleği",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bellek Güvenliği ve Program Belleği — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 20,
+              "to": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

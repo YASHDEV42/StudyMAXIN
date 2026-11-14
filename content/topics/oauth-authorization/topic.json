@@ -1,0 +1,54 @@
+{
+  "id": "oauth-authorization",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "OAuth 2.0 ile Yetki Devri",
+    "ar": "تفويض الصلاحيات عبر OAuth 2.0"
+  },
+  "order": 5,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "access-control-models"
+  ],
+  "related": [
+    "openid-connect-jwt",
+    "sso-kerberos-federation",
+    "session-security"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "OAuth بيعطي التطبيق صلاحية، مش هوية",
+      "summary": "اتبع الأدوار وتدفق authorization code وPKCE والنطاقات، وافهم حماية redirect وstate والرموز.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 32, "to": 34 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "OAuth 2.0: Yetki Devri, Kimlik Doğrulama Değil",
+      "summary": "Rolleri, authorization code/PKCE akışını, scope sınırlarını ve yaygın yapılandırma hatalarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 32, "to": 34 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OAuth 2.0 — Sınav Özeti",
+      "summary": "Dört rol, güvenli yetkilendirme kodu akışı, PKCE, state ve token güvenliği.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 32, "to": 34 }] }
+      ]
+    }
+  ]
+}

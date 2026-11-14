@@ -1,0 +1,54 @@
+{
+  "id": "multi-factor-authentication",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Çok Faktörlü Kimlik Doğrulama",
+    "ar": "التحقق متعدد العوامل"
+  },
+  "order": 2,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "message-authentication"
+  ],
+  "related": [
+    "phishing-resistant-authentication",
+    "password-attacks-and-entropy",
+    "session-security"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "عامل ثاني، بس أي عامل؟",
+      "summary": "افهم HOTP وTOTP خطوة بخطوة، وقارن SMS وpush والرموز ومفاتيح FIDO حسب هجمات كل نوع.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 23, "to": 25 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "MFA, HOTP ve TOTP",
+      "summary": "Sayaç ve zaman tabanlı OTP üretimini, saat penceresini ve ikinci faktörlerin tehdit farklarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 23, "to": 25 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "MFA ve OTP — Sınav Özeti",
+      "summary": "HOTP/TOTP adımları ve SMS, push, TOTP, FIDO karşılaştırması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 23, "to": 25 }] }
+      ]
+    }
+  ]
+}

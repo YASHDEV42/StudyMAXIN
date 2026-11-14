@@ -1,0 +1,71 @@
+{
+  "id": "quantum-threat-and-pqc",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Kuantum Tehdidi ve PQC",
+    "ar": "تهديد الكم والتشفير ما بعد الكم"
+  },
+  "order": 130,
+  "prerequisites": ["elliptic-curve-cryptography", "tls-13"],
+  "related": ["pqc-algorithms-migration"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش الحوسبة الكمية بتضغط على التشفير؟",
+      "summary": "الفرق بين Shor وGrover، حدس إيجاد الدورة، وتهديد جمع البيانات اليوم قبل امتلاك حاسوب كمي واسع النطاق.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 51,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kuantum Tehdidi ve Post-Kuantum Geçiş",
+      "summary": "Shor ve Grover etkilerini, RSA/DH/ECC ile AES farkını ve uzun gizlilik ömrüne sahip verilerin neden öncelikli olduğunu açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 51,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kuantum Tehdidi ve PQC — Sınav Özeti",
+      "summary": "Shor ve Grover etkilerini, RSA/DH/ECC ile AES farkını ve uzun gizlilik ömrüne sahip verilerin neden öncelikli olduğunu açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 51,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

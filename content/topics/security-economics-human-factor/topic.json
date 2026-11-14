@@ -1,0 +1,47 @@
+{
+  "id": "security-economics-human-factor",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Güvenlik Ekonomisi, Sosyal Mühendislik ve Kültür",
+    "ar": "اقتصاد الأمن والهندسة الاجتماعية والثقافة الأمنية"
+  },
+  "order": 120,
+  "prerequisites": ["risk-management", "threat-actors", "security-mindset"],
+  "related": ["security-design-principles", "cyber-kill-chain"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "اقتصاد الأمن والإنسان: كيف نجعل الهجوم غير مجدٍ؟",
+      "summary": "اربط عائد المهاجم بتكلفة الدفاع، وافهم أساليب الهندسة الاجتماعية ودور الثقافة الأمنية في تحويل التقنية إلى حماية مستمرة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 2, "to": 5 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Güvenlik Ekonomisi ve İnsan: Saldırıyı Değersiz Kılmak",
+      "summary": "Saldırganın getirisi ile savunmanın maliyetini modelle; sosyal mühendislik ve güvenlik kültürünün insan boyutunu açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 2, "to": 5 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Güvenlik Ekonomisi ve İnsan Boyutu — Sınav Özeti",
+      "summary": "ROA formülleri ve örnekleri, sosyal mühendislik türleri ve ikna etkenleri, güvenlik kültürünün temel özellikleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 2, "to": 5 }] }
+      ]
+    }
+  ]
+}

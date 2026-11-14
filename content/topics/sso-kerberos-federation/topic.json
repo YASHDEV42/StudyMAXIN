@@ -1,0 +1,50 @@
+{
+  "id": "sso-kerberos-federation",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "SSO, Kerberos ve Federasyon",
+    "ar": "الدخول الموحّد وKerberos واتحاد الهوية"
+  },
+  "order": 4,
+  "prerequisites": [
+    "identity-authentication-authorization",
+    "multi-factor-authentication"
+  ],
+  "related": ["oauth-authorization", "openid-connect-jwt", "session-security"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تسجيل دخول واحد لعدة خدمات",
+      "summary": "اشرح دور مزود الهوية ومركز KDC وتذاكر Kerberos، وموازنة مركزية الهوية مع أثر اختراقها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 31, "to": 31 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "SSO, Kerberos ve Federasyon",
+      "summary": "Merkezî kimlik sağlayıcıyı, bilet akışını ve kurumlar arası güven ilişkisini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 31, "to": 31 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "SSO ve Kerberos — Sınav Özeti",
+      "summary": "IdP/SP rolleri, Kerberos biletleri ve federasyonun getirileri ile riskleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 31, "to": 31 }] }
+      ]
+    }
+  ]
+}

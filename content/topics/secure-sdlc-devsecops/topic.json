@@ -1,0 +1,59 @@
+{
+  "id": "secure-sdlc-devsecops",
+  "courseId": "information-systems-security",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Secure SDLC ve DevSecOps",
+    "ar": "دورة التطوير الآمن وDevSecOps"
+  },
+  "order": 6,
+  "prerequisites": [
+    "threat-modeling-stride",
+    "security-economics-human-factor",
+    "dependency-supply-chain-log4shell"
+  ],
+  "related": [
+    "security-design-principles",
+    "risk-management",
+    "secrets-management-rotation",
+    "security-misconfiguration-headers"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "إدخال الأمن في دورة التطوير: Secure SDLC وDevSecOps",
+      "summary": "مبدأ shift-left، نموذج STRIDE، أدوات SAST/DAST/IAST/SCA، وبوابات CI/CD وحماية خط البناء.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 46, "to": 47 }] },
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 1, "to": 1 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Secure SDLC ve DevSecOps: Güvenliği Sürece Yerleştirmek",
+      "summary": "Tehdit modelleme, shift-left ve otomatik güvenlik araçlarının CI/CD’ye nasıl yerleştirileceğini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 46, "to": 47 }] },
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 1, "to": 1 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Secure SDLC ve DevSecOps — Sınav Özeti",
+      "summary": "Shift-left, STRIDE, SAST/DAST/IAST/SCA ve güvenli boru hattı adımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-222-268", "pages": [{ "from": 46, "to": 47 }] },
+        { "sourceId": "teori-1-269-307", "pages": [{ "from": 1, "to": 1 }] }
+      ]
+    }
+  ]
+}

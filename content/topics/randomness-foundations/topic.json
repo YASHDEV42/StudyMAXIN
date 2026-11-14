@@ -1,0 +1,71 @@
+{
+  "id": "randomness-foundations",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Rastgelelik: Görünmeyen Temel",
+    "ar": "العشوائية: الأساس اللي ما منشوفه"
+  },
+  "order": 90,
+  "prerequisites": ["password-storage", "block-cipher-modes"],
+  "related": ["quantum-symmetric-impact"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش العشوائية أساس أمان كل مفتاح؟",
+      "summary": "افهم entropy وCSPRNG، واستعمل مصادر النظام بدل مولدات المحاكاة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Rastgelelik: Görünmeyen Temel",
+      "summary": "Entropi, CSPRNG ve işletim sistemi kaynaklarının anahtar, nonce, salt ve token üretimindeki rolünü öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Rastgelelik: Görünmeyen Temel — Sınav Özeti",
+      "summary": "Entropi, CSPRNG ve işletim sistemi kaynaklarının anahtar, nonce, salt ve token üretimindeki rolünü öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 4,
+              "to": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

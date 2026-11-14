@@ -1,0 +1,74 @@
+{
+  "id": "broken-access-control-idor",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Bozuk Erişim Denetimi ve IDOR",
+    "ar": "خلل التحكم بالوصول وIDOR"
+  },
+  "order": 0,
+  "prerequisites": [
+    "access-control-models",
+    "identity-authentication-authorization"
+  ],
+  "related": ["csrf", "zero-trust-architecture"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "خلل التحكم بالوصول وIDOR",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bozuk Erişim Denetimi ve IDOR",
+      "summary": "Bozuk erişim denetiminde kullanıcı doğrulanmış olsa bile yapmaması gereken kaynağa veya işleme erişebilir. Yatay yükseltme aynı roldeki başka kullanıcının kaydına; dikey yükseltme daha yüksek ayrıcalı",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bozuk Erişim Denetimi ve IDOR — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

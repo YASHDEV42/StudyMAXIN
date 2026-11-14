@@ -1,0 +1,71 @@
+{
+  "id": "network-security-misconceptions",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Ağ Güvenliğinde Sık Karıştırılanlar",
+    "ar": "مفاهيم خاطئة شائعة في أمن الشبكات"
+  },
+  "order": 110,
+  "prerequisites": ["network-foundations-and-protocol-layers"],
+  "related": ["zero-trust-architecture", "cia-security-goals", "ddos-defense"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مفاهيم خاطئة شائعة في أمن الشبكات",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 7,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Ağ Güvenliğinde Sık Karıştırılanlar",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 7,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Ağ Güvenliğinde Sık Karıştırılanlar — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 7,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

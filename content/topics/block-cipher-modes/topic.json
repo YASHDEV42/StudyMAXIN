@@ -1,0 +1,71 @@
+{
+  "id": "block-cipher-modes",
+  "courseId": "information-systems-security",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Çalışma Modları: Şifreyi Doğru Kullanmak",
+    "ar": "أوضاع التشغيل: استخدام التشفير بأمان"
+  },
+  "order": 50,
+  "prerequisites": ["aes-encryption"],
+  "related": ["message-authentication"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش وضع التشغيل أهم من اسم الخوارزمية؟",
+      "summary": "قارن ECB وCBC وCTR وGCM، وافهم nonce وIV والتحقق من التعديل.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 33,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Çalışma Modları: Şifreyi Doğru Kullanmak",
+      "summary": "ECB, CBC ve CTR kiplerinin sızıntılarını; AEAD/GCM etiketini, nonce kurallarını ve doğru kullanım desenini öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 33,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Çalışma Modları: Şifreyi Doğru Kullanmak — Sınav Özeti",
+      "summary": "ECB, CBC ve CTR kiplerinin sızıntılarını; AEAD/GCM etiketini, nonce kurallarını ve doğru kullanım desenini öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-43-89",
+          "pages": [
+            {
+              "from": 33,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

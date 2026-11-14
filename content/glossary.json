@@ -1,1 +1,4903 @@
-[]
+[
+  {
+    "id": "confidentiality",
+    "term": {
+      "tr": "Gizlilik",
+      "en": "Confidentiality"
+    },
+    "examples": {
+      "tr": "Öğrenci kayıtlarının yalnız yetkili kişilerce okunması gizliliği korur.",
+      "en": "Allowing only authorized staff to read student records protects confidentiality."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "threat-modeling-stride",
+      "attack-trees-portal-model",
+      "block-cipher-modes",
+      "chapter-two-worked-exercises"
+    ]
+  },
+  {
+    "id": "integrity",
+    "term": {
+      "tr": "Bütünlük",
+      "en": "Integrity"
+    },
+    "examples": {
+      "tr": "Bir notun izinsiz değiştirilmesini saptamak bütünlük kontrolünün görevidir.",
+      "en": "Detecting an unauthorized grade change is an integrity control’s job."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "threat-modeling-stride",
+      "attack-trees-portal-model",
+      "block-cipher-modes",
+      "message-authentication",
+      "chapter-two-worked-exercises"
+    ]
+  },
+  {
+    "id": "availability",
+    "term": {
+      "tr": "Erişilebilirlik",
+      "en": "Availability"
+    },
+    "examples": {
+      "tr": "Kayıt sisteminin son başvuru gününde çalışması erişilebilirlik açısından önemlidir.",
+      "en": "Keeping the enrollment system usable on the deadline matters for availability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "threat-modeling-stride",
+      "attack-trees-portal-model"
+    ]
+  },
+  {
+    "id": "hash-function",
+    "term": {
+      "tr": "Karma fonksiyonu",
+      "en": "Hash function"
+    },
+    "examples": {
+      "tr": "İndirilen dosyanın karmasını güvenilir kaynaktaki değerle karşılaştırdık.",
+      "en": "We compared the downloaded file’s hash with a value from a trusted source."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "cryptographic-hash-functions",
+      "password-storage",
+      "chapter-two-worked-exercises"
+    ]
+  },
+  {
+    "id": "encryption",
+    "term": {
+      "tr": "Şifreleme",
+      "en": "Encryption"
+    },
+    "examples": {
+      "tr": "Disk şifrelemesi, anahtarı olmayan kişinin saklanan içeriği okumasını zorlaştırır.",
+      "en": "Disk encryption makes stored content unreadable without the key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "security-history",
+      "course-roadmap",
+      "symmetric-encryption-foundations",
+      "aes-encryption",
+      "block-cipher-modes"
+    ]
+  },
+  {
+    "id": "hmac",
+    "term": {
+      "tr": "Anahtarlı mesaj doğrulama kodu",
+      "en": "HMAC"
+    },
+    "examples": {
+      "tr": "Alıcı, ortak gizli anahtarla HMAC değerini denetledi.",
+      "en": "The receiver checked the HMAC using the shared secret key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "cryptographic-hash-functions",
+      "message-authentication",
+      "chapter-two-worked-exercises",
+      "digital-signatures",
+      "tcp-handshake-syn-flood"
+    ]
+  },
+  {
+    "id": "digital-signature",
+    "term": {
+      "tr": "Dijital imza",
+      "en": "Digital signature"
+    },
+    "examples": {
+      "tr": "Paketin imzasını doğru açık anahtarla doğrulamak, paketin zararsız olduğunu tek başına göstermez.",
+      "en": "Verifying a package signature with the correct public key does not by itself show that the package is harmless."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "identity-access-accountability",
+      "security-history",
+      "elliptic-curve-cryptography",
+      "digital-signatures",
+      "pgp-and-web-of-trust",
+      "pki-certificates",
+      "tls-13",
+      "pqc-algorithms-migration",
+      "dns-security-and-encrypted-dns"
+    ]
+  },
+  {
+    "id": "redundancy",
+    "term": {
+      "tr": "Yedeklilik",
+      "en": "Redundancy"
+    },
+    "examples": {
+      "tr": "İkinci sunucu, ilk sunucunun arızasına karşı yedeklilik sağlar.",
+      "en": "A second server provides redundancy against failure of the first server."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cia-security-goals"]
+  },
+  {
+    "id": "denial-of-service",
+    "term": {
+      "tr": "Hizmet dışı bırakma",
+      "en": "Denial of service"
+    },
+    "examples": {
+      "tr": "Pahalı sorgular hizmet dışı bırakmaya yol açacak kadar kaynak tüketebilir.",
+      "en": "Expensive queries can consume enough resources to cause a denial of service."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "cia-security-goals",
+      "threat-modeling-stride",
+      "threat-prioritization-methods",
+      "attack-trees-portal-model",
+      "log4shell-trust-boundaries",
+      "security-history",
+      "tcp-handshake-syn-flood",
+      "ddos-defense"
+    ]
+  },
+  {
+    "id": "ransomware",
+    "term": {
+      "tr": "Fidye yazılımı",
+      "en": "Ransomware"
+    },
+    "examples": {
+      "tr": "Fidye yazılımı dosyaları şifreleyerek erişilebilirliği hedef aldı.",
+      "en": "The ransomware targeted availability by encrypting the files."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cia-security-goals", "security-history"]
+  },
+  {
+    "id": "authentication",
+    "term": {
+      "tr": "Kimlik doğrulama",
+      "en": "Authentication"
+    },
+    "examples": {
+      "tr": "Kimlik doğrulama, oturum açanın iddia ettiği hesaba ait kanıtı sınar.",
+      "en": "Authentication checks evidence for the account claimed by the person signing in."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "attack-trees-portal-model",
+      "identity-access-accountability",
+      "identity-authentication-authorization",
+      "multi-factor-authentication",
+      "openid-connect-jwt",
+      "phishing-resistant-authentication",
+      "pki-certificates",
+      "sso-kerberos-federation",
+      "threat-modeling-stride",
+      "tls-13"
+    ]
+  },
+  {
+    "id": "authorization",
+    "term": {
+      "tr": "Yetkilendirme",
+      "en": "Authorization"
+    },
+    "examples": {
+      "tr": "Yetkilendirme denetimi, öğrencinin başka bir kaydı değiştirmesini reddetti.",
+      "en": "The authorization check rejected the student’s attempt to change another record."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "access-control-models",
+      "attack-trees-portal-model",
+      "identity-access-accountability",
+      "identity-authentication-authorization",
+      "oauth-authorization",
+      "threat-modeling-stride",
+      "zero-trust-architecture"
+    ]
+  },
+  {
+    "id": "accountability",
+    "term": {
+      "tr": "Hesap verebilirlik",
+      "en": "Accountability"
+    },
+    "examples": {
+      "tr": "Korunmuş denetim kayıtları, bir değişikliği ilgili hesapla ilişkilendirerek hesap verebilirliği destekler.",
+      "en": "Protected audit records support accountability by linking a change to the relevant account."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["identity-access-accountability"]
+  },
+  {
+    "id": "non-repudiation",
+    "term": {
+      "tr": "İnkâr edilemezlik",
+      "en": "Non-repudiation"
+    },
+    "examples": {
+      "tr": "İnkâr edilemezlik amacıyla kullanılan imzanın anlamı, anahtarın doğru kişiye bağlanmasına da dayanır.",
+      "en": "The meaning of a signature used for non-repudiation also depends on binding the key to the correct person."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "identity-access-accountability",
+      "threat-modeling-stride",
+      "message-authentication",
+      "digital-signatures"
+    ]
+  },
+  {
+    "id": "multi-factor-authentication",
+    "term": {
+      "tr": "Çok faktörlü kimlik doğrulama",
+      "en": "Multi-factor authentication"
+    },
+    "examples": {
+      "tr": "Parola ile donanım anahtarı farklı faktör sınıflarını birleştirir.",
+      "en": "A password and a hardware key combine different authentication factor classes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "attack-trees-portal-model",
+      "identity-access-accountability",
+      "identity-authentication-authorization",
+      "multi-factor-authentication",
+      "phishing-resistant-authentication",
+      "threat-modeling-stride",
+      "zero-trust-architecture"
+    ]
+  },
+  {
+    "id": "asset",
+    "term": {
+      "tr": "Varlık",
+      "en": "Asset"
+    },
+    "examples": {
+      "tr": "Ders kayıtları kadar hizmet sürekliliği de korunacak bir varlıktır.",
+      "en": "Service continuity is an asset to protect, just as course records are."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "threat-modeling-stride",
+      "attack-trees-portal-model"
+    ]
+  },
+  {
+    "id": "threat",
+    "term": {
+      "tr": "Tehdit",
+      "en": "Threat"
+    },
+    "examples": {
+      "tr": "Veri çalmayı amaçlayan bir grup, bu sistem için tehdit aktörüdür.",
+      "en": "A group intending to steal data is a threat actor for this system."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "threat-modeling-stride",
+      "threat-prioritization-methods"
+    ]
+  },
+  {
+    "id": "vulnerability",
+    "term": {
+      "tr": "Zafiyet",
+      "en": "Vulnerability"
+    },
+    "examples": {
+      "tr": "Girdiyle sorgu yapısını karıştıran kod, kullanılabilecek bir zafiyet oluşturabilir.",
+      "en": "Code that mixes input with query structure can create an exploitable vulnerability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "threat-modeling-stride",
+      "threat-prioritization-methods",
+      "log4shell-trust-boundaries",
+      "security-history"
+    ]
+  },
+  {
+    "id": "exploit",
+    "term": {
+      "tr": "Sömürü",
+      "en": "Exploit"
+    },
+    "examples": {
+      "tr": "Sömürü kodu zafiyetin kendisi değil, onu kullanan araçtır.",
+      "en": "Exploit code is the tool using the vulnerability, rather than the vulnerability itself."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-core-vocabulary", "log4shell-trust-boundaries"]
+  },
+  {
+    "id": "risk",
+    "term": {
+      "tr": "Risk",
+      "en": "Risk"
+    },
+    "examples": {
+      "tr": "Aynı açıklığın riski, sistemdeki verinin etkisine ve saldırı olasılığına göre değişir.",
+      "en": "The risk from the same flaw varies with the impact on the system’s data and the likelihood of attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "threat-prioritization-methods",
+      "attack-trees-portal-model"
+    ]
+  },
+  {
+    "id": "attack-surface",
+    "term": {
+      "tr": "Saldırı yüzeyi",
+      "en": "Attack surface"
+    },
+    "examples": {
+      "tr": "Gereksiz dış erişim noktalarını kapatmak saldırı yüzeyini küçültür.",
+      "en": "Closing unnecessary external access points reduces the attack surface."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "security-mindset",
+      "security-history",
+      "security-design-principles",
+      "network-reconnaissance-nmap"
+    ]
+  },
+  {
+    "id": "attack-vector",
+    "term": {
+      "tr": "Saldırı vektörü",
+      "en": "Attack vector"
+    },
+    "examples": {
+      "tr": "Bu olayda oltalama e-postası saldırı vektörü olarak kullanıldı.",
+      "en": "A phishing email was used as the attack vector in this incident."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "log4shell-trust-boundaries",
+      "security-history"
+    ]
+  },
+  {
+    "id": "threat-intelligence",
+    "term": {
+      "tr": "Tehdit istihbaratı",
+      "en": "Threat intelligence"
+    },
+    "examples": {
+      "tr": "Sektörümüzü hedefleyen kampanya bilgisi, tehdit istihbaratını savunma önceliklerine dönüştürdü.",
+      "en": "Information about a campaign targeting our sector turned threat intelligence into defensive priorities."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-core-vocabulary", "threat-prioritization-methods"]
+  },
+  {
+    "id": "indicator-of-compromise",
+    "term": {
+      "tr": "Uzlaşma göstergesi",
+      "en": "Indicator of compromise"
+    },
+    "examples": {
+      "tr": "Şüpheli dosyanın karması bir uzlaşma göstergesi olarak incelendi.",
+      "en": "The suspicious file’s hash was examined as an indicator of compromise."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-core-vocabulary"]
+  },
+  {
+    "id": "zero-day",
+    "term": {
+      "tr": "Sıfırıncı gün",
+      "en": "Zero-day"
+    },
+    "examples": {
+      "tr": "Henüz yaması olmayan sıfırıncı gün açığı için davranışsal tespit yine değerli olabilir.",
+      "en": "Behavioral detection can still be valuable for a zero-day vulnerability without a patch."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-core-vocabulary",
+      "log4shell-trust-boundaries",
+      "security-history"
+    ]
+  },
+  {
+    "id": "threat-modeling",
+    "term": {
+      "tr": "Tehdit modelleme",
+      "en": "Threat modeling"
+    },
+    "examples": {
+      "tr": "Tehdit modelleme, yeni API’nin hangi güven varsayımlarını değiştirdiğini görünür kıldı.",
+      "en": "Threat modeling made the trust assumptions changed by the new API visible."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "threat-modeling-stride",
+      "attack-trees-portal-model",
+      "security-design-principles"
+    ]
+  },
+  {
+    "id": "data-flow-diagram",
+    "term": {
+      "tr": "Veri akış diyagramı",
+      "en": "Data flow diagram"
+    },
+    "examples": {
+      "tr": "Veri akış diyagramında tarayıcı, sunucu, veritabanı ve aralarındaki aktarımı gösterdik.",
+      "en": "We showed the browser, server, database and transfers between them in the data flow diagram."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride", "attack-trees-portal-model"]
+  },
+  {
+    "id": "trust-boundary",
+    "term": {
+      "tr": "Güven sınırı",
+      "en": "Trust boundary"
+    },
+    "examples": {
+      "tr": "Sunucu, internetten gelen kimlik iddiasını güven sınırında doğrular.",
+      "en": "The server verifies an identity claim arriving from the internet at the trust boundary."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "attack-trees-portal-model",
+      "log4shell-trust-boundaries",
+      "os-security-boundaries",
+      "security-history",
+      "security-mindset",
+      "threat-modeling-stride"
+    ]
+  },
+  {
+    "id": "stride",
+    "term": {
+      "tr": "STRIDE tehdit sınıflandırması",
+      "en": "STRIDE threat classification"
+    },
+    "examples": {
+      "tr": "STRIDE ile sürecin altı kategoride nasıl zarar görebileceğini sorguladık.",
+      "en": "We used STRIDE to ask how the process could be harmed in six categories."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride", "attack-trees-portal-model"]
+  },
+  {
+    "id": "spoofing",
+    "term": {
+      "tr": "Kimlik taklidi",
+      "en": "Spoofing"
+    },
+    "examples": {
+      "tr": "Çalınmış oturum çereziyle başka kullanıcı gibi davranmak kimlik taklididir.",
+      "en": "Acting as another user with a stolen session cookie is spoofing."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "threat-modeling-stride",
+      "network-foundations-and-protocol-layers",
+      "tcp-handshake-syn-flood",
+      "ddos-defense"
+    ]
+  },
+  {
+    "id": "tampering",
+    "term": {
+      "tr": "Kurcalama",
+      "en": "Tampering"
+    },
+    "examples": {
+      "tr": "İstekteki fiyat alanının izinsiz değiştirilmesi bir kurcalama senaryosudur.",
+      "en": "An unauthorized change to the price field in a request is a tampering scenario."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride"]
+  },
+  {
+    "id": "repudiation",
+    "term": {
+      "tr": "Eylemi inkâr",
+      "en": "Repudiation"
+    },
+    "examples": {
+      "tr": "Korunmuş kayıt bulunmadığında işlem inkârını değerlendirmek güçleşir.",
+      "en": "Evaluating repudiation of a transaction becomes harder without protected records."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride"]
+  },
+  {
+    "id": "information-disclosure",
+    "term": {
+      "tr": "Bilgi ifşası",
+      "en": "Information disclosure"
+    },
+    "examples": {
+      "tr": "Ayrıntılı hata mesajı, veritabanı yapısının ifşasına yol açtı.",
+      "en": "The detailed error message disclosed the database structure."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride", "attack-trees-portal-model"]
+  },
+  {
+    "id": "elevation-of-privilege",
+    "term": {
+      "tr": "Yetki yükseltme",
+      "en": "Elevation of privilege"
+    },
+    "examples": {
+      "tr": "Öğrencinin yönetici rolü kazanması, yetki yükseltme senaryosudur.",
+      "en": "A student obtaining an administrator role is an elevation-of-privilege scenario."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "attack-trees-portal-model",
+      "privilege-escalation",
+      "threat-modeling-stride"
+    ]
+  },
+  {
+    "id": "audit-log",
+    "term": {
+      "tr": "Denetim kaydı",
+      "en": "Audit log"
+    },
+    "examples": {
+      "tr": "Korunan denetim kaydı, hangi hesabın notu değiştirdiğini incelemeyi sağlar.",
+      "en": "A protected audit log supports investigating which account changed the grade."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-modeling-stride", "attack-trees-portal-model"]
+  },
+  {
+    "id": "rate-limiting",
+    "term": {
+      "tr": "Hız sınırlama",
+      "en": "Rate limiting"
+    },
+    "examples": {
+      "tr": "Hız sınırlama, tek bir istemcinin kaynakları tüketmesini zorlaştırır.",
+      "en": "Rate limiting makes it harder for one client to exhaust resources."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "api-security-authorization-abuse",
+      "attack-trees-portal-model",
+      "threat-modeling-stride",
+      "intrusion-detection-prevention",
+      "ddos-defense"
+    ]
+  },
+  {
+    "id": "least-privilege",
+    "term": {
+      "tr": "En az yetki",
+      "en": "Least privilege"
+    },
+    "examples": {
+      "tr": "En az yetki gereği öğrenci hesabına yönetici işlemleri verilmedi.",
+      "en": "Under least privilege, the student account was not granted administrative operations."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "access-control-models",
+      "attack-trees-portal-model",
+      "firewalls-segmentation",
+      "identity-authentication-authorization",
+      "oauth-authorization",
+      "os-security-synthesis",
+      "privilege-escalation",
+      "sandboxing-isolation",
+      "security-design-principles",
+      "threat-modeling-stride",
+      "zero-trust-architecture"
+    ]
+  },
+  {
+    "id": "dread",
+    "term": {
+      "tr": "DREAD öncelik puanlaması",
+      "en": "DREAD prioritization scoring"
+    },
+    "examples": {
+      "tr": "DREAD puanını saldırı olasılığı olarak değil, gerekçeli bir karşılaştırma olarak kullandık.",
+      "en": "We used the DREAD score as a reasoned comparison rather than an attack probability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-prioritization-methods", "attack-trees-portal-model"]
+  },
+  {
+    "id": "pasta",
+    "term": {
+      "tr": "PASTA tehdit modelleme süreci",
+      "en": "PASTA threat modeling process"
+    },
+    "examples": {
+      "tr": "PASTA sürecinde teknik kapsamdan önce iş hedeflerini tanımladık.",
+      "en": "In the PASTA process, we defined business objectives before technical scope."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-prioritization-methods"]
+  },
+  {
+    "id": "attack-tree",
+    "term": {
+      "tr": "Saldırı ağacı",
+      "en": "Attack tree"
+    },
+    "examples": {
+      "tr": "Saldırı ağacı, güçlü parola dışında kalan kurtarma yolunu da gösterdi.",
+      "en": "The attack tree also showed the recovery path beyond the strong password."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["attack-trees-portal-model"]
+  },
+  {
+    "id": "attack-defense-tree",
+    "term": {
+      "tr": "Saldırı–savunma ağacı",
+      "en": "Attack–defense tree"
+    },
+    "examples": {
+      "tr": "Saldırı–savunma ağacında MFA’yı hesap ele geçirme dalına bağladık.",
+      "en": "In the attack–defense tree, we attached MFA to the account-takeover branch."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["attack-trees-portal-model"]
+  },
+  {
+    "id": "risk-register",
+    "term": {
+      "tr": "Risk kaydı",
+      "en": "Risk register"
+    },
+    "examples": {
+      "tr": "Risk kaydına tehdidi, etkilenen hedefi, önceliği ve azaltımı yazdık.",
+      "en": "We recorded the threat, affected objective, priority and mitigation in the risk register."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["attack-trees-portal-model"]
+  },
+  {
+    "id": "role-based-access-control",
+    "term": {
+      "tr": "Rol tabanlı erişim kontrolü",
+      "en": "Role-based access control"
+    },
+    "examples": {
+      "tr": "Rol tabanlı erişim kontrolü, öğrenci ve öğretim üyesinin izinlerini ayırır.",
+      "en": "Role-based access control separates student permissions from instructor permissions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "access-control-models",
+      "attack-trees-portal-model",
+      "zero-trust-architecture"
+    ]
+  },
+  {
+    "id": "idor",
+    "term": {
+      "tr": "Güvensiz doğrudan nesne başvurusu",
+      "en": "Insecure direct object reference"
+    },
+    "examples": {
+      "tr": "Kayıt kimliğini bilmek erişim izni sayıldığında IDOR riski doğar.",
+      "en": "An IDOR risk arises when knowing a record identifier is treated as permission to access it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["attack-trees-portal-model"]
+  },
+  {
+    "id": "information-security",
+    "term": {
+      "tr": "Bilgi güvenliği",
+      "en": "Information security"
+    },
+    "examples": {
+      "tr": "Bilgi güvenliği, yetkisiz okumayı önlemek kadar izinsiz değişikliği de ele alır.",
+      "en": "Information security addresses unauthorized changes as well as unauthorized reading."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "logging",
+    "term": {
+      "tr": "Günlükleme",
+      "en": "Logging"
+    },
+    "examples": {
+      "tr": "Günlükleme için alınan metnin kaynağı hâlâ istemci olabilir.",
+      "en": "The text accepted for logging may still originate from the client."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "jndi",
+    "term": {
+      "tr": "Java adlandırma ve dizin arayüzü",
+      "en": "Java Naming and Directory Interface"
+    },
+    "examples": {
+      "tr": "JNDI üzerinden yapılan ad çözümlemenin hangi kaynağa güvendiğini inceledik.",
+      "en": "We examined which source was trusted during name resolution through JNDI."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "injection",
+    "term": {
+      "tr": "Enjeksiyon",
+      "en": "Injection"
+    },
+    "examples": {
+      "tr": "Girdi bir yorumlayıcıda talimat olarak ele alındığında enjeksiyon riski oluşur.",
+      "en": "An injection risk arises when input is treated as an instruction by an interpreter."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "remote-code-execution",
+    "term": {
+      "tr": "Uzaktan kod çalıştırma",
+      "en": "Remote code execution"
+    },
+    "examples": {
+      "tr": "Uzaktan kod çalıştırma olasılığı, günlük girdisi ile çalışma zamanı koşullarına birlikte bağlıydı.",
+      "en": "The possibility of remote code execution depended on both the log input and runtime conditions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "gadget-chain",
+    "term": {
+      "tr": "Gadget zinciri",
+      "en": "Gadget chain"
+    },
+    "examples": {
+      "tr": "Gadget zinciri, mevcut sınıfların yan etkilerini beklenmeyen bir davranışa bağlayabilir.",
+      "en": "A gadget chain can connect side effects of existing classes into unexpected behavior."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "advanced-injection-deserialization-xxe-ssti",
+      "log4shell-trust-boundaries"
+    ]
+  },
+  {
+    "id": "mitigation",
+    "term": {
+      "tr": "Azaltım",
+      "en": "Mitigation"
+    },
+    "examples": {
+      "tr": "Geçici azaltım bir saldırı yolunu sınırladı; kalıcı düzeltmenin yerini almadı.",
+      "en": "The temporary mitigation restricted an attack path without replacing the permanent fix."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "security-patch",
+    "term": {
+      "tr": "Güvenlik yaması",
+      "en": "Security patch"
+    },
+    "examples": {
+      "tr": "Güvenlik yamasının hangi kusuru giderdiğini sürüm kaydından doğruladık.",
+      "en": "We checked the release record to confirm which flaw the security patch addressed."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["log4shell-trust-boundaries"]
+  },
+  {
+    "id": "security-mindset",
+    "term": {
+      "tr": "Güvenlik zihniyeti",
+      "en": "Security mindset"
+    },
+    "examples": {
+      "tr": "Güvenlik zihniyeti, sensör yanıt vermezse sistemin ne yapacağını da sormayı gerektirir.",
+      "en": "A security mindset also requires asking what the system does when the sensor fails to respond."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-mindset"]
+  },
+  {
+    "id": "fail-closed",
+    "term": {
+      "tr": "Hata durumunda erişimi kapatma",
+      "en": "Fail-closed"
+    },
+    "examples": {
+      "tr": "Yetki denetimi çalışmadığında güncelleme isteği fail-closed davranışla reddedildi.",
+      "en": "When the authorization check failed, the update request was denied under fail-closed behavior."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-mindset"]
+  },
+  {
+    "id": "time-sharing",
+    "term": {
+      "tr": "Zaman paylaşımı",
+      "en": "Time-sharing"
+    },
+    "examples": {
+      "tr": "Zaman paylaşımı işlemciyi paylaştırırken kullanıcıların bellek haklarını birleştirmez.",
+      "en": "Time-sharing allocates processor time without merging users’ memory permissions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-history",
+      "security-design-principles",
+      "course-roadmap"
+    ]
+  },
+  {
+    "id": "protection-ring",
+    "term": {
+      "tr": "Koruma halkası",
+      "en": "Protection ring"
+    },
+    "examples": {
+      "tr": "Koruma halkaları farklı ayrıcalık düzeylerini birbirinden ayırmaya yardım eder.",
+      "en": "Protection rings help separate different privilege levels."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["course-roadmap", "os-security-boundaries", "security-history"]
+  },
+  {
+    "id": "access-control-list",
+    "term": {
+      "tr": "Erişim denetim listesi",
+      "en": "Access control list"
+    },
+    "examples": {
+      "tr": "Dosyanın erişim denetim listesi hangi öznenin okuma hakkı olduğunu belirtir.",
+      "en": "The file’s access control list states which subject has permission to read it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models", "security-history"]
+  },
+  {
+    "id": "memory-isolation",
+    "term": {
+      "tr": "Bellek yalıtımı",
+      "en": "Memory isolation"
+    },
+    "examples": {
+      "tr": "Bellek yalıtımı bir kullanıcının programını diğer kullanıcının verisinden ayırır.",
+      "en": "Memory isolation separates one user’s program from another user’s data."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "memory-safety-foundations",
+      "os-security-boundaries",
+      "security-history"
+    ]
+  },
+  {
+    "id": "computer-worm",
+    "term": {
+      "tr": "Bilgisayar solucanı",
+      "en": "Computer worm"
+    },
+    "examples": {
+      "tr": "Solucanın yeniden kopyalanması aynı makinenin kaynaklarını tüketti.",
+      "en": "Repeated copying of the worm exhausted resources on the same machine."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "cert",
+    "term": {
+      "tr": "Bilgisayar acil müdahale ekibi",
+      "en": "Computer Emergency Response Team"
+    },
+    "examples": {
+      "tr": "CERT yaklaşımı kurumların bir saldırı sırasında bilgiyi koordine etmesine yardım eder.",
+      "en": "The CERT approach helps organizations coordinate information during an attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "csirt",
+    "term": {
+      "tr": "Bilgisayar güvenliği olaylarına müdahale ekibi",
+      "en": "Computer Security Incident Response Team"
+    },
+    "examples": {
+      "tr": "CSIRT, olay sırasında teknik bulguların koordineli değerlendirilmesini destekler.",
+      "en": "A CSIRT supports coordinated assessment of technical findings during an incident."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "scada",
+    "term": {
+      "tr": "Gözetim, kontrol ve veri toplama",
+      "en": "Supervisory Control and Data Acquisition"
+    },
+    "examples": {
+      "tr": "SCADA katmanı ile fiziksel süreç arasındaki bağlantıyı şemada izledik.",
+      "en": "We traced the connection between the SCADA layer and the physical process in the diagram."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "plc",
+    "term": {
+      "tr": "Programlanabilir mantık denetleyici",
+      "en": "Programmable logic controller"
+    },
+    "examples": {
+      "tr": "Şemadaki PLC, yazılım katmanını fiziksel giriş ve çıkışlarla ilişkilendirir.",
+      "en": "The PLC in the diagram connects the software layer with physical inputs and outputs."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "air-gap",
+    "term": {
+      "tr": "Ağdan fiziksel yalıtım",
+      "en": "Air gap"
+    },
+    "examples": {
+      "tr": "Ağdan yalıtılmış ortamda USB ve işletim ilişkileri yine giriş yolu oluşturabilir.",
+      "en": "USB and operational relationships can still provide entry paths into an air-gapped environment."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "supply-chain-attack",
+    "term": {
+      "tr": "Tedarik zinciri saldırısı",
+      "en": "Supply-chain attack"
+    },
+    "examples": {
+      "tr": "Zehirlenmiş güncelleme yoluyla gelen tedarik zinciri saldırısı, sıradan bir ürün açığıyla aynı mekanizma değildir.",
+      "en": "A supply-chain attack through a poisoned update does not use the same mechanism as an ordinary product vulnerability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-history"]
+  },
+  {
+    "id": "zero-trust",
+    "term": {
+      "tr": "Sıfır güven",
+      "en": "Zero trust"
+    },
+    "examples": {
+      "tr": "Sıfır güven yaklaşımı, iç ağda bulunmayı kendiliğinden güven nedeni saymaz.",
+      "en": "A zero trust approach does not treat presence on the internal network as sufficient reason for trust."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "access-control-models",
+      "security-design-principles",
+      "security-history",
+      "zero-trust-architecture",
+      "firewalls-segmentation",
+      "network-security-misconceptions"
+    ]
+  },
+  {
+    "id": "post-quantum-cryptography",
+    "term": {
+      "tr": "Kuantum sonrası kriptografi",
+      "en": "Post-quantum cryptography"
+    },
+    "examples": {
+      "tr": "Kuantum sonrası hazırlıkta anahtar kapsülleme ile imzanın görevlerini ayrı değerlendirdik.",
+      "en": "In post-quantum preparation, we considered the roles of key encapsulation and signatures separately."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-history",
+      "quantum-symmetric-impact",
+      "quantum-threat-and-pqc",
+      "pqc-algorithms-migration"
+    ]
+  },
+  {
+    "id": "software-dependency",
+    "term": {
+      "tr": "Yazılım bağımlılığı",
+      "en": "Software dependency"
+    },
+    "examples": {
+      "tr": "Günlükleme bağımlılığının davranışı, onu kullanan uygulamanın riskini etkiledi.",
+      "en": "The logging dependency’s behavior affected the risk of the application using it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "log4shell-trust-boundaries",
+      "security-history",
+      "trusting-trust"
+    ]
+  },
+  {
+    "id": "asset-value",
+    "term": {
+      "tr": "Varlık değeri",
+      "en": "Asset value"
+    },
+    "examples": {
+      "tr": "Ödeme sunucusunun varlık değeri iş etkisini parasal olarak düşünmeye yardım eder.",
+      "en": "The payment server’s asset value helps express business impact financially."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "exposure-factor",
+    "term": {
+      "tr": "Maruziyet faktörü",
+      "en": "Exposure factor"
+    },
+    "examples": {
+      "tr": "Kesinti başına tahmini kayıp oranı EF olarak modele girilir.",
+      "en": "The estimated loss fraction per outage is entered as EF."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "single-loss-expectancy",
+    "term": {
+      "tr": "Tekil kayıp beklentisi",
+      "en": "Single loss expectancy"
+    },
+    "examples": {
+      "tr": "AV 100.000 TL ve EF 0,1 ise SLE 10.000 TL’dir.",
+      "en": "With AV of 100,000 TL and EF of 0.1, SLE is 10,000 TL."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "annualized-rate-occurrence",
+    "term": {
+      "tr": "Yıllık olay sıklığı",
+      "en": "Annualized rate of occurrence"
+    },
+    "examples": {
+      "tr": "Yılda ortalama yarım olay beklenmesi ARO değerinin 0,5 olabileceğini gösterir.",
+      "en": "An expectation of half an event per year can be represented by ARO 0.5."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "annualized-loss-expectancy",
+    "term": {
+      "tr": "Yıllık kayıp beklentisi",
+      "en": "Annualized loss expectancy"
+    },
+    "examples": {
+      "tr": "SLE 10.000 TL ve ARO 2 ise ALE yılda 20.000 TL’dir.",
+      "en": "If SLE is 10,000 TL and ARO is 2, ALE is 20,000 TL per year."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "return-security-investment",
+    "term": {
+      "tr": "Güvenlik yatırımı getirisi",
+      "en": "Return on security investment"
+    },
+    "examples": {
+      "tr": "Kontrolün ALE azalması ve maliyeti ROSI hesabında karşılaştırılır.",
+      "en": "ROSI compares a control’s ALE reduction with its cost."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "risk-matrix",
+    "term": {
+      "tr": "Risk matrisi",
+      "en": "Risk matrix"
+    },
+    "examples": {
+      "tr": "Olasılık ve etki eksenleri olayları önceliklendirmeyi kolaylaştırır.",
+      "en": "Likelihood and impact axes help prioritize events."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "risk-treatment",
+    "term": {
+      "tr": "Risk işleme",
+      "en": "Risk treatment"
+    },
+    "examples": {
+      "tr": "Kurumlar riski azaltır, aktarır, kabul eder veya riskli faaliyetten kaçınır.",
+      "en": "Organizations mitigate, transfer, accept, or avoid a risk."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "residual-risk",
+    "term": {
+      "tr": "Artık risk",
+      "en": "Residual risk"
+    },
+    "examples": {
+      "tr": "Kontrollerden sonra kalan artık risk kaydedilip gözden geçirilir.",
+      "en": "Residual risk remaining after controls is recorded and reviewed."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["risk-management"]
+  },
+  {
+    "id": "separation-of-duties",
+    "term": {
+      "tr": "Görevler ayrılığı",
+      "en": "Separation of duties"
+    },
+    "examples": {
+      "tr": "Görevler ayrılığı gereği ödemeyi hazırlayan kişi kendi işlemini onaylayamaz.",
+      "en": "Under separation of duties, the person preparing a payment cannot approve their own transaction."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "secure-defaults",
+    "term": {
+      "tr": "Güvenli varsayılan ayarlar",
+      "en": "Secure defaults"
+    },
+    "examples": {
+      "tr": "Güvenli varsayılan ayarlar, açıkça izin verilmeyen gelen bağlantıları reddeder.",
+      "en": "Secure defaults reject incoming connections unless they are explicitly allowed."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "open-design",
+    "term": {
+      "tr": "Açık tasarım ilkesi",
+      "en": "Open design principle"
+    },
+    "examples": {
+      "tr": "Açık tasarım ilkesine göre algoritmanın bilinmesi anahtarı ele geçirmeden korumayı bozmamalıdır.",
+      "en": "Under open design, knowing the algorithm should not defeat protection without obtaining the key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "complete-mediation",
+    "term": {
+      "tr": "Tam aracılık",
+      "en": "Complete mediation"
+    },
+    "examples": {
+      "tr": "Tam aracılık, bir kullanıcının belgeye yönelik her yeni isteğinde yetki kontrolü yapılmasını gerektirir.",
+      "en": "Complete mediation requires checking authorization for every new request a user makes for a document."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "economy-of-mechanism",
+    "term": {
+      "tr": "Mekanizma ekonomisi",
+      "en": "Economy of mechanism"
+    },
+    "examples": {
+      "tr": "Mekanizma ekonomisi, gerekmeyen bir özellik eklemeden önce güvenlik maliyetini değerlendirmeyi önerir.",
+      "en": "Economy of mechanism encourages evaluating the security cost before adding an unnecessary feature."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "least-common-mechanism",
+    "term": {
+      "tr": "En az ortak mekanizma",
+      "en": "Least common mechanism"
+    },
+    "examples": {
+      "tr": "En az ortak mekanizma yaklaşımı, farklı müşterilerin geçici dosyalarını ayrı alanlarda tutar.",
+      "en": "The least common mechanism principle keeps different customers’ temporary files in separate spaces."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "psychological-acceptability",
+    "term": {
+      "tr": "Psikolojik kabul edilebilirlik",
+      "en": "Psychological acceptability"
+    },
+    "examples": {
+      "tr": "Kullanımı kolay bir MFA akışı, psikolojik kabul edilebilirliği yüksek bir güvenlik önlemidir.",
+      "en": "An easy-to-use MFA flow is a security measure with high psychological acceptability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-design-principles"]
+  },
+  {
+    "id": "defense-in-depth",
+    "term": {
+      "tr": "Derinlemesine savunma",
+      "en": "Defense in depth"
+    },
+    "examples": {
+      "tr": "Derinlemesine savunmada ağ filtresi, uç nokta koruması ve yedekler farklı aşamalarda zararı sınırlar.",
+      "en": "In defense in depth, network filtering, endpoint controls, and backups limit damage at different stages."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "exploit-mitigations",
+      "os-security-synthesis",
+      "sandboxing-isolation",
+      "security-design-principles",
+      "system-hardening"
+    ]
+  },
+  {
+    "id": "threat-actor",
+    "term": {
+      "tr": "Tehdit aktörü",
+      "en": "Threat actor"
+    },
+    "examples": {
+      "tr": "Tehdit aktörünün motivasyonunu ve kaynaklarını anlamak, savunma önceliklerini belirlemeye yardım eder.",
+      "en": "Understanding a threat actor’s motivation and resources helps set defensive priorities."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "script-kiddie",
+    "term": {
+      "tr": "Hazır araç kullanan acemi saldırgan",
+      "en": "Script kiddie"
+    },
+    "examples": {
+      "tr": "Hazır araç kullanan acemi saldırgan, bilinen bir tarayıcıyı değiştirmeden denedi.",
+      "en": "The script kiddie tried a known scanner without modifying it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "cybercriminal",
+    "term": {
+      "tr": "Siber suçlu",
+      "en": "Cybercriminal"
+    },
+    "examples": {
+      "tr": "Siber suçlu, daha yüksek kazanç beklediği kurumu hedef seçti.",
+      "en": "The cybercriminal selected the organization expected to yield a higher return."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "hacktivist",
+    "term": {
+      "tr": "Hacktivist",
+      "en": "Hacktivist"
+    },
+    "examples": {
+      "tr": "Hacktivist, siyasi mesajını görünür kılmak amacıyla kurumun web sitesini hedef aldı.",
+      "en": "The hacktivist targeted the organization’s website to make a political message visible."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "advanced-persistent-threat",
+    "term": {
+      "tr": "Gelişmiş ve ısrarlı tehdit",
+      "en": "Advanced persistent threat"
+    },
+    "examples": {
+      "tr": "Gelişmiş ve ısrarlı tehdit grubu, belirli bir hedefte uzun süre gizli kalmaya çalıştı.",
+      "en": "The advanced persistent threat group tried to remain hidden in a specific target for a long time."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "insider-threat",
+    "term": {
+      "tr": "İç tehdit",
+      "en": "Insider threat"
+    },
+    "examples": {
+      "tr": "İç tehdit değerlendirmesi kötü niyetli eylemleri, dikkatsiz hataları ve ele geçirilmiş hesapları kapsar.",
+      "en": "An insider-threat assessment covers malicious acts, careless mistakes, and compromised accounts."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "security-researcher",
+    "term": {
+      "tr": "Güvenlik araştırmacısı",
+      "en": "Security researcher"
+    },
+    "examples": {
+      "tr": "Güvenlik araştırmacısı, bulduğu açığı izinli programın kurallarına göre bildirdi.",
+      "en": "The security researcher reported the flaw under the authorized program’s rules."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "responsible-disclosure",
+    "term": {
+      "tr": "Sorumlu açıklama",
+      "en": "Responsible disclosure"
+    },
+    "examples": {
+      "tr": "Sorumlu açıklama, üreticiye açığı düzeltmesi için koordineli biçimde zaman tanır.",
+      "en": "Responsible disclosure gives the vendor coordinated time to fix the vulnerability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["coordinated-vulnerability-disclosure", "threat-actors"]
+  },
+  {
+    "id": "tactics-techniques-procedures",
+    "term": {
+      "tr": "Taktikler, teknikler ve prosedürler",
+      "en": "Tactics, techniques, and procedures"
+    },
+    "examples": {
+      "tr": "Savunma ekibi, bir aktör adından çok gözlenen taktikleri, teknikleri ve prosedürleri izledi.",
+      "en": "The defense team tracked observed tactics, techniques, and procedures rather than relying only on an actor name."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["threat-actors"]
+  },
+  {
+    "id": "cyber-kill-chain",
+    "term": {
+      "tr": "Siber Ölüm Zinciri",
+      "en": "Cyber Kill Chain"
+    },
+    "examples": {
+      "tr": "Siber Ölüm Zinciri, saldırı sürecindeki müdahale fırsatlarını aşamalara ayırır.",
+      "en": "The Cyber Kill Chain divides an attack process into stages that offer intervention opportunities."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "reconnaissance",
+    "term": {
+      "tr": "Keşif",
+      "en": "Reconnaissance"
+    },
+    "examples": {
+      "tr": "Keşif aşamasında saldırgan, hedefin açık hizmetleri ve çalışanları hakkında bilgi topladı.",
+      "en": "During reconnaissance, the attacker gathered information about the target’s exposed services and employees."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain", "network-reconnaissance-nmap"]
+  },
+  {
+    "id": "weaponization",
+    "term": {
+      "tr": "Silahlandırma",
+      "en": "Weaponization"
+    },
+    "examples": {
+      "tr": "Silahlandırma aşamasında saldırgan, tuzaklı belgeyi hedefin ortamına göre hazırladı.",
+      "en": "During weaponization, the attacker prepared the booby-trapped document for the target’s environment."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "delivery",
+    "term": {
+      "tr": "Teslim",
+      "en": "Delivery"
+    },
+    "examples": {
+      "tr": "Teslim aşamasında zararlı dosya hedef çalışana e-posta ile ulaştırıldı.",
+      "en": "During delivery, the malicious file reached the target employee by email."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "exploitation",
+    "term": {
+      "tr": "Sömürü",
+      "en": "Exploitation"
+    },
+    "examples": {
+      "tr": "Sömürü aşamasında saldırgan, güncellenmemiş uygulamadaki açığı tetikledi.",
+      "en": "During exploitation, the attacker triggered a flaw in the unpatched application."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "installation",
+    "term": {
+      "tr": "Kurulum",
+      "en": "Installation"
+    },
+    "examples": {
+      "tr": "Kurulum aşamasında saldırgan, daha sonra yeniden erişmek için bir arka kapı bıraktı.",
+      "en": "During installation, the attacker left a backdoor to regain access later."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "command-and-control",
+    "term": {
+      "tr": "Komuta ve kontrol",
+      "en": "Command and control"
+    },
+    "examples": {
+      "tr": "Komuta ve kontrol kanalı, saldırganın ele geçirilen sistemi uzaktan yönetmesini sağladı.",
+      "en": "The command-and-control channel allowed the attacker to manage the compromised system remotely."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "actions-on-objectives",
+    "term": {
+      "tr": "Hedefe yönelik eylemler",
+      "en": "Actions on objectives"
+    },
+    "examples": {
+      "tr": "Hedefe yönelik eylemler, saldırganın veriyi sızdırması veya şifrelemesi olabilir.",
+      "en": "Actions on objectives may include the attacker exfiltrating or encrypting data."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cyber-kill-chain"]
+  },
+  {
+    "id": "return-on-attack",
+    "term": {
+      "tr": "Saldırı getirisi oranı",
+      "en": "Return on attack"
+    },
+    "examples": {
+      "tr": "Saldırı getirisi oranı birin altına düştüğünde saldırının beklenen kazancı maliyetinden küçüktür.",
+      "en": "When the return on attack falls below one, the expected gain is smaller than the attack cost."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "work-factor",
+    "term": {
+      "tr": "İş faktörü",
+      "en": "Work factor"
+    },
+    "examples": {
+      "tr": "İş faktörünü yükseltmek, saldırganın hedefe ulaşmak için daha fazla zaman ve kaynak harcamasını gerektirir.",
+      "en": "Raising the work factor requires an attacker to spend more time and resources to reach the target."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "social-engineering",
+    "term": {
+      "tr": "Sosyal mühendislik",
+      "en": "Social engineering"
+    },
+    "examples": {
+      "tr": "Sosyal mühendislik, çalışanı sahte bir destek çağrısına güvenmeye yöneltti.",
+      "en": "Social engineering persuaded the employee to trust a fraudulent support call."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor", "security-mindset"]
+  },
+  {
+    "id": "phishing",
+    "term": {
+      "tr": "Oltalama",
+      "en": "Phishing"
+    },
+    "examples": {
+      "tr": "Oltalama iletisi, sahte giriş sayfasında kullanıcıdan parolasını istedi.",
+      "en": "The phishing message asked the user for a password on a fake sign-in page."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-economics-human-factor",
+      "threat-actors",
+      "cyber-kill-chain"
+    ]
+  },
+  {
+    "id": "spear-phishing",
+    "term": {
+      "tr": "Hedefli oltalama",
+      "en": "Spear phishing"
+    },
+    "examples": {
+      "tr": "Hedefli oltalama iletisi, belirli çalışanın katıldığı toplantıdan söz ederek güven kazanmaya çalıştı.",
+      "en": "The spear-phishing message tried to build trust by mentioning a meeting attended by a specific employee."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "whaling",
+    "term": {
+      "tr": "Yönetici hedefli oltalama",
+      "en": "Whaling"
+    },
+    "examples": {
+      "tr": "Yönetici hedefli oltalama, acil ödeme talebiyle bir şirket yöneticisini hedef aldı.",
+      "en": "The whaling message targeted a company executive with an urgent payment request."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "smishing",
+    "term": {
+      "tr": "SMS oltalaması",
+      "en": "Smishing"
+    },
+    "examples": {
+      "tr": "SMS oltalaması, teslimat bağlantısı gibi görünen bir mesajla kart bilgisi istedi.",
+      "en": "The smishing text requested card details through a link posing as a delivery notice."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "vishing",
+    "term": {
+      "tr": "Sesli oltalama",
+      "en": "Vishing"
+    },
+    "examples": {
+      "tr": "Sesli oltalama araması, destek görevlisi gibi davranıp tek kullanımlık kodu istedi.",
+      "en": "The vishing call impersonated support and requested a one-time code."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "pretexting",
+    "term": {
+      "tr": "Bahane uydurma",
+      "en": "Pretexting"
+    },
+    "examples": {
+      "tr": "Bahane uydurma sırasında saldırgan, kimlik bilgisi almak için teknik destek senaryosu kurdu.",
+      "en": "During pretexting, the attacker invented a technical-support scenario to obtain credentials."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "baiting",
+    "term": {
+      "tr": "Yemleme",
+      "en": "Baiting"
+    },
+    "examples": {
+      "tr": "Yemleme, merak uyandıran etiketli bir USB belleği kurbanın bulacağı yere bırakabilir.",
+      "en": "Baiting may leave an enticingly labeled USB drive where a target will find it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "quid-pro-quo",
+    "term": {
+      "tr": "Karşılıklılık yoluyla kandırma",
+      "en": "Quid pro quo"
+    },
+    "examples": {
+      "tr": "Karşılıklılık yoluyla kandırma, ücretsiz yardım karşılığında kullanıcıdan hesap erişimi istedi.",
+      "en": "The quid pro quo trick requested account access in exchange for free assistance."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "security-culture",
+    "term": {
+      "tr": "Güvenlik kültürü",
+      "en": "Security culture"
+    },
+    "examples": {
+      "tr": "Güvenlik kültürü, çalışanların şüpheli iletileri ceza korkusu olmadan bildirmesini destekler.",
+      "en": "A security culture supports employees in reporting suspicious messages without fear of punishment."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor", "security-mindset"]
+  },
+  {
+    "id": "security-operations-center",
+    "term": {
+      "tr": "Güvenlik operasyon merkezi",
+      "en": "Security operations center"
+    },
+    "examples": {
+      "tr": "Güvenlik operasyon merkezi, uyarıları yorumlayan analistlerle müdahaleyi koordine eder.",
+      "en": "The security operations center coordinates response through analysts who interpret alerts."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-economics-human-factor"]
+  },
+  {
+    "id": "security-governance",
+    "term": {
+      "tr": "Güvenlik yönetişimi",
+      "en": "Security governance"
+    },
+    "examples": {
+      "tr": "Güvenlik yönetişimi, olay müdahalesi için sorumluları ve karar yetkisini önceden belirler.",
+      "en": "Security governance defines incident-response responsibilities and decision authority in advance."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "professional-ethics",
+    "term": {
+      "tr": "Meslek etiği",
+      "en": "Professional ethics"
+    },
+    "examples": {
+      "tr": "Meslek etiği, araştırmacının bulduğu açığı kullanmak yerine güvenli biçimde bildirmesini gerektirir.",
+      "en": "Professional ethics requires a researcher to report a discovered flaw safely instead of exploiting it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "personal-data",
+    "term": {
+      "tr": "Kişisel veri",
+      "en": "Personal data"
+    },
+    "examples": {
+      "tr": "Bir kişiyi doğrudan veya dolaylı tanımlayan kayıt kişisel veri olabilir.",
+      "en": "A record that identifies a person directly or indirectly may be personal data."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "security-governance-ethics-law",
+      "security-economics-human-factor"
+    ]
+  },
+  {
+    "id": "personal-data-breach",
+    "term": {
+      "tr": "Kişisel veri ihlali",
+      "en": "Personal data breach"
+    },
+    "examples": {
+      "tr": "Yetkisiz kişilerin müşteri kayıtlarını ele geçirmesi kişisel veri ihlaline yol açabilir.",
+      "en": "Unauthorized people obtaining customer records may result in a personal data breach."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "turkish-penal-code",
+    "term": {
+      "tr": "Türk Ceza Kanunu",
+      "en": "Turkish Penal Code"
+    },
+    "examples": {
+      "tr": "Güvenlik testi, Türk Ceza Kanunu ve diğer yürürlükteki kurallar gözetilerek açık izinle yapılmalıdır.",
+      "en": "A security test should be performed with explicit authorization and with the Turkish Penal Code and other applicable rules in mind."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "kvkk",
+    "term": {
+      "tr": "Kişisel Verilerin Korunması Kanunu (KVKK)",
+      "en": "Personal Data Protection Law (KVKK)"
+    },
+    "examples": {
+      "tr": "Kurum, kişisel verileri KVKK’nın amaç ve saklama ilkelerine uygun biçimde işlemelidir.",
+      "en": "An organization should process personal data in line with the KVKK’s purpose and retention principles."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "gdpr",
+    "term": {
+      "tr": "Genel Veri Koruma Tüzüğü",
+      "en": "General Data Protection Regulation"
+    },
+    "examples": {
+      "tr": "GDPR, Avrupa Birliği hukukundaki kişisel veri koruma düzenlemelerinden biridir.",
+      "en": "The GDPR is a personal-data protection regulation in European Union law."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "nist-csf",
+    "term": {
+      "tr": "NIST Siber Güvenlik Çerçevesi",
+      "en": "NIST Cybersecurity Framework"
+    },
+    "examples": {
+      "tr": "NIST Siber Güvenlik Çerçevesi, kurumun güvenlik risklerini ortak işlevler üzerinden konuşmasına yardım eder.",
+      "en": "The NIST Cybersecurity Framework helps an organization discuss security risks through shared functions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "capture-the-flag",
+    "term": {
+      "tr": "Yakala-bayrak yarışması",
+      "en": "Capture the flag"
+    },
+    "examples": {
+      "tr": "Öğrenci, güvenlik becerilerini yalnızca yetkili yakala-bayrak laboratuvarında denedi.",
+      "en": "The student practiced security skills only in an authorized capture-the-flag lab."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["security-governance-ethics-law"]
+  },
+  {
+    "id": "cryptanalysis",
+    "term": {
+      "tr": "Kriptanaliz",
+      "en": "Cryptanalysis"
+    },
+    "examples": {
+      "tr": "Kriptanalist, anahtar olmadan şifreli metindeki yapıyı çözmeye çalıştı.",
+      "en": "The cryptanalyst searched for structure in the ciphertext without the key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "substitution-cipher",
+    "term": {
+      "tr": "Yerine koyma şifresi",
+      "en": "Substitution cipher"
+    },
+    "examples": {
+      "tr": "Sezar şifresi, her harfi sabit kaydırmayla başka harfe dönüştüren bir yerine koyma şifresidir.",
+      "en": "A Caesar cipher is a substitution cipher that maps each letter by a fixed shift."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "transposition-cipher",
+    "term": {
+      "tr": "Yer değiştirme şifresi",
+      "en": "Transposition cipher"
+    },
+    "examples": {
+      "tr": "Skitala, harfleri değiştirmeden sıralarını karıştıran bir yer değiştirme aracıdır.",
+      "en": "A scytale is a transposition device that rearranges letters without replacing them."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "frequency-analysis",
+    "term": {
+      "tr": "Frekans analizi",
+      "en": "Frequency analysis"
+    },
+    "examples": {
+      "tr": "Frekans analizi, şifreli metindeki harf oranlarını dil alışkanlıklarıyla karşılaştırır.",
+      "en": "Frequency analysis compares ciphertext letter counts with language patterns."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "vigenere-cipher",
+    "term": {
+      "tr": "Vigenère şifresi",
+      "en": "Vigenère cipher"
+    },
+    "examples": {
+      "tr": "Vigenère şifresi, tekrarlanan anahtar harflerine göre farklı kaydırmalar uygular.",
+      "en": "The Vigenère cipher applies varying shifts from a repeating key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "enigma-machine",
+    "term": {
+      "tr": "Enigma makinesi",
+      "en": "Enigma machine"
+    },
+    "examples": {
+      "tr": "Enigma rotorları her tuş basımında ilerleyerek eşlemeyi değiştirirdi.",
+      "en": "Enigma rotors advanced with each keypress, changing the substitution."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "crib",
+    "term": {
+      "tr": "Beklenen metin parçası",
+      "en": "Crib"
+    },
+    "examples": {
+      "tr": "Analistler, mesajda geçmesi beklenen bir selamlamayı crib olarak kullandı.",
+      "en": "Analysts used an expected greeting as a crib in the message."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptography-history"]
+  },
+  {
+    "id": "symmetric-encryption",
+    "term": {
+      "tr": "Simetrik şifreleme",
+      "en": "Symmetric encryption"
+    },
+    "examples": {
+      "tr": "Dosya içeriğini aynı gizli anahtarla şifreleyip çözdük.",
+      "en": "We encrypted and decrypted the file with the same secret key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "block-cipher",
+    "term": {
+      "tr": "Blok şifresi",
+      "en": "Block cipher"
+    },
+    "examples": {
+      "tr": "AES, veriyi 128 bitlik bloklar hâlinde işler.",
+      "en": "AES processes data in 128-bit blocks."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "stream-cipher",
+    "term": {
+      "tr": "Akış şifresi",
+      "en": "Stream cipher"
+    },
+    "examples": {
+      "tr": "Akış şifresi, üretilen anahtar akışını mesajla XOR’ladı.",
+      "en": "The stream cipher XORed its keystream with the message."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "keystream",
+    "term": {
+      "tr": "Anahtar akışı",
+      "en": "Keystream"
+    },
+    "examples": {
+      "tr": "Aynı anahtar ve nonce, aynı anahtar akışını üretti.",
+      "en": "The same key and nonce produced the same keystream."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "nonce",
+    "term": {
+      "tr": "Nonce (tek kullanımlık sayı)",
+      "en": "Nonce"
+    },
+    "examples": {
+      "tr": "GCM için her mesajda yeni bir nonce kullandık.",
+      "en": "We used a fresh nonce for each GCM message."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "symmetric-encryption-foundations",
+      "elliptic-curve-cryptography",
+      "tls-13",
+      "side-channel-attacks",
+      "public-key-cryptography-practices",
+      "wireless-security-wpa3-krack",
+      "vpn-ipsec-wireguard"
+    ]
+  },
+  {
+    "id": "malleability",
+    "term": {
+      "tr": "Değiştirilebilirlik",
+      "en": "Malleability"
+    },
+    "examples": {
+      "tr": "Doğrulamasız şifreli metin bit değişikliğine açıktı.",
+      "en": "Unauthenticated ciphertext was vulnerable to bit changes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "feistel-network",
+    "term": {
+      "tr": "Feistel ağı",
+      "en": "Feistel network"
+    },
+    "examples": {
+      "tr": "Feistel çözme işleminde tur anahtarları ters sırayla uygulandı.",
+      "en": "Round keys were applied in reverse order during Feistel decryption."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["symmetric-encryption-foundations"]
+  },
+  {
+    "id": "aes",
+    "term": {
+      "tr": "Gelişmiş Şifreleme Standardı (AES)",
+      "en": "Advanced Encryption Standard (AES)"
+    },
+    "examples": {
+      "tr": "AES, 128 bitlik bloklar ve farklı anahtar uzunlukları kullanır.",
+      "en": "AES uses 128-bit blocks and several key lengths."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["aes-encryption"]
+  },
+  {
+    "id": "finite-field",
+    "term": {
+      "tr": "Sonlu alan",
+      "en": "Finite field"
+    },
+    "examples": {
+      "tr": "AES bayt işlemlerini GF(2⁸) sonlu alanında tanımlar.",
+      "en": "AES defines byte operations in the finite field GF(2⁸)."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["aes-encryption"]
+  },
+  {
+    "id": "substitution-box",
+    "term": {
+      "tr": "Yerine koyma kutusu (S-box)",
+      "en": "Substitution box (S-box)"
+    },
+    "examples": {
+      "tr": "S-box, AES baytlarına doğrusal olmayan dönüşüm uygular.",
+      "en": "The S-box applies a nonlinear transformation to AES bytes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["aes-encryption"]
+  },
+  {
+    "id": "key-schedule",
+    "term": {
+      "tr": "Anahtar genişletme",
+      "en": "Key schedule"
+    },
+    "examples": {
+      "tr": "AES anahtar genişletme, her tur için ayrı tur anahtarı üretti.",
+      "en": "The AES key schedule generated a round key for each round."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["aes-encryption"]
+  },
+  {
+    "id": "avalanche-effect",
+    "term": {
+      "tr": "Çığ etkisi",
+      "en": "Avalanche effect"
+    },
+    "examples": {
+      "tr": "Girdi bitindeki değişiklik, birkaç AES turundan sonra geniş ölçüde yayıldı.",
+      "en": "A changed input bit spread widely after several AES rounds."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["aes-encryption"]
+  },
+  {
+    "id": "electronic-codebook",
+    "term": {
+      "tr": "Elektronik kod kitabı (ECB)",
+      "en": "Electronic Codebook (ECB)"
+    },
+    "examples": {
+      "tr": "ECB kipinde eşit bloklar eşit şifreli bloklara dönüştü.",
+      "en": "Equal blocks became equal ciphertext blocks in ECB mode."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["block-cipher-modes"]
+  },
+  {
+    "id": "cipher-block-chaining",
+    "term": {
+      "tr": "Şifre blok zincirleme (CBC)",
+      "en": "Cipher Block Chaining (CBC)"
+    },
+    "examples": {
+      "tr": "CBC, her bloğu önceki şifreli blokla zincirledi.",
+      "en": "CBC chained each block to the previous ciphertext block."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["block-cipher-modes"]
+  },
+  {
+    "id": "counter-mode",
+    "term": {
+      "tr": "Sayaç kipi (CTR)",
+      "en": "Counter mode (CTR)"
+    },
+    "examples": {
+      "tr": "CTR, nonce ve sayacı AES ile şifreleyerek akış üretti.",
+      "en": "CTR encrypted a nonce and counter to produce a keystream."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["block-cipher-modes"]
+  },
+  {
+    "id": "initialization-vector",
+    "term": {
+      "tr": "Başlatma vektörü (IV)",
+      "en": "Initialization vector (IV)"
+    },
+    "examples": {
+      "tr": "CBC, ilk blok için bir IV kullandı.",
+      "en": "CBC used an IV for the first block."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["block-cipher-modes"]
+  },
+  {
+    "id": "aead",
+    "term": {
+      "tr": "İlişkili verili doğrulanmış şifreleme (AEAD)",
+      "en": "Authenticated Encryption with Associated Data (AEAD)"
+    },
+    "examples": {
+      "tr": "AEAD, başlığı gizlemeden bütünlük doğrulamasına bağladı.",
+      "en": "AEAD authenticated the header without encrypting it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "block-cipher-modes",
+      "encrypt-then-mac",
+      "tls-13",
+      "chapter-three-worked-exercises"
+    ]
+  },
+  {
+    "id": "associated-data",
+    "term": {
+      "tr": "İlişkili veri",
+      "en": "Associated data"
+    },
+    "examples": {
+      "tr": "Paket başlığı ilişkili veri olarak doğrulandı ama gizlenmedi.",
+      "en": "The packet header was authenticated as associated data but not hidden."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["block-cipher-modes"]
+  },
+  {
+    "id": "padding-oracle",
+    "term": {
+      "tr": "Padding oracle",
+      "en": "Padding oracle"
+    },
+    "examples": {
+      "tr": "Farklı padding hataları CBC çözme yanıtından bilgi sızdırdı.",
+      "en": "Different padding errors leaked information through CBC decryption responses."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "block-cipher-modes",
+      "side-channel-attacks",
+      "public-key-cryptography-practices"
+    ]
+  },
+  {
+    "id": "collision-resistance",
+    "term": {
+      "tr": "Çakışma direnci",
+      "en": "Collision resistance"
+    },
+    "examples": {
+      "tr": "İki farklı dosya için eş özet bulmak çakışma saldırısıdır.",
+      "en": "Finding the same digest for two different files is a collision attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-hash-functions"]
+  },
+  {
+    "id": "preimage-resistance",
+    "term": {
+      "tr": "Ön görüntü direnci",
+      "en": "Preimage resistance"
+    },
+    "examples": {
+      "tr": "Özetten uygun bir girdi bulmak ön görüntü saldırısıdır.",
+      "en": "Finding an input for a given digest is a preimage attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-hash-functions"]
+  },
+  {
+    "id": "length-extension",
+    "term": {
+      "tr": "Uzunluk uzatma saldırısı",
+      "en": "Length extension attack"
+    },
+    "examples": {
+      "tr": "Naif önek MAC, uzunluk uzatma saldırısıyla aşılabildi.",
+      "en": "A naive prefix MAC was vulnerable to a length extension attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-hash-functions"]
+  },
+  {
+    "id": "sha-3",
+    "term": {
+      "tr": "SHA-3",
+      "en": "SHA-3"
+    },
+    "examples": {
+      "tr": "SHA-3, sünger yapısını kullanan farklı bir hash ailesidir.",
+      "en": "SHA-3 is a distinct hash family using a sponge construction."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-hash-functions"]
+  },
+  {
+    "id": "message-authentication-code",
+    "term": {
+      "tr": "Mesaj doğrulama kodu (MAC)",
+      "en": "Message authentication code (MAC)"
+    },
+    "examples": {
+      "tr": "Alıcı, MAC eşleşmeyen mesajı reddetti.",
+      "en": "The recipient rejected the message when the MAC did not match."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["message-authentication", "multi-factor-authentication"]
+  },
+  {
+    "id": "password-hashing",
+    "term": {
+      "tr": "Parola karma işlemi",
+      "en": "Password hashing"
+    },
+    "examples": {
+      "tr": "Parola karması, her kullanıcı için benzersiz tuz içerdi.",
+      "en": "The password hash used a unique salt for each user."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy", "password-storage"]
+  },
+  {
+    "id": "salt",
+    "term": {
+      "tr": "Tuz (salt)",
+      "en": "Salt"
+    },
+    "examples": {
+      "tr": "Rastgele tuz aynı parolaların aynı özeti vermesini önledi.",
+      "en": "A random salt prevented identical passwords from having identical hashes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy", "password-storage"]
+  },
+  {
+    "id": "pepper",
+    "term": {
+      "tr": "Biber (pepper)",
+      "en": "Pepper"
+    },
+    "examples": {
+      "tr": "Biber sırrı parola veri tabanından ayrı saklandı.",
+      "en": "The pepper secret was stored separately from the password database."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-storage"]
+  },
+  {
+    "id": "argon2id",
+    "term": {
+      "tr": "Argon2id",
+      "en": "Argon2id"
+    },
+    "examples": {
+      "tr": "Argon2id bellek ve zaman maliyetiyle parola tahminlerini yavaşlattı.",
+      "en": "Argon2id slowed password guesses with memory and time costs."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy", "password-storage"]
+  },
+  {
+    "id": "scrypt",
+    "term": {
+      "tr": "scrypt",
+      "en": "scrypt"
+    },
+    "examples": {
+      "tr": "scrypt, GPU paralelliğini pahalılaştırmak için bellek kullanır.",
+      "en": "scrypt uses memory to make GPU parallelism more costly."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-storage"]
+  },
+  {
+    "id": "bcrypt",
+    "term": {
+      "tr": "bcrypt",
+      "en": "bcrypt"
+    },
+    "examples": {
+      "tr": "Mevcut bir sistem bcrypt maliyet parametresini yükseltti.",
+      "en": "An existing system increased the bcrypt cost parameter."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-storage"]
+  },
+  {
+    "id": "pbkdf2",
+    "term": {
+      "tr": "PBKDF2",
+      "en": "PBKDF2"
+    },
+    "examples": {
+      "tr": "PBKDF2, HMAC yinelemeleriyle hesaplama maliyetini artırdı.",
+      "en": "PBKDF2 increased computational cost with HMAC iterations."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-storage"]
+  },
+  {
+    "id": "entropy",
+    "term": {
+      "tr": "Entropi",
+      "en": "Entropy"
+    },
+    "examples": {
+      "tr": "Yüksek entropili anahtarın tahmin edilmesi daha zordur.",
+      "en": "A high-entropy key is harder to guess."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["randomness-foundations", "cryptographic-randomness"]
+  },
+  {
+    "id": "csprng",
+    "term": {
+      "tr": "Kriptografik olarak güvenli sözde rastgele sayı üreteci (CSPRNG)",
+      "en": "Cryptographically secure pseudorandom number generator (CSPRNG)"
+    },
+    "examples": {
+      "tr": "CSPRNG, oturum jetonunu sistem kaynağından üretti.",
+      "en": "The CSPRNG generated the session token from a system source."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "randomness-foundations",
+      "cryptographic-randomness",
+      "key-management-lifecycle",
+      "public-key-cryptography-practices"
+    ]
+  },
+  {
+    "id": "grover-algorithm",
+    "term": {
+      "tr": "Grover algoritması",
+      "en": "Grover algorithm"
+    },
+    "examples": {
+      "tr": "Grover, simetrik anahtar aramasını yaklaşık karekök hızlandırır.",
+      "en": "Grover gives a quadratic speedup for symmetric key search."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["quantum-symmetric-impact", "quantum-threat-and-pqc"]
+  },
+  {
+    "id": "shor-algorithm",
+    "term": {
+      "tr": "Shor algoritması",
+      "en": "Shor algorithm"
+    },
+    "examples": {
+      "tr": "Shor, büyük ölçekli kuantum bilgisayarda RSA varsayımını tehdit eder.",
+      "en": "Shor threatens the RSA assumption on a large-scale quantum computer."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["quantum-symmetric-impact", "quantum-threat-and-pqc"]
+  },
+  {
+    "id": "key-distribution-problem",
+    "term": {
+      "tr": "Anahtar dağıtım problemi",
+      "en": "Key distribution problem"
+    },
+    "examples": {
+      "tr": "İki yeni istemci, anahtar dağıtım problemini çözmek için açık anahtarlı yöntem kullandı.",
+      "en": "Two new clients used a public-key method to solve the key distribution problem."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "public-key-cryptography",
+    "term": {
+      "tr": "Açık anahtarlı kriptografi",
+      "en": "Public-key cryptography"
+    },
+    "examples": {
+      "tr": "Açık anahtarlı kriptografi, her kullanıcıya açık ve özel anahtar çifti verir.",
+      "en": "Public-key cryptography gives each user a public and private key pair."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "one-way-function",
+    "term": {
+      "tr": "Tek yönlü fonksiyon",
+      "en": "One-way function"
+    },
+    "examples": {
+      "tr": "Tek yönlü fonksiyonu hesaplamak kolay, çıktısından girdiyi bulmak zordur.",
+      "en": "A one-way function is easy to compute but hard to invert from its output."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "trapdoor-function",
+    "term": {
+      "tr": "Tuzak kapılı fonksiyon",
+      "en": "Trapdoor function"
+    },
+    "examples": {
+      "tr": "Tuzak kapılı fonksiyon, gizli bilgiyle tersine çevrilebilir.",
+      "en": "A trapdoor function can be inverted with secret information."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "modular-arithmetic",
+    "term": {
+      "tr": "Modüler aritmetik",
+      "en": "Modular arithmetic"
+    },
+    "examples": {
+      "tr": "Saat hesabında 10+5, 12 modülünde 3 eder.",
+      "en": "On a clock, 10+5 equals 3 modulo 12."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "discrete-logarithm-problem",
+    "term": {
+      "tr": "Ayrık logaritma problemi",
+      "en": "Discrete logarithm problem"
+    },
+    "examples": {
+      "tr": "DH güvenliği, uygun parametrelerde ayrık logaritmayı çözmenin zorluğuna dayanır.",
+      "en": "DH security relies on the difficulty of solving the discrete logarithm for suitable parameters."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "merkle-puzzles",
+    "term": {
+      "tr": "Merkle bilmeceleri",
+      "en": "Merkle puzzles"
+    },
+    "examples": {
+      "tr": "Merkle bilmeceleri, açık kanalda hesaplama maliyetiyle ortak sır kurma fikrini gösterdi.",
+      "en": "Merkle puzzles illustrated establishing a shared secret over an open channel using computational cost."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["public-key-foundations"]
+  },
+  {
+    "id": "diffie-hellman",
+    "term": {
+      "tr": "Diffie–Hellman anahtar değişimi",
+      "en": "Diffie–Hellman key exchange"
+    },
+    "examples": {
+      "tr": "Diffie–Hellman, iki tarafın dinlenen kanalda ortak sır hesaplamasını sağlar.",
+      "en": "Diffie–Hellman lets two parties compute a shared secret over an observed channel."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["diffie-hellman-key-exchange"]
+  },
+  {
+    "id": "man-in-the-middle",
+    "term": {
+      "tr": "Ortadaki adam saldırısı",
+      "en": "Man-in-the-middle attack"
+    },
+    "examples": {
+      "tr": "Kimliği doğrulanmamış DH, ortadaki adam saldırısına açıktır.",
+      "en": "Unauthenticated DH is vulnerable to a man-in-the-middle attack."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "diffie-hellman-key-exchange",
+      "tls-13",
+      "chapter-three-review",
+      "layer2-lan-attacks",
+      "packet-capture-wireshark"
+    ]
+  },
+  {
+    "id": "forward-secrecy",
+    "term": {
+      "tr": "İleri gizlilik",
+      "en": "Forward secrecy"
+    },
+    "examples": {
+      "tr": "Geçici oturum sırları atılınca kalıcı anahtarın sonraki sızıntısı eski oturumları açmaz.",
+      "en": "When ephemeral session secrets are discarded, a later long-term key leak does not reveal old sessions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "diffie-hellman-key-exchange",
+      "elliptic-curve-cryptography",
+      "tls-13",
+      "chapter-three-worked-exercises",
+      "vpn-ipsec-wireguard",
+      "wireless-security-wpa3-krack"
+    ]
+  },
+  {
+    "id": "ephemeral-key",
+    "term": {
+      "tr": "Geçici anahtar",
+      "en": "Ephemeral key"
+    },
+    "examples": {
+      "tr": "İstemci her oturum için yeni geçici anahtar üretti.",
+      "en": "The client generated a fresh ephemeral key for each session."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["diffie-hellman-key-exchange"]
+  },
+  {
+    "id": "safe-prime",
+    "term": {
+      "tr": "Güvenli asal",
+      "en": "Safe prime"
+    },
+    "examples": {
+      "tr": "DH grubu güvenli asal ve altgrup koşullarına göre seçildi.",
+      "en": "The DH group was selected using safe-prime and subgroup requirements."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["diffie-hellman-key-exchange"]
+  },
+  {
+    "id": "rsa",
+    "term": {
+      "tr": "RSA açık anahtarlı şifreleme",
+      "en": "RSA public-key cryptosystem"
+    },
+    "examples": {
+      "tr": "RSA, açık anahtarla şifreleme ve özel anahtarla çözme işlemi yapar.",
+      "en": "RSA encrypts with the public key and decrypts with the private key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "integer-factorization",
+    "term": {
+      "tr": "Tam sayı çarpanlarına ayırma",
+      "en": "Integer factorization"
+    },
+    "examples": {
+      "tr": "RSA modülünü asal çarpanlarına ayırmak özel anahtarı tehlikeye atar.",
+      "en": "Factoring the RSA modulus into primes compromises the private key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "euler-totient",
+    "term": {
+      "tr": "Euler phi fonksiyonu",
+      "en": "Euler totient function"
+    },
+    "examples": {
+      "tr": "RSA anahtar üretiminde Euler phi değeri özel üs hesabına katılır.",
+      "en": "The Euler totient value is used to derive the RSA private exponent."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "oaep",
+    "term": {
+      "tr": "Optimal Asymmetric Encryption Padding (OAEP)",
+      "en": "Optimal Asymmetric Encryption Padding (OAEP)"
+    },
+    "examples": {
+      "tr": "RSA-OAEP aynı mesaj için rastgele dolguyla farklı şifreli metin üretir.",
+      "en": "RSA-OAEP uses randomized padding so the same message can yield different ciphertexts."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem", "public-key-cryptography-practices"]
+  },
+  {
+    "id": "pss",
+    "term": {
+      "tr": "Probabilistic Signature Scheme (PSS)",
+      "en": "Probabilistic Signature Scheme (PSS)"
+    },
+    "examples": {
+      "tr": "RSA imzalarında standart PSS dolgusu kullanıldı.",
+      "en": "The RSA signature used standard PSS padding."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "chinese-remainder-theorem",
+    "term": {
+      "tr": "Çin Kalan Teoremi",
+      "en": "Chinese Remainder Theorem"
+    },
+    "examples": {
+      "tr": "CRT, RSA özel anahtar işlemlerini iki küçük modül hesabına ayırdı.",
+      "en": "CRT split the RSA private-key operation into two smaller modular computations."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "bellcore-attack",
+    "term": {
+      "tr": "Bellcore hata saldırısı",
+      "en": "Bellcore fault attack"
+    },
+    "examples": {
+      "tr": "Hatalı bir RSA-CRT imzası asal çarpan sızdırabilir.",
+      "en": "A faulty RSA-CRT signature can leak a prime factor."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "padding-scheme",
+    "term": {
+      "tr": "Dolgu şeması",
+      "en": "Padding scheme"
+    },
+    "examples": {
+      "tr": "OAEP, RSA şifrelemesine rastgelelik ve yapı ekleyen dolgu şemasıdır.",
+      "en": "OAEP is a padding scheme that adds randomness and structure to RSA encryption."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["rsa-cryptosystem"]
+  },
+  {
+    "id": "elliptic-curve-cryptography",
+    "term": {
+      "tr": "Eliptik eğri kriptografisi",
+      "en": "Elliptic curve cryptography"
+    },
+    "examples": {
+      "tr": "Eliptik eğri kriptografisi, kısa anahtarla açık anahtarlı işlem sağlar.",
+      "en": "Elliptic curve cryptography provides public-key operations with short keys."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "elliptic-curve-discrete-log",
+    "term": {
+      "tr": "Eliptik eğri ayrık logaritma problemi",
+      "en": "Elliptic curve discrete logarithm problem"
+    },
+    "examples": {
+      "tr": "Güvenli eğride kG hesaplanır; k’yı geri bulmak zordur.",
+      "en": "On a secure curve, kG is easy to compute but recovering k is hard."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "elliptic-curve-diffie-hellman",
+    "term": {
+      "tr": "Eliptik eğri Diffie–Hellman (ECDH)",
+      "en": "Elliptic-curve Diffie–Hellman (ECDH)"
+    },
+    "examples": {
+      "tr": "ECDH, DH ortak sır kurulumunu eğri noktalarıyla yapar.",
+      "en": "ECDH performs DH shared-secret setup with curve points."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "x25519",
+    "term": {
+      "tr": "X25519",
+      "en": "X25519"
+    },
+    "examples": {
+      "tr": "İstemci, geçici X25519 anahtarını TLS el sıkışmasında kullandı.",
+      "en": "The client used an ephemeral X25519 key in the TLS handshake."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "elliptic-curve-cryptography",
+      "tls-13",
+      "pqc-algorithms-migration"
+    ]
+  },
+  {
+    "id": "ecdsa",
+    "term": {
+      "tr": "Eliptik Eğri Dijital İmza Algoritması (ECDSA)",
+      "en": "Elliptic Curve Digital Signature Algorithm (ECDSA)"
+    },
+    "examples": {
+      "tr": "ECDSA imzasında nonce tekrarından kaçınılmalıdır.",
+      "en": "Nonce reuse must be avoided in ECDSA signing."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "ed25519",
+    "term": {
+      "tr": "Ed25519",
+      "en": "Ed25519"
+    },
+    "examples": {
+      "tr": "Ed25519, imza nonce’unu anahtar ve mesajdan belirlenimci türetir.",
+      "en": "Ed25519 deterministically derives the signing nonce from the key and message."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "scalar-multiplication",
+    "term": {
+      "tr": "Skaler çarpım",
+      "en": "Scalar multiplication"
+    },
+    "examples": {
+      "tr": "Açık eğri noktası Q, gizli k ile Q=kG biçiminde hesaplanır.",
+      "en": "The public curve point Q is computed as Q=kG using secret k."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "point-addition",
+    "term": {
+      "tr": "Nokta toplama",
+      "en": "Point addition"
+    },
+    "examples": {
+      "tr": "Eğri üzerindeki nokta toplama sonlu alan kurallarına göre yapılır.",
+      "en": "Point addition on the curve follows finite-field rules."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "ecdsa-nonce-reuse",
+    "term": {
+      "tr": "ECDSA nonce tekrar kullanımı",
+      "en": "ECDSA nonce reuse"
+    },
+    "examples": {
+      "tr": "Aynı ECDSA nonce’u iki mesajda kullanmak gizli anahtarı açığa çıkarabilir.",
+      "en": "Reusing an ECDSA nonce for two messages can reveal the private key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["elliptic-curve-cryptography"]
+  },
+  {
+    "id": "dual-ec-drbg",
+    "term": {
+      "tr": "Dual EC Deterministik Rastgele Bit Üreteci",
+      "en": "Dual EC Deterministic Random Bit Generator"
+    },
+    "examples": {
+      "tr": "Dual EC DRBG, parametre seçimine ilişkin güven tartışmaları nedeniyle standarttan çıkarıldı.",
+      "en": "Dual EC DRBG was withdrawn from the standard amid concerns about parameter trust."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-randomness"]
+  },
+  {
+    "id": "pseudorandom-number-generator",
+    "term": {
+      "tr": "Sözde rastgele sayı üreteci (PRNG)",
+      "en": "Pseudorandom number generator (PRNG)"
+    },
+    "examples": {
+      "tr": "Simülasyondaki PRNG, kriptografik anahtar üretimi için uygun değildir.",
+      "en": "The PRNG used in a simulation is not suitable for cryptographic key generation."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cryptographic-randomness"]
+  },
+  {
+    "id": "rsa-pss",
+    "term": {
+      "tr": "RSA-PSS imza şeması",
+      "en": "RSA-PSS signature scheme"
+    },
+    "examples": {
+      "tr": "Yazılım güncellemesi RSA-PSS ile imzalandı.",
+      "en": "The software update was signed with RSA-PSS."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["digital-signatures", "public-key-cryptography-practices"]
+  },
+  {
+    "id": "eddsa",
+    "term": {
+      "tr": "Edwards eğrisi dijital imza algoritması (EdDSA)",
+      "en": "Edwards-curve Digital Signature Algorithm (EdDSA)"
+    },
+    "examples": {
+      "tr": "EdDSA, Ed25519 imza şemasının dayandığı algoritma ailesidir.",
+      "en": "EdDSA is the algorithm family underlying the Ed25519 signature scheme."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["digital-signatures"]
+  },
+  {
+    "id": "pgp",
+    "term": {
+      "tr": "Pretty Good Privacy (PGP)",
+      "en": "Pretty Good Privacy (PGP)"
+    },
+    "examples": {
+      "tr": "PGP, e-postada hibrit şifreleme ve imzalama özelliklerini birleştirdi.",
+      "en": "PGP combined hybrid encryption and signing for email."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pgp-and-web-of-trust"]
+  },
+  {
+    "id": "openpgp",
+    "term": {
+      "tr": "OpenPGP",
+      "en": "OpenPGP"
+    },
+    "examples": {
+      "tr": "OpenPGP biçimi, PGP uyumlu araçlar için açık bir standarttır.",
+      "en": "OpenPGP is an open standard for compatible PGP tools."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pgp-and-web-of-trust"]
+  },
+  {
+    "id": "web-of-trust",
+    "term": {
+      "tr": "Güven ağı",
+      "en": "Web of trust"
+    },
+    "examples": {
+      "tr": "Güven ağında kullanıcılar anahtar parmak izlerini karşılıklı doğrular.",
+      "en": "In a web of trust, users verify one another’s key fingerprints."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pgp-and-web-of-trust"]
+  },
+  {
+    "id": "key-escrow",
+    "term": {
+      "tr": "Anahtar emaneti",
+      "en": "Key escrow"
+    },
+    "examples": {
+      "tr": "Clipper önerisi, şifreleme anahtarının devletçe emanette tutulmasını öngörüyordu.",
+      "en": "The Clipper proposal called for encryption keys to be held in government escrow."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pgp-and-web-of-trust", "key-management-lifecycle"]
+  },
+  {
+    "id": "clipper-chip",
+    "term": {
+      "tr": "Clipper çipi",
+      "en": "Clipper chip"
+    },
+    "examples": {
+      "tr": "Clipper çipi, kripto savaşlarında anahtar emanetini standartlaştırma girişimiydi.",
+      "en": "The Clipper chip was an attempt to institutionalize key escrow during the crypto wars."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pgp-and-web-of-trust"]
+  },
+  {
+    "id": "pki",
+    "term": {
+      "tr": "Açık anahtar altyapısı (PKI)",
+      "en": "Public Key Infrastructure (PKI)"
+    },
+    "examples": {
+      "tr": "PKI, sertifikaları ve güven köklerini yönetir.",
+      "en": "PKI manages certificates and trust anchors."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates", "tls-13"]
+  },
+  {
+    "id": "certificate-authority",
+    "term": {
+      "tr": "Sertifika otoritesi (CA)",
+      "en": "Certificate Authority (CA)"
+    },
+    "examples": {
+      "tr": "Tarayıcı, sertifika otoritesinin imzasını güven zincirinde doğrular.",
+      "en": "The browser validates the certificate authority signature in the trust chain."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates"]
+  },
+  {
+    "id": "x509-certificate",
+    "term": {
+      "tr": "X.509 sertifikası",
+      "en": "X.509 certificate"
+    },
+    "examples": {
+      "tr": "X.509 sertifikası açık anahtarı alan adıyla ilişkilendirir.",
+      "en": "An X.509 certificate binds a public key to a domain name."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates"]
+  },
+  {
+    "id": "subject-alternative-name",
+    "term": {
+      "tr": "Subject Alternative Name (SAN)",
+      "en": "Subject Alternative Name (SAN)"
+    },
+    "examples": {
+      "tr": "İstemci, istenen alan adını SAN listesinde arar.",
+      "en": "The client checks the requested domain in the SAN list."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates"]
+  },
+  {
+    "id": "certificate-chain",
+    "term": {
+      "tr": "Sertifika zinciri",
+      "en": "Certificate chain"
+    },
+    "examples": {
+      "tr": "İstemci sertifika zincirini yerel kök deposuna kadar doğrular.",
+      "en": "The client validates the certificate chain to its local root store."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates", "tls-13"]
+  },
+  {
+    "id": "certificate-revocation-list",
+    "term": {
+      "tr": "Sertifika iptal listesi (CRL)",
+      "en": "Certificate Revocation List (CRL)"
+    },
+    "examples": {
+      "tr": "CRL, iptal edilen sertifikaların toplu listesini yayımlar.",
+      "en": "A CRL publishes a list of revoked certificates."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates"]
+  },
+  {
+    "id": "ocsp-stapling",
+    "term": {
+      "tr": "OCSP stapling",
+      "en": "OCSP stapling"
+    },
+    "examples": {
+      "tr": "Sunucu, güncel OCSP yanıtını TLS bağlantısına ekler.",
+      "en": "The server attaches a fresh OCSP response to the TLS connection."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates", "tls-13"]
+  },
+  {
+    "id": "certificate-transparency",
+    "term": {
+      "tr": "Sertifika şeffaflığı (CT)",
+      "en": "Certificate Transparency (CT)"
+    },
+    "examples": {
+      "tr": "CT kayıtları beklenmedik sertifika düzenlemelerini görünür kılar.",
+      "en": "CT logs make unexpected certificate issuance visible."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pki-certificates"]
+  },
+  {
+    "id": "tls",
+    "term": {
+      "tr": "Taşıma Katmanı Güvenliği (TLS)",
+      "en": "Transport Layer Security (TLS)"
+    },
+    "examples": {
+      "tr": "TLS, istemci ile sunucu arasındaki trafiği korur.",
+      "en": "TLS protects traffic between a client and a server."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "tls-13",
+      "network-foundations-and-protocol-layers",
+      "layer2-lan-attacks",
+      "packet-capture-wireshark",
+      "network-security-misconceptions"
+    ]
+  },
+  {
+    "id": "hkdf",
+    "term": {
+      "tr": "HMAC tabanlı anahtar türetme işlevi (HKDF)",
+      "en": "HMAC-based Key Derivation Function (HKDF)"
+    },
+    "examples": {
+      "tr": "HKDF, ortak sırrı bağlam etiketli trafik anahtarlarına dönüştürür.",
+      "en": "HKDF derives context-labeled traffic keys from a shared secret."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tls-13", "pqc-algorithms-migration"]
+  },
+  {
+    "id": "zero-rtt",
+    "term": {
+      "tr": "Sıfır gidiş-dönüş süresi (0-RTT)",
+      "en": "Zero round-trip time (0-RTT)"
+    },
+    "examples": {
+      "tr": "0-RTT istekleri yeniden oynatılabileceği için yan etkili işlemlerde kullanılmamalıdır.",
+      "en": "Because 0-RTT requests can be replayed, they should not perform side effects."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tls-13"]
+  },
+  {
+    "id": "heartbleed",
+    "term": {
+      "tr": "Heartbleed",
+      "en": "Heartbleed"
+    },
+    "examples": {
+      "tr": "Heartbleed, hatalı uzunluk denetimi nedeniyle süreç belleğini sızdırdı.",
+      "en": "Heartbleed leaked process memory because a length check was missing."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["heartbleed-memory-disclosure"]
+  },
+  {
+    "id": "side-channel-attack",
+    "term": {
+      "tr": "Yan kanal saldırısı",
+      "en": "Side-channel attack"
+    },
+    "examples": {
+      "tr": "Zamanlama farkı, gizli anahtara bağlı dallanmaları açığa çıkarabilir.",
+      "en": "Timing differences can reveal branches that depend on a secret key."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "hardware-root-of-trust",
+      "os-security-boundaries",
+      "side-channel-attacks"
+    ]
+  },
+  {
+    "id": "constant-time",
+    "term": {
+      "tr": "Sabit zamanlı uygulama",
+      "en": "Constant-time implementation"
+    },
+    "examples": {
+      "tr": "Sabit zamanlı karşılaştırma eşleşmeyen ilk baytta dönmez.",
+      "en": "A constant-time comparison does not return at the first mismatching byte."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["side-channel-attacks"]
+  },
+  {
+    "id": "hardware-security-module",
+    "term": {
+      "tr": "Donanım güvenlik modülü (HSM)",
+      "en": "Hardware Security Module (HSM)"
+    },
+    "examples": {
+      "tr": "HSM, gizli anahtarı cihaz dışına çıkarmadan imza üretir.",
+      "en": "An HSM signs without exporting the private key from the device."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["key-management-lifecycle"]
+  },
+  {
+    "id": "trusted-platform-module",
+    "term": {
+      "tr": "Güvenilir Platform Modülü (TPM)",
+      "en": "Trusted Platform Module (TPM)"
+    },
+    "examples": {
+      "tr": "TPM, cihazda donanım destekli anahtar koruması sağlar.",
+      "en": "A TPM provides hardware-backed key protection on a device."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["hardware-root-of-trust", "key-management-lifecycle"]
+  },
+  {
+    "id": "key-rotation",
+    "term": {
+      "tr": "Anahtar döndürme",
+      "en": "Key rotation"
+    },
+    "examples": {
+      "tr": "Düzenli anahtar döndürme, sızıntı sonrası kullanım penceresini daraltır.",
+      "en": "Regular key rotation narrows the period of use after a leak."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["key-management-lifecycle"]
+  },
+  {
+    "id": "learning-with-errors",
+    "term": {
+      "tr": "Hatalarla Öğrenme (LWE)",
+      "en": "Learning With Errors (LWE)"
+    },
+    "examples": {
+      "tr": "LWE, küçük hata terimleri içeren doğrusal denklemlere dayanır.",
+      "en": "LWE involves linear equations with small error terms."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pqc-algorithms-migration"]
+  },
+  {
+    "id": "key-encapsulation-mechanism",
+    "term": {
+      "tr": "Anahtar kapsülleme mekanizması (KEM)",
+      "en": "Key Encapsulation Mechanism (KEM)"
+    },
+    "examples": {
+      "tr": "ML-KEM, ortak bir sırrı açık kanal üzerinden kurmak için kullanılır.",
+      "en": "ML-KEM establishes a shared secret over a public channel."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pqc-algorithms-migration"]
+  },
+  {
+    "id": "crypto-agility",
+    "term": {
+      "tr": "Kripto-çeviklik",
+      "en": "Crypto-agility"
+    },
+    "examples": {
+      "tr": "Kripto-çeviklik, zayıflayan algoritmanın kontrollü biçimde değiştirilmesini kolaylaştırır.",
+      "en": "Crypto-agility makes it easier to replace a weakening algorithm in a controlled way."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["pqc-algorithms-migration"]
+  },
+  {
+    "id": "identification",
+    "term": {
+      "tr": "Tanımlama",
+      "en": "Identification"
+    },
+    "examples": {
+      "tr": "Tanımlama, kullanıcının hangi hesaba ait olduğunu belirtir.",
+      "en": "Identification specifies which account the user claims."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["identity-authentication-authorization"]
+  },
+  {
+    "id": "authentication-factor",
+    "term": {
+      "tr": "Kimlik doğrulama faktörü",
+      "en": "Authentication factor"
+    },
+    "examples": {
+      "tr": "Parola bilinen şey, güvenlik anahtarı sahip olunan şey faktörüdür.",
+      "en": "A password is a knowledge factor; a security key is a possession factor."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "identity-authentication-authorization",
+      "multi-factor-authentication"
+    ]
+  },
+  {
+    "id": "biometric-verification",
+    "term": {
+      "tr": "Biyometrik doğrulama",
+      "en": "Biometric verification"
+    },
+    "examples": {
+      "tr": "Biyometrik doğrulama, örneği iddia edilen tek kişiyle karşılaştırır.",
+      "en": "Biometric verification compares a sample with one claimed identity."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["identity-authentication-authorization"]
+  },
+  {
+    "id": "false-acceptance-rate",
+    "term": {
+      "tr": "Yanlış kabul oranı",
+      "en": "False acceptance rate"
+    },
+    "examples": {
+      "tr": "Eşik düşürüldüğünde yanlış kabul oranı artabilir.",
+      "en": "Lowering the threshold can increase the false acceptance rate."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["identity-authentication-authorization"]
+  },
+  {
+    "id": "false-rejection-rate",
+    "term": {
+      "tr": "Yanlış ret oranı",
+      "en": "False rejection rate"
+    },
+    "examples": {
+      "tr": "Sıkı eşik gerçek kullanıcı için yanlış ret oranını yükseltebilir.",
+      "en": "A strict threshold can raise the false rejection rate for legitimate users."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["identity-authentication-authorization"]
+  },
+  {
+    "id": "password-entropy",
+    "term": {
+      "tr": "Parola entropisi",
+      "en": "Password entropy"
+    },
+    "examples": {
+      "tr": "Rastgele parolanın entropisi uzunluk ve sembol kümesine bağlıdır.",
+      "en": "The entropy of a random password depends on length and alphabet size."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy"]
+  },
+  {
+    "id": "credential-stuffing",
+    "term": {
+      "tr": "Kimlik bilgisi doldurma",
+      "en": "Credential stuffing"
+    },
+    "examples": {
+      "tr": "Saldırgan sızmış parola çiftlerini başka hizmetlerde dener.",
+      "en": "An attacker tries leaked password pairs at other services."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy", "web-authentication-hardening"]
+  },
+  {
+    "id": "password-spraying",
+    "term": {
+      "tr": "Parola püskürtme",
+      "en": "Password spraying"
+    },
+    "examples": {
+      "tr": "Parola püskürtme az sayıda yaygın parolayı çok hesapta dener.",
+      "en": "Password spraying tries a few common passwords across many accounts."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["password-attacks-and-entropy"]
+  },
+  {
+    "id": "time-based-one-time-password",
+    "term": {
+      "tr": "Zaman tabanlı tek kullanımlık parola",
+      "en": "Time-based one-time password"
+    },
+    "examples": {
+      "tr": "TOTP, ortak sır ve zaman adımından geçici bir kod üretir.",
+      "en": "TOTP derives a temporary code from a shared secret and time step."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["multi-factor-authentication"]
+  },
+  {
+    "id": "sim-swap",
+    "term": {
+      "tr": "SIM kart değiştirme saldırısı",
+      "en": "SIM swap"
+    },
+    "examples": {
+      "tr": "SIM kart değiştirme saldırısı SMS doğrulama kodlarını saldırgana yöneltebilir.",
+      "en": "A SIM swap can redirect SMS verification codes to an attacker."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["multi-factor-authentication"]
+  },
+  {
+    "id": "passkey",
+    "term": {
+      "tr": "Passkey",
+      "en": "Passkey"
+    },
+    "examples": {
+      "tr": "Passkey, siteye bağlı açık anahtarlı kimlik doğrulama kullanır.",
+      "en": "A passkey uses site-bound public-key authentication."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["phishing-resistant-authentication"]
+  },
+  {
+    "id": "relying-party",
+    "term": {
+      "tr": "Güvenilen taraf",
+      "en": "Relying party"
+    },
+    "examples": {
+      "tr": "Güvenilen taraf, WebAuthn kimlik bilgisini kendi origin bağlamında doğrular.",
+      "en": "The relying party validates a WebAuthn credential for its origin."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["phishing-resistant-authentication"]
+  },
+  {
+    "id": "single-sign-on",
+    "term": {
+      "tr": "Tek oturum açma",
+      "en": "Single sign-on"
+    },
+    "examples": {
+      "tr": "Tek oturum açma, kimliğin güvenilen hizmetler arasında kullanılmasını sağlar.",
+      "en": "Single sign-on lets trusted services rely on a shared identity login."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sso-kerberos-federation"]
+  },
+  {
+    "id": "identity-provider",
+    "term": {
+      "tr": "Kimlik sağlayıcı",
+      "en": "Identity provider"
+    },
+    "examples": {
+      "tr": "Kimlik sağlayıcı, kullanıcıyı doğrulayıp bağlı uygulamalara beyan sunar.",
+      "en": "An identity provider authenticates a user and issues assertions to applications."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sso-kerberos-federation", "oauth-authorization"]
+  },
+  {
+    "id": "kerberos-ticket-granting-ticket",
+    "term": {
+      "tr": "Kerberos bilet verme bileti",
+      "en": "Kerberos ticket-granting ticket"
+    },
+    "examples": {
+      "tr": "TGT, istemcinin hizmet bileti istemesine aracılık eder.",
+      "en": "A TGT lets a client request a service ticket."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sso-kerberos-federation"]
+  },
+  {
+    "id": "oauth-scope",
+    "term": {
+      "tr": "OAuth kapsamı",
+      "en": "OAuth scope"
+    },
+    "examples": {
+      "tr": "İstemci yalnızca fotoğraf okuma kapsamını ister.",
+      "en": "The client requests only the photo-reading scope."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["oauth-authorization"]
+  },
+  {
+    "id": "proof-key-for-code-exchange",
+    "term": {
+      "tr": "Yetkilendirme kodu için kanıt anahtarı",
+      "en": "Proof Key for Code Exchange"
+    },
+    "examples": {
+      "tr": "PKCE, kod değişimini başlangıçtaki istemci isteğine bağlar.",
+      "en": "PKCE binds the code exchange to the initiating client request."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["oauth-authorization"]
+  },
+  {
+    "id": "json-web-token",
+    "term": {
+      "tr": "JSON Web Token",
+      "en": "JSON Web Token"
+    },
+    "examples": {
+      "tr": "JWT imzası doğrulanır, ardından hedef kitle ve süre denetlenir.",
+      "en": "The JWT signature is verified before checking audience and expiry."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["jwt-validation", "openid-connect-jwt", "session-security"]
+  },
+  {
+    "id": "session-fixation",
+    "term": {
+      "tr": "Oturum sabitleme",
+      "en": "Session fixation"
+    },
+    "examples": {
+      "tr": "Girişten sonra oturum kimliğini yenilemek sabitleme saldırısını azaltır.",
+      "en": "Rotating the session ID after login mitigates session fixation."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["session-security"]
+  },
+  {
+    "id": "http-only-cookie",
+    "term": {
+      "tr": "HttpOnly çerezi",
+      "en": "HttpOnly cookie"
+    },
+    "examples": {
+      "tr": "HttpOnly çerezi JavaScript üzerinden okunamaz.",
+      "en": "An HttpOnly cookie cannot be read through JavaScript."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["session-security"]
+  },
+  {
+    "id": "same-site-cookie",
+    "term": {
+      "tr": "SameSite çerezi",
+      "en": "SameSite cookie"
+    },
+    "examples": {
+      "tr": "SameSite çerezi çapraz site isteklerinde gönderimi sınırlar.",
+      "en": "A SameSite cookie limits sending on cross-site requests."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["session-security"]
+  },
+  {
+    "id": "discretionary-access-control",
+    "term": {
+      "tr": "İsteğe bağlı erişim kontrolü",
+      "en": "Discretionary access control"
+    },
+    "examples": {
+      "tr": "DAC modelinde kaynak sahibi paylaşım iznini belirler.",
+      "en": "In DAC, the resource owner decides who can share access."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models"]
+  },
+  {
+    "id": "mandatory-access-control",
+    "term": {
+      "tr": "Zorunlu erişim kontrolü",
+      "en": "Mandatory access control"
+    },
+    "examples": {
+      "tr": "MAC, erişim kararını merkezi etiket politikasına bağlar.",
+      "en": "MAC ties access decisions to a centralized label policy."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models", "sandboxing-isolation"]
+  },
+  {
+    "id": "attribute-based-access-control",
+    "term": {
+      "tr": "Öznitelik tabanlı erişim kontrolü",
+      "en": "Attribute-based access control"
+    },
+    "examples": {
+      "tr": "ABAC cihaz ve bağlam özniteliklerine göre izin verir.",
+      "en": "ABAC grants access based on device and context attributes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models", "zero-trust-architecture"]
+  },
+  {
+    "id": "bell-lapadula-model",
+    "term": {
+      "tr": "Bell–LaPadula modeli",
+      "en": "Bell–LaPadula model"
+    },
+    "examples": {
+      "tr": "Bell–LaPadula gizlilik için yukarı okumayı ve aşağı yazmayı sınırlar.",
+      "en": "Bell–LaPadula restricts read up and write down for confidentiality."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models"]
+  },
+  {
+    "id": "biba-model",
+    "term": {
+      "tr": "Biba modeli",
+      "en": "Biba model"
+    },
+    "examples": {
+      "tr": "Biba, düşük bütünlüklü verinin yüksek bütünlüklü kaynağı bozmasını önler.",
+      "en": "Biba prevents low-integrity data from corrupting high-integrity resources."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["access-control-models"]
+  },
+  {
+    "id": "microsegmentation",
+    "term": {
+      "tr": "Mikro-segmentasyon",
+      "en": "Microsegmentation"
+    },
+    "examples": {
+      "tr": "Mikro-segmentasyon ağ içindeki yatay hareketi sınırlar.",
+      "en": "Microsegmentation limits lateral movement within a network."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["zero-trust-architecture", "firewalls-segmentation"]
+  },
+  {
+    "id": "http",
+    "term": {
+      "tr": "HTTP",
+      "en": "Hypertext Transfer Protocol"
+    },
+    "examples": {
+      "tr": "HTTP başlığı isteğin türünü belirtir.",
+      "en": "The HTTP header describes the request."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["web-security-foundations"]
+  },
+  {
+    "id": "same-origin-policy",
+    "term": {
+      "tr": "Aynı Köken Politikası",
+      "en": "Same-Origin Policy"
+    },
+    "examples": {
+      "tr": "Aynı köken politikası, farklı kökenlerin yanıtı okumasını sınırlar.",
+      "en": "The Same-Origin Policy limits reading responses across origins."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["web-security-foundations"]
+  },
+  {
+    "id": "cors",
+    "term": {
+      "tr": "CORS",
+      "en": "Cross-Origin Resource Sharing"
+    },
+    "examples": {
+      "tr": "Sunucu, CORS ile belirli kökenlere yanıtı okuma izni verir.",
+      "en": "The server uses CORS to allow selected origins to read a response."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["api-security-authorization-abuse", "web-security-foundations"]
+  },
+  {
+    "id": "sql-injection",
+    "term": {
+      "tr": "SQL enjeksiyonu",
+      "en": "SQL injection"
+    },
+    "examples": {
+      "tr": "Parametreli sorgu, SQL enjeksiyonu riskini kök nedeninden azaltır.",
+      "en": "A parameterized query addresses the root cause of SQL injection."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sql-injection"]
+  },
+  {
+    "id": "prepared-statement",
+    "term": {
+      "tr": "Parametreli sorgu",
+      "en": "Prepared statement"
+    },
+    "examples": {
+      "tr": "Parametreli sorguda sorgu yapısı değerlerden ayrı tutulur.",
+      "en": "A prepared statement keeps query structure separate from values."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sql-injection"]
+  },
+  {
+    "id": "cross-site-scripting",
+    "term": {
+      "tr": "Siteler arası betik çalıştırma",
+      "en": "Cross-site scripting"
+    },
+    "examples": {
+      "tr": "Bağlama uygun çıktı kodlaması XSS’i önlemeye yardım eder.",
+      "en": "Context-aware output encoding helps prevent XSS."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cross-site-scripting"]
+  },
+  {
+    "id": "content-security-policy",
+    "term": {
+      "tr": "İçerik Güvenliği Politikası",
+      "en": "Content Security Policy"
+    },
+    "examples": {
+      "tr": "CSP, sayfanın izin verdiği betik kaynaklarını sınırlar.",
+      "en": "CSP restricts the script sources a page permits."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["cross-site-scripting"]
+  },
+  {
+    "id": "csrf",
+    "term": {
+      "tr": "Siteler arası istek sahteciliği",
+      "en": "Cross-site request forgery"
+    },
+    "examples": {
+      "tr": "CSRF belirteci, durum değiştiren isteğin oturumla bağını doğrular.",
+      "en": "A CSRF token validates the link between a state-changing request and its session."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["csrf"]
+  },
+  {
+    "id": "owasp-top-10",
+    "term": {
+      "tr": "OWASP Top 10",
+      "en": "OWASP Top 10"
+    },
+    "examples": {
+      "tr": "OWASP Top 10, web riskleri için farkındalık haritasıdır.",
+      "en": "The OWASP Top 10 is an awareness map of web risks."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["owasp-top-10-map"]
+  },
+  {
+    "id": "broken-access-control",
+    "term": {
+      "tr": "Bozuk erişim denetimi",
+      "en": "Broken access control"
+    },
+    "examples": {
+      "tr": "Her istekte sunucu tarafı kontrol, bozuk erişim denetimini önler.",
+      "en": "A server-side check on every request prevents broken access control."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["broken-access-control-idor"]
+  },
+  {
+    "id": "allowlist",
+    "term": {
+      "tr": "İzin listesi",
+      "en": "Allowlist"
+    },
+    "examples": {
+      "tr": "İzin listesi, beklenen sıralama alanlarını seçer.",
+      "en": "An allowlist selects the expected sort fields."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-web-design"]
+  },
+  {
+    "id": "denylist",
+    "term": {
+      "tr": "Engelleme listesi",
+      "en": "Denylist"
+    },
+    "examples": {
+      "tr": "Engelleme listesi bilinen örüntüleri yakalar ama tek başına yeterli değildir.",
+      "en": "A denylist catches known patterns but is not sufficient alone."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-web-design"]
+  },
+  {
+    "id": "ssrf",
+    "term": {
+      "tr": "Sunucu taraflı istek sahteciliği",
+      "en": "Server-Side Request Forgery"
+    },
+    "examples": {
+      "tr": "Uygulamanın kullanıcı girdisiyle beklenmeyen hedefe istek göndermesi SSRF riskidir.",
+      "en": "The service restricts outbound requests to approved destinations to reduce SSRF risk."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ssrf-cloud-metadata"]
+  },
+  {
+    "id": "cloud-metadata-service",
+    "term": {
+      "tr": "Bulut metadata hizmeti",
+      "en": "Cloud metadata service"
+    },
+    "examples": {
+      "tr": "Sanal makine rolüne ilişkin geçici erişim bilgileri metadata hizmetinden alınabilir.",
+      "en": "The workload uses its metadata service to obtain short-lived role credentials."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ssrf-cloud-metadata"]
+  },
+  {
+    "id": "dns-rebinding",
+    "term": {
+      "tr": "DNS yeniden bağlama",
+      "en": "DNS rebinding"
+    },
+    "examples": {
+      "tr": "DNS yeniden bağlama, denetim ve bağlantı arasında hedef IP’yi değiştirmeye çalışır.",
+      "en": "The validator checks the address used by the actual connection to resist DNS rebinding."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ssrf-cloud-metadata"]
+  },
+  {
+    "id": "link-local-address",
+    "term": {
+      "tr": "Bağlantı-yerel adres",
+      "en": "Link-local address"
+    },
+    "examples": {
+      "tr": "Bağlantı-yerel metadata adresine erişim ağ katmanında da sınırlandırılmalıdır.",
+      "en": "A link-local address may be reachable from the host even when it is not publicly routable."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ssrf-cloud-metadata"]
+  },
+  {
+    "id": "insecure-deserialization",
+    "term": {
+      "tr": "Güvensiz serileştirmeden çıkarma",
+      "en": "Insecure deserialization"
+    },
+    "examples": {
+      "tr": "Güvenilmeyen pickle verisini çözmek nesne kurulumunda beklenmeyen metotları çalıştırabilir.",
+      "en": "The application avoids insecure deserialization by accepting validated plain data only."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["advanced-injection-deserialization-xxe-ssti"]
+  },
+  {
+    "id": "xml-external-entity",
+    "term": {
+      "tr": "XML dış varlığı",
+      "en": "XML external entity"
+    },
+    "examples": {
+      "tr": "Dış varlıkları kapatmak XML ayrıştırıcısının yerel dosya veya ağa erişmesini önler.",
+      "en": "The parser disables external entities when it processes untrusted XML."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["advanced-injection-deserialization-xxe-ssti"]
+  },
+  {
+    "id": "server-side-template-injection",
+    "term": {
+      "tr": "Sunucu tarafı şablon enjeksiyonu",
+      "en": "Server-side template injection"
+    },
+    "examples": {
+      "tr": "Kullanıcı metnini sabit şablona değer olarak vermek SSTI riskini azaltır.",
+      "en": "Server-side template injection occurs when untrusted input is evaluated as template source."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["advanced-injection-deserialization-xxe-ssti"]
+  },
+  {
+    "id": "serialization",
+    "term": {
+      "tr": "Serileştirme",
+      "en": "Serialization"
+    },
+    "examples": {
+      "tr": "Serileştirme, bir nesnenin aktarılabilir bayt dizisine dönüştürülmesidir.",
+      "en": "Serialization converts an in-memory representation into a transferable byte sequence."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["advanced-injection-deserialization-xxe-ssti"]
+  },
+  {
+    "id": "time-of-check-to-time-of-use",
+    "term": {
+      "tr": "Denetim-kullanım aralığı",
+      "en": "Time-of-check to time-of-use"
+    },
+    "examples": {
+      "tr": "DNS sonucunun denetimden sonra değişmesi denetim-kullanım aralığında güvenlik açığı yaratabilir.",
+      "en": "Pinning the validated address can prevent a check-to-use resolution mismatch."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["privilege-escalation", "ssrf-cloud-metadata"]
+  },
+  {
+    "id": "secure-sdlc",
+    "term": {
+      "tr": "Güvenli yazılım geliştirme yaşam döngüsü",
+      "en": "Secure Software Development Life Cycle"
+    },
+    "examples": {
+      "tr": "Güvenlik gereksinimlerini tasarımdan işletime kadar Secure SDLC içinde ele alırız.",
+      "en": "A secure software development life cycle integrates security from design through operations."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-sdlc-devsecops"]
+  },
+  {
+    "id": "shift-left-security",
+    "term": {
+      "tr": "Güvenliği sola kaydırma",
+      "en": "Shift-left security"
+    },
+    "examples": {
+      "tr": "Tehdit modellemesini tasarıma taşımak güvenliği sola kaydırma örneğidir.",
+      "en": "Shift-left security brings risk analysis earlier into design and development."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-sdlc-devsecops"]
+  },
+  {
+    "id": "sast",
+    "term": {
+      "tr": "Statik uygulama güvenliği testi",
+      "en": "Static Application Security Testing"
+    },
+    "examples": {
+      "tr": "SAST kaynak kodu çalıştırmadan riskli kalıpları arar.",
+      "en": "SAST scans source code without executing the application."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-sdlc-devsecops"]
+  },
+  {
+    "id": "dast",
+    "term": {
+      "tr": "Dinamik uygulama güvenliği testi",
+      "en": "Dynamic Application Security Testing"
+    },
+    "examples": {
+      "tr": "DAST çalışan test uygulamasının dış davranışını sınar.",
+      "en": "DAST probes a running test application from the outside."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-sdlc-devsecops"]
+  },
+  {
+    "id": "iast",
+    "term": {
+      "tr": "Etkileşimli uygulama güvenliği testi",
+      "en": "Interactive Application Security Testing"
+    },
+    "examples": {
+      "tr": "IAST, uygulama çalışırken veri akışını sensörlerle gözler.",
+      "en": "IAST observes application behavior through runtime instrumentation."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secure-sdlc-devsecops"]
+  },
+  {
+    "id": "software-bill-of-materials",
+    "term": {
+      "tr": "Yazılım Malzeme Listesi",
+      "en": "Software Bill of Materials"
+    },
+    "examples": {
+      "tr": "SBOM, bir ürünün doğrudan ve geçişli bileşenlerini envanterler.",
+      "en": "The SBOM helps identify which products contain an affected component."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dependency-supply-chain-log4shell", "secure-sdlc-devsecops"]
+  },
+  {
+    "id": "dependency-confusion",
+    "term": {
+      "tr": "Bağımlılık karışıklığı",
+      "en": "Dependency confusion"
+    },
+    "examples": {
+      "tr": "Özel paket adının genel depodan çözülmesi bağımlılık karışıklığına yol açabilir.",
+      "en": "Repository scoping helps prevent dependency confusion for internal packages."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dependency-supply-chain-log4shell"]
+  },
+  {
+    "id": "typosquatting",
+    "term": {
+      "tr": "Yazım benzerliği saldırısı",
+      "en": "Typosquatting"
+    },
+    "examples": {
+      "tr": "Paket adını eklemeden önce yayıncı ve yazımı gözden geçirmek typosquatting riskini azaltır.",
+      "en": "A lookalike package name can exploit a typing mistake during installation."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dependency-supply-chain-log4shell"]
+  },
+  {
+    "id": "secret-rotation",
+    "term": {
+      "tr": "Sır döndürme",
+      "en": "Secret rotation"
+    },
+    "examples": {
+      "tr": "Depoya sızan anahtar, koddan silindikten sonra da iptal edilmelidir.",
+      "en": "Secret rotation replaces exposed credentials and revokes the old value."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["secrets-management-rotation"]
+  },
+  {
+    "id": "bug-bounty",
+    "term": {
+      "tr": "Hata ödül programı",
+      "en": "Bug bounty program"
+    },
+    "examples": {
+      "tr": "Bug bounty programı yalnızca tanımlanan kapsamda araştırma izni verir.",
+      "en": "The bug bounty policy defines which assets researchers may test."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["coordinated-vulnerability-disclosure"]
+  },
+  {
+    "id": "tcp",
+    "term": {
+      "tr": "İletim Denetim Protokolü (TCP)",
+      "en": "Transmission Control Protocol (TCP)"
+    },
+    "examples": {
+      "tr": "TCP, kaybolan baytları yeniden göndererek sıralı akış sağlar.",
+      "en": "TCP retransmits lost bytes to provide an ordered stream."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "network-foundations-and-protocol-layers",
+      "tcp-handshake-syn-flood"
+    ]
+  },
+  {
+    "id": "udp",
+    "term": {
+      "tr": "Kullanıcı Datagram Protokolü (UDP)",
+      "en": "User Datagram Protocol (UDP)"
+    },
+    "examples": {
+      "tr": "UDP, düşük gecikme gereken bu uygulamada teslim garantisi vermez.",
+      "en": "UDP does not guarantee delivery in this latency-sensitive application."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["network-foundations-and-protocol-layers", "ddos-defense"]
+  },
+  {
+    "id": "ip-address",
+    "term": {
+      "tr": "IP adresi",
+      "en": "IP address"
+    },
+    "examples": {
+      "tr": "Yönlendirici paketi hedef IP adresine göre iletti.",
+      "en": "The router forwarded the packet using its destination IP address."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "network-foundations-and-protocol-layers",
+      "layer2-lan-attacks"
+    ]
+  },
+  {
+    "id": "mac-address",
+    "term": {
+      "tr": "MAC adresi",
+      "en": "MAC address"
+    },
+    "examples": {
+      "tr": "Anahtar, çerçeveyi hedef MAC adresinin bağlı olduğu porta gönderdi.",
+      "en": "The switch sent the frame to the port associated with the destination MAC address."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "network-foundations-and-protocol-layers",
+      "layer2-lan-attacks"
+    ]
+  },
+  {
+    "id": "port-number",
+    "term": {
+      "tr": "Port numarası",
+      "en": "Port number"
+    },
+    "examples": {
+      "tr": "HTTPS sunucusu TCP 443 portunda dinliyor.",
+      "en": "The HTTPS server listens on TCP port 443."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "network-foundations-and-protocol-layers",
+      "network-reconnaissance-nmap"
+    ]
+  },
+  {
+    "id": "encapsulation",
+    "term": {
+      "tr": "Kapsülleme",
+      "en": "Encapsulation"
+    },
+    "examples": {
+      "tr": "TCP segmenti IP paketi, ardından Ethernet çerçevesi içinde kapsüllendi.",
+      "en": "The TCP segment was encapsulated in an IP packet and then an Ethernet frame."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "network-foundations-and-protocol-layers",
+      "vpn-ipsec-wireguard"
+    ]
+  },
+  {
+    "id": "tcp-three-way-handshake",
+    "term": {
+      "tr": "TCP üçlü el sıkışması",
+      "en": "TCP three-way handshake"
+    },
+    "examples": {
+      "tr": "İstemci SYN, sunucu SYN-ACK, istemci ACK göndererek bağlantıyı kurdu.",
+      "en": "The client sent SYN, the server SYN-ACK, and the client ACK to establish the connection."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tcp-handshake-syn-flood"]
+  },
+  {
+    "id": "syn-flood",
+    "term": {
+      "tr": "SYN flood",
+      "en": "SYN flood"
+    },
+    "examples": {
+      "tr": "SYN flood, ACK ile tamamlanmayan yarı açık bağlantıları biriktirir.",
+      "en": "A SYN flood accumulates half-open connections that are never completed with an ACK."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tcp-handshake-syn-flood", "ddos-defense"]
+  },
+  {
+    "id": "syn-cookie",
+    "term": {
+      "tr": "SYN çerezi",
+      "en": "SYN cookie"
+    },
+    "examples": {
+      "tr": "Sunucu SYN çereziyle doğrulanmış ACK gelene kadar bağlantı durumunu ayırmadı.",
+      "en": "The server used a SYN cookie to avoid allocating connection state until a valid ACK arrived."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tcp-handshake-syn-flood"]
+  },
+  {
+    "id": "backlog-queue",
+    "term": {
+      "tr": "Backlog kuyruğu",
+      "en": "Backlog queue"
+    },
+    "examples": {
+      "tr": "Backlog kuyruğu dolduğunda yeni TCP bağlantıları gecikebilir.",
+      "en": "New TCP connections may be delayed when the backlog queue is full."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["tcp-handshake-syn-flood"]
+  },
+  {
+    "id": "arp",
+    "term": {
+      "tr": "Adres Çözümleme Protokolü (ARP)",
+      "en": "Address Resolution Protocol (ARP)"
+    },
+    "examples": {
+      "tr": "ARP, aynı yerel ağdaki IP adresini MAC adresiyle eşler.",
+      "en": "ARP maps an IP address to a MAC address on the same local network."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["layer2-lan-attacks"]
+  },
+  {
+    "id": "arp-poisoning",
+    "term": {
+      "tr": "ARP zehirlemesi",
+      "en": "ARP poisoning"
+    },
+    "examples": {
+      "tr": "ARP zehirlemesi, geçidin IP adresini saldırganın MAC adresine bağlamaya çalıştı.",
+      "en": "ARP poisoning attempted to map the gateway IP address to the attacker’s MAC address."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["layer2-lan-attacks", "chapter-seven-worked-exercises"]
+  },
+  {
+    "id": "dynamic-arp-inspection",
+    "term": {
+      "tr": "Dinamik ARP Denetimi (DAI)",
+      "en": "Dynamic ARP Inspection (DAI)"
+    },
+    "examples": {
+      "tr": "Anahtar, DAI ile ARP eşleşmelerini DHCP snooping kayıtlarına göre denetledi.",
+      "en": "The switch checked ARP bindings against DHCP snooping records using DAI."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["layer2-lan-attacks"]
+  },
+  {
+    "id": "domain-name-system",
+    "term": {
+      "tr": "Alan Adı Sistemi (DNS)",
+      "en": "Domain Name System (DNS)"
+    },
+    "examples": {
+      "tr": "DNS, alan adını IP adresine çözümledi.",
+      "en": "DNS resolved the domain name to an IP address."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dns-security-and-encrypted-dns"]
+  },
+  {
+    "id": "dns-cache-poisoning",
+    "term": {
+      "tr": "DNS önbellek zehirlemesi",
+      "en": "DNS cache poisoning"
+    },
+    "examples": {
+      "tr": "DNS önbellek zehirlemesi, çözümleyiciye sahte bir alan adı eşleşmesi kaydettirmeyi hedefler.",
+      "en": "DNS cache poisoning attempts to store a forged name-to-address mapping in a resolver."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dns-security-and-encrypted-dns"]
+  },
+  {
+    "id": "dnssec",
+    "term": {
+      "tr": "DNS Güvenlik Uzantıları (DNSSEC)",
+      "en": "DNS Security Extensions (DNSSEC)"
+    },
+    "examples": {
+      "tr": "Çözümleyici DNSSEC imza zincirini doğrulamadan kaydı güvenilir saymadı.",
+      "en": "The resolver did not trust the record until it validated the DNSSEC chain."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dns-security-and-encrypted-dns"]
+  },
+  {
+    "id": "dns-over-tls",
+    "term": {
+      "tr": "TLS üzerinden DNS (DoT)",
+      "en": "DNS over TLS (DoT)"
+    },
+    "examples": {
+      "tr": "DoT, DNS sorgusunu TLS tünelinde çözümleyiciye iletti.",
+      "en": "DoT carried the DNS query to the resolver inside a TLS connection."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dns-security-and-encrypted-dns"]
+  },
+  {
+    "id": "dns-over-https",
+    "term": {
+      "tr": "HTTPS üzerinden DNS (DoH)",
+      "en": "DNS over HTTPS (DoH)"
+    },
+    "examples": {
+      "tr": "DoH, DNS sorgusunu HTTPS akışının içinde taşıdı.",
+      "en": "DoH carried the DNS query inside an HTTPS stream."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["dns-security-and-encrypted-dns"]
+  },
+  {
+    "id": "packet-sniffing",
+    "term": {
+      "tr": "Paket koklama",
+      "en": "Packet sniffing"
+    },
+    "examples": {
+      "tr": "Savunma ekibi izinli laboratuvarda paket koklamayla yeniden iletimleri inceledi.",
+      "en": "The defense team inspected retransmissions with packet sniffing in an authorized lab."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["packet-capture-wireshark"]
+  },
+  {
+    "id": "promiscuous-mode",
+    "term": {
+      "tr": "Karışık mod",
+      "en": "Promiscuous mode"
+    },
+    "examples": {
+      "tr": "Karışık mod arayüzün erişebildiği çerçeveleri yakalamaya izin verdi.",
+      "en": "Promiscuous mode allowed the interface to capture frames available to it."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["packet-capture-wireshark"]
+  },
+  {
+    "id": "packet-capture-filter",
+    "term": {
+      "tr": "Yakalama filtresi",
+      "en": "Capture filter"
+    },
+    "examples": {
+      "tr": "BPF yakalama filtresi yalnızca DNS paketlerini dosyaya yazdı.",
+      "en": "A BPF capture filter wrote only DNS packets to the file."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["packet-capture-wireshark"]
+  },
+  {
+    "id": "display-filter",
+    "term": {
+      "tr": "Görüntüleme filtresi",
+      "en": "Display filter"
+    },
+    "examples": {
+      "tr": "Wireshark görüntüleme filtresi yakalanmış dosyadaki SYN paketlerini seçti.",
+      "en": "A Wireshark display filter selected SYN packets from the existing capture."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["packet-capture-wireshark"]
+  },
+  {
+    "id": "port-scanning",
+    "term": {
+      "tr": "Port taraması",
+      "en": "Port scanning"
+    },
+    "examples": {
+      "tr": "Savunmacı, açık servisleri bulmak için yetkili port taraması yaptı.",
+      "en": "The defender performed an authorized port scan to find exposed services."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["network-reconnaissance-nmap"]
+  },
+  {
+    "id": "service-fingerprinting",
+    "term": {
+      "tr": "Servis parmak izi",
+      "en": "Service fingerprinting"
+    },
+    "examples": {
+      "tr": "Sürüm tespiti servis yanıtlarından olası yazılımı tahmin etti.",
+      "en": "Version detection inferred likely software from service responses."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["network-reconnaissance-nmap"]
+  },
+  {
+    "id": "stateful-firewall",
+    "term": {
+      "tr": "Durum bilgili güvenlik duvarı",
+      "en": "Stateful firewall"
+    },
+    "examples": {
+      "tr": "Durum bilgili güvenlik duvarı meşru bağlantının dönüş trafiğini tanıdı.",
+      "en": "The stateful firewall recognized return traffic for a legitimate connection."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["firewalls-segmentation"]
+  },
+  {
+    "id": "demilitarized-zone",
+    "term": {
+      "tr": "Tamponsaha (DMZ)",
+      "en": "Demilitarized zone (DMZ)"
+    },
+    "examples": {
+      "tr": "Web sunucusu, iç veritabanından ayrılmış DMZ’de tutuldu.",
+      "en": "The web server was placed in a DMZ separated from the internal database."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["firewalls-segmentation"]
+  },
+  {
+    "id": "intrusion-detection-system",
+    "term": {
+      "tr": "Saldırı Tespit Sistemi (IDS)",
+      "en": "Intrusion Detection System (IDS)"
+    },
+    "examples": {
+      "tr": "IDS şüpheli örüntü için alarm üretti, trafiği kesmedi.",
+      "en": "The IDS alerted on a suspicious pattern without blocking the traffic."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["intrusion-detection-prevention"]
+  },
+  {
+    "id": "intrusion-prevention-system",
+    "term": {
+      "tr": "Saldırı Önleme Sistemi (IPS)",
+      "en": "Intrusion Prevention System (IPS)"
+    },
+    "examples": {
+      "tr": "Inline IPS, kural eşleşen paketi engelledi.",
+      "en": "The inline IPS blocked a packet that matched its rule."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["intrusion-detection-prevention"]
+  },
+  {
+    "id": "virtual-private-network",
+    "term": {
+      "tr": "Sanal Özel Ağ (VPN)",
+      "en": "Virtual Private Network (VPN)"
+    },
+    "examples": {
+      "tr": "VPN, uzaktaki istemciyle ağ geçidi arasında şifreli tünel kurdu.",
+      "en": "The VPN established an encrypted tunnel between the remote client and gateway."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["vpn-ipsec-wireguard"]
+  },
+  {
+    "id": "ipsec",
+    "term": {
+      "tr": "IP Güvenliği (IPsec)",
+      "en": "Internet Protocol Security (IPsec)"
+    },
+    "examples": {
+      "tr": "IPsec tunnel mode iç paketi yeni IP başlığıyla kapsüller.",
+      "en": "IPsec tunnel mode encapsulates the inner packet with a new IP header."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["vpn-ipsec-wireguard"]
+  },
+  {
+    "id": "wireguard",
+    "term": {
+      "tr": "WireGuard",
+      "en": "WireGuard"
+    },
+    "examples": {
+      "tr": "WireGuard eşini açık anahtarıyla tanır ve AllowedIPs ile trafiği sınırlar.",
+      "en": "WireGuard identifies its peer by public key and constrains traffic with AllowedIPs."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["vpn-ipsec-wireguard"]
+  },
+  {
+    "id": "opportunistic-wireless-encryption",
+    "term": {
+      "tr": "Fırsatçı Kablosuz Şifreleme (OWE)",
+      "en": "Opportunistic Wireless Encryption (OWE)"
+    },
+    "examples": {
+      "tr": "OWE açık Wi-Fi oturumunu şifreler, ancak erişim noktasını doğrulamaz.",
+      "en": "OWE encrypts an open Wi-Fi session but does not authenticate the access point."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["wireless-security-wpa3-krack"]
+  },
+  {
+    "id": "key-reinstallation-attack",
+    "term": {
+      "tr": "Anahtar Yeniden Kurma Saldırısı (KRACK)",
+      "en": "Key Reinstallation Attack (KRACK)"
+    },
+    "examples": {
+      "tr": "KRACK, bazı istemcilerde tekrar anahtar kurulumuyla nonce sayacının sıfırlanmasını hedefledi.",
+      "en": "KRACK targeted nonce-counter resets caused by key reinstallation on some clients."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["wireless-security-wpa3-krack"]
+  },
+  {
+    "id": "simultaneous-authentication-of-equals",
+    "term": {
+      "tr": "Eşzamanlı Eş Kimlik Doğrulaması (SAE)",
+      "en": "Simultaneous Authentication of Equals (SAE)"
+    },
+    "examples": {
+      "tr": "WPA3-Personal, parola doğrulamalı SAE el sıkışmasını kullanır.",
+      "en": "WPA3-Personal uses the password-authenticated SAE handshake."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["wireless-security-wpa3-krack"]
+  },
+  {
+    "id": "distributed-denial-of-service",
+    "term": {
+      "tr": "Dağıtık Hizmet Engelleme (DDoS)",
+      "en": "Distributed Denial of Service (DDoS)"
+    },
+    "examples": {
+      "tr": "DDoS, çok sayıda kaynaktan gelen trafikle hizmetin erişilebilirliğini hedef aldı.",
+      "en": "A DDoS targeted service availability with traffic from many sources."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ddos-defense"]
+  },
+  {
+    "id": "amplification-attack",
+    "term": {
+      "tr": "Yansıtma ve büyütme saldırısı",
+      "en": "Reflection and amplification attack"
+    },
+    "examples": {
+      "tr": "Saldırgan küçük sorgularla büyük yanıtları kurbana yönlendirmeye çalıştı.",
+      "en": "The attacker attempted to direct large responses to the victim using small requests."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ddos-defense"]
+  },
+  {
+    "id": "source-address-validation",
+    "term": {
+      "tr": "Kaynak adres doğrulaması",
+      "en": "Source address validation"
+    },
+    "examples": {
+      "tr": "Sağlayıcı çıkışındaki kaynak adres doğrulaması sahte IP paketlerini azalttı.",
+      "en": "Source address validation at the provider edge reduced spoofed packets."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ddos-defense"]
+  },
+  {
+    "id": "content-delivery-network",
+    "term": {
+      "tr": "İçerik Dağıtım Ağı (CDN)",
+      "en": "Content Delivery Network (CDN)"
+    },
+    "examples": {
+      "tr": "CDN, istekleri dağıtık uçlara yayarak ani trafik yükünü emdi.",
+      "en": "The CDN absorbed a traffic surge across distributed edge nodes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["ddos-defense"]
+  },
+  {
+    "id": "kernel-mode",
+    "term": {
+      "tr": "Çekirdek kipi",
+      "en": "Kernel mode"
+    },
+    "examples": {
+      "tr": "Çekirdek kipi, ayrıcalıklı aygıt işlemlerini yürütür.",
+      "en": "Kernel mode executes privileged device operations."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries"]
+  },
+  {
+    "id": "user-mode",
+    "term": {
+      "tr": "Kullanıcı kipi",
+      "en": "User mode"
+    },
+    "examples": {
+      "tr": "Tarayıcı süreci kullanıcı kipinde kısıtlı yetkilerle çalışır.",
+      "en": "A browser process runs with restricted privileges in user mode."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries"]
+  },
+  {
+    "id": "system-call",
+    "term": {
+      "tr": "Sistem çağrısı",
+      "en": "System call"
+    },
+    "examples": {
+      "tr": "Program dosyayı açmak için sistem çağrısı yapar.",
+      "en": "The program makes a system call to open the file."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries", "sandboxing-isolation"]
+  },
+  {
+    "id": "virtual-address-space",
+    "term": {
+      "tr": "Sanal adres alanı",
+      "en": "Virtual address space"
+    },
+    "examples": {
+      "tr": "Her süreç kendine ait bir sanal adres alanı görür.",
+      "en": "Each process sees its own virtual address space."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries", "memory-safety-foundations"]
+  },
+  {
+    "id": "memory-management-unit",
+    "term": {
+      "tr": "Bellek yönetim birimi (MMU)",
+      "en": "Memory management unit (MMU)"
+    },
+    "examples": {
+      "tr": "MMU, sanal adresleri sayfa tablolarına göre çevirir.",
+      "en": "The MMU translates virtual addresses using page tables."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries"]
+  },
+  {
+    "id": "page-table",
+    "term": {
+      "tr": "Sayfa tablosu",
+      "en": "Page table"
+    },
+    "examples": {
+      "tr": "Sayfa tablosu, sanal sayfaları fiziksel çerçevelere eşler.",
+      "en": "A page table maps virtual pages to physical frames."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["os-security-boundaries"]
+  },
+  {
+    "id": "memory-safety",
+    "term": {
+      "tr": "Bellek güvenliği",
+      "en": "Memory safety"
+    },
+    "examples": {
+      "tr": "Bellek güvenliği, programın geçersiz bellek erişimlerini önlemeyi amaçlar.",
+      "en": "Memory safety aims to prevent invalid memory accesses by a program."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": [
+      "memory-safety-foundations",
+      "stack-buffer-overflow",
+      "memory-bug-families"
+    ]
+  },
+  {
+    "id": "undefined-behavior",
+    "term": {
+      "tr": "Tanımsız davranış",
+      "en": "Undefined behavior"
+    },
+    "examples": {
+      "tr": "Tanımsız davranış için dil standardı belirli bir sonuç vaat etmez.",
+      "en": "The language standard promises no particular result for undefined behavior."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-safety-foundations", "memory-bug-families"]
+  },
+  {
+    "id": "memory-safe-language",
+    "term": {
+      "tr": "Bellek güvenli dil",
+      "en": "Memory-safe language"
+    },
+    "examples": {
+      "tr": "Bellek güvenli dil birçok sınır ve yaşam süresi hatasını azaltır.",
+      "en": "A memory-safe language reduces many bounds and lifetime errors."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-safety-foundations"]
+  },
+  {
+    "id": "heap",
+    "term": {
+      "tr": "Öbek",
+      "en": "Heap"
+    },
+    "examples": {
+      "tr": "Öbek, çalışma sırasında dinamik ayrılan nesneleri tutar.",
+      "en": "The heap stores objects allocated dynamically at runtime."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-safety-foundations", "memory-bug-families"]
+  },
+  {
+    "id": "stack-frame",
+    "term": {
+      "tr": "Yığın çerçevesi",
+      "en": "Stack frame"
+    },
+    "examples": {
+      "tr": "Her fonksiyon çağrısı kendi yığın çerçevesini kullanabilir.",
+      "en": "Each function call may use its own stack frame."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["stack-buffer-overflow"]
+  },
+  {
+    "id": "stack-buffer-overflow",
+    "term": {
+      "tr": "Yığın arabellek taşması",
+      "en": "Stack buffer overflow"
+    },
+    "examples": {
+      "tr": "Yığın arabellek taşması yerel arabellek sınırının aşılmasıyla oluşur.",
+      "en": "A stack buffer overflow occurs when a local buffer boundary is exceeded."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["stack-buffer-overflow", "exploit-mitigations"]
+  },
+  {
+    "id": "use-after-free",
+    "term": {
+      "tr": "Serbest bırakma sonrası kullanım",
+      "en": "Use-after-free"
+    },
+    "examples": {
+      "tr": "Serbest bırakma sonrası kullanım, ömrü biten nesneye erişir.",
+      "en": "Use-after-free accesses an object after its lifetime has ended."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-bug-families"]
+  },
+  {
+    "id": "integer-overflow",
+    "term": {
+      "tr": "Tamsayı taşması",
+      "en": "Integer overflow"
+    },
+    "examples": {
+      "tr": "Tamsayı taşması, tahsis boyutunun hatalı hesaplanmasına yol açabilir.",
+      "en": "Integer overflow can cause an allocation size to be calculated incorrectly."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-bug-families"]
+  },
+  {
+    "id": "format-string-vulnerability",
+    "term": {
+      "tr": "Biçim dizgesi açığı",
+      "en": "Format string vulnerability"
+    },
+    "examples": {
+      "tr": "Dış girdiyi biçim dizgesi olarak kullanmak biçim dizgesi açığı oluşturabilir.",
+      "en": "Using external input as a format string can create a format string vulnerability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["memory-bug-families"]
+  },
+  {
+    "id": "stack-canary",
+    "term": {
+      "tr": "Yığın kanaryası",
+      "en": "Stack canary"
+    },
+    "examples": {
+      "tr": "Yığın kanaryası, bazı taşmaları fonksiyon dönüşünden önce saptar.",
+      "en": "A stack canary detects some overwrites before a function returns."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "data-execution-prevention",
+    "term": {
+      "tr": "Veri yürütme engellemesi (DEP)",
+      "en": "Data Execution Prevention (DEP)"
+    },
+    "examples": {
+      "tr": "DEP, veri sayfalarında komut yürütülmesini kısıtlar.",
+      "en": "DEP restricts instruction execution from data pages."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "address-space-layout-randomization",
+    "term": {
+      "tr": "Adres alanı düzeni rastgeleleştirmesi (ASLR)",
+      "en": "Address Space Layout Randomization (ASLR)"
+    },
+    "examples": {
+      "tr": "ASLR, bellek bölgelerinin konumlarını rastgeleleştirir.",
+      "en": "ASLR randomizes the locations of memory regions."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "position-independent-executable",
+    "term": {
+      "tr": "Konumdan bağımsız çalıştırılabilir (PIE)",
+      "en": "Position-independent executable (PIE)"
+    },
+    "examples": {
+      "tr": "PIE, ana çalıştırılabilir dosyanın farklı adres tabanına yüklenmesini sağlar.",
+      "en": "PIE allows the main executable to load at different base addresses."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "control-flow-integrity",
+    "term": {
+      "tr": "Denetim akışı bütünlüğü (CFI)",
+      "en": "Control-flow integrity (CFI)"
+    },
+    "examples": {
+      "tr": "CFI, dolaylı dallanmaları izin verilen hedeflerle sınırlar.",
+      "en": "CFI restricts indirect branches to permitted targets."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "relro",
+    "term": {
+      "tr": "Salt okunur yeniden yerleştirme (RELRO)",
+      "en": "Relocation Read-Only (RELRO)"
+    },
+    "examples": {
+      "tr": "Tam RELRO, dinamik bağlama tablolarının çalışma zamanındaki yazılabilirliğini azaltır.",
+      "en": "Full RELRO reduces runtime writability of dynamic linkage tables."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["exploit-mitigations"]
+  },
+  {
+    "id": "return-oriented-programming",
+    "term": {
+      "tr": "Dönüş odaklı programlama (ROP)",
+      "en": "Return-oriented programming (ROP)"
+    },
+    "examples": {
+      "tr": "ROP, mevcut kod parçalarını zincirleyerek kontrol akışı kullanır.",
+      "en": "ROP chains existing code fragments to shape control flow."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["stack-buffer-overflow", "exploit-mitigations"]
+  },
+  {
+    "id": "linux-capability",
+    "term": {
+      "tr": "Linux yeteneği",
+      "en": "Linux capability"
+    },
+    "examples": {
+      "tr": "Dar bir Linux yeteneği, tüm root ayrıcalığını vermeden tek işi yetkilendirebilir.",
+      "en": "A narrow Linux capability can authorize one task without granting all root privileges."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["privilege-escalation", "os-security-synthesis"]
+  },
+  {
+    "id": "setuid",
+    "term": {
+      "tr": "Kullanıcı kimliği ayarlama biti (setuid)",
+      "en": "Set-user-ID (setuid)"
+    },
+    "examples": {
+      "tr": "setuid dosyası, çalışırken etkin kullanıcı kimliğini değiştirebilir.",
+      "en": "A setuid file can change the effective user ID while running."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["privilege-escalation"]
+  },
+  {
+    "id": "seccomp",
+    "term": {
+      "tr": "seccomp sistem çağrısı filtresi",
+      "en": "seccomp system call filter"
+    },
+    "examples": {
+      "tr": "seccomp profili süreç için izin verilen sistem çağrılarını daraltır.",
+      "en": "A seccomp profile narrows the system calls a process may make."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sandboxing-isolation"]
+  },
+  {
+    "id": "linux-namespace",
+    "term": {
+      "tr": "Linux ad alanı",
+      "en": "Linux namespace"
+    },
+    "examples": {
+      "tr": "PID ad alanı, süreçlere görünür süreç listesini ayırır.",
+      "en": "A PID namespace isolates the process list visible to processes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sandboxing-isolation"]
+  },
+  {
+    "id": "cgroup",
+    "term": {
+      "tr": "Kontrol grubu (cgroup)",
+      "en": "Control group (cgroup)"
+    },
+    "examples": {
+      "tr": "cgroup, bir süreç grubunun bellek kullanımını sınırlayabilir.",
+      "en": "A cgroup can limit the memory use of a process group."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["sandboxing-isolation"]
+  },
+  {
+    "id": "measured-boot",
+    "term": {
+      "tr": "Ölçümlü önyükleme",
+      "en": "Measured boot"
+    },
+    "examples": {
+      "tr": "Ölçümlü önyükleme bileşen özetlerini TPM PCR’lerine kaydeder.",
+      "en": "Measured boot records component measurements in TPM PCRs."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["hardware-root-of-trust"]
+  },
+  {
+    "id": "secure-boot",
+    "term": {
+      "tr": "Güvenli önyükleme",
+      "en": "Secure Boot"
+    },
+    "examples": {
+      "tr": "Güvenli önyükleme, yetkisiz imzalı bileşenleri başlatmadan önce doğrular.",
+      "en": "Secure Boot verifies authorized components before launch."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["hardware-root-of-trust"]
+  },
+  {
+    "id": "platform-configuration-register",
+    "term": {
+      "tr": "Platform yapılandırma yazmacı (PCR)",
+      "en": "Platform Configuration Register (PCR)"
+    },
+    "examples": {
+      "tr": "PCR, ölçümlü önyükleme zincirinin özet durumunu tutar.",
+      "en": "A PCR holds a summary state of the measured-boot chain."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["hardware-root-of-trust"]
+  },
+  {
+    "id": "trusted-execution-environment",
+    "term": {
+      "tr": "Güvenilir yürütme ortamı (TEE)",
+      "en": "Trusted Execution Environment (TEE)"
+    },
+    "examples": {
+      "tr": "TEE, belirli hesaplamaları ana işletim sisteminden yalıtmayı hedefler.",
+      "en": "A TEE aims to isolate selected computations from the main operating system."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["hardware-root-of-trust"]
+  },
+  {
+    "id": "system-hardening",
+    "term": {
+      "tr": "Sistem sertleştirme",
+      "en": "System hardening"
+    },
+    "examples": {
+      "tr": "Sistem sertleştirme gereksiz servisleri kaldırıp yamaları yönetir.",
+      "en": "System hardening removes unnecessary services and manages patches."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["system-hardening"]
+  },
+  {
+    "id": "security-baseline",
+    "term": {
+      "tr": "Güvenli taban yapılandırma",
+      "en": "Security baseline"
+    },
+    "examples": {
+      "tr": "Güvenli taban yapılandırma, sistem ayarları için denetlenebilir referans sağlar.",
+      "en": "A security baseline provides an auditable reference for system settings."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["system-hardening"]
+  },
+  {
+    "id": "reproducible-build",
+    "term": {
+      "tr": "Yeniden üretilebilir derleme",
+      "en": "Reproducible build"
+    },
+    "examples": {
+      "tr": "Bağımsız derlemelerin aynı ikiliyi üretmesi doğrulanabilirliği artırır.",
+      "en": "Independent builds producing the same binary improve verifiability."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["trusting-trust"]
+  },
+  {
+    "id": "diverse-double-compiling",
+    "term": {
+      "tr": "Çeşitli çift derleme (DDC)",
+      "en": "Diverse double-compiling (DDC)"
+    },
+    "examples": {
+      "tr": "DDC, derleyici güvenini bağımsız araç zincirleriyle sınamaya çalışır.",
+      "en": "DDC attempts to test compiler trust with independent toolchains."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["trusting-trust"]
+  },
+  {
+    "id": "software-supply-chain",
+    "term": {
+      "tr": "Yazılım tedarik zinciri",
+      "en": "Software supply chain"
+    },
+    "examples": {
+      "tr": "Yazılım tedarik zinciri kaynak, derleme aracı ve dağıtım süreçlerini kapsar.",
+      "en": "The software supply chain includes source, build tools, and distribution processes."
+    },
+    "courseIds": ["information-systems-security"],
+    "topicIds": ["trusting-trust"]
+  }
+]

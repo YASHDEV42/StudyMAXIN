@@ -1,0 +1,71 @@
+{
+  "id": "diffie-hellman-key-exchange",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Diffie–Hellman: Ortak Sırrı Açık Kanaldan Kurmak",
+    "ar": "Diffie–Hellman: بناء سر مشترك عبر قناة مكشوفة"
+  },
+  "order": 20,
+  "prerequisites": ["public-key-foundations"],
+  "related": ["public-key-foundations", "rsa-cryptosystem"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منطلع بمفتاح مشترك والكل عم يسمع؟",
+      "summary": "تابع تبادل DH بالحدس والحساب، وافهم ليش لازم نوثّق الطرف وليش ephemeral بيعطي forward secrecy.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Diffie–Hellman: Ortak Sırrı Açık Kanaldan Kurmak",
+      "summary": "DH’nin hesap adımlarını, ileri gizliliği, kimlik doğrulama gereksinimini ve grup parametresi risklerini örnekle açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Diffie–Hellman: Ortak Sırrı Açık Kanaldan Kurmak — Sınav Özeti",
+      "summary": "DH’nin hesap adımlarını, ileri gizliliği, kimlik doğrulama gereksinimini ve grup parametresi risklerini örnekle açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 18,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

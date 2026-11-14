@@ -1,0 +1,71 @@
+{
+  "id": "side-channel-attacks",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Yan Kanal Saldırıları",
+    "ar": "هجمات القنوات الجانبية"
+  },
+  "order": 110,
+  "prerequisites": ["heartbleed-memory-disclosure"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو بتكشف مدة التنفيذ وإشارات الجهاز؟",
+      "summary": "قنوات التوقيت والطاقة والذاكرة المؤقتة وأوراكل الحشو، ولماذا يجب أن يقلل التنفيذ الآمن التسريب الجانبي.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 49,
+              "to": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yan Kanal Saldırıları",
+      "summary": "Zamanlama, hata davranışı, güç ve önbellek gözlemlerinin matematiksel olarak doğru kriptografiden nasıl bilgi sızdırabildiğini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 49,
+              "to": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Yan Kanal Saldırıları — Sınav Özeti",
+      "summary": "Zamanlama, hata davranışı, güç ve önbellek gözlemlerinin matematiksel olarak doğru kriptografiden nasıl bilgi sızdırabildiğini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 49,
+              "to": 50
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

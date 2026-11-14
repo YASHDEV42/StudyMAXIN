@@ -1,0 +1,54 @@
+{
+  "id": "course-roadmap",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Dönem Yol Haritası: Temellerden Operasyonlara",
+    "ar": "خريطة الفصل: من الأساسيات إلى العمليات"
+  },
+  "order": 140,
+  "prerequisites": [
+    "security-core-vocabulary",
+    "security-governance-ethics-law"
+  ],
+  "related": [
+    "security-history",
+    "security-economics-human-factor",
+    "security-design-principles"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف تتوزع موضوعات الأمن خلال الفصل؟",
+      "summary": "اقرأ خريطة الأسابيع كمسار يربط المفاهيم الأساسية بالتشفير والأنظمة والتشغيل والحوكمة، من دون اعتبارها ترتيبًا صارمًا للاعتماد بين كل موضوعين.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 7 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Dersin Yol Haritası: Temellerden Operasyonlara",
+      "summary": "Haftalık planı kriptografi, kimlik, web, ağ, sistem ve operasyon başlıklarının birbirine nasıl bağlandığını gösterecek biçimde yorumla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 7 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Dönem Yol Haritası — Sınav Özeti",
+      "summary": "Kaynağın haftaları ve ana konu kümelerini tek tabloda hatırla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-43-89", "pages": [{ "from": 7, "to": 7 }] }
+      ]
+    }
+  ]
+}

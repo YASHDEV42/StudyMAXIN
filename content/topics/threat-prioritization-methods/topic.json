@@ -1,0 +1,71 @@
+{
+  "id": "threat-prioritization-methods",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "DREAD ve PASTA: Puanı İş Bağlamına Bağlamak",
+    "ar": "DREAD وPASTA: من درجات التهديدات لقرارات مفهومة"
+  },
+  "order": 60,
+  "prerequisites": ["threat-modeling-stride"],
+  "related": ["attack-trees-portal-model"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "DREAD وPASTA: من درجات التهديدات لقرارات مفهومة",
+      "summary": "افهم حساب DREAD وحدوده، ومراحل PASTA السبعة، وليش التصنيف والتقييم والمنهجية مو نفس الوظيفة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 30,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "DREAD ve PASTA: Puanı İş Bağlamına Bağlamak",
+      "summary": "DREAD hesabını ve sınırlarını, PASTA’nın yedi aşamasını ve yöntemlerin farklı görevlerini örneklerle öğren.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 30,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "DREAD ve PASTA: Puanı İş Bağlamına Bağlamak — Sınav Özeti",
+      "summary": "Tanımlar, tablolar, işlem sıraları ve sık karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 30,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "ddos-defense",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "DDoS Türleri, Amplifikasyon ve Katmanlı Savunma",
+    "ar": "هجمات حجب الخدمة الموزعة وطرق الدفاع"
+  },
+  "order": 100,
+  "prerequisites": ["tcp-handshake-syn-flood"],
+  "related": ["firewalls-segmentation", "intrusion-detection-prevention"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "هجمات حجب الخدمة الموزعة وطرق الدفاع",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 5,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "DDoS Türleri, Amplifikasyon ve Katmanlı Savunma",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 5,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "DDoS Türleri, Amplifikasyon ve Katmanlı Savunma — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 5,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

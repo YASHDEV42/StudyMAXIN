@@ -1,0 +1,51 @@
+{
+  "id": "identity-authentication-authorization",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Kimlik, Doğrulama ve Yetkilendirme",
+    "ar": "الهوية والتحقق من الهوية والتفويض"
+  },
+  "order": 0,
+  "prerequisites": ["identity-access-accountability", "cia-security-goals"],
+  "related": [
+    "multi-factor-authentication",
+    "access-control-models",
+    "zero-trust-architecture"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مين إنت؟ وشو مسموحلك تعمل؟",
+      "summary": "ميّز الهوية والتعريف والتحقق من الهوية والتفويض، واربط عوامل التحقق بالقياسات الحيوية ومخاطرها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 13, "to": 16 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kimlik, Kimlik Doğrulama ve Yetkilendirme",
+      "summary": "Kimlik iddiasının tanımlanmasından kanıtlanmasına, ardından erişim iznine uzanan zinciri ve biyometrinin sınırlarını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 13, "to": 16 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kimlik ve Yetkilendirme — Sınav Özeti",
+      "summary": "Kavram ayrımları, doğrulama faktörleri ve biyometrik hata dengesi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 13, "to": 16 }] }
+      ]
+    }
+  ]
+}

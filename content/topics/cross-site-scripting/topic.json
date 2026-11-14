@@ -1,0 +1,71 @@
+{
+  "id": "cross-site-scripting",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Cross-Site Scripting (XSS)",
+    "ar": "البرمجة النصية عبر المواقع XSS"
+  },
+  "order": 2,
+  "prerequisites": ["session-security", "web-security-foundations"],
+  "related": ["csrf", "sql-injection"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "البرمجة النصية عبر المواقع XSS",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Cross-Site Scripting (XSS)",
+      "summary": "XSS’te saldırganın denetlediği veri başka bir kullanıcının tarayıcısında güvenilir sitenin içeriği gibi yorumlanır. Reflected XSS, istek parametresinin yanıta anlık yansımasıdır; kurban çoğunlukla haz",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Cross-Site Scripting (XSS) — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

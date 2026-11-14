@@ -1,0 +1,71 @@
+{
+  "id": "stack-buffer-overflow",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Yığın Taşması ve Kontrol Akışı",
+    "ar": "تجاوز المكدس ومسار التحكم"
+  },
+  "order": 2,
+  "prerequisites": ["memory-safety-foundations"],
+  "related": ["memory-safety-foundations", "exploit-mitigations"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تجاوز المكدس ومسار التحكم",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 23,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yığın Taşması ve Kontrol Akışı",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 23,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Yığın Taşması ve Kontrol Akışı — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 23,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

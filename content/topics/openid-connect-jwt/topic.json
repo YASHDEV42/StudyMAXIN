@@ -1,0 +1,49 @@
+{
+  "id": "openid-connect-jwt",
+  "courseId": "information-systems-security",
+  "chapterId": "week-04",
+  "title": { "tr": "OpenID Connect ve JWT", "ar": "OpenID Connect ورموز JWT" },
+  "order": 6,
+  "prerequisites": ["oauth-authorization", "digital-signatures"],
+  "related": [
+    "jwt-validation",
+    "session-security",
+    "sso-kerberos-federation",
+    "phishing-resistant-authentication"
+  ],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "OAuth للصلاحيات وOIDC للهوية",
+      "summary": "قارن OAuth وOIDC وSAML، اقرأ بنية JWT، وتحقق من التوقيع والادعاءات بأمان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 35, "to": 36 }] }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "OpenID Connect, JWT ve Güvenli Doğrulama",
+      "summary": "OIDC kimlik jetonunu OAuth erişiminden ayırır; JWT imza, iddia ve algoritma kontrollerini açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 35, "to": 36 }] }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OIDC ve JWT — Sınav Özeti",
+      "summary": "OAuth/OIDC/SAML farkı, JWT bölümleri ve doğrulama gereklilikleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        { "sourceId": "teori-1-143-178", "pages": [{ "from": 35, "to": 36 }] }
+      ]
+    }
+  ]
+}

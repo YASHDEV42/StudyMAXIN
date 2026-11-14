@@ -1,0 +1,71 @@
+{
+  "id": "cia-security-goals",
+  "courseId": "information-systems-security",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "CIA Üçlüsü: Güvenlikte Neyi Koruyoruz?",
+    "ar": "مثلث CIA: شو اللي عم نحميه؟"
+  },
+  "order": 20,
+  "prerequisites": [],
+  "related": ["identity-access-accountability", "security-core-vocabulary"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مثلث CIA: شو اللي عم نحميه؟",
+      "summary": "ميّز أثر الحادث على السرية وسلامة البيانات والتوافر، وافهم كيف بتحميها الضوابط ووين بتتعارض الأهداف.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 21,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "CIA Üçlüsü: Güvenlikte Neyi Koruyoruz?",
+      "summary": "Bir olayın gizlilik, bütünlük ve erişilebilirlik etkilerini ayır; kontrollerin neyi koruduğunu ve hedefler arasındaki dengeyi anla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 21,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "CIA Üçlüsü: Güvenlikte Neyi Koruyoruz? — Sınav Özeti",
+      "summary": "Tanımlar, ayrımlar ve sınavda karıştırılan noktalar için kısa başvuru.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-1-42",
+          "pages": [
+            {
+              "from": 21,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

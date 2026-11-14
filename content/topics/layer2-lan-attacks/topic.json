@@ -1,0 +1,71 @@
+{
+  "id": "layer2-lan-attacks",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Yerel Ağda ARP ve Katman 2 Saldırıları",
+    "ar": "هجمات الطبقة الثانية وARP في الشبكة المحلية"
+  },
+  "order": 20,
+  "prerequisites": ["network-foundations-and-protocol-layers"],
+  "related": ["tls-13", "zero-trust-architecture"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "هجمات الطبقة الثانية وARP في الشبكة المحلية",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yerel Ağda ARP ve Katman 2 Saldırıları",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Yerel Ağda ARP ve Katman 2 Saldırıları — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 23,
+              "to": 26
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

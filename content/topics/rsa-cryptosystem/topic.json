@@ -1,0 +1,71 @@
+{
+  "id": "rsa-cryptosystem",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "RSA: Çarpması Kolay, Çarpanlarına Ayırması Zor",
+    "ar": "RSA: سهل نضربه وصعب نحلّله لعوامله"
+  },
+  "order": 30,
+  "prerequisites": ["public-key-foundations"],
+  "related": ["diffie-hellman-key-exchange", "elliptic-curve-cryptography"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بتصير صعوبة التحليل إلى عوامل مفتاحًا؟",
+      "summary": "اشتق مفاتيح RSA من الأعداد الأولية، وامشِ بمثال رقمي، وافهم OAEP وCRT ومخاطر RSA الخام.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "RSA: Çarpması Kolay, Çarpanlarına Ayırması Zor",
+      "summary": "RSA anahtar üretimini ve şifreleme hesabını örnekle; textbook RSA, OAEP/PSS, hibrit kullanım ve CRT hata saldırısını ayırt et.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "RSA: Çarpması Kolay, Çarpanlarına Ayırması Zor — Sınav Özeti",
+      "summary": "RSA anahtar üretimini ve şifreleme hesabını örnekle; textbook RSA, OAEP/PSS, hibrit kullanım ve CRT hata saldırısını ayırt et.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

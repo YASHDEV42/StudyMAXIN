@@ -1,0 +1,80 @@
+{
+  "id": "chapter-five-synthesis",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Bölüm 5: Çözümlü Alıştırmalar ve Bütünleştirme",
+    "ar": "الفصل الخامس: تمارين محلولة وربط المفاهيم"
+  },
+  "order": 1,
+  "prerequisites": [
+    "web-security-foundations",
+    "owasp-top-10-map",
+    "sql-injection",
+    "cross-site-scripting",
+    "csrf",
+    "broken-access-control-idor",
+    "web-authentication-hardening",
+    "secure-web-design"
+  ],
+  "related": ["chapter-four-synthesis", "chapter-three-review"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الفصل الخامس: تمارين محلولة وربط المفاهيم",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bölüm 5: Çözümlü Alıştırmalar ve Bütünleştirme",
+      "summary": "Bölüm sonu alıştırmaları farklı kusurları aynı vakada ayırmayı ister. SQLi’de girdi sorgunun yapısını değiştirir; XSS’te çıktı tarayıcıda kod olur; CSRF’te tarayıcı mevcut kimlik bilgisiyle istek gönd",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bölüm 5: Çözümlü Alıştırmalar ve Bütünleştirme — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 7,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

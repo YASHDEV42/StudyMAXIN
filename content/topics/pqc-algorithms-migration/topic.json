@@ -1,0 +1,71 @@
+{
+  "id": "pqc-algorithms-migration",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "PQC Algoritmaları ve Geçiş",
+    "ar": "خوارزميات PQC والانتقال"
+  },
+  "order": 140,
+  "prerequisites": ["quantum-threat-and-pqc", "tls-13"],
+  "related": ["quantum-threat-and-pqc"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من LWE لمعايير NIST والانتقال الهجين",
+      "summary": "فكرة LWE، أدوار ML-KEM وML-DSA وSLH-DSA، كلفة أحجام المفاتيح، الدمج الهجين والمرونة التشفيرية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 1,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "PQC Algoritmaları ve Kripto-Çeviklik",
+      "summary": "Kafes/LWE temeli, NIST’in KEM ve imza standartları, hibrit anahtar değişimi, boyut maliyeti ve algoritma geçiş planını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 1,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "PQC Algoritmaları ve Geçiş — Sınav Özeti",
+      "summary": "Kafes/LWE temeli, NIST’in KEM ve imza standartları, hibrit anahtar değişimi, boyut maliyeti ve algoritma geçiş planını açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-143-178",
+          "pages": [
+            {
+              "from": 1,
+              "to": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "memory-bug-families",
+  "courseId": "information-systems-security",
+  "chapterId": "week-08",
+  "title": {
+    "tr": "Bellek Hatası Türleri",
+    "ar": "عائلات أخطاء الذاكرة"
+  },
+  "order": 3,
+  "prerequisites": ["memory-safety-foundations"],
+  "related": ["memory-safety-foundations", "exploit-mitigations"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "عائلات أخطاء الذاكرة",
+      "summary": "شرح عربي يربط الآلية بدافعها الأمني وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 30,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bellek Hatası Türleri",
+      "summary": "Kavramı mekanizması, güvenlik etkisi ve sınırlamalarıyla açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 30,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bellek Hatası Türleri — Sınav Özeti",
+      "summary": "Tanımlar, mekanizmalar, savunmalar ve kritik ayrımlara yönelik kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-307-359",
+          "pages": [
+            {
+              "from": 30,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

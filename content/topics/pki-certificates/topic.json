@@ -1,0 +1,71 @@
+{
+  "id": "pki-certificates",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "PKI ve X.509 Sertifikaları",
+    "ar": "PKI وشهادات X.509"
+  },
+  "order": 80,
+  "prerequisites": ["digital-signatures"],
+  "related": ["tls-13"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من المفتاح للهوية: كيف بتشتغل PKI؟",
+      "summary": "ليش المفتاح العام لحاله ما بيثبت هوية الموقع، وكيف الشهادات وسلاسل الثقة والإبطال بتسد هالفجوة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "PKI ve X.509: Açık Anahtarı Kimliğe Bağlamak",
+      "summary": "CA, sertifika zinciri, X.509 alanları, iptal ve şeffaflık kayıtlarının güven kararını nasıl oluşturduğunu açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "PKI ve X.509 Sertifikaları — Sınav Özeti",
+      "summary": "CA, sertifika zinciri, X.509 alanları, iptal ve şeffaflık kayıtlarının güven kararını nasıl oluşturduğunu açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 37,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "intrusion-detection-prevention",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "IDS ve IPS: Ağ Saldırısını Tespit Etme",
+    "ar": "أنظمة كشف التسلل ومنعه IDS وIPS"
+  },
+  "order": 70,
+  "prerequisites": ["firewalls-segmentation", "packet-capture-wireshark"],
+  "related": ["secure-sdlc-devsecops", "ddos-defense"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أنظمة كشف التسلل ومنعه IDS وIPS",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 36,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "IDS ve IPS: Ağ Saldırısını Tespit Etme",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 36,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "IDS ve IPS: Ağ Saldırısını Tespit Etme — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 36,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

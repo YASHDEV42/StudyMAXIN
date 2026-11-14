@@ -1,0 +1,74 @@
+{
+  "id": "packet-capture-wireshark",
+  "courseId": "information-systems-security",
+  "chapterId": "week-07",
+  "title": {
+    "tr": "Trafik Analizi: Sniffing ve Wireshark",
+    "ar": "رصد حركة الشبكة باستخدام Wireshark"
+  },
+  "order": 40,
+  "prerequisites": [
+    "network-foundations-and-protocol-layers",
+    "layer2-lan-attacks"
+  ],
+  "related": ["tls-13", "tcp-handshake-syn-flood"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "رصد حركة الشبكة باستخدام Wireshark",
+      "summary": "درس يشرح الفكرة وآليتها ومخاطرها وحدودها.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Trafik Analizi: Sniffing ve Wireshark",
+      "summary": "Kavramı, işleyişini, güvenlik sonuçlarını ve sınırlarını öğretici biçimde açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Trafik Analizi: Sniffing ve Wireshark — Sınav Özeti",
+      "summary": "Temel tanımlar, akışlar ve ayırt edici sınav noktaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-269-307",
+          "pages": [
+            {
+              "from": 29,
+              "to": 31
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

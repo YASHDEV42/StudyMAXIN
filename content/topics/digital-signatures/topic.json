@@ -1,0 +1,75 @@
+{
+  "id": "digital-signatures",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Dijital İmzalar ve İnkâr Edilemezlik",
+    "ar": "التواقيع الرقمية وإثبات مصدر الرسالة"
+  },
+  "order": 60,
+  "prerequisites": [
+    "cryptographic-hash-functions",
+    "rsa-cryptosystem",
+    "elliptic-curve-cryptography"
+  ],
+  "related": ["public-key-foundations"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منتحقق مين وقّع وأن المحتوى ما تغيّر؟",
+      "summary": "اشرح hash ثم توقيع، وميّز التوقيع عن التشفير، وافهم حدود ربط المفتاح بهوية شخص.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 33,
+              "to": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Dijital İmzalar ve İnkâr Edilemezlik",
+      "summary": "Dijital imzanın hash, özel/açık anahtar ve doğrulama adımlarını; RSA-PSS, ECDSA, Ed25519 farklarını ve güven sınırlarını öğret.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 33,
+              "to": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Dijital İmzalar ve İnkâr Edilemezlik — Sınav Özeti",
+      "summary": "Dijital imzanın hash, özel/açık anahtar ve doğrulama adımlarını; RSA-PSS, ECDSA, Ed25519 farklarını ve güven sınırlarını öğret.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 33,
+              "to": 35
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Allowlist beklenen değer/biçimleri kabul eder; denylist bilinen kötü örüntüleri reddeder ve kaçışları kaçırabilir. Doğrulama tamamlayıcıdır: SQL parametreleştirme ve bağlama duyarlı HTML kodlaması ayrı ayrı gerekir. Sunucu tarafında kimlik, rol, fiyat ve sahiplik denetle. Güvenli varsayılan, en az ayrıcalık, katmanlı savunma, güvenli hata ve tehdit modellemesi temel ilkelerdir.

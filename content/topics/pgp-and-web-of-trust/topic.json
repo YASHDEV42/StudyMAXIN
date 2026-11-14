@@ -1,0 +1,71 @@
+{
+  "id": "pgp-and-web-of-trust",
+  "courseId": "information-systems-security",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "PGP, Güven Ağı ve Kripto Savaşları",
+    "ar": "PGP وشبكة الثقة وحروب التشفير"
+  },
+  "order": 70,
+  "prerequisites": ["digital-signatures", "public-key-foundations"],
+  "related": ["cryptography-history"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منوثق مفاتيح الناس من دون CA مركزي؟",
+      "summary": "افهم PGP الهجين، شبكة الثقة، ومخاطر الثقة المركزية وسياسات التشفير.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 35,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "PGP, Güven Ağı ve Kripto Savaşları",
+      "summary": "PGP’nin şifreleme-imza bileşimini, merkezi PKI ile web of trust farkını ve kripto savaşlarının teknik mirasını açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 35,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "PGP, Güven Ağı ve Kripto Savaşları — Sınav Özeti",
+      "summary": "PGP’nin şifreleme-imza bileşimini, merkezi PKI ile web of trust farkını ve kripto savaşlarının teknik mirasını açıkla.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-90-142",
+          "pages": [
+            {
+              "from": 35,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

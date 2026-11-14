@@ -1,0 +1,98 @@
+{
+  "id": "csrf",
+  "courseId": "information-systems-security",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Cross-Site Request Forgery (CSRF)",
+    "ar": "تزوير الطلبات عبر المواقع CSRF"
+  },
+  "order": 3,
+  "prerequisites": ["session-security", "web-security-foundations"],
+  "related": ["cross-site-scripting", "broken-access-control-idor"],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تزوير الطلبات عبر المواقع CSRF",
+      "summary": "الفكرة الأساسية",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 42,
+              "to": 43
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Cross-Site Request Forgery (CSRF)",
+      "summary": "CSRF’te saldırgan kullanıcıyı, giriş yaptığı hedef siteye durum değiştiren istek göndermeye kandırır. Tarayıcı hedef sitenin cookie’sini otomatik ekliyorsa sunucu istek ile kullanıcının gerçek niyetin",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 42,
+              "to": 43
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Cross-Site Request Forgery (CSRF) — Sınav Özeti",
+      "summary": "Kavramlar, saldırı koşulları ve temel savunmalar için kısa tekrar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "teori-1-179-221",
+          "pages": [
+            {
+              "from": 42,
+              "to": 43
+            }
+          ]
+        },
+        {
+          "sourceId": "teori-1-222-268",
+          "pages": [
+            {
+              "from": 1,
+              "to": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
