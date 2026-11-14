@@ -1,32 +1,58 @@
-## AES’in yeri
+## وين مكان AES بعالم التشفير؟
 
-**AES (Advanced Encryption Standard / Gelişmiş Şifreleme Standardı)**, 128 bitlik bloklarla çalışan bir blok şifresidir. Anahtar uzunluğu 128, 192 veya 256 bit olabilir; tur sayısı sırasıyla 10, 12 ve 14’tür. AES bir çalışma modu değildir: tek bloğu dönüştürür; çok bloklu veride güvenliği doğru mod belirler.
+**AES — Advanced Encryption Standard (Gelişmiş Şifreleme Standardı)** هو خوارزمية **تشفير كتل (blok şifreleme)** متماثلة؛ يعني المرسل والمستقبل بيستخدموا نفس **المفتاح السري (gizli anahtar)** للتشفير وفك التشفير. AES بيعالج كل مرة كتلة ثابتة حجمها **128 bit = 16 byte**، بينما طول المفتاح ممكن يكون **128 أو 192 أو 256 bit**. حسب طول المفتاح، بيكون عدد **الجولات (tur)** هو **10 أو 12 أو 14** بالترتيب.
 
-## Durum tablosu ve bayt cebiri
+مهم نفرّق بين AES وبين **وضع التشغيل (çalışma modu)**: AES نفسه بيحوّل كتلة واحدة، أما تشفير ملف أو رسالة مؤلفة من كتل كثيرة بأمان فبحتاج وضع تشغيل مناسب. مثلاً، استخدام AES مع **GCM** ممكن يوفّر السرية والتحقق من سلامة الرسالة، بشرط الالتزام بقواعد الـ **nonce (tek kullanımlık değer)** وإدارة المفاتيح. قوة AES لحالها ما بتعوض عن طريقة استخدام خاطئة.
 
-Girdi 16 bayttır ve sütun öncelikli 4×4 **durum (state)** tablosuna yerleştirilir. AES’in aritmetiği baytları GF(2⁸) alanının elemanları gibi işler. Toplama XOR’dur; çarpma polinom aritmetiği ve indirgeme polinomu `x⁸+x⁴+x³+x+1` (hex 0x11B) ile yapılır. `xtime` bir baytı x ile çarpmayı, gerekirse polinoma göre indirgemeyi ifade eder. Bu yapı, baytlar üzerinde terslenebilir ve iyi analiz edilmiş dönüşümler kurmaya yarar.
+## كيف بيمثّل البيانات؟ State و GF(2⁸)
 
-## Dört adım: karışıklık ve yayılma
+الـ 16 byte اللي بيفوتوا على AES بينرتّبوا بمصفوفة **4×4** اسمها **State (durum tablosu)**. التعبئة بتكون **عموداً عموداً**، مو صفاً صفاً. تخيّلها مساحة عمل مؤقتة: كل جولة بتغيّر قيم البايتات أو مواقعها ضمن المصفوفة، وبالنهاية بتطلع الكتلة المشفّرة.
 
-AES-128 önce başlangıç anahtarını durumla XOR’lar. Ardından dokuz tam turda:
+AES بيعمل بعض حساباته ضمن **Finite Field (sonlu alan)** اسمه **GF(2⁸)**. الفكرة ببساطة إنه ما بنتعامل مع البايت كعدد عادي بكل العمليات؛ منعتبره عنصراً بحقل رياضي مكوّن من 256 قيمة. بهالحقل:
 
-1. **SubBytes:** Her bayt, doğrusal olmayan S-box eşlemesiyle değiştirilir. S-box, GF(2⁸)’de çarpımsal ters ve ardından afin dönüşüm fikrine dayanır. Örneğin `0x53` baytı `0xED` olur. Bu doğrusal olmayan adım cebirsel ilişkiyi karmaşıklaştırır.
-2. **ShiftRows:** Dört satır sırasıyla 0, 1, 2 ve 3 bayt sola döngüsel kaydırılır. Değerler değişmez; konumlar değişir ve farklı sütunlardan gelen baytlar yan yana taşınır.
-3. **MixColumns:** Her sütun GF(2⁸)’de sabit bir matrisle çarpılır. Toplamalar XOR, katsayı çarpmaları alan çarpımıdır. Kaynak örneğinde `(D4,BF,5D,30)` sütunu `(04,66,81,E5)` olur. Tek bayt farkı sütunun dört çıktısına yayılır.
-4. **AddRoundKey:** Durum, tur anahtarıyla XOR’lanır. Anahtarın dönüşüme girdiği adımdır.
+- **الجمع (toplama)** هو عملية **XOR** على البتات.
+- **الضرب (çarpma)** بيعتمد على ضرب كثيرات حدود ثم الاختزال باستخدام `x⁸ + x⁴ + x³ + x + 1`، وتمثيله الست عشري `0x11B`.
+- العملية **`xtime`** تعني ضرب البايت بـ `x` ضمن هالحقل، مع الاختزال عند الحاجة.
 
-Onuncu ve son turda MixColumns uygulanmaz. Şifre çözme ters S-box, ters satır kaydırma ve ters sütun dönüşümünü ters sırayla uygular; XOR yine kendi tersidir.
+ليش كل هالتعقيد الرياضي؟ لأنه بيسمح لـ AES يستخدم تحويلات دقيقة وقابلة للعكس وقت فك التشفير، وبنفس الوقت بيحقق خلطاً قوياً للبيانات. ما في داعي تحفظ كل خطوات الحساب هون قبل ما تفهم دورها بالمصفوفة.
 
-## Anahtar genişletme
+## شو بيصير بكل جولة؟
 
-AES-128’in 16 bayt anahtarı dört 32 bit sözcükten oluşur. **Anahtar genişletme (key schedule)** toplam 44 sözcük, yani başlangıç dahil 11 tur anahtarı üretir. Genel adım önceki sözcük ile dört önceki sözcüğün XOR’udur; her dördüncü sözcükte `RotWord`, `SubWord` ve tura bağlı `Rcon` eklenir. Bu doğrusal olmayan dönüşüm turların anahtar ilişkilerini çeşitlendirir. Tur anahtarları da sır olduğundan korunmalıdır.
+خلينا ناخد **AES-128** كمثال. أولاً بتنطبق **AddRoundKey (tur anahtarı ekleme)** على الـ State باستخدام المفتاح الابتدائي. بعدين في **9 جولات كاملة**، كل وحدة فيها أربع خطوات:
 
-## Güvenlik ve kullanım
+1. **SubBytes (bayt değiştirme):** كل بايت بينستبدل بقيمة تانية من **S-box (S-kutusu)**. هاد تحويل غير خطّي بيعقّد العلاقة بين المدخلات والمخرجات، وبالتالي بيصعّب تحليل التشفير. الـ S-box مبني رياضياً على المعكوس الضربي ضمن GF(2⁸) ثم تحويل أفيني. مثال معروف: `0x53 → 0xED`.
+2. **ShiftRows (satır kaydırma):** صفوف الـ State الأربعة بتنـزاح بشكل دائري لليسار بمقدار **0، 1، 2، 3 بايت** بالتسلسل. هون قيم البايتات نفسها ما بتتبدّل، بس مواقعها بتتغيّر؛ هيك المعلومات اللي كانت بعمود واحد بتتوزع على أعمدة مختلفة.
+3. **MixColumns (sütun karıştırma):** كل عمود بينخلط رياضياً بضربه بمصفوفة ثابتة ضمن GF(2⁸). هاي الخطوة بتنشر أثر أي تغيير في بايت واحد على بقية بايتات العمود. المثال الموجود بالمصدر: العمود `(D4, BF, 5D, 30)` بيتحوّل إلى `(04, 66, 81, E5)`.
+4. **AddRoundKey (tur anahtarı ekleme):** بنعمل **XOR** بين الـ State و**مفتاح الجولة (tur anahtarı)**. هاي الخطوة بتدخل سرية المفتاح ضمن التحويل؛ باقي التحويلات بحد ذاتها معروفة للجميع.
 
-Bir girdi bitindeki değişiklik birkaç tur içinde çıktının yaklaşık yarısını etkiler; bu **çığ etkisi (avalanche effect)** olarak bilinir. AES’in açık olması Kerckhoffs ilkesiyle uyumludur: gizli kalması gereken algoritma değil anahtardır. AES donanım komutlarıyla hızlı çalışır. Ancak sağlam AES, yanlış mod veya tekrar kullanılan nonce yüzünden güvensiz kullanımı kurtaramaz. 3DES gibi eski şifrelerin küçük blok sınırları da ayrı risk doğurur.
+كيف منربط الخطوات ببعض؟ **SubBytes** بيساهم بالتعقيد أو **Confusion (karmaşıklık)**، و**ShiftRows** مع **MixColumns** بيساهموا بنشر التغييرات أو **Diffusion (yayılma)**، و**AddRoundKey** بيربط النتيجة بالمفتاح السري. الجمع بينهم عبر جولات متكررة هو جوهر تصميم AES.
 
-## مصطلحات تركية وملاحظة المصدر
+**الجولة العاشرة والأخيرة في AES-128** بتطبّق SubBytes وShiftRows وAddRoundKey، **من دون MixColumns**. وبفك التشفير، منستخدم التحويلات العكسية بالترتيب المناسب؛ وXOR مع نفس المفتاح بيرجع القيمة السابقة لأنه XOR هو معكوس نفسه.
 
-المصطلحات التركية: durum (حالة AES)، sonlu alan (حقل منتهٍ)، yerine koyma kutusu / S-kutusu (صندوق الاستبدال)، satır kaydırma (إزاحة الصفوف)، sütun karıştırma (خلط الأعمدة)، anahtar genişletme (توسيع المفتاح)، çığ etkisi (تأثير الانهيار).
+## من وين بتجي مفاتيح الجولات؟ Key Schedule
 
-الحسابات والتمثيل اللفظي للمصفوفات شروح تعليمية مشتقة من أمثلة المصدر؛ لم تُنسخ صور المصدر.
+ما منستخدم المفتاح الأصلي بالشكل نفسه بكل جولة. في عملية اسمها **Key Expansion / Key Schedule (anahtar genişletme)** بتولّد مفاتيح الجولات انطلاقاً من المفتاح الأساسي.
+
+في **AES-128**، المفتاح الأصلي طوله 16 byte، ومنمثّله بأربع **كلمات (sözcük)**، كل كلمة 32 bit. التوسيع بينتج **44 كلمة** بتشكّل **11 مفتاح جولة**، بما فيها المفتاح الابتدائي. بشكل مبسّط، توليد كلمة جديدة بيعتمد على XOR مع كلمات سابقة، وعند كل كلمة رابعة بتدخل عمليات **RotWord** (تدوير البايتات) و**SubWord** (استبدال عبر S-box) وثابت الجولة **Rcon**.
+
+الفكرة مو إنشاء 11 سر مستقل؛ كلها مشتقّة من مفتاح واحد، ولازم مفاتيح الجولات المشتقة تنحفظ بأمان متل المفتاح الأصلي.
+
+## ليش AES قوي؟ وليش ممكن نستخدمه بشكل غلط؟
+
+أحد آثار تكرار التحويلات اسمه **Avalanche Effect (çığ etkisi)**: تغيير بت واحد بالمدخل ممكن يغيّر تقريباً نصف بتات المخرجات بعد جولات كافية. هاد سلوك مرغوب لأنه بيخفي العلاقات البسيطة بين البيانات قبل التشفير وبعده، لكنه مو برهان مستقل على أمان النظام كله.
+
+كمان AES خوارزمية منشورة ومعروفة للعموم، وهاد بيتوافق مع **Kerckhoffs’s Principle (Kerckhoffs ilkesi)**: الأمان لازم يعتمد على سرية المفتاح، مو على إخفاء طريقة عمل الخوارزمية. وفي معالجات بتدعم تعليمات عتادية بتسرّع AES.
+
+لكن انتبه لثلاث شغلات:
+
+- **اختيار وضع التشغيل:** استعمال **ECB** مثلاً ممكن يكشف أنماط الكتل المتكررة، حتى لو AES نفسه قوي.
+- **إعادة استخدام nonce:** ببعض الأوضاع مثل **GCM**، إعادة استخدام نفس الـ nonce مع نفس المفتاح ممكن تسبّب مشاكل أمنية خطيرة.
+- **إدارة المفاتيح:** تسريب المفتاح أو تخزينه بطريقة ضعيفة بيعرّض البيانات للخطر مهما كانت الخوارزمية قوية.
+
+وللمقارنة، بعض الخوارزميات الأقدم مثل **3DES** عندها حجم كتلة أصغر، وهاد بيفرض حدود استخدام ومخاطر مختلفة عن AES.
+
+## الخلاصة
+
+احفظ التسلسل المنطقي: **كتلة 128 bit → State بحجم 4×4 → مفتاح ابتدائي → جولات SubBytes / ShiftRows / MixColumns / AddRoundKey → جولة أخيرة بلا MixColumns**. وخلي ببالك دائماً الفرق بين **خوارزمية AES** اللي بتحوّل الكتلة، وبين **وضع التشغيل** اللي بيحدد كيف منستخدم هالتحويل لحماية بيانات حقيقية.
+
+**ملاحظة على المصدر:** الشرح والأمثلة النصية هون مبنية على مادة الكتاب، مع توضيحات تعليمية إضافية لتفسير التحويلات والعلاقات بينها؛ وما تم نسخ صور أو رسوم المصدر.
