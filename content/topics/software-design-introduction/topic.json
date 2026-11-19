@@ -1,0 +1,71 @@
+{
+  "id": "software-design-introduction",
+  "courseId": "software-design",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Yazılım Tasarımı ve Mimariye Giriş",
+    "ar": "مدخل إلى تصميم البرمجيات والمعمارية"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مدخل إلى تصميم البرمجيات ومعماريتها",
+      "summary": "شرح Design وArchitecture ودور المعماري والقرارات المعمارية وADR والدَّين التقني، مع أمثلة المحاضرة وحالة تسجيل الطلاب.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-01",
+          "pages": [
+            {
+              "from": 1,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yazılım Tasarımı ve Mimariye Giriş",
+      "summary": "Tasarım–mimari ayrımı, mimarın rolleri, trade-off, ADR, quality attributes ve teknik borç; dersin vaka örneğiyle.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-01",
+          "pages": [
+            {
+              "from": 1,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Hafta 1 — Sınav Özeti",
+      "summary": "Design vs. Architecture, karar ölçütleri, ADR adımları, teknik borç türleri ve kayıt sistemi vakasının kısa tekrarı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-01",
+          "pages": [
+            {
+              "from": 1,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

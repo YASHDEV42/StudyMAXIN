@@ -3,7 +3,9 @@
     "id": "teori-1-1-42",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-1-42.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-1-42.pdf",
@@ -16,7 +18,9 @@
     "id": "teori-1-43-89",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-43-89.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-43-89.pdf",
@@ -29,7 +33,9 @@
     "id": "teori-1-90-142",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-90-142.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-90-142.pdf",
@@ -42,7 +48,9 @@
     "id": "teori-1-143-178",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-143-178.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-143-178.pdf",
@@ -55,7 +63,9 @@
     "id": "teori-1-179-221",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-179-221.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-179-221.pdf",
@@ -68,7 +78,9 @@
     "id": "teori-1-222-268",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-222-268.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-222-268.pdf",
@@ -81,7 +93,9 @@
     "id": "teori-1-269-307",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-269-307.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-269-307.pdf",
@@ -94,7 +108,9 @@
     "id": "teori-1-307-359",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-307-359.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-307-359.pdf",
@@ -107,7 +123,9 @@
     "id": "teori-1-360-397",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-360-397.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-360-397.pdf",
@@ -120,7 +138,9 @@
     "id": "teori-1-398-447",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-398-447.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-398-447.pdf",
@@ -133,7 +153,9 @@
     "id": "teori-1-448-489",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-448-489.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-448-489.pdf",
@@ -146,7 +168,9 @@
     "id": "teori-1-490-529",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-490-529.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-490-529.pdf",
@@ -159,13 +183,30 @@
     "id": "teori-1-530-632",
     "title": "Bilgi Sistemleri ve Güvenliği — Teori Ders Notları · teori-1-530-632.pdf",
     "language": "tr",
-    "courseIds": ["information-systems-security"],
+    "courseIds": [
+      "information-systems-security"
+    ],
     "location": {
       "kind": "private",
       "filename": "teori-1-530-632.pdf",
       "pageCount": 103,
       "sha256": "c186531e401068adc2531003058b9ff2bd4870ec2c013dd644c02b69c8b57efa",
       "reason": "Supplied local original; no redistribution license found in inspected front matter. Not hosted or included in the repository."
+    }
+  },
+  {
+    "id": "software-design-week-01",
+    "title": "YMH 311 Yazılım Tasarımı ve Mimarisi — Hafta 1: Yazılım Tasarımı ve Mimariye Giriş (Doç. Dr. Bihter Daş, 2026–2027)",
+    "language": "tr",
+    "courseIds": [
+      "software-design"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "pageCount": 40,
+      "sha256": "7a6856ad90692350862b9dfeafe6abe973f53f6ede7c09c9cd5eaced58ac4543",
+      "reason": "Original provided privately in conversation; redistribution permission has not been established and PDF is not hosted."
     }
   }
 ]
