@@ -6596,5 +6596,362 @@
     "topicIds": [
       "software-design-introduction"
     ]
+  },
+  {
+    "id": "uml-modelleme",
+    "term": {
+      "tr": "UML modelleme",
+      "en": "UML modeling"
+    },
+    "examples": {
+      "tr": "UML modelleme, sınıflar arasındaki ilişkileri görselleştirir.",
+      "en": "UML modeling visualizes relationships between classes."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "soyutlama",
+    "term": {
+      "tr": "Soyutlama",
+      "en": "Abstraction"
+    },
+    "examples": {
+      "tr": "Soyutlama, ATM'nin arka plan ayrıntılarını gizler.",
+      "en": "Abstraction hides the ATM's implementation details."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "cohesion",
+    "term": {
+      "tr": "Uyum (cohesion)",
+      "en": "Cohesion"
+    },
+    "examples": {
+      "tr": "Yüksek uyumda sınıfın sorumlulukları birbiriyle ilişkilidir.",
+      "en": "With high cohesion, a class has related responsibilities."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "coupling",
+    "term": {
+      "tr": "Bağlılık (coupling)",
+      "en": "Coupling"
+    },
+    "examples": {
+      "tr": "Düşük bağlılık, değişikliklerin sınıflar arasında yayılmasını azaltır.",
+      "en": "Low coupling reduces the propagation of changes between classes."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "class-diagram",
+    "term": {
+      "tr": "Sınıf diyagramı",
+      "en": "Class diagram"
+    },
+    "examples": {
+      "tr": "Sınıf diyagramı sistemin statik yapısını gösterir.",
+      "en": "A class diagram represents a system's static structure."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "attribute",
+    "term": {
+      "tr": "Öznitelik",
+      "en": "Attribute"
+    },
+    "examples": {
+      "tr": "Student sınıfının adı bir özniteliktir.",
+      "en": "A student's name is an attribute of the Student class."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "operation",
+    "term": {
+      "tr": "İşlem (operation)",
+      "en": "Operation"
+    },
+    "examples": {
+      "tr": "Enroll işlemi öğrenciyi derse kaydeder.",
+      "en": "The enroll operation registers a student in a course."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "visibility",
+    "term": {
+      "tr": "Görünürlük",
+      "en": "Visibility"
+    },
+    "examples": {
+      "tr": "Private görünürlük sınıfın iç durumunu korur.",
+      "en": "Private visibility protects the class's internal state."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "multiplicity",
+    "term": {
+      "tr": "Çokluk",
+      "en": "Multiplicity"
+    },
+    "examples": {
+      "tr": "Çokluk, bir ilişkiye kaç nesnenin katıldığını belirtir.",
+      "en": "Multiplicity specifies how many objects participate in a relationship."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "association",
+    "term": {
+      "tr": "Ortaklık (association)",
+      "en": "Association"
+    },
+    "examples": {
+      "tr": "Öğrenci ile ders arasında ortaklık ilişkisi kurulabilir.",
+      "en": "An association can link a student and a course."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "aggregation",
+    "term": {
+      "tr": "Toplama (aggregation)",
+      "en": "Aggregation"
+    },
+    "examples": {
+      "tr": "Araba ile tekerlek arasındaki ilişki aggregation olarak modellenebilir.",
+      "en": "The car–wheel relationship may be modeled as aggregation."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "composition",
+    "term": {
+      "tr": "Bileşim (composition)",
+      "en": "Composition"
+    },
+    "examples": {
+      "tr": "Sipariş ile sipariş satırı güçlü bileşim ilişkisi kurar.",
+      "en": "An order and its line item have a strong composition relationship."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "generalization",
+    "term": {
+      "tr": "Genelleme",
+      "en": "Generalization"
+    },
+    "examples": {
+      "tr": "Student sınıfı Person sınıfından genelleme ilişkisiyle türeyebilir.",
+      "en": "Student may inherit from Person through generalization."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "realization",
+    "term": {
+      "tr": "Gerçekleme",
+      "en": "Realization"
+    },
+    "examples": {
+      "tr": "PaymentService sınıfı ödeme arayüzünü gerçekler.",
+      "en": "PaymentService realizes the payment interface."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "navigability",
+    "term": {
+      "tr": "Gezilebilirlik",
+      "en": "Navigability"
+    },
+    "examples": {
+      "tr": "Gezilebilirlik ilişkinin hangi yönde izlenebileceğini belirtir.",
+      "en": "Navigability indicates the direction in which a relationship can be traversed."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "whole-part",
+    "term": {
+      "tr": "Bütün-parça ilişkisi",
+      "en": "Whole–part relationship"
+    },
+    "examples": {
+      "tr": "Kompozisyon güçlü bir bütün-parça ilişkisidir.",
+      "en": "Composition is a strong whole–part relationship."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "sorumluluk",
+    "term": {
+      "tr": "Sorumluluk",
+      "en": "Responsibility"
+    },
+    "examples": {
+      "tr": "Her sınıfın sorumluluğu açıkça belirlenmelidir.",
+      "en": "Each class's responsibility should be clearly defined."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "kalitim",
+    "term": {
+      "tr": "Kalıtım",
+      "en": "Inheritance"
+    },
+    "examples": {
+      "tr": "Kalıtım gerçek bir IS-A ilişkisini ifade etmelidir.",
+      "en": "Inheritance should express a genuine IS-A relationship."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "arayuz",
+    "term": {
+      "tr": "Arayüz",
+      "en": "Interface"
+    },
+    "examples": {
+      "tr": "Arayüz, somut sınıftan bağımsız bir sözleşme tanımlar.",
+      "en": "An interface defines a contract independent of concrete classes."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "aday-sinif",
+    "term": {
+      "tr": "Aday sınıf",
+      "en": "Candidate class"
+    },
+    "examples": {
+      "tr": "Problem metnindeki isimlerden aday sınıflar belirlenir.",
+      "en": "Candidate classes are identified from nouns in the problem statement."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
+  },
+  {
+    "id": "yinelemeli",
+    "term": {
+      "tr": "Yinelemeli",
+      "en": "Iterative"
+    },
+    "examples": {
+      "tr": "Sınıf diyagramı yinelemeli olarak geliştirilir.",
+      "en": "The class diagram is developed iteratively."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "object-oriented-class-diagrams"
+    ]
   }
 ]
