@@ -1,0 +1,13 @@
+{
+  "id": "use-case-sequence-diagrams",
+  "courseId": "software-design",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Use Case ve Sequence Diyagramları",
+    "ar": "مخططات Use Case وSequence"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": []
+}
