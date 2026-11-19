@@ -1,0 +1,13 @@
+{
+  "id": "solid-design-principles",
+  "courseId": "software-design",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "SOLID Tasarım İlkeleri",
+    "ar": "مبادئ SOLID"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": []
+}
