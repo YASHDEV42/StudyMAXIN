@@ -6953,5 +6953,413 @@
     "topicIds": [
       "object-oriented-class-diagrams"
     ]
+  },
+  {
+    "id": "use-case",
+    "term": {
+      "tr": "Kullanım durumu",
+      "en": "Use case"
+    },
+    "examples": {
+      "tr": "Derse Kayıt Ol, öğrencinin hedefini gösteren bir kullanım durumudur.",
+      "en": "Enroll in Course is a use case describing a student's goal."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "actor",
+    "term": {
+      "tr": "Aktör",
+      "en": "Actor"
+    },
+    "examples": {
+      "tr": "Danışman, kayıt sistemiyle etkileşen bir aktördür.",
+      "en": "An advisor is an actor interacting with the enrollment system."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "system-boundary",
+    "term": {
+      "tr": "Sistem sınırı",
+      "en": "System boundary"
+    },
+    "examples": {
+      "tr": "Sistem sınırı hangi işlevlerin uygulamaya ait olduğunu gösterir.",
+      "en": "The system boundary shows which functions belong to the application."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "use-case-include",
+    "term": {
+      "tr": "Dahil etme ilişkisi",
+      "en": "Include relationship"
+    },
+    "examples": {
+      "tr": "Kimliği Doğrula her kayıt işleminde zorunluysa dahil etme ilişkisi kullanılır.",
+      "en": "Use include when identity verification is required for every registration."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "use-case-extend",
+    "term": {
+      "tr": "Genişletme ilişkisi",
+      "en": "Extend relationship"
+    },
+    "examples": {
+      "tr": "Kupon varsa indirim, ödeme kullanım durumunu genişletir.",
+      "en": "A coupon discount extends the payment use case when a coupon exists."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "use-case-documentation",
+    "term": {
+      "tr": "Kullanım durumu dokümantasyonu",
+      "en": "Use case documentation"
+    },
+    "examples": {
+      "tr": "Kullanım durumu dokümantasyonu alternatif hata akışlarını açıklar.",
+      "en": "Use case documentation explains alternative error flows."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "precondition",
+    "term": {
+      "tr": "Ön koşul",
+      "en": "Precondition"
+    },
+    "examples": {
+      "tr": "Derse kayıt için oturum açmış olmak ön koşul olabilir.",
+      "en": "Being signed in may be a precondition for course registration."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "postcondition",
+    "term": {
+      "tr": "Son koşul",
+      "en": "Postcondition"
+    },
+    "examples": {
+      "tr": "Başarılı kayıttan sonra ders öğrenci listesine eklenir; bu bir son koşuldur.",
+      "en": "After successful enrollment, the course is added to the student's list as a postcondition."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "trigger",
+    "term": {
+      "tr": "Tetikleyici",
+      "en": "Trigger"
+    },
+    "examples": {
+      "tr": "Kayıt düğmesine basılması işlemin tetikleyicisidir.",
+      "en": "Clicking the register button is the trigger for the operation."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "main-flow",
+    "term": {
+      "tr": "Temel akış",
+      "en": "Main flow"
+    },
+    "examples": {
+      "tr": "Temel akış başarılı ders kaydının adımlarını sıralar.",
+      "en": "The main flow lists the steps of successful course enrollment."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "alternative-flow",
+    "term": {
+      "tr": "Alternatif akış",
+      "en": "Alternative flow"
+    },
+    "examples": {
+      "tr": "Kontenjan dolu olduğunda alternatif akış çalışır.",
+      "en": "An alternative flow runs when the course is full."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "sequence-diagram",
+    "term": {
+      "tr": "Sıralama diyagramı",
+      "en": "Sequence diagram"
+    },
+    "examples": {
+      "tr": "Sıralama diyagramında zaman yukarıdan aşağıya ilerler.",
+      "en": "Time advances from top to bottom in a sequence diagram."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "participant",
+    "term": {
+      "tr": "Katılımcı",
+      "en": "Participant"
+    },
+    "examples": {
+      "tr": "RegistrationService sıralama diyagramının katılımcısıdır.",
+      "en": "RegistrationService is a participant in the sequence diagram."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "lifeline",
+    "term": {
+      "tr": "Yaşam çizgisi",
+      "en": "Lifeline"
+    },
+    "examples": {
+      "tr": "Yaşam çizgisi katılımcının zaman içindeki varlığını gösterir.",
+      "en": "The lifeline represents the participant's existence over time."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "activation",
+    "term": {
+      "tr": "Etkinleştirme",
+      "en": "Activation"
+    },
+    "examples": {
+      "tr": "Etkinleştirme çubuğu bir işlemin yürütüldüğü aralığı gösterir.",
+      "en": "The activation bar shows the interval during which an operation executes."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "synchronous-message",
+    "term": {
+      "tr": "Senkron mesaj",
+      "en": "Synchronous message"
+    },
+    "examples": {
+      "tr": "Kontenjan sorgusunda senkron mesajın sonucu beklenir.",
+      "en": "The result of a synchronous message is awaited during a quota check."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "asynchronous-message",
+    "term": {
+      "tr": "Asenkron mesaj",
+      "en": "Asynchronous message"
+    },
+    "examples": {
+      "tr": "Bildirim asenkron mesajla gönderilebilir.",
+      "en": "The notification may be sent using an asynchronous message."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "self-message",
+    "term": {
+      "tr": "Öz mesaj",
+      "en": "Self message"
+    },
+    "examples": {
+      "tr": "Servisin kendi validateRules metodunu çağırması öz mesajdır.",
+      "en": "A service calling its own validateRules method is a self message."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "reply-message",
+    "term": {
+      "tr": "Yanıt mesajı",
+      "en": "Reply message"
+    },
+    "examples": {
+      "tr": "Repository available sonucunu yanıt mesajıyla döndürür.",
+      "en": "The repository returns available as a reply message."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "guard-condition",
+    "term": {
+      "tr": "Koruyucu koşul (guard)",
+      "en": "Guard condition"
+    },
+    "examples": {
+      "tr": "Kayıt yalnızca [quotaAvailable] koşulunda oluşturulur.",
+      "en": "Registration is created only under the [quotaAvailable] guard."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "combined-fragment",
+    "term": {
+      "tr": "Birleşik parça",
+      "en": "Combined fragment"
+    },
+    "examples": {
+      "tr": "Alt, opt ve loop birer birleşik parçadır.",
+      "en": "Alt, opt, and loop are combined fragments."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "resilience",
+    "term": {
+      "tr": "Dayanıklılık",
+      "en": "Resilience"
+    },
+    "examples": {
+      "tr": "Asenkron bildirim, kayıt akışının dayanıklılığını destekleyebilir.",
+      "en": "Asynchronous notification may improve enrollment flow resilience."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "eventual-consistency",
+    "term": {
+      "tr": "Nihai tutarlılık",
+      "en": "Eventual consistency"
+    },
+    "examples": {
+      "tr": "Olay güdümlü sistemlerde nihai tutarlılık görülebilir.",
+      "en": "Eventual consistency may occur in event-driven systems."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
+  },
+  {
+    "id": "stakeholder",
+    "term": {
+      "tr": "Paydaş",
+      "en": "Stakeholder"
+    },
+    "examples": {
+      "tr": "Use Case Diagram paydaşlarla iletişim kurmayı kolaylaştırır.",
+      "en": "A use case diagram makes communication with stakeholders easier."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "use-case-sequence-diagrams"
+    ]
   }
 ]
