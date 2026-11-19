@@ -1,0 +1,13 @@
+{
+  "id": "object-oriented-class-diagrams",
+  "courseId": "software-design",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Nesne Yönelimli Tasarım ve Class Diyagramları",
+    "ar": "التصميم كائني التوجه ومخططات Class"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": []
+}
