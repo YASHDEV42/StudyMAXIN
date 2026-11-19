@@ -3,11 +3,71 @@
   "courseId": "software-design",
   "chapterId": "week-03",
   "title": {
-    "tr": "Use Case ve Sequence Diyagramları",
-    "ar": "مخططات Use Case وSequence"
+    "tr": "Use Case ve Sequence Diyagramları (Hafta 2B)",
+    "ar": "مخططات Use Case وSequence (الأسبوع 2B)"
   },
   "order": 0,
-  "prerequisites": [],
+  "prerequisites": [
+    "object-oriented-class-diagrams"
+  ],
   "related": [],
-  "documents": []
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Use Case وSequence: من أهداف المستخدم إلى تسلسل التفاعل",
+      "summary": "شرح المخططات والعلاقات include/extend وUse Case Documentation ورسائل Sequence وGuard/alt/opt/loop، مع تسجيل المساقات وأمثلة الشرائح.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02b",
+          "pages": [
+            {
+              "from": 1,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Use Case ve Sequence Diyagramları",
+      "summary": "Aktör, sistem sınırı, include/extend, kullanım durumu dokümantasyonu, yaşam çizgileri, mesaj türleri ve senaryo modellemesi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02b",
+          "pages": [
+            {
+              "from": 1,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Hafta 2B — Use Case ve Sequence Sınav Özeti",
+      "summary": "İlişkiler, mesajlar, guard ve birleşik parçalar ile ders kaydı örneğinin sınavlık kısa tekrarı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02b",
+          "pages": [
+            {
+              "from": 1,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
