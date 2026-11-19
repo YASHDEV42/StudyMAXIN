@@ -7,7 +7,67 @@
     "ar": "التصميم كائني التوجه ومخططات Class"
   },
   "order": 0,
-  "prerequisites": [],
+  "prerequisites": [
+    "software-design-introduction"
+  ],
   "related": [],
-  "documents": []
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "التصميم كائني التوجه ومخططات Class",
+      "summary": "شرح UML وAbstraction وEncapsulation وCohesion/Coupling ورموز Class Diagram والعلاقات الست وMultiplicity مع أمثلة الجامعة والمكتبة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02",
+          "pages": [
+            {
+              "from": 1,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Nesne Yönelimli Tasarım ve Class Diyagramları",
+      "summary": "UML, OOD kavramları, sınıf gösterimi, altı ilişki, çokluk ve problem metninden class diyagramı tasarımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02",
+          "pages": [
+            {
+              "from": 1,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Hafta 2 — UML ve Class Diagram Sınav Özeti",
+      "summary": "Abstraction/encapsulation ayrımı, cohesion/coupling, UML sembolleri, multiplicity, ilişkiler ve modelleme adımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-week-02",
+          "pages": [
+            {
+              "from": 1,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
