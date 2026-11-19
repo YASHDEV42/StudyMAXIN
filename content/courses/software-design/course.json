@@ -1,0 +1,54 @@
+{
+  "id": "software-design",
+  "title": {
+    "tr": "Yazılım Tasarımı",
+    "ar": "تصميم البرمجيات"
+  },
+  "description": {
+    "tr": "Dersin haftalık PDF sunumlarına dayalı iki dilli çalışma notları hazırlanıyor. Kaynaklar yeniden doğrulanana kadar bölümler içerik incelemesi bekliyor.",
+    "ar": "مسار دراسة تصميم البرمجيات اعتماداً على ملفات المحاضرات الأسبوعية. الملخصات العربية والتركية قيد التحضير إلى حين مراجعة ملفات المصدر."
+  },
+  "order": 1,
+  "chapters": [
+    {
+      "id": "week-01",
+      "title": {
+        "tr": "Yazılım Tasarımı ve Mimariye Giriş",
+        "ar": "مدخل إلى تصميم البرمجيات والمعمارية"
+      },
+      "order": 0
+    },
+    {
+      "id": "week-02",
+      "title": {
+        "tr": "Nesne Yönelimli Tasarım ve Sınıf Diyagramları",
+        "ar": "التصميم كائني التوجه ومخططات الأصناف"
+      },
+      "order": 1
+    },
+    {
+      "id": "week-03",
+      "title": {
+        "tr": "Use Case ve Sequence Diyagramları",
+        "ar": "مخططات Use Case وSequence"
+      },
+      "order": 2
+    },
+    {
+      "id": "week-05",
+      "title": {
+        "tr": "SOLID Tasarım İlkeleri",
+        "ar": "مبادئ التصميم SOLID"
+      },
+      "order": 3
+    },
+    {
+      "id": "week-06-07",
+      "title": {
+        "tr": "Yapısal Tasarım Desenleri",
+        "ar": "أنماط التصميم الهيكلية"
+      },
+      "order": 4
+    }
+  ]
+}
