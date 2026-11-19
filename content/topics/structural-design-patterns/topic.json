@@ -1,0 +1,13 @@
+{
+  "id": "structural-design-patterns",
+  "courseId": "software-design",
+  "chapterId": "week-06-07",
+  "title": {
+    "tr": "Yapısal Tasarım Desenleri",
+    "ar": "أنماط التصميم الهيكلية"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": []
+}
