@@ -208,5 +208,20 @@
       "sha256": "7a6856ad90692350862b9dfeafe6abe973f53f6ede7c09c9cd5eaced58ac4543",
       "reason": "Original provided privately in conversation; redistribution permission has not been established and PDF is not hosted."
     }
+  },
+  {
+    "id": "software-design-week-02",
+    "title": "Yazılım Tasarımı ve Mimarisi — Hafta 2: Nesne Yönelimli Tasarım ve Class Diyagramları (Doç. Dr. Bihter Daş, Fırat Üniversitesi)",
+    "language": "tr",
+    "courseIds": [
+      "software-design"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari.pdf",
+      "pageCount": 42,
+      "sha256": "c086c77b315223b9bdd88caff24aad44c718d00239b77d4887376db4dcd9b758",
+      "reason": "Original uploaded privately as 'Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf'; normalized ASCII filename is for optional private materials/ storage only. No redistribution permission established."
+    }
   }
 ]
