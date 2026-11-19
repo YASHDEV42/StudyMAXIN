@@ -1,0 +1,13 @@
+{
+  "id": "software-design-introduction",
+  "courseId": "software-design",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Yazılım Tasarımı ve Mimariye Giriş",
+    "ar": "مدخل إلى تصميم البرمجيات والمعمارية"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": []
+}
