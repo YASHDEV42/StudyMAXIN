@@ -7361,5 +7361,396 @@
     "topicIds": [
       "use-case-sequence-diagrams"
     ]
+  },
+  {
+    "id": "single-responsibility",
+    "term": {
+      "tr": "Tek sorumluluk ilkesi",
+      "en": "Single Responsibility Principle"
+    },
+    "examples": {
+      "tr": "Sınıfın değişmesi için tek anlamlı iş nedeni olmalıdır.",
+      "en": "A class should have one meaningful business reason to change."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "open-closed",
+    "term": {
+      "tr": "Açık/kapalı ilkesi",
+      "en": "Open/Closed Principle"
+    },
+    "examples": {
+      "tr": "Yeni indirim türleri mevcut hesaplayıcı değiştirilmeden eklenebilir.",
+      "en": "New discount types can be added without modifying the existing calculator."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "liskov-substitution",
+    "term": {
+      "tr": "Yerine geçme ilkesi",
+      "en": "Liskov Substitution Principle"
+    },
+    "examples": {
+      "tr": "Alt tür üst türün sözleşmesini bozmamalıdır.",
+      "en": "A subtype must not violate its parent's contract."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "interface-segregation",
+    "term": {
+      "tr": "Arayüz ayrımı ilkesi",
+      "en": "Interface Segregation Principle"
+    },
+    "examples": {
+      "tr": "Yazıcı kullanmadığı tarama metoduna bağımlı olmamalıdır.",
+      "en": "A printer should not depend on an unused scanning method."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "dependency-inversion",
+    "term": {
+      "tr": "Bağımlılığı tersine çevirme ilkesi",
+      "en": "Dependency Inversion Principle"
+    },
+    "examples": {
+      "tr": "Sipariş servisi somut sağlayıcı yerine soyutlamaya bağlıdır.",
+      "en": "The order service depends on an abstraction rather than a concrete provider."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "dependency-injection",
+    "term": {
+      "tr": "Bağımlılık enjeksiyonu",
+      "en": "Dependency injection"
+    },
+    "examples": {
+      "tr": "Bildirim servisi kurucuya dışarıdan verilir.",
+      "en": "The notification service is supplied through the constructor."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "single-source-of-truth",
+    "term": {
+      "tr": "Tek doğruluk kaynağı",
+      "en": "Single source of truth"
+    },
+    "examples": {
+      "tr": "Ders ön koşulu kuralının tek doğruluk kaynağı olmalıdır.",
+      "en": "The prerequisite rule should have a single source of truth."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "dry-principle",
+    "term": {
+      "tr": "Tekrardan kaçınma (DRY)",
+      "en": "Don't Repeat Yourself"
+    },
+    "examples": {
+      "tr": "Aynı iş kuralını beş sınıfta tekrarlamak DRY ilkesini ihlal eder.",
+      "en": "Duplicating a business rule across five classes violates DRY."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "kiss-principle",
+    "term": {
+      "tr": "Basit tutma (KISS)",
+      "en": "Keep It Simple, Stupid"
+    },
+    "examples": {
+      "tr": "KISS gereksiz katmanlardan kaçınmayı önerir.",
+      "en": "KISS recommends avoiding unnecessary layers."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "yagni-principle",
+    "term": {
+      "tr": "Gerekmeyeni yapmama (YAGNI)",
+      "en": "You Aren't Gonna Need It"
+    },
+    "examples": {
+      "tr": "YAGNI henüz doğrulanmamış özelliği geliştirmemeyi önerir.",
+      "en": "YAGNI recommends not implementing an unvalidated feature."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "high-cohesion",
+    "term": {
+      "tr": "Yüksek uyum",
+      "en": "High cohesion"
+    },
+    "examples": {
+      "tr": "Yüksek uyumlu servis ilişkili işlemlere odaklanır.",
+      "en": "A highly cohesive service focuses on related operations."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "low-coupling",
+    "term": {
+      "tr": "Düşük bağlılık",
+      "en": "Low coupling"
+    },
+    "examples": {
+      "tr": "Düşük bağlılık değişikliklerin yayılmasını sınırlar.",
+      "en": "Low coupling limits how changes propagate."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "abstraction-contract",
+    "term": {
+      "tr": "Soyut sözleşme",
+      "en": "Abstract contract"
+    },
+    "examples": {
+      "tr": "Teknik adaptör soyut sözleşmeyi gerçekleştirir.",
+      "en": "A technical adapter implements an abstract contract."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "subtype",
+    "term": {
+      "tr": "Alt tür",
+      "en": "Subtype"
+    },
+    "examples": {
+      "tr": "Alt tür kullanıldığında istemci davranışı bozulmamalıdır.",
+      "en": "Client behavior should not break when a subtype is used."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "role-interface",
+    "term": {
+      "tr": "Rol odaklı arayüz",
+      "en": "Role-based interface"
+    },
+    "examples": {
+      "tr": "IPrintable yalnızca yazdırma işlevini tanımlar.",
+      "en": "IPrintable defines only the printing capability."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "business-rule",
+    "term": {
+      "tr": "İş kuralı",
+      "en": "Business rule"
+    },
+    "examples": {
+      "tr": "Ders ön koşulu denetimi bir iş kuralıdır.",
+      "en": "Checking a course prerequisite is a business rule."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "race-condition",
+    "term": {
+      "tr": "Yarış durumu",
+      "en": "Race condition"
+    },
+    "examples": {
+      "tr": "İki kayıt isteği aynı kontenjan için yarış durumu oluşturabilir.",
+      "en": "Two enrollment requests may create a race condition for the same seat."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "atomic-update",
+    "term": {
+      "tr": "Atomik güncelleme",
+      "en": "Atomic update"
+    },
+    "examples": {
+      "tr": "Kontenjan atomik güncellemeyle korunabilir.",
+      "en": "Capacity can be protected through an atomic update."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "locking",
+    "term": {
+      "tr": "Kilitleme",
+      "en": "Locking"
+    },
+    "examples": {
+      "tr": "Uygun kilitleme eşzamanlı kayıt çakışmalarını önleyebilir.",
+      "en": "Appropriate locking can prevent concurrent enrollment conflicts."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "polymorphism",
+    "term": {
+      "tr": "Çok biçimlilik",
+      "en": "Polymorphism"
+    },
+    "examples": {
+      "tr": "Farklı indirim politikaları çok biçimlilikle uygulanabilir.",
+      "en": "Different discount policies can be implemented with polymorphism."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "extension-point",
+    "term": {
+      "tr": "Genişletme noktası",
+      "en": "Extension point"
+    },
+    "examples": {
+      "tr": "Yeni kargo yöntemi için genişletme noktası tanımlandı.",
+      "en": "An extension point was defined for a new shipping method."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "speculative-feature",
+    "term": {
+      "tr": "Varsayımsal özellik",
+      "en": "Speculative feature"
+    },
+    "examples": {
+      "tr": "Varsayımsal özellikler bakım maliyeti yaratabilir.",
+      "en": "Speculative features can create maintenance costs."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
+  },
+  {
+    "id": "transaction-boundary",
+    "term": {
+      "tr": "İşlem sınırı",
+      "en": "Transaction boundary"
+    },
+    "examples": {
+      "tr": "Ödeme ile stok arasında işlem sınırı tasarlanmalıdır.",
+      "en": "A transaction boundary must be designed between payment and stock operations."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "solid-design-principles"
+    ]
   }
 ]
