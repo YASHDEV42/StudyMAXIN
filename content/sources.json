@@ -238,5 +238,20 @@
       "sha256": "cbc812029c6aea72b72a7a130292e493bee4c0e22fcb0f4f8b64a981b36efcbb",
       "reason": "Original supplied privately as 'Hafta3_UseCase_Sequence_Diyagramlari (1).pdf'. Source file is not hosted or redistributed; stored filename is a safe ASCII name if independently retained under materials/."
     }
+  },
+  {
+    "id": "software-design-solid-week-03",
+    "title": "Tasarım İlkeleri ve SOLID — Hafta 3 (uploaded as Hafta5_Tasarim_Ilkeleri_SOLID.pdf)",
+    "language": "tr",
+    "courseIds": [
+      "software-design"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "pageCount": 39,
+      "sha256": "27e6743fa9af6ecafe7bbd3f3fc58e03e4d01577f92b9715c621c7a5227667f2",
+      "reason": "User-provided lecture PDF reviewed privately; no redistribution permission established. Original is not uploaded to public repository."
+    }
   }
 ]
