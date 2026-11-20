@@ -3,11 +3,71 @@
   "courseId": "software-design",
   "chapterId": "week-05",
   "title": {
-    "tr": "SOLID Tasarım İlkeleri",
-    "ar": "مبادئ SOLID"
+    "tr": "Tasarım İlkeleri ve SOLID (Hafta 3)",
+    "ar": "مبادئ التصميم وSOLID (الأسبوع 3 بالمصدر)"
   },
   "order": 0,
-  "prerequisites": [],
+  "prerequisites": [
+    "object-oriented-class-diagrams"
+  ],
   "related": [],
-  "documents": []
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مبادئ تصميم البرمجيات: SOLID وDRY وKISS وYAGNI",
+      "summary": "شرح المبادئ الثمانية ومقارنتها مع High Cohesion/Low Coupling، وDIP مقابل Dependency Injection، وحالات التجارة والجامعة والمستشفى.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-solid-week-03",
+          "pages": [
+            {
+              "from": 1,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Tasarım İlkeleri ve SOLID",
+      "summary": "SRP, OCP, LSP, ISP, DIP, DI ayrımı; DRY/KISS/YAGNI, tasarım trade-off'ları ve OBS/e-ticaret vaka analizleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-solid-week-03",
+          "pages": [
+            {
+              "from": 1,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "SOLID — Sınav Özeti",
+      "summary": "Beş SOLID ilkesi, üç genel ilke, yaygın ihlal örnekleri, bağımlılık ayrımları ve kritik kontenjan yarış durumu.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-solid-week-03",
+          "pages": [
+            {
+              "from": 1,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
