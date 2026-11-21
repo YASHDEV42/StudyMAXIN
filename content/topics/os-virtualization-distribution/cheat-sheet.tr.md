@@ -1,4 +1,5 @@
 ## Temel tanımlar
+
 - **Virtualization:** Tek fiziksel donanımdan birden fazla yalıtılmış yürütme ortamı.
 - **VMM:** Sanal makineleri ve kaynaklarını yöneten katman.
 - **Host / Guest:** Sanallaştırmayı barındıran sistem / sanal ortamda çalışan işletim sistemi.

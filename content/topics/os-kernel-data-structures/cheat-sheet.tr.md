@@ -1,4 +1,5 @@
 ## Veri yapıları
+
 - **Singly linked list:** Her düğüm bir sonrakini gösterir.
 - **Doubly linked list:** İleri ve geri bağlantılar.
 - **Circular linked list:** Son düğüm başlangıca bağlanır.
@@ -9,6 +10,7 @@
 - **Bitmap:** Kaynak durumlarını bitlerle kompakt saklama; slayt örneği 0 = boş, 1 = dolu.
 
 ## Veri ve I/O
+
 - **Cache coherence:** Çok işlemcili sistemde cache kopyalarının tutarlılığı.
 - **Buffering:** Transfer sırasında geçici veri saklama.
 - **Caching:** Hızlı depoda tekrar kullanılacak kopya.

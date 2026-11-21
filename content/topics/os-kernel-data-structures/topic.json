@@ -7,9 +7,7 @@
     "ar": "بنى بيانات النواة واتساق النسخ"
   },
   "order": 7,
-  "prerequisites": [
-    "os-storage-dma"
-  ],
+  "prerequisites": ["os-storage-dma"],
   "related": [],
   "documents": [
     {

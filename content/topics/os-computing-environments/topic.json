@@ -7,9 +7,7 @@
     "ar": "بيئات الحوسبة والسحابة والمصدر المفتوح"
   },
   "order": 6,
-  "prerequisites": [
-    "os-virtualization-distribution"
-  ],
+  "prerequisites": ["os-virtualization-distribution"],
   "related": [],
   "documents": [
     {

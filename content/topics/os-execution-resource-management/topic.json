@@ -7,9 +7,7 @@
     "ar": "تعدد البرامج وأنماط التنفيذ وإدارة الموارد"
   },
   "order": 4,
-  "prerequisites": [
-    "os-architectures"
-  ],
+  "prerequisites": ["os-architectures"],
   "related": [],
   "documents": [
     {

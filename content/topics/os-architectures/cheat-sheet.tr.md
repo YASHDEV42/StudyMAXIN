@@ -1,4 +1,5 @@
 ## Karşılaştırmalar
+
 - **Single processor:** Genel amaçlı yürütme için tek ana CPU.
 - **Multiprocessor:** İki veya daha fazla CPU; throughput, ekonomi, güvenilirlik.
 - **SMP:** İşlemciler eş düzeyde, ortak bellek.

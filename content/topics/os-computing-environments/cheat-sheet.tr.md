@@ -1,4 +1,5 @@
 ## Mimari ve bulut
+
 - **Traditional / Mobile:** Kişisel/sunucu bilgisayarlar; taşınabilir enerji ve kablosuz bağlantı gereksinimleri.
 - **Client–Server:** İstemci isteği → sunucu hizmeti.
 - **P2P:** Düğümler hem istemci hem servis sağlayıcısı olabilir.
@@ -10,6 +11,7 @@
 - **IaaS:** Sunucu, ağ, depolama altyapısı.
 
 ## Diğer ortamlar
+
 - **Embedded system:** Aygıt içine yerleştirilmiş özel amaçlı bilgisayar.
 - **Real-time OS:** Sonuç hem doğru hem zaman kısıtında olmalı.
 - **Free Software:** Kullanım, değiştirme, paylaşma gibi lisans özgürlükleri; yalnız ücretsiz demek değildir.

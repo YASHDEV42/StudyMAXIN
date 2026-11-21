@@ -1,10 +1,12 @@
 ## CPU kullanımı
+
 - **Multiprogramming:** Bir process I/O beklerken diğerini çalıştırır; CPU kullanımını artırır.
 - **Multitasking / Time Sharing:** Kısa zaman dilimleriyle hızlı geçiş; kullanıcı etkileşimi ve tepki süresi.
 - **Job Scheduling:** Belleğe alınacak işleri seçer.
 - **CPU Scheduling:** Hazır process'lerden çalışacak olanı seçer.
 
 ## Koruma ve yürütme
+
 - **User Mode:** Sınırlı yetkiler.
 - **Kernel Mode:** Ayrıcalıklı komutların yürütülmesi.
 - **Mode Bit (slayt):** User = 1, Kernel = 0.
@@ -12,6 +14,7 @@
 - **Timer:** CPU denetimini işletim sistemine geri getirir.
 
 ## Yönetim işlevleri
+
 - **Program:** Pasif komutlar; **Process:** Aktif yürütme.
 - **Program Counter:** Sonraki komutun adresi.
 - **Process Management:** Oluşturma, silme, zamanlama, senkronizasyon ve IPC.

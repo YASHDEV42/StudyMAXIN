@@ -7,9 +7,7 @@
     "ar": "هرمية التخزين والـ Cache والـ DMA"
   },
   "order": 2,
-  "prerequisites": [
-    "os-organization-interrupts"
-  ],
+  "prerequisites": ["os-organization-interrupts"],
   "related": [],
   "documents": [
     {

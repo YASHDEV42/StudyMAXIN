@@ -7,9 +7,7 @@
     "ar": "معماريات المعالجات المتعددة والـ Clusters"
   },
   "order": 3,
-  "prerequisites": [
-    "os-storage-dma"
-  ],
+  "prerequisites": ["os-storage-dma"],
   "related": [],
   "documents": [
     {

@@ -1,15 +1,19 @@
 ## المكوّنات والتواصل
+
 الحاسوب العام فيه CPU واحد أو أكثر، **Main Memory (ana bellek)**، وعدة **Device Controllers (aygıt denetleyicileri)** متصلة بواسطة **Bus (veri yolu)**. كل Controller مسؤول عن صنف من أجهزة I/O، والـ **Device Driver (aygıt sürücüsü)** هو الجزء البرمجي اللي بيسمح للـ OS بالتعامل معه. أحيانًا الـ Controller عنده **Local Buffer (yerel arabellek)** لحفظ البيانات بشكل مؤقت.
 
 الـ CPU والأجهزة ممكن يشتغلوا بالتوازي؛ مع هيك ممكن يتنافسوا على الوصول للذاكرة. ما لازم نخلط بين الـ Driver (برنامج) والـ Controller (مكوّن تحكّم بالأجهزة).
 
 ## كيف بيبدأ النظام؟
+
 عند التشغيل، **Bootstrap Program (önyükleme programı)** من الـ **Firmware (donanım yazılımı)** بيهيّئ المكوّنات الأساسية، بيلقى الـ Kernel، بيحمّله للذاكرة، وببدأ تنفيذه. بعدين بتنطلق خدمات النظام و**Daemons (arka plan hizmetleri)**. الشرائح بتذكر ROM/EPROM/EEPROM كوسائط شائعة تاريخيًا لحفظ تعليمات البدء.
 
 ## شو بصير عند Interrupt؟
+
 **Interrupt (kesme)** إشارة بتبلّغ المعالج عن حدث، مثل انتهاء عملية I/O. بدال ما يظل CPU يسأل الجهاز كل لحظة، بيقدر يكمل عمله ويتلقى إشعار عند الحاجة.
 
 التسلسل المبسّط:
+
 1. الجهاز أو آلية النظام بتبلّغ CPU عن الحدث.
 2. المعالج بيحفظ حالة التنفيذ اللازمة، مثل عنوان العودة وبعض Register Values.
 3. بيحدد الـ **Interrupt Service Routine / ISR (kesme hizmet rutini)** المناسب باستخدام بنية **Interrupt Vector (kesme vektörü)**.
