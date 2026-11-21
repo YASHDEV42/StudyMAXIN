@@ -37,3 +37,5 @@ Each topic has an Arabic lesson, Turkish lesson and a separate Turkish cheat she
 ## Verification
 
 The original PDF page counts and SHA-256 digests were independently checked against the uploaded bytes. The content schema's `private` PDF references intentionally do not distribute copyrighted originals. The build and rendering checks are performed in GitHub CI; production hosting status must be checked separately from repository publication.
+
+The week is intended for topic-based revision; future weekly source bundles will be reviewed independently rather than assumed to share these page ranges.
