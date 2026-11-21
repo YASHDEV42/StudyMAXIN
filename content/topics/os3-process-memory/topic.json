@@ -1,0 +1,73 @@
+{
+  "id": "os3-process-memory",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Process Kavramı ve Bellek Düzeni",
+    "ar": "مفهوم Process وبنية الذاكرة"
+  },
+  "order": 0,
+  "prerequisites": [
+    "os2-system-generation-boot"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Process Kavramı ve Bellek Düzeni",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مفهوم Process وبنية الذاكرة",
+      "summary": "شرح المفاهيم والرسومات وعلاقاتها مع الفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Process Kavramı ve Bellek Düzeni",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
