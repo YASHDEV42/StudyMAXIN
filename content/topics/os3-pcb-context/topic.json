@@ -1,0 +1,73 @@
+{
+  "id": "os3-pcb-context",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "PCB ve Context Switching",
+    "ar": "PCB وتبديل سياق التنفيذ"
+  },
+  "order": 2,
+  "prerequisites": [
+    "os3-process-states"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "PCB ve Context Switching",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 17,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "PCB وتبديل سياق التنفيذ",
+      "summary": "شرح المفاهيم والرسومات وعلاقاتها مع الفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 17,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "PCB ve Context Switching",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 17,
+              "to": 19
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
