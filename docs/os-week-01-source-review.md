@@ -12,16 +12,16 @@ PDFs and slides were supplied directly in the conversation. Originals are not pl
 
 ## Reviewed topic mapping
 
-| Topic | 2.01.pdf physical pages | Hafta 1.pdf physical pages |
-| --- | --- | --- |
-| os-introduction | 4–10 | 4–8 |
-| os-organization-interrupts | 12–20 | 10–14 |
-| os-storage-dma | 21–28, 45–47 | 15–21, 48–49 |
-| os-architectures | 56–63 | 23–32 |
-| os-execution-resource-management | 29–44, 49 | 34–50, 52–53 |
-| os-virtualization-distribution | 50–55 | 67–72 |
-| os-computing-environments | 64–79 | 65–80 |
-| os-kernel-data-structures | 45–48, 80–82 | 55–63 |
+| Topic                            | 2.01.pdf physical pages | Hafta 1.pdf physical pages |
+| -------------------------------- | ----------------------- | -------------------------- |
+| os-introduction                  | 4–10                    | 4–8                        |
+| os-organization-interrupts       | 12–20                   | 10–14                      |
+| os-storage-dma                   | 21–28, 45–47            | 15–21, 48–49               |
+| os-architectures                 | 56–63                   | 23–32                      |
+| os-execution-resource-management | 29–44, 49               | 34–50, 52–53               |
+| os-virtualization-distribution   | 50–55                   | 67–72                      |
+| os-computing-environments        | 64–79                   | 65–80                      |
+| os-kernel-data-structures        | 45–48, 80–82            | 55–63                      |
 
 Each topic has an Arabic lesson, Turkish lesson and a separate Turkish cheat sheet. The introductory slide deck repeats much of the PDF coverage. The documentation is an integrated topic-based teaching treatment, not a transcript of every slide. Diagrams (OS layers, I/O interrupt cycles, storage hierarchy, UMA/NUMA, virtual machines) are explained narratively rather than copied as image assets.
 
