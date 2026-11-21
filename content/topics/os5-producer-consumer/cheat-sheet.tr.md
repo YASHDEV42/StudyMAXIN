@@ -1,0 +1,6 @@
+- **Producer:** Buffer'a öğe ekler; **Consumer:** Hazır öğeyi alır.
+- **Bounded buffer:** Kapasite N, `0≤counter≤N`.
+- **in/out:** Sonraki yazma/okuma; `(index+1)%N`.
+- **Producer bekler:** `counter==N`; **Consumer bekler:** `counter==0`.
+- Birden fazla üretici/tüketici: Erişim çakışması, duplicate consumption ve synchronization.
+- **Not:** Basit busy-wait ve korunmayan `counter++` güvenli genel çözüm değildir.

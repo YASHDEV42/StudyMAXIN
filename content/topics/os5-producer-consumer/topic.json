@@ -1,0 +1,71 @@
+{
+  "id": "os5-producer-consumer",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Process Senkronizasyonu ve Producer–Consumer",
+    "ar": "مزامنة العمليات ومشكلة المنتج والمستهلك"
+  },
+  "order": 0,
+  "prerequisites": ["os4-thread-foundations"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مزامنة العمليات ومشكلة المنتج والمستهلك",
+      "summary": "شرح أمثلة السلايدات والمفاهيم الأساسية للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 2,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Process Senkronizasyonu ve Producer–Consumer",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 2,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Process Senkronizasyonu ve Producer–Consumer",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 2,
+              "to": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

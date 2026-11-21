@@ -1,0 +1,71 @@
+{
+  "id": "os5-peterson",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Peterson Çözümü ve İki Process İçin Mutual Exclusion",
+    "ar": "حل Peterson لعمليتين"
+  },
+  "order": 3,
+  "prerequisites": ["os5-critical-section"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حل Peterson لعمليتين",
+      "summary": "أمثلة الكود والعمليات الذرية والفروق الأساسية للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 14,
+              "to": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Peterson Çözümü ve İki Process İçin Mutual Exclusion",
+      "summary": "Kaynak kod örnekleri, atomiklik ve kritik sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 14,
+              "to": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Peterson Çözümü ve İki Process İçin Mutual Exclusion",
+      "summary": "Kaynak kod örnekleri, atomiklik ve kritik sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 14,
+              "to": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "os5-race-condition",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Race Condition ve Lost Update Örneği",
+    "ar": "Race Condition ومثال Lost Update"
+  },
+  "order": 1,
+  "prerequisites": ["os5-producer-consumer"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Race Condition ومثال Lost Update",
+      "summary": "شرح أمثلة السلايدات والمفاهيم الأساسية للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 7,
+              "to": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Race Condition ve Lost Update Örneği",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 7,
+              "to": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Race Condition ve Lost Update Örneği",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 7,
+              "to": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

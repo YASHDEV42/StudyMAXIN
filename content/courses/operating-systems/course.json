@@ -5,7 +5,7 @@
     "ar": "أنظمة التشغيل"
   },
   "description": {
-    "tr": "Kaynaklara dayalı Arapça ve Türkçe dersler, Türkçe sınav özetleri ve kavram sözlüğü. İşletim sistemlerine giriş, yapılar, process yönetimi ve threads konuları yayımlandı.",
+    "tr": "Kaynaklara dayalı Arapça ve Türkçe dersler, Türkçe sınav özetleri ve kavram sözlüğü. İşletim sistemlerine giriş, yapılar, process/IPC, threads ve senkronizasyon haftaları yayımlandı.",
     "ar": "دروس عربية وتركية وملخصات امتحانية تركية لأنظمة التشغيل، منظّمة حسب الأسابيع ومراجعة وفق سلايدات المحاضرات."
   },
   "order": 2,
@@ -41,6 +41,14 @@
         "ar": "الأسبوع الرابع: Threads والبرمجة متعددة الأنوية"
       },
       "order": 3
+    },
+    {
+      "id": "week-05",
+      "title": {
+        "tr": "Process Senkronizasyonu ve Kritik Bölüm",
+        "ar": "الأسبوع الخامس: مزامنة العمليات وحماية البيانات"
+      },
+      "order": 4
     }
   ]
 }

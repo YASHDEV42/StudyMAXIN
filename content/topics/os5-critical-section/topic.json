@@ -1,0 +1,71 @@
+{
+  "id": "os5-critical-section",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Critical Section ve Üç Koşul",
+    "ar": "Critical Section والشروط الثلاثة"
+  },
+  "order": 2,
+  "prerequisites": ["os5-race-condition"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Critical Section والشروط الثلاثة",
+      "summary": "شرح أمثلة السلايدات والمفاهيم الأساسية للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 10,
+              "to": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Critical Section ve Üç Koşul",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 10,
+              "to": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Critical Section ve Üç Koşul",
+      "summary": "Slayt örnekleri ve sınavda önemli olan mekanizmalar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 10,
+              "to": 13
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

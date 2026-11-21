@@ -310,5 +310,18 @@
       "sha256": "9e0e95cc2d214163f200f518ca09c5573e1b327fa1add06529cd569bfdbf0476",
       "reason": "Privately converted from the supplied 41-slide PPTX solely for slide-level citations; original PPTX SHA-256 beef3c5014b3a1318954b0bea6dac9dc5e5fb605f8f58fb55bf6ad1f11a826e6. Neither original nor derivative is redistributed."
     }
+  },
+  {
+    "id": "os-week-05-synchronization",
+    "title": "5- Process Senkronizasyonu.pptx — Process Senkronizasyonu, private 36-page slide citation PDF",
+    "language": "tr",
+    "courseIds": ["operating-systems"],
+    "location": {
+      "kind": "private",
+      "filename": "os_week_05_process_senkronizasyonu.pdf",
+      "pageCount": 36,
+      "sha256": "670bb1092deacbf433fb6fa3230ef9abaf5bde45936453083f242e4dfe593227",
+      "reason": "Privately converted solely for page-level references from the original 36-slide PPTX (SHA-256 e917e5c8c87e4a1f6b3a7f2fdc9c6a1beb4a78a0c0d96c220a304c16ef6f3ed9). Neither source nor derivative is redistributed."
+    }
   }
 ]

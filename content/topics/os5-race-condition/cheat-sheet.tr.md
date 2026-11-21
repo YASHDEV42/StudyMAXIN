@@ -1,0 +1,7 @@
+- **Race condition:** Sonuç işlem sırasına bağlıdır.
+- `counter++` kaynakta tek satır olsa da atomik varsayılmaz.
+- Başlangıç **5**; producer +1/consumer −1 ⇒ doğru **5**.
+- Slayt T0–T5 sırası ⇒ **4**; T4 ve T5 ters ⇒ **6**.
+- **Lost update:** Bir yazma diğer güncellemeyi siler.
+- Critical section veya uygun atomicity/synchronization ile koru.
+- Single-core interleaving de race oluşturabilir.

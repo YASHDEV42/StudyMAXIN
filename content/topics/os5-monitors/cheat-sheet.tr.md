@@ -1,0 +1,8 @@
+- **Monitor:** Shared state + synchronized procedures + initialization.
+- Monitor içinde aynı anda bir aktif yürütme (öğretici model).
+- **Condition variable:** `x.wait()` durum bekler, `x.signal()` bekleyen birini uyandırabilir.
+- **wait** lock'u bırakıp uyumayı, uyanınca yeniden almayı içerir (yaygın model).
+- **Signal-and-wait:** Signal veren bekler; bekleyen monitor'a girer.
+- **Signal-and-continue:** Signal veren devam eder; bekleyen sonra girer.
+- Condition predicates uyanınca tekrar kontrol edilmelidir.
+- Yanlış wait/signal sırası mutual exclusion veya deadlock hatası doğurabilir.

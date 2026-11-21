@@ -1,0 +1,8 @@
+- **Peterson:** İki process için yazılım tabanlı CS çözümü.
+- Shared: `flag[2]` ve `turn`.
+- `flag[i]=true`: P_i girmek istiyor.
+- `turn=j`: Yarışta karşı tarafa öncelik.
+- `while(flag[j] && turn==j)`: Diğer taraf istiyor ve sıra ondaysa bekle.
+- Çıkış: **`flag[i]=false`** (kendi flag'i).
+- Klasik varsayımlarda mutual exclusion, progress, bounded waiting.
+- Modern CPU/compiler'da memory ordering olmadan pseudocode garantili değildir.

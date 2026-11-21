@@ -1,0 +1,71 @@
+{
+  "id": "os5-semaphore-blocking-deadlock",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Blocking Semaphores, Deadlock ve Starvation",
+    "ar": "Blocking Semaphores وDeadlock وStarvation"
+  },
+  "order": 7,
+  "prerequisites": ["os5-semaphores"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Blocking Semaphores وDeadlock وStarvation",
+      "summary": "شرح Semaphores وMonitors والأمثلة المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 26,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Blocking Semaphores, Deadlock ve Starvation",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 26,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Blocking Semaphores, Deadlock ve Starvation",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 26,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

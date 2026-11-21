@@ -1,0 +1,6 @@
+- **Critical section:** Ortak değişken/tablo/dosya güncelleme kodu.
+- **Şema:** Entry → Critical → Exit → Remainder.
+- **Mutual exclusion:** Bir korunan CS'de aynı anda bir process.
+- **Progress:** Boş CS'ye giriş kararı süresiz ertelenmez.
+- **Bounded waiting:** Bir process beklerken başkalarının onu geçmesi sınırlı.
+- **Preemptive** vs **nonpreemptive kernel**; multicore için ek koruma gerekir.

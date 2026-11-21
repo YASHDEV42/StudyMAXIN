@@ -1,0 +1,71 @@
+{
+  "id": "os5-monitors",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Monitor ve Condition Variables",
+    "ar": "Monitors وCondition Variables"
+  },
+  "order": 8,
+  "prerequisites": ["os5-semaphore-blocking-deadlock"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Monitors وCondition Variables",
+      "summary": "شرح Semaphores وMonitors والأمثلة المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Monitor ve Condition Variables",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Monitor ve Condition Variables",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

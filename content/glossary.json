@@ -5955,8 +5955,8 @@
       "tr": "İki kayıt isteği aynı kontenjan için yarış durumu oluşturabilir.",
       "en": "Two enrollment requests may create a race condition for the same seat."
     },
-    "courseIds": ["software-design"],
-    "topicIds": ["solid-design-principles"]
+    "courseIds": ["software-design", "operating-systems"],
+    "topicIds": ["solid-design-principles", "os5-race-condition"]
   },
   {
     "id": "atomic-update",
@@ -7022,7 +7022,7 @@
       "en": "A process should acquire a lock before changing shared data."
     },
     "courseIds": ["operating-systems"],
-    "topicIds": ["os2-system-call-categories"]
+    "topicIds": ["os2-system-call-categories", "os5-atomic-hardware"]
   },
   {
     "id": "os2-daemon",
@@ -7958,7 +7958,7 @@
       "en": "A long job may suffer starvation amid many short jobs."
     },
     "courseIds": ["operating-systems"],
-    "topicIds": ["os3-shortest-job-first"]
+    "topicIds": ["os3-shortest-job-first", "os5-semaphore-blocking-deadlock"]
   },
   {
     "id": "os4-thread",
@@ -8518,5 +8518,551 @@
     },
     "courseIds": ["operating-systems"],
     "topicIds": ["os4-os-thread-implementations"]
+  },
+  {
+    "id": "os5-synchronization",
+    "term": {
+      "tr": "Senkronizasyon",
+      "en": "Synchronization"
+    },
+    "examples": {
+      "tr": "Paylaşılan veriler için senkronizasyon gerekir.",
+      "en": "Synchronization is needed for shared data."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-producer-consumer"]
+  },
+  {
+    "id": "os5-producer-consumer-problem",
+    "term": {
+      "tr": "Üretici-tüketici problemi",
+      "en": "Producer-consumer problem"
+    },
+    "examples": {
+      "tr": "Üretici-tüketici problemi sınırlı tamponda görülür.",
+      "en": "The producer-consumer problem occurs with a bounded buffer."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-producer-consumer"]
+  },
+  {
+    "id": "os5-bounded-buffer",
+    "term": {
+      "tr": "Sınırlı tampon",
+      "en": "Bounded buffer"
+    },
+    "examples": {
+      "tr": "Sınırlı tampon dolunca üretici bekler.",
+      "en": "The producer waits when the bounded buffer is full."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-producer-consumer"]
+  },
+  {
+    "id": "os5-buffer-capacity",
+    "term": {
+      "tr": "Tampon kapasitesi",
+      "en": "Buffer capacity"
+    },
+    "examples": {
+      "tr": "Tampon kapasitesi on öğe olarak ayarlanmış.",
+      "en": "Buffer capacity is set to ten items."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-producer-consumer"]
+  },
+  {
+    "id": "os5-shared-variable",
+    "term": {
+      "tr": "Paylaşılan değişken",
+      "en": "Shared variable"
+    },
+    "examples": {
+      "tr": "Paylaşılan değişken birden fazla thread tarafından değiştirilebilir.",
+      "en": "A shared variable may be modified by several threads."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-race-condition"]
+  },
+  {
+    "id": "os5-lost-update",
+    "term": {
+      "tr": "Kayıp güncelleme",
+      "en": "Lost update"
+    },
+    "examples": {
+      "tr": "İki işlem aynı sayacı yazınca kayıp güncelleme oluşabilir.",
+      "en": "Two processes writing one counter can cause a lost update."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-race-condition"]
+  },
+  {
+    "id": "os5-interleaving",
+    "term": {
+      "tr": "İç içe geçme",
+      "en": "Interleaving"
+    },
+    "examples": {
+      "tr": "Komutların iç içe geçmesi sonucu değiştirebilir.",
+      "en": "Instruction interleaving can change the outcome."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-race-condition"]
+  },
+  {
+    "id": "os5-atomicity",
+    "term": {
+      "tr": "Atomiklik",
+      "en": "Atomicity"
+    },
+    "examples": {
+      "tr": "Atomiklik ara adımların bölünmesini önler.",
+      "en": "Atomicity prevents interleaving inside an operation."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-race-condition"]
+  },
+  {
+    "id": "os5-critical-section",
+    "term": {
+      "tr": "Kritik bölüm",
+      "en": "Critical section"
+    },
+    "examples": {
+      "tr": "Kritik bölüm paylaşılan dosyaya erişimi korur.",
+      "en": "The critical section protects access to a shared file."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-entry-section",
+    "term": {
+      "tr": "Giriş bölümü",
+      "en": "Entry section"
+    },
+    "examples": {
+      "tr": "Process giriş bölümünde kilit ister.",
+      "en": "The process requests the lock in the entry section."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-exit-section",
+    "term": {
+      "tr": "Çıkış bölümü",
+      "en": "Exit section"
+    },
+    "examples": {
+      "tr": "Çıkış bölümü kilidi serbest bırakır.",
+      "en": "The exit section releases the lock."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-remainder-section",
+    "term": {
+      "tr": "Kalan bölüm",
+      "en": "Remainder section"
+    },
+    "examples": {
+      "tr": "Kalan bölümde kritik olmayan kod çalışır.",
+      "en": "Non-critical code runs in the remainder section."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-mutual-exclusion",
+    "term": {
+      "tr": "Karşılıklı dışlama",
+      "en": "Mutual exclusion"
+    },
+    "examples": {
+      "tr": "Karşılıklı dışlama aynı anda iki girişi engeller.",
+      "en": "Mutual exclusion prevents two simultaneous entries."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-progress",
+    "term": {
+      "tr": "İlerleme",
+      "en": "Progress"
+    },
+    "examples": {
+      "tr": "İlerleme koşulu giriş kararının ertelenmesini sınırlar.",
+      "en": "The progress condition limits postponement of admission."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-bounded-waiting",
+    "term": {
+      "tr": "Sınırlı bekleme",
+      "en": "Bounded waiting"
+    },
+    "examples": {
+      "tr": "Sınırlı bekleme aç kalma riskini azaltır.",
+      "en": "Bounded waiting reduces the risk of starvation."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-critical-section"]
+  },
+  {
+    "id": "os5-entry-request",
+    "term": {
+      "tr": "Giriş isteği",
+      "en": "Entry request"
+    },
+    "examples": {
+      "tr": "Her giriş isteği belirli kurallara göre değerlendirilir.",
+      "en": "Each entry request is evaluated under rules."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-peterson"]
+  },
+  {
+    "id": "os5-turn-variable",
+    "term": {
+      "tr": "Sıra değişkeni",
+      "en": "Turn variable"
+    },
+    "examples": {
+      "tr": "Peterson çözümünde sıra değişkeni ortak kullanılır.",
+      "en": "Peterson's solution shares a turn variable."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-peterson"]
+  },
+  {
+    "id": "os5-intent-flag",
+    "term": {
+      "tr": "Hazır bayrağı",
+      "en": "Intent flag"
+    },
+    "examples": {
+      "tr": "Hazır bayrağı kritik bölüme girmek isteyen süreci gösterir.",
+      "en": "The intent flag indicates a process wanting to enter."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-peterson"]
+  },
+  {
+    "id": "os5-reordering",
+    "term": {
+      "tr": "Yeniden sıralama",
+      "en": "Reordering"
+    },
+    "examples": {
+      "tr": "Derleyici yeniden sıralama yapabilir.",
+      "en": "A compiler may perform reordering."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-peterson"]
+  },
+  {
+    "id": "os5-memory-ordering",
+    "term": {
+      "tr": "Bellek sıralaması",
+      "en": "Memory ordering"
+    },
+    "examples": {
+      "tr": "Bellek sıralaması atomik algoritma için önemlidir.",
+      "en": "Memory ordering matters for atomic algorithms."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-peterson"]
+  },
+  {
+    "id": "os5-to-release-a-lock",
+    "term": {
+      "tr": "Kilidi serbest bırakmak",
+      "en": "To release a lock"
+    },
+    "examples": {
+      "tr": "İş tamamlanınca kilidi serbest bırakmak gerekir.",
+      "en": "The lock must be released when work is done."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-atomic-hardware"]
+  },
+  {
+    "id": "os5-test-and-set",
+    "term": {
+      "tr": "Test et ve ayarla",
+      "en": "Test-and-set"
+    },
+    "examples": {
+      "tr": "Test et ve ayarla komutu atomik çalışır.",
+      "en": "The test-and-set instruction operates atomically."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-atomic-hardware"]
+  },
+  {
+    "id": "os5-compare-and-swap",
+    "term": {
+      "tr": "Karşılaştır ve değiştir",
+      "en": "Compare-and-swap"
+    },
+    "examples": {
+      "tr": "Karşılaştır ve değiştir kilit oluşturmak için kullanılabilir.",
+      "en": "Compare-and-swap can implement a lock."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-atomic-hardware"]
+  },
+  {
+    "id": "os5-hardware-support",
+    "term": {
+      "tr": "Donanım desteği",
+      "en": "Hardware support"
+    },
+    "examples": {
+      "tr": "Atomik komutlar donanım desteği kullanabilir.",
+      "en": "Atomic instructions may use hardware support."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-atomic-hardware"]
+  },
+  {
+    "id": "os5-busy-waiting",
+    "term": {
+      "tr": "Meşgul bekleme",
+      "en": "Busy waiting"
+    },
+    "examples": {
+      "tr": "Meşgul bekleme CPU zamanı tüketir.",
+      "en": "Busy waiting consumes CPU time."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-mutex-spinlock"]
+  },
+  {
+    "id": "os5-spinlock",
+    "term": {
+      "tr": "Döner kilit",
+      "en": "Spinlock"
+    },
+    "examples": {
+      "tr": "Döner kilit kısa beklemelerde uygun olabilir.",
+      "en": "A spinlock may suit short waits."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-mutex-spinlock"]
+  },
+  {
+    "id": "os5-blocking-lock",
+    "term": {
+      "tr": "Engelleyici kilit",
+      "en": "Blocking lock"
+    },
+    "examples": {
+      "tr": "Engelleyici kilit thread'i uyutabilir.",
+      "en": "A blocking lock can put a thread to sleep."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-mutex-spinlock"]
+  },
+  {
+    "id": "os5-binary-semaphore",
+    "term": {
+      "tr": "İkilik semafor",
+      "en": "Binary semaphore"
+    },
+    "examples": {
+      "tr": "İkilik semaforun değeri sıfır veya birdir.",
+      "en": "A binary semaphore has value zero or one."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphores"]
+  },
+  {
+    "id": "os5-counting-semaphore",
+    "term": {
+      "tr": "Sayan semafor",
+      "en": "Counting semaphore"
+    },
+    "examples": {
+      "tr": "Sayan semafor üç bağlantı iznini yönetir.",
+      "en": "A counting semaphore controls three connection permits."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphores"]
+  },
+  {
+    "id": "os5-permit-count",
+    "term": {
+      "tr": "İzin sayısı",
+      "en": "Permit count"
+    },
+    "examples": {
+      "tr": "İzin sayısı sıfıra inince yeni işlem bekler.",
+      "en": "A new operation waits when the permit count reaches zero."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphores"]
+  },
+  {
+    "id": "os5-to-signal",
+    "term": {
+      "tr": "İşaret vermek",
+      "en": "To signal"
+    },
+    "examples": {
+      "tr": "Üretici veri ekleyince tüketiciye işaret verir.",
+      "en": "The producer signals the consumer after adding data."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphores"]
+  },
+  {
+    "id": "os5-waiting-queue",
+    "term": {
+      "tr": "Bekleme kuyruğu",
+      "en": "Waiting queue"
+    },
+    "examples": {
+      "tr": "Engellenen process bekleme kuyruğuna alınır.",
+      "en": "A blocked process enters the waiting queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphore-blocking-deadlock"]
+  },
+  {
+    "id": "os5-to-wake-up",
+    "term": {
+      "tr": "Uyandırmak",
+      "en": "To wake up"
+    },
+    "examples": {
+      "tr": "Signal işlemi bekleyen process'i uyandırabilir.",
+      "en": "The signal operation can wake up a waiting process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphore-blocking-deadlock"]
+  },
+  {
+    "id": "os5-circular-wait",
+    "term": {
+      "tr": "Döngüsel bekleme",
+      "en": "Circular wait"
+    },
+    "examples": {
+      "tr": "Döngüsel bekleme deadlock için bir koşuldur.",
+      "en": "Circular wait is one condition for deadlock."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphore-blocking-deadlock"]
+  },
+  {
+    "id": "os5-deadlock",
+    "term": {
+      "tr": "Kilitlenme",
+      "en": "Deadlock"
+    },
+    "examples": {
+      "tr": "İki process birbirini beklediğinde kilitlenme oluşabilir.",
+      "en": "Deadlock can occur when two processes wait for each other."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-semaphore-blocking-deadlock"]
+  },
+  {
+    "id": "os5-monitor",
+    "term": {
+      "tr": "İzleyici",
+      "en": "Monitor"
+    },
+    "examples": {
+      "tr": "İzleyici korunan veriyi ve metotları bir araya getirir.",
+      "en": "A monitor groups protected data and methods."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-monitors"]
+  },
+  {
+    "id": "os5-condition-variable",
+    "term": {
+      "tr": "Durum değişkeni",
+      "en": "Condition variable"
+    },
+    "examples": {
+      "tr": "Durum değişkeni uygun koşulu beklemek için kullanılır.",
+      "en": "A condition variable is used to wait for a condition."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-monitors"]
+  },
+  {
+    "id": "os5-signal-and-wait",
+    "term": {
+      "tr": "İşaret ver ve bekle",
+      "en": "Signal-and-wait"
+    },
+    "examples": {
+      "tr": "İşaret ver ve bekle modelinde sinyal veren bekler.",
+      "en": "In signal-and-wait the signaling process waits."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-monitors"]
+  },
+  {
+    "id": "os5-signal-and-continue",
+    "term": {
+      "tr": "İşaret ver ve devam et",
+      "en": "Signal-and-continue"
+    },
+    "examples": {
+      "tr": "İşaret ver ve devam et modelinde sinyal veren sürer.",
+      "en": "In signal-and-continue the signaler continues."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-monitors"]
+  },
+  {
+    "id": "os5-transactional-memory",
+    "term": {
+      "tr": "İşlemsel bellek",
+      "en": "Transactional memory"
+    },
+    "examples": {
+      "tr": "İşlemsel bellek değişiklikleri bir işlem bloğunda birleştirir.",
+      "en": "Transactional memory groups updates in a transaction."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-transactional-openmp"]
+  },
+  {
+    "id": "os5-to-abort-a-transaction",
+    "term": {
+      "tr": "İşlemi geri almak",
+      "en": "To abort a transaction"
+    },
+    "examples": {
+      "tr": "Çakışma varsa çalışma zamanı işlemi geri alabilir.",
+      "en": "The runtime may abort a transaction on conflict."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-transactional-openmp"]
+  },
+  {
+    "id": "os5-critical-directive",
+    "term": {
+      "tr": "Kritik bölge yönergesi",
+      "en": "Critical directive"
+    },
+    "examples": {
+      "tr": "OpenMP kritik bölge yönergesi ile eşzamanlama yapar.",
+      "en": "OpenMP synchronizes using a critical directive."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os5-transactional-openmp"]
   }
 ]

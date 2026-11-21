@@ -1,0 +1,8 @@
+- **Blocking semaphore:** Waiting queue + `block()` / `wakeup()`; CPU busy-wait azalır.
+- `value--`, `value<0` → queue ve block; `value++`, `value<=0` → wakeup (atomik korunmalı).
+- **Deadlock:** P0: S→Q; P1: Q→S; her biri bir lock tutup diğerini bekler.
+- **Circular wait:** Karşılıklı kaynak bekleme.
+- **Önleme örneği:** Kilitleri tutarlı sırayla al.
+- **Starvation:** Belirli process uzun/sınırsız bekler; diğerleri ilerleyebilir.
+- **LIFO** ve sürekli yüksek öncelik starvation yaratabilir.
+- **Deadlock ≠ Starvation.**
