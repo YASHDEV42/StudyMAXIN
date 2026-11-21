@@ -1,0 +1,100 @@
+{
+  "id": "os2-user-interfaces",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "CLI, GUI, Batch ve Dokunmatik Arayüzler",
+    "ar": "واجهات CLI وGUI وBatch واللمس"
+  },
+  "order": 1,
+  "prerequisites": [
+    "os2-system-services"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف المستخدم بيتواصل مع OS؟",
+      "summary": "Command Interpreter وShell وGUI وTouch وBatch واختيار الواجهة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 9,
+              "to": 11
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 8,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Kullanıcı Arayüzleri: CLI, GUI, Batch, Touch",
+      "summary": "Shell ve komut yorumlayıcısı, yerleşik/harici komutlar ve arayüz seçimi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 9,
+              "to": 11
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 8,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Kullanıcı Arayüzleri — Sınav Özeti",
+      "summary": "CLI–GUI karşılaştırması, shell, built-in, touch ve batch.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 9,
+              "to": 11
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 8,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
