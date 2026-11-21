@@ -1,0 +1,73 @@
+{
+  "id": "os3-ipc-models-producer",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "IPC: Shared Memory ve Producer–Consumer",
+    "ar": "IPC وShared Memory ومشكلة Producer–Consumer"
+  },
+  "order": 5,
+  "prerequisites": [
+    "os3-creation-termination"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "IPC: Shared Memory ve Producer–Consumer",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 35,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "IPC وShared Memory ومشكلة Producer–Consumer",
+      "summary": "شرح مبادئ إدارة العمليات والأمثلة والفرق بين المفاهيم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 35,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "IPC: Shared Memory ve Producer–Consumer",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 35,
+              "to": 42
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
