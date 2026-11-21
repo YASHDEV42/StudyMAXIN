@@ -7,9 +7,7 @@
     "ar": "Kernel Modules والأنظمة الهجينة وmacOS وiOS وAndroid"
   },
   "order": 8,
-  "prerequisites": [
-    "os2-structural-models"
-  ],
+  "prerequisites": ["os2-structural-models"],
   "related": [],
   "documents": [
     {

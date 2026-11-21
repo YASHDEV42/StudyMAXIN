@@ -7,9 +7,7 @@
     "ar": "System Programs والخدمات الخلفية"
   },
   "order": 4,
-  "prerequisites": [
-    "os2-system-call-categories"
-  ],
+  "prerequisites": ["os2-system-call-categories"],
   "related": [],
   "documents": [
     {

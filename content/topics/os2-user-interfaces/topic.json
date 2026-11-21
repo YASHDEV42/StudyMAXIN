@@ -7,9 +7,7 @@
     "ar": "واجهات CLI وGUI وBatch واللمس"
   },
   "order": 1,
-  "prerequisites": [
-    "os2-system-services"
-  ],
+  "prerequisites": ["os2-system-services"],
   "related": [],
   "documents": [
     {

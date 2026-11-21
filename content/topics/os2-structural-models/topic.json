@@ -7,9 +7,7 @@
     "ar": "Simple وMonolithic وLayered وMicrokernel"
   },
   "order": 7,
-  "prerequisites": [
-    "os2-design-policy-mechanism"
-  ],
+  "prerequisites": ["os2-design-policy-mechanism"],
   "related": [],
   "documents": [
     {

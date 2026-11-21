@@ -7,9 +7,7 @@
     "ar": "تثبيت نظام التشغيل وآلية الإقلاع"
   },
   "order": 10,
-  "prerequisites": [
-    "os2-debugging-performance"
-  ],
+  "prerequisites": ["os2-debugging-performance"],
   "related": [],
   "documents": [
     {

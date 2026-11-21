@@ -7,9 +7,7 @@
     "ar": "خدمات نظام التشغيل"
   },
   "order": 0,
-  "prerequisites": [
-    "os-execution-resource-management"
-  ],
+  "prerequisites": ["os-execution-resource-management"],
   "related": [],
   "documents": [
     {

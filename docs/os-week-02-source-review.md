@@ -10,19 +10,19 @@ All original files remain private; redistribution permission was not provided. T
 
 ## Scope and citation mapping
 
-| Topic ID | ABM-313 physical PDF pages | Scanned Services physical PDF pages | PPTX slides |
-| --- | --- | --- | --- |
-| os2-system-services | 3–7 | 3–7 | 4–7 |
-| os2-user-interfaces | 9–11 | 8–14 | 8–9 |
-| os2-system-calls-api | 13–15 | 15–24 | 10–12 |
-| os2-system-call-categories | 17–29 | 25–32 | 13–23 |
-| os2-system-programs | 31–33 | 33–37 | 24–25 |
-| os2-linker-loader-abi | — | 38–46 | — |
-| os2-design-policy-mechanism | 35–38 | 47–49 | 26–27 |
-| os2-structural-models | 40–46 | 50–56 | 28–33 |
-| os2-modular-hybrid-mobile | 47–54 | — | 34–38 |
-| os2-debugging-performance | 56–59 | — | 39–41 |
-| os2-system-generation-boot | 61–63 | — | 42 |
+| Topic ID                    | ABM-313 physical PDF pages | Scanned Services physical PDF pages | PPTX slides |
+| --------------------------- | -------------------------- | ----------------------------------- | ----------- |
+| os2-system-services         | 3–7                        | 3–7                                 | 4–7         |
+| os2-user-interfaces         | 9–11                       | 8–14                                | 8–9         |
+| os2-system-calls-api        | 13–15                      | 15–24                               | 10–12       |
+| os2-system-call-categories  | 17–29                      | 25–32                               | 13–23       |
+| os2-system-programs         | 31–33                      | 33–37                               | 24–25       |
+| os2-linker-loader-abi       | —                          | 38–46                               | —           |
+| os2-design-policy-mechanism | 35–38                      | 47–49                               | 26–27       |
+| os2-structural-models       | 40–46                      | 50–56                               | 28–33       |
+| os2-modular-hybrid-mobile   | 47–54                      | —                                   | 34–38       |
+| os2-debugging-performance   | 56–59                      | —                                   | 39–41       |
+| os2-system-generation-boot  | 61–63                      | —                                   | 42          |
 
 The material is combined into **eleven coherent topics**, each with a separate Arabic lesson, a separate Turkish lesson, and an exam-focused Turkish cheat sheet (**33 published document forms**), plus **40 newly authored Turkish–English glossary entries**. The 64-page PDF concludes with a kernel-debugging research assignment on page 64, which is recorded as an assignment rather than invented procedural instruction. The scanned 56-page PDF ends at its Layered Approach coverage; later structures/debug/boot are based on the other two sources, not ascribed to it.
 

@@ -7,9 +7,7 @@
     "ar": "System Calls والـ API وتمرير المعاملات"
   },
   "order": 2,
-  "prerequisites": [
-    "os2-user-interfaces"
-  ],
+  "prerequisites": ["os2-user-interfaces"],
   "related": [],
   "documents": [
     {

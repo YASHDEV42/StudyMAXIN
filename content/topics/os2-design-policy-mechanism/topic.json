@@ -7,9 +7,7 @@
     "ar": "تصميم نظام التشغيل وPolicy مقابل Mechanism"
   },
   "order": 6,
-  "prerequisites": [
-    "os2-linker-loader-abi"
-  ],
+  "prerequisites": ["os2-linker-loader-abi"],
   "related": [],
   "documents": [
     {

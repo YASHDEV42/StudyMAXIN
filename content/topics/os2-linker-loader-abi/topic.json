@@ -7,9 +7,7 @@
     "ar": "Linker وLoader وABI وتوافق البرامج"
   },
   "order": 5,
-  "prerequisites": [
-    "os2-system-programs"
-  ],
+  "prerequisites": ["os2-system-programs"],
   "related": [],
   "documents": [
     {
