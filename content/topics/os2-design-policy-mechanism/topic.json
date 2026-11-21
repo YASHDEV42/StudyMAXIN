@@ -1,0 +1,98 @@
+{
+  "id": "os2-design-policy-mechanism",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "İşletim Sistemi Tasarımı, Policy ve Mechanism",
+    "ar": "تصميم نظام التشغيل وPolicy مقابل Mechanism"
+  },
+  "order": 6,
+  "prerequisites": ["os2-linker-loader-abi"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منصمّم OS قابل للصيانة والتعديل؟",
+      "summary": "User Goals وSystem Goals وPolicy vs Mechanism ولغات التنفيذ.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 35,
+              "to": 38
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 47,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "OS Tasarım Hedefleri, Politikalar ve Mekanizmalar",
+      "summary": "User/system goals, policy–mechanism ayrımı ve implementation dilleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 35,
+              "to": 38
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 47,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OS Tasarım ve Gerçekleştirme — Sınav Özeti",
+      "summary": "User/system goals ve policy/mechanism kritik farkı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 35,
+              "to": 38
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 47,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

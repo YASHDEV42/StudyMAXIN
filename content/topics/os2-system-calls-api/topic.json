@@ -1,0 +1,98 @@
+{
+  "id": "os2-system-calls-api",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "System Call, API ve Parametre Geçişi",
+    "ar": "System Calls والـ API وتمرير المعاملات"
+  },
+  "order": 2,
+  "prerequisites": ["os2-user-interfaces"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف التطبيق بيطلب خدمة من الـ Kernel؟",
+      "summary": "API مقابل System Call وSystem Call Interface وRTE وتمرير parameters.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 13,
+              "to": 15
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 15,
+              "to": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sistem Çağrıları, API/RTE ve Parametre Aktarımı",
+      "summary": "API–system-call-interface farkı, file copy, printf/write ve üç parametre yöntemi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 13,
+              "to": 15
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 15,
+              "to": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "System Calls ve API — Sınav Özeti",
+      "summary": "Çağrı akışı, API/ABI/RTE farkı ve parametre aktarım yöntemleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 13,
+              "to": 15
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 15,
+              "to": 24
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

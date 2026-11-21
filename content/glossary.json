@@ -6824,5 +6824,525 @@
     },
     "courseIds": ["operating-systems"],
     "topicIds": ["os-computing-environments"]
+  },
+  {
+    "id": "os2-interface",
+    "term": {
+      "tr": "Kullanıcı arayüzü",
+      "en": "User interface"
+    },
+    "examples": {
+      "tr": "Kullanıcı arayüzü komutlara ve servislere erişmeyi sağlar.",
+      "en": "The user interface provides access to commands and services."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-user-interfaces"]
+  },
+  {
+    "id": "os2-shell",
+    "term": {
+      "tr": "Kabuk",
+      "en": "Shell"
+    },
+    "examples": {
+      "tr": "Kabuk kullanıcıdan komut alır ve yürütür.",
+      "en": "The shell receives and executes user commands."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-user-interfaces"]
+  },
+  {
+    "id": "os2-command-interpreter",
+    "term": {
+      "tr": "Komut yorumlayıcısı",
+      "en": "Command interpreter"
+    },
+    "examples": {
+      "tr": "Komut yorumlayıcısı kullanıcı komutunu çalıştırır.",
+      "en": "The command interpreter executes a user's command."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-user-interfaces"]
+  },
+  {
+    "id": "os2-batch-interface",
+    "term": {
+      "tr": "Toplu işlem arayüzü",
+      "en": "Batch interface"
+    },
+    "examples": {
+      "tr": "Toplu işlem arayüzü dosyaya yazılan komutları sırayla yürütür.",
+      "en": "A batch interface executes commands stored in a file."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-user-interfaces"]
+  },
+  {
+    "id": "os2-graphical-interface",
+    "term": {
+      "tr": "Grafik kullanıcı arayüzü",
+      "en": "Graphical user interface"
+    },
+    "examples": {
+      "tr": "Grafik kullanıcı arayüzü simgeler ve pencereler kullanır.",
+      "en": "A graphical user interface uses icons and windows."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-user-interfaces"]
+  },
+  {
+    "id": "os2-parameters",
+    "term": {
+      "tr": "Parametre geçirmek",
+      "en": "To pass parameters"
+    },
+    "examples": {
+      "tr": "Sistem çağrısına parametre geçirmek için register kullanılabilir.",
+      "en": "Registers can be used to pass parameters to a system call."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-calls-api"]
+  },
+  {
+    "id": "os2-system-call-interface",
+    "term": {
+      "tr": "Sistem çağrı arayüzü",
+      "en": "System-call interface"
+    },
+    "examples": {
+      "tr": "Sistem çağrı arayüzü uygun çekirdek hizmetine geçiş sağlar.",
+      "en": "The system-call interface routes requests to kernel services."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-calls-api"]
+  },
+  {
+    "id": "os2-runtime",
+    "term": {
+      "tr": "Çalışma zamanı ortamı",
+      "en": "Runtime environment"
+    },
+    "examples": {
+      "tr": "Çalışma zamanı ortamı programın yürütülmesi için kütüphaneler sağlar.",
+      "en": "The runtime environment provides libraries for program execution."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-calls-api"]
+  },
+  {
+    "id": "os2-process-control",
+    "term": {
+      "tr": "Süreç kontrolü",
+      "en": "Process control"
+    },
+    "examples": {
+      "tr": "Süreç kontrolü yeni süreç başlatma ve sonlandırma işlemlerini kapsar.",
+      "en": "Process control includes creating and terminating processes."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-information-maintenance",
+    "term": {
+      "tr": "Bilgi bakımı",
+      "en": "Information maintenance"
+    },
+    "examples": {
+      "tr": "Bilgi bakımı sistem sürümü ve saat bilgisi sunabilir.",
+      "en": "Information maintenance can provide the system version and time."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-file-management",
+    "term": {
+      "tr": "Dosya yönetimi",
+      "en": "File management"
+    },
+    "examples": {
+      "tr": "Dosya yönetimi dosya açma ve yazma işlevlerini sağlar.",
+      "en": "File management supports opening and writing files."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-device-management",
+    "term": {
+      "tr": "Aygıt yönetimi",
+      "en": "Device management"
+    },
+    "examples": {
+      "tr": "Aygıt yönetimi cihazları tahsis eder ve serbest bırakır.",
+      "en": "Device management allocates and releases devices."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-message-passing",
+    "term": {
+      "tr": "Mesaj iletimi",
+      "en": "Message passing"
+    },
+    "examples": {
+      "tr": "Mesaj iletimi süreçler arasında iletişim kurar.",
+      "en": "Message passing enables communication between processes."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-shared-memory",
+    "term": {
+      "tr": "Paylaşılan bellek",
+      "en": "Shared memory"
+    },
+    "examples": {
+      "tr": "İki süreç paylaşılan bellek üzerinde veri değiş tokuşu yapabilir.",
+      "en": "Two processes can exchange data through shared memory."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-lock-acquisition",
+    "term": {
+      "tr": "Kilit edinmek",
+      "en": "To acquire a lock"
+    },
+    "examples": {
+      "tr": "Süreç ortak veriyi değiştirmeden önce kilit edinmelidir.",
+      "en": "A process should acquire a lock before changing shared data."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-call-categories"]
+  },
+  {
+    "id": "os2-daemon",
+    "term": {
+      "tr": "Arka plan hizmeti",
+      "en": "Background service"
+    },
+    "examples": {
+      "tr": "Arka plan hizmeti yazdırma kuyruğunu yönetebilir.",
+      "en": "A background service may manage the print queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-programs"]
+  },
+  {
+    "id": "os2-utility",
+    "term": {
+      "tr": "Yardımcı program",
+      "en": "Utility"
+    },
+    "examples": {
+      "tr": "Yardımcı program dosyaları kopyalamayı kolaylaştırır.",
+      "en": "A utility simplifies copying files."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-programs"]
+  },
+  {
+    "id": "os2-compiler",
+    "term": {
+      "tr": "Derleyici",
+      "en": "Compiler"
+    },
+    "examples": {
+      "tr": "Derleyici kaynak kodu nesne dosyasına dönüştürür.",
+      "en": "A compiler converts source code to object code."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-linker",
+    "term": {
+      "tr": "Bağlayıcı",
+      "en": "Linker"
+    },
+    "examples": {
+      "tr": "Bağlayıcı nesne dosyalarını yürütülebilir programa birleştirir.",
+      "en": "A linker combines object files into an executable."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-loader",
+    "term": {
+      "tr": "Yükleyici",
+      "en": "Loader"
+    },
+    "examples": {
+      "tr": "Yükleyici çalıştırılabilir programı belleğe alır.",
+      "en": "A loader places an executable in memory."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-relocation",
+    "term": {
+      "tr": "Yeniden konumlandırma",
+      "en": "Relocation"
+    },
+    "examples": {
+      "tr": "Yeniden konumlandırma adresleri programın yerleşimine göre ayarlar.",
+      "en": "Relocation adjusts addresses for program placement."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-binary-interface",
+    "term": {
+      "tr": "Uygulama ikili arayüzü",
+      "en": "Application binary interface"
+    },
+    "examples": {
+      "tr": "Uygulama ikili arayüzü register kullanımı ve çağrı kurallarını belirler.",
+      "en": "An application binary interface defines register usage and calling conventions."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-portability",
+    "term": {
+      "tr": "Taşınabilirlik",
+      "en": "Portability"
+    },
+    "examples": {
+      "tr": "Taşınabilirlik yazılımın farklı sistemlere uyarlanmasını kolaylaştırır.",
+      "en": "Portability makes software easier to adapt to different systems."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-linker-loader-abi"]
+  },
+  {
+    "id": "os2-mechanism",
+    "term": {
+      "tr": "Mekanizma",
+      "en": "Mechanism"
+    },
+    "examples": {
+      "tr": "Zamanlayıcı bir işletim sistemi mekanizmasıdır.",
+      "en": "A timer is an operating system mechanism."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-design-policy-mechanism"]
+  },
+  {
+    "id": "os2-policy",
+    "term": {
+      "tr": "Politika",
+      "en": "Policy"
+    },
+    "examples": {
+      "tr": "Politika her sürece ayrılan CPU süresini belirleyebilir.",
+      "en": "A policy can determine the CPU time allotted to each process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-design-policy-mechanism"]
+  },
+  {
+    "id": "os2-implementation",
+    "term": {
+      "tr": "Gerçekleştirim",
+      "en": "Implementation"
+    },
+    "examples": {
+      "tr": "Gerçekleştirim aşamasında tasarım kod haline getirilir.",
+      "en": "During implementation, the design is translated into code."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-design-policy-mechanism"]
+  },
+  {
+    "id": "os2-monolithic",
+    "term": {
+      "tr": "Tek parça çekirdek",
+      "en": "Monolithic kernel"
+    },
+    "examples": {
+      "tr": "Tek parça çekirdek birçok hizmeti çekirdek alanında yürütür.",
+      "en": "A monolithic kernel runs many services in kernel space."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-structural-models"]
+  },
+  {
+    "id": "os2-layered",
+    "term": {
+      "tr": "Katmanlı yaklaşım",
+      "en": "Layered approach"
+    },
+    "examples": {
+      "tr": "Katmanlı yaklaşımda üst katman alt katmanın hizmetlerini kullanır.",
+      "en": "In a layered approach, upper layers use lower-layer services."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-structural-models"]
+  },
+  {
+    "id": "os2-microkernel",
+    "term": {
+      "tr": "Mikroçekirdek",
+      "en": "Microkernel"
+    },
+    "examples": {
+      "tr": "Mikroçekirdek bazı hizmetleri kullanıcı alanına taşır.",
+      "en": "A microkernel moves some services into user space."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-structural-models"]
+  },
+  {
+    "id": "os2-context-switch",
+    "term": {
+      "tr": "Bağlam değiştirme",
+      "en": "Context switching"
+    },
+    "examples": {
+      "tr": "Bağlam değiştirme sırasında CPU yürütme durumu korunur.",
+      "en": "CPU execution state is preserved during context switching."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-structural-models"]
+  },
+  {
+    "id": "os2-isolation",
+    "term": {
+      "tr": "Yalıtım",
+      "en": "Isolation"
+    },
+    "examples": {
+      "tr": "Hizmetlerin yalıtımı bir hatanın etkisini sınırlayabilir.",
+      "en": "Service isolation can limit the impact of a failure."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-structural-models"]
+  },
+  {
+    "id": "os2-module",
+    "term": {
+      "tr": "Yüklenebilir çekirdek modülü",
+      "en": "Loadable kernel module"
+    },
+    "examples": {
+      "tr": "Bir yüklenebilir çekirdek modülü aygıt sürücüsü içerebilir.",
+      "en": "A loadable kernel module may contain a device driver."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-modular-hybrid-mobile"]
+  },
+  {
+    "id": "os2-hybrid",
+    "term": {
+      "tr": "Hibrit yapı",
+      "en": "Hybrid structure"
+    },
+    "examples": {
+      "tr": "Hibrit yapı farklı çekirdek tasarım yaklaşımlarını birleştirir.",
+      "en": "A hybrid structure combines kernel design approaches."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-modular-hybrid-mobile"]
+  },
+  {
+    "id": "os2-debugger",
+    "term": {
+      "tr": "Hata ayıklayıcı",
+      "en": "Debugger"
+    },
+    "examples": {
+      "tr": "Hata ayıklayıcı bellek dökümünü inceleyebilir.",
+      "en": "A debugger can inspect a memory dump."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-debugging-performance"]
+  },
+  {
+    "id": "os2-memory-dump",
+    "term": {
+      "tr": "Bellek dökümü",
+      "en": "Memory dump"
+    },
+    "examples": {
+      "tr": "Bellek dökümü çökme anındaki durumu analiz etmeye yardımcı olur.",
+      "en": "A memory dump helps analyze the state at a crash."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-debugging-performance"]
+  },
+  {
+    "id": "os2-bottleneck",
+    "term": {
+      "tr": "Darboğaz",
+      "en": "Bottleneck"
+    },
+    "examples": {
+      "tr": "Disk erişimi uygulamanın darboğazı olabilir.",
+      "en": "Disk access can be an application's bottleneck."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-debugging-performance"]
+  },
+  {
+    "id": "os2-performance-tuning",
+    "term": {
+      "tr": "Performans ayarlaması",
+      "en": "Performance tuning"
+    },
+    "examples": {
+      "tr": "Performans ayarlaması öncesinde kaynaklar izlenmelidir.",
+      "en": "Resources should be monitored before performance tuning."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-debugging-performance"]
+  },
+  {
+    "id": "os2-bootloader",
+    "term": {
+      "tr": "Önyükleyici",
+      "en": "Bootloader"
+    },
+    "examples": {
+      "tr": "Önyükleyici işletim sistemi çekirdeğini yüklemeye başlar.",
+      "en": "A bootloader starts loading the OS kernel."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-generation-boot"]
+  },
+  {
+    "id": "os2-firmware",
+    "term": {
+      "tr": "Donanım yazılımı",
+      "en": "Firmware"
+    },
+    "examples": {
+      "tr": "Donanım yazılımı bilgisayarın ilk başlatılmasını sağlar.",
+      "en": "Firmware starts the computer's initial boot sequence."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-generation-boot"]
+  },
+  {
+    "id": "os2-configuration",
+    "term": {
+      "tr": "Yapılandırma",
+      "en": "Configuration"
+    },
+    "examples": {
+      "tr": "Kurulum sırasında disk ve donanım yapılandırması seçilir.",
+      "en": "Disk and hardware configuration are selected during installation."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os2-system-generation-boot"]
   }
 ]

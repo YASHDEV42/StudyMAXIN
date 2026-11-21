@@ -1,0 +1,98 @@
+{
+  "id": "os2-system-services",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "İşletim Sistemi Servisleri",
+    "ar": "خدمات نظام التشغيل"
+  },
+  "order": 0,
+  "prerequisites": ["os-execution-resource-management"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش نظام التشغيل بيقدّم Services؟",
+      "summary": "خدمات البرامج والمستخدمين مقابل إدارة الموارد والحماية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi Servisleri ve Görevleri",
+      "summary": "Kullanıcıya yönelik servisler ve verimli sistem çalışması için servisler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi Servisleri — Sınav Özeti",
+      "summary": "Hizmetlerin grupları ve resource allocation/accounting farkı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

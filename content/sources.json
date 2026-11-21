@@ -258,5 +258,31 @@
       "sha256": "7f973a47a034965cba53bbd584ed0772f6e07975f36fcf884c1450bab6a40cf9",
       "reason": "Provided as a conversation attachment; reviewed for this week; redistribution rights not established. Original filename: Hafta 1.pdf - Hafta_1.pdf."
     }
+  },
+  {
+    "id": "os-week-02-abm",
+    "title": "ABM-313 İşletim Sistemleri Dersi · Hafta 2 İşletim Sistemi Yapıları — OS_L2IsletimSistemiYapilari_EA.pdf (64 physical pages)",
+    "language": "tr",
+    "courseIds": ["operating-systems"],
+    "location": {
+      "kind": "private",
+      "filename": "OS_L2IsletimSistemiYapilari_EA.pdf",
+      "pageCount": 64,
+      "sha256": "2432e46a4a1bec34b4871fd570c12ca438af1182c8cd848f54f3d44a7613ed5c",
+      "reason": "User-provided original under the filename 'BM 403 Veri İletişimi (Data Communications) - OS_L2IsletimSistemiYapilari_EA.pdf'; file itself identifies the course ABM-313 and week 2. Reviewed privately; redistribution permission not established."
+    }
+  },
+  {
+    "id": "os-week-02-servisleri",
+    "title": "İşletim Sistemi Servisleri — ders_2_İşletim Sistemi Servisleri_1.pdf (56 slide pages; Operating System Concepts 10e)",
+    "language": "tr",
+    "courseIds": ["operating-systems"],
+    "location": {
+      "kind": "private",
+      "filename": "ders_2_Isletim_Sistemi_Servisleri_1.pdf",
+      "pageCount": 56,
+      "sha256": "71fddf23055adcdf5e2324a4c7bc58d685c53bd098ebf47349591239a6fd2680",
+      "reason": "User-provided scanned slide PDF; physically inspected as images. Filename normalized for metadata; original 'ders_2_İşletim Sistemi Servisleri_1.pdf'. No redistribution permission established."
+    }
   }
 ]

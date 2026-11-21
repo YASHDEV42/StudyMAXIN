@@ -1,0 +1,98 @@
+{
+  "id": "os2-system-programs",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Sistem Programları ve Arka Plan Servisleri",
+    "ar": "System Programs والخدمات الخلفية"
+  },
+  "order": 4,
+  "prerequisites": ["os2-system-call-categories"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو الفرق بين System Program وSystem Call؟",
+      "summary": "Utilities وأدوات الملفات والمعلومات والبرمجة والـ Daemons.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 33,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sistem Programları, Araçlar ve Daemon'lar",
+      "summary": "Dosya/performans araçları, dil desteği, yükleme, iletişim ve arka plan işleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 33,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sistem Programları — Sınav Özeti",
+      "summary": "System calls vs utilities, servis kategorileri ve daemon tanımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 31,
+              "to": 33
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 33,
+              "to": 37
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

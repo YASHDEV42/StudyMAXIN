@@ -1,0 +1,10 @@
+- **UI:** Kullanıcı ile işletim sistemi arasındaki etkileşim yolu.
+- **CLI:** Metin komutları. **Command interpreter / shell:** Komutu yorumlar ve çalıştırır.
+- **Built-in command:** Kod shell içinde. **External command:** Ayrı çalıştırılabilir program; yeni komut için shell değiştirmek gerekmez.
+- **Shell örnekleri:** Bourne, C, Korn.
+- **GUI:** Desktop, pencere, menü, icon, mouse/keyboard; Xerox PARC tarihsel kökeni.
+- **Batch:** Önceden dosyaya kaydedilmiş komutların toplu yürütülmesi.
+- **Touch:** Dokunma, kaydırma, sanal klavye; bazı aygıtlarda sesli komut.
+- **CLI avantajı:** Betikleme ve tekrarlanan görevler.
+- **GUI avantajı:** Görsel öğrenme ve kullanım kolaylığı.
+- **Bir sistemde CLI ve GUI beraber bulunabilir.**

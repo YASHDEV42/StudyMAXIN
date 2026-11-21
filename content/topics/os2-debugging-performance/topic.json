@@ -1,0 +1,71 @@
+{
+  "id": "os2-debugging-performance",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "OS Debugging, Crash ve Performance Tuning",
+    "ar": "Debugging وتحليل الأعطال وتحسين الأداء"
+  },
+  "order": 9,
+  "prerequisites": ["os2-modular-hybrid-mobile"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منشخّص Bugs وPerformance Bottlenecks؟",
+      "summary": "Logs وMemory Dumps وKernel Crash وProfiling وأدوات المراقبة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 56,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi Hata Ayıklama ve Performans Ayarı",
+      "summary": "Log, memory dump, crash ve darboğaz analizinin ayrı rolleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 56,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OS Debugging — Sınav Özeti",
+      "summary": "Crash, log, memory dump ve bottleneck farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 56,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

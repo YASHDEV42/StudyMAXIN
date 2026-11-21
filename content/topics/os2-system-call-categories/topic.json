@@ -1,0 +1,98 @@
+{
+  "id": "os2-system-call-categories",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Altı Sistem Çağrısı Türü",
+    "ar": "الأنواع الستة لـ System Calls"
+  },
+  "order": 3,
+  "prerequisites": ["os2-system-calls-api"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منصنّف الـ System Calls؟",
+      "summary": "Process،File،Device،Information،Communication،Protection مع أمثلة Windows/Unix.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 17,
+              "to": 29
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 25,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Altı Sistem Çağrısı Kategorisi ve Örnekler",
+      "summary": "Process control, file/device/information/communication/protection; UNIX–Windows örnekleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 17,
+              "to": 29
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 25,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Altı Sistem Çağrısı Türü — Sınav Özeti",
+      "summary": "Altı grup, örnek komutlar ve IPC yöntemlerinin farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 17,
+              "to": 29
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 25,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

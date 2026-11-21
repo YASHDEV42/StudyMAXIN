@@ -1,0 +1,98 @@
+{
+  "id": "os2-structural-models",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Basit, Monolithic, Layered ve Microkernel Yapıları",
+    "ar": "Simple وMonolithic وLayered وMicrokernel"
+  },
+  "order": 7,
+  "prerequisites": ["os2-design-policy-mechanism"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منرتّب مكونات Kernel؟",
+      "summary": "MS-DOS وOriginal UNIX وLayered وMicrokernel؛ مزايا وعيوب.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 40,
+              "to": 46
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 50,
+              "to": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi Yapıları: Simple, Monolithic, Layered, Microkernel",
+      "summary": "MS-DOS, UNIX, Mach ve performans/yalıtım karşılaştırması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 40,
+              "to": 46
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 50,
+              "to": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi Yapıları I — Sınav Özeti",
+      "summary": "Simple, monolithic, layered, microkernel tanım ve artı/eksi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 40,
+              "to": 46
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 50,
+              "to": 56
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
