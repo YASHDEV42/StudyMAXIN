@@ -1,0 +1,100 @@
+{
+  "id": "os-storage-dma",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Depolama Hiyerarşisi, Cache ve DMA",
+    "ar": "هرمية التخزين والـ Cache والـ DMA"
+  },
+  "order": 2,
+  "prerequisites": [
+    "os-organization-interrupts"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش عنا RAM وSSD وCache؟",
+      "summary": "Memory Hierarchy، Volatile/Nonvolatile، Caching وDMA.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 21,
+              "to": 28
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 15,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Bellek ve Depolama Hiyerarşisi, Cache ve DMA",
+      "summary": "RAM, ikincil depolama, önbellekleme ve blok I/O aktarımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 21,
+              "to": 28
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 15,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Depolama, Cache ve DMA — Sınav Özeti",
+      "summary": "Hiyerarşi, kalıcılık, cache mantığı ve DMA aktarımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 21,
+              "to": 28
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 15,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
