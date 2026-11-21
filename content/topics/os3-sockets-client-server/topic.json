@@ -1,0 +1,73 @@
+{
+  "id": "os3-sockets-client-server",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Sockets, TCP/UDP ve İstemci–Sunucu İletişimi",
+    "ar": "Sockets وTCP/UDP وتواصل Client–Server"
+  },
+  "order": 8,
+  "prerequisites": [
+    "os3-ipc-platforms"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sockets, TCP/UDP ve İstemci–Sunucu İletişimi",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 54,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Sockets وTCP/UDP وتواصل Client–Server",
+      "summary": "شرح النماذج والتطبيقات والمقارنات المهمة للتواصل بين العمليات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 54,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sockets, TCP/UDP ve İstemci–Sunucu İletişimi",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 54,
+              "to": 59
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
