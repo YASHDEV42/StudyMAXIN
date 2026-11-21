@@ -1,0 +1,100 @@
+{
+  "id": "os2-modular-hybrid-mobile",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Kernel Modülleri, Hibrit Sistemler, macOS, iOS ve Android",
+    "ar": "Kernel Modules والأنظمة الهجينة وmacOS وiOS وAndroid"
+  },
+  "order": 8,
+  "prerequisites": [
+    "os2-structural-models"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بيمزج OS بين أكثر من Architecture؟",
+      "summary": "Loadable Modules وHybrid وتصميم Linux وmacOS/iOS وAndroid التاريخي.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 47,
+              "to": 54
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 54,
+              "to": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yüklenebilir Kernel Modülleri ve Hibrit Mobil Yapılar",
+      "summary": "Linux modülleri, Mac OS X/Mach/BSD, iOS katmanları ve tarihsel Android diyagramı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 47,
+              "to": 54
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 54,
+              "to": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi Yapıları II — Sınav Özeti",
+      "summary": "Modül–microkernel farkı; hybrid, macOS/iOS/Android diyagramları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 47,
+              "to": 54
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 54,
+              "to": 55
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
