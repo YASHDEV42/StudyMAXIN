@@ -8296,5 +8296,243 @@
     "topicIds": [
       "structural-design-patterns"
     ]
+  },
+  {
+    "id": "operating-system",
+    "term": {
+      "tr": "İşletim sistemi",
+      "en": "Operating system"
+    },
+    "examples": {
+      "tr": "İşletim sistemi uygulamalar ile donanım arasında aracılık eder.",
+      "en": "The operating system mediates between applications and hardware."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-introduction"
+    ]
+  },
+  {
+    "id": "kernel",
+    "term": {
+      "tr": "Çekirdek",
+      "en": "Kernel"
+    },
+    "examples": {
+      "tr": "Çekirdek donanım kaynaklarını yönetir.",
+      "en": "The kernel manages hardware resources."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-introduction"
+    ]
+  },
+  {
+    "id": "resource-allocator",
+    "term": {
+      "tr": "Kaynak dağıtıcı",
+      "en": "Resource allocator"
+    },
+    "examples": {
+      "tr": "İşletim sistemi CPU süresini süreçlere dağıtan bir kaynak dağıtıcıdır.",
+      "en": "The OS is a resource allocator that distributes CPU time among processes."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-introduction"
+    ]
+  },
+  {
+    "id": "device-driver",
+    "term": {
+      "tr": "Aygıt sürücüsü",
+      "en": "Device driver"
+    },
+    "examples": {
+      "tr": "Aygıt sürücüsü denetleyiciyle iletişimi sağlar.",
+      "en": "The device driver provides communication with the controller."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-organization-interrupts"
+    ]
+  },
+  {
+    "id": "interrupt",
+    "term": {
+      "tr": "Kesme",
+      "en": "Interrupt"
+    },
+    "examples": {
+      "tr": "I/O işlemi tamamlandığında denetleyici kesme gönderebilir.",
+      "en": "The controller may send an interrupt when I/O completes."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-organization-interrupts"
+    ]
+  },
+  {
+    "id": "bootstrap",
+    "term": {
+      "tr": "Önyükleme",
+      "en": "Bootstrapping"
+    },
+    "examples": {
+      "tr": "Önyükleme programı çekirdeği belleğe yükler.",
+      "en": "The bootstrap program loads the kernel into memory."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-organization-interrupts"
+    ]
+  },
+  {
+    "id": "memory-hierarchy",
+    "term": {
+      "tr": "Bellek hiyerarşisi",
+      "en": "Memory hierarchy"
+    },
+    "examples": {
+      "tr": "Bellek hiyerarşisinde üst seviyeler genellikle daha hızlıdır.",
+      "en": "Upper levels of the memory hierarchy are usually faster."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-storage-dma"
+    ]
+  },
+  {
+    "id": "volatile-storage",
+    "term": {
+      "tr": "Uçucu bellek",
+      "en": "Volatile memory"
+    },
+    "examples": {
+      "tr": "Uçucu bellek elektrik kesildiğinde içeriğini kaybeder.",
+      "en": "Volatile memory loses its contents when power is lost."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-storage-dma"
+    ]
+  },
+  {
+    "id": "direct-memory-access",
+    "term": {
+      "tr": "Doğrudan bellek erişimi",
+      "en": "Direct memory access"
+    },
+    "examples": {
+      "tr": "Doğrudan bellek erişimi CPU üzerindeki aktarım yükünü azaltır.",
+      "en": "Direct memory access reduces the CPU's transfer workload."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-storage-dma"
+    ]
+  },
+  {
+    "id": "multiprocessing",
+    "term": {
+      "tr": "Çok işlemcili çalışma",
+      "en": "Multiprocessing"
+    },
+    "examples": {
+      "tr": "Çok işlemcili çalışma birden fazla işlemci kullanır.",
+      "en": "Multiprocessing uses more than one processor."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-architectures"
+    ]
+  },
+  {
+    "id": "numa",
+    "term": {
+      "tr": "Tekdüze olmayan bellek erişimi",
+      "en": "Non-uniform memory access"
+    },
+    "examples": {
+      "tr": "NUMA sisteminde bellek erişim süresi konuma göre değişir.",
+      "en": "Memory access time varies by location in a NUMA system."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-architectures"
+    ]
+  },
+  {
+    "id": "clustering",
+    "term": {
+      "tr": "Kümeleme",
+      "en": "Clustering"
+    },
+    "examples": {
+      "tr": "Kümeleme birden fazla sunucunun işbirliği yapmasını sağlar.",
+      "en": "Clustering enables multiple servers to cooperate."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-architectures"
+    ]
+  },
+  {
+    "id": "multiprogramming",
+    "term": {
+      "tr": "Çoklu programlama",
+      "en": "Multiprogramming"
+    },
+    "examples": {
+      "tr": "Çoklu programlama CPU'nun boşta kalma süresini azaltabilir.",
+      "en": "Multiprogramming can reduce CPU idle time."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
+  },
+  {
+    "id": "privileged-instruction",
+    "term": {
+      "tr": "Ayrıcalıklı komut",
+      "en": "Privileged instruction"
+    },
+    "examples": {
+      "tr": "Ayrıcalıklı komut yalnızca uygun işlem modunda yürütülür.",
+      "en": "A privileged instruction executes only in the appropriate mode."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
   }
 ]
