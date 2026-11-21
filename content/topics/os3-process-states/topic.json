@@ -1,0 +1,73 @@
+{
+  "id": "os3-process-states",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Process Durumları ve Geçişleri",
+    "ar": "حالات Process والانتقال بينها"
+  },
+  "order": 1,
+  "prerequisites": [
+    "os3-process-memory"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Process Durumları ve Geçişleri",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 9,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "حالات Process والانتقال بينها",
+      "summary": "شرح المفاهيم والرسومات وعلاقاتها مع الفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 9,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Process Durumları ve Geçişleri",
+      "summary": "İşlem yönetiminin temel kavramları, şemalar ve kritik sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 9,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
