@@ -7,9 +7,7 @@
     "ar": "تنفيذ Threads داخل Windows وLinux"
   },
   "order": 9,
-  "prerequisites": [
-    "os4-thread-cancellation"
-  ],
+  "prerequisites": ["os4-thread-cancellation"],
   "related": [],
   "documents": [
     {

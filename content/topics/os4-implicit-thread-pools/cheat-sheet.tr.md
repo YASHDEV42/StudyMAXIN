@@ -1,7 +1,9 @@
 ## Implicit Threading
+
 Compiler/runtime/library yönetiminin bir bölümünü devralır. Slayt örnekleri: **Thread Pools, OpenMP, GCD**.
 
 ## Thread pool
+
 1. Worker thread'ler hazırlanır.
 2. Request/task kuyruğa konur.
 3. Boş worker görevi işler.

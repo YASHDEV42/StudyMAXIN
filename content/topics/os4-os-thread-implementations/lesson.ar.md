@@ -14,12 +14,12 @@ Linux بيمثّل Processes وThreads عبر **Task (görev)** ضمن الـ Ke
 
 المحاضرة بتعرض **`clone()`** لإنشاء Task وتحديد شو بدنا نشارك بين Parent وChild حسب Flags (bayrak bitleri):
 
-| Flag | شو بيشارك؟ |
-| --- | --- |
-| **CLONE_FS** | File-System Context (dosya sistemi bağlamı) |
-| **CLONE_VM** | Address Space / Virtual Memory (sanal bellek) |
-| **CLONE_SIGHAND** | Signal Handlers (sinyal işleyicileri) |
-| **CLONE_FILES** | Open File Descriptor Table (açık dosya tanıtıcı tablosu) |
+| Flag              | شو بيشارك؟                                               |
+| ----------------- | -------------------------------------------------------- |
+| **CLONE_FS**      | File-System Context (dosya sistemi bağlamı)              |
+| **CLONE_VM**      | Address Space / Virtual Memory (sanal bellek)            |
+| **CLONE_SIGHAND** | Signal Handlers (sinyal işleyicileri)                    |
+| **CLONE_FILES**   | Open File Descriptor Table (açık dosya tanıtıcı tablosu) |
 
 **fork() (çatallama)** بيعمل Child Process، بينما `clone()` بيسمح تحكّم أدق في مشاركة الـ Resources. مهم ننتبه إن CLONE_FS مش معناها مشاركة كل محتويات Disk؛ المقصود معلومات سياق الملفات مثل Current Working Directory.
 

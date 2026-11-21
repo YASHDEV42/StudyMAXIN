@@ -7,9 +7,7 @@
     "ar": "مكتبات Threads وأمثلة Pthreads وWindows وJava"
   },
   "order": 4,
-  "prerequisites": [
-    "os4-thread-models"
-  ],
+  "prerequisites": ["os4-thread-models"],
   "related": [],
   "documents": [
     {

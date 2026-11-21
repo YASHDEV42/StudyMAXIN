@@ -26,10 +26,10 @@ Kaynak örneği `dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)` 
 
 ## Kısa karşılaştırma
 
-| OpenMP | GCD |
-| --- | --- |
-| Derleyici direktifleriyle parallel regions ve loops | Dispatch queues üzerinde task/blocks |
-| C/C++/Fortran shared-memory computation | Apple platformlarının iş kuyruğu yaklaşımı |
-| `#pragma omp parallel for` | `dispatch_async()` |
+| OpenMP                                              | GCD                                        |
+| --------------------------------------------------- | ------------------------------------------ |
+| Derleyici direktifleriyle parallel regions ve loops | Dispatch queues üzerinde task/blocks       |
+| C/C++/Fortran shared-memory computation             | Apple platformlarının iş kuyruğu yaklaşımı |
+| `#pragma omp parallel for`                          | `dispatch_async()`                         |
 
 **Kaynak dışı ek:** Parallel `for` içindeki iterasyonlar aynı değişkene kontrolsüz yazarsa race condition oluşabilir.

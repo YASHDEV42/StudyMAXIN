@@ -7,9 +7,7 @@
     "ar": "مفهوم Threads والفرق عن Processes وفوائدها"
   },
   "order": 0,
-  "prerequisites": [
-    "os3-pcb-context"
-  ],
+  "prerequisites": ["os3-pcb-context"],
   "related": [],
   "documents": [
     {

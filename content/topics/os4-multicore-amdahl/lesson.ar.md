@@ -1,6 +1,6 @@
 ## Concurrency (eşzamanlı ilerleme) مقابل Parallelism (paralellik)
 
-**Concurrency** معناها أكتر من Task (görev) عم تتقدم بالتنفيذ عبر الزمن؛ على **Single-core (tek çekirdek)** الـ CPU بيوزّع الوقت بينها. **Parallelism** يعني Tasks عم تنفذ *بنفس اللحظة* على Cores مختلفة. مخطط السلايد 9 بيفرق بين Thread T1–T4 على Core واحدة، وبين توزيعهن على Core 1 وCore 2.
+**Concurrency** معناها أكتر من Task (görev) عم تتقدم بالتنفيذ عبر الزمن؛ على **Single-core (tek çekirdek)** الـ CPU بيوزّع الوقت بينها. **Parallelism** يعني Tasks عم تنفذ _بنفس اللحظة_ على Cores مختلفة. مخطط السلايد 9 بيفرق بين Thread T1–T4 على Core واحدة، وبين توزيعهن على Core 1 وCore 2.
 
 بـ **Multicore (çok çekirdekli)** ممكن يكون في Concurrency داخل كل Core وParallelism بين Cores.
 

@@ -9,11 +9,11 @@ Slayt 39, tamamlanmadan thread'in çalışmasını sonlandırma isteğini **canc
 
 ## Pthreads modları — kaynak tablosu
 
-| Mode | State | Type | Anlamı |
-| --- | --- | --- | --- |
-| Off | Disabled | — | İptal isteği işlenmez |
-| Deferred | Enabled | Deferred | İptal, cancellation point'te gerçekleşir |
-| Asynchronous | Enabled | Asynchronous | İptal mümkün olan anda gerçekleşebilir |
+| Mode         | State    | Type         | Anlamı                                   |
+| ------------ | -------- | ------------ | ---------------------------------------- |
+| Off          | Disabled | —            | İptal isteği işlenmez                    |
+| Deferred     | Enabled  | Deferred     | İptal, cancellation point'te gerçekleşir |
+| Asynchronous | Enabled  | Asynchronous | İptal mümkün olan anda gerçekleşebilir   |
 
 `pthread_cancel(tid)` hedef thread'e iptal isteği gönderir; **fonksiyonun dönmesi thread'in derhal bitmiş olduğunu garanti etmez.** Tamamlanmayı kesin beklemek gerekiyorsa uygun join/cleanup gerekir.
 

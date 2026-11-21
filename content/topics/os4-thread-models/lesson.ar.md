@@ -18,11 +18,11 @@
 
 M User Threads بتتوزّع على N Kernel Threads، وقد يكون N أقل من M. بيعطي Flexibility (esneklik)، وممكن يشغّل أكتر من Thread بالتوازي إذا N أكبر من 1، بس التنفيذ أعقد.
 
-| Model | الربط | Parallelism |
-| --- | --- | --- |
-| Many-to-One | M:1 | لا، ضمن Kernel Thread واحدة |
-| One-to-One | 1:1 | ممكن |
-| Many-to-Many | M:N | ممكن إذا N أكثر من 1 |
+| Model        | الربط | Parallelism                 |
+| ------------ | ----- | --------------------------- |
+| Many-to-One  | M:1   | لا، ضمن Kernel Thread واحدة |
+| One-to-One   | 1:1   | ممكن                        |
+| Many-to-Many | M:N   | ممكن إذا N أكثر من 1        |
 
 **ملاحظة مصدرية:** أمثلة Solaris/UNIX بالمخططات بتوصف أنظمة تاريخية؛ مو شرط تستخدم كل النسخ الحديثة نفس الربط.
 

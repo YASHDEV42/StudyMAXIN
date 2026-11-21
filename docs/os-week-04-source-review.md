@@ -8,18 +8,18 @@
 
 ## Review by topic
 
-| Topic | Slide/page range | Material reviewed |
-| --- | --- | --- |
-| os4-thread-foundations | 2–7 | Thread/process distinction; private stack/registers; word processor and web server; 4 benefits |
-| os4-multicore-amdahl | 8–11 | Core/thread timelines, concurrency vs parallelism, Amdahl's Law, Windows CPU logical processor screenshot |
-| os4-multicore-challenges | 12–16 | Five challenges and data/task parallelism diagrams |
-| os4-thread-models | 17–21 | Kernel/user threads, many-to-one, one-to-one, many-to-many mapping figures |
-| os4-thread-libraries | 22–29 | Async/fork-join, Pthreads summation C code, Windows CreateThread/Wait, Java Runnable/Thread code |
-| os4-implicit-thread-pools | 30–34 | Implicit threading, thread pool and QueueUserWorkItem, Process Explorer and htop |
-| os4-openmp-gcd | 35–36 | OpenMP parallel / parallel for, GCD blocks and dispatch queues |
-| os4-fork-signals | 37–38 | Historical fork/exec slides and signal delivery APIs |
-| os4-thread-cancellation | 39 | Cancellation modes and Pthreads cancellation table |
-| os4-os-thread-implementations | 40–41 | Windows ETHREAD/KTHREAD/TEB; Linux task_struct/clone flags |
+| Topic                         | Slide/page range | Material reviewed                                                                                         |
+| ----------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
+| os4-thread-foundations        | 2–7              | Thread/process distinction; private stack/registers; word processor and web server; 4 benefits            |
+| os4-multicore-amdahl          | 8–11             | Core/thread timelines, concurrency vs parallelism, Amdahl's Law, Windows CPU logical processor screenshot |
+| os4-multicore-challenges      | 12–16            | Five challenges and data/task parallelism diagrams                                                        |
+| os4-thread-models             | 17–21            | Kernel/user threads, many-to-one, one-to-one, many-to-many mapping figures                                |
+| os4-thread-libraries          | 22–29            | Async/fork-join, Pthreads summation C code, Windows CreateThread/Wait, Java Runnable/Thread code          |
+| os4-implicit-thread-pools     | 30–34            | Implicit threading, thread pool and QueueUserWorkItem, Process Explorer and htop                          |
+| os4-openmp-gcd                | 35–36            | OpenMP parallel / parallel for, GCD blocks and dispatch queues                                            |
+| os4-fork-signals              | 37–38            | Historical fork/exec slides and signal delivery APIs                                                      |
+| os4-thread-cancellation       | 39               | Cancellation modes and Pthreads cancellation table                                                        |
+| os4-os-thread-implementations | 40–41            | Windows ETHREAD/KTHREAD/TEB; Linux task_struct/clone flags                                                |
 
 **Publication structure:** 10 coherent topics × (Arabic lesson + Turkish lesson + Turkish exam cheat sheet) = **30 documents**. The glossary adds **43 Turkish-English vocabulary entries** and reuses **1 existing entries**.
 

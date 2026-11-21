@@ -14,10 +14,10 @@ Slayt 12–15'te işletim sistemi tasarımcısının **scheduling (zamanlama)** 
 
 **Task parallelism (görev paralelliği):** Farklı thread'ler farklı işlevleri yürütür. Aynı veri üzerinde farklı hesaplar (örneğin ortalama ve maksimum bulmak) veya ayrı verilerle farklı işlemler yapılabilir.
 
-| Özellik | Data parallelism | Task parallelism |
-| --- | --- | --- |
-| Bölünen | Veri kümesi | Yapılacak görevler |
-| İşlem | Çoğunlukla aynı | Genellikle farklı |
+| Özellik      | Data parallelism                  | Task parallelism                        |
+| ------------ | --------------------------------- | --------------------------------------- |
+| Bölünen      | Veri kümesi                       | Yapılacak görevler                      |
+| İşlem        | Çoğunlukla aynı                   | Genellikle farklı                       |
 | Slayt örneği | Diziyi parçalara ayırarak toplama | Aynı dizide farklı istatistik hesapları |
 
 **Kaynak dışı not:** Paralelleştirme kararını vermeden önce işin seri bağımlılıklarını ve veri aktarma maliyetini ölçmek gerekir.

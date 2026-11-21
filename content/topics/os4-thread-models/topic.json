@@ -7,9 +7,7 @@
     "ar": "نماذج User Threads وKernel Threads"
   },
   "order": 3,
-  "prerequisites": [
-    "os4-multicore-challenges"
-  ],
+  "prerequisites": ["os4-multicore-challenges"],
   "related": [],
   "documents": [
     {

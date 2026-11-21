@@ -10,11 +10,11 @@
 
 ## جدول السلايد
 
-| Mode | State | Type |
-| --- | --- | --- |
-| Off | Disabled | — |
-| Deferred | Enabled | Deferred |
-| Asynchronous | Enabled | Asynchronous |
+| Mode         | State    | Type         |
+| ------------ | -------- | ------------ |
+| Off          | Disabled | —            |
+| Deferred     | Enabled  | Deferred     |
+| Asynchronous | Enabled  | Asynchronous |
 
 دالة Pthreads `pthread_cancel(tid)` بتبعث Cancellation Request (iptal isteği)؛ **ما في ضمان إن Thread خلصت فور رجوع الدالة**. للتأكد من انتهاء Worker، ممكن تحتاج `pthread_join()` وتعامل صحيح مع Resources.
 

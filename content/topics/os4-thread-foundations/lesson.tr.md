@@ -4,11 +4,11 @@
 
 ## Aynı process içinde ne paylaşılır?
 
-| Ortak kaynaklar | Her thread'e özgü durum |
-| --- | --- |
+| Ortak kaynaklar                                                    | Her thread'e özgü durum                                               |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------- |
 | Code/text, global data, heap, adres alanı ve açık dosya kaynakları | Program counter, CPU registers, stack ve thread'e özgü yürütme durumu |
 
-Bu nedenle thread'ler birbirinin **shared data (paylaşılan veri)** alanlarına erişebilir. Ancak bir thread'in *yerel değişkeni* veya stack'i otomatik olarak ortak değildir. Slaytta geçen “thread'ler her şeyi paylaşır” cümlesi basitleştirmedir.
+Bu nedenle thread'ler birbirinin **shared data (paylaşılan veri)** alanlarına erişebilir. Ancak bir thread'in _yerel değişkeni_ veya stack'i otomatik olarak ortak değildir. Slaytta geçen “thread'ler her şeyi paylaşır” cümlesi basitleştirmedir.
 
 **Process vs thread:** Ayrı process'ler çoğunlukla ayrı sanal adres alanları ve daha güçlü izolasyon kullanır. Aynı process'in thread'leri adres alanını paylaşır; bir thread'deki yanlış bellek yazımı diğerlerini de etkileyebilir. Thread oluşturmanın ve aynı process içindeki thread context switch'in maliyeti birçok durumda daha düşük olabilir; bu mutlak performans garantisi değildir.
 

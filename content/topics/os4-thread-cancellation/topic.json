@@ -7,9 +7,7 @@
     "ar": "إلغاء Threads وأنواع Cancellation"
   },
   "order": 8,
-  "prerequisites": [
-    "os4-fork-signals"
-  ],
+  "prerequisites": ["os4-fork-signals"],
   "related": [],
   "documents": [
     {

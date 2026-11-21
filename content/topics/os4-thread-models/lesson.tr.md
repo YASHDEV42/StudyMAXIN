@@ -16,10 +16,10 @@
 
 **M user thread → N kernel thread**, burada N, M'den küçük veya eşit olabilir. Kullanıcı runtime'ı thread'leri farklı kernel yürütme birimlerine dağıtır. Bloklanan bir thread, yeterli kernel yürütme birimi varsa diğerlerinin devamını engellemek zorunda değildir. Model daha esnek ama runtime tasarımı daha karmaşıktır. Kaynak slayt 21'in Solaris/UNIX örnekleri tarihsel olarak okunmalıdır.
 
-| Model | Eşleme | Çok çekirdekte gerçek paralellik | Blocking call etkisi |
-| --- | --- | --- | --- |
-| Many-to-one | M:1 | Aynı process için hayır | Tüm süreci durdurabilir |
-| One-to-one | 1:1 | Evet | Başka thread devam edebilir |
-| Many-to-many | M:N | N>1 ise evet | Uygulamaya ve eşlemeye bağlı |
+| Model        | Eşleme | Çok çekirdekte gerçek paralellik | Blocking call etkisi         |
+| ------------ | ------ | -------------------------------- | ---------------------------- |
+| Many-to-one  | M:1    | Aynı process için hayır          | Tüm süreci durdurabilir      |
+| One-to-one   | 1:1    | Evet                             | Başka thread devam edebilir  |
+| Many-to-many | M:N    | N>1 ise evet                     | Uygulamaya ve eşlemeye bağlı |
 
 **Kaynak dışı not:** User-mode scheduling, kernel desteği olmadığı anlamına gelmez; sadece hangi düzeyin hangi iş parçacığını yönettiğini ayırır.

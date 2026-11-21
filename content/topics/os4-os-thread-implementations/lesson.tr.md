@@ -12,12 +12,12 @@ Windows, kullanıcı tarafından oluşturulan normal thread'leri **one-to-one (b
 
 Linux'ta süreçler ve thread'ler kernel'in **task (görev)** kavramı üzerinden temsil edilir. Slayt **`task_struct`** veri yapısını ve **`clone()`** çağrısının paylaşıma ilişkin flags kullanmasını anlatır. `fork()` bir child oluşturmanın yaygın yoludur; `clone()` daha ince paylaşım kontrolü sağlar.
 
-| Flag | Slaytın anlamı |
-| --- | --- |
-| **CLONE_FS** | Dosya sistemi bağlam bilgileri paylaşılır |
-| **CLONE_VM** | Aynı sanal bellek/address space paylaşılır |
+| Flag              | Slaytın anlamı                                  |
+| ----------------- | ----------------------------------------------- |
+| **CLONE_FS**      | Dosya sistemi bağlam bilgileri paylaşılır       |
+| **CLONE_VM**      | Aynı sanal bellek/address space paylaşılır      |
 | **CLONE_SIGHAND** | Signal handler/disposition bilgileri paylaşılır |
-| **CLONE_FILES** | Açık file descriptor tablosu paylaşılır |
+| **CLONE_FILES**   | Açık file descriptor tablosu paylaşılır         |
 
 Thread'lerin hangi kaynakları paylaştığını anlamak için bu flags özellikle önemlidir. Kaynak “file system” derken tüm disk içeriğinin kopyalanmasını ya da paylaşımını değil, process'in dosya sistemiyle ilgili bağlamını anlatır.
 

@@ -7,9 +7,7 @@
     "ar": "تحديات Multicore وأنواع Parallelism"
   },
   "order": 2,
-  "prerequisites": [
-    "os4-multicore-amdahl"
-  ],
+  "prerequisites": ["os4-multicore-amdahl"],
   "related": [],
   "documents": [
     {
