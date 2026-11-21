@@ -7,9 +7,7 @@
     "ar": "التصميم كائني التوجه ومخططات Class"
   },
   "order": 0,
-  "prerequisites": [
-    "software-design-introduction"
-  ],
+  "prerequisites": ["software-design-introduction"],
   "related": [],
   "documents": [
     {

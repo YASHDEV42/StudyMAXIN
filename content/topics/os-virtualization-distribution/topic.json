@@ -1,0 +1,98 @@
+{
+  "id": "os-virtualization-distribution",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Sanallaştırma ve Dağıtık Sistemler",
+    "ar": "الافتراضية والأنظمة الموزعة"
+  },
+  "order": 5,
+  "prerequisites": ["os-execution-resource-management"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Virtualization والأنظمة الموزعة",
+      "summary": "VMM، Emulation، Network Operating System وLAN/WAN.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 50,
+              "to": 55
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 67,
+              "to": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Sanallaştırma, Emülasyon ve Dağıtık Sistemler",
+      "summary": "VMM, host/guest, emulation ve ağ üzerinden kaynak paylaşımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 50,
+              "to": 55
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 67,
+              "to": 72
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Sanallaştırma ve Dağıtık Sistemler — Sınav Özeti",
+      "summary": "VMM–emulation farkları ve ağ çeşitleri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 50,
+              "to": 55
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 67,
+              "to": 72
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

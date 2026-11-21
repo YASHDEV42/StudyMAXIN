@@ -1,0 +1,98 @@
+{
+  "id": "os-organization-interrupts",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Bilgisayar Organizasyonu, Bootstrap ve Kesmeler",
+    "ar": "تنظيم الكمبيوتر والإقلاع والـ Interrupts"
+  },
+  "order": 1,
+  "prerequisites": ["os-introduction"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف بيتواصل CPU مع الأجهزة؟",
+      "summary": "Bus وControllers وDrivers، الإقلاع، Interrupt وISR.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 12,
+              "to": 20
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 10,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Aygıt Denetleyicileri, Açılış ve Interrupt Mekanizması",
+      "summary": "CPU, bus, driver, bootstrap, interrupt vector ve handler işleyişi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 12,
+              "to": 20
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 10,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Organizasyon ve Interrupt — Sınav Özeti",
+      "summary": "Controller–driver farkı, boot sırası ve kesme işleme adımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 12,
+              "to": 20
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 10,
+              "to": 14
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

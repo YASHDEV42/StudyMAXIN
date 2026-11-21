@@ -1,0 +1,98 @@
+{
+  "id": "os-architectures",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Çok İşlemcili ve Kümelenmiş Sistemler",
+    "ar": "معماريات المعالجات المتعددة والـ Clusters"
+  },
+  "order": 3,
+  "prerequisites": ["os-storage-dma"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو الفرق بين Multicore وMultiprocessing وClustering؟",
+      "summary": "Single Processor وSMP/AMP وUMA/NUMA والأنظمة المجمّعة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 56,
+              "to": 63
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 23,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Tek İşlemcili, Çok İşlemcili ve Cluster Mimarileri",
+      "summary": "SMP/AMP, UMA/NUMA, multicore ve kümelenmiş sistemlerin farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 56,
+              "to": 63
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 23,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Bilgisayar Mimarileri — Sınav Özeti",
+      "summary": "SMP/AMP, UMA/NUMA ve cluster karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 56,
+              "to": 63
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 23,
+              "to": 32
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

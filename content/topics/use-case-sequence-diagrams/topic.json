@@ -7,9 +7,7 @@
     "ar": "مخططات Use Case وSequence (الأسبوع 2B)"
   },
   "order": 0,
-  "prerequisites": [
-    "object-oriented-class-diagrams"
-  ],
+  "prerequisites": ["object-oriented-class-diagrams"],
   "related": [],
   "documents": [
     {

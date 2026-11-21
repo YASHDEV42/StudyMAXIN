@@ -1,0 +1,98 @@
+{
+  "id": "os-introduction",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "İşletim Sistemi: Amaçlar, Katmanlar ve Kernel",
+    "ar": "ما هو نظام التشغيل؟ الأهداف والطبقات والـ Kernel"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو هو نظام التشغيل وليش منحتاجه؟",
+      "summary": "الأهداف، مكونات النظام الأربعة، إدارة الموارد، Kernel وMiddleware.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 4,
+              "to": 10
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sisteminin Rolü ve Bileşenleri",
+      "summary": "İşletim sisteminin amaçları, katmanlı bilgisayar modeli ve kernel ayrımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 4,
+              "to": 10
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi — Sınav Özeti",
+      "summary": "Tanım, üç ana amaç, dört bileşen ve kernel ayrımı.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 4,
+              "to": 10
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 4,
+              "to": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

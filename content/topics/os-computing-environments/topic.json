@@ -1,0 +1,98 @@
+{
+  "id": "os-computing-environments",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Hesaplama Ortamları, Bulut ve Açık Kaynak",
+    "ar": "بيئات الحوسبة والسحابة والمصدر المفتوح"
+  },
+  "order": 6,
+  "prerequisites": ["os-virtualization-distribution"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "من Client–Server للسحابة وأنظمة Real-Time",
+      "summary": "Mobile وP2P وCloud SaaS/PaaS/IaaS وEmbedded وGNU/Linux.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 64,
+              "to": 79
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 65,
+              "to": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Hesaplama Ortamları, Bulut Hizmetleri ve Özgür Yazılım",
+      "summary": "Client–server/P2P, SaaS/PaaS/IaaS, real-time ve GNU/Linux.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 64,
+              "to": 79
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 65,
+              "to": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Hesaplama Ortamları — Sınav Özeti",
+      "summary": "Client–server/P2P, cloud türleri, real-time ve özgür yazılım.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 64,
+              "to": 79
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 65,
+              "to": 80
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
