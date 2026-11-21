@@ -1,0 +1,73 @@
+{
+  "id": "os3-shortest-job-first",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Shortest Job First (SJF) — Çalışılmış Örnek",
+    "ar": "Shortest Job First مع مثال محلول"
+  },
+  "order": 10,
+  "prerequisites": [
+    "os3-process-scheduling"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Shortest Job First (SJF) — Çalışılmış Örnek",
+      "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Shortest Job First مع مثال محلول",
+      "summary": "شرح الأمثلة والمقارنات وطريقة حل المسائل.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Shortest Job First (SJF) — Çalışılmış Örnek",
+      "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
