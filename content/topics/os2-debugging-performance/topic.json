@@ -28,15 +28,6 @@
               "to": 59
             }
           ]
-        },
-        {
-          "sourceId": "os-week-02-servisleri",
-          "pages": [
-            {
-              "from": 1,
-              "to": 2
-            }
-          ]
         }
       ]
     },
@@ -56,15 +47,6 @@
               "to": 59
             }
           ]
-        },
-        {
-          "sourceId": "os-week-02-servisleri",
-          "pages": [
-            {
-              "from": 1,
-              "to": 2
-            }
-          ]
         }
       ]
     },
@@ -82,15 +64,6 @@
             {
               "from": 56,
               "to": 59
-            }
-          ]
-        },
-        {
-          "sourceId": "os-week-02-servisleri",
-          "pages": [
-            {
-              "from": 1,
-              "to": 2
             }
           ]
         }
