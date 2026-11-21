@@ -8534,5 +8534,260 @@
     "topicIds": [
       "os-execution-resource-management"
     ]
+  },
+  {
+    "id": "os-process",
+    "term": {
+      "tr": "Süreç",
+      "en": "Process"
+    },
+    "examples": {
+      "tr": "İşletim sistemi hazır süreci CPU'da çalıştırır.",
+      "en": "The operating system runs a ready process on the CPU."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
+  },
+  {
+    "id": "os-cpu-scheduling",
+    "term": {
+      "tr": "İşlemci zamanlaması",
+      "en": "CPU scheduling"
+    },
+    "examples": {
+      "tr": "İşlemci zamanlaması sıradaki süreci seçer.",
+      "en": "CPU scheduling selects the next process."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
+  },
+  {
+    "id": "os-memory-management",
+    "term": {
+      "tr": "Bellek yönetimi",
+      "en": "Memory management"
+    },
+    "examples": {
+      "tr": "Bellek yönetimi boş alanları tahsis eder.",
+      "en": "Memory management allocates free regions."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
+  },
+  {
+    "id": "os-protection",
+    "term": {
+      "tr": "Koruma",
+      "en": "Protection"
+    },
+    "examples": {
+      "tr": "Koruma mekanizması dosya erişimini denetler.",
+      "en": "The protection mechanism controls file access."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-execution-resource-management"
+    ]
+  },
+  {
+    "id": "os-symmetric-multiprocessing",
+    "term": {
+      "tr": "Simetrik çoklu işlem",
+      "en": "Symmetric multiprocessing"
+    },
+    "examples": {
+      "tr": "SMP mimarisinde işlemciler ana belleği paylaşır.",
+      "en": "Processors share main memory in SMP architecture."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-architectures"
+    ]
+  },
+  {
+    "id": "os-cache-coherence",
+    "term": {
+      "tr": "Önbellek tutarlılığı",
+      "en": "Cache coherence"
+    },
+    "examples": {
+      "tr": "Önbellek tutarlılığı işlemcilerin aynı güncel veriyi görmesini sağlar.",
+      "en": "Cache coherence helps processors observe consistent current data."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-kernel-data-structures"
+    ]
+  },
+  {
+    "id": "os-linked-list",
+    "term": {
+      "tr": "Bağlı liste",
+      "en": "Linked list"
+    },
+    "examples": {
+      "tr": "Bağlı listede düğümler işaretçilerle bağlanır.",
+      "en": "Nodes are connected by pointers in a linked list."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-kernel-data-structures"
+    ]
+  },
+  {
+    "id": "os-stack",
+    "term": {
+      "tr": "Yığın",
+      "en": "Stack"
+    },
+    "examples": {
+      "tr": "Yığın son giren ilk çıkar kuralını uygular.",
+      "en": "A stack follows the last-in-first-out rule."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-kernel-data-structures"
+    ]
+  },
+  {
+    "id": "os-queue",
+    "term": {
+      "tr": "Kuyruk",
+      "en": "Queue"
+    },
+    "examples": {
+      "tr": "Yazdırma işleri kuyrukta bekler.",
+      "en": "Print jobs wait in a queue."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-kernel-data-structures"
+    ]
+  },
+  {
+    "id": "os-bitmap",
+    "term": {
+      "tr": "Bit haritası",
+      "en": "Bitmap"
+    },
+    "examples": {
+      "tr": "Bit haritası kaynakların boş veya dolu olduğunu gösterebilir.",
+      "en": "A bitmap can show whether resources are free or occupied."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-kernel-data-structures"
+    ]
+  },
+  {
+    "id": "os-virtualization",
+    "term": {
+      "tr": "Sanallaştırma",
+      "en": "Virtualization"
+    },
+    "examples": {
+      "tr": "Sanallaştırma aynı donanım üzerinde ayrı sistemler çalıştırır.",
+      "en": "Virtualization runs separate systems on the same hardware."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-virtualization-distribution"
+    ]
+  },
+  {
+    "id": "os-distributed-system",
+    "term": {
+      "tr": "Dağıtık sistem",
+      "en": "Distributed system"
+    },
+    "examples": {
+      "tr": "Dağıtık sistem düğümleri ağ üzerinden haberleşir.",
+      "en": "Nodes of a distributed system communicate across a network."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-virtualization-distribution"
+    ]
+  },
+  {
+    "id": "os-cloud-computing",
+    "term": {
+      "tr": "Bulut bilişim",
+      "en": "Cloud computing"
+    },
+    "examples": {
+      "tr": "Bulut bilişim sunucu kaynaklarını hizmet olarak sunar.",
+      "en": "Cloud computing offers server resources as a service."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-computing-environments"
+    ]
+  },
+  {
+    "id": "os-real-time-system",
+    "term": {
+      "tr": "Gerçek zamanlı sistem",
+      "en": "Real-time system"
+    },
+    "examples": {
+      "tr": "Gerçek zamanlı sistem sonucu zaman sınırı içinde üretmelidir.",
+      "en": "A real-time system must produce the result within its deadline."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-computing-environments"
+    ]
+  },
+  {
+    "id": "os-open-source",
+    "term": {
+      "tr": "Açık kaynak",
+      "en": "Open source"
+    },
+    "examples": {
+      "tr": "Açık kaynak lisansı kodun kullanım koşullarını tanımlar.",
+      "en": "An open-source license defines conditions for use of code."
+    },
+    "courseIds": [
+      "operating-systems"
+    ],
+    "topicIds": [
+      "os-computing-environments"
+    ]
   }
 ]
