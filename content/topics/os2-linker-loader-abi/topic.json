@@ -1,0 +1,73 @@
+{
+  "id": "os2-linker-loader-abi",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "Linker, Loader, ABI ve İşletim Sistemi Bağımlılığı",
+    "ar": "Linker وLoader وABI وتوافق البرامج"
+  },
+  "order": 5,
+  "prerequisites": [
+    "os2-system-programs"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "ليش برنامج compiled على OS ممكن ما يشتغل على OS تاني؟",
+      "summary": "Object Files وLinking/Loading وRelocation وDynamic Libraries وPortability.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 38,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Derleme, Linkleme, Yükleme ve Uygulama Taşınabilirliği",
+      "summary": "Object file → executable, relocations, dynamic libraries, API/ABI ve üç portlama yolu.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 38,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Linker / Loader / ABI — Sınav Özeti",
+      "summary": "Derleme zinciri, dynamic linking, API/ABI, portability yolları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-servisleri",
+          "pages": [
+            {
+              "from": 38,
+              "to": 46
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
