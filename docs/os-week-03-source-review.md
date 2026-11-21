@@ -44,3 +44,5 @@ Only `content/` and this source ledger changed. Private originals remain private
 ## Next-unit boundary
 
 The next week should be reviewed separately; notably, **thread scheduling and synchronization** may be taught in later materials even though this week briefly introduces cooperative/concurrent execution. Do not claim a full threads module was processed from these originals.
+
+The final content checks run against the formatted main-branch tree; deployment verification is a separate hosting check.
