@@ -1,0 +1,73 @@
+{
+  "id": "os5-mutex-spinlock",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Mutex Locks, Acquire/Release ve Spinlock",
+    "ar": "Mutex وSpinlock وطريقة الانتظار"
+  },
+  "order": 5,
+  "prerequisites": [
+    "os5-atomic-hardware"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Mutex وSpinlock وطريقة الانتظار",
+      "summary": "أمثلة الكود والعمليات الذرية والفروق الأساسية للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 21,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Mutex Locks, Acquire/Release ve Spinlock",
+      "summary": "Kaynak kod örnekleri, atomiklik ve kritik sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 21,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Mutex Locks, Acquire/Release ve Spinlock",
+      "summary": "Kaynak kod örnekleri, atomiklik ve kritik sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 21,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

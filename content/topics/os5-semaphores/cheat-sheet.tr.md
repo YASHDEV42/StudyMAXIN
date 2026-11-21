@@ -1,0 +1,8 @@
+- **Binary semaphore:** 0/1; çok process bekleyebilir.
+- **Counting semaphore:** Başlangıç kaynak sayısı; `S=3` → 3 permit.
+- **wait(P):** Permit al / sayı azalt veya bekle.
+- **signal(V):** Permit bırak / bekleyeni uyandır.
+- **wait/signal atomik olmalı**; çıplak `while; S--` tek başına thread-safe değildir.
+- **Ordering:** `synch=0`; P1: `S1; signal`; P2: `wait; S2` ⇒ **S1 önce S2**.
+- **Mutex ≠ binary semaphore:** Ownership farkı.
+- Blocking semaphore busy-wait zorunlu kılmaz.

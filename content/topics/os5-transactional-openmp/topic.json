@@ -1,0 +1,73 @@
+{
+  "id": "os5-transactional-openmp",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Transactional Memory ve OpenMP Critical",
+    "ar": "Transactional Memory وOpenMP Critical"
+  },
+  "order": 9,
+  "prerequisites": [
+    "os5-monitors"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Transactional Memory وOpenMP Critical",
+      "summary": "شرح الحلول البديلة مع كود OpenMP والمقارنة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 34,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Transactional Memory ve OpenMP Critical",
+      "summary": "Transactional memory ve OpenMP critical kod örnekleri, sınav farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 34,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Transactional Memory ve OpenMP Critical",
+      "summary": "Transactional memory ve OpenMP critical kod örnekleri, sınav farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 34,
+              "to": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

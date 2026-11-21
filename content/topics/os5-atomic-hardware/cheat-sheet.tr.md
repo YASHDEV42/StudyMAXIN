@@ -1,0 +1,7 @@
+- **Lock:** Acquire → critical → release.
+- **Test-and-set:** Atomik eski değeri döndürür, target=true yapar.
+- **CAS:** Atomik compare expected; eşitse new value yaz, eskiyi döndür.
+- **Spin/busy wait:** Lock alınana kadar CPU'da dönme.
+- **Interrupt disable:** Tek CPU'da bazı kernel durumları; multicore genel çözüm değildir.
+- **TAS/CAS:** Mutual exclusion sağlar; **tek başına bounded waiting yok**.
+- **Slayt 20:** `waiting[n]`, `j=(i+1)%n` ile sıradaki bekleyeni arar; teorik n−1 geçiş sınırı.

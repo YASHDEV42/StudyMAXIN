@@ -1,0 +1,73 @@
+{
+  "id": "os5-semaphores",
+  "courseId": "operating-systems",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "Binary/Counting Semaphore ve wait–signal",
+    "ar": "Semaphores وأنواعها وعمليتا wait/signal"
+  },
+  "order": 6,
+  "prerequisites": [
+    "os5-mutex-spinlock"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Semaphores وأنواعها وعمليتا wait/signal",
+      "summary": "شرح Semaphores وMonitors والأمثلة المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 22,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Binary/Counting Semaphore ve wait–signal",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 22,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Binary/Counting Semaphore ve wait–signal",
+      "summary": "Semafor ve monitor kodları, sorunlar ve sınav karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-05-synchronization",
+          "pages": [
+            {
+              "from": 22,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

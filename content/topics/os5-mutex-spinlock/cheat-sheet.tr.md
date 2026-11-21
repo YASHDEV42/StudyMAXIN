@@ -1,0 +1,7 @@
+- **Mutex:** Mutual exclusion aracıdır.
+- **acquire():** Kilidi edin; **release():** Bırak.
+- **Critical-section şeması:** acquire → CS → release → remainder.
+- **Spinlock:** Busy waiting sırasında CPU tüketir.
+- **Blocking mutex:** Beklemeyi OS scheduler'a devredebilir.
+- **Slayt uyarısı:** `if available` / `available=false` atomik yapılmazsa koruma güvenli değildir.
+- Kilidi bırakmamak bekleme veya deadlock yaratabilir.
