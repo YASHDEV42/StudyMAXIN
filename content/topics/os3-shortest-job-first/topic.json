@@ -18,18 +18,8 @@
       "title": "Shortest Job First (SJF) — Çalışılmış Örnek",
       "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
       "status": "published",
-      "provenance": "source-based",
-      "sources": [
-        {
-          "sourceId": "os-week-03-processes",
-          "pages": [
-            {
-              "from": 20,
-              "to": 25
-            }
-          ]
-        }
-      ]
+      "provenance": "illustrative",
+      "sources": []
     },
     {
       "kind": "lesson",
@@ -37,18 +27,8 @@
       "title": "Shortest Job First مع مثال محلول",
       "summary": "شرح الأمثلة والمقارنات وطريقة حل المسائل.",
       "status": "published",
-      "provenance": "source-based",
-      "sources": [
-        {
-          "sourceId": "os-week-03-processes",
-          "pages": [
-            {
-              "from": 20,
-              "to": 25
-            }
-          ]
-        }
-      ]
+      "provenance": "illustrative",
+      "sources": []
     },
     {
       "kind": "cheat-sheet",
@@ -56,18 +36,8 @@
       "title": "Shortest Job First (SJF) — Çalışılmış Örnek",
       "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
       "status": "published",
-      "provenance": "source-based",
-      "sources": [
-        {
-          "sourceId": "os-week-03-processes",
-          "pages": [
-            {
-              "from": 20,
-              "to": 25
-            }
-          ]
-        }
-      ]
+      "provenance": "illustrative",
+      "sources": []
     }
   ]
 }
