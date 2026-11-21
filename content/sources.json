@@ -268,5 +268,35 @@
       "sha256": "38c0e433d2e8e422fc0811a94a23eaa27e9b31b5c6108f40a641241c7829f4f5",
       "reason": "Privately supplied lecture PDF; redistribution permission not established. The source is referenced but not uploaded to the public repository."
     }
+  },
+  {
+    "id": "os-week-01-201",
+    "title": "İşletim Sistemleri — Operating System Concepts, 10. baskı · 2.01.pdf",
+    "language": "tr",
+    "courseIds": [
+      "operating-systems"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "2_01.pdf",
+      "pageCount": 83,
+      "sha256": "90b3a720e19e5d41cbdf107456a61ba47054c27b370e6506dbade169fa7ea932",
+      "reason": "Provided as a conversation attachment; reviewed for this week; redistribution rights not established. Original filename: 2.01.pdf."
+    }
+  },
+  {
+    "id": "os-week-01-hafta",
+    "title": "İşletim Sistemleri — Hafta 1.pdf - Hafta_1.pdf",
+    "language": "tr",
+    "courseIds": [
+      "operating-systems"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "Hafta_1.pdf",
+      "pageCount": 80,
+      "sha256": "7f973a47a034965cba53bbd584ed0772f6e07975f36fcf884c1450bab6a40cf9",
+      "reason": "Provided as a conversation attachment; reviewed for this week; redistribution rights not established. Original filename: Hafta 1.pdf - Hafta_1.pdf."
+    }
   }
 ]
