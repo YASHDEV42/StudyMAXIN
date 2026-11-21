@@ -1,0 +1,73 @@
+{
+  "id": "os4-fork-signals",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Thread'lerde fork, exec ve Signal Handling",
+    "ar": "سلوك fork/exec وSignal Handling مع Threads"
+  },
+  "order": 7,
+  "prerequisites": [
+    "os4-openmp-gcd"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "سلوك fork/exec وSignal Handling مع Threads",
+      "summary": "تفاصيل تنفيذ Threads مع أمثلة وأسئلة الامتحان الأساسية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 37,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Thread'lerde fork, exec ve Signal Handling",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 37,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Thread'lerde fork, exec ve Signal Handling",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 37,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

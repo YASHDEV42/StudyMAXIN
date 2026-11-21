@@ -1,0 +1,73 @@
+{
+  "id": "os4-thread-models",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "User ve Kernel Thread Modelleri",
+    "ar": "نماذج User Threads وKernel Threads"
+  },
+  "order": 3,
+  "prerequisites": [
+    "os4-multicore-challenges"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "نماذج User Threads وKernel Threads",
+      "summary": "شرح الدرس والأمثلة والفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 17,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "User ve Kernel Thread Modelleri",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 17,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "User ve Kernel Thread Modelleri",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 17,
+              "to": 21
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

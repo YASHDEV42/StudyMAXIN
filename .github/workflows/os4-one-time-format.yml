@@ -1,0 +1,30 @@
+name: One-time OS Week 04 format and validation
+on:
+  push:
+    branches:
+      - content/os-week-04
+permissions:
+  contents: write
+jobs:
+  format-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Format Week 04 content
+        run: |
+          npx prettier --write content/courses/operating-systems/course.json content/topics/os4-*/*.md content/topics/os4-*/topic.json content/glossary.json content/sources.json docs/os-week-04-source-review.md
+      - name: Verify full project
+        run: npm run check
+      - name: Save formatted content and remove this temporary workflow
+        run: |
+          rm .github/workflows/os4-one-time-format.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/courses/operating-systems/course.json content/topics/os4-*/*.md content/topics/os4-*/topic.json content/glossary.json content/sources.json docs/os-week-04-source-review.md .github/workflows/os4-one-time-format.yml
+          git diff --cached --quiet || git commit -m "style(os): format validated week four threads materials"
+          git push

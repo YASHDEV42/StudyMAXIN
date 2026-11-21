@@ -1,0 +1,73 @@
+{
+  "id": "os4-multicore-amdahl",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Concurrency, Parallelism ve Amdahl Kuralı",
+    "ar": "Concurrency وParallelism وقانون Amdahl"
+  },
+  "order": 1,
+  "prerequisites": [
+    "os4-thread-foundations"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Concurrency وParallelism وقانون Amdahl",
+      "summary": "شرح السلايدات والمخططات مع الأمثلة والفروق الامتحانية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 8,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Concurrency, Parallelism ve Amdahl Kuralı",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 8,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Concurrency, Parallelism ve Amdahl Kuralı",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 8,
+              "to": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
