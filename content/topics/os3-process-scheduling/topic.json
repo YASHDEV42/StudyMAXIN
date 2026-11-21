@@ -1,0 +1,71 @@
+{
+  "id": "os3-process-scheduling",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Process Kuyrukları ve Zamanlayıcılar",
+    "ar": "طوابير العمليات وأنواع الـ Schedulers"
+  },
+  "order": 3,
+  "prerequisites": ["os3-pcb-context"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Process Kuyrukları ve Zamanlayıcılar",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "طوابير العمليات وأنواع الـ Schedulers",
+      "summary": "شرح مبادئ إدارة العمليات والأمثلة والفرق بين المفاهيم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Process Kuyrukları ve Zamanlayıcılar",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 20,
+              "to": 25
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

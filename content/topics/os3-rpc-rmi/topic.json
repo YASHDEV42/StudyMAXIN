@@ -1,0 +1,71 @@
+{
+  "id": "os3-rpc-rmi",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Remote Procedure Call (RPC) ve Java RMI",
+    "ar": "RPC وJava RMI: استدعاء الدوال عن بعد"
+  },
+  "order": 9,
+  "prerequisites": ["os3-sockets-client-server"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Remote Procedure Call (RPC) ve Java RMI",
+      "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 60,
+              "to": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "RPC وJava RMI: استدعاء الدوال عن بعد",
+      "summary": "شرح الأمثلة والمقارنات وطريقة حل المسائل.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 60,
+              "to": 68
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Remote Procedure Call (RPC) ve Java RMI",
+      "summary": "Kaynaktaki yöntemlerin ayrımı, örnekler ve sınav için formüller.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 60,
+              "to": 68
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "os3-creation-termination",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Process Creation, fork, exec, wait ve Termination",
+    "ar": "إنشاء العمليات وإنهاؤها: fork وexec وwait"
+  },
+  "order": 4,
+  "prerequisites": ["os3-process-scheduling"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Process Creation, fork, exec, wait ve Termination",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 27,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "إنشاء العمليات وإنهاؤها: fork وexec وwait",
+      "summary": "شرح مبادئ إدارة العمليات والأمثلة والفرق بين المفاهيم.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 27,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Process Creation, fork, exec, wait ve Termination",
+      "summary": "Süreç yönetiminde mekanizma, karşılaştırma ve sınav soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 27,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

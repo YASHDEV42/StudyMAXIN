@@ -284,5 +284,18 @@
       "sha256": "71fddf23055adcdf5e2324a4c7bc58d685c53bd098ebf47349591239a6fd2680",
       "reason": "User-provided scanned slide PDF; physically inspected as images. Filename normalized for metadata; original 'ders_2_İşletim Sistemi Servisleri_1.pdf'. No redistribution permission established."
     }
+  },
+  {
+    "id": "os-week-03-processes",
+    "title": "Module 4_ Processes - ders3.pdf — Bölüm 3: İşlemler (Operating System Concepts with Java, 8th Edition)",
+    "language": "tr",
+    "courseIds": ["operating-systems"],
+    "location": {
+      "kind": "private",
+      "filename": "Module_4_Processes_ders3.pdf",
+      "pageCount": 68,
+      "sha256": "9a2733a5e2faae407fa2a81fa0e8586c857d763ef2d4517bc67912f2756c1a79",
+      "reason": "Supplied in conversation, reviewed as original lecture slides; no redistribution permission."
+    }
   }
 ]

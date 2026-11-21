@@ -4560,8 +4560,12 @@
       "tr": "Öbek, çalışma sırasında dinamik ayrılan nesneleri tutar.",
       "en": "The heap stores objects allocated dynamically at runtime."
     },
-    "courseIds": ["information-systems-security"],
-    "topicIds": ["memory-safety-foundations", "memory-bug-families"]
+    "courseIds": ["information-systems-security", "operating-systems"],
+    "topicIds": [
+      "memory-safety-foundations",
+      "memory-bug-families",
+      "os3-process-memory"
+    ]
   },
   {
     "id": "stack-frame",
@@ -6732,7 +6736,7 @@
       "en": "A stack follows the last-in-first-out rule."
     },
     "courseIds": ["operating-systems"],
-    "topicIds": ["os-kernel-data-structures"]
+    "topicIds": ["os-kernel-data-structures", "os3-process-memory"]
   },
   {
     "id": "os-queue",
@@ -7344,5 +7348,616 @@
     },
     "courseIds": ["operating-systems"],
     "topicIds": ["os2-system-generation-boot"]
+  },
+  {
+    "id": "os3-process",
+    "term": {
+      "tr": "İşlem",
+      "en": "Process"
+    },
+    "examples": {
+      "tr": "Çalışan her işlem ayrı yürütme durumuna sahiptir.",
+      "en": "Each running process has a separate execution state."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-memory"]
+  },
+  {
+    "id": "os3-program-counter",
+    "term": {
+      "tr": "Program sayacı",
+      "en": "Program counter"
+    },
+    "examples": {
+      "tr": "Program sayacı sıradaki komutun adresini tutar.",
+      "en": "The program counter stores the next instruction address."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-memory"]
+  },
+  {
+    "id": "os3-address-space",
+    "term": {
+      "tr": "Adres alanı",
+      "en": "Address space"
+    },
+    "examples": {
+      "tr": "Her süreç kendisine ayrılmış adres alanında yürütülür.",
+      "en": "Each process executes in its assigned address space."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-memory"]
+  },
+  {
+    "id": "os3-ready-state",
+    "term": {
+      "tr": "Hazır durum",
+      "en": "Ready state"
+    },
+    "examples": {
+      "tr": "Hazır durumdaki süreç işlemci sırası bekler.",
+      "en": "A process in the ready state waits for the CPU."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-states"]
+  },
+  {
+    "id": "os3-waiting-state",
+    "term": {
+      "tr": "Bekleme durumu",
+      "en": "Waiting state"
+    },
+    "examples": {
+      "tr": "Giriş çıkış isteyen süreç bekleme durumuna geçebilir.",
+      "en": "A process requesting I/O may enter the waiting state."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-states"]
+  },
+  {
+    "id": "os3-to-be-terminated",
+    "term": {
+      "tr": "Sonlandırılmak",
+      "en": "To be terminated"
+    },
+    "examples": {
+      "tr": "Süreç tamamlanınca sonlandırılır.",
+      "en": "The process is terminated after completion."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-states"]
+  },
+  {
+    "id": "os3-dispatcher",
+    "term": {
+      "tr": "Görevlendirici",
+      "en": "Dispatcher"
+    },
+    "examples": {
+      "tr": "Görevlendirici seçilen sürece CPU denetimini verir.",
+      "en": "The dispatcher transfers CPU control to the selected process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-pcb-context"]
+  },
+  {
+    "id": "os3-context-switch",
+    "term": {
+      "tr": "Bağlam değiştirme",
+      "en": "Context switch"
+    },
+    "examples": {
+      "tr": "Bağlam değiştirme sırasında eski sürecin kayıtları korunur.",
+      "en": "During a context switch the old process state is preserved."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-pcb-context"]
+  },
+  {
+    "id": "os3-process-control-block",
+    "term": {
+      "tr": "İşlem kontrol bloğu",
+      "en": "Process control block"
+    },
+    "examples": {
+      "tr": "İşlem kontrol bloğu CPU yazmaçlarını ve durumu saklar.",
+      "en": "The PCB stores CPU registers and process state."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-pcb-context"]
+  },
+  {
+    "id": "os3-overhead",
+    "term": {
+      "tr": "Ek yük",
+      "en": "Overhead"
+    },
+    "examples": {
+      "tr": "Sık bağlam değiştirmek ek yük oluşturur.",
+      "en": "Frequent context switching creates overhead."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-pcb-context"]
+  },
+  {
+    "id": "os3-ready-queue",
+    "term": {
+      "tr": "Hazır kuyruğu",
+      "en": "Ready queue"
+    },
+    "examples": {
+      "tr": "Zamanlayıcı hazır kuyruğundan işlem seçer.",
+      "en": "The scheduler selects a process from the ready queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-job-queue",
+    "term": {
+      "tr": "İş kuyruğu",
+      "en": "Job queue"
+    },
+    "examples": {
+      "tr": "Yeni işler iş kuyruğunda biriktirilebilir.",
+      "en": "New jobs can be accumulated in the job queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-device-queue",
+    "term": {
+      "tr": "Aygıt kuyruğu",
+      "en": "Device queue"
+    },
+    "examples": {
+      "tr": "Diski bekleyen işlemler aygıt kuyruğuna alınabilir.",
+      "en": "Processes waiting for the disk may enter the device queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-short-term-scheduler",
+    "term": {
+      "tr": "Kısa vadeli zamanlayıcı",
+      "en": "Short-term scheduler"
+    },
+    "examples": {
+      "tr": "Kısa vadeli zamanlayıcı CPU'ya atanacak süreci seçer.",
+      "en": "The short-term scheduler picks the next CPU process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-long-term-scheduler",
+    "term": {
+      "tr": "Uzun vadeli zamanlayıcı",
+      "en": "Long-term scheduler"
+    },
+    "examples": {
+      "tr": "Uzun vadeli zamanlayıcı hangi işlerin kabul edileceğine karar verir.",
+      "en": "The long-term scheduler decides which jobs are admitted."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-medium-term-scheduler",
+    "term": {
+      "tr": "Orta vadeli zamanlayıcı",
+      "en": "Medium-term scheduler"
+    },
+    "examples": {
+      "tr": "Orta vadeli zamanlayıcı süreçleri geçici olarak bellekten çıkarabilir.",
+      "en": "The medium-term scheduler may temporarily swap out processes."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-swapping",
+    "term": {
+      "tr": "Takaslama",
+      "en": "Swapping"
+    },
+    "examples": {
+      "tr": "Takaslama süreçlerin bellekten geçici çıkarılmasını sağlar.",
+      "en": "Swapping can temporarily remove processes from memory."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-cpu-bound",
+    "term": {
+      "tr": "İşlemci ağırlıklı",
+      "en": "CPU-bound"
+    },
+    "examples": {
+      "tr": "İşlemci ağırlıklı süreç uzun CPU hesapları yapar.",
+      "en": "A CPU-bound process performs lengthy CPU computations."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-i-o-bound",
+    "term": {
+      "tr": "Giriş çıkış ağırlıklı",
+      "en": "I/O-bound"
+    },
+    "examples": {
+      "tr": "Giriş çıkış ağırlıklı süreç sıkça aygıt yanıtını bekler.",
+      "en": "An I/O-bound process often waits for device responses."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-process-scheduling"]
+  },
+  {
+    "id": "os3-child-process",
+    "term": {
+      "tr": "Alt işlem",
+      "en": "Child process"
+    },
+    "examples": {
+      "tr": "Alt işlem üst işlem tarafından oluşturulabilir.",
+      "en": "A child process can be created by a parent process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-creation-termination"]
+  },
+  {
+    "id": "os3-parent-process",
+    "term": {
+      "tr": "Üst işlem",
+      "en": "Parent process"
+    },
+    "examples": {
+      "tr": "Üst işlem alt işlemin bitmesini bekleyebilir.",
+      "en": "A parent process may wait for its child to finish."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-creation-termination"]
+  },
+  {
+    "id": "os3-process-identifier",
+    "term": {
+      "tr": "İşlem kimliği",
+      "en": "Process identifier"
+    },
+    "examples": {
+      "tr": "İşlem kimliği sistemde süreci ayırt eder.",
+      "en": "The process identifier distinguishes the process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-creation-termination"]
+  },
+  {
+    "id": "os3-cooperating-process",
+    "term": {
+      "tr": "İşbirlikçi işlem",
+      "en": "Cooperating process"
+    },
+    "examples": {
+      "tr": "İşbirlikçi işlem başka süreçlerle veri paylaşabilir.",
+      "en": "A cooperating process may share data with other processes."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-producer",
+    "term": {
+      "tr": "Üretici",
+      "en": "Producer"
+    },
+    "examples": {
+      "tr": "Üretici veriyi tampon belleğe yerleştirir.",
+      "en": "A producer places data into a buffer."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-consumer",
+    "term": {
+      "tr": "Tüketici",
+      "en": "Consumer"
+    },
+    "examples": {
+      "tr": "Tüketici tampon bellekteki öğeyi okur.",
+      "en": "A consumer reads an item from the buffer."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-buffer",
+    "term": {
+      "tr": "Tampon bellek",
+      "en": "Buffer"
+    },
+    "examples": {
+      "tr": "Tampon bellek üretilen öğeleri geçici saklar.",
+      "en": "A buffer temporarily stores produced items."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-circular-buffer",
+    "term": {
+      "tr": "Dairesel tampon",
+      "en": "Circular buffer"
+    },
+    "examples": {
+      "tr": "Dairesel tampon son konumdan başlangıca döner.",
+      "en": "A circular buffer wraps from its last position to its first."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-synchronization",
+    "term": {
+      "tr": "Eşzamanlama",
+      "en": "Synchronization"
+    },
+    "examples": {
+      "tr": "Eşzamanlama ortak veriye erişimi düzenler.",
+      "en": "Synchronization coordinates access to shared data."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-models-producer"]
+  },
+  {
+    "id": "os3-direct-communication",
+    "term": {
+      "tr": "Doğrudan iletişim",
+      "en": "Direct communication"
+    },
+    "examples": {
+      "tr": "Doğrudan iletişimde hedef sürecin adı belirtilir.",
+      "en": "Direct communication names the target process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-indirect-communication",
+    "term": {
+      "tr": "Dolaylı iletişim",
+      "en": "Indirect communication"
+    },
+    "examples": {
+      "tr": "Dolaylı iletişimde mesaj posta kutusuna gönderilir.",
+      "en": "In indirect communication a message is sent to a mailbox."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-mailbox",
+    "term": {
+      "tr": "Posta kutusu",
+      "en": "Mailbox"
+    },
+    "examples": {
+      "tr": "İki alıcı aynı posta kutusunu paylaşabilir.",
+      "en": "Two receivers may share the same mailbox."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-blocking-send",
+    "term": {
+      "tr": "Bloklayan gönderim",
+      "en": "Blocking send"
+    },
+    "examples": {
+      "tr": "Bloklayan gönderimde süreç teslim koşulunu bekler.",
+      "en": "With a blocking send the process waits for the delivery condition."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-nonblocking-receive",
+    "term": {
+      "tr": "Bloklamayan alım",
+      "en": "Nonblocking receive"
+    },
+    "examples": {
+      "tr": "Bloklamayan alım hemen sonuç döndürebilir.",
+      "en": "A nonblocking receive may return immediately."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-zero-capacity",
+    "term": {
+      "tr": "Sıfır kapasite",
+      "en": "Zero capacity"
+    },
+    "examples": {
+      "tr": "Sıfır kapasiteli bağlantıda gönderici alıcıyla buluşur.",
+      "en": "In a zero-capacity link sender and receiver rendezvous."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-messaging"]
+  },
+  {
+    "id": "os3-memory-segment",
+    "term": {
+      "tr": "Bellek bölgesi",
+      "en": "Memory segment"
+    },
+    "examples": {
+      "tr": "Paylaşılan bellek bölgesi sürece bağlanabilir.",
+      "en": "A shared-memory segment can be attached to a process."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-platforms"]
+  },
+  {
+    "id": "os3-local-procedure-call",
+    "term": {
+      "tr": "Yerel prosedür çağrısı",
+      "en": "Local procedure call"
+    },
+    "examples": {
+      "tr": "Yerel prosedür çağrısı aynı makinedeki süreçleri bağlayabilir.",
+      "en": "A local procedure call can connect processes on one machine."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-ipc-platforms"]
+  },
+  {
+    "id": "os3-endpoint",
+    "term": {
+      "tr": "Uç nokta",
+      "en": "Endpoint"
+    },
+    "examples": {
+      "tr": "Soket ağ iletişiminin uç noktasıdır.",
+      "en": "A socket is an endpoint of network communication."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-sockets-client-server"]
+  },
+  {
+    "id": "os3-loopback-address",
+    "term": {
+      "tr": "Geri döngü adresi",
+      "en": "Loopback address"
+    },
+    "examples": {
+      "tr": "Geri döngü adresi yerel host'u gösterir.",
+      "en": "The loopback address refers to the local host."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-sockets-client-server"]
+  },
+  {
+    "id": "os3-connection-oriented",
+    "term": {
+      "tr": "Bağlantı odaklı",
+      "en": "Connection-oriented"
+    },
+    "examples": {
+      "tr": "TCP bağlantı odaklı aktarım sağlar.",
+      "en": "TCP provides connection-oriented transfer."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-sockets-client-server"]
+  },
+  {
+    "id": "os3-connectionless",
+    "term": {
+      "tr": "Bağlantısız",
+      "en": "Connectionless"
+    },
+    "examples": {
+      "tr": "UDP bağlantısız datagram iletişimi sağlar.",
+      "en": "UDP provides connectionless datagram communication."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-sockets-client-server"]
+  },
+  {
+    "id": "os3-remote-procedure-call",
+    "term": {
+      "tr": "Uzak prosedür çağrısı",
+      "en": "Remote procedure call"
+    },
+    "examples": {
+      "tr": "Uzak prosedür çağrısı ağdaki sunucu kodunu çalıştırabilir.",
+      "en": "An RPC can invoke server code across the network."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-rpc-rmi"]
+  },
+  {
+    "id": "os3-remote-method-invocation",
+    "term": {
+      "tr": "Uzak metot çağırma",
+      "en": "Remote method invocation"
+    },
+    "examples": {
+      "tr": "Java uzak metot çağırmayı destekler.",
+      "en": "Java supports remote method invocation."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-rpc-rmi"]
+  },
+  {
+    "id": "os3-to-marshal-parameters",
+    "term": {
+      "tr": "Parametre paketlemek",
+      "en": "To marshal parameters"
+    },
+    "examples": {
+      "tr": "İstemci vekili uzak çağrı parametrelerini paketler.",
+      "en": "The client stub marshals remote-call parameters."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-rpc-rmi"]
+  },
+  {
+    "id": "os3-turnaround-time",
+    "term": {
+      "tr": "Tamamlanma süresi",
+      "en": "Turnaround time"
+    },
+    "examples": {
+      "tr": "Tamamlanma süresi bitiş ve varış zamanları arasındaki farktır.",
+      "en": "Turnaround time is the difference between completion and arrival."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-shortest-job-first"]
+  },
+  {
+    "id": "os3-waiting-time",
+    "term": {
+      "tr": "Bekleme süresi",
+      "en": "Waiting time"
+    },
+    "examples": {
+      "tr": "Bekleme süresi toplam süreden CPU süresi çıkarılarak bulunur.",
+      "en": "Waiting time is turnaround time minus CPU burst."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-shortest-job-first"]
+  },
+  {
+    "id": "os3-non-preemptive",
+    "term": {
+      "tr": "Kesmesiz",
+      "en": "Non-preemptive"
+    },
+    "examples": {
+      "tr": "Kesmesiz SJF çalışan işi yeni iş geldiğinde durdurmaz.",
+      "en": "Non-preemptive SJF does not interrupt the running job."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-shortest-job-first"]
+  },
+  {
+    "id": "os3-starvation",
+    "term": {
+      "tr": "Aç kalma",
+      "en": "Starvation"
+    },
+    "examples": {
+      "tr": "Uzun bir iş kısa işlerin yoğunluğunda aç kalma yaşayabilir.",
+      "en": "A long job may suffer starvation amid many short jobs."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os3-shortest-job-first"]
   }
 ]
