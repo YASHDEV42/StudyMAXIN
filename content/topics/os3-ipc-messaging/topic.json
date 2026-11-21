@@ -1,0 +1,73 @@
+{
+  "id": "os3-ipc-messaging",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Message Passing: Direct/Indirect, Blocking ve Buffering",
+    "ar": "Message Passing المباشر وغير المباشر والتزامن"
+  },
+  "order": 6,
+  "prerequisites": [
+    "os3-ipc-models-producer"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Message Passing: Direct/Indirect, Blocking ve Buffering",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 43,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Message Passing المباشر وغير المباشر والتزامن",
+      "summary": "شرح النماذج والتطبيقات والمقارنات المهمة للتواصل بين العمليات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 43,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Message Passing: Direct/Indirect, Blocking ve Buffering",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 43,
+              "to": 49
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
