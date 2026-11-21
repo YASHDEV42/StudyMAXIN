@@ -51,3 +51,5 @@ The material is combined into **eleven coherent topics**, each with a separate A
 ## Validation and publishing contract
 
 The repository's `src/lib/content/schema.ts` remains authoritative. `npm run check` includes formatting, lint, typecheck, tests, validation and Next static build. Changes should reach `main` directly after checks succeed, without a PR; confirm the live hosting deployment independently.
+
+The next week must be reviewed against its own originals; these citations and completion claims apply only to Week 02.
