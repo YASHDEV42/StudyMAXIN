@@ -5,8 +5,8 @@
     "ar": "أنظمة التشغيل"
   },
   "description": {
-    "tr": "Haftalara göre düzenlenmiş, kaynak temelli Arapça ve Türkçe dersler ile Türkçe sınav özetleri. Birinci haftanın giriş materyali.",
-    "ar": "دروس أنظمة التشغيل حسب الأسابيع: شرح عربي وتركي وملخصات امتحانية تركية، بالاستناد إلى ملفات المحاضرات."
+    "tr": "Kaynaklara dayalı Arapça ve Türkçe dersler, Türkçe sınav özetleri ve kavram sözlüğü. İşletim sistemlerine giriş ve işletim sistemi yapıları haftaları yayımlandı.",
+    "ar": "دروس عربية وتركية وملخصات امتحانية تركية لأنظمة التشغيل، منظّمة حسب الأسابيع ومراجعة وفق سلايدات المحاضرات."
   },
   "order": 2,
   "chapters": [
@@ -17,6 +17,14 @@
         "ar": "الأسبوع الأول: مقدمة في أنظمة التشغيل"
       },
       "order": 0
+    },
+    {
+      "id": "week-02",
+      "title": {
+        "tr": "İşletim Sistemi Servisleri ve Yapıları",
+        "ar": "الأسبوع الثاني: خدمات أنظمة التشغيل وبنيتها"
+      },
+      "order": 1
     }
   ]
 }
