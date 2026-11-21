@@ -7,9 +7,7 @@
     "ar": "مبادئ التصميم وSOLID (الأسبوع 3 بالمصدر)"
   },
   "order": 0,
-  "prerequisites": [
-    "object-oriented-class-diagrams"
-  ],
+  "prerequisites": ["object-oriented-class-diagrams"],
   "related": [],
   "documents": [
     {

@@ -1,0 +1,122 @@
+{
+  "id": "os-execution-resource-management",
+  "courseId": "operating-systems",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Multiprogramming, Dual Mode ve Kaynak Yönetimi",
+    "ar": "تعدد البرامج وأنماط التنفيذ وإدارة الموارد"
+  },
+  "order": 4,
+  "prerequisites": ["os-architectures"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف نظام التشغيل بيوزّع وقت المعالج وبيحمي نفسه؟",
+      "summary": "Multiprogramming وMultitasking وDual Mode والـ Process/Memory/Storage Management.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 29,
+              "to": 44
+            },
+            {
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 34,
+              "to": 50
+            },
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Çoklu Programlama, İşlem Modları ve Kaynak Yönetimi",
+      "summary": "CPU paylaşımı, process, memory, file system, protection ve computing environments.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 29,
+              "to": 44
+            },
+            {
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 34,
+              "to": 50
+            },
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İşletim Sistemi İşlemleri — Sınav Özeti",
+      "summary": "Multiprogramming/multitasking, dual mode ve kaynak yönetimi özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-01-201",
+          "pages": [
+            {
+              "from": 29,
+              "to": 44
+            },
+            {
+              "from": 49,
+              "to": 49
+            }
+          ]
+        },
+        {
+          "sourceId": "os-week-01-hafta",
+          "pages": [
+            {
+              "from": 34,
+              "to": 50
+            },
+            {
+              "from": 52,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

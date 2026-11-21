@@ -1,9 +1,11 @@
 ## UML ve nesne yönelimli tasarım
+
 **UML (Unified Modeling Language)**, OMG tarafından yönetilen standart grafik modelleme dilidir; programlama dili değildir. Model gerçek sistemin sadeleştirilmiş temsilidir. UML, tasarımı koddan önce anlaşılır kılar ve ekip içi iletişimi destekler (PDF s. 3–4). Bu derste **Class Diagram** statik yapıyı, **Use Case Diagram** aktörlerin sistemden istediği işlevleri, **Sequence Diagram** ise senaryodaki mesajların sırasını gösterir (s. 5).
 
 **Class** ortak özellik/davranışların şablonu, **Object** ise çalışma zamanındaki örneğidir. OOD (Nesne Yönelimli Tasarım) sorumlulukları nesnelere paylaştırır ve gereksiz bağımlılıkları azaltır (s. 6).
 
 ## Dört temel tasarım kavramı
+
 **Abstraction (soyutlama):** önemli özellikleri seçer, gereksiz ayrıntıları gizler. ATM'nin para çekme işlevini sunması; ağ ve banka veritabanı ayrıntılarını göstermemesi (s. 7).
 
 **Encapsulation (kapsülleme):** iç durumu ve uygulama ayrıntılarını kontrollü arayüzün arkasında tutar. `BankAccount.balance` alanının public olmaması, `withdraw(amount)` ile kuralların denetlenmesi (s. 8).
@@ -17,6 +19,7 @@
 **Tasarım hedefi: High Cohesion + Low Coupling** (s. 12).
 
 ## Class Diagram notasyonu
+
 Class Diagram sistemin statik sınıf, attribute, operation ve ilişki yapısını gösteren structural UML diyagramıdır; mesajların zaman sırasını göstermez (s. 13).
 
 ```text
@@ -33,24 +36,25 @@ Student
 
 Üç bölme: sınıf adı / attributes / operations. Attribute: `<visibility> name: Type [multiplicity] = default {property}`; operation: `<visibility> method(parameters): ReturnType` (s. 14–16).
 
-| Sembol | Visibility | Anlam |
-| --- | --- | --- |
-| `+` | public | Genel erişim |
-| `-` | private | Dışarıdan doğrudan erişim yok |
-| `#` | protected | Sınıf ve türevlerine sınırlı erişim |
-| `~` | package | Aynı paket içinde erişim |
+| Sembol | Visibility | Anlam                               |
+| ------ | ---------- | ----------------------------------- |
+| `+`    | public     | Genel erişim                        |
+| `-`    | private    | Dışarıdan doğrudan erişim yok       |
+| `#`    | protected  | Sınıf ve türevlerine sınırlı erişim |
+| `~`    | package    | Aynı paket içinde erişim            |
 
 Görünürlük kapsülleme kararının UML ifadesidir. UML kodun birebir kopyası olmak zorunda değildir; tasarım öncesi ya da koddan tersine üretilebilir (s. 17–18).
 
 ## Altı temel sınıf ilişkisi
-| İlişki | Gösterim | Anlam | Örnek |
-| --- | --- | --- | --- |
-| Association (ortaklık) | Düz çizgi | yapısal knows/has-a | Student–Course |
-| Dependency (bağımlılık) | Kesikli açık ok | geçici uses/parametre | Film ..> Kanal |
-| Aggregation | Bütün ucunda boş elmas `◇` | zayıf part-of | Car ◇— Wheel |
-| Composition | Bütün ucunda dolu elmas `◆` | güçlü part-of/yaşam döngüsü | Order ◆— OrderLine |
-| Generalization / Inheritance | Üst sınıfa düz çizgi + boş üçgen | IS-A | Student → Person |
-| Realization | Interface'e kesikli çizgi + boş üçgen | implements | Service → Interface |
+
+| İlişki                       | Gösterim                              | Anlam                       | Örnek               |
+| ---------------------------- | ------------------------------------- | --------------------------- | ------------------- |
+| Association (ortaklık)       | Düz çizgi                             | yapısal knows/has-a         | Student–Course      |
+| Dependency (bağımlılık)      | Kesikli açık ok                       | geçici uses/parametre       | Film ..> Kanal      |
+| Aggregation                  | Bütün ucunda boş elmas `◇`            | zayıf part-of               | Car ◇— Wheel        |
+| Composition                  | Bütün ucunda dolu elmas `◆`           | güçlü part-of/yaşam döngüsü | Order ◆— OrderLine  |
+| Generalization / Inheritance | Üst sınıfa düz çizgi + boş üçgen      | IS-A                        | Student → Person    |
+| Realization                  | Interface'e kesikli çizgi + boş üçgen | implements                  | Service → Interface |
 
 **Association (s. 21, 23–24):** tek yönlü (Person → Address), çift yönlü (Student ↔ Course) veya reflexive (Directory–alt Directory / yönetici–çalışan) olabilir. Navigability ve iş kuralları ayrıca belirtilir.
 
@@ -65,9 +69,11 @@ Görünürlük kapsülleme kararının UML ifadesidir. UML kodun birebir kopyas�
 **Realization (s. 30–31):** class'ın interface sözleşmesini gerçekleştirmesi. Java'da `class C implements B`; interface başka interface'i `extends` ile genişletebilir. `interface B extends A; class C implements B` örneğinde B → A generalization, C → B realization çizilir.
 
 ## Gereksinimlerden diyagrama
+
 **Üniversite modeli (s. 29, 33–34):** School, Department, Course, Student, Instructor. Bir okulda en az bir bölüm; her bölüm tek okula bağlı; bölüm ders açar; öğretim üyesi ders verebilir; öğrenci sıfır veya daha çok ders alabilir. Bağlantı uçlarının multiplicity değerlerini problem metninden çıkar. Slayt modelinin ilişki adlarının ve yönlerinin gerçek kurallarla netleştirilmesi gerektiği belirtilir.
 
 **Yedi adım (s. 38):**
+
 1. Metindeki isimlerden aday sınıfları çıkar.
 2. Her sınıfın sorumluluğunu belirle; gereksizleri ele.
 3. Attribute, operation ve visibility ekle.
@@ -84,4 +90,4 @@ Görünürlük kapsülleme kararının UML ifadesidir. UML kodun birebir kopyas�
 
 **Tekrar soruları (s. 40):** Abstraction–Encapsulation farkı? High cohesion neden? Low coupling neden? `0..1`, `1..*`, `0..*` ne demek? Aggregation–Composition farkı? Generalization–Realization ayrımı?
 
-*Kaynak: Hafta 2 ders PDF'i, fiziksel s. 1–42; metin dersin terim ve örneklerini korur.*
+_Kaynak: Hafta 2 ders PDF'i, fiziksel s. 1–42; metin dersin terim ve örneklerini korur._

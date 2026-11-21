@@ -1,0 +1,22 @@
+{
+  "id": "operating-systems",
+  "title": {
+    "tr": "İşletim Sistemleri",
+    "ar": "أنظمة التشغيل"
+  },
+  "description": {
+    "tr": "Haftalara göre düzenlenmiş, kaynak temelli Arapça ve Türkçe dersler ile Türkçe sınav özetleri. Birinci haftanın giriş materyali.",
+    "ar": "دروس أنظمة التشغيل حسب الأسابيع: شرح عربي وتركي وملخصات امتحانية تركية، بالاستناد إلى ملفات المحاضرات."
+  },
+  "order": 2,
+  "chapters": [
+    {
+      "id": "week-01",
+      "title": {
+        "tr": "İşletim Sistemlerine Giriş",
+        "ar": "الأسبوع الأول: مقدمة في أنظمة التشغيل"
+      },
+      "order": 0
+    }
+  ]
+}
