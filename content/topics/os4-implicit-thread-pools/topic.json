@@ -1,0 +1,71 @@
+{
+  "id": "os4-implicit-thread-pools",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Implicit Threading ve Thread Pools",
+    "ar": "Implicit Threading وThread Pools"
+  },
+  "order": 5,
+  "prerequisites": ["os4-thread-libraries"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Implicit Threading وThread Pools",
+      "summary": "شرح الدرس والأمثلة والفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 30,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Implicit Threading ve Thread Pools",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 30,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Implicit Threading ve Thread Pools",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 30,
+              "to": 34
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

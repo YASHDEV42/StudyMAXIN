@@ -1,0 +1,71 @@
+{
+  "id": "os4-thread-libraries",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Pthreads, Windows Threads ve Java Thread Örnekleri",
+    "ar": "مكتبات Threads وأمثلة Pthreads وWindows وJava"
+  },
+  "order": 4,
+  "prerequisites": ["os4-thread-models"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مكتبات Threads وأمثلة Pthreads وWindows وJava",
+      "summary": "شرح الدرس والأمثلة والفروق المهمة للامتحان.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Pthreads, Windows Threads ve Java Thread Örnekleri",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Pthreads, Windows Threads ve Java Thread Örnekleri",
+      "summary": "Kavramları, slayt örneklerini ve sınav için kritik farkları açıklar.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 22,
+              "to": 29
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

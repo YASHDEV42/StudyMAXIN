@@ -1,0 +1,71 @@
+{
+  "id": "os4-thread-foundations",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Thread Kavramı, Process Farkı ve Sağladığı Faydalar",
+    "ar": "مفهوم Threads والفرق عن Processes وفوائدها"
+  },
+  "order": 0,
+  "prerequisites": ["os3-pcb-context"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "مفهوم Threads والفرق عن Processes وفوائدها",
+      "summary": "شرح السلايدات والمخططات مع الأمثلة والفروق الامتحانية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 2,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Thread Kavramı, Process Farkı ve Sağladığı Faydalar",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 2,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Thread Kavramı, Process Farkı ve Sağladığı Faydalar",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 2,
+              "to": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

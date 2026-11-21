@@ -1,0 +1,71 @@
+{
+  "id": "os4-multicore-challenges",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Multicore Programlamanın Zorlukları ve Paralellik Türleri",
+    "ar": "تحديات Multicore وأنواع Parallelism"
+  },
+  "order": 2,
+  "prerequisites": ["os4-multicore-amdahl"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تحديات Multicore وأنواع Parallelism",
+      "summary": "شرح السلايدات والمخططات مع الأمثلة والفروق الامتحانية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 12,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Multicore Programlamanın Zorlukları ve Paralellik Türleri",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 12,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Multicore Programlamanın Zorlukları ve Paralellik Türleri",
+      "summary": "Slayt şemaları, önemli ayrımlar, örnekler ve sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 12,
+              "to": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

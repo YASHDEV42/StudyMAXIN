@@ -4993,8 +4993,8 @@
       "tr": "Kayıt haftasında ölçeklenebilirlik kritik hale gelir.",
       "en": "Scalability becomes critical during enrollment week."
     },
-    "courseIds": ["software-design"],
-    "topicIds": ["software-design-introduction"]
+    "courseIds": ["software-design", "operating-systems"],
+    "topicIds": ["software-design-introduction", "os4-thread-foundations"]
   },
   {
     "id": "modifiability",
@@ -7959,5 +7959,564 @@
     },
     "courseIds": ["operating-systems"],
     "topicIds": ["os3-shortest-job-first"]
+  },
+  {
+    "id": "os4-thread",
+    "term": {
+      "tr": "İş parçacığı",
+      "en": "Thread"
+    },
+    "examples": {
+      "tr": "Bir işlem birden fazla iş parçacığı çalıştırabilir.",
+      "en": "A process can run more than one thread."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-foundations"]
+  },
+  {
+    "id": "os4-responsiveness",
+    "term": {
+      "tr": "Yanıt verebilirlik",
+      "en": "Responsiveness"
+    },
+    "examples": {
+      "tr": "Ayrı bir thread arayüzün yanıt verebilirliğini artırabilir.",
+      "en": "A separate thread may improve UI responsiveness."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-foundations"]
+  },
+  {
+    "id": "os4-resource-sharing",
+    "term": {
+      "tr": "Kaynak paylaşımı",
+      "en": "Resource sharing"
+    },
+    "examples": {
+      "tr": "Aynı process'in thread'leri kaynak paylaşımı yapar.",
+      "en": "Threads in one process share resources."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-foundations"]
+  },
+  {
+    "id": "os4-concurrency",
+    "term": {
+      "tr": "Eşzamanlılık",
+      "en": "Concurrency"
+    },
+    "examples": {
+      "tr": "Eşzamanlılık tek çekirdekte zaman paylaşımıyla sağlanabilir.",
+      "en": "Concurrency can be achieved on one core by time sharing."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-parallelism",
+    "term": {
+      "tr": "Paralellik",
+      "en": "Parallelism"
+    },
+    "examples": {
+      "tr": "Paralellik iki çekirdekte gerçek zamanlı yürütmeyi mümkün kılar.",
+      "en": "Parallelism enables simultaneous execution on two cores."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-logical-processor",
+    "term": {
+      "tr": "Mantıksal işlemci",
+      "en": "Logical processor"
+    },
+    "examples": {
+      "tr": "Görev Yöneticisi sekiz mantıksal işlemci gösteriyor.",
+      "en": "Task Manager shows eight logical processors."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-physical-core",
+    "term": {
+      "tr": "Fiziksel çekirdek",
+      "en": "Physical core"
+    },
+    "examples": {
+      "tr": "Bu CPU dört fiziksel çekirdeğe sahiptir.",
+      "en": "This CPU has four physical cores."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-speedup",
+    "term": {
+      "tr": "Hızlanma",
+      "en": "Speedup"
+    },
+    "examples": {
+      "tr": "Amdahl kuralı teorik hızlanmanın üst sınırını açıklar.",
+      "en": "Amdahl's law describes an upper bound on theoretical speedup."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-serial-portion",
+    "term": {
+      "tr": "Seri bölüm",
+      "en": "Serial portion"
+    },
+    "examples": {
+      "tr": "Seri bölüm paralelleştirmeyle hızlanmaz.",
+      "en": "The serial portion is not accelerated by parallelization."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-amdahl"]
+  },
+  {
+    "id": "os4-to-balance-workload",
+    "term": {
+      "tr": "İş yükünü dengelemek",
+      "en": "To balance workload"
+    },
+    "examples": {
+      "tr": "Programcı iş yükünü çekirdekler arasında dengelemelidir.",
+      "en": "The programmer should balance workload among cores."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-challenges"]
+  },
+  {
+    "id": "os4-data-splitting",
+    "term": {
+      "tr": "Veri bölümleme",
+      "en": "Data splitting"
+    },
+    "examples": {
+      "tr": "Veri bölümleme önbellek erişimini etkileyebilir.",
+      "en": "Data splitting can affect cache access."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-challenges"]
+  },
+  {
+    "id": "os4-data-dependency",
+    "term": {
+      "tr": "Veri bağımlılığı",
+      "en": "Data dependency"
+    },
+    "examples": {
+      "tr": "Veri bağımlılığı bazı görevleri beklemeye zorlar.",
+      "en": "Data dependency forces some tasks to wait."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-challenges"]
+  },
+  {
+    "id": "os4-data-parallelism",
+    "term": {
+      "tr": "Veri paralelliği",
+      "en": "Data parallelism"
+    },
+    "examples": {
+      "tr": "Veri paralelliği diziyi parçalara ayırır.",
+      "en": "Data parallelism divides the array into parts."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-challenges"]
+  },
+  {
+    "id": "os4-task-parallelism",
+    "term": {
+      "tr": "Görev paralelliği",
+      "en": "Task parallelism"
+    },
+    "examples": {
+      "tr": "Görev paralelliği farklı hesapları thread'lere dağıtır.",
+      "en": "Task parallelism assigns different computations to threads."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-multicore-challenges"]
+  },
+  {
+    "id": "os4-kernel-level-thread",
+    "term": {
+      "tr": "Çekirdek düzeyi iş parçacığı",
+      "en": "Kernel-level thread"
+    },
+    "examples": {
+      "tr": "Çekirdek düzeyi iş parçacığı işletim sistemi tarafından zamanlanır.",
+      "en": "A kernel-level thread is scheduled by the OS."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-models"]
+  },
+  {
+    "id": "os4-user-level-thread",
+    "term": {
+      "tr": "Kullanıcı düzeyi iş parçacığı",
+      "en": "User-level thread"
+    },
+    "examples": {
+      "tr": "Kullanıcı düzeyi iş parçacığı bir runtime tarafından yönetilebilir.",
+      "en": "A user-level thread can be managed by a runtime."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-models"]
+  },
+  {
+    "id": "os4-one-to-one-mapping",
+    "term": {
+      "tr": "Bire bir eşleme",
+      "en": "One-to-one mapping"
+    },
+    "examples": {
+      "tr": "Bire bir eşleme her kullanıcı thread'ine kernel thread ayırır.",
+      "en": "One-to-one mapping assigns a kernel thread to each user thread."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-models"]
+  },
+  {
+    "id": "os4-many-to-one-mapping",
+    "term": {
+      "tr": "Çoğa bir eşleme",
+      "en": "Many-to-one mapping"
+    },
+    "examples": {
+      "tr": "Çoğa bir eşlemede çok sayıda thread tek kernel thread kullanır.",
+      "en": "Many-to-one mapping uses one kernel thread for many user threads."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-models"]
+  },
+  {
+    "id": "os4-many-to-many-mapping",
+    "term": {
+      "tr": "Çoğa çok eşleme",
+      "en": "Many-to-many mapping"
+    },
+    "examples": {
+      "tr": "Çoğa çok eşleme esnek yürütme sağlar.",
+      "en": "Many-to-many mapping provides flexible execution."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-models"]
+  },
+  {
+    "id": "os4-thread-library",
+    "term": {
+      "tr": "İş parçacığı kütüphanesi",
+      "en": "Thread library"
+    },
+    "examples": {
+      "tr": "Thread kütüphanesi yeni thread oluşturmak için API sunar.",
+      "en": "A thread library provides APIs to create threads."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-libraries"]
+  },
+  {
+    "id": "os4-to-start",
+    "term": {
+      "tr": "Başlatmak",
+      "en": "To start"
+    },
+    "examples": {
+      "tr": "start metodu yeni bir Java thread'ini başlatır.",
+      "en": "The start method starts a new Java thread."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-libraries"]
+  },
+  {
+    "id": "os4-to-join",
+    "term": {
+      "tr": "Tamamlanmasını beklemek",
+      "en": "To join"
+    },
+    "examples": {
+      "tr": "Ana thread alt thread'in tamamlanmasını bekler.",
+      "en": "The parent thread joins the child thread."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-libraries"]
+  },
+  {
+    "id": "os4-thread-pool",
+    "term": {
+      "tr": "İş parçacığı havuzu",
+      "en": "Thread pool"
+    },
+    "examples": {
+      "tr": "İş parçacığı havuzu hazır worker'ları yeniden kullanır.",
+      "en": "A thread pool reuses available workers."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-implicit-thread-pools"]
+  },
+  {
+    "id": "os4-implicit-threading",
+    "term": {
+      "tr": "Dolaylı iş parçacığı oluşturma",
+      "en": "Implicit threading"
+    },
+    "examples": {
+      "tr": "Dolaylı iş parçacığı oluşturma yönetim görevini runtime'a aktarır.",
+      "en": "Implicit threading transfers management to the runtime."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-implicit-thread-pools"]
+  },
+  {
+    "id": "os4-task-queue",
+    "term": {
+      "tr": "Görev kuyruğu",
+      "en": "Task queue"
+    },
+    "examples": {
+      "tr": "Görev kuyruğu yeni istekleri bekletir.",
+      "en": "A task queue holds new requests."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-implicit-thread-pools"]
+  },
+  {
+    "id": "os4-to-reuse",
+    "term": {
+      "tr": "Yeniden kullanmak",
+      "en": "To reuse"
+    },
+    "examples": {
+      "tr": "Sunucu boşta olan worker thread'i yeniden kullanır.",
+      "en": "The server reuses an idle worker thread."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-implicit-thread-pools"]
+  },
+  {
+    "id": "os4-parallel-region",
+    "term": {
+      "tr": "Paralel bölge",
+      "en": "Parallel region"
+    },
+    "examples": {
+      "tr": "OpenMP paralel bölgeyi pragma ile tanımlar.",
+      "en": "OpenMP defines a parallel region with a pragma."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-openmp-gcd"]
+  },
+  {
+    "id": "os4-compiler-directive",
+    "term": {
+      "tr": "Derleyici yönergesi",
+      "en": "Compiler directive"
+    },
+    "examples": {
+      "tr": "Derleyici yönergesi paralel döngüyü işaretleyebilir.",
+      "en": "A compiler directive may mark a parallel loop."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-openmp-gcd"]
+  },
+  {
+    "id": "os4-dispatch-queue",
+    "term": {
+      "tr": "Dağıtım kuyruğu",
+      "en": "Dispatch queue"
+    },
+    "examples": {
+      "tr": "GCD blokları bir dağıtım kuyruğunda çalıştırır.",
+      "en": "GCD executes blocks on a dispatch queue."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-openmp-gcd"]
+  },
+  {
+    "id": "os4-serial-queue",
+    "term": {
+      "tr": "Seri kuyruk",
+      "en": "Serial queue"
+    },
+    "examples": {
+      "tr": "Seri kuyruk aynı anda tek bloğu yürütür.",
+      "en": "A serial queue executes one block at a time."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-openmp-gcd"]
+  },
+  {
+    "id": "os4-concurrent-queue",
+    "term": {
+      "tr": "Eşzamanlı kuyruk",
+      "en": "Concurrent queue"
+    },
+    "examples": {
+      "tr": "Eşzamanlı kuyruk birden çok bloğu başlatabilir.",
+      "en": "A concurrent queue can start multiple blocks."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-openmp-gcd"]
+  },
+  {
+    "id": "os4-signal-handling",
+    "term": {
+      "tr": "Sinyal işleme",
+      "en": "Signal handling"
+    },
+    "examples": {
+      "tr": "Sinyal işleme işletim sisteminden gelen olayları ele alır.",
+      "en": "Signal handling deals with operating system events."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-fork-signals"]
+  },
+  {
+    "id": "os4-synchronous-signal",
+    "term": {
+      "tr": "Senkron sinyal",
+      "en": "Synchronous signal"
+    },
+    "examples": {
+      "tr": "Geçersiz bellek erişimi senkron sinyal oluşturabilir.",
+      "en": "Invalid memory access may generate a synchronous signal."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-fork-signals"]
+  },
+  {
+    "id": "os4-asynchronous-signal",
+    "term": {
+      "tr": "Asenkron sinyal",
+      "en": "Asynchronous signal"
+    },
+    "examples": {
+      "tr": "Terminalde Ctrl+C asenkron sinyal üretebilir.",
+      "en": "Ctrl+C in a terminal can generate an asynchronous signal."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-fork-signals"]
+  },
+  {
+    "id": "os4-signal-mask",
+    "term": {
+      "tr": "Sinyal maskesi",
+      "en": "Signal mask"
+    },
+    "examples": {
+      "tr": "Sinyal maskesi belirli sinyalleri geçici engelleyebilir.",
+      "en": "A signal mask can temporarily block signals."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-fork-signals"]
+  },
+  {
+    "id": "os4-cancellation-request",
+    "term": {
+      "tr": "İptal isteği",
+      "en": "Cancellation request"
+    },
+    "examples": {
+      "tr": "pthread_cancel hedefe iptal isteği gönderir.",
+      "en": "pthread_cancel sends a cancellation request to a target."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-cancellation"]
+  },
+  {
+    "id": "os4-deferred-cancellation",
+    "term": {
+      "tr": "Ertelenmiş iptal",
+      "en": "Deferred cancellation"
+    },
+    "examples": {
+      "tr": "Ertelenmiş iptal uygun bir iptal noktasında gerçekleşir.",
+      "en": "Deferred cancellation occurs at a suitable cancellation point."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-cancellation"]
+  },
+  {
+    "id": "os4-asynchronous-cancellation",
+    "term": {
+      "tr": "Asenkron iptal",
+      "en": "Asynchronous cancellation"
+    },
+    "examples": {
+      "tr": "Asenkron iptal kilitleri bırakmadan sonlanmaya neden olabilir.",
+      "en": "Asynchronous cancellation can terminate before releasing locks."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-cancellation"]
+  },
+  {
+    "id": "os4-cancellation-point",
+    "term": {
+      "tr": "İptal noktası",
+      "en": "Cancellation point"
+    },
+    "examples": {
+      "tr": "Thread iptal noktasına ulaşınca isteği işleyebilir.",
+      "en": "The thread may process a request at a cancellation point."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-thread-cancellation"]
+  },
+  {
+    "id": "os4-thread-environment-block",
+    "term": {
+      "tr": "İş parçacığı ortam bloğu",
+      "en": "Thread environment block"
+    },
+    "examples": {
+      "tr": "Windows TEB thread'e özgü kullanıcı durumu saklar.",
+      "en": "The Windows TEB stores thread-specific user state."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-os-thread-implementations"]
+  },
+  {
+    "id": "os4-task-structure",
+    "term": {
+      "tr": "Görev veri yapısı",
+      "en": "Task structure"
+    },
+    "examples": {
+      "tr": "Linux task_struct görev durumunu tanımlar.",
+      "en": "Linux task_struct represents task state."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-os-thread-implementations"]
+  },
+  {
+    "id": "os4-flag-bit",
+    "term": {
+      "tr": "Bayrak biti",
+      "en": "Flag bit"
+    },
+    "examples": {
+      "tr": "CLONE_VM bayrak biti adres alanının paylaşımını belirtir.",
+      "en": "The CLONE_VM flag bit specifies address-space sharing."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-os-thread-implementations"]
+  },
+  {
+    "id": "os4-file-descriptor-table",
+    "term": {
+      "tr": "Dosya tanıtıcısı tablosu",
+      "en": "File descriptor table"
+    },
+    "examples": {
+      "tr": "CLONE_FILES dosya tanıtıcısı tablosunu paylaşır.",
+      "en": "CLONE_FILES shares the file descriptor table."
+    },
+    "courseIds": ["operating-systems"],
+    "topicIds": ["os4-os-thread-implementations"]
   }
 ]

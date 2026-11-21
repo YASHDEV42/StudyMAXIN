@@ -1,0 +1,71 @@
+{
+  "id": "os4-thread-cancellation",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Thread Cancellation ve İptal Modları",
+    "ar": "إلغاء Threads وأنواع Cancellation"
+  },
+  "order": 8,
+  "prerequisites": ["os4-fork-signals"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "إلغاء Threads وأنواع Cancellation",
+      "summary": "تفاصيل تنفيذ Threads مع أمثلة وأسئلة الامتحان الأساسية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 39,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Thread Cancellation ve İptal Modları",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 39,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Thread Cancellation ve İptal Modları",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 39,
+              "to": 39
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -297,5 +297,18 @@
       "sha256": "9a2733a5e2faae407fa2a81fa0e8586c857d763ef2d4517bc67912f2756c1a79",
       "reason": "Supplied in conversation, reviewed as original lecture slides; no redistribution permission."
     }
+  },
+  {
+    "id": "os-week-04-threads",
+    "title": "4-Threads(1).pptx — Threads (İş Parçacıkları), 41-slide privately converted review PDF",
+    "language": "tr",
+    "courseIds": ["operating-systems"],
+    "location": {
+      "kind": "private",
+      "filename": "os_week_04_threads.pdf",
+      "pageCount": 41,
+      "sha256": "9e0e95cc2d214163f200f518ca09c5573e1b327fa1add06529cd569bfdbf0476",
+      "reason": "Privately converted from the supplied 41-slide PPTX solely for slide-level citations; original PPTX SHA-256 beef3c5014b3a1318954b0bea6dac9dc5e5fb605f8f58fb55bf6ad1f11a826e6. Neither original nor derivative is redistributed."
+    }
   }
 ]

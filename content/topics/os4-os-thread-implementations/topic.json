@@ -1,0 +1,71 @@
+{
+  "id": "os4-os-thread-implementations",
+  "courseId": "operating-systems",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "Windows ve Linux Thread Veri Yapıları",
+    "ar": "تنفيذ Threads داخل Windows وLinux"
+  },
+  "order": 9,
+  "prerequisites": ["os4-thread-cancellation"],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "تنفيذ Threads داخل Windows وLinux",
+      "summary": "تفاصيل تنفيذ Threads مع أمثلة وأسئلة الامتحان الأساسية.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 40,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Windows ve Linux Thread Veri Yapıları",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 40,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Windows ve Linux Thread Veri Yapıları",
+      "summary": "Thread yürütme davranışı, API, şema ve sınav ayrımları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-04-threads",
+          "pages": [
+            {
+              "from": 40,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

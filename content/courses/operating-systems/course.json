@@ -5,7 +5,7 @@
     "ar": "أنظمة التشغيل"
   },
   "description": {
-    "tr": "Kaynaklara dayalı Arapça ve Türkçe dersler, Türkçe sınav özetleri ve kavram sözlüğü. İşletim sistemlerine giriş ve işletim sistemi yapıları haftaları yayımlandı.",
+    "tr": "Kaynaklara dayalı Arapça ve Türkçe dersler, Türkçe sınav özetleri ve kavram sözlüğü. İşletim sistemlerine giriş, yapılar, process yönetimi ve threads konuları yayımlandı.",
     "ar": "دروس عربية وتركية وملخصات امتحانية تركية لأنظمة التشغيل، منظّمة حسب الأسابيع ومراجعة وفق سلايدات المحاضرات."
   },
   "order": 2,
@@ -33,6 +33,14 @@
         "ar": "الأسبوع الثالث: إدارة العمليات والتواصل بينها"
       },
       "order": 2
+    },
+    {
+      "id": "week-04",
+      "title": {
+        "tr": "Threads (İş Parçacıkları) ve Multicore Programlama",
+        "ar": "الأسبوع الرابع: Threads والبرمجة متعددة الأنوية"
+      },
+      "order": 3
     }
   ]
 }
