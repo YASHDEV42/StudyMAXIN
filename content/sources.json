@@ -253,5 +253,20 @@
       "sha256": "27e6743fa9af6ecafe7bbd3f3fc58e03e4d01577f92b9715c621c7a5227667f2",
       "reason": "User-provided lecture PDF reviewed privately; no redistribution permission established. Original is not uploaded to public repository."
     }
+  },
+  {
+    "id": "software-design-structural-week-06",
+    "title": "Tasarım Desenleri | Yapısal Desenler — 6. Hafta (uploaded as Hafta6_7_Yapisal_Tasarim_Desenleri.pdf)",
+    "language": "tr",
+    "courseIds": [
+      "software-design"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "pageCount": 86,
+      "sha256": "38c0e433d2e8e422fc0811a94a23eaa27e9b31b5c6108f40a641241c7829f4f5",
+      "reason": "Privately supplied lecture PDF; redistribution permission not established. The source is referenced but not uploaded to the public repository."
+    }
   }
 ]
