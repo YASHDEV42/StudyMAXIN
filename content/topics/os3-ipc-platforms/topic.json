@@ -1,0 +1,73 @@
+{
+  "id": "os3-ipc-platforms",
+  "courseId": "operating-systems",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "IPC Örnekleri: POSIX, Mach ve Windows LPC",
+    "ar": "أمثلة IPC من POSIX وMach وWindows"
+  },
+  "order": 7,
+  "prerequisites": [
+    "os3-ipc-messaging"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "IPC Örnekleri: POSIX, Mach ve Windows LPC",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 50,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "أمثلة IPC من POSIX وMach وWindows",
+      "summary": "شرح النماذج والتطبيقات والمقارنات المهمة للتواصل بين العمليات.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 50,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "IPC Örnekleri: POSIX, Mach ve Windows LPC",
+      "summary": "IPC modelleri, sistem örnekleri ve sınavda ayırt edilen özellikler.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-03-processes",
+          "pages": [
+            {
+              "from": 50,
+              "to": 53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
