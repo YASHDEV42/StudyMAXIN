@@ -7752,5 +7752,549 @@
     "topicIds": [
       "solid-design-principles"
     ]
+  },
+  {
+    "id": "structural-pattern",
+    "term": {
+      "tr": "Yapısal tasarım deseni",
+      "en": "Structural design pattern"
+    },
+    "examples": {
+      "tr": "Yapısal tasarım desenleri nesnelerin nasıl birleştirileceğini gösterir.",
+      "en": "Structural design patterns show how objects are composed."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "flyweight-pattern",
+    "term": {
+      "tr": "Flyweight (hafif nesne)",
+      "en": "Flyweight pattern"
+    },
+    "examples": {
+      "tr": "Flyweight çok sayıda askerin aynı model verisini paylaşmasını sağlar.",
+      "en": "Flyweight allows many soldiers to share the same model data."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "intrinsic-state",
+    "term": {
+      "tr": "İçsel durum",
+      "en": "Intrinsic state"
+    },
+    "examples": {
+      "tr": "İçsel durum paylaşılan nesnede saklanır.",
+      "en": "Intrinsic state is stored in the shared object."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "extrinsic-state",
+    "term": {
+      "tr": "Dışsal durum",
+      "en": "Extrinsic state"
+    },
+    "examples": {
+      "tr": "Dışsal durum her askerin konumunu ayrı tutar.",
+      "en": "Extrinsic state keeps each soldier's position separate."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "object-pool",
+    "term": {
+      "tr": "Nesne havuzu",
+      "en": "Object pool"
+    },
+    "examples": {
+      "tr": "Nesne havuzu daha önce oluşturulmuş renk nesnesini döndürür.",
+      "en": "The object pool returns a previously created color object."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "shared-state",
+    "term": {
+      "tr": "Paylaşılan durum",
+      "en": "Shared state"
+    },
+    "examples": {
+      "tr": "Model ve doku bilgileri paylaşılan durum olabilir.",
+      "en": "Model and texture data can be shared state."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "adapter-pattern",
+    "term": {
+      "tr": "Bağdaştırıcı",
+      "en": "Adapter pattern"
+    },
+    "examples": {
+      "tr": "Bağdaştırıcı banka metodunu uygulamanın arayüzüne uyarlar.",
+      "en": "An adapter maps the bank method to the application's interface."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "adaptee",
+    "term": {
+      "tr": "Uyarlanan sınıf",
+      "en": "Adaptee"
+    },
+    "examples": {
+      "tr": "Uyarlanan sınıf mevcut bankanın API'sini sağlar.",
+      "en": "The adaptee provides the existing bank API."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "target-interface",
+    "term": {
+      "tr": "Hedef arayüz",
+      "en": "Target interface"
+    },
+    "examples": {
+      "tr": "İstemci hedef arayüz üzerinden ödeme yapar.",
+      "en": "The client pays through the target interface."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "interface-mismatch",
+    "term": {
+      "tr": "Arayüz uyumsuzluğu",
+      "en": "Interface mismatch"
+    },
+    "examples": {
+      "tr": "Arayüz uyumsuzluğu bir Adapter ile giderilebilir.",
+      "en": "An interface mismatch can be resolved with an adapter."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "legacy-system",
+    "term": {
+      "tr": "Eski sistem",
+      "en": "Legacy system"
+    },
+    "examples": {
+      "tr": "Eski sistemi yeni uygulamaya Adapter ile bağlayabiliriz.",
+      "en": "We can connect the legacy system to the new app using an adapter."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "composite-pattern",
+    "term": {
+      "tr": "Bileşik desen",
+      "en": "Composite pattern"
+    },
+    "examples": {
+      "tr": "Bileşik desen dosya ve klasörlere aynı işlemi uygular.",
+      "en": "Composite applies the same operation to files and folders."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "leaf-node",
+    "term": {
+      "tr": "Yaprak düğüm",
+      "en": "Leaf node"
+    },
+    "examples": {
+      "tr": "Dosya ağaç yapısında bir yaprak düğüm olabilir.",
+      "en": "A file can be a leaf node in a tree structure."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "hierarchical-structure",
+    "term": {
+      "tr": "Hiyerarşik yapı",
+      "en": "Hierarchical structure"
+    },
+    "examples": {
+      "tr": "Klasörler iç içe geçmiş hiyerarşik yapı oluşturur.",
+      "en": "Folders create a nested hierarchical structure."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "recursive-operation",
+    "term": {
+      "tr": "Özyinelemeli işlem",
+      "en": "Recursive operation"
+    },
+    "examples": {
+      "tr": "Klasör boyutu özyinelemeli işlemle hesaplanır.",
+      "en": "Folder size is calculated recursively."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "facade-pattern",
+    "term": {
+      "tr": "Cephe deseni",
+      "en": "Facade pattern"
+    },
+    "examples": {
+      "tr": "Cephe deseni karmaşık alt sistemler için sade bir giriş sunar.",
+      "en": "Facade offers a simple entry point to complex subsystems."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "subsystem",
+    "term": {
+      "tr": "Alt sistem",
+      "en": "Subsystem"
+    },
+    "examples": {
+      "tr": "Facade alt sistemleri kaldırmadan koordine eder.",
+      "en": "The facade coordinates subsystems without removing them."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "proxy-pattern",
+    "term": {
+      "tr": "Vekil deseni",
+      "en": "Proxy pattern"
+    },
+    "examples": {
+      "tr": "Vekil deseni gerçek nesneye erişimi kontrol eder.",
+      "en": "Proxy controls access to the real object."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "real-subject",
+    "term": {
+      "tr": "Gerçek nesne",
+      "en": "Real subject"
+    },
+    "examples": {
+      "tr": "Proxy yetki denetiminden sonra gerçek nesneyi çağırır.",
+      "en": "The proxy calls the real subject after authorization."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "protection-proxy",
+    "term": {
+      "tr": "Koruma vekili",
+      "en": "Protection proxy"
+    },
+    "examples": {
+      "tr": "Koruma vekili hasta dosyasını yetkisiz erişimden korur.",
+      "en": "A protection proxy guards a patient record against unauthorized access."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "virtual-proxy",
+    "term": {
+      "tr": "Sanal vekil",
+      "en": "Virtual proxy"
+    },
+    "examples": {
+      "tr": "Sanal vekil büyük resmi gerektiğinde yükler.",
+      "en": "A virtual proxy loads the large image when needed."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "remote-proxy",
+    "term": {
+      "tr": "Uzak vekil",
+      "en": "Remote proxy"
+    },
+    "examples": {
+      "tr": "Uzak vekil başka sunucudaki nesneye erişimi temsil eder.",
+      "en": "A remote proxy represents access to an object on another server."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "caching-proxy",
+    "term": {
+      "tr": "Önbellekleme vekili",
+      "en": "Caching proxy"
+    },
+    "examples": {
+      "tr": "Önbellekleme vekili geçerli API sonucunu tekrar kullanır.",
+      "en": "A caching proxy reuses a valid API response."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "decorator-pattern",
+    "term": {
+      "tr": "Dekoratör deseni",
+      "en": "Decorator pattern"
+    },
+    "examples": {
+      "tr": "Dekoratör deseni kahveye süt ve karamel ekler.",
+      "en": "Decorator adds milk and caramel to coffee."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "wrapped-component",
+    "term": {
+      "tr": "Sarmalanan bileşen",
+      "en": "Wrapped component"
+    },
+    "examples": {
+      "tr": "Her dekoratör sarmalanan bileşene referans tutar.",
+      "en": "Each decorator holds a reference to a wrapped component."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "dynamic-extension",
+    "term": {
+      "tr": "Dinamik genişletme",
+      "en": "Dynamic extension"
+    },
+    "examples": {
+      "tr": "Dinamik genişletme temel sınıfı değiştirmeden davranış ekler.",
+      "en": "Dynamic extension adds behavior without modifying the base class."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "bridge-pattern",
+    "term": {
+      "tr": "Köprü deseni",
+      "en": "Bridge pattern"
+    },
+    "examples": {
+      "tr": "Köprü deseni kumanda ve cihaz türlerini bağımsız geliştirir.",
+      "en": "Bridge lets remote and device types evolve independently."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "implementor",
+    "term": {
+      "tr": "Gerçekleyici",
+      "en": "Implementor"
+    },
+    "examples": {
+      "tr": "Köprü deseninde gerçekleyici arayüzü cihaz işlemlerini tanımlar.",
+      "en": "In Bridge, the implementor interface defines device operations."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "independent-variation",
+    "term": {
+      "tr": "Bağımsız değişim boyutu",
+      "en": "Independent dimension of variation"
+    },
+    "examples": {
+      "tr": "Rapor türü ve çıktı biçimi bağımsız değişim boyutlarıdır.",
+      "en": "Report type and output format are independent dimensions of variation."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "class-explosion",
+    "term": {
+      "tr": "Sınıf patlaması",
+      "en": "Class explosion"
+    },
+    "examples": {
+      "tr": "Her cihaz-kumanda birleşimi için sınıf yazmak sınıf patlamasına yol açar.",
+      "en": "Creating a class for every device–remote combination leads to class explosion."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "lazy-loading",
+    "term": {
+      "tr": "Gerektiğinde yükleme",
+      "en": "Lazy loading"
+    },
+    "examples": {
+      "tr": "Büyük fotoğrafı gerektiğinde yükleme bellek kullanımını azaltır.",
+      "en": "Lazy loading a large photo reduces memory use."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
+  },
+  {
+    "id": "delegation",
+    "term": {
+      "tr": "Yetki devri",
+      "en": "Delegation"
+    },
+    "examples": {
+      "tr": "Adapter isteği gerçek banka API'sine devreder.",
+      "en": "An adapter delegates the request to the real bank API."
+    },
+    "courseIds": [
+      "software-design"
+    ],
+    "topicIds": [
+      "structural-design-patterns"
+    ]
   }
 ]

@@ -3,11 +3,72 @@
   "courseId": "software-design",
   "chapterId": "week-06-07",
   "title": {
-    "tr": "Yapısal Tasarım Desenleri",
-    "ar": "أنماط التصميم الهيكلية"
+    "tr": "Yapısal Tasarım Desenleri (6. Hafta)",
+    "ar": "أنماط التصميم الهيكلية (الأسبوع السادس)"
   },
   "order": 0,
-  "prerequisites": [],
+  "prerequisites": [
+    "object-oriented-class-diagrams",
+    "solid-design-principles"
+  ],
   "related": [],
-  "documents": []
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "الأنماط الهيكلية السبعة في تصميم البرمجيات",
+      "summary": "شرح Flyweight وAdapter وComposite وFacade وProxy وDecorator وBridge، مع UML وJava وأمثلة المحاضرة والمقارنات بين الأنماط.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-structural-week-06",
+          "pages": [
+            {
+              "from": 1,
+              "to": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Yapısal Tasarım Desenleri — 7 Desen",
+      "summary": "Yedi yapısal desenin amacı, UML rolleri, algoritmaları, Java örnekleri, kullanım koşulları ve karşılaştırmaları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-structural-week-06",
+          "pages": [
+            {
+              "from": 1,
+              "to": 86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Yapısal Tasarım Desenleri — Sınav Özeti",
+      "summary": "Yedi desen için eşleştirme tablosu, temel UML bileşenleri, anahtar farklar ve cevapları gizlenmiş senaryo soruları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "software-design-structural-week-06",
+          "pages": [
+            {
+              "from": 1,
+              "to": 86
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
