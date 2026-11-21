@@ -1,0 +1,73 @@
+{
+  "id": "os2-system-generation-boot",
+  "courseId": "operating-systems",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "İşletim Sistemi Kurulumu ve Boot Süreci",
+    "ar": "تثبيت نظام التشغيل وآلية الإقلاع"
+  },
+  "order": 10,
+  "prerequisites": [
+    "os2-debugging-performance"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "شو بصير من Power On لحد ما يشتغل Kernel؟",
+      "summary": "OS Generation/Configuration وBootstrap وFirmware وBoot Disk.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 61,
+              "to": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İşletim Sistemi Oluşturma ve Önyükleme",
+      "summary": "Kurulum parametreleri, firmware, bootstrap, boot disk ve kernel'in başlatılması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 61,
+              "to": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "OS Boot ve Installation — Sınav Özeti",
+      "summary": "Kurulum ile boot farkı, bootstrap ve firmware sırası.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "os-week-02-abm",
+          "pages": [
+            {
+              "from": 61,
+              "to": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
