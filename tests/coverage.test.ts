@@ -57,5 +57,9 @@ test("durable coverage claims match authored forms, exact citation ranges, sourc
       ]);
     }
   }
-  assert.equal(ledger.glossary.entryCount, content.glossary.length);
+  assert.equal(
+    ledger.glossary.entryCount,
+    content.glossary.filter((entry) => entry.courseIds.includes(ledger.courseId))
+      .length,
+  );
 });
