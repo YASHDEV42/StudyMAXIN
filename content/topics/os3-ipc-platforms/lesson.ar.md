@@ -13,6 +13,7 @@
 الـ **Local Procedure Call (yerel prosedür çağrısı)** في Windows XP مثال تاريخي لتواصل Client وServer على نفس الجهاز. Client بتعمل Connection Request (bağlantı isteği)، والـ Server بتجهّز Communication Ports (iletişim portları)، وبيتم تبادل الـ Handles (tanıtıcılar) والرسائل والردود.
 
 ## المقارنة
+
 **System V IPC:** ذاكرة مشتركة، لازم تزامن. **Mach:** Messages وPorts. **Windows XP LPC:** Messages بين Processes محلية عبر Ports/Handles. هاي أمثلة من حقبة السلايدات، مو توصيف ملزم لكل نظام حديث.
 
 **توضيح خارج المصدر:** نجاح Shared Memory Setup لا يضمن Race-free Access؛ إدارة التزامن جزء مستقل.

@@ -4,7 +4,7 @@
 
 ## İki IPC modeli
 
-**Shared memory (paylaşımlı bellek):** OS, iki process'in erişebildiği ortak bölgeyi oluşturur/eşler; süreçler bu bölgede okuyup yazar. Kopyalama maliyeti az olabilir ama **synchronization (eşzamanlama)** ve erişim hakları kritik. Shared memory'nin *daima* daha hızlı olduğu mutlak değildir; kaynak slaytı bunu basitleştirir.
+**Shared memory (paylaşımlı bellek):** OS, iki process'in erişebildiği ortak bölgeyi oluşturur/eşler; süreçler bu bölgede okuyup yazar. Kopyalama maliyeti az olabilir ama **synchronization (eşzamanlama)** ve erişim hakları kritik. Shared memory'nin _daima_ daha hızlı olduğu mutlak değildir; kaynak slaytı bunu basitleştirir.
 
 **Message passing (mesaj iletimi):** Süreçler `send` ve `receive` ile mesaj aktarır, paylaşılan değişkene gerek duymaz; kernel/iletişim altyapısı aktarımda rol oynayabilir. Dağıtık ortamlarda uygundur.
 

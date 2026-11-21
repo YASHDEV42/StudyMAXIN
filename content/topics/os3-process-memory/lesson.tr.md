@@ -21,6 +21,7 @@ Process yalnız kod değildir: **program counter (program sayacı)**, **CPU regi
 الـ Processes بتشتغل غالبًا ضمن Virtual Address Spaces (sanal adres alanları) منفصلة؛ هيك ما بتقدر عملية تكتب مباشرةً بذاكرة عملية ثانية بدون آلية مشاركة مصرح فيها. السلايد بيعرض Base Register (taban yazmacı) وLimit Register (sınır yazmacı) لتوضيح مبدأ حدود الذاكرة تاريخيًا.
 
 **مثال إضافي خارج السلايدات:** تشغيل نسختين من Browser بيسمح بتشارك نفس Executable Code لكن لكل Process Stack وHeap وحالة تشغيل مميزة.,## Özet
+
 - **Program:** Pasif, diskte duran executable.
 - **Process:** Aktif, çalışan program + program counter + CPU registers + bellek/durum.
 - **Single-core:** Aynı anda bir yürütme akışı; time sharing ile çoklu görev.

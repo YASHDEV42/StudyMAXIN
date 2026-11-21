@@ -7,9 +7,7 @@
     "ar": "Shortest Job First مع مثال محلول"
   },
   "order": 10,
-  "prerequisites": [
-    "os3-process-scheduling"
-  ],
+  "prerequisites": ["os3-process-scheduling"],
   "related": [],
   "documents": [
     {

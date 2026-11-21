@@ -1,6 +1,6 @@
 ## Process Scheduling (işlem zamanlaması)
 
-Birden çok süreç hazır olduğunda, **CPU scheduler (işlemci zamanlayıcısı)** çalışacak sıradaki süreci seçer. **Dispatcher (görevlendirici)** ise seçilmiş sürece CPU kontrolünü devreder. Bu iki rolü ayırmak önemlidir: *seçim* ile *geçiş* aynı işlem değildir. Tek çekirdekte herhangi bir anda tek yürütme akışı bulunur; zaman paylaşımı ile süreçlerin arası hızla değiştirilir.
+Birden çok süreç hazır olduğunda, **CPU scheduler (işlemci zamanlayıcısı)** çalışacak sıradaki süreci seçer. **Dispatcher (görevlendirici)** ise seçilmiş sürece CPU kontrolünü devreder. Bu iki rolü ayırmak önemlidir: _seçim_ ile _geçiş_ aynı işlem değildir. Tek çekirdekte herhangi bir anda tek yürütme akışı bulunur; zaman paylaşımı ile süreçlerin arası hızla değiştirilir.
 
 ## Scheduling Queues (zamanlama kuyrukları)
 

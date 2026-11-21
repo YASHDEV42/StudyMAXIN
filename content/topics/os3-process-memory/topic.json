@@ -7,9 +7,7 @@
     "ar": "مفهوم Process وبنية الذاكرة"
   },
   "order": 0,
-  "prerequisites": [
-    "os2-system-generation-boot"
-  ],
+  "prerequisites": ["os2-system-generation-boot"],
   "related": [],
   "documents": [
     {

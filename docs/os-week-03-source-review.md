@@ -3,25 +3,25 @@
 ## Originals and source fingerprints
 
 - `3- Process Yönetimi(1).pptx`: **56 slides**, SHA-256 `fa0f8a33c968a7e5159a1db7a855650b66011ebc5b6169c0bef7c20d3f40ce73`. This PowerPoint was inspected with its rendered diagrams and code imagery; no PDF source registry variant supports PPTX in the authoritative schema. The PPTX was **not** redistributed or uploaded to public assets.
-- `Module 4_ Processes - ders3.pdf`: **68 physical pages**, SHA-256 `9a2733a5e2faae407fa2a81fa0e8586c857d763ef2d4517bc67912f2756c1a79`. The document identifies itself as `Bölüm 3: İşlemler`, from the 8th edition of *Operating System Concepts with Java*. Registered with `location.kind = private`, not hosted.
+- `Module 4_ Processes - ders3.pdf`: **68 physical pages**, SHA-256 `9a2733a5e2faae407fa2a81fa0e8586c857d763ef2d4517bc67912f2756c1a79`. The document identifies itself as `Bölüm 3: İşlemler`, from the 8th edition of _Operating System Concepts with Java_. Registered with `location.kind = private`, not hosted.
 
 All materials remain private because no redistribution permission was supplied. The PDFs' physical page numbers are used for authoritative citation ranges; PPTX slide numbers below are separate.
 
 ## Complete teaching mapping
 
-| Topic | PDF pages | PPTX slides | Editorial treatment |
-| --- | --- | --- | --- |
-| os3-process-memory | 4–8 | 2–6, 12–13 | Program/process distinction, CPU timesharing, text/data/heap/stack, memory isolation |
-| os3-process-states | 9–16 | 10–11, 18–22 | Two-state versus five-state transitions |
-| os3-pcb-context | 17–19 | 7–9, 23–35 | PCB fields, process trace/dispatcher, save/restore and switch overhead |
-| os3-process-scheduling | 20–25 | 36–43 | Ready/device/job queues, long/short/medium scheduling, CPU/I/O bound |
-| os3-creation-termination | 27–34 | 14–17 | Parent–child, PID, fork/exec/wait/exit, Win32 code and cascading termination |
-| os3-ipc-models-producer | 35–42 | 44–45 | Independent/cooperating, shared memory, producer-consumer, bounded-buffer Java |
-| os3-ipc-messaging | 43–49 | 46 | Direct/indirect communication, mailboxes, blocking, buffering |
-| os3-ipc-platforms | 50–53 | — | System V API, Mach and Windows XP LPC |
-| os3-sockets-client-server | 54–59 | 47–50 | Sockets, TCP/UDP, Java ServerSocket and Socket date-server example |
-| os3-rpc-rmi | 60–68 | — | RPC, stub, Java RMI interface/server/client, historical skeleton and questions |
-| os3-shortest-job-first | — | 51–55 | **PPTX-only** non-preemptive SJF worked Gantt and metrics |
+| Topic                     | PDF pages | PPTX slides  | Editorial treatment                                                                  |
+| ------------------------- | --------- | ------------ | ------------------------------------------------------------------------------------ |
+| os3-process-memory        | 4–8       | 2–6, 12–13   | Program/process distinction, CPU timesharing, text/data/heap/stack, memory isolation |
+| os3-process-states        | 9–16      | 10–11, 18–22 | Two-state versus five-state transitions                                              |
+| os3-pcb-context           | 17–19     | 7–9, 23–35   | PCB fields, process trace/dispatcher, save/restore and switch overhead               |
+| os3-process-scheduling    | 20–25     | 36–43        | Ready/device/job queues, long/short/medium scheduling, CPU/I/O bound                 |
+| os3-creation-termination  | 27–34     | 14–17        | Parent–child, PID, fork/exec/wait/exit, Win32 code and cascading termination         |
+| os3-ipc-models-producer   | 35–42     | 44–45        | Independent/cooperating, shared memory, producer-consumer, bounded-buffer Java       |
+| os3-ipc-messaging         | 43–49     | 46           | Direct/indirect communication, mailboxes, blocking, buffering                        |
+| os3-ipc-platforms         | 50–53     | —            | System V API, Mach and Windows XP LPC                                                |
+| os3-sockets-client-server | 54–59     | 47–50        | Sockets, TCP/UDP, Java ServerSocket and Socket date-server example                   |
+| os3-rpc-rmi               | 60–68     | —            | RPC, stub, Java RMI interface/server/client, historical skeleton and questions       |
+| os3-shortest-job-first    | —         | 51–55        | **PPTX-only** non-preemptive SJF worked Gantt and metrics                            |
 
 Each of these **11 topics** has three independent teaching forms: **Arabic lesson, Turkish lesson, Turkish cheat sheet** (33 documents). The teaching material explains the original diagrams and code narratively; source slides are not republished. The global glossary adds week-specific Turkish–English terms and natural example sentences, reusing globally existing terms when identified.
 

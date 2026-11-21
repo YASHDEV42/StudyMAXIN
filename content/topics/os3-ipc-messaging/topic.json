@@ -7,9 +7,7 @@
     "ar": "Message Passing المباشر وغير المباشر والتزامن"
   },
   "order": 6,
-  "prerequisites": [
-    "os3-ipc-models-producer"
-  ],
+  "prerequisites": ["os3-ipc-models-producer"],
   "related": [],
   "documents": [
     {

@@ -7,9 +7,7 @@
     "ar": "أمثلة IPC من POSIX وMach وWindows"
   },
   "order": 7,
-  "prerequisites": [
-    "os3-ipc-messaging"
-  ],
+  "prerequisites": ["os3-ipc-messaging"],
   "related": [],
   "documents": [
     {

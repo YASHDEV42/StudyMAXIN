@@ -7,9 +7,7 @@
     "ar": "RPC وJava RMI: استدعاء الدوال عن بعد"
   },
   "order": 9,
-  "prerequisites": [
-    "os3-sockets-client-server"
-  ],
+  "prerequisites": ["os3-sockets-client-server"],
   "related": [],
   "documents": [
     {

@@ -27,6 +27,7 @@ Register kayıt/yükleme, kernel kodu ve olası cache/TLB etkileri süre alır; 
 السلايد بيذكر **50 Registers × 20 ns** وبيحسِبها **1 ms**، لكن الحساب الصحيح **1000 ns = 1 µs** للحفظ، وحوالي **2 µs** للحفظ والاسترجاع قبل بقية Overheads. هالأرقام مثال تعليمي وليست قياسًا عامًا لزمن الـ Context Switch.
 
 **مثال إضافي:** عملية A تنقطع بسبب Timer؛ OS بيختار B، بيحفظ Registers A وبيحمّل Registers B، وبعدين يكمل B من المكان اللي وقف عنده.,## PCB İçerikleri
+
 - PID/PPID, process state, program counter, CPU registers.
 - CPU scheduling priority/queues.
 - Memory management: base/limit, page tables.
@@ -34,6 +35,7 @@ Register kayıt/yükleme, kernel kodu ve olası cache/TLB etkileri süre alır; 
 - I/O status, open files/devices.
 
 ## Context Switch
+
 **Save P0 context → restore P1 context → P1 executes.** Dispatcher CPU'yu seçilen sürece verir. Context switching yararlı ama **overhead** doğurur.
 
 **Interrupt/system call ≠ her zaman process switch.**

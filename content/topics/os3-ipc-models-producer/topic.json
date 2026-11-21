@@ -7,9 +7,7 @@
     "ar": "IPC وShared Memory ومشكلة Producer–Consumer"
   },
   "order": 5,
-  "prerequisites": [
-    "os3-creation-termination"
-  ],
+  "prerequisites": ["os3-creation-termination"],
   "related": [],
   "documents": [
     {

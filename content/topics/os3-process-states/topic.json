@@ -7,9 +7,7 @@
     "ar": "حالات Process والانتقال بينها"
   },
   "order": 1,
-  "prerequisites": [
-    "os3-process-memory"
-  ],
+  "prerequisites": ["os3-process-memory"],
   "related": [],
   "documents": [
     {

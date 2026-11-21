@@ -7,9 +7,7 @@
     "ar": "Sockets وTCP/UDP وتواصل Client–Server"
   },
   "order": 8,
-  "prerequisites": [
-    "os3-ipc-platforms"
-  ],
+  "prerequisites": ["os3-ipc-platforms"],
   "related": [],
   "documents": [
     {

@@ -14,6 +14,7 @@ Slaytlar HTTP için port **80**, FTP control için **21** örneğini verir. Bunl
 Kaynakta bir **date server** TCP **6013** portunu **ServerSocket** ile dinler; `accept()` bağlantıyı kabul eder ve `PrintWriter` tarih/saat bilgisini yazar. **Client** `new Socket("127.0.0.1",6013)` ile aynı makinedeki sunucuya bağlanır; `BufferedReader` ile yanıtı okur. **127.0.0.1 (loopback / geri döngü adresi)** local host'u temsil eder.
 
 ## Ayrım
+
 **IP** host arayüzünü; **port** host üzerindeki servis/iletişim ucunu seçer. TCP bağlantısı kurmak ile uygulama protokolünün istek–yanıt mesajlarını yönetmek ayrı düzeylerdir.
 
 **Kaynak dışı örnek:** Aynı web sunucusu 80 numaralı portu dinlerken farklı istemci portlarından gelen çok sayıda bağlantıyı işleyebilir.

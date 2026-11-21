@@ -5,12 +5,12 @@
 ## Kaynak slaytındaki veri tablosu
 
 | Process | CPU burst | Arrival time |
-| --- | ---: | ---: |
-| P1 | 5 | 0 |
-| P2 | 4 | 0 |
-| P3 | 7 | 0 |
-| P4 | 3 | 0 |
-| P5 | 2 | 4 |
+| ------- | --------: | -----------: |
+| P1      |         5 |            0 |
+| P2      |         4 |            0 |
+| P3      |         7 |            0 |
+| P4      |         3 |            0 |
+| P5      |         2 |            4 |
 
 Dört process `t=0` anında hazırdır; **P5 t=4'te gelir**. Hazır olan en kısa iş önce seçildiğinde çizelge şöyledir:
 
@@ -23,12 +23,12 @@ Dört process `t=0` anında hazırdır; **P5 t=4'te gelir**. Hazır olan en kıs
 **Turnaround time (tamamlanma süresi)** = Completion − Arrival. **Waiting time (bekleme süresi)** = Turnaround − Burst.
 
 | Process | Completion | Turnaround | Waiting |
-| --- | ---: | ---: | ---: |
-| P1 | 14 | 14 | 9 |
-| P2 | 7 | 7 | 3 |
-| P3 | 21 | 21 | 14 |
-| P4 | 3 | 3 | 0 |
-| P5 | 9 | 5 | 3 |
+| ------- | ---------: | ---------: | ------: |
+| P1      |         14 |         14 |       9 |
+| P2      |          7 |          7 |       3 |
+| P3      |         21 |         21 |      14 |
+| P4      |          3 |          3 |       0 |
+| P5      |          9 |          5 |       3 |
 
 **Average waiting time = (9+3+14+0+3)/5 = 5.8.** **Average turnaround time = (14+7+21+3+5)/5 = 10.**
 

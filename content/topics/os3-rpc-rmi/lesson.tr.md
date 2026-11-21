@@ -13,6 +13,7 @@ Slayttaki **RPC flow**: Client uygulaması → **client stub (istemci vekili)** 
 **Stub:** Client'ın uzaktaki metodu yerel arayüzle çağırmasını sağlar. **Skeleton:** Kaynakta server tarafı yönlendirme ve parametre çözme görevini gösteren tarihsel bileşen. **Remote reference:** Uzak nesne tanıtıcısı/başvuru mekanizması. **Transport:** İletişim bağlantısı ve veri aktarımı. Bu katman gösterimi eski RMI şemalarına aittir; modern Java sürümlerinde her zaman ayrı skeleton sınıfı beklenmez.
 
 ## RPC ve RMI karşılaştırması
+
 - **RPC:** Prosedür/fonksiyon çağrısını ağ üzerinde soyutlar; belirli dile zorunlu olarak bağlı değildir.
 - **RMI:** Java nesnesinin uzaktaki metodunu çağırır; Java Remote interface ve remote object kavramını kullanır.
 - **İkisinde de:** Client–server, parametre paketleme, iletişim, hata/timeout senaryoları vardır.

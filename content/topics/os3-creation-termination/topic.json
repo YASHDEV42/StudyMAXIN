@@ -7,9 +7,7 @@
     "ar": "إنشاء العمليات وإنهاؤها: fork وexec وwait"
   },
   "order": 4,
-  "prerequisites": [
-    "os3-process-scheduling"
-  ],
+  "prerequisites": ["os3-process-scheduling"],
   "related": [],
   "documents": [
     {

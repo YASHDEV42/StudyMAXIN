@@ -31,6 +31,7 @@ PPTX ayrıca basitleştirilmiş **two-state model (iki durumlu model)**: Running
 في كمان **Two-State Model (iki durumlu model)** بالسلايدات: Running وNot Running. هاد بيخفي الفرق المهم بين جاهز وناطر حدث، لذلك نموذج الخمس حالات أدق.
 
 **مثال توضيحي خارج السلايدات:** Process عم تنتظر Disk Read بتكون Waiting، بعد وصول البيانات بتنتقل Ready، وبعدين Scheduler بيقرر إمتى Running.,## Beş Durum
+
 1. **New:** Yeni oluşturuluyor.
 2. **Ready:** CPU bekliyor; çalıştırılabilir.
 3. **Running:** CPU komutları yürütüyor.
@@ -38,6 +39,7 @@ PPTX ayrıca basitleştirilmiş **two-state model (iki durumlu model)**: Running
 5. **Terminated:** Bitmiş/sonlandırılmış.
 
 ## Geçişler
+
 **New→Ready:** admission. **Ready→Running:** dispatch. **Running→Ready:** preemption/time-out. **Running→Waiting:** I/O/event wait. **Waiting→Ready:** event completion. **Running→Terminated:** exit.
 
 **Two-state:** Running / Not Running, ancak Ready ve Waiting ayrımını göstermez.

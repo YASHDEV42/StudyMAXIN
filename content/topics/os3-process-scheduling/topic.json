@@ -7,9 +7,7 @@
     "ar": "طوابير العمليات وأنواع الـ Schedulers"
   },
   "order": 3,
-  "prerequisites": [
-    "os3-pcb-context"
-  ],
+  "prerequisites": ["os3-pcb-context"],
   "related": [],
   "documents": [
     {

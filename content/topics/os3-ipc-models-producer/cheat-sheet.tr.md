@@ -1,10 +1,12 @@
 ## IPC
+
 - **Independent:** Diğer process'lerden etkilenmez.
 - **Cooperating:** Paylaşım/bağımlılık; information sharing, speedup, modularity, convenience.
 - **Shared memory:** Ortak alan; hızlı olabilir ama synchronization gerekir.
 - **Message passing:** `send` / `receive`; ortak değişken gerekmez.
 
 ## Producer–Consumer
+
 - **Producer:** Buffer'a yazar.
 - **Consumer:** Buffer'dan okur.
 - **Bounded:** Kapasite sınırlı.

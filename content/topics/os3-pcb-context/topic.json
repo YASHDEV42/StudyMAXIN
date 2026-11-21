@@ -7,9 +7,7 @@
     "ar": "PCB وتبديل سياق التنفيذ"
   },
   "order": 2,
-  "prerequisites": [
-    "os3-process-states"
-  ],
+  "prerequisites": ["os3-process-states"],
   "related": [],
   "documents": [
     {

@@ -17,10 +17,10 @@ Mesajlar **mailbox / port (posta kutusu / port)** aracılığıyla iletilir: `se
 - **Blocking receive (bloklayan alım):** Mesaj gelene kadar alıcı bekler.
 - **Nonblocking receive (bloklamayan alım):** Mesaj varsa alır; yoksa boş/null benzeri sonuç döner.
 
-Bu kavramlar **senkron / asenkron iletişim (synchronous/asynchronous messaging)** ile ilişkilidir, fakat gerçek API davranışları sistemlere göre değişir; blocking send daima uygulama düzeyinde bir *yanıt* beklemek demek değildir.
+Bu kavramlar **senkron / asenkron iletişim (synchronous/asynchronous messaging)** ile ilişkilidir, fakat gerçek API davranışları sistemlere göre değişir; blocking send daima uygulama düzeyinde bir _yanıt_ beklemek demek değildir.
 
 ## Buffering (tamponlama)
 
 **Zero capacity:** Kuyrukta mesaj tutulmaz, gönderici/alıcı aynı anda buluşur (**rendezvous**). **Bounded capacity:** Kuyruk n mesaj tutar, dolarsa gönderici bekleyebilir. **Unbounded capacity:** Teorik modelde kapasite sınırı yoktur, gönderici doluluk nedeniyle beklemez.
 
-**Öğretici ek:** İş kuyruğuna mesaj yollayan worker modelinde mesajın *alınması* ile *işin tamamlanması* farklı olaylardır.
+**Öğretici ek:** İş kuyruğuna mesaj yollayan worker modelinde mesajın _alınması_ ile _işin tamamlanması_ farklı olaylardır.
