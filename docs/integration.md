@@ -77,3 +77,7 @@ A cross-cutting design pass (hero, docs shell, reading flow, glossary, themes) c
 ## StudyMAXIN identity and hosting — 2026-11-14
 
 Current identity is **StudyMAXIN**; earlier phase notes describe historical states. See [deployment readiness](deployment.md) for build-time base paths, optional origin/canonical/hreflang configuration, and separate GitHub Pages/Vercel instructions. Static export and stable content routes remain unchanged.
+
+## Operating Systems Quiz Trainer
+
+The quiz is a separate feature under `/{locale}/quiz/`. It uses the shared locale layout and theme and links from the docs header and mobile drawer. Its routes, UI and content loader live outside the docs catch-all and landing. The scope supersedes the historical Phase 2 deferral for local quizzes and progress. See the [quiz architecture and authoring guide](quiz.md).

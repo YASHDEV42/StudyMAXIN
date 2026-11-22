@@ -1,11 +1,13 @@
 # StudyMAXIN
 
-Public, read-only study documentation for university courses in Arabic and Turkish.
+Study documentation and exam practice for university courses in Arabic and Turkish.
 The static foundation from [Issue #1](https://github.com/YASHDEV42/StudyMAXIN/issues/1) now supports the documentation experience from [Issue #2](https://github.com/YASHDEV42/StudyMAXIN/issues/2). Landing/entry presentation remains independently owned by Issue #3.
 
-**Content coverage is deliberately incremental:** one course, 14 discovered chapters, one hundred published topics covering Chapters 1–8 (sections 1.1–1.13, 2.1–2.11, 3.1–3.17, 4.1–4.11, 5.1–5.12, 6.1–6.11, 7.1–7.13, and 8.1–8.11), 300 documents (Arabic lessons, Turkish lessons, Turkish cheat sheets), and 356 glossary entries. Chapters 1–8 have reviewed first-pass coverage; this is not full textbook coverage. See the exact [source inventory and coverage](docs/source-coverage.md).
+**Information Systems Security coverage is incremental:** 14 discovered chapters, one hundred published topics covering Chapters 1–8 (sections 1.1–1.13, 2.1–2.11, 3.1–3.17, 4.1–4.11, 5.1–5.12, 6.1–6.11, 7.1–7.13, and 8.1–8.11), 300 documents (Arabic lessons, Turkish lessons, Turkish cheat sheets), and 356 glossary entries. Chapters 1–8 have reviewed first-pass coverage; this is not full textbook coverage. See the exact [source inventory and coverage](docs/source-coverage.md).
 
-Thirteen local PDFs contain 633 page instances / 632 page positions (one overlapping page). Originals are private under ignored `materials/`, never bundled or hosted. The application builds without them. Reading pages show a plain textual citation (source document and physical PDF pages); provenance metadata, including each split file’s SHA-256, stays in the content model, validation and Markdown exports. There is no upload or file-matching interface. Technical fixtures remain only under `tests/`.
+The documentation also covers Operating Systems weeks 1–5 and Software Design topics including UML diagrams, SOLID, and structural patterns. See the [Operating Systems source review](docs/os-week-05-source-review.md) for the latest week.
+
+The thirteen Information Systems Security PDFs contain 633 page instances / 632 page positions (one overlapping page). Originals are private under ignored `materials/`, never bundled or hosted. The application builds without them. Reading pages show a plain textual citation (source document and physical PDF pages); provenance metadata, including each split file’s SHA-256, stays in the content model, validation and Markdown exports. There is no upload or file-matching interface. Technical fixtures remain only under `tests/`.
 
 ## Run locally
 
@@ -29,6 +31,8 @@ python3 -m http.server 3000 --directory out # local production preview
 ```
 
 The docs include a collapsible course/chapter sidebar, a navbar search palette (`Ctrl K` / `⌘K`, or `/`) over multilingual full-text search, a prominent Next Topic step after each lesson, concept/prerequisite/related/backlink navigation, a filterable Turkish–English glossary table with TSV copy/download, Markdown copying, complete topic bundles, heading navigation, light/dark themes (system default, explicit choice stored locally), and a simple Labs page that accurately records the missing laboratory workbook.
+
+The Operating Systems Quiz Trainer is available at `/tr/quiz/` and `/ar/quiz/`. It includes 279 Turkish questions across five weeks, timed 60-question mocks and browser-local progress with JSON backup. See the [quiz architecture and authoring guide](docs/quiz.md).
 
 Browser acceptance runs against **exported** output (Python 3 is used only for local preview):
 

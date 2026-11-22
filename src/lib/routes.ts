@@ -4,6 +4,7 @@ import { isLocale, type Locale } from "./i18n";
 export const routes = {
   home: (locale: Locale) => `/${locale}/`,
   docs: (locale: Locale) => `/${locale}/docs/`,
+  quiz: (locale: Locale) => `/${locale}/quiz/`,
   glossary: (locale: Locale) => `/${locale}/docs/glossary/`,
   search: (locale: Locale) => `/${locale}/docs/search/`,
   labs: (locale: Locale) => `/${locale}/docs/labs/`,

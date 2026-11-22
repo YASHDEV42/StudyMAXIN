@@ -9,6 +9,7 @@ import type { Locale } from "@/lib/i18n";
 import { messages } from "@/lib/i18n";
 import { docsMessages } from "@/lib/docs/messages";
 import { routes } from "@/lib/routes";
+import { quizMessages } from "@/lib/quiz/messages";
 import { LanguageSwitch } from "@/components/language-switch";
 import { setNavigationOpen, useNavigationOpen } from "./nav-store";
 
@@ -138,6 +139,7 @@ export function DocsNavigation({
     { href: routes.glossary(locale), label: messages[locale].glossary },
     { href: routes.search(locale), label: t.search },
     { href: routes.labs(locale), label: t.labs },
+    { href: routes.quiz(locale), label: quizMessages[locale].link },
   ];
 
   return (
@@ -283,6 +285,9 @@ export function DocsNavigation({
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch={
+                    item.href === routes.quiz(locale) ? false : undefined
+                  }
                   aria-current={path === item.href ? "page" : undefined}
                 >
                   {item.label}

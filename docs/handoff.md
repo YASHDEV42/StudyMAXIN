@@ -396,3 +396,7 @@ Implemented a full design pass. Nothing was committed, pushed, merged or deploye
 ## StudyMAXIN rebranding — 2026-11-14
 
 Current product identity is **StudyMAXIN**. See [the rebranding handoff](rebranding-handoff.md) for the exact task file list, preserved work, verification results and intentional historical references, and [deployment readiness](deployment.md) for provider-specific next steps. No commit, push, merge or deployment was made.
+
+## Operating Systems Quiz Trainer
+
+See the [quiz handoff](quiz-handoff.md) for implementation scope, provenance and verification.

@@ -7,6 +7,7 @@ import type { Locale } from "@/lib/i18n";
 import { messages } from "@/lib/i18n";
 import { docsMessages } from "@/lib/docs/messages";
 import { routes } from "@/lib/routes";
+import { quizMessages } from "@/lib/quiz/messages";
 import { LanguageSwitch } from "@/components/language-switch";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { menuButtonId, sidebarId } from "./navigation";
@@ -42,6 +43,11 @@ export function DocsHeader({
       href: routes.labs(locale),
       label: t.labs,
       current: path === routes.labs(locale),
+    },
+    {
+      href: routes.quiz(locale),
+      label: quizMessages[locale].link,
+      current: false,
     },
   ];
   return (
@@ -81,6 +87,9 @@ export function DocsHeader({
             <Link
               key={section.href}
               href={section.href}
+              prefetch={
+                section.href === routes.quiz(locale) ? false : undefined
+              }
               aria-current={
                 section.current
                   ? path === section.href
