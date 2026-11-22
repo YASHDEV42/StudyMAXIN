@@ -6,11 +6,11 @@
 
 Veritabanı ekosisteminde üç mantıksal bileşen vardır: **Sunum katmanı (Presentation)**, **Uygulama/İş mantığı katmanı (Application)**, **Veri katmanı (Data)**.
 
-| Mimari | Yerleşim ve erişim | Avantaj / sorun |
-| --- | --- | --- |
-| **1-Tier (tek katmanlı)** | Arayüz, uygulama, VT aynı makinede | Basit kişisel uygulama, paylaşım ve çok kullanıcı sınırlı; örnek Access/SQLite masaüstü |
+| Mimari                      | Yerleşim ve erişim                                              | Avantaj / sorun                                                                             |
+| --------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **1-Tier (tek katmanlı)**   | Arayüz, uygulama, VT aynı makinede                              | Basit kişisel uygulama, paylaşım ve çok kullanıcı sınırlı; örnek Access/SQLite masaüstü     |
 | **2-Tier (istemci–sunucu)** | İstemcide sunum+iş mantığı; doğrudan VT sunucusuna SQL gönderir | Merkezi veri ve çok kullanıcı; her istemcide güncelleme ihtiyacı, güvenlik/performans riski |
-| **3-Tier (üç katmanlı)** | Tarayıcı → uygulama sunucusu → RDBMS | İş mantığı sunucudadır; ayrıştırma, güvenlik ve uygulama sunucularıyla ölçekleme |
+| **3-Tier (üç katmanlı)**    | Tarayıcı → uygulama sunucusu → RDBMS                            | İş mantığı sunucudadır; ayrıştırma, güvenlik ve uygulama sunucularıyla ölçekleme            |
 
 **Slayt 7'nin diyagramı** veri tabanına kimin bağlandığını gösterir: 2-Tier'da istemciler doğrudan, 3-Tier'da yalnızca uygulama katmanı. Slayt 10'daki modern web örneği Node.js, Java, Python veya .NET uygulama sunucusu kullanabilir.
 
@@ -35,12 +35,12 @@ Bu ayrım, SQL'in **bildirimsel** olmasının pratik karşılığıdır: “ne�
 
 ### Depolama motorunun dört yöneticisi
 
-| Yönetici | Görev |
-| --- | --- |
-| **İşlem Yöneticisi (Transaction Manager)** | COMMIT/ROLLBACK ve ACID işlemlerini yönetmek |
-| **Kilit Yöneticisi (Lock Manager)** | Eşzamanlı erişimi düzenlemek; satır/sayfa/tablo kilitleri |
+| Yönetici                                                 | Görev                                                                                    |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **İşlem Yöneticisi (Transaction Manager)**               | COMMIT/ROLLBACK ve ACID işlemlerini yönetmek                                             |
+| **Kilit Yöneticisi (Lock Manager)**                      | Eşzamanlı erişimi düzenlemek; satır/sayfa/tablo kilitleri                                |
 | **Arabellek/Önbellek Yöneticisi (Buffer/Cache Manager)** | Sık kullanılan sayfaları RAM içindeki **buffer pool**'da tutarak disk erişimini azaltmak |
-| **Dosya ve Erişim Yöneticisi (File and Access Manager)** | Veri, indeks ve log dosyalarında fiziksel okuma/yazma |
+| **Dosya ve Erişim Yöneticisi (File and Access Manager)** | Veri, indeks ve log dosyalarında fiziksel okuma/yazma                                    |
 
 **Arabellek neden hızlandırır?** Disk erişimi RAM erişiminden çok daha yavaştır; ihtiyaç duyulan veri sayfası buffer pool'daysa diskten yeniden okumaya gerek kalmayabilir.
 
@@ -48,12 +48,12 @@ Bu ayrım, SQL'in **bildirimsel** olmasının pratik karşılığıdır: “ne�
 
 ## Dört popüler RDBMS (slayt 20–27)
 
-| Sistem | Dersin vurguladığı özellikler | Örnek proje seçimi |
-| --- | --- | --- |
-| **Oracle Database** | RAC ile yüksek erişilebilirlik; güçlü kurumsal güvenlik/analitik; ticari ve yüksek maliyet | Görev-kritik uluslararası bankacılık |
-| **MySQL** | LAMP/WordPress/CMS ekosistemi, kolaylık ve okumaya yönelik kullanım; InnoDB ACID; Community/Enterprise | Kişisel blog / küçük işletme web sitesi |
-| **Microsoft SQL Server** | Windows, .NET, Azure, Active Directory; SSMS/SSIS/SSAS/SSRS; Express ve ticari sürümler | .NET tabanlı Windows ERP / BI |
-| **PostgreSQL** | Açık kaynak, standartlara uyum, genişletilebilirlik, PostGIS, nesne-ilişkisel özellikler | Coğrafi analiz startup'ı / karmaşık sorgular |
+| Sistem                   | Dersin vurguladığı özellikler                                                                          | Örnek proje seçimi                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| **Oracle Database**      | RAC ile yüksek erişilebilirlik; güçlü kurumsal güvenlik/analitik; ticari ve yüksek maliyet             | Görev-kritik uluslararası bankacılık         |
+| **MySQL**                | LAMP/WordPress/CMS ekosistemi, kolaylık ve okumaya yönelik kullanım; InnoDB ACID; Community/Enterprise | Kişisel blog / küçük işletme web sitesi      |
+| **Microsoft SQL Server** | Windows, .NET, Azure, Active Directory; SSMS/SSIS/SSAS/SSRS; Express ve ticari sürümler                | .NET tabanlı Windows ERP / BI                |
+| **PostgreSQL**           | Açık kaynak, standartlara uyum, genişletilebilirlik, PostGIS, nesne-ilişkisel özellikler               | Coğrafi analiz startup'ı / karmaşık sorgular |
 
 Slayt 26–27 dört senaryo verir: WordPress sitesi için **MySQL**, GIS girişimi için **PostgreSQL**, kurumsal .NET ERP için **SQL Server**, kritik bankacılık için **Oracle**. Bunlar dersin senaryo temelli tercihleri olup her sistem için mutlak performans sıralaması değildir.
 
@@ -61,11 +61,11 @@ Slayt 26–27 dört senaryo verir: WordPress sitesi için **MySQL**, GIS girişi
 
 **Veri Bütünlüğü (Data Integrity)** verinin doğru, tutarlı ve güvenilir kalmasını sağlayan kurallardır.
 
-| Tür | Temel garanti | Kısıtlar ve örnek |
-| --- | --- | --- |
-| **Varlık Bütünlüğü (Entity Integrity)** | Her kayıt benzersiz ve tanımlanabilir | `PRIMARY KEY`; aynı kimlikle iki satırı önleme |
-| **Alan Bütünlüğü (Domain Integrity)** | Değerler tür, biçim ve aralığa uygun | Veri türleri, `CHECK`, `NOT NULL`; negatif fiyatı önleme |
-| **İlişkisel Bütünlük (Referential Integrity)** | Tablolar arası referansların geçerliliği | `FOREIGN KEY`; olmayan öğrenciye not yazılmasını önleme |
+| Tür                                            | Temel garanti                            | Kısıtlar ve örnek                                        |
+| ---------------------------------------------- | ---------------------------------------- | -------------------------------------------------------- |
+| **Varlık Bütünlüğü (Entity Integrity)**        | Her kayıt benzersiz ve tanımlanabilir    | `PRIMARY KEY`; aynı kimlikle iki satırı önleme           |
+| **Alan Bütünlüğü (Domain Integrity)**          | Değerler tür, biçim ve aralığa uygun     | Veri türleri, `CHECK`, `NOT NULL`; negatif fiyatı önleme |
+| **İlişkisel Bütünlük (Referential Integrity)** | Tablolar arası referansların geçerliliği | `FOREIGN KEY`; olmayan öğrenciye not yazılmasını önleme  |
 
 Bu kurallar Hafta 2'de tanımlanmış ve Hafta 4'te SQL ile uygulanmıştır.
 
@@ -73,12 +73,12 @@ Bu kurallar Hafta 2'de tanımlanmış ve Hafta 4'te SQL ile uygulanmıştır.
 
 **Transaction (işlem)** tek mantıksal birim olarak yürütülen operasyonlar dizisidir. Slayt 31'deki temel senaryo A hesabından B'ye **100 TL transferi**: A'dan 100 TL azalt, B'ye 100 TL ekle.
 
-| Özellik | Tanım | Banka örneği |
-| --- | --- | --- |
-| **A — Atomicity (Atomiklik)** | Ya hep ya hiç; başarısızlıkta işlemin değişiklikleri geri alınır | B'ye yatırma başarısızsa A'dan çekilen para iade edilir |
-| **C — Consistency (Tutarlılık)** | Bir tutarlı durumdan başka tutarlı duruma geçer; bütünlük kuralları korunur | Toplam bakiye değişmez, tanımlanmış PK/FK/CHECK ve iş kuralları korunur |
-| **I — Isolation (İzolasyon)** | Eşzamanlı transaction'ların birbirinin geçici durumunu uygunsuz biçimde görmesini önler | Diğer müşteri yarım transfer görmez |
-| **D — Durability (Kalıcılık)** | COMMIT edilen sonuçlar arızadan sonra da korunur | “Transfer tamamlandı” sonrası sunucu çökse de transfer kurtarılır |
+| Özellik                          | Tanım                                                                                   | Banka örneği                                                            |
+| -------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **A — Atomicity (Atomiklik)**    | Ya hep ya hiç; başarısızlıkta işlemin değişiklikleri geri alınır                        | B'ye yatırma başarısızsa A'dan çekilen para iade edilir                 |
+| **C — Consistency (Tutarlılık)** | Bir tutarlı durumdan başka tutarlı duruma geçer; bütünlük kuralları korunur             | Toplam bakiye değişmez, tanımlanmış PK/FK/CHECK ve iş kuralları korunur |
+| **I — Isolation (İzolasyon)**    | Eşzamanlı transaction'ların birbirinin geçici durumunu uygunsuz biçimde görmesini önler | Diğer müşteri yarım transfer görmez                                     |
+| **D — Durability (Kalıcılık)**   | COMMIT edilen sonuçlar arızadan sonra da korunur                                        | “Transfer tamamlandı” sonrası sunucu çökse de transfer kurtarılır       |
 
 ### Atomiklik (slayt 32)
 
@@ -106,4 +106,4 @@ Slayt 40'a göre sonraki konu **Transaction Yönetimi ve İndeksleme**: TCL, ban
 
 **Kontrol soruları:** 2-Tier'ın iki temel sorunu nedir? Parser–Optimizer–Executor sırası nasıl işler? Buffer Pool neden performansı artırır? Entity/Domain/Referential Integrity hangi kısıtlarla sağlanır? ACID'in dört ilkesini banka transferiyle açıklayabilir misin?
 
-**Kaynak:** *Modern Veritabanı Yönetim Sistemleri*, Prof. Dr. Özal Yıldırım, Hafta 5, fiziksel PDF sayfaları 6–40.
+**Kaynak:** _Modern Veritabanı Yönetim Sistemleri_, Prof. Dr. Özal Yıldırım, Hafta 5, fiziksel PDF sayfaları 6–40.

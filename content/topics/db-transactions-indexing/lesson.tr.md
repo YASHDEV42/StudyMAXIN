@@ -6,12 +6,12 @@ Hafta 5'teki ACID teorisinin uygulaması **transaction yönetimi**dir. Bu ders, 
 
 **Transaction (işlem):** Tek bir mantıksal iş birimi olarak ele alınan bir veya daha çok SQL komutunun, genellikle DML'in, dizisidir. VTYS, ACID özelliklerini bütün işlem için uygular.
 
-| TCL komutu | Görevi |
-| --- | --- |
-| `BEGIN TRANSACTION` / `START TRANSACTION` | İşlem bloğunu başlatır |
-| `COMMIT` | Değişiklikleri onaylayıp kalıcılaştırır |
-| `ROLLBACK` | İşlemdeki onaylanmamış değişiklikleri geri alır |
-| `SAVEPOINT ad` | Bir işlem içindeki geri dönüş noktasıdır |
+| TCL komutu                                | Görevi                                          |
+| ----------------------------------------- | ----------------------------------------------- |
+| `BEGIN TRANSACTION` / `START TRANSACTION` | İşlem bloğunu başlatır                          |
+| `COMMIT`                                  | Değişiklikleri onaylayıp kalıcılaştırır         |
+| `ROLLBACK`                                | İşlemdeki onaylanmamış değişiklikleri geri alır |
+| `SAVEPOINT ad`                            | Bir işlem içindeki geri dönüş noktasıdır        |
 
 **Slayt 8'in yaşam döngüsü:** BEGIN → DML 1 → SAVEPOINT → DML 2 → başarıysa COMMIT, hatada ROLLBACK veya kayıt noktasına dönüş. **Ek açıklama:** `ROLLBACK TO SAVEPOINT` işlemi tümüyle bitirmez; kalan değişiklikleri COMMIT etmek veya tümüyle ROLLBACK yapmak gerekir.
 
@@ -19,10 +19,10 @@ Hafta 5'teki ACID teorisinin uygulaması **transaction yönetimi**dir. Bu ders, 
 
 Başlangıç `Hesaplar` verisi:
 
-| HesapNo | MusteriAdi | Bakiye |
-| --- | --- | --- |
-| 1001 | Ali Yilmaz | 1000.00 |
-| 1002 | Zeynep Kaya | 500.00 |
+| HesapNo | MusteriAdi  | Bakiye  |
+| ------- | ----------- | ------- |
+| 1001    | Ali Yilmaz  | 1000.00 |
+| 1002    | Zeynep Kaya | 500.00  |
 
 **İş kuralı:** Ali'den Zeynep'e **200 TL** aktarılır. Her iki UPDATE birlikte başarılı olmalıdır.
 
@@ -45,6 +45,7 @@ Başarılı işlem sonunda **Ali=800.00, Zeynep=700.00**; toplam bakiye 1500.00 
 **Hata durumu (slayt 11):** Zeynep'in hesabına para yatırılan UPDATE hata verirse uygulama `ROLLBACK` gönderir. Ali'nin geçici 800.00 bakiyesi **1000.00**'a döner. Bu **Atomicity (Atomiklik)** ilkesidir.
 
 **PostgreSQL 16 (slayt 12):**
+
 - `BEGIN TRANSACTION;`, `START TRANSACTION;` veya `BEGIN;` kullanılabilir.
 - Blok içindeki SQL hatası transaction'ı **aborted** durumuna sokar. Sonraki komutlar reddedilir; `ROLLBACK;` ile blok kapatılır.
 - Hatalı bloğa `COMMIT;` göndermek, değişiklikleri kalıcılaştırmaz; işlem geri alınır.
@@ -67,6 +68,7 @@ PostgreSQL'in psql/pgAdmin istemcilerinde varsayılan autocommit davranışı de
 **İndeks (Index):** Bir veya daha fazla sütunun değerleriyle ilgili satırlara erişimi kolaylaştıran özel veri yapısı. Slayt 17'de sıralı `MusteriID` değerleri ve temsili disk adresleri gösterilir; `WHERE MusteriID=54321` indeks üzerinden aranabilir.
 
 **Ödünleşim (Trade-off):**
+
 - SELECT sorguları hızlanabilir.
 - Her indeks fazladan disk alanı kullanır.
 - INSERT/UPDATE/DELETE sırasında indekslerin bakımı yazma maliyetini artırabilir.
@@ -152,4 +154,4 @@ WHERE MusteriID = 54321;
 
 **Kontrol soruları (cevapsız):** Transferde ikinci UPDATE başarısızsa bakiye neden 800'de kalmaz? Composite Index'te sütun sırası neden önemlidir? EXPLAIN ile EXPLAIN ANALYZE'nin farkı nedir?
 
-**Kaynak:** Prof. Dr. Özal Yıldırım, *Transaction Yönetimi ve İndeksleme*, Hafta 6, fiziksel PDF sayfaları 6–30.
+**Kaynak:** Prof. Dr. Özal Yıldırım, _Transaction Yönetimi ve İndeksleme_, Hafta 6, fiziksel PDF sayfaları 6–30.

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "db-w2-q01",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "basic",
+    "question": "İlişkisel modelde tuple (demet) hangi yapıyı ifade eder?",
+    "choices": [
+      "Tablonun bir sütununu",
+      "Tablonun bir satırını",
+      "Tüm tabloların birleşimini",
+      "Bir sütunun izin verilen değer kümesini"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tuple ilişki içindeki tek bir kayıt, yani satırdır.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "db-w2-q02",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "basic",
+    "question": "İlişkisel tablonun teorik özelliklerinden biri hangisidir?",
+    "choices": [
+      "Aynı satır sınırsız kez tekrarlanmalıdır",
+      "Her hücre çoklu telefon listesi içermelidir",
+      "Satırların sırası anlamsal olarak önemli değildir",
+      "Sütunlar sıraya göre zorunlu erişim yolu oluşturur"
+    ],
+    "correctIndex": 2,
+    "explanation": "İlişkide satır sırası önemsiz, satırlar benzersiz ve değerler atomiktir.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [9]
+    }
+  },
+  {
+    "id": "db-w2-q03",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "basic",
+    "question": "Birincil anahtarın (PRIMARY KEY) zorunlu özelliği nedir?",
+    "choices": [
+      "Her zaman iki sütundan oluşması",
+      "Başka tablonun metin sütunu olması",
+      "Tekrarlanan değerleri kabul etmesi",
+      "Benzersiz olması ve NULL içermemesi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Primary Key satırı tekil belirler ve NULL kabul etmez.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "db-w2-q04",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "Notlar tablosundaki OgrenciID yabancı anahtarı neyi korur?",
+    "choices": [
+      "Var olmayan öğrenciye not yazılmasını önleyen referans bütünlüğünü",
+      "Notların her zaman 100 olmasını",
+      "Bütün öğrencilerin aynı bölüme bağlı olmasını",
+      "İsimlerin alfabetik sıralanmasını"
+    ],
+    "correctIndex": 0,
+    "explanation": "Foreign Key, başvurulan öğrenci kimliğinin geçerliliğini denetler.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [11]
+    }
+  },
+  {
+    "id": "db-w2-q05",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "ER diyagramında çift oval hangi kavramı gösterir?",
+    "choices": [
+      "Zayıf varlığı",
+      "Çok değerli niteliği",
+      "İlişkinin kendisini",
+      "Türetilmiş niteliği"
+    ],
+    "correctIndex": 1,
+    "explanation": "Slaytta çift oval, örneğin birden fazla Telefon değerini belirtir.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "db-w2-q06",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "ER diyagramında kesikli ovalin anlamı nedir?",
+    "choices": [
+      "Anahtar nitelik",
+      "Güçlü varlık",
+      "Türetilmiş nitelik",
+      "Bire-bir ilişki"
+    ],
+    "correctIndex": 2,
+    "explanation": "Yaş gibi başka nitelikten hesaplanan değer türetilmiş niteliktir.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "db-w2-q07",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "Öğrenci N — Kayıt — Bölüm 1 ilişkisi nasıl okunur?",
+    "choices": [
+      "Bir öğrenci N bölüme, her bölüm tek öğrenciye bağlı",
+      "Her bölüm ve öğrenci arasında zorunlu M:N vardır",
+      "İlişkide hiçbir yabancı anahtar kullanılamaz",
+      "Bir bölümde çok öğrenci, her öğrenci için bir bölüm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kardinalite karşı uçtan okunur; FK N tarafındaki Öğrenci tablosuna eklenir.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "db-w2-q08",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "1:N ER ilişkisinin ilişkilere dönüşümünde FK hangi tarafa eklenir?",
+    "choices": [
+      "N tarafının tablosuna, 1 tarafının PK değeriyle",
+      "1 tarafına, N tarafının bütün satırlarıyla",
+      "Her iki tarafa da zorunlu aynı metin sütunu olarak",
+      "Yalnızca yeni ve ilişkisiz bir tabloya"
+    ],
+    "correctIndex": 0,
+    "explanation": "1:N dönüşümünde bir tarafının PK'si çok tarafında FK olur.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "db-w2-q09",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "advanced",
+    "question": "Öğrenci–Ders M:N ilişkisi nasıl saklanmalıdır?",
+    "choices": [
+      "Yalnızca Öğrenci tablosuna ders adı listesi yazarak",
+      "Her iki tarafa FK içeren bir ara tabloyla",
+      "İki tablodaki tüm kayıtları silerek",
+      "Ders tablosunda tek bir öğrenci sütunuyla"
+    ],
+    "correctIndex": 1,
+    "explanation": "M:N ilişki için OgrenciDersKayit gibi junction table kurulur.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [26]
+    }
+  },
+  {
+    "id": "db-w2-q10",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "advanced",
+    "question": "{OgrenciNo,Ad} neden aday anahtar olmayabilir?",
+    "choices": [
+      "İki sütunlu her anahtar adaydır",
+      "Aday anahtarlar benzersiz olamaz",
+      "OgrenciNo tek başına benzersizse küme minimal değildir",
+      "Ad sütunu metin olduğu için hiçbir anahtarda bulunamaz"
+    ],
+    "correctIndex": 2,
+    "explanation": "Candidate Key minimal Super Key'dir; gereksiz sütun içermez.",
+    "source": {
+      "id": "db-week-2",
+      "slides": [34]
+    }
+  }
+]

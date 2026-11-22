@@ -1,0 +1,182 @@
+[
+  {
+    "id": "db-w4-q01",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "basic",
+    "question": "İlişkisel cebirde σ (selection) SQL'de hangi yapı ile karşılanır?",
+    "choices": ["ORDER BY", "CREATE TABLE", "COMMIT", "WHERE"],
+    "correctIndex": 3,
+    "explanation": "Seçme satırları koşula göre filtreler; SQL karşılığı WHERE'dir.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "db-w4-q02",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "basic",
+    "question": "INSERT, UPDATE ve DELETE komutları hangi SQL alt dilindedir?",
+    "choices": ["DML", "DDL", "TCL", "DQL"],
+    "correctIndex": 0,
+    "explanation": "Data Manipulation Language verilerin değiştirilmesini kapsar.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [14]
+    }
+  },
+  {
+    "id": "db-w4-q03",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "basic",
+    "question": "DELETE ile DROP TABLE arasındaki temel fark hangisidir?",
+    "choices": [
+      "DELETE tablo yapısını, DROP yalnızca satırları kaldırır",
+      "DELETE satırları, DROP TABLE ise tablo yapısını kaldırır",
+      "Her iki komut yalnızca indeks adını değiştirir",
+      "DROP yalnızca tek bir satırı siler"
+    ],
+    "correctIndex": 1,
+    "explanation": "DELETE DML satır işlemi; DROP TABLE nesneyi kaldıran DDL işlemidir.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [23]
+    }
+  },
+  {
+    "id": "db-w4-q04",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "BolumID=11 yokken üç satırlı INSERT'in son satırı FK'yi ihlal ederse ne olur?",
+    "choices": [
+      "İlk iki satır mutlaka kalıcı olur",
+      "FK denetimi otomatik kapatılır",
+      "Çok satırlı INSERT ifadesinin tamamı reddedilir",
+      "Bölüm 11 otomatik oluşturulur"
+    ],
+    "correctIndex": 2,
+    "explanation": "Slayt 25'te çoklu INSERT tek ifade olduğu için FK hatasında tamamı başarısızdır.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "db-w4-q05",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "NULL değeri olan öğrencileri bulmak için doğru koşul hangisidir?",
+    "choices": [
+      "BolumID = NULL",
+      "BolumID LIKE NULL",
+      "BolumID BETWEEN NULL AND NULL",
+      "BolumID IS NULL"
+    ],
+    "correctIndex": 3,
+    "explanation": "SQL'de NULL karşılaştırması IS NULL kullanır.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [32]
+    }
+  },
+  {
+    "id": "db-w4-q06",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "Gruplama sonunda en az iki öğrencili bölümleri filtrelemek için hangisi kullanılır?",
+    "choices": [
+      "HAVING COUNT(*) > 1",
+      "WHERE COUNT(*) > 1",
+      "ORDER BY COUNT(*) > 1",
+      "DEFAULT COUNT(*) > 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "HAVING grupları aggregate sonrası filtreler, WHERE satırları öncesinde filtreler.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [36]
+    }
+  },
+  {
+    "id": "db-w4-q07",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "Bölümü NULL olan Elif'i sonuçta tutmak için Ogrenciler soldayken hangi JOIN gerekir?",
+    "choices": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "CROSS JOIN koşulsuz",
+      "NATURAL INNER JOIN"
+    ],
+    "correctIndex": 1,
+    "explanation": "LEFT JOIN sol tablodaki eşleşmeyen satırları NULL sağ değerlerle korur.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [40]
+    }
+  },
+  {
+    "id": "db-w4-q08",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "WITH MuhendislikBolumleri AS (...) ifadesi hangi yapıyı kurar?",
+    "choices": [
+      "Kalıcı PRIMARY KEY",
+      "Tablodan bütün satırları silen işlem",
+      "CTE: sorgu kapsamında isimlendirilmiş ara sonuç",
+      "Bir transaction'ın COMMIT noktası"
+    ],
+    "correctIndex": 2,
+    "explanation": "Common Table Expression karmaşık sorguları anlamlı adımlara ayırır.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [45]
+    }
+  },
+  {
+    "id": "db-w4-q09",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "advanced",
+    "question": "Normal VIEW hakkında hangi ifade doğrudur?",
+    "choices": [
+      "Her zaman temel tablonun ayrı fiziksel kopyasıdır",
+      "Yalnızca INSERT trigger'ı olarak çalışır",
+      "Mutlaka tüm kaynak tabloları siler",
+      "SELECT tanımını saklar ve güncel temel veriyi gösterir"
+    ],
+    "correctIndex": 3,
+    "explanation": "Normal görünüm tanımlı sorguyu temsil eder; materialized view'den farklıdır.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [49]
+    }
+  },
+  {
+    "id": "db-w4-q10",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "advanced",
+    "question": "SQL Server'da UPDATE trigger'ının inserted ve deleted tabloları neyi içerir?",
+    "choices": [
+      "inserted yeni, deleted eski satır değerlerini",
+      "inserted eski, deleted yalnızca yeni değerleri",
+      "İkisi de yalnızca tablonun adını",
+      "Her ikisi de daima boş değerleri"
+    ],
+    "correctIndex": 0,
+    "explanation": "SQL Server UPDATE'te yeni satır sürümleri inserted, eski sürümler deleted'dedir.",
+    "source": {
+      "id": "db-week-4",
+      "slides": [54]
+    }
+  }
+]

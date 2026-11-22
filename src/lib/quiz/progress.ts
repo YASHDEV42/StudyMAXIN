@@ -14,6 +14,10 @@ import {
 } from "./session";
 
 export const storageKey = "studymaxin.quiz.operating-systems.v1";
+export const storageKeyFor = (courseId: string) =>
+  courseId === operatingSystemsId
+    ? storageKey
+    : `studymaxin.quiz.${courseId}.v1`;
 export const maxImportBytes = 5_000_000;
 const count = z.number().int().nonnegative();
 const statsSchema = z
@@ -50,7 +54,7 @@ const resultSchema = z
   );
 const progressSchema = z.strictObject({
   version: z.literal(1),
-  courseId: z.literal(operatingSystemsId),
+  courseId: stableId,
   stats: z.record(stableId, statsSchema),
   bookmarks: z
     .array(stableId)
@@ -67,18 +71,23 @@ export type QuizResult = z.infer<typeof resultSchema>;
 export type LocalQuiz = z.infer<typeof localSchema>;
 type Stats = z.infer<typeof statsSchema>;
 
-export const emptyProgress = (): Progress => ({
+export const emptyProgress = (courseId = operatingSystemsId): Progress => ({
   version: 1,
-  courseId: operatingSystemsId,
+  courseId,
   stats: {},
   bookmarks: [],
   results: [],
 });
 
-export function importProgress(raw: string): Progress {
+export function importProgress(
+  raw: string,
+  courseId = operatingSystemsId,
+): Progress {
   if (new TextEncoder().encode(raw).length > maxImportBytes)
     throw new Error("Progress file too large");
-  return progressSchema.parse(JSON.parse(raw));
+  const progress = progressSchema.parse(JSON.parse(raw));
+  if (progress.courseId !== courseId) throw new Error("Wrong quiz course");
+  return progress;
 }
 
 export function exportProgress(progress: Progress): string {
@@ -88,8 +97,12 @@ export function exportProgress(progress: Progress): string {
 export function readLocal(
   raw: string | null,
   questions: ReadonlyMap<string, Question>,
+  courseId = operatingSystemsId,
 ) {
-  const fallback: LocalQuiz = { progress: emptyProgress(), active: null };
+  const fallback: LocalQuiz = {
+    progress: emptyProgress(courseId),
+    active: null,
+  };
   if (raw === null) return { data: fallback, recovered: false };
   try {
     const saved = JSON.parse(raw);
@@ -99,12 +112,17 @@ export function readLocal(
       return {
         data: {
           ...fallback,
-          progress: progress.success ? progress.data : fallback.progress,
+          progress:
+            progress.success && progress.data.courseId === courseId
+              ? progress.data
+              : fallback.progress,
         },
         recovered: true,
       };
     }
     const { active, progress } = parsed.data;
+    if (progress.courseId !== courseId)
+      return { data: fallback, recovered: true };
     if (active && active.items.some(({ id }) => !questions.has(id))) {
       return { data: { progress, active: null }, recovered: true };
     }

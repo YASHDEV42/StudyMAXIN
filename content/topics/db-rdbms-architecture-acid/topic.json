@@ -7,9 +7,7 @@
     "ar": "بنية أنظمة قواعد البيانات العلائقية وACID"
   },
   "order": 0,
-  "prerequisites": [
-    "db-sql-fundamentals-advanced"
-  ],
+  "prerequisites": ["db-sql-fundamentals-advanced"],
   "related": [],
   "documents": [
     {

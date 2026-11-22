@@ -1,0 +1,187 @@
+[
+  {
+    "id": "db-w5-q01",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "basic",
+    "question": "2-Tier mimaride iş mantığının istemcide bulunmasının temel sakıncası nedir?",
+    "choices": [
+      "Değişiklikler için çok sayıda istemcinin ayrı güncellenmesi",
+      "Hiçbir istemcinin veritabanına erişememesi",
+      "Tüm sorguların zorunlu olarak çevrimdışı çalışması",
+      "Verinin hiçbir zaman merkezi tutulmaması"
+    ],
+    "correctIndex": 0,
+    "explanation": "2-Tier istemci doğrudan VT'ye erişir ve iş mantığı güncellemeleri dağıtılmalıdır.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [9]
+    }
+  },
+  {
+    "id": "db-w5-q02",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "basic",
+    "question": "3-Tier mimaride tarayıcı doğrudan hangi bileşenle haberleşir?",
+    "choices": [
+      "Veritabanının disk dosyaları",
+      "Uygulama sunucusu",
+      "Storage Engine buffer pool",
+      "Sadece index dosyaları"
+    ],
+    "correctIndex": 1,
+    "explanation": "3-Tier'da sunum katmanı uygulama katmanına; uygulama katmanı VT'ye gider.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "db-w5-q03",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "basic",
+    "question": "SQL sorgusu Query Processor içinde hangi sıradan geçer?",
+    "choices": [
+      "Optimizer → Parser → Executor",
+      "Executor → Parser → Optimizer",
+      "Parser → Optimizer → Executor",
+      "Storage → Executor → Parser"
+    ],
+    "correctIndex": 2,
+    "explanation": "Önce ayrıştırma, sonra plan seçimi, ardından yürütme yapılır.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [14]
+    }
+  },
+  {
+    "id": "db-w5-q04",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Optimizer yürütme planını seçerken temel olarak hangi verileri kullanır?",
+    "choices": [
+      "Yalnızca sütun adlarının alfabetik sırası",
+      "Yalnızca kullanıcı arayüzünün rengi",
+      "Tablo adlarının karakter sayısı",
+      "Tablo boyutları, veri dağılımı ve olası indeksler"
+    ],
+    "correctIndex": 3,
+    "explanation": "İyileştirici istatistiklerle erişim ve JOIN stratejilerinin maliyetini tahmin eder.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "db-w5-q05",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Sık kullanılan veri sayfalarını RAM'de tutan bileşen hangisidir?",
+    "choices": [
+      "Buffer/Cache Manager",
+      "Parser",
+      "Schema Designer",
+      "User Interface Manager"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buffer pool, disk I/O gereksinimini azaltır.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "db-w5-q06",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "PostGIS gibi mekânsal veri eklentileri hangi RDBMS'nin ayırt edici yönüdür?",
+    "choices": [
+      "Microsoft Access",
+      "PostgreSQL",
+      "MyISAM",
+      "Oracle RAC tek başına"
+    ],
+    "correctIndex": 1,
+    "explanation": "Slayt 24 PostgreSQL'in genişletilebilirliğini PostGIS ile örneklendirir.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [24]
+    }
+  },
+  {
+    "id": "db-w5-q07",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Varlık bütünlüğünü (Entity Integrity) doğrudan hangi kısıt sağlar?",
+    "choices": [
+      "CHECK (Fiyat > 0)",
+      "FOREIGN KEY tek başına",
+      "PRIMARY KEY",
+      "ORDER BY"
+    ],
+    "correctIndex": 2,
+    "explanation": "PK her satırı benzersiz ve tanımlanabilir yapar.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [30]
+    }
+  },
+  {
+    "id": "db-w5-q08",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Mevcut olmayan OgrenciID için Notlar kaydı eklenmesini hangi kısıt önler?",
+    "choices": ["DEFAULT", "ORDER BY", "DISTINCT", "FOREIGN KEY"],
+    "correctIndex": 3,
+    "explanation": "Referential Integrity yabancı anahtarla korunur.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [30]
+    }
+  },
+  {
+    "id": "db-w5-q09",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Para A'dan çekilmişken B'ye yatırılamayınca ROLLBACK yapılması hangi ACID özelliğidir?",
+    "choices": [
+      "Atomicity",
+      "Durability",
+      "Isolation",
+      "Consistency'nin tek anlamı"
+    ],
+    "correctIndex": 0,
+    "explanation": "Atomicity bütün adımların birlikte başarılı olmasını veya geri alınmasını sağlar.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [32]
+    }
+  },
+  {
+    "id": "db-w5-q10",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "COMMIT edilen transferin sunucu çökmesine rağmen korunması hangi özelliktir?",
+    "choices": [
+      "Atomicity'nin geri alma kısmı",
+      "Durability",
+      "Sadece Projection",
+      "Index Seek"
+    ],
+    "correctIndex": 1,
+    "explanation": "Durability onaylanmış işlemin kalıcı ve kurtarılabilir olmasını hedefler.",
+    "source": {
+      "id": "db-week-5",
+      "slides": [35]
+    }
+  }
+]

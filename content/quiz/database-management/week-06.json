@@ -1,0 +1,187 @@
+[
+  {
+    "id": "db-w6-q01",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "basic",
+    "question": "Transaction kavramının en doğru tanımı hangisidir?",
+    "choices": [
+      "Yalnızca SELECT sonuçlarının sıralanması",
+      "Bir veya daha çok SQL komutundan oluşan tek mantıksal iş birimi",
+      "Sadece bir indeksin fiziksel adresi",
+      "Bir sütunun veri türü"
+    ],
+    "correctIndex": 1,
+    "explanation": "ACID, birden çok komutu kapsayabilen transaction bütününe uygulanır.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [6]
+    }
+  },
+  {
+    "id": "db-w6-q02",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "basic",
+    "question": "SAVEPOINT komutunun amacı nedir?",
+    "choices": [
+      "Bütün veritabanını otomatik yedeklemek",
+      "Transaction'ı her koşulda COMMIT etmek",
+      "Açık transaction içinde kısmi geri dönüş noktası oluşturmak",
+      "Tablodaki indeksleri silmek"
+    ],
+    "correctIndex": 2,
+    "explanation": "ROLLBACK TO SAVEPOINT ile belirtilen noktaya kadar geri dönülebilir.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [7]
+    }
+  },
+  {
+    "id": "db-w6-q03",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "basic",
+    "question": "200 TL transferi başarıyla COMMIT edilirse Ali ve Zeynep bakiyeleri ne olur?",
+    "choices": [
+      "Ali 1000 TL, Zeynep 500 TL",
+      "Ali 800 TL, Zeynep 500 TL",
+      "Ali 1000 TL, Zeynep 700 TL",
+      "Ali 800 TL, Zeynep 700 TL"
+    ],
+    "correctIndex": 3,
+    "explanation": "Başlangıç 1000+500; 200 TL aktarılınca toplam 1500 TL korunur.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "db-w6-q04",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Transferde ikinci UPDATE hata verip ROLLBACK uygulanırsa Ali'nin bakiyesi nedir?",
+    "choices": ["1000.00 TL", "800.00 TL", "1200.00 TL", "700.00 TL"],
+    "correctIndex": 0,
+    "explanation": "İlk UPDATE geçicidir; transaction geri alınırsa Ali başlangıç bakiyesine döner.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [11]
+    }
+  },
+  {
+    "id": "db-w6-q05",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "PostgreSQL'de açık transaction sırasında SQL hatası oluşunca ne gerekir?",
+    "choices": [
+      "Sonraki tüm komutları normal biçimde COMMIT etmek",
+      "ROLLBACK ile aborted durumu kapatmak",
+      "Bütün indeksleri DROP etmek",
+      "Hiçbir işlem yapmadan yeni DML çalıştırmak"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hata transaction'ı aborted yapar; ROLLBACK veya uygun savepoint kurtarma gerekir.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [12]
+    }
+  },
+  {
+    "id": "db-w6-q06",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Autocommit modu banka transferindeki iki UPDATE için neden sakıncalı olabilir?",
+    "choices": [
+      "Hiçbir UPDATE komutuna izin vermediği için",
+      "Her DML'i otomatik aynı transaction içine topladığı için",
+      "İlk adım ikinci başarısız olmadan önce kalıcılaşabilir",
+      "Sadece SELECT komutlarını etkilediği için"
+    ],
+    "correctIndex": 2,
+    "explanation": "Transfer çok adımlı tek mantıksal işlem olduğundan explicit BEGIN gerekir.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "db-w6-q07",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Full Table Scan ile Index Seek arasındaki temel fark nedir?",
+    "choices": [
+      "İlki yalnızca satır ekler, ikincisi yalnızca siler",
+      "İkisi de yalnızca log dosyasını okur",
+      "Index Seek her zaman bütün tabloyu sıralar",
+      "İlki satırları tarar, ikincisi indeks üzerinden ilgili kayda ulaşır"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fihrist benzetmesi indeksin aranan konuma hızla erişimini açıklar.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "db-w6-q08",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Çok sayıda indeksin iki temel maliyeti hangisidir?",
+    "choices": [
+      "Ek disk alanı ve INSERT/UPDATE/DELETE bakım maliyeti",
+      "Disk alanını sıfıra indirme ve ücretsiz yazma",
+      "Tüm JOIN'leri devre dışı bırakma ve NULL yasağı",
+      "Veri bütünlüğünü tamamen ortadan kaldırma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Her indeks alan kaplar ve DML sırasında bakım gerektirir.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [18]
+    }
+  },
+  {
+    "id": "db-w6-q09",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "CREATE INDEX IX_Ogrenciler_Soyad_Ad ON Ogrenciler(Soyad,Ad) için hangi özellik önemlidir?",
+    "choices": [
+      "Her iki sütunun her koşulda eşdeğer sırada olması",
+      "Bileşik indekste sütunların sırası",
+      "Yalnızca PRIMARY KEY üzerinde çalışması",
+      "İndeksin veri türü olmaması"
+    ],
+    "correctIndex": 1,
+    "explanation": "(Soyad, Ad) sırası sorgu kullanımında (Ad, Soyad) ile her zaman aynı değildir.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "db-w6-q10",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "PostgreSQL'de EXPLAIN ANALYZE, EXPLAIN'den hangi yönden ayrılır?",
+    "choices": [
+      "Yalnızca tablonun ismini değiştirir",
+      "Sorguyu çalıştırmadan sadece kaynak kodunu gösterir",
+      "Sorguyu gerçekten çalıştırarak gerçekleşen ölçümler sunar",
+      "Her zaman indeks oluşturur"
+    ],
+    "correctIndex": 2,
+    "explanation": "EXPLAIN tahmini planı verir; ANALYZE yürütür ve gerçek zaman/işlem ölçer.",
+    "source": {
+      "id": "db-week-6",
+      "slides": [24]
+    }
+  }
+]

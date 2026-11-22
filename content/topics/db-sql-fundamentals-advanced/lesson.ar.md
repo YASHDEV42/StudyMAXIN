@@ -1,17 +1,17 @@
 ## مقدمة: من التصميم إلى SQL
 
-بالأسابيع السابقة درسنا **Relational Model (ilişkisel model)** والـ**ER Diagram (varlık-ilişki diyagramı)** والـ**Normalization (normalizasyon)**. هلق بنحوّل التصميم لأوامر **SQL — Structured Query Language (yapılandırılmış sorgu dili)**. الـSQL لغة **Declarative (bildirimsel)**: منقول *شو* النتيجة اللي بدنا ياها، والـ**DBMS/VTYS (veritabanı yönetim sistemi)** بيختار خطة التنفيذ (السلايد 6). الأمثلة الأساسية بالمحاضرة من الكتاب، وبعضها مكتوب بـSQL Server/T-SQL؛ الصناديق الزرقا بتوضح الاختلاف مع PostgreSQL 16.
+بالأسابيع السابقة درسنا **Relational Model (ilişkisel model)** والـ**ER Diagram (varlık-ilişki diyagramı)** والـ**Normalization (normalizasyon)**. هلق بنحوّل التصميم لأوامر **SQL — Structured Query Language (yapılandırılmış sorgu dili)**. الـSQL لغة **Declarative (bildirimsel)**: منقول _شو_ النتيجة اللي بدنا ياها، والـ**DBMS/VTYS (veritabanı yönetim sistemi)** بيختار خطة التنفيذ (السلايد 6). الأمثلة الأساسية بالمحاضرة من الكتاب، وبعضها مكتوب بـSQL Server/T-SQL؛ الصناديق الزرقا بتوضح الاختلاف مع PostgreSQL 16.
 
 ## 1. Relational Algebra (ilişkisel cebir) — السلايدات 7–12
 
 النموذج الرياضي لـCodd بيعامل العلاقات كمجموعات؛ نتيجة العملية كمان علاقة. بالشرح في جدول `Ogrenciler(OgrNo,Ad,Soyad,BolumID)` فيه Ali وZeynep بالقسم 10، Can بالقسم 11، وElif بقسم NULL، ومعه جدول `Bolumler`.
 
-| العملية | الرمز | SQL | الفكرة |
-| --- | --- | --- | --- |
-| **Selection (seçme)** | σ | `WHERE` | فلترة الصفوف |
-| **Projection (izdüşüm)** | π | `SELECT` أعمدة | اختيار أعمدة |
-| **Cartesian Product (kartezyen çarpım)** | × | `CROSS JOIN` | كل صف بالأول مع كل صف بالثاني؛ 2×3 = 6 |
-| **Join (birleştirme)** | ⋈ | `JOIN` | وصل الصفوف حسب شرط مطابقة |
+| العملية                                  | الرمز | SQL            | الفكرة                                 |
+| ---------------------------------------- | ----- | -------------- | -------------------------------------- |
+| **Selection (seçme)**                    | σ     | `WHERE`        | فلترة الصفوف                           |
+| **Projection (izdüşüm)**                 | π     | `SELECT` أعمدة | اختيار أعمدة                           |
+| **Cartesian Product (kartezyen çarpım)** | ×     | `CROSS JOIN`   | كل صف بالأول مع كل صف بالثاني؛ 2×3 = 6 |
+| **Join (birleştirme)**                   | ⋈     | `JOIN`         | وصل الصفوف حسب شرط مطابقة              |
 
 مثال اختيار طلاب القسم 10: `σ(BolumID=10)(Ogrenciler)`؛ وبعدها اختيار أسمائهم: `π(Ad,Soyad)(σ(BolumID=10)(Ogrenciler))`. **العمليات بتتراكب**: نتيجة الأولى بتدخل بالتانية. بالـNatural Join المعروض (سلايد 10)، Elif مو ضمن النتائج لأن `BolumID` عندها NULL.
 
@@ -19,12 +19,12 @@
 
 ## 2. SQL sublanguages (SQL alt dilleri) — السلايد 14
 
-| التصنيف | الغرض | الأوامر |
-| --- | --- | --- |
-| **DDL — Data Definition Language (veri tanımlama dili)** | تعريف الـSchema | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` |
-| **DML — Data Manipulation Language (veri işleme dili)** | تعديل بيانات الصفوف | `INSERT`, `UPDATE`, `DELETE` |
-| **DQL — Data Query Language (veri sorgulama dili)** | الاستعلام | `SELECT` |
-| **TCL — Transaction Control Language (işlem kontrol dili)** | التحكم بالـTransaction | `COMMIT`, `ROLLBACK`, `SAVEPOINT` |
+| التصنيف                                                     | الغرض                  | الأوامر                               |
+| ----------------------------------------------------------- | ---------------------- | ------------------------------------- |
+| **DDL — Data Definition Language (veri tanımlama dili)**    | تعريف الـSchema        | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` |
+| **DML — Data Manipulation Language (veri işleme dili)**     | تعديل بيانات الصفوف    | `INSERT`, `UPDATE`, `DELETE`          |
+| **DQL — Data Query Language (veri sorgulama dili)**         | الاستعلام              | `SELECT`                              |
+| **TCL — Transaction Control Language (işlem kontrol dili)** | التحكم بالـTransaction | `COMMIT`, `ROLLBACK`, `SAVEPOINT`     |
 
 الـ**Transaction (işlem)** مجموعة عمليات منطقية. **COMMIT** بتثبّت التغييرات، و**ROLLBACK** بترجع تغييرات العملية غير المثبّتة ضمن حدود المعاملة. التفاصيل الموسّعة للـTransactions والـACID بالأسبوع التالي.
 
@@ -54,6 +54,7 @@ CREATE TABLE Ogrenciler (
 **فروقات المحاضرة:** PostgreSQL بيحوّل أسماء الجداول والأعمدة غير المحاطة بعلامات اقتباس لحروف صغيرة؛ و`CURRENT_DATE` مو صيغة SQL Server 2022 أو أقدم، والسلايد بيستخدم `CAST(GETDATE() AS DATE)` بدالها.
 
 `ALTER TABLE` بيعدل الـSchema:
+
 ```sql
 ALTER TABLE Ogrenciler ADD COLUMN Email VARCHAR(100);
 ALTER TABLE Ogrenciler
@@ -71,11 +72,13 @@ ALTER TABLE Ogrenciler DROP COLUMN KayitTarihi;
 - `DROP TABLE Bolumler`: بيحذف بنية الجدول ومحتواه، وقد تمنعه تبعيات Foreign Keys.
 
 **تنبيه مهم:** السلايد 23 بيحكي إن `TRUNCATE` «عادة ما بيرجع»، لكنه بنفس الصفحة بيوضّح إن **PostgreSQL بيسمح ROLLBACK لـTRUNCATE داخل Transaction**:
+
 ```sql
 BEGIN;
 TRUNCATE TABLE Ogrenciler;
 ROLLBACK;
 ```
+
 القدرة على التراجع مرتبطة بالمحرك وبحدود الـTransaction؛ فلا تعتبر كل عمليات DROP/TRUNCATE غير قابلة للرجوع مطلقًا.
 
 ## 4. DML: إدخال وتحديث وحذف — السلايدات 25–27
@@ -101,7 +104,7 @@ DELETE FROM Ogrenciler
 WHERE OgrNo = 101;
 ```
 
-**قاعدة أساسية بالامتحان:** `UPDATE` أو `DELETE` بدون `WHERE` بيأثر على *كل الصفوف*. لا تشغّل أمثلة الحذف على قاعدة بيانات مهمة.
+**قاعدة أساسية بالامتحان:** `UPDATE` أو `DELETE` بدون `WHERE` بيأثر على _كل الصفوف_. لا تشغّل أمثلة الحذف على قاعدة بيانات مهمة.
 
 ## 5. DQL: SELECT والفلترة والتجميع — السلايدات 29–36
 
@@ -138,11 +141,11 @@ HAVING COUNT(*) > 1;
 
 الجدول المثال فيه أربعة طلاب (Elif بدون قسم) وثلاثة أقسام (القسم 12 «İnşaat Müh.» بدون طلاب). هالصفّين بيعطونا الاختبار الأوضح:
 
-| النوع | مين بيظهر؟ |
-| --- | --- |
-| **INNER JOIN (iç birleştirme)** | المطابقين فقط: Ali، Zeynep، Can؛ لا Elif ولا القسم 12 |
-| **LEFT JOIN (sol birleştirme)** | كل `Ogrenciler`؛ Elif موجودة، وبيكون اسم قسمها NULL |
-| **RIGHT JOIN (sağ birleştirme)** | كل `Bolumler`؛ القسم 12 موجود وبيكون اسم الطالب NULL |
+| النوع                            | مين بيظهر؟                                            |
+| -------------------------------- | ----------------------------------------------------- |
+| **INNER JOIN (iç birleştirme)**  | المطابقين فقط: Ali، Zeynep، Can؛ لا Elif ولا القسم 12 |
+| **LEFT JOIN (sol birleştirme)**  | كل `Ogrenciler`؛ Elif موجودة، وبيكون اسم قسمها NULL   |
+| **RIGHT JOIN (sağ birleştirme)** | كل `Bolumler`؛ القسم 12 موجود وبيكون اسم الطالب NULL  |
 
 ```sql
 SELECT O.Ad, O.Soyad, B.BolumAdi
@@ -216,15 +219,16 @@ SELECT * FROM Vw_OgrenciBolumBilgileri;
 ### Trigger (tetikleyici): شغل تلقائي عند حدث
 
 الـTrigger مرتبط بحدث `INSERT` أو `UPDATE` أو `DELETE`. في **SQL Server** المحاضرة بتفرّق بين:
+
 - `AFTER`: بعد تنفيذ DML؛ مثل حفظ Audit Log (denetim kaydı).
 - `INSTEAD OF`: بدل العملية الأصلية؛ مثال منع حذف قسم فيه طلاب.
 - **Statement-level (işlem bazlı)**: لو `UPDATE` عدّل 100 صف، التريغر بينفّذ مرة واحدة، والصفوف كلها بتتوفر ضمن جدولين افتراضيين `inserted` و`deleted`.
 
-| الحدث | inserted | deleted |
-| --- | --- | --- |
-| INSERT | الجديد | — |
+| الحدث  | inserted      | deleted       |
+| ------ | ------------- | ------------- |
+| INSERT | الجديد        | —             |
 | UPDATE | القيم الجديدة | القيم القديمة |
-| DELETE | — | المحذوف |
+| DELETE | —             | المحذوف       |
 
 **مثال سجل تغيير القسم (ص 55–61):** `trg_OgrenciBolumLogla` بيقارن قيم `bolkod` القديمة والجديدة عند تعديل طالب، وبضيف سجل إلى `OgrenciBolumLog` فقط إذا تغيّر الرقم فعلاً. `IF UPDATE(bolkod)` بيتأكد إن العمود موجود بعبارة `SET`، بينما المقارنة الفعلية بتتم بالـ`WHERE`. `SET NOCOUNT ON` بيمنع رسائل الصفوف المتأثرة الإضافية، وما بيغيّر البيانات. لو 3 طلاب تأثروا والتغيير الحقيقي عند اثنين فقط، التريغر واحد وبيكتب سجلين.
 
@@ -266,21 +270,21 @@ SELECT * FROM Vw_OgrenciBolumBilgileri;
 
 ### أهم تحويلات T-SQL → PostgreSQL 16
 
-| SQL Server | PostgreSQL |
-| --- | --- |
-| `ISNULL(a,b)` | `COALESCE(a,b)` |
-| `'a' + 'b'` | `'a' || 'b'` |
-| `tinyint`, `nvarchar`, `datetime` | `smallint`, `varchar`, `timestamp` |
-| `IDENTITY(1,1)` | `GENERATED ALWAYS AS IDENTITY` |
-| `GETDATE()`, `SYSTEM_USER` | `now()`, `current_user` |
-| `@parameter`, `OUTPUT` | parameter names, `OUT/INOUT` |
-| `EXEC`, `GO` | `CALL` أو `SELECT * FROM f()`؛ ما في `GO` |
-| `TRY...CATCH` / `RAISERROR` | `EXCEPTION WHEN` / `RAISE EXCEPTION` |
-| `inserted/deleted` | `NEW/OLD` بRow-level Trigger |
-| `INSTEAD OF DELETE` على Table | `BEFORE DELETE ... FOR EACH ROW` |
+| SQL Server                        | PostgreSQL                                |
+| --------------------------------- | ----------------------------------------- |
+| `ISNULL(a,b)`                     | `COALESCE(a,b)`                           |
+| `'a' + 'b'`                       | `'a'                                      |     | 'b'` |
+| `tinyint`, `nvarchar`, `datetime` | `smallint`, `varchar`, `timestamp`        |
+| `IDENTITY(1,1)`                   | `GENERATED ALWAYS AS IDENTITY`            |
+| `GETDATE()`, `SYSTEM_USER`        | `now()`, `current_user`                   |
+| `@parameter`, `OUTPUT`            | parameter names, `OUT/INOUT`              |
+| `EXEC`, `GO`                      | `CALL` أو `SELECT * FROM f()`؛ ما في `GO` |
+| `TRY...CATCH` / `RAISERROR`       | `EXCEPTION WHEN` / `RAISE EXCEPTION`      |
+| `inserted/deleted`                | `NEW/OLD` بRow-level Trigger              |
+| `INSTEAD OF DELETE` على Table     | `BEFORE DELETE ... FOR EACH ROW`          |
 
 ## نقاط امتحانية
 
 السلايد 83 بيطلب شرح: ليش SQL لغة Declarative؟ شو مقابلات σ وπ و× و⋈؟ شو الفرق بين DELETE/TRUNCATE/DROP؟ ليش FK تمنع إضافة طالب بقسم مش موجود؟ شو فرق WHERE/HAVING؟ بأي JOIN بتظهر Elif؟ شو وظيفة CTE مقارنة بالـSubquery؟ وشو محتوى `inserted` و`deleted` أثناء UPDATE؟
 
-**المصدر:** *SQL Temelleri ve İleri SQL*, Prof. Dr. Özal Yıldırım، الأسبوع الرابع، الصفحات الفيزيائية 6–85 من الـPDF. أمثلة الـSQL الأساسية بحسب المحاضرة؛ فروقات PostgreSQL موضّحة كما وردت بالصناديق المخصصة، والتوضيحات الخارجية معلّمة بشكل مستقل.
+**المصدر:** _SQL Temelleri ve İleri SQL_, Prof. Dr. Özal Yıldırım، الأسبوع الرابع، الصفحات الفيزيائية 6–85 من الـPDF. أمثلة الـSQL الأساسية بحسب المحاضرة؛ فروقات PostgreSQL موضّحة كما وردت بالصناديق المخصصة، والتوضيحات الخارجية معلّمة بشكل مستقل.

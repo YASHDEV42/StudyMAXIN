@@ -244,3 +244,28 @@ test("a supplementary question shows the slide as context and links the technica
     bank.referencesByQuestion[question.id][0],
   );
 });
+
+test("database quiz keeps course progress separate", async ({ page }) => {
+  await page.goto("/tr/quiz/database-management/");
+  await expect(
+    page.getByRole("heading", { name: "Veritabanı Yönetim Sistemleri" }),
+  ).toBeVisible();
+  await expect(page.locator(".quiz-intro")).toContainText("60 soru hazır");
+  await page
+    .getByRole("combobox", { name: "Hafta", exact: true })
+    .selectOption("week-06");
+  await page.getByRole("button", { name: "Başla · 10" }).click();
+  await expect(page.locator(".quiz-question")).toBeVisible();
+  await page.locator(".quiz-options button").first().click();
+  await expect(page.locator(".quiz-feedback")).toBeVisible();
+  const dbKey = "studymaxin.quiz.database-management.v1";
+  await expect
+    .poll(() => page.evaluate((key) => localStorage.getItem(key), dbKey))
+    .not.toBeNull();
+  await page.getByRole("link", { name: "İşletim Sistemleri testi" }).click();
+  await expect(page).toHaveURL(/\/tr\/quiz\/$/);
+  await expect(
+    page.getByRole("heading", { name: "İşletim Sistemleri Soru Bankası" }),
+  ).toBeVisible();
+  await expect(page.locator(".quiz-intro")).toContainText("soru hazır");
+});

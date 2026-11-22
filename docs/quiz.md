@@ -58,3 +58,22 @@ npm run test:e2e -- tests/browser/quiz.spec.ts
 ```
 
 Playwright runs against `out/` from the production build. The tests cover bank integrity, shuffle mapping, exam uniqueness, scoring, progress recovery, review order, navigation, and representative browser journeys in both locales.
+
+## Database Management multiple-choice bank
+
+The same trainer is available at `/tr/quiz/database-management/` and
+`/ar/quiz/database-management/`, with six weekly topic files in
+`content/quiz/database-management/`. This is a separate **60-question Turkish
+multiple-choice bank**, with four choices, one answer, Turkish explanation and
+physical page citations to the six original `hafta01.pdf`–`hafta06.pdf` sources.
+The corresponding audit ledger is `docs/database-quiz-audit.json`; the
+original PDFs remain private. Source SHA-256 digests and page counts are
+preserved in the manifest.
+
+The Operating Systems page remains at `/tr/quiz/` and `/ar/quiz/`. Storage,
+backup imports and active sessions are isolated by course; existing Operating
+Systems storage keys and backups are retained. The fixed-size 60-question mock
+covers the entire first database bank; practice can draw 10 questions per
+individual week. The bank is an initial assessment set and can be expanded
+after the instructor's textbook-style sample questions are received. Audit
+every new question against the original slide before publishing.

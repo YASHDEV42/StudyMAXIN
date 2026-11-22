@@ -7,9 +7,7 @@
     "ar": "أساسيات SQL والاستعلامات المتقدمة وTriggers"
   },
   "order": 0,
-  "prerequisites": [
-    "db-normalization-denormalization"
-  ],
+  "prerequisites": ["db-normalization-denormalization"],
   "related": [],
   "documents": [
     {

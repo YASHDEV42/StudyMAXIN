@@ -24,7 +24,7 @@ import {
   recordAnswer,
   reviewPool,
   score,
-  storageKey,
+  storageKeyFor,
   type LocalQuiz,
   type QuizResult,
 } from "@/lib/quiz/progress";
@@ -48,12 +48,13 @@ export function QuizTrainer({
   bank: PublishedQuizBank;
 }) {
   const t = quizMessages[locale];
+  const storageKey = storageKeyFor(bank.courseId);
   const questions = useMemo(
     () => new Map(bank.questions.map((question) => [question.id, question])),
     [bank],
   );
   const [data, setData] = useState<LocalQuiz>(() => ({
-    progress: emptyProgress(),
+    progress: emptyProgress(bank.courseId),
     active: null,
   }));
   const current = useRef(data);
@@ -77,6 +78,7 @@ export function QuizTrainer({
         const restored = readLocal(
           window.localStorage.getItem(storageKey),
           questions,
+          bank.courseId,
         );
         current.current = restored.data;
         setData(restored.data);
@@ -89,18 +91,21 @@ export function QuizTrainer({
       setReady(true);
     }, 0);
     return () => window.clearTimeout(load);
-  }, [questions, t.recovered]);
+  }, [questions, t.recovered, storageKey, bank.courseId]);
 
-  const save = useCallback((next: LocalQuiz) => {
-    current.current = next;
-    setData(next);
-    try {
-      window.localStorage.setItem(storageKey, JSON.stringify(next));
-      setStorageFailed(false);
-    } catch {
-      setStorageFailed(true);
-    }
-  }, []);
+  const save = useCallback(
+    (next: LocalQuiz) => {
+      current.current = next;
+      setData(next);
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(next));
+        setStorageFailed(false);
+      } catch {
+        setStorageFailed(true);
+      }
+    },
+    [storageKey],
+  );
 
   const finish = useCallback(
     (now: number) => {
@@ -251,7 +256,7 @@ export function QuizTrainer({
     if (!file) return;
     try {
       if (file.size > maxImportBytes) throw new Error();
-      const imported = importProgress(await file.text());
+      const imported = importProgress(await file.text(), bank.courseId);
       if (!window.confirm(t.replace)) return;
       save({ active: null, progress: imported });
       setNotice(t.imported);
@@ -268,7 +273,7 @@ export function QuizTrainer({
     );
     const link = document.createElement("a");
     link.href = url;
-    link.download = "studymaxin-os-progress.json";
+    link.download = `studymaxin-${bank.courseId}-progress.json`;
     link.click();
     window.setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
@@ -526,7 +531,7 @@ export function QuizTrainer({
       <div className="quiz-intro">
         <p>{t.home}</p>
         <h1 ref={heading} tabIndex={-1}>
-          {t.title}
+          {bank.courseId === "operating-systems" ? t.title : bank.title[locale]}
         </h1>
         <p>{t.intro}</p>
         <span>
@@ -589,7 +594,13 @@ export function QuizTrainer({
             ))}
           </fieldset>
           <h2>{t.mode[mode]}</h2>
-          <p>{t.modeDetail[mode]}</p>
+          <p>
+            {bank.courseId === "database-management" && mode === "random"
+              ? locale === "tr"
+                ? "Altı haftadan karışık test sorularıyla tekrar yap."
+                : "راجع المحاضرات الست بأسئلة اختيار من متعدد."
+              : t.modeDetail[mode]}
+          </p>
           <div className="quiz-settings">
             {mode === "topic" && (
               <label>

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "db-w3-q01",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "basic",
+    "question": "Ali'nin adı birden çok ders kayıt satırında bulunuyorsa ad değişikliğinin tek satırda yapılması hangi anomaliyi doğurur?",
+    "choices": [
+      "Ekleme anomalisi",
+      "Silme anomalisi",
+      "Güncelleme anomalisi",
+      "İndeks araması"
+    ],
+    "correctIndex": 2,
+    "explanation": "Aynı bilginin bazı satırlarda eski kalması güncelleme tutarsızlığıdır.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "db-w3-q02",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "basic",
+    "question": "Bir öğrencinin henüz dersi olmadığı için birleşik DersKayit tablosuna eklenememesi hangi anomalidir?",
+    "choices": [
+      "Güncelleme anomalisi",
+      "Silme anomalisi",
+      "İzolasyon anomalisi",
+      "Ekleme anomalisi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bir varlığı başka varlığa ait kayıt olmadan ekleyememe ekleme anomalisidir.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "db-w3-q03",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "basic",
+    "question": "Tek ders kaydı silinince öğrencinin de bilgileri kayboluyorsa bu neyin örneğidir?",
+    "choices": [
+      "Silme anomalisi",
+      "Güncelleme anomalisi",
+      "İndeks anomalisi",
+      "Tutarlı durum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bir kayıt silinirken farklı varlığa ilişkin bilginin de yok olması silme anomalisidir.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "db-w3-q04",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Dersin 1NF anlatımında hangi düzenleme istenir?",
+    "choices": [
+      "Her alana birden çok değer yerleştirme",
+      "Hücrelerde atomik değerler ve belirleyici anahtar",
+      "Bütün tabloları tek tabloya birleştirme",
+      "Öğrenci ve ders için zorunlu aynı anahtar"
+    ],
+    "correctIndex": 1,
+    "explanation": "Slayt 1NF'de atomiklik ve PK kullanımını vurgular.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [11]
+    }
+  },
+  {
+    "id": "db-w3-q05",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Anahtar {OgrNo,DersKodu} iken DersKodu → DersAdi hangi bağımlılıktır?",
+    "choices": [
+      "Geçişli bağımlılık",
+      "Çok değerli bağımlılık",
+      "Kısmi fonksiyonel bağımlılık",
+      "Dış anahtar çakışması"
+    ],
+    "correctIndex": 2,
+    "explanation": "DersAdi birleşik anahtarın yalnız DersKodu kısmına bağımlıdır; 2NF sorunudur.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [14]
+    }
+  },
+  {
+    "id": "db-w3-q06",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Kısmi bağımlılıkları kaldırmak için ders örneği hangi tablolara ayrılır?",
+    "choices": [
+      "Yalnızca Ogrenci ve Bolum",
+      "Yalnızca Ders ve Fakulte",
+      "HocaDers ve HocaDil",
+      "Ogrenci, Ders ve OgrenciDers"
+    ],
+    "correctIndex": 3,
+    "explanation": "Öğrenci ve ders tanımları ayrı tutulur; M:N kayıtları ara tabloda kalır.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [15]
+    }
+  },
+  {
+    "id": "db-w3-q07",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "OgrNo → BolumAdi → FakulteAdi ifadesindeki temel sorun nedir?",
+    "choices": [
+      "Geçişli bağımlılık nedeniyle 3NF ihlali",
+      "1NF'de zorunlu birleşik anahtar",
+      "Yalnızca yabancı anahtar yokluğu",
+      "4NF'de bağımsız iki çoklu küme"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fakülte adı öğrenci anahtarına bölüm üzerinden dolaylı bağımlıdır.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [18]
+    }
+  },
+  {
+    "id": "db-w3-q08",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Denormalizasyonun temel ödünleşimi hangisidir?",
+    "choices": [
+      "Tüm veri tekrarını sıfırlayıp tüm JOIN'leri zorunlu kılması",
+      "Okuma kolaylığına karşı veri tekrarının ve yazma maliyetinin artması",
+      "Yalnızca disk alanından tasarruf sağlanması",
+      "Her zaman bütün sorguları yavaşlatması"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kontrollü tekrar JOIN ihtiyacını azaltabilir ancak tutarlılık ve DML bakımını zorlaştırır.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [24]
+    }
+  },
+  {
+    "id": "db-w3-q09",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "advanced",
+    "question": "Her öğrencinin tek danışmanı olduğu varsayımı OgrenciDanismanProje tablosunda hangi sorunu doğurabilir?",
+    "choices": [
+      "Her öğrencinin dört danışmanının zorunlu olması",
+      "Bütün aday anahtarların yok olması",
+      "OgrNo → Danisman bağımlılığıyla BCNF ihlali",
+      "Sadece alfanümerik veri türü hatası"
+    ],
+    "correctIndex": 2,
+    "explanation": "OgrNo, üçlü tablonun süper anahtarı değilken Danisman'ı belirlerse BCNF ihlal edilir.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [29]
+    }
+  },
+  {
+    "id": "db-w3-q10",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "advanced",
+    "question": "HocaNo ↠ DersKodu ve HocaNo ↠ Dil bağımlılıkları neden 4NF açısından önemlidir?",
+    "choices": [
+      "Bunlar iki ayrı PRIMARY KEY için otomatik indekslerdir",
+      "Her iki ifade yalnızca basit tek değerli fonksiyonel bağımlılıktır",
+      "Yalnızca sütunların veri türü uyuşmazlığıdır",
+      "Birbirinden bağımsız çok değerli kümeler gereksiz kombinasyon üretir"
+    ],
+    "correctIndex": 3,
+    "explanation": "HocaDersDil'de bağımsız ders ve dil kümeleri MVD oluşturur; HocaDers/HocaDil ayrımı gerekir.",
+    "source": {
+      "id": "db-week-3",
+      "slides": [38]
+    }
+  }
+]

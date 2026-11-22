@@ -7,9 +7,7 @@
     "ar": "تطبيع قواعد البيانات والاعتماديات من 1NF حتى 4NF"
   },
   "order": 0,
-  "prerequisites": [
-    "db-relational-model-er"
-  ],
+  "prerequisites": ["db-relational-model-er"],
   "related": [],
   "documents": [
     {

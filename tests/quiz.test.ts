@@ -18,6 +18,7 @@ import {
   recordAnswer,
   reviewPool,
   score,
+  storageKeyFor,
 } from "../src/lib/quiz/progress";
 import {
   createSession,
@@ -465,4 +466,45 @@ test("audit fixes retain indices while disambiguating representative teaching ca
   const semaphore = lookup("os-synchronization-semaphore-negative");
   assert.match(semaphore.question, /yalnız sonuç negatifse/u);
   assert.equal(semaphore.choices[semaphore.correctIndex], "−2 ve 2");
+});
+
+test("database bank and course-scoped progress remain isolated", async () => {
+  const database = await loadQuizBank(
+    undefined,
+    undefined,
+    "database-management",
+  );
+  assert.equal(database.topics.length, 6);
+  assert.equal(database.questions.length, 60);
+  assert.equal(new Set(database.questions.map((q) => q.id)).size, 60);
+  assert.equal(
+    database.questions.every((q) => q.courseId === "database-management"),
+    true,
+  );
+  assert.notEqual(
+    storageKeyFor("database-management"),
+    storageKeyFor("operating-systems"),
+  );
+  const dbProgress = emptyProgress("database-management");
+  assert.equal(
+    importProgress(exportProgress(dbProgress), "database-management").courseId,
+    "database-management",
+  );
+  assert.throws(
+    () => importProgress(exportProgress(dbProgress), "operating-systems"),
+    /Wrong quiz course/,
+  );
+  const dbQuestions = new Map(database.questions.map((q) => [q.id, q]));
+  assert.equal(
+    readLocal(
+      JSON.stringify({ progress: dbProgress, active: null }),
+      dbQuestions,
+      "operating-systems",
+    ).data.progress.courseId,
+    "operating-systems",
+  );
+  assert.equal(
+    createSession(database.questions, "exam", 60, null)?.items.length,
+    60,
+  );
 });

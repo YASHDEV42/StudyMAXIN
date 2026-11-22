@@ -4,23 +4,23 @@
 
 SQL'in teorik temeli **ilişkisel cebirdir**. Bir işlemin sonucu yeni bir ilişkidir; işlemler iç içe kullanılabilir.
 
-| İlişkisel cebir | Sembol | SQL karşılığı | Görevi |
-| --- | --- | --- | --- |
-| Seçme (Selection) | σ | `WHERE` | Satır filtreleme |
-| İzdüşüm (Projection) | π | `SELECT sütunlar` | Sütun seçme |
-| Kartezyen çarpım (Cartesian Product) | × | `CROSS JOIN` | m×n satır kombinasyonu |
-| Birleştirme (Join) | ⋈ | `JOIN` | Eşleşen satırları bağlama |
+| İlişkisel cebir                      | Sembol | SQL karşılığı     | Görevi                    |
+| ------------------------------------ | ------ | ----------------- | ------------------------- |
+| Seçme (Selection)                    | σ      | `WHERE`           | Satır filtreleme          |
+| İzdüşüm (Projection)                 | π      | `SELECT sütunlar` | Sütun seçme               |
+| Kartezyen çarpım (Cartesian Product) | ×      | `CROSS JOIN`      | m×n satır kombinasyonu    |
+| Birleştirme (Join)                   | ⋈      | `JOIN`            | Eşleşen satırları bağlama |
 
 Örnek: `σ(BolumID=10)(Ogrenciler)` bölüm 10 öğrencilerini seçer; `π(Ad,Soyad)(σ(BolumID=10)(Ogrenciler))` sadece ad ve soyadlarını verir. Birleştirme örneğinde `BolumID=NULL` olan Elif eşleşmediği için doğal JOIN sonucunda yer almaz. **Ek açıklama:** Matematiksel izdüşüm yinelenen satırları kaldırır; SQL `SELECT` aynı sonuç için `DISTINCT` gerektirebilir.
 
 ## SQL alt dilleri (slayt 14)
 
-| Alt dil | Amaç | Komut |
-| --- | --- | --- |
-| **DDL** | Şemayı oluşturma/yönetme | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` |
-| **DML** | Veri ekleme/güncelleme/silme | `INSERT`, `UPDATE`, `DELETE` |
-| **DQL** | Veriyi seçme/sorgulama | `SELECT` |
-| **TCL** | Transaction değişikliklerini yönetme | `COMMIT`, `ROLLBACK`, `SAVEPOINT` |
+| Alt dil | Amaç                                 | Komut                                 |
+| ------- | ------------------------------------ | ------------------------------------- |
+| **DDL** | Şemayı oluşturma/yönetme             | `CREATE`, `ALTER`, `DROP`, `TRUNCATE` |
+| **DML** | Veri ekleme/güncelleme/silme         | `INSERT`, `UPDATE`, `DELETE`          |
+| **DQL** | Veriyi seçme/sorgulama               | `SELECT`                              |
+| **TCL** | Transaction değişikliklerini yönetme | `COMMIT`, `ROLLBACK`, `SAVEPOINT`     |
 
 **COMMIT** transaction değişikliklerini kalıcılaştırır; **ROLLBACK** işlemin henüz kesinleştirilmemiş değişikliklerini geri alır. Ayrıntılı ACID konusu daha sonraki haftadadır.
 
@@ -59,6 +59,7 @@ ALTER TABLE Ogrenciler DROP COLUMN KayitTarihi;
 SQL Server'da `ADD Email` (COLUMN yazılmaz), tür değişiminde `ALTER COLUMN Ad VARCHAR(75) NOT NULL` kullanılır. Slaytın dikkat çektiği ayrım: geleneksel `UNIQUE` kısıtında PostgreSQL birden fazla NULL'a izin verir, SQL Server'daki davranış farklı olabilir.
 
 **Üç silme komutu:**
+
 - **DELETE (DML):** Satırları siler; `WHERE` ile sınırlandırılabilir, DELETE trigger'ları çalışabilir.
 - **TRUNCATE (DDL sınıflandırması):** Bütün satırları hızlı boşaltır, `WHERE` yoktur, tablo yapısı kalır.
 - **DROP TABLE (DDL):** Tablo yapısını ve içeriğini kaldırır; FK bağımlılıkları işlemi engelleyebilir.
@@ -88,7 +89,7 @@ DELETE FROM Ogrenciler
 WHERE OgrNo=101;
 ```
 
-**Uyarı:** UPDATE veya DELETE komutunda WHERE unutulursa *tüm satırlar* etkilenir.
+**Uyarı:** UPDATE veya DELETE komutunda WHERE unutulursa _tüm satırlar_ etkilenir.
 
 ## DQL: SELECT ve sorgu parçaları (slayt 29–36)
 
@@ -200,11 +201,11 @@ Slayt 52'de `sp_BolumeGoreOgrenciSay` bir bölüm kodunu alır, `COUNT(*)` ile �
 
 Bir `INSERT`, `UPDATE` veya `DELETE` olayıyla otomatik çalışan veritabanı yordamıdır.
 
-| SQL Server olayı | `inserted` | `deleted` |
-| --- | --- | --- |
-| INSERT | Yeni satırlar | — |
-| UPDATE | Yeni değerler | Eski değerler |
-| DELETE | — | Silinen satırlar |
+| SQL Server olayı | `inserted`    | `deleted`        |
+| ---------------- | ------------- | ---------------- |
+| INSERT           | Yeni satırlar | —                |
+| UPDATE           | Yeni değerler | Eski değerler    |
+| DELETE           | —             | Silinen satırlar |
 
 **SQL Server** trigger'ı statement başına çalışır: 100 satırlık tek UPDATE için trigger bir kez tetiklenir. **AFTER** işlem sonrası, **INSTEAD OF** asıl işlemin yerine çalışır. `SET NOCOUNT ON` ek etkilenen satır sayısı mesajlarını kapatır; `IF UPDATE(bolkod)` sütunun SET içinde bulunup bulunmadığını denetler; değer gerçekten değişti mi sorusunu `WHERE` karşılaştırması cevaplar.
 
@@ -246,22 +247,22 @@ Laboratuvar şeması: `bolum`, `ogrenci`, `notlar`, `dersler`, `hocalar`. `notla
 
 ### SQL Server → PostgreSQL 16 hızlı karşılaştırma
 
-| SQL Server / T-SQL | PostgreSQL |
-| --- | --- |
-| `ISNULL(a,b)` | `COALESCE(a,b)` |
-| Metin `'a'+'b'` | `'a'||'b'` |
-| `tinyint/nvarchar/datetime` | `smallint/varchar/timestamp` |
-| `IDENTITY(1,1)` | `GENERATED ALWAYS AS IDENTITY` |
-| `GETDATE()/SYSTEM_USER` | `now()/current_user` |
-| `@param`, `OUTPUT` | Parametre, `OUT/INOUT` |
-| `EXEC`, `GO` | `CALL` veya `SELECT * FROM f()`; GO yok |
-| `TRY...CATCH`, `RAISERROR` | `EXCEPTION WHEN`, `RAISE EXCEPTION` |
-| `inserted/deleted` | Satır trigger'ında `NEW/OLD` |
-| Tablo `INSTEAD OF DELETE` | `BEFORE DELETE ... FOR EACH ROW` |
-| `LIKE` (dersin SQL Server karşılaştırması) | Harfe duyarlı `LIKE`, duyarsız `ILIKE` |
+| SQL Server / T-SQL                         | PostgreSQL                              |
+| ------------------------------------------ | --------------------------------------- |
+| `ISNULL(a,b)`                              | `COALESCE(a,b)`                         |
+| Metin `'a'+'b'`                            | `'a'                                    |     | 'b'` |
+| `tinyint/nvarchar/datetime`                | `smallint/varchar/timestamp`            |
+| `IDENTITY(1,1)`                            | `GENERATED ALWAYS AS IDENTITY`          |
+| `GETDATE()/SYSTEM_USER`                    | `now()/current_user`                    |
+| `@param`, `OUTPUT`                         | Parametre, `OUT/INOUT`                  |
+| `EXEC`, `GO`                               | `CALL` veya `SELECT * FROM f()`; GO yok |
+| `TRY...CATCH`, `RAISERROR`                 | `EXCEPTION WHEN`, `RAISE EXCEPTION`     |
+| `inserted/deleted`                         | Satır trigger'ında `NEW/OLD`            |
+| Tablo `INSTEAD OF DELETE`                  | `BEFORE DELETE ... FOR EACH ROW`        |
+| `LIKE` (dersin SQL Server karşılaştırması) | Harfe duyarlı `LIKE`, duyarsız `ILIKE`  |
 
 ## Hatırlama soruları
 
 SQL niçin bildirimsel bir dildir? DELETE/TRUNCATE/DROP nasıl ayrılır? WHERE ile HAVING farkı nedir? Elif hangi JOIN türünde yer alır? CTE neden yararlıdır? UPDATE sırasında inserted/deleted ne içerir? SQL Server'daki trigger mantığı PostgreSQL 16'ya nasıl aktarılır?
 
-**Kaynak:** Prof. Dr. Özal Yıldırım, *Modern Veritabanı Yönetim Sistemleri*, *SQL Temelleri ve İleri SQL*, Hafta 4, fiziksel PDF sayfaları 6–85.
+**Kaynak:** Prof. Dr. Özal Yıldırım, _Modern Veritabanı Yönetim Sistemleri_, _SQL Temelleri ve İleri SQL_, Hafta 4, fiziksel PDF sayfaları 6–85.

@@ -7,9 +7,7 @@
     "ar": "النموذج العلائقي وER والمفاتيح والقيود"
   },
   "order": 0,
-  "prerequisites": [
-    "db-introduction-history-dikw"
-  ],
+  "prerequisites": ["db-introduction-history-dikw"],
   "related": [],
   "documents": [
     {

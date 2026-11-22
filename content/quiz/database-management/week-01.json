@@ -1,0 +1,192 @@
+[
+  {
+    "id": "db-w1-q01",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "basic",
+    "question": "Veritabanları neden stratejik bileşen olarak değerlendirilir?",
+    "choices": [
+      "Verimlilik, karar desteği ve inovasyonu destekledikleri için",
+      "Yalnızca dosya adlarını sakladıkları için",
+      "Her durumda tüm iş kurallarını kendileri oluşturdukları için",
+      "Sadece çevrimdışı çalışabildikleri için"
+    ],
+    "correctIndex": 0,
+    "explanation": "Veritabanları salt depolama değil, karar ve süreç desteği sunar.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [6]
+    }
+  },
+  {
+    "id": "db-w1-q02",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "basic",
+    "question": "Dosya tabanlı sistemlerin ilişkisel modellere geçişi hızlandıran temel sorunu nedir?",
+    "choices": [
+      "Tüm verilerin zorunlu olarak şifrelenmesi",
+      "Veri tekrarı, tutarsızlık ve ilişki yönetimi güçlüğü",
+      "Her dosyanın SQL ile erişilebilir olması",
+      "Tüm kayıtların otomatik grafik yapıda tutulması"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dosya tabanlı yapılar bütünlük ve ilişkilerin yönetiminde zorlanır.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [12]
+    }
+  },
+  {
+    "id": "db-w1-q03",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "basic",
+    "question": "Hiyerarşik veritabanında bir kaydın ebeveyn ilişkisi nasıl düzenlenir?",
+    "choices": [
+      "Her kaydın sınırsız sayıda ebeveyni zorunludur",
+      "Kayıtlar yalnızca anahtar-değer çiftidir",
+      "Ağaç yapısında tek ebeveyne bağlıdır",
+      "Hiçbir kayıt başka kayda bağlanamaz"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hiyerarşik model ebeveyn-çocuk ağacı oluşturur.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "db-w1-q04",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "intermediate",
+    "question": "Ağ modeli, hiyerarşik modele göre hangi ilişkiyi daha esnek temsil eder?",
+    "choices": [
+      "Yalnızca tek köklü bir ağaç oluşturmayı",
+      "Tüm sorgularda SQL kullanılmasını",
+      "Her verinin JSON belge olmasını",
+      "Bir çocuğun birden fazla ebeveynle ilişkisini"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ağ modeli çoklu ebeveyn ilişkilerine olanak verir.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "db-w1-q05",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "intermediate",
+    "question": "İlişkisel modelin temel sorgulama yaklaşımı hangi ifadedir?",
+    "choices": [
+      "İstenen sonucu bildirip fiziksel erişim yolunu VTYS'ye bırakmak",
+      "Her kaydın disk adresini uygulamanın hesaplaması",
+      "Sorguların yalnızca dosya sırasına göre çalışması",
+      "Her sorgunun elle tanımlanmış pointer izlemesi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bildirimsel SQL ile ne istendiği belirtilir; erişim yöntemi VTYS'ye bırakılır.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "db-w1-q06",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "intermediate",
+    "question": "Nesne-ilişkisel empedans uyuşmazlığı neyi anlatır?",
+    "choices": [
+      "Disk ile RAM kapasitesinin eşit olmamasını",
+      "Program nesneleri ile ilişkisel tabloların temsil farkını",
+      "SQL'in hiçbir nesne özelliği desteklememesini",
+      "İki aynı tablonun JOIN ile eşleşmesini"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nesneler ve tablo satır-sütun modeli arasında eşleme gerekir.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "db-w1-q07",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "intermediate",
+    "question": "Sosyal ağdaki bağlantıların yoğun biçimde sorgulanması için hangi NoSQL modeli öne çıkar?",
+    "choices": [
+      "Anahtar-değer deposu (Redis)",
+      "Sütun ailesi (Cassandra)",
+      "Graf veritabanı (Neo4j)",
+      "Doküman deposu (MongoDB)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Graf veritabanları düğüm ve ilişkiler odaklı veri için uygundur.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "db-w1-q08",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "intermediate",
+    "question": "JSON benzeri esnek belgeler için slaytta hangi teknoloji örneklenir?",
+    "choices": [
+      "Redis graf veritabanı",
+      "Neo4j sütun ailesi",
+      "Cassandra anahtar-değer deposu",
+      "MongoDB doküman veritabanı"
+    ],
+    "correctIndex": 3,
+    "explanation": "Slayt MongoDB'yi doküman modeliyle eşleştirir.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "db-w1-q09",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "advanced",
+    "question": "Bir sensör kaydındaki 38.6739 değerinin enlem olduğunu anlamak için öncelikle ne gerekir?",
+    "choices": [
+      "Veriye anlam veren bağlam ve alan tanımı",
+      "Verinin satır sırasını değiştirmek",
+      "Bütün indeksleri silmek",
+      "Sayıyı metne çevirmek"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bağlam ham veriyi enformasyona dönüştürür; üstveri alanı açıklar.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [28]
+    }
+  },
+  {
+    "id": "db-w1-q10",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "advanced",
+    "question": "Metadata (üstveri) hangi bilgiyi tanımlar?",
+    "choices": [
+      "Yalnızca kullanıcıların şifrelerini",
+      "Sütunun veri türünü, biçimini ve kısıtlarını",
+      "Sorgunun gerçek yürütme süresini",
+      "Yalnızca bankanın toplam bakiyesini"
+    ],
+    "correctIndex": 1,
+    "explanation": "Metadata veri hakkındaki veridir; alanın yapısı ve geçerlilik kurallarını tanımlar.",
+    "source": {
+      "id": "db-week-1",
+      "slides": [32]
+    }
+  }
+]

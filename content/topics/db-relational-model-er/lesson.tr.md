@@ -2,12 +2,12 @@
 
 Edgar F. Codd, 1970 tarihli çalışmasıyla ilişkisel modeli önerdi. Hiyerarşik ve ağ modellerinin katı erişim yollarına karşı **sadelik, tutarlılık ve esneklik** sağlamak hedeflendi. Model, verileri tablolarda düzenler ve küme kuramına dayanır.
 
-| Kavram | Tanım | Örnek |
-| --- | --- | --- |
-| **İlişki (Relation)** | Satır ve sütunlardan oluşan iki boyutlu tablo | Öğrenciler |
-| **Nitelik (Attribute)** | Sütun, varlığın özelliği | Ad, Soyad |
-| **Teta / Demet (Tuple)** | Bir satır, tek kayıt | Öğrenci 101 |
-| **Alan (Domain)** | Niteliğin alabileceği geçerli değer kümesi | Doğum tarihi için tarih değerleri |
+| Kavram                   | Tanım                                         | Örnek                             |
+| ------------------------ | --------------------------------------------- | --------------------------------- |
+| **İlişki (Relation)**    | Satır ve sütunlardan oluşan iki boyutlu tablo | Öğrenciler                        |
+| **Nitelik (Attribute)**  | Sütun, varlığın özelliği                      | Ad, Soyad                         |
+| **Teta / Demet (Tuple)** | Bir satır, tek kayıt                          | Öğrenci 101                       |
+| **Alan (Domain)**        | Niteliğin alabileceği geçerli değer kümesi    | Doğum tarihi için tarih değerleri |
 
 İlişkinin temel üç özelliği (slayt 9): **(1) Satırlar benzersizdir; (2) satır ve sütun sırası önemsizdir; (3) hücrelerde atomik değerler bulunur.** Bir hücreye `555-1234, 555-5678` gibi telefon listesi koymak atomiklik ilkesini ihlal eder; sonraki haftanın 1NF konusuna bağlanır.
 
@@ -34,9 +34,10 @@ Edgar F. Codd, 1970 tarihli çalışmasıyla ilişkisel modeli önerdi. Hiyerar�
 - **1:N — Bire-çok:** Bir öğretim görevlisi birçok ders verir; her dersin bir öğretim görevlisi olduğu varsayılır.
 - **M:N — Çoka-çok:** Bir öğrenci birçok ders, bir ders birçok öğrenciyle ilişkilidir.
 
-**Çapraz okuma kuralı (slayt 19–21):** Bir varlıktan başla, ilişkiyi geç, **karşı uçtaki** sayıyı oku. ÖĞRENCİ (N) — KAYIT — BÖLÜM (1) için *bir öğrenci bir bölüme bağlıdır; bir bölümde N öğrenci bulunur*. Öğrenci yanındaki N, öğrencinin N bölümü olduğu anlamına **gelmez**.
+**Çapraz okuma kuralı (slayt 19–21):** Bir varlıktan başla, ilişkiyi geç, **karşı uçtaki** sayıyı oku. ÖĞRENCİ (N) — KAYIT — BÖLÜM (1) için _bir öğrenci bir bölüme bağlıdır; bir bölümde N öğrenci bulunur_. Öğrenci yanındaki N, öğrencinin N bölümü olduğu anlamına **gelmez**.
 
 Üniversite ER örneği (Şekil 2.6, slayt 20–21):
+
 1. `Öğrenci–Kayıt–Bölüm`: N:1.
 2. `Bölüm–İçerir–Ders`: 1:N.
 3. `Öğrenci–Alır–Ders`: M:N.
@@ -45,12 +46,12 @@ Edgar F. Codd, 1970 tarihli çalışmasıyla ilişkisel modeli önerdi. Hiyerar�
 
 ## ER diyagramından ilişkisel şemaya dört dönüşüm kuralı (slayt 23–28)
 
-| Kural | Dönüşüm | Örnek |
-| --- | --- | --- |
-| **Kural 1** | Güçlü varlık → tablo; nitelikler → sütun; anahtar nitelik → PK | `Ogrenci(OgrenciNo PK, Ad, Soyad)` |
-| **Kural 2** | 1:N ilişki → **1 tarafının PK'si N tarafında FK** olur | `Ogrenci.BolumID` → `Bolum.BolumID` |
+| Kural       | Dönüşüm                                                                       | Örnek                                              |
+| ----------- | ----------------------------------------------------------------------------- | -------------------------------------------------- |
+| **Kural 1** | Güçlü varlık → tablo; nitelikler → sütun; anahtar nitelik → PK                | `Ogrenci(OgrenciNo PK, Ad, Soyad)`                 |
+| **Kural 2** | 1:N ilişki → **1 tarafının PK'si N tarafında FK** olur                        | `Ogrenci.BolumID` → `Bolum.BolumID`                |
 | **Kural 3** | M:N ilişki → iki varlığın anahtarlarını içeren **ara tablo (junction table)** | `OgrenciDersKayit(OgrenciNo,DersKodu,KayitTarihi)` |
-| **Kural 4** | Çok değerli nitelik → asıl varlığın PK'sini FK olarak alan **ayrı tablo** | `OgrenciTelefon(OgrenciNo,TelefonNo)` |
+| **Kural 4** | Çok değerli nitelik → asıl varlığın PK'sini FK olarak alan **ayrı tablo**     | `OgrenciTelefon(OgrenciNo,TelefonNo)`              |
 
 **Kural 2 örneği:** `Bolum` tablosunun `BolumID` anahtarı `Ogrenci` tablosuna FK olarak eklenir. Ali ile Zeynep'in bölümü 10; Can'ınki 11; Elif'in değeri NULL'dır (slayt 25). Başka tabloda olmayan dolu bölüm numarası girilemez.
 
@@ -62,18 +63,18 @@ Edgar F. Codd, 1970 tarihli çalışmasıyla ilişkisel modeli önerdi. Hiyerar�
 
 Veri türü bir sütunun biçimini, depolama özelliklerini ve uygulanabilecek işlemleri belirler.
 
-| Tür | Özellik | Kullanım |
-| --- | --- | --- |
-| `CHAR(n)` | Sabit uzunluklu metin | Ülke kodu |
-| `VARCHAR(n)` | En fazla n karakterlik değişken uzunluk | Ad, adres |
-| `TEXT` | Uzun metin | Makale, yorum |
-| `INTEGER / INT` | Tam sayı | ID, adet |
-| `DECIMAL(p,s) / NUMERIC(p,s)` | **Kesin ondalık**, p toplam basamak, s virgül sonrası basamak | Para, maaş |
-| `FLOAT / DOUBLE` | **Yaklaşık ondalık** | Bilimsel ölçüm |
-| `DATE` | Tarih | Doğum tarihi |
-| `TIMESTAMP / DATETIME` | Tarih ve saat | Kayıt zamanı |
-| `BOOLEAN` | Mantıksal değer | Aktif/pasif |
-| `BLOB` | İkili veri | Resim |
+| Tür                           | Özellik                                                       | Kullanım       |
+| ----------------------------- | ------------------------------------------------------------- | -------------- |
+| `CHAR(n)`                     | Sabit uzunluklu metin                                         | Ülke kodu      |
+| `VARCHAR(n)`                  | En fazla n karakterlik değişken uzunluk                       | Ad, adres      |
+| `TEXT`                        | Uzun metin                                                    | Makale, yorum  |
+| `INTEGER / INT`               | Tam sayı                                                      | ID, adet       |
+| `DECIMAL(p,s) / NUMERIC(p,s)` | **Kesin ondalık**, p toplam basamak, s virgül sonrası basamak | Para, maaş     |
+| `FLOAT / DOUBLE`              | **Yaklaşık ondalık**                                          | Bilimsel ölçüm |
+| `DATE`                        | Tarih                                                         | Doğum tarihi   |
+| `TIMESTAMP / DATETIME`        | Tarih ve saat                                                 | Kayıt zamanı   |
+| `BOOLEAN`                     | Mantıksal değer                                               | Aktif/pasif    |
+| `BLOB`                        | İkili veri                                                    | Resim          |
 
 **Neden fiyat için DECIMAL?** Parasal hesaplar kesin ondalık saklama ister; FLOAT/DOUBLE yaklaşık temsildir. Ek açıklama: CHAR/VARCHAR fiziksel saklama ayrıntıları VTYS'ye göre değişir; ders temel farkı anlatır.
 
@@ -81,20 +82,20 @@ Veri türü bir sütunun biçimini, depolama özelliklerini ve uygulanabilecek i
 
 **Süper anahtar (Super Key):** Satırı benzersiz tanımlayan sütun kümesi; `{OgrenciNo}` ve `{OgrenciNo,Ad}` örnektir.
 
-**Aday anahtar (Candidate Key):** *Minimal* süper anahtar; herhangi bir sütun çıkarılırsa benzersizliği kaybeder. `{OgrenciNo,Ad}`, `OgrenciNo` zaten yeterliyse aday anahtar değildir. `{OgrenciNo}` ve `{TCKimlikNo}` iki aday olabilir.
+**Aday anahtar (Candidate Key):** _Minimal_ süper anahtar; herhangi bir sütun çıkarılırsa benzersizliği kaybeder. `{OgrenciNo,Ad}`, `OgrenciNo` zaten yeterliyse aday anahtar değildir. `{OgrenciNo}` ve `{TCKimlikNo}` iki aday olabilir.
 
 **Birincil anahtar (Primary Key):** Adaylar arasından seçilen ana tanımlayıcı. **Alternatif anahtar (Alternate Key):** Seçilmeyen diğer adaylar. **Bileşik anahtar (Composite Key):** İki veya daha fazla sütundan oluşan anahtar; `{OgrenciNo,DersKodu}`.
 
 ## Bütünlük kısıtları (slayt 36–37)
 
-| Kısıt | Görev |
-| --- | --- |
-| `NOT NULL` | NULL değeri engeller |
-| `UNIQUE` | Tekrarlanan değerleri engeller |
-| `PRIMARY KEY` | Benzersiz ve boş olmayan satır kimliği |
+| Kısıt         | Görev                                        |
+| ------------- | -------------------------------------------- |
+| `NOT NULL`    | NULL değeri engeller                         |
+| `UNIQUE`      | Tekrarlanan değerleri engeller               |
+| `PRIMARY KEY` | Benzersiz ve boş olmayan satır kimliği       |
 | `FOREIGN KEY` | Referanslanan anahtar ile ilişkisel bütünlük |
-| `CHECK` | Mantıksal koşul, ör. `fiyat > 0` |
-| `DEFAULT` | Değer verilmezse varsayılan değer atar |
+| `CHECK`       | Mantıksal koşul, ör. `fiyat > 0`             |
+| `DEFAULT`     | Değer verilmezse varsayılan değer atar       |
 
 **Üç savunma mekanizması:** Veri türü doğru formatı, anahtar benzersizlik ve ilişkiyi, kısıt geçerli değerleri korur. Bunların SQL ifadeleri dersin 4. haftasında incelenecektir.
 
@@ -104,4 +105,4 @@ Veri türü bir sütunun biçimini, depolama özelliklerini ve uygulanabilecek i
 2. Kardinaliteyi çapraz okuyarak 1:N ilişkide FK'nin hangi tarafa ekleneceğini nasıl bulursun?
 3. `{OgrenciNo,Ad}` neden süper anahtar olduğu hâlde aday anahtar olmayabilir?
 
-Kaynak: *Modern Veritabanı Yönetim Sistemleri*, Hafta 2, fiziksel PDF sayfaları 6–41. Slaytlarda belirtilen kitap sayfaları dersin atıflarıdır; kitabın kendisi bu çalışma için ayrıca incelenmemiştir.
+Kaynak: _Modern Veritabanı Yönetim Sistemleri_, Hafta 2, fiziksel PDF sayfaları 6–41. Slaytlarda belirtilen kitap sayfaları dersin atıflarıdır; kitabın kendisi bu çalışma için ayrıca incelenmemiştir.

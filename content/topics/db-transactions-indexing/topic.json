@@ -7,9 +7,7 @@
     "ar": "إدارة Transactions وأوامر TCL والفهرسة وخطط التنفيذ"
   },
   "order": 0,
-  "prerequisites": [
-    "db-rdbms-architecture-acid"
-  ],
+  "prerequisites": ["db-rdbms-architecture-acid"],
   "related": [],
   "documents": [
     {

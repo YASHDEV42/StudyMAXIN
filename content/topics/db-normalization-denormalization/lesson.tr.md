@@ -48,11 +48,11 @@ Bolumler(BolumID PK, BolumAdi, FakulteAdi)
 
 Artık fakülte bilgisi öğrenci başına tekrar etmez. **Ek açıklama:** `FakulteAdi` birden çok bölüm kaydında hâlâ yinelenebilir; ayrı fakülte varlığına ihtiyaç olup olmadığı ek iş kurallarına bağlıdır. Ders bu aşamayı kendi örneği için yeterli kabul eder.
 
-| Form | Temel koşul | Tipik ihlal | Çözüm |
-| --- | --- | --- | --- |
-| **1NF** | Atomik değerler ve PK (ders anlatımı) | `OgrTamAd` birleşik alan | `OgrAd` ve `Soyad` |
-| **2NF** | Kısmi bağımlılık yok | `DersAdi`, yalnızca `DersKodu`na bağlı | Ogrenci / Ders / OgrenciDers |
-| **3NF** | Geçişli bağımlılık yok | `OgrNo→BolumAdi→FakulteAdi` | Bolumler tablosu |
+| Form    | Temel koşul                           | Tipik ihlal                            | Çözüm                        |
+| ------- | ------------------------------------- | -------------------------------------- | ---------------------------- |
+| **1NF** | Atomik değerler ve PK (ders anlatımı) | `OgrTamAd` birleşik alan               | `OgrAd` ve `Soyad`           |
+| **2NF** | Kısmi bağımlılık yok                  | `DersAdi`, yalnızca `DersKodu`na bağlı | Ogrenci / Ders / OgrenciDers |
+| **3NF** | Geçişli bağımlılık yok                | `OgrNo→BolumAdi→FakulteAdi`            | Bolumler tablosu             |
 
 ## Denormalizasyon: performans ödünleşimi (slayt 22–24)
 
@@ -120,4 +120,4 @@ Bunlara **çok değerli bağımlılık (multivalued dependency, MVD)** denir. **
 - BCNF'te olan HocaDersDil neden 4NF'te değildir?
 - Denormalizasyon okuma performansı ile bütünlük arasında nasıl ödünleşim oluşturur?
 
-**Kaynak:** *Modern Veritabanı Yönetim Sistemleri*, Prof. Dr. Özal Yıldırım, Hafta 3, fiziksel PDF sayfaları 6–44.
+**Kaynak:** _Modern Veritabanı Yönetim Sistemleri_, Prof. Dr. Özal Yıldırım, Hafta 3, fiziksel PDF sayfaları 6–44.

@@ -12,14 +12,14 @@ Veritabanları ekonomik, toplumsal ve etik boyutları olan sistemlerdir.
 
 Model değişimlerinin ana nedeni, önceki sistemlerin sınırlılıkları ve yeni ihtiyaçlardır (slayt 11–20).
 
-| Dönem | Model | Güçlü yön | Temel sorun veya değişim nedeni |
-| --- | --- | --- | --- |
-| İlk dönem | Dosya tabanlı sistemler | Basit saklama | Tekrar, tutarsızlık, bütünlük ve ilişki yönetiminde güçlük |
-| 1960'lar | Hiyerarşik model (IBM IMS) | Ağaç yapısında önceden belirli yollara hızlı erişim | Çoka-çok ilişkileri sınırlı biçimde temsil eder |
-| 1960'lar | Ağ modeli | Bir çocuğun birden çok ebeveyni olabilir | Erişim yolları önceden katı biçimde tanımlanır |
-| 1970'ler | İlişkisel model (Edgar F. Codd) | Tablolar, fiziksel ayrıntılardan soyutlama, SQL | Nesne yönelimli nesnelerle eşleme gereksinimi |
-| 1990'lar | OODBMS ve ORDBMS | Nesneleri doğrudan saklama veya ilişkisel modele nesne özellikleri ekleme | OODBMS yaygınlaşamadı |
-| 2000'ler | NoSQL | Büyük ölçek ve çeşitli veri yapılarına yönelik model ailesi | Kullanım amacına göre uygun model seçimi gerekir |
+| Dönem     | Model                           | Güçlü yön                                                                 | Temel sorun veya değişim nedeni                            |
+| --------- | ------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| İlk dönem | Dosya tabanlı sistemler         | Basit saklama                                                             | Tekrar, tutarsızlık, bütünlük ve ilişki yönetiminde güçlük |
+| 1960'lar  | Hiyerarşik model (IBM IMS)      | Ağaç yapısında önceden belirli yollara hızlı erişim                       | Çoka-çok ilişkileri sınırlı biçimde temsil eder            |
+| 1960'lar  | Ağ modeli                       | Bir çocuğun birden çok ebeveyni olabilir                                  | Erişim yolları önceden katı biçimde tanımlanır             |
+| 1970'ler  | İlişkisel model (Edgar F. Codd) | Tablolar, fiziksel ayrıntılardan soyutlama, SQL                           | Nesne yönelimli nesnelerle eşleme gereksinimi              |
+| 1990'lar  | OODBMS ve ORDBMS                | Nesneleri doğrudan saklama veya ilişkisel modele nesne özellikleri ekleme | OODBMS yaygınlaşamadı                                      |
+| 2000'ler  | NoSQL                           | Büyük ölçek ve çeşitli veri yapılarına yönelik model ailesi               | Kullanım amacına göre uygun model seçimi gerekir           |
 
 **Hiyerarşik modelde** kayıtlar ebeveyn–çocuk ağacı oluşturur; örnekte Elektronik → Televizyon → LCD. **Ağ modelinde** Departman B, Proje 1 ve Proje 2 ile ilişkilendirilebilir. Her ikisinde önceden tanımlı erişim yolları esnekliği azaltır (slayt 13–14).
 
@@ -38,12 +38,12 @@ Slayt 16'daki **Öğrenci** tablosunda `öğrencino` bir **primary key (birincil
 
 NoSQL, slaytta **“Not Only SQL”** olarak açıklanır; tek bir veri modeli değildir.
 
-| Model | Örnek | Ayırt edici özellik |
-| --- | --- | --- |
-| Doküman | MongoDB | Esnek JSON benzeri belgeler |
-| Anahtar-değer | Redis | Anahtar/değer çiftleriyle hızlı okuma-yazma |
-| Sütun ailesi | Cassandra | Büyük veri kümelerinde yatay ölçeklenebilirlik ve yüksek yazma performansı |
-| Graf | Neo4j | Sosyal ağ ve öneri sistemleri gibi ilişki odaklı yapılar |
+| Model         | Örnek     | Ayırt edici özellik                                                        |
+| ------------- | --------- | -------------------------------------------------------------------------- |
+| Doküman       | MongoDB   | Esnek JSON benzeri belgeler                                                |
+| Anahtar-değer | Redis     | Anahtar/değer çiftleriyle hızlı okuma-yazma                                |
+| Sütun ailesi  | Cassandra | Büyük veri kümelerinde yatay ölçeklenebilirlik ve yüksek yazma performansı |
+| Graf          | Neo4j     | Sosyal ağ ve öneri sistemleri gibi ilişki odaklı yapılar                   |
 
 Bu modellerin daha ayrıntılı anlatımı ders planında 7. haftaya bırakılmıştır (slayt 19).
 
@@ -74,13 +74,13 @@ Slayt 31, büyük dil modellerini DIKW katmanları üzerinden kavramsal olarak e
 
 Metadata, **veri hakkındaki veridir**: Alan adlarını, veri türlerini, biçimleri ve kısıtları tanımlar (slayt 32). Sensör örneğinde:
 
-| Alan | Veri türü | Açıklama / kısıt |
-| --- | --- | --- |
-| `derinlik_km` | INTEGER | Derinlik km; sıfırdan büyük ve NOT NULL |
-| `yon` | VARCHAR(10) | Yön; boş olamaz |
-| `enlem` | DECIMAL(9,6) | −90 ile +90 |
-| `boylam` | DECIMAL(9,6) | −180 ile +180 |
-| `zaman_damgasi` | DATETIME | Ölçüm zamanı; örnekte UNIQUE |
+| Alan            | Veri türü    | Açıklama / kısıt                        |
+| --------------- | ------------ | --------------------------------------- |
+| `derinlik_km`   | INTEGER      | Derinlik km; sıfırdan büyük ve NOT NULL |
+| `yon`           | VARCHAR(10)  | Yön; boş olamaz                         |
+| `enlem`         | DECIMAL(9,6) | −90 ile +90                             |
+| `boylam`        | DECIMAL(9,6) | −180 ile +180                           |
+| `zaman_damgasi` | DATETIME     | Ölçüm zamanı; örnekte UNIQUE            |
 
 Metadata, veri tiplerinin doğru yorumlanmasını ve bütünlüğe yönelik kısıtların uygulanmasını sağlar. Bu tablodaki UNIQUE koşulu, her sisteme genellenen bir kural değil, dersin örnek koşuludur.
 
