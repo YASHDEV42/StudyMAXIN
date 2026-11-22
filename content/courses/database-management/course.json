@@ -1,0 +1,22 @@
+{
+  "id": "database-management",
+  "title": {
+    "tr": "Veritabanı Yönetim Sistemleri",
+    "ar": "نظم إدارة قواعد البيانات"
+  },
+  "description": {
+    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin haftalık, kaynak temelli Arapça ve Türkçe açıklamaları ile Türkçe sınav özetleri. Şu an yalnızca doğrulanan 1. hafta yayımlanmıştır.",
+    "ar": "دروس وملخصات عربية وتركية لمادة نظم إدارة قواعد البيانات. المتاح حاليًا هو الأسبوع الأول الذي تمت مراجعة ملفه الأصلي."
+  },
+  "order": 3,
+  "chapters": [
+    {
+      "id": "week-01",
+      "title": {
+        "tr": "Veritabanına Giriş, Tarihçe, Veri ve Bilgi",
+        "ar": "الأسبوع الأول: مقدمة وتاريخ قواعد البيانات والبيانات والمعلومات"
+      },
+      "order": 0
+    }
+  ]
+}
