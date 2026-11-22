@@ -8,18 +8,18 @@
 
 ## Editorial mapping
 
-| Topic ID | Source slides / PDF physical pages | Key examples |
-| --- | --- | --- |
-| os5-producer-consumer | 2–6 | Cooperating processes; bounded-buffer code and multi-producer/multi-consumer diagrams |
-| os5-race-condition | 7–9 | `counter=5` example T0–T5 and lost update (ends at 4 or 6 instead of 5) |
-| os5-critical-section | 10–13 | Entry/critical/exit/remainder, mutual exclusion/progress/bounded waiting, preemptive kernel |
-| os5-peterson | 14–15 | `flag[2]` and `turn` pseudocode |
-| os5-atomic-hardware | 16–20 | Lock, interrupt disable, test-and-set, compare-and-swap, fairness via `waiting[n]` |
-| os5-mutex-spinlock | 21 | Acquire/release and busy-wait spinlock |
-| os5-semaphores | 22–25 | Binary/counting semaphores, wait/signal, 3-permit example, S1-before-S2 |
-| os5-semaphore-blocking-deadlock | 26–30 | Blocking queues, semaphore code, P0/P1 S/Q deadlock, LIFO starvation |
-| os5-monitors | 31–33 | Incorrect semaphore ordering, monitor structure, condition variables and signal variants |
-| os5-transactional-openmp | 34–36 | Transactional memory, atomic block and OpenMP `#pragma omp critical` |
+| Topic ID                        | Source slides / PDF physical pages | Key examples                                                                                |
+| ------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------- |
+| os5-producer-consumer           | 2–6                                | Cooperating processes; bounded-buffer code and multi-producer/multi-consumer diagrams       |
+| os5-race-condition              | 7–9                                | `counter=5` example T0–T5 and lost update (ends at 4 or 6 instead of 5)                     |
+| os5-critical-section            | 10–13                              | Entry/critical/exit/remainder, mutual exclusion/progress/bounded waiting, preemptive kernel |
+| os5-peterson                    | 14–15                              | `flag[2]` and `turn` pseudocode                                                             |
+| os5-atomic-hardware             | 16–20                              | Lock, interrupt disable, test-and-set, compare-and-swap, fairness via `waiting[n]`          |
+| os5-mutex-spinlock              | 21                                 | Acquire/release and busy-wait spinlock                                                      |
+| os5-semaphores                  | 22–25                              | Binary/counting semaphores, wait/signal, 3-permit example, S1-before-S2                     |
+| os5-semaphore-blocking-deadlock | 26–30                              | Blocking queues, semaphore code, P0/P1 S/Q deadlock, LIFO starvation                        |
+| os5-monitors                    | 31–33                              | Incorrect semaphore ordering, monitor structure, condition variables and signal variants    |
+| os5-transactional-openmp        | 34–36                              | Transactional memory, atomic block and OpenMP `#pragma omp critical`                        |
 
 The chapter has **10 topics** with **30 published documents**, each topic containing an original Arabic lesson, Turkish lesson, and Turkish-only exam cheat sheet. Glossary: **42 new TR/EN entries; 3 already existing entries associated**.
 

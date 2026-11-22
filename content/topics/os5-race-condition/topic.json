@@ -7,9 +7,7 @@
     "ar": "Race Condition ومثال Lost Update"
   },
   "order": 1,
-  "prerequisites": [
-    "os5-producer-consumer"
-  ],
+  "prerequisites": ["os5-producer-consumer"],
   "related": [],
   "documents": [
     {

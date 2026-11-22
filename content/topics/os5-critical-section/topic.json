@@ -7,9 +7,7 @@
     "ar": "Critical Section والشروط الثلاثة"
   },
   "order": 2,
-  "prerequisites": [
-    "os5-race-condition"
-  ],
+  "prerequisites": ["os5-race-condition"],
   "related": [],
   "documents": [
     {

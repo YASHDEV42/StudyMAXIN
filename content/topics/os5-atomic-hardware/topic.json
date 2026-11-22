@@ -7,9 +7,7 @@
     "ar": "Locks والعمليات الذرية وBounded Waiting"
   },
   "order": 4,
-  "prerequisites": [
-    "os5-peterson"
-  ],
+  "prerequisites": ["os5-peterson"],
   "related": [],
   "documents": [
     {

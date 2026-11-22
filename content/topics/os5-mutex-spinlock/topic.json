@@ -7,9 +7,7 @@
     "ar": "Mutex وSpinlock وطريقة الانتظار"
   },
   "order": 5,
-  "prerequisites": [
-    "os5-atomic-hardware"
-  ],
+  "prerequisites": ["os5-atomic-hardware"],
   "related": [],
   "documents": [
     {

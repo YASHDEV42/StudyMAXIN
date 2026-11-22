@@ -1,4 +1,5 @@
 ## Peterson's Solution (Peterson çözümü)
+
 السلايدات 14–15 بتعرض Algorithm (algoritma) برمجية لحماية **Critical Section (kritik bölüm)** لما عنا Processين فقط، باستخدام `flag[2]` و`turn`.
 
 ```text

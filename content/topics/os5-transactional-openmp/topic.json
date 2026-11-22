@@ -7,9 +7,7 @@
     "ar": "Transactional Memory وOpenMP Critical"
   },
   "order": 9,
-  "prerequisites": [
-    "os5-monitors"
-  ],
+  "prerequisites": ["os5-monitors"],
   "related": [],
   "documents": [
     {

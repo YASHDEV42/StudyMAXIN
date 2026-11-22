@@ -1,7 +1,9 @@
 ## Critical Section (kritik bölüm)
+
 السلايد 11 بيقسم الكود إلى **Entry Section (giriş bölümü)** لأخذ Permission، بعدها **Critical Section (kritik bölüm)** لتعديل Shared Resource (paylaşılan kaynak)، ثم **Exit Section (çıkış bölümü)** لتحرير Lock، وأخيرًا **Remainder Section (kalan bölüm)** للشغل العادي.
 
 ## الشروط الثلاثة — السلايد 12
+
 1. **Mutual Exclusion (karşılıklı dışlama):** Process واحدة فقط بتدخل نفس المنطقة المحمية باللحظة، مو إنه كل النظام لازم يوقف.
 2. **Progress (ilerleme):** لو المنطقة فاضية وفي Processes بدها تدخل، قرار اختيار واحدة ما لازم يتأجل بلا نهاية.
 3. **Bounded Waiting (sınırlı bekleme):** لازم يكون في حد لتجاوز غيرها لProcess ناطرة، حتى ما يصير **Starvation (aç kalma)**.

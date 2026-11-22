@@ -7,9 +7,7 @@
     "ar": "Monitors وCondition Variables"
   },
   "order": 8,
-  "prerequisites": [
-    "os5-semaphore-blocking-deadlock"
-  ],
+  "prerequisites": ["os5-semaphore-blocking-deadlock"],
   "related": [],
   "documents": [
     {

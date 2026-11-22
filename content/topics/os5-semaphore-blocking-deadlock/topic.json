@@ -7,9 +7,7 @@
     "ar": "Blocking Semaphores وDeadlock وStarvation"
   },
   "order": 7,
-  "prerequisites": [
-    "os5-semaphores"
-  ],
+  "prerequisites": ["os5-semaphores"],
   "related": [],
   "documents": [
     {

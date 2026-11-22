@@ -1,7 +1,9 @@
 ## Semafor kullanım hataları — slayt 31
+
 `wait(mutex)` ve `signal(mutex)` yanlış sırayla veya eksik kullanılırsa mutual exclusion bozulabilir veya deadlock doğabilir. `signal` önce yapılırsa kilit koruması kaybedilebilir; iki kez `wait` yapılıp uygun release yapılmazsa thread takılabilir. Bu karmaşıklığı azaltmak için **monitor (izleyici)** soyutlaması anlatılır.
 
 ## Monitor (izleyici) — slayt 32
+
 Monitor, korunan **shared variables (paylaşılan değişkenler)** ve bunlara erişen **procedures (işlevler)** ile initialization kodunu bir araya getirir. Kaynak şemada herhangi bir anda monitor'un içindeki **yalnız bir procedure yürütme akışı aktif** olabilir; böylece monitor içi mutual exclusion sağlanır.
 
 ```text
@@ -16,7 +18,9 @@ monitor name {
 Monitor kullanmak, her problemi otomatik çözmez; doğru predicate, condition signaling ve invariant gerekir.
 
 ## Condition variable (durum değişkeni) — slayt 33
+
 `condition x,y` tanımlanabilir.
+
 - **x.wait():** Çağıran thread monitor lock'unu bırakıp condition'da bekler; uyanınca monitor lock'unu yeniden edinerek devam eder (yaygın model).
 - **x.signal():** O condition'da bekleyen thread'lerden birini uyandırabilir; kaynağın signal-and-wait / signal-and-continue semantiğine göre akış değişir.
 

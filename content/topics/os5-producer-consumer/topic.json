@@ -7,9 +7,7 @@
     "ar": "مزامنة العمليات ومشكلة المنتج والمستهلك"
   },
   "order": 0,
-  "prerequisites": [
-    "os4-thread-foundations"
-  ],
+  "prerequisites": ["os4-thread-foundations"],
   "related": [],
   "documents": [
     {

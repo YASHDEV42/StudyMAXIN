@@ -1,4 +1,5 @@
 ## Producer–Consumer (üretici–tüketici)
+
 السلايدات 2–6 بتشرح مشكلة **Cooperating Processes (işbirlikçi işlemler)** اللي بتشارك Memory (bellek) أو Files (dosyalar). إذا اشتغلوا على نفس البيانات بدون Synchronization (eşzamanlama) ممكن النتيجة تخرب.
 
 **Producer (üretici)** بتحط عناصر بـ **Bounded Buffer (sınırlı tampon)** و**Consumer (tüketici)** بتاخد العناصر الجاهزة. عنا **counter (sayaç)** لعدد العناصر، **in (giriş indeksi)** لمكان الكتابة، و**out (çıkış indeksi)** لمكان القراءة. المؤشرات بتلف باستخدام `(index+1)%BUFFER_SIZE`.
