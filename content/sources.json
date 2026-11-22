@@ -448,5 +448,20 @@
       "sha256": "9d3124aa3a163b2dd5348c903edd1a9bffde886dcd5d917d953ff84be442e813",
       "reason": "User-provided 41-page PDF reviewed for week 5; the original remains private and is not redistributed."
     }
+  },
+  {
+    "id": "db-week-06-hafta",
+    "title": "Modern Veritabanı Yönetim Sistemleri — Hafta 6: Transaction Yönetimi ve İndeksleme (Prof. Dr. Özal Yıldırım)",
+    "language": "tr",
+    "courseIds": [
+      "database-management"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "hafta06.pdf",
+      "pageCount": 31,
+      "sha256": "85601e3769d76d7acf0d396a2c97ef1123db23fd43ce471fa72d8b70ba9045d6",
+      "reason": "User-provided 31-page PDF reviewed for week 6. The source is private; no public PDF redistribution."
+    }
   }
 ]

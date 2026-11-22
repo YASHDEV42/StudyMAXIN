@@ -5,8 +5,8 @@
     "ar": "نظم إدارة قواعد البيانات"
   },
   "description": {
-    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli ilk beş haftalık Arapça/Türkçe dersleri ve Türkçe sınav özetleri yayımlandı. Altıncı hafta bekleniyor.",
-    "ar": "شروح بالعربي والتركي وملخصات امتحانية تركية للأسابيع الخمسة الأولى؛ الأسبوع السادس لسه بانتظار المحاضرة."
+    "tr": "Modern Veritabanı Yönetim Sistemleri, Hafta 1–6: kaynak temelli Arapça ve Türkçe dersler ve Türkçe sınav özetleri.",
+    "ar": "المحاضرات الست الأولى مكتملة بشرح عربي وتركي وملخص امتحاني تركي لكل أسبوع، مع توثيق صفحات المصادر."
   },
   "order": 3,
   "chapters": [
@@ -49,6 +49,14 @@
         "ar": "الأسبوع الخامس: بنية RDBMS وخصائص ACID"
       },
       "order": 4
+    },
+    {
+      "id": "week-06",
+      "title": {
+        "tr": "Transaction Yönetimi ve İndeksleme",
+        "ar": "الأسبوع السادس: إدارة المعاملات والفهرسة"
+      },
+      "order": 5
     }
   ]
 }

@@ -1,0 +1,97 @@
+{
+  "id": "db-transactions-indexing",
+  "courseId": "database-management",
+  "chapterId": "week-06",
+  "title": {
+    "tr": "Transaction Yönetimi, TCL, İndeksleme ve EXPLAIN",
+    "ar": "إدارة Transactions وأوامر TCL والفهرسة وخطط التنفيذ"
+  },
+  "order": 0,
+  "prerequisites": [
+    "db-rdbms-architecture-acid"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "Transactions وIndexes: من التحويل البنكي إلى Execution Plan",
+      "summary": "تطبيق ACID عبر BEGIN/COMMIT/ROLLBACK/SAVEPOINT، Autocommit وPostgreSQL aborted transactions، أربع قواعد للفهرسة وEXPLAIN.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-06-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 13
+            },
+            {
+              "from": 15,
+              "to": 26
+            },
+            {
+              "from": 28,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Transaction Yönetimi ve İndeksleme: TCL, Banka Transferi ve EXPLAIN",
+      "summary": "Transaction yaşam döngüsü, 200 TL transferi, autocommit, dört indeksleme kuralı, optimizer, EXPLAIN ve SQL Server/PostgreSQL farkları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-06-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 13
+            },
+            {
+              "from": 15,
+              "to": 26
+            },
+            {
+              "from": 28,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Transaction Yönetimi ve İndeksleme — Hafta 6 Sınav Özeti",
+      "summary": "TCL, transfer bakiyeleri, autocommit, full scan–index seek, dört indeksleme kuralı ve plan yorumlama.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-06-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 13
+            },
+            {
+              "from": 15,
+              "to": 26
+            },
+            {
+              "from": 28,
+              "to": 30
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
