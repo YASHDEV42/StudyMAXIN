@@ -5,8 +5,8 @@
     "ar": "نظم إدارة قواعد البيانات"
   },
   "description": {
-    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin haftalık, kaynak temelli Arapça ve Türkçe açıklamaları ile Türkçe sınav özetleri. Şu an yalnızca doğrulanan 1. hafta yayımlanmıştır.",
-    "ar": "دروس وملخصات عربية وتركية لمادة نظم إدارة قواعد البيانات. المتاح حاليًا هو الأسبوع الأول الذي تمت مراجعة ملفه الأصلي."
+    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli Arapça ve Türkçe dersleri ve Türkçe sınav özetleri. İlk iki hafta yayımlandı.",
+    "ar": "شرح عربي وتركي وملخصات امتحانية تركية لمادة نظم إدارة قواعد البيانات. الأسبوعان الأول والثاني متاحان بعد مراجعة ملفات المحاضرة."
   },
   "order": 3,
   "chapters": [
@@ -17,6 +17,14 @@
         "ar": "الأسبوع الأول: مقدمة وتاريخ قواعد البيانات والبيانات والمعلومات"
       },
       "order": 0
+    },
+    {
+      "id": "week-02",
+      "title": {
+        "tr": "İlişkisel Model ve ER Diyagramları",
+        "ar": "الأسبوع الثاني: النموذج العلائقي ومخططات ER"
+      },
+      "order": 1
     }
   ]
 }

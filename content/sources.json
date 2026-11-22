@@ -388,5 +388,20 @@
       "sha256": "ea5cc9df0b72a112c1338a1412ee0a26756808ce434c5e5268060e06a932c22a",
       "reason": "User-supplied PDF reviewed for week 1; copyrighted source is not redistributed or committed."
     }
+  },
+  {
+    "id": "db-week-02-hafta",
+    "title": "Modern Veritabanı Yönetim Sistemleri — 2. Hafta: İlişkisel Model ve ER Diyagramları (Prof. Dr. Özal Yıldırım)",
+    "language": "tr",
+    "courseIds": [
+      "database-management"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "hafta02.pdf",
+      "pageCount": 42,
+      "sha256": "acbef31a6a8c963c85323c49e237f74e5edd2effce4e05da63e7b0563eb00d61",
+      "reason": "User-provided 42-page PDF reviewed for week 2; original remains private and is not redistributed."
+    }
   }
 ]

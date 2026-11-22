@@ -1,0 +1,97 @@
+{
+  "id": "db-relational-model-er",
+  "courseId": "database-management",
+  "chapterId": "week-02",
+  "title": {
+    "tr": "İlişkisel Model, ER Diyagramları, Anahtarlar ve Kısıtlar",
+    "ar": "النموذج العلائقي وER والمفاتيح والقيود"
+  },
+  "order": 0,
+  "prerequisites": [
+    "db-introduction-history-dikw"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف نصمّم قاعدة بيانات علائقية ونحوّل ER إلى جداول؟",
+      "summary": "شرح Relation وTuple وDomain، مخططات ER والـCardinality، قواعد التحويل الأربع، المفاتيح وأنواع البيانات والقيود.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-02-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            },
+            {
+              "from": 13,
+              "to": 28
+            },
+            {
+              "from": 30,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "İlişkisel Modelden ER Diyagramı ve İlişkisel Şemaya",
+      "summary": "İlişki ve teta, ER sembolleri, kardinalite, dört dönüşüm kuralı, veri türleri, anahtarlar ve bütünlük kısıtları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-02-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            },
+            {
+              "from": 13,
+              "to": 28
+            },
+            {
+              "from": 30,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "İlişkisel Model ve ER — Hafta 2 Sınav Özeti",
+      "summary": "ER dönüşüm kuralları, anahtar sınıfları, kardinalite ve kısıtlar için kısa sınav notları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-02-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 11
+            },
+            {
+              "from": 13,
+              "to": 28
+            },
+            {
+              "from": 30,
+              "to": 41
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
