@@ -1,0 +1,109 @@
+{
+  "id": "db-rdbms-architecture-acid",
+  "courseId": "database-management",
+  "chapterId": "week-05",
+  "title": {
+    "tr": "RDBMS Mimarisi ve ACID Özellikleri",
+    "ar": "بنية أنظمة قواعد البيانات العلائقية وACID"
+  },
+  "order": 0,
+  "prerequisites": [
+    "db-sql-fundamentals-advanced"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "RDBMS من الداخل: 3-Tier، Query Processor، Storage Engine وACID",
+      "summary": "شرح بنية 1/2/3-Tier، Parser/Optimizer/Executor، Storage Engine، مقارنة Oracle وMySQL وSQL Server وPostgreSQL، أنواع Data Integrity وACID.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-05-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 18
+            },
+            {
+              "from": 20,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "RDBMS Mimarisi, Sistem Karşılaştırması ve ACID",
+      "summary": "Katmanlı mimariler, sorgu işleyici, depolama motoru, dört popüler RDBMS, üç bütünlük türü ve banka transferiyle ACID.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-05-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 18
+            },
+            {
+              "from": 20,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "RDBMS Mimarisi ve ACID — Hafta 5 Sınav Özeti",
+      "summary": "1/2/3-Tier, Parser–Optimizer–Executor, Storage Engine, RDBMS karşılaştırması, veri bütünlüğü ve ACID tablosu.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-05-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 18
+            },
+            {
+              "from": 20,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 40
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

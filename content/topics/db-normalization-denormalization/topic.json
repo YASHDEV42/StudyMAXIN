@@ -1,0 +1,133 @@
+{
+  "id": "db-normalization-denormalization",
+  "courseId": "database-management",
+  "chapterId": "week-03",
+  "title": {
+    "tr": "Normalizasyon, Anomaliler, 1NF–4NF ve Denormalizasyon",
+    "ar": "تطبيع قواعد البيانات والاعتماديات من 1NF حتى 4NF"
+  },
+  "order": 0,
+  "prerequisites": [
+    "db-relational-model-er"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "كيف منطبّع الجداول من 1NF إلى 4NF؟",
+      "summary": "شرح Update/Insert/Delete Anomalies، Functional Dependencies، 1NF–4NF، BCNF، والموازنة بين Normalization وDenormalization مع مثالَي المحاضرة.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-03-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 8
+            },
+            {
+              "from": 10,
+              "to": 20
+            },
+            {
+              "from": 22,
+              "to": 24
+            },
+            {
+              "from": 26,
+              "to": 29
+            },
+            {
+              "from": 31,
+              "to": 40
+            },
+            {
+              "from": 42,
+              "to": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Normalizasyon ve Denormalizasyon: 1NF'den 4NF'e",
+      "summary": "Anomaliler, kısmi/geçişli ve çok değerli bağımlılıklar, iki uygulamalı örnek ve denormalizasyon ödünleşimi.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-03-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 8
+            },
+            {
+              "from": 10,
+              "to": 20
+            },
+            {
+              "from": 22,
+              "to": 24
+            },
+            {
+              "from": 26,
+              "to": 29
+            },
+            {
+              "from": 31,
+              "to": 40
+            },
+            {
+              "from": 42,
+              "to": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Normalizasyon ve Denormalizasyon — Hafta 3 Sınav Özeti",
+      "summary": "1NF/2NF/3NF/BCNF/4NF karşılaştırması, MVD örneği, anomaliler ve denormalizasyon.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-03-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 8
+            },
+            {
+              "from": 10,
+              "to": 20
+            },
+            {
+              "from": 22,
+              "to": 24
+            },
+            {
+              "from": 26,
+              "to": 29
+            },
+            {
+              "from": 31,
+              "to": 40
+            },
+            {
+              "from": 42,
+              "to": 44
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

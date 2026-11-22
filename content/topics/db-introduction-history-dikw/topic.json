@@ -1,0 +1,83 @@
+{
+  "id": "db-introduction-history-dikw",
+  "courseId": "database-management",
+  "chapterId": "week-01",
+  "title": {
+    "tr": "Veritabanına Giriş, Tarihsel Modeller ve DIKW",
+    "ar": "مقدمة قواعد البيانات وتاريخ النماذج وهرم DIKW"
+  },
+  "order": 0,
+  "prerequisites": [],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "قواعد البيانات: أهميتها وتطوّرها والفرق بين البيانات والمعلومات",
+      "summary": "الأسبوع الأول: دور قواعد البيانات، التاريخ من الملفات إلى NoSQL، النماذج المتعددة، DIKW وMetadata.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-01-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 32
+            },
+            {
+              "from": 34,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "Veritabanına Giriş, Tarihsel Modeller ve DIKW",
+      "summary": "Veritabanlarının önemi, hiyerarşik/ağ/ilişkisel modeller, NoSQL ailesi, veri–enformasyon ayrımı ve üstveri.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-01-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 32
+            },
+            {
+              "from": 34,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "Veritabanına Giriş — Hafta 1 Sınav Özeti",
+      "summary": "Model karşılaştırmaları, NoSQL örnekleri, DIKW, anahtarlar ve metadata kısıtları.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-01-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 32
+            },
+            {
+              "from": 34,
+              "to": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

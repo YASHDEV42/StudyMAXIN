@@ -1,0 +1,181 @@
+{
+  "id": "db-sql-fundamentals-advanced",
+  "courseId": "database-management",
+  "chapterId": "week-04",
+  "title": {
+    "tr": "SQL Temelleri, JOIN, CTE, View, Stored Procedure ve Trigger",
+    "ar": "أساسيات SQL والاستعلامات المتقدمة وTriggers"
+  },
+  "order": 0,
+  "prerequisites": [
+    "db-normalization-denormalization"
+  ],
+  "related": [],
+  "documents": [
+    {
+      "kind": "lesson",
+      "locale": "ar",
+      "title": "SQL من Relational Algebra إلى JOIN وCTE وTriggers",
+      "summary": "شرح عربي لمحاضرة SQL كاملة: DDL/DML/DQL/TCL، الاستعلامات وJOIN، Subquery وCTE، Views وStored Procedures وTriggers وتطبيقات T-SQL ومقابل PostgreSQL 16.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-04-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 12
+            },
+            {
+              "from": 14,
+              "to": 14
+            },
+            {
+              "from": 16,
+              "to": 23
+            },
+            {
+              "from": 25,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 41
+            },
+            {
+              "from": 43,
+              "to": 46
+            },
+            {
+              "from": 48,
+              "to": 65
+            },
+            {
+              "from": 67,
+              "to": 81
+            },
+            {
+              "from": 83,
+              "to": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "locale": "tr",
+      "title": "SQL Temelleri ve İleri SQL: Sorgulama ve Sunucu Nesneleri",
+      "summary": "İlişkisel cebir, DDL/DML/DQL/TCL, JOIN, alt sorgu, CTE, VIEW, Stored Procedure, Trigger ve SQL Server–PostgreSQL 16 karşılaştırması.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-04-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 12
+            },
+            {
+              "from": 14,
+              "to": 14
+            },
+            {
+              "from": 16,
+              "to": 23
+            },
+            {
+              "from": 25,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 41
+            },
+            {
+              "from": 43,
+              "to": 46
+            },
+            {
+              "from": 48,
+              "to": 65
+            },
+            {
+              "from": 67,
+              "to": 81
+            },
+            {
+              "from": 83,
+              "to": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cheat-sheet",
+      "locale": "tr",
+      "title": "SQL Temelleri ve İleri SQL — Hafta 4 Sınav Özeti",
+      "summary": "SQL alt dilleri, WHERE/HAVING, JOIN türleri, CTE, prosedür ve trigger mantığı ile T-SQL/PostgreSQL farklarının sınav özeti.",
+      "status": "published",
+      "provenance": "source-based",
+      "sources": [
+        {
+          "sourceId": "db-week-04-hafta",
+          "pages": [
+            {
+              "from": 6,
+              "to": 12
+            },
+            {
+              "from": 14,
+              "to": 14
+            },
+            {
+              "from": 16,
+              "to": 23
+            },
+            {
+              "from": 25,
+              "to": 27
+            },
+            {
+              "from": 29,
+              "to": 36
+            },
+            {
+              "from": 38,
+              "to": 41
+            },
+            {
+              "from": 43,
+              "to": 46
+            },
+            {
+              "from": 48,
+              "to": 65
+            },
+            {
+              "from": 67,
+              "to": 81
+            },
+            {
+              "from": 83,
+              "to": 85
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

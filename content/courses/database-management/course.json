@@ -1,0 +1,62 @@
+{
+  "id": "database-management",
+  "title": {
+    "tr": "Veritabanı Yönetim Sistemleri",
+    "ar": "نظم إدارة قواعد البيانات"
+  },
+  "description": {
+    "tr": "Modern Veritabanı Yönetim Sistemleri, Hafta 1–6: kaynak temelli Arapça ve Türkçe dersler ve Türkçe sınav özetleri.",
+    "ar": "المحاضرات الست الأولى مكتملة بشرح عربي وتركي وملخص امتحاني تركي لكل أسبوع، مع توثيق صفحات المصادر."
+  },
+  "order": 3,
+  "chapters": [
+    {
+      "id": "week-01",
+      "title": {
+        "tr": "Veritabanına Giriş, Tarihçe, Veri ve Bilgi",
+        "ar": "الأسبوع الأول: مقدمة وتاريخ قواعد البيانات والبيانات والمعلومات"
+      },
+      "order": 0
+    },
+    {
+      "id": "week-02",
+      "title": {
+        "tr": "İlişkisel Model ve ER Diyagramları",
+        "ar": "الأسبوع الثاني: النموذج العلائقي ومخططات ER"
+      },
+      "order": 1
+    },
+    {
+      "id": "week-03",
+      "title": {
+        "tr": "Normalizasyon ve Denormalizasyon",
+        "ar": "الأسبوع الثالث: التطبيع وإلغاء التطبيع"
+      },
+      "order": 2
+    },
+    {
+      "id": "week-04",
+      "title": {
+        "tr": "SQL Temelleri ve İleri SQL",
+        "ar": "الأسبوع الرابع: أساسيات SQL وSQL المتقدم"
+      },
+      "order": 3
+    },
+    {
+      "id": "week-05",
+      "title": {
+        "tr": "RDBMS Mimarisi ve ACID",
+        "ar": "الأسبوع الخامس: بنية RDBMS وخصائص ACID"
+      },
+      "order": 4
+    },
+    {
+      "id": "week-06",
+      "title": {
+        "tr": "Transaction Yönetimi ve İndeksleme",
+        "ar": "الأسبوع السادس: إدارة المعاملات والفهرسة"
+      },
+      "order": 5
+    }
+  ]
+}
