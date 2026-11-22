@@ -403,5 +403,20 @@
       "sha256": "acbef31a6a8c963c85323c49e237f74e5edd2effce4e05da63e7b0563eb00d61",
       "reason": "User-provided 42-page PDF reviewed for week 2; original remains private and is not redistributed."
     }
+  },
+  {
+    "id": "db-week-03-hafta",
+    "title": "Modern Veritabanı Yönetim Sistemleri — 3. Hafta: Normalizasyon ve Denormalizasyon (Prof. Dr. Özal Yıldırım)",
+    "language": "tr",
+    "courseIds": [
+      "database-management"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "hafta03.pdf",
+      "pageCount": 45,
+      "sha256": "01c5f6b69101dc2d0c47f3490a544dbfa45adceb6cf640090f6efc94ced7a02b",
+      "reason": "User-provided original reviewed for week 3; kept private and not redistributed."
+    }
   }
 ]

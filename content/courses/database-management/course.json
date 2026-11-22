@@ -5,8 +5,8 @@
     "ar": "نظم إدارة قواعد البيانات"
   },
   "description": {
-    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli Arapça ve Türkçe dersleri ve Türkçe sınav özetleri. İlk iki hafta yayımlandı.",
-    "ar": "شرح عربي وتركي وملخصات امتحانية تركية لمادة نظم إدارة قواعد البيانات. الأسبوعان الأول والثاني متاحان بعد مراجعة ملفات المحاضرة."
+    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli Arapça ve Türkçe dersleri ve Türkçe sınav özetleri. İlk üç hafta yayımlandı.",
+    "ar": "شرح عربي وتركي وملخصات امتحانية تركية لمادة نظم إدارة قواعد البيانات. الأسابيع الثلاثة الأولى متاحة بعد مراجعة محاضراتها."
   },
   "order": 3,
   "chapters": [
@@ -25,6 +25,14 @@
         "ar": "الأسبوع الثاني: النموذج العلائقي ومخططات ER"
       },
       "order": 1
+    },
+    {
+      "id": "week-03",
+      "title": {
+        "tr": "Normalizasyon ve Denormalizasyon",
+        "ar": "الأسبوع الثالث: التطبيع وإلغاء التطبيع"
+      },
+      "order": 2
     }
   ]
 }
