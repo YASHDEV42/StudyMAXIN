@@ -1,0 +1,86 @@
+{
+  "courseId": "operating-systems",
+  "title": {
+    "tr": "İşletim Sistemleri",
+    "ar": "نظم التشغيل"
+  },
+  "topics": [
+    {
+      "id": "intro",
+      "title": {
+        "tr": "İşletim Sistemlerine Giriş",
+        "ar": "مقدمة في نظم التشغيل"
+      }
+    },
+    {
+      "id": "services",
+      "title": {
+        "tr": "İşletim Sistemi Servisleri ve Yapıları",
+        "ar": "خدمات نظم التشغيل وبناها"
+      }
+    },
+    {
+      "id": "process-ipc",
+      "title": {
+        "tr": "Process Yönetimi ve IPC",
+        "ar": "إدارة العمليات والتواصل بينها"
+      }
+    },
+    {
+      "id": "threads",
+      "title": {
+        "tr": "Threads ve Multicore Programlama",
+        "ar": "الخيوط والبرمجة متعددة الأنوية"
+      }
+    },
+    {
+      "id": "synchronization",
+      "title": {
+        "tr": "Process Senkronizasyonu",
+        "ar": "مزامنة العمليات"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "os-week-1",
+      "topicId": "intro",
+      "kind": "original-slides",
+      "title": "1-işletim sistemleri-giriş.pptx",
+      "slideCount": 64,
+      "sha256": "7fdfb686473781a6759fcdd68def23c8114bcb6dfd57f136ab10f8ebe251036b"
+    },
+    {
+      "id": "os-week-2",
+      "topicId": "services",
+      "kind": "original-slides",
+      "title": "2- İşletim sistemi yapıları.pptx",
+      "slideCount": 42,
+      "sha256": "7bc249f7016df70e3e8caa9592b2f359ed2f8ee35933ee3736181dd104081d79"
+    },
+    {
+      "id": "os-week-3",
+      "topicId": "process-ipc",
+      "kind": "original-slides",
+      "title": "3- Process Yönetimi.pptx",
+      "slideCount": 56,
+      "sha256": "fa0f8a33c968a7e5159a1db7a855650b66011ebc5b6169c0bef7c20d3f40ce73"
+    },
+    {
+      "id": "os-week-4",
+      "topicId": "threads",
+      "kind": "original-slides",
+      "title": "4-Threads.pptx",
+      "slideCount": 41,
+      "sha256": "beef3c5014b3a1318954b0bea6dac9dc5e5fb605f8f58fb55bf6ad1f11a826e6"
+    },
+    {
+      "id": "os-week-5",
+      "topicId": "synchronization",
+      "kind": "original-slides",
+      "title": "5- Process Senkronizasyonu.pptx",
+      "slideCount": 36,
+      "sha256": "e917e5c8c87e4a1f6b3a7f2fdc9c6a1beb4a78a0c0d96c220a304c16ef6f3ed9"
+    }
+  ]
+}

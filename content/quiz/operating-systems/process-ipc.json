@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "os-process-ipc-program-image",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Aynı yürütülebilir dosya iki kez çalıştırıldığında hangisi doğrudur?",
+    "choices": [
+      "Tek program dosyasından iki ayrı süreç oluşturulabilir.",
+      "Program dosyası bir kez çalışsa da iki kez çalışsa da tek PID alır.",
+      "İki çalıştırmanın program sayacı ortak kalır.",
+      "Ayrı süreç açılabilmesi için önce program dosyasının kopyalanması gerekir."
+    ],
+    "correctIndex": 0,
+    "explanation": "Program pasif talimat kümesidir. Her süreç kendi yürütme durumu ile bir program örneğidir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [3, 4]
+    }
+  },
+  {
+    "id": "os-process-ipc-sections-heap",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Slayttaki süreç bellek modelinde malloc ile çalışma sırasında ayrılan tampon hangi bölümdedir?",
+    "choices": [
+      "Text (program kodu)",
+      "Heap (dinamik bellek)",
+      "Stack (çağrı yığını)",
+      "Data (global veriler)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Heap dinamik tahsis içindir. Tamponun adresini tutan yerel değişken ise stack üzerinde olabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [4, 5]
+    }
+  },
+  {
+    "id": "os-process-ipc-sections-stack",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Slayttaki çağrı çerçevesi modelinde işlevin dönüş adresi ve yerel değişkenleri hangi bölümde gösterilir?",
+    "choices": [
+      "Text (program kodu)",
+      "Heap (dinamik bellek)",
+      "Stack (çağrı yığını)",
+      "Data (global veriler)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Çağrı çerçevesi dönüş bilgisi ve çağrıya ait yerel durum için yığını kullanır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [4, 5]
+    }
+  },
+  {
+    "id": "os-process-ipc-sections-data",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Slayttaki süreç imajı modelinde başlangıç değeri verilen yazılabilir bir global değişken hangi bölüme aittir?",
+    "choices": [
+      "Text (program kodu)",
+      "Stack (çağrı yığını)",
+      "Heap (dinamik bellek)",
+      "Data (veri bölümü)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Dersin modelinde global değişkenler veri bölümündedir. Çağrıya özel yerel değişkenler yığındadır, dinamik tahsisler heap bölgesindedir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [4, 5]
+    }
+  },
+  {
+    "id": "os-process-ipc-program-counter",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Askıya alınmış bir süreç yeniden çalıştığında bir sonraki komuta nereden devam edeceğini hangi bilgi belirler?",
+    "choices": [
+      "Program sayacı",
+      "Süreç kimliği",
+      "Açık dosya sayısı",
+      "Hazır kuyruğunun boyu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Program sayacı, yürütmenin sürdürüleceği komut adresini taşır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [4, 28]
+    }
+  },
+  {
+    "id": "os-process-ipc-address-space",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Özel adres alanları bulunan iki süreç, aynı mantıksal adreste kendi değişkenlerini tutuyor. Paylaşım kurulmadıysa A’nın yazması B’yi neden değiştirmez?",
+    "choices": [
+      "Süreçlerdeki aynı mantıksal adres, her zaman aynı fiziksel konumu gösterir.",
+      "Aynı mantıksal adres, süreçlerin farklı bellek konumlarına karşılık gelebilir.",
+      "Yalnız yığın ayrıdır, global değişkenlerin mantıksal adresi ortak yazmayı gerektirir.",
+      "Yazma B’nin belleğine de gider, ancak B zamanlanınca eski değer geri yüklenir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Adres uzayı ve bellek koruması süreçlerin normal verilerini birbirinden ayırır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [6]
+    }
+  },
+  {
+    "id": "os-process-ipc-trace",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "CPU izinde P’nin komutları, ardından Q’nun komutları, sonra yeniden P’nin komutları görülüyor. Yalnız P’nin süreç izi nasıl çıkarılır?",
+    "choices": [
+      "P çalışırken ve çalışmazken geçen bütün CPU komutları alınır.",
+      "Yalnızca P’nin ilk zaman dilimindeki komutlar alınır.",
+      "P’ye ait komutlar, aradaki Q komutları çıkarılarak zaman sırasıyla alınır.",
+      "P ile Q’nun komutları program adreslerine göre birlikte sıralanır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Süreç izi süreç başına yürütme dizisidir. CPU genelinde görülen iz farklı süreçlerin dilimlerini içerebilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [7, 9]
+    }
+  },
+  {
+    "id": "os-process-ipc-dispatcher",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Zamanlayıcı hazır kuyruktan P’yi seçti. CPU’yu fiilen P’nin yürütmesine devreden rol hangisidir?",
+    "choices": [
+      "Program derleyicisi",
+      "Aygıt denetleyicisi",
+      "Uzun vadeli kabul yöneticisi",
+      "Dispatcher"
+    ],
+    "correctIndex": 3,
+    "explanation": "Zamanlayıcı sıradakini seçer. Dispatcher seçilen sürecin bağlamını yükleyip yürütmeyi devreder.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "os-process-ipc-kernel-context",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "CPU, P sürecinin sistem çağrısına ait çekirdek kodunu P adına yürütüyor. Bu anda kip ve süreç durumu nasıl sınıflandırılır?",
+    "choices": [
+      "Çekirdek kipi ve Running",
+      "Çekirdek kipi ve Ready",
+      "Kullanıcı kipi ve Running",
+      "Kullanıcı kipi ve Waiting"
+    ],
+    "correctIndex": 0,
+    "explanation": "Çekirdek kipi ayrıcalığı belirtir. Running, CPU’nun hâlen bu süreç adına çalıştığını gösterir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [10, 22]
+    }
+  },
+  {
+    "id": "os-process-ipc-pid",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Aynı süreç tablosunda komut adları aynı olan iki canlı süreci hangi alan ayırt eder?",
+    "choices": [
+      "Her ikisinin de program adı",
+      "PID",
+      "İlk çalıştırılan işlevin adı",
+      "Dosyanın disk üzerindeki konumu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Süreç kimliği, aynı programın eşzamanlı yürütmelerini ayrı ayrı tanımlar.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [15, 27]
+    }
+  },
+  {
+    "id": "os-process-ipc-tree",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "P, Q ve R’yi oluşturuyor. Q da S’yi oluşturuyor. S’nin doğrudan ebeveyni kimdir?",
+    "choices": ["P", "R", "Q", "Başlangıç süreci"],
+    "correctIndex": 2,
+    "explanation": "S’yi doğrudan Q yarattı. P, S’nin daha yukarıdaki atasıdır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [15]
+    }
+  },
+  {
+    "id": "os-process-ipc-fork-returns",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Başarılı fork() çağrısından hemen sonra dönüş değerlerine bakıldığında hangisi beklenir?",
+    "choices": [
+      "Ebeveynde 0, çocukta ebeveynin PID’si",
+      "Her iki süreçte de aynı pozitif PID",
+      "Çocukta -1, ebeveynde 0",
+      "Çocukta 0, ebeveynde çocuğun PID’si"
+    ],
+    "correctIndex": 3,
+    "explanation": "fork iki yürütme akışına döner ve dönüş değeri hangi süreçte olunduğunu ayırt eder.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [14, 17]
+    }
+  },
+  {
+    "id": "os-process-ipc-fork-branch",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Tek süreç fork() yapıyor. Başarılı çağrıdan sonra çocuk X, ebeveyn Y yazdırıyor. İki yazma da başarılıysa ve aralarında bekleme ilişkisi yoksa çıktı için ne kesindir?",
+    "choices": [
+      "X ve Y birer kez yazılır, sıra zamanlamaya bağlıdır.",
+      "X sonra Y oluşur, çünkü çocuk daima önce seçilir.",
+      "Y sonra X oluşur, çünkü ebeveyn daima önce seçilir.",
+      "Sadece Y oluşur, çünkü çocuk main başından başlar."
+    ],
+    "correctIndex": 0,
+    "explanation": "Çocuk fork sonrasından devam eder. Bir bekleme ilişkisi kurulmadığı için çıktının sırası belirlenmez.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "os-process-ipc-fork-count",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Başlangıçta tek süreç var. Başarılı iki fork() çağrısı koşulsuz olarak arka arkaya yürütülüyor. Sonrasında başlangıçtaki süreç dâhil kaç akış vardır?",
+    "choices": ["2", "4", "3", "8"],
+    "correctIndex": 1,
+    "explanation": "İlk fork bir akıştan ikisini yapar. Bu iki akış ikinci fork ile birer çocuk daha oluşturur.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [14, 17]
+    }
+  },
+  {
+    "id": "os-process-ipc-wait-order",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Çocuk A yazıp exit() çağırıyor. Ebeveyn ilgili çocuğu wait() ile başarıyla bekledikten sonra B yazıyor. Çıktı hemen görünüyorsa sıra nedir?",
+    "choices": ["B, A", "İki sıra da mümkündür.", "A, B", "Yalnız A görünür."],
+    "correctIndex": 2,
+    "explanation": "Ebeveyn A’yı yazan çocuk sonlanana kadar wait çağrısından dönemez.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "os-process-ipc-exec",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "fork() ile oluşturulan çocuk, başarılı exec() çağrısıyla başka bir komutu çalıştırıyor. Hangi değişiklik meydana gelir?",
+    "choices": [
+      "Var olan çocuk değişmeden üçüncü bir süreç yaratılır.",
+      "Ebeveynin program imajı değiştirilir.",
+      "Eski program exec() sonrasındaki komuttan yeni programla paralel olarak sürer.",
+      "Çocuğun yürütülen program imajı değiştirilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "exec mevcut süreçteki programı değiştirir. Süreç oluşturma işi daha önce fork ile yapılmıştır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "os-process-ipc-exit-status",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Bir süreç tamamlandığında sonucunu ebeveynin toplayabileceği bir sonlanma durumuyla bitirmek için hangi işlem kullanılır?",
+    "choices": ["exit()", "exec()", "fork()", "wait()"],
+    "correctIndex": 0,
+    "explanation": "exit süreci sonlandırır ve durum bilgisinin bekleyen ebeveyn tarafından alınabilmesini sağlar.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "os-process-ipc-state-new",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Bir süreç için kayıt oluşturuluyor ama henüz hazır kuyruğuna kabul edilmedi. Beş durum modelinde hangisi uygundur?",
+    "choices": ["Running", "New", "Waiting", "Terminated"],
+    "correctIndex": 1,
+    "explanation": "New oluşum aşamasıdır. Kabul edilince süreç ready olabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [18, 22]
+    }
+  },
+  {
+    "id": "os-process-ipc-state-timeout",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Çalışan P’nin zaman dilimi bitiyor. P’nin beklediği bir kaynak yoksa P hangi duruma alınır?",
+    "choices": ["Waiting", "New", "Ready", "Terminated"],
+    "correctIndex": 2,
+    "explanation": "CPU süresi biten P çalışmaya elverişlidir. Yeniden CPU seçimini bekler.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [21, 22, 38]
+    }
+  },
+  {
+    "id": "os-process-ipc-state-io",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Çalışan P, henüz tamamlanmamış bir disk okuması için bloke oluyor. O anda hangi durumdadır?",
+    "choices": ["Ready", "Terminated", "New", "Waiting"],
+    "correctIndex": 3,
+    "explanation": "P’nin ilerleyebilmesi için disk olayının tamamlanması gerekir. CPU’yu almak tek başına yeterli değildir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [20, 22, 41]
+    }
+  },
+  {
+    "id": "os-process-ipc-state-wake",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "P için disk okuması tamamlanıyor, fakat CPU başka bir işte. Standart durum diyagramında P’nin ilk hedefi hangisidir?",
+    "choices": ["Ready", "Running", "New", "Terminated"],
+    "correctIndex": 0,
+    "explanation": "Bekleme nedeni kalkınca süreç hazır olur. Running için sonraki zamanlama ve devretme gerekir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [20, 22, 38]
+    },
+    "clarificationAr": "انتهاء الإدخال أو الإخراج ينقل العملية إلى قائمة الجاهزين. لا تبدأ التنفيذ حتى يختارها المجدول."
+  },
+  {
+    "id": "os-process-ipc-state-dispatch",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Hazır kuyruktan bir sürece CPU atandığında hangi durum geçişi görünür?",
+    "choices": [
+      "Running → Waiting",
+      "Ready → Running",
+      "Waiting → Terminated",
+      "New → Waiting"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dispatch, seçilmiş hazır süreci CPU üzerinde çalışır duruma alır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [18, 22, 38]
+    }
+  },
+  {
+    "id": "os-process-ipc-state-chain",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "P çalışırken disk isteği yüzünden bloke oluyor. Disk tamamlanınca hazır oluyor, sonra CPU’ya seçiliyor. Doğru ardışık durum dizisi hangisidir?",
+    "choices": [
+      "Running → Ready → Waiting → Running",
+      "Running → Waiting → Running → Ready",
+      "Running → Waiting → Ready → Running",
+      "Running → Terminated → Ready → Running"
+    ],
+    "correctIndex": 2,
+    "explanation": "Disk bekleme P’yi bloke eder. Tamamlanma hazır duruma, zamanlama çalışır duruma geçirir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [22, 38, 41]
+    }
+  },
+  {
+    "id": "os-process-ipc-pcb-fields",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Hangisi bir süreç kontrol bloğunda tutulması beklenen bir zamanlama bilgisidir?",
+    "choices": [
+      "Açık dosya listesi",
+      "Süreç kimliği",
+      "Ayrılmış bellek sınırı",
+      "Süreç önceliği"
+    ],
+    "correctIndex": 3,
+    "explanation": "PCB sürecin durumunu ve yönetim bilgilerini taşır. Öncelik zamanlama kararına yardımcı olur.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [26, 27, 28]
+    }
+  },
+  {
+    "id": "os-process-ipc-pcb-not-image",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "PCB ile süreç imajı arasındaki ilişki için hangisi en doğru ifadedir?",
+    "choices": [
+      "PCB süreç imajıyla ilişkili yönetim ve bağlam bilgisidir. Programın bütün talimatları PCB’de tutulmaz.",
+      "PCB ile makinede çalışan bütün süreçlerin kodu aynı nesnedir.",
+      "Süreç imajı yalnız PID’den oluşur.",
+      "PCB yalnız çalıştırılabilir dosyanın diskteki kopyasıdır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Süreç imajı süreçle ilişkili kod, veri ve yürütme düzenini kapsar. PCB işletim sisteminin yönetim kaydıdır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [24, 25, 28]
+    }
+  },
+  {
+    "id": "os-process-ipc-pcb-io",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Bir sürecin açık dosya ve G/Ç kullanım bilgileri işletim sisteminde nasıl izlenir?",
+    "choices": [
+      "Sürecin çalıştırılabilir kod bölümü üzerinden",
+      "Sürece ait PCB ve ilişkili kaynak tabloları üzerinden",
+      "Yalnızca CPU’nun genel amaçlı yazmaçları üzerinden",
+      "Yalnızca aygıt servis yordamı adreslerinin tablosu üzerinden"
+    ],
+    "correctIndex": 1,
+    "explanation": "İşletim sistemi süreç adına kullanılan G/Ç kaynaklarını süreç kaydı ve ilişkili yapılarla izler.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [27, 28]
+    }
+  },
+  {
+    "id": "os-process-ipc-context-order",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "CPU P’den Q’ya geçiyor. P’nin daha sonra doğru yerden sürmesi ve Q’nun doğru yerde başlaması için hangi sıra gereklidir?",
+    "choices": [
+      "Q’nun bağlamını sakla, P’nin bağlamını geri yükle.",
+      "P ve Q’nun bağlamlarını sil, PID’lerini değiştir.",
+      "P’nin bağlamını sakla, Q’nun bağlamını geri yükle.",
+      "Yalnız hazır kuyruk boyunu sakla, yazmaçları sıfırla."
+    ],
+    "correctIndex": 2,
+    "explanation": "Ayrılan işin program sayacı ve yazmaçları korunur. Seçilen işin kayıtlı bağlamı CPU’ya yüklenir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [30, 33, 34]
+    }
+  },
+  {
+    "id": "os-process-ipc-context-overhead",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Daha sık süreç değişimi etkileşimi iyileştirebilirken neden CPU iş kapasitesini düşürebilir?",
+    "choices": [
+      "Her geçiş daha fazla CPU zamanı kazandırır, çünkü hazır kuyruk küçülür.",
+      "Kaydetme işi yalnız süreç oluşturulurken yapıldığı için geçiş sıklığı etkisizdir.",
+      "Kısa zaman dilimleri bağlam değişimi sayısını her durumda azaltır.",
+      "Bağlamı saklamak ve yüklemek, uygulamaya ayrılabilecek CPU zamanını tüketir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Planlama ve bağlam değiştirme işi CPU süresi alır. Çok sık geçiş, yararlı yürütmeye ayrılan payı düşürebilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [32, 34]
+    }
+  },
+  {
+    "id": "os-process-ipc-context-corruption",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Bir bağlam değişiminde P’nin genel amaçlı yazmaçları kaydediliyor, program sayacı kaydedilmiyor. Sonraki dönüşte hangi sorun doğrudan ortaya çıkar?",
+    "choices": [
+      "P’nin hangi talimattan devam edeceği belirlenemeyebilir.",
+      "P’nin değişkenleri için tüm veri yazmaçları kaybedilir.",
+      "P’nin önceki zamanlama önceliği zorunlu olarak sıfırlanır.",
+      "P’nin açık dosyalarının hangileri olduğu artık bilinemez."
+    ],
+    "correctIndex": 0,
+    "explanation": "Yazmaçlar işlem verisini korur. Devam adresi için ayrıca program sayacı gerekir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [26, 28, 33, 34]
+    }
+  },
+  {
+    "id": "os-process-ipc-ready-queue",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Hazır kuyruğunda bekleyen P ile aygıt kuyruğunda bekleyen Q arasındaki temel fark nedir?",
+    "choices": [
+      "Q CPU çalıştırmaya hazır, P disk sonucunu bekliyor.",
+      "P CPU’ya seçilebilir, Q önce beklediği aygıt olayını tamamlamalıdır.",
+      "İki kuyruktaki süreçler de terminated durumundadır.",
+      "Hazır kuyruğu yalnız henüz oluşturulmamış süreçleri tutar."
+    ],
+    "correctIndex": 1,
+    "explanation": "Ready süreç için eksik kaynak CPU’dur. Bloke süreç için önce bir dış olay gerekir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [38, 40]
+    }
+  },
+  {
+    "id": "os-process-ipc-job-queue",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "basic",
+    "question": "Bir zamanlama modelinde sisteme giren işlerin genel koleksiyonu hangi terimle adlandırılır?",
+    "choices": [
+      "Hazır kuyruğu (ready queue)",
+      "Aygıt kuyruğu (device queue)",
+      "İş kuyruğu (job queue)",
+      "Dışarı alınmış süreçlerin kuyruğu (swap queue)"
+    ],
+    "correctIndex": 2,
+    "explanation": "İş kuyruğu sisteme gelen işleri kapsar. Hazır kuyruğu yürütülmeye elverişli olanlarla ilgilidir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [40]
+    }
+  },
+  {
+    "id": "os-process-ipc-long-term",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Diskte bekleyen yeni işlerden hangilerinin belleğe kabul edileceğini ve böylece etkin iş sayısını hangi zamanlayıcı belirler?",
+    "choices": [
+      "Kısa vadeli CPU zamanlayıcısı",
+      "Dispatcher",
+      "Kesme servis yordamı",
+      "Uzun vadeli zamanlayıcı"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kabul denetimi çoklu programlama derecesini belirler. Kısa vadeli zamanlayıcı hazır işler arasında seçim yapar.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [42]
+    }
+  },
+  {
+    "id": "os-process-ipc-short-term",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "CPU bir işten ayrıldığında hazır süreçler arasından sıradakini seçmek hangi bileşenin görevidir?",
+    "choices": [
+      "Kısa vadeli zamanlayıcı",
+      "Uzun vadeli iş zamanlayıcısı",
+      "Orta vadeli zamanlayıcı",
+      "Seçilen sürece CPU’yu devreden dispatcher"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPU zamanlayıcısı sık çalışır ve hazır kuyruktan sıradaki süreci seçer.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [42]
+    }
+  },
+  {
+    "id": "os-process-ipc-medium-term",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Bellek baskısı nedeniyle bir süreç geçici olarak bellekten çıkarılıyor ve sonra yürütülmek üzere geri alınıyor. Bu hangi zamanlama işidir?",
+    "choices": [
+      "Uzun vadeli iş kabulü",
+      "Orta vadeli zamanlama",
+      "Kısa vadeli hazır süreç seçimi",
+      "Aygıt isteklerini sıralayan G/Ç zamanlaması"
+    ],
+    "correctIndex": 1,
+    "explanation": "Orta vadeli zamanlayıcı süreçleri geçici olarak dışarı alma ve geri getirme yoluyla etkin yükü ayarlayabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [43]
+    }
+  },
+  {
+    "id": "os-process-ipc-io-bound",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "P sık aralıklarla kısa hesaplamalar yapıp aygıt bekliyor. Q uzun kesintisiz hesaplama yapıyor. Baskın karakterleri nedir?",
+    "choices": [
+      "P CPU ağırlıklı, Q G/Ç ağırlıklı",
+      "İkisi de CPU ağırlıklı",
+      "P G/Ç ağırlıklı, Q CPU ağırlıklı",
+      "İkisi de G/Ç ağırlıklı"
+    ],
+    "correctIndex": 2,
+    "explanation": "G/Ç ağırlıklı iş kısa CPU patlamaları ve sık G/Ç ile, CPU ağırlıklı iş daha uzun hesaplama ile tanınır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [43]
+    }
+  },
+  {
+    "id": "os-process-ipc-queue-mix",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Tümü G/Ç ağırlıklı bir iş yüküne bir CPU ağırlıklı iş ekleniyor. Diğer işler aynı anda aygıt beklerken bu karışımın zamanlama açısından hangi yararı olabilir?",
+    "choices": [
+      "CPU ağırlıklı iş aygıt işlemlerini bitirmeden hiçbir süreç hazır olamaz.",
+      "CPU ağırlıklı iş, bütün G/Ç beklemelerini ortadan kaldırır.",
+      "Aygıt bekleyen işler, CPU ağırlıklı iş gelince Running durumuna geçer.",
+      "CPU ağırlıklı iş hazırsa, G/Ç beklemeleriyle CPU yürütmesi örtüşebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Hazır hesaplama işi bulunursa G/Ç bekleme süresinde CPU boş kalmak zorunda değildir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [40, 43]
+    }
+  },
+  {
+    "id": "os-process-ipc-cooperation",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "B süreci, A’nın oluşturduğu kayıtları doğrudan işliyor. Bu süreçler hangi nedenle iş birliği yapan süreçlerdir?",
+    "choices": [
+      "Birinin ürettiği veri diğerinin davranışını etkiler.",
+      "İkisi de ayrı PID taşıdığı için bağımsız olmaları imkânsızdır.",
+      "Yalnız aynı program dosyasından açılan süreçler iş birliği yapar.",
+      "İş birliği için iki sürecin aynı anda CPU’da olması gerekir."
+    ],
+    "correctIndex": 0,
+    "explanation": "Süreçler veri veya yürütme ilişkisi üzerinden birbirini etkileyebildiğinde cooperating sayılır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [44]
+    }
+  },
+  {
+    "id": "os-process-ipc-shared-vs-message",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "A, B’nin de eşlediği bölgeye yazıyor. Başka bir tasarımda A bir ileti kanalı üzerinden send işlemi yapıyor. Sırasıyla hangi modeller kullanılır?",
+    "choices": [
+      "Mesaj geçirme, paylaşımlı bellek",
+      "Paylaşımlı bellek, mesaj geçirme",
+      "Soket bağlantısı, paylaşımlı yığın",
+      "Her ikisinde yalnız bağlam değiştirme"
+    ],
+    "correctIndex": 1,
+    "explanation": "İlkinde veri ortak bellek üzerinden, ikincisinde gönderme ve alma arayüzü üzerinden iletilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [44, 46]
+    }
+  },
+  {
+    "id": "os-process-ipc-shared-setup",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Süreçler paylaşımlı bir bellek bölgesi kurduktan sonra aynı tamponu birden çok kez kullanıyor. Hangi açıklama uygundur?",
+    "choices": [
+      "Her bayt zorunlu olarak ayrı bir mesajla taşınır.",
+      "Paylaşımlı bellek okuma-yazma sırasını otomatik belirler.",
+      "Bölge kurulduktan sonra olağan erişimler doğrudan bellekte yapılabilir, ancak eşgüdüm gerekir.",
+      "Ortak bellek kurulduğunda iki süreç tek PID alır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Doğrudan yükleme ve saklama kullanılabilir. Tampona güvenli erişim için süreçler ayrıca eşgüdüm kurar.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [44, 45]
+    }
+  },
+  {
+    "id": "os-process-ipc-shared-local",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Farklı makinelerdeki iki süreç, özel dağıtık paylaşımlı bellek altyapısı olmadan veri alışverişi yapacak. Hangi model daha doğaldır?",
+    "choices": [
+      "Tek makinede ortak fiziksel belleği eşleme",
+      "İki sürecin ayrı yığınlarını aynı sanal sayfaya koyma",
+      "CPU yazmaçlarını ağ adresi gibi kullanma",
+      "Ağ üzerinden mesaj geçirme"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mesajlaşma, süreçlerin ortak fiziksel belleğe erişmesinin gerekmediği dağıtık düzenlerde kullanılabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [44, 46]
+    }
+  },
+  {
+    "id": "os-process-ipc-buffer-flow",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Slayttaki sabit boyutlu üretici–tüketici tamponu dolu. Üretici bir öğeyi ezmeden neyi beklemelidir?",
+    "choices": [
+      "Tüketicinin en az bir yuvayı boşaltmasını",
+      "Tüketicinin bütün tamponu boşaltmasını",
+      "Tamponun yazma göstergesinin sıfıra dönmesini",
+      "Üretici ve tüketicinin işaretçilerinin her durumda eşit olmasını"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dolu tamponda yeni yazma mevcut veriyi ezebilir. Önce tüketicinin bir yuvayı boşaltması gerekir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [45]
+    }
+  },
+  {
+    "id": "os-process-ipc-buffer-empty",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Bir tüketici sınırlı tamponu okuyacak, fakat hiç öğe yok. Hangi koşul sağlanmadan tüketemez?",
+    "choices": [
+      "Üretici tamponun bütün yuvalarını doldurmalıdır.",
+      "Üretici okunabilir bir öğe eklemelidir.",
+      "Tüketici tampon boşken eski veriden bir öğe okumalıdır.",
+      "Yazma göstergesi, hiçbir öğe eklenmeden başa dönmelidir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Boş tamponda tüketilecek veri yoktur. Tek bir yeni öğe tüketimi mümkün kılabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [45]
+    }
+  },
+  {
+    "id": "os-process-ipc-ipc-selection",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Bir servis bugün ayrı makinelerde çalışıyor. Yarın aynı makineye taşınsa bile aynı mesaj sözleşmesi korunacak. Hangi tasarım uygundur?",
+    "choices": [
+      "Her süreç için yerel ve ortak bir RAM bölgesini iki makineden eşlemek",
+      "Yerel bağlantıda paylaşımlı bellek kullanıp uzak istemcinin aynı bellek adresine yazmasını istemek",
+      "TCP soketi üzerinde aynı uygulama protokolünü kullanmak",
+      "Uzak sunucunun ağ portu yerine yerel süreç kimliğini protokol adresi yapmak"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bir soket protokolü ayrı makineler arasında da, yerel bağlantı üzerinde de mesaj sözleşmesini koruyabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [44, 46, 47, 50]
+    }
+  },
+  {
+    "id": "os-process-ipc-socket-endpoint",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Aynı sunucudaki iki TCP servisi aynı IP adresinde farklı portlarda dinliyor. Burada port numarası neyi ayırt eder?",
+    "choices": [
+      "Sunucuya bağlanan istemcilerin IP adreslerini",
+      "Her servisin süreç kimliğini doğrudan",
+      "Tek bir kurulu bağlantının gönderdiği her veri parçasını",
+      "Aynı IP üzerindeki yerel hizmet uçlarını"
+    ],
+    "correctIndex": 3,
+    "explanation": "IP makineye veya ağ arayüzüne ulaşmayı, port doğru iletişim ucunu ayırt etmeyi sağlar.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [47]
+    }
+  },
+  {
+    "id": "os-process-ipc-tcp-udp",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "Bir uygulama bağlantı kurmadan bağımsız veri birimleri göndermek istiyor ve taşıma katmanının teslim garantisi şart değil. Hangi seçenek uygundur?",
+    "choices": [
+      "UDP datagram soketi",
+      "TCP akış soketi",
+      "TCP üzerinde ayrı uygulama iletileri",
+      "Sıralı ve güvenilir teslim isteyen bağlantılı akış"
+    ],
+    "correctIndex": 0,
+    "explanation": "UDP bağlantısız datagram iletir. Teslim ve sıra garantisi sağlamaz.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [48]
+    }
+  },
+  {
+    "id": "os-process-ipc-tcp-stream",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Gönderici bir TCP bağlantısına art arda iki kez yazıyor, alıcı ise bu iki yazmanın baytlarını tek okumada alıyor. Bu neyle açıklanır?",
+    "choices": [
+      "Bir TCP okuması tam olarak bir yazmaya karşılık gelir.",
+      "TCP bayt akışı taşır, yazma çağrıları arasındaki sınırları korumaz.",
+      "Okuma boyutu, göndericinin her yazma çağrısına göre TCP tarafından ayarlanır.",
+      "TCP her yazma için alıcının ayrı bir bağlantı açmasını gerektirir."
+    ],
+    "correctIndex": 1,
+    "explanation": "TCP sıralı bayt akışı sunar. Uygulama iletilerini ayırmak istiyorsa kendi çerçevelemesini kullanır.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [48]
+    }
+  },
+  {
+    "id": "os-process-ipc-server-listen",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "İstemciler tarih servisine nereye bağlanacaklarını önceden bilmek istiyor. Sunucu için sabit hizmet ucu hangisidir?",
+    "choices": [
+      "İstemcinin IP adresi ve yerel kaynak portu",
+      "Sunucunun IP adresi ve istemcinin yerel kaynak portu",
+      "Sunucunun IP adresi ve dinleme portu",
+      "Sunucu sürecinin PID’si ve istemcinin IP adresi"
+    ],
+    "correctIndex": 2,
+    "explanation": "İstemci uzak uç olarak sunucu adresini ve hizmet portunu kullanır. Kendi yerel portu ayrı seçilebilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [47, 49, 50]
+    }
+  },
+  {
+    "id": "os-process-ipc-socket-pairs",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "İki istemci aynı sunucunun aynı TCP portuna eşzamanlı bağlanıyor. Sunucu bağlantıları nasıl ayırabilir?",
+    "choices": [
+      "Yalnız sunucunun IP adresi ve dinleme portunu kullanır.",
+      "İstemci IP adresini kullanır, kaynak portunu dikkate almaz.",
+      "Kabul edilen her bağlantı için dinleme portunu değiştirmek zorundadır.",
+      "Yerel ve uzak IP/port çiftlerinin ikisini birlikte kullanır."
+    ],
+    "correctIndex": 3,
+    "explanation": "TCP bağlantısı yerel IP/port ile uzak IP/port çiftinin birleşimiyle tanımlanır. İki bağlantının sunucu portu aynı kalabilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [47, 49]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-order",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "intermediate",
+    "question": "A, B, C aynı anda hazır ve CPU patlamaları sırasıyla 8, 3, 5 birim. Kesmesiz SJF’nin yürütme sırası nedir?",
+    "choices": ["B, C, A", "A, B, C", "B, A, C", "C, A, B"],
+    "correctIndex": 0,
+    "explanation": "Kesmesiz SJF CPU boşaldıkça hazır olan en kısa patlamayı seçer.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-arrival",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Kesmesiz SJF’de A, t=0’da 7 birimlik işe başlıyor. B, t=1’de 2 birim, C, t=2’de 1 birim ile geliyor. Yürütme sırası nedir?",
+    "choices": ["A, B, C", "A, C, B", "B, C, A", "C, B, A"],
+    "correctIndex": 1,
+    "explanation": "A kesilmez. t=7’de hazır olan B ve C arasından daha kısa C seçilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-wait",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Tek CPU’lu bir sistemde A, B, C t=0’da hazır. Tek CPU patlamaları sırasıyla 6, 2, 4 birim ve geçiş maliyeti sıfır. Kesmesiz SJF’de ortalama bekleme kaç birimdir?",
+    "choices": ["4", "6", "8/3", "10/3"],
+    "correctIndex": 2,
+    "explanation": "Sıra B, C, A ve beklemeler 0, 2, 6 birimdir. Ortalama (0 + 2 + 6)/3 = 8/3 birimdir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-turnaround",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "A ve B tek CPU’ya t=0’da geliyor. CPU patlamaları sırasıyla 9 ve 3 birim. Kesmesiz SJF ve sıfır geçiş maliyetinde A hangi t anında tamamlanır?",
+    "choices": ["9", "3", "6", "12"],
+    "correctIndex": 3,
+    "explanation": "B ilk 3 birimde tamamlanır. A’nın 9 birimlik yürütmesi sonunda saat 12 olur.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-timing",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Kesmesiz SJF’de A t=0’da 4 birim, B t=1’de 6 birim, C t=5’te 1 birim ile hazır oluyor. Geçiş maliyeti sıfırsa C’nin t=5’te çalışmasını ne engeller?",
+    "choices": [
+      "B t=4’te seçilmiştir ve başladığı patlama kesilmez.",
+      "C’nin patlaması en kısa olduğu için t=5’te B’nin yerini alır.",
+      "A t=5’te hâlâ CPU’da çalışmaktadır.",
+      "C t=4’te hazır kuyruğuna girmiş ve B’den önce seçilmiştir."
+    ],
+    "correctIndex": 0,
+    "explanation": "t=4’te C henüz gelmediğinden B çalışır. Kesmesiz seçim B bitene kadar yenilenmez.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-wait-independent",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Ebeveyn çocuk bitene kadar wait ile bloke oldu. Bu durum sistemin tüm CPU yürütmesini durdurur mu?",
+    "choices": [
+      "Evet. wait çağrısı her hazır süreci bloke eder.",
+      "Hayır. Çocuk veya başka hazır süreçler çalışabilir.",
+      "Evet. Sadece bir süreç sonlanınca bütün süreçler ready olur.",
+      "Hayır, çünkü ebeveyn wait sırasında zorunlu olarak CPU’yu sürekli kullanır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Bloke olan ebeveyndir. Zamanlayıcı CPU’yu çalışmaya hazır başka bir sürece verebilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [17, 22]
+    }
+  },
+  {
+    "id": "os-process-ipc-fork-conditional",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "İlk başarılı fork() çağrısından sonra yalnız çocuk ikinci bir başarılı fork() yapıyor. Başlangıçtaki süreç dahil toplam kaç süreç oluşur?",
+    "choices": ["2", "4", "3", "5"],
+    "correctIndex": 2,
+    "explanation": "İlk çağrı bir çocuk oluşturur. İkinci çağrıyı yalnız bu çocuk yürütür ve bir süreç daha oluşur.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [14, 17]
+    }
+  },
+  {
+    "id": "os-process-ipc-sjf-idle",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "Kesmesiz SJF’de CPU t=0’da boş. A t=2’de 4, B t=3’te 1 birimlik patlamayla geliyor. Hazır iş varsa CPU boş bırakılmıyor ve geçiş maliyeti yok. B ne zaman başlar?",
+    "choices": ["t=3", "t=2", "t=4", "t=6"],
+    "correctIndex": 3,
+    "explanation": "t=2’de yalnız A hazırdır. B, çalışan A’yı kesemez ve A t=6’da bitince seçilir.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-process-ipc-scheduling-overhead",
+    "courseId": "operating-systems",
+    "topicId": "process-ipc",
+    "difficulty": "advanced",
+    "question": "A ve B t=0’da hazır, sırasıyla 5 ve 2 birim CPU ister. Kesmesiz SJF’de ilk başlatma maliyeti yok, tek süreç geçişi 1 birim. A en erken ne zaman tamamlanır?",
+    "choices": ["t=8", "t=7", "t=6", "t=5"],
+    "correctIndex": 0,
+    "explanation": "B 2 birimde çalışır, geçiş 1 birim sürer, sonra A 5 birim yürütür.",
+    "source": {
+      "id": "os-week-3",
+      "slides": [32, 34, 51]
+    }
+  }
+]

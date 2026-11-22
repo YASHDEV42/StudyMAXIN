@@ -1,0 +1,941 @@
+[
+  {
+    "id": "os-intro-allocator",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "basic",
+    "question": "İki uygulama aynı anda sınırlı CPU zamanı ve bellek istediğinde işletim sistemi hangi rolü üstlenir?",
+    "choices": [
+      "Kaynak ayırıcı",
+      "Komut yorumlayıcısı",
+      "Program bağlayıcısı",
+      "Aygıt denetleyicisi"
+    ],
+    "correctIndex": 0,
+    "explanation": "İşletim sistemi çakışan istekler arasında işlemci süresi ve bellek gibi kaynakları paylaştırır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [5, 8]
+    }
+  },
+  {
+    "id": "os-intro-control",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir kullanıcı programı yazıcıya erişirken diğer programların da çalışabilmesi için işletim sistemi hangi işi üstlenir?",
+    "choices": [
+      "Yalnızca kaynak kullanımı istatistiklerini toplar.",
+      "G/Ç erişimini denetleyip program yürütmeyi koordine eder.",
+      "Sadece yazdırma kuyruğuna kalıcı depolama ayırır.",
+      "Yalnızca belgelerin dosya erişim izinlerini belirler."
+    ],
+    "correctIndex": 1,
+    "explanation": "Kontrol programı olarak işletim sistemi yürütmeyi ve aygıta erişimi yönetir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [5, 8]
+    }
+  },
+  {
+    "id": "os-intro-perspective",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir masaüstü kullanıcısı arayüzün rahatlığını, paylaşımlı bir sunucunun işletmecisi kaynak kullanımını öne çıkarıyor. Bu fark nasıl açıklanır?",
+    "choices": [
+      "Sunucuda etkileşimli kullanım, kişisel makinede toplam kaynak verimi önceliklidir.",
+      "İki örnek de yalnızca sistemin kaynak tahsisi açısından değerlendirilir.",
+      "Kullanıcı ve sistem bakışları farklı tasarım öncelikleri doğurur.",
+      "İki örnek arasındaki fark kaynakların paylaşımı değil, arayüz türüdür."
+    ],
+    "correctIndex": 2,
+    "explanation": "Kişisel kullanım etkileşim kolaylığını, paylaşımlı sistem ise kıt kaynakların verimli kullanımını öne çıkarabilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [7, 8]
+    }
+  },
+  {
+    "id": "os-intro-kernel-daemon",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Sistem çalışırken bir günlük toplama daemon’u kullanıcı kipinde çalışıyor. Bu gözlem hangi ayrımla uyumludur?",
+    "choices": [
+      "Her sistem servisi çekirdek adres alanında çalışır.",
+      "Daemon donanım kesmesiyle çağrılan bir çekirdek yordamıdır.",
+      "Daemon uygulama içine bağlanmış bir sistem çağrısı kitaplığıdır.",
+      "Bazı sistem servisleri çekirdek dışı süreçlerce yürütülebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Daemon bir sistem süreci olabilir. Çekirdekle etkileşmesi onun çekirdeğin içinde çalıştığı anlamına gelmez.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [6, 12]
+    }
+  },
+  {
+    "id": "os-intro-bootstrap",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "basic",
+    "question": "Bir bilgisayar güç verildiğinde henüz işletim sistemi çekirdeğini çalıştırmıyorsa hangi kod çekirdeğin yüklenmesini başlatır?",
+    "choices": [
+      "Bootstrap programı",
+      "Sistem çağrısı kitaplığı",
+      "Kabuk işlemi",
+      "Uygulama bağlayıcısı"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kalıcı bellekteki bootstrap kodu başlangıç işlerini yapar ve çekirdeğin yüklenmesini sağlar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [11]
+    }
+  },
+  {
+    "id": "os-intro-interrupt-flow",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "CPU bir aygıttan kesme aldığında normal yürütmeye sonradan dönebilmek için hangi sıra anlamlıdır?",
+    "choices": [
+      "Kesme yordamını çalıştır, sonra kesilen durumu sakla ve dön.",
+      "Durumu sakla, kesme yordamını çalıştır, kaldığın yere dön.",
+      "Kesilen durumu sakla, uygulamaya dön, ardından kesme yordamını çalıştır.",
+      "Kesme yordamını çalıştır ve kesilen programı başlangıçtan çalıştır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Kesme servisi sırasında akış değişir. Korunan durum normal yürütmeye dönmeyi mümkün kılar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [13, 14]
+    }
+  },
+  {
+    "id": "os-intro-vector",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Disk ve klavye farklı kesme numaralarıyla bildirim yaptığında doğru yordamın seçilmesi için hangi bilgi kullanılır?",
+    "choices": [
+      "Uygulamaları önceliğe göre sıralayan hazır kuyruğu",
+      "Dosyaları blok adreslerine eşleyen dizin tablosu",
+      "Kesme numarasını yordam adresiyle eşleyen vektör tablosu",
+      "Süreçlerin bellek sınırlarını gösteren adres tablosu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kesme vektörü ilgili servis yordamının adresine ulaşmayı sağlar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [14]
+    }
+  },
+  {
+    "id": "os-intro-disk-completion",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "CPU bir disk okumasını başlattıktan sonra başka iş yürütüyor. Aygıt bitişi nasıl bildirebilir?",
+    "choices": [
+      "CPU, durum yazmacını sürekli yoklamalıdır.",
+      "Uygulama, aygıtın bitişini zaman diliminden çıkarabilir.",
+      "Sürücü, isteği göndermiş olmasını bitiş bildirimi sayabilir.",
+      "Aygıt denetleyicisi bir tamamlanma kesmesi üretebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Kesme, CPU’nun disk işlemi tamamlanana kadar sürekli durum sorgulamadan başka iş yapabilmesini sağlar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [23]
+    }
+  },
+  {
+    "id": "os-intro-driver-controller",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Aygıta komut gönderen sürücü ile komutu aygıtta uygulayan denetleyici arasındaki fark hangisidir?",
+    "choices": [
+      "Sürücü aygıta erişen yazılımdır, denetleyici aygıtı yöneten donanımdır.",
+      "Sürücü aygıtı yöneten donanımdır, denetleyici erişim sağlayan yazılımdır.",
+      "Sürücü kullanıcı arayüzüdür, denetleyici çekirdekte çalışan sürücü kodudur.",
+      "Denetleyici istekleri işletim sisteminden alır, sürücü aygıttaki aktarım devresidir."
+    ],
+    "correctIndex": 0,
+    "explanation": "Sürücü denetleyicinin kayıtlarını kullanarak cihazla iletişim kurar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [23, 51]
+    }
+  },
+  {
+    "id": "os-intro-dma",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Büyük bir blok aygıttan RAM’e aktarılırken CPU’nun her birimi kopyalamaması için hangi donanım özelliği kullanılır?",
+    "choices": [
+      "Zaman dilimleme",
+      "Doğrudan bellek erişimi (DMA)",
+      "Kesme vektörü",
+      "Sistem çağrısı tablosu"
+    ],
+    "correctIndex": 1,
+    "explanation": "DMA ile aktarım donanımı veriyi taşır. CPU aktarımı kurar ve genellikle tamamlanma kesmesi alır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-intro-dma-tradeoff",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Bir sistem DMA’ya geçince CPU’nun başka kod çalıştırma süresi artıyor, ancak aygıt aktarımı sırasında bellek trafiği sürüyor. Bunun nedeni nedir?",
+    "choices": [
+      "Kopyalamayı CPU yapar, yalnızca kesme işleme yükü azalır.",
+      "Kopyalamayı uygulama yapar, denetleyici sadece verinin adresini seçer.",
+      "Kopyalamayı aktarım donanımı yapar, veri yine belleğe yazılır.",
+      "Aktarım aygıtta tamamlanır, ana belleğe veri aktarılmaz."
+    ],
+    "correctIndex": 2,
+    "explanation": "DMA CPU’nun kopyalama yükünü azaltır, veri yolunda veya bellekte trafik oluşmasını ortadan kaldırmaz.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-intro-main-memory",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "basic",
+    "question": "Diske kaydedilmiş bir program çalıştırılırken öğretim modelinde komutları CPU’nun erişimine hangi adım getirir?",
+    "choices": [
+      "Dosya adının komut yorumlayıcısına yazılması",
+      "Disk bloğunun kesme vektörüne eklenmesi",
+      "Dosya uzantısının yürütülebilir olarak değiştirilmesi",
+      "Gerekli komutların ana belleğe yüklenmesi"
+    ],
+    "correctIndex": 3,
+    "explanation": "CPU komutları belleğe dayalı yürütme ortamından getirir. Disk kalıcı depolama görevi görür.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [15, 18]
+    }
+  },
+  {
+    "id": "os-intro-volatile",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Güç birden kesildiğinde kaydedilmemiş RAM verisi ile SSD’de saklanmış veri arasında hangi fark beklenir?",
+    "choices": [
+      "RAM’deki veri kaybolabilir, SSD’de kalıcı olarak yazılmış veri korunur.",
+      "İkisi de aynı bellek hiyerarşisinde olduğu için birlikte silinir.",
+      "SSD’deki veri kaybolur, RAM’deki veri işletim sistemiyle yeniden oluşur.",
+      "İkisi de kesme vektöründe otomatik olarak yedeklenir."
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM uçucu bellektir. SSD’de tamamlanmış kalıcı yazma güç kesintisinden sonra saklanır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [18, 21]
+    }
+  },
+  {
+    "id": "os-intro-hierarchy",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Yazmaçlardan önbelleğe, RAM’e ve diske doğru inen tipik hiyerarşide hangi eğilim görülür?",
+    "choices": [
+      "Kapasite azalır, erişim genellikle hızlanır.",
+      "Kapasite artar, erişim genellikle yavaşlar.",
+      "Hem kapasite hem bit başına maliyet artar.",
+      "Erişim süresi sabit kalır, yalnızca aygıt boyutu değişir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Hiyerarşinin alt düzeyleri daha büyük ve ucuz kapasiteyi daha uzun erişim süresi karşılığında sunar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "os-intro-cache-hit",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir veri öğesi önbellekte geçerli bir kopyayla bulunuyor. Bu okuma için hangi sonuç beklenir?",
+    "choices": [
+      "Öğe okunduktan sonra ana bellekten mutlaka silinir.",
+      "Öğe önce SSD’ye taşınır, sonra tekrar okunur.",
+      "Veri daha yavaş katmana gitmeden önbellekten alınır.",
+      "CPU önbellekteki kopyayı yok sayarak RAM’e gider."
+    ],
+    "correctIndex": 2,
+    "explanation": "Önbellek isabetinde daha yavaş bellek katmanına başvurmak gerekmez.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [22, 50]
+    }
+  },
+  {
+    "id": "os-intro-cache-miss",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Slayttaki okuma modelinde CPU, istediği veriyi önbellekte bulamazsa önbellek nasıl kullanılır?",
+    "choices": [
+      "Veri arka depodan silinir ve tek kopya önbellekte tutulur.",
+      "Veri önce önbellekten alınır, ardından alt katman güncellenir.",
+      "Veri alt katmandan okunur, fakat bu modelde önbelleğe kopyalanmaz.",
+      "Veri alt katmandan getirilir ve bir kopyası önbelleğe alınır."
+    ],
+    "correctIndex": 3,
+    "explanation": "Iskada alt bellek katmanına gidilir. Kopyanın önbelleğe alınması sonraki erişimleri hızlandırabilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [22, 50]
+    }
+  },
+  {
+    "id": "os-intro-spooling",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Yazıcı bir belge basarken gelen başka yazdırma işlerinin sıraya alınması hangi tekniğe örnektir?",
+    "choices": ["Spooling", "Caching", "DMA", "Kesme vektörleme"],
+    "correctIndex": 0,
+    "explanation": "Spooling, tekil bir aygıta ait işleri daha sonra işlenmek üzere kuyruklar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [51, 56]
+    }
+  },
+  {
+    "id": "os-intro-buffering",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Hızları farklı iki bileşenin veri aktarımında, veri biriktirilip uygun hızda tüketiliyor. Hangi iş yapılıyor?",
+    "choices": [
+      "Önbellekleme",
+      "Tamponlama",
+      "Yazdırma işlerini kuyruklama",
+      "Kesme ile tamamlanma bildirimi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tampon, aktarım sırasında veriyi geçici olarak tutarak üretim ve tüketim hızlarını ayırır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [51]
+    }
+  },
+  {
+    "id": "os-intro-bus-lines",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "basic",
+    "question": "Bir işlemci bellekten sözcük okurken adres ve kontrol hatlarının rolleri hangisidir?",
+    "choices": [
+      "Adres hatları veriyi, kontrol hatları konumu taşır.",
+      "Adres hatları isteği, kontrol hatları veriyi taşır.",
+      "Adres hatları konumu, kontrol hatları okuma isteğini taşır.",
+      "Kontrol ve adres hatları her zaman aynı sinyali taşır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Adres hangi konuma erişileceğini, kontrol hangi işlemin yapılacağını belirtir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [27, 28]
+    }
+  },
+  {
+    "id": "os-intro-single-core",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir genel amaçlı CPU bulunan sistemde disk ve klavye denetleyicileri de çalışıyor. Sistemin tek işlemcili diye sınıflandırılması hangi ölçütten gelir?",
+    "choices": [
+      "Genel ve özel amaçlı tüm yürütme birimlerinin sayısı",
+      "Aynı anda bellekte tutulan iş sayısı",
+      "Bağımsız aygıt denetleyicilerinin sayısı",
+      "Genel amaçlı talimatları yürüten CPU sayısı"
+    ],
+    "correctIndex": 3,
+    "explanation": "Özel amaçlı denetleyiciler kendi görevlerini yürütse de genel amaçlı CPU sayısını artırmaz.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [30]
+    }
+  },
+  {
+    "id": "os-intro-smp",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "İşlemcilerin eş düzey çalıştığı paylaşımlı bellekli SMP örneğinde hangi düzen uygundur?",
+    "choices": [
+      "Her CPU’nun kendi yazmaçları vardır ve ana bellek ortaktır.",
+      "Her CPU’nun kendi RAM’i vardır ve yazmaçlar ortaktır.",
+      "Yalnız bir CPU sistem işlemleri yürütebilir.",
+      "Her CPU ayrı önyüklenen bir küme düğümüdür."
+    ],
+    "correctIndex": 0,
+    "explanation": "SMP’de işlemciler eş düzeydir. Yazmaç ve yerel önbellek ayrı, ana bellek ortak olabilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [31, 32]
+    }
+  },
+  {
+    "id": "os-intro-numa",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Önbellek etkileri ve geçici yük dışlandığında CPU0 aynı RAM konumuna CPU1’den sistematik olarak daha kısa sürede erişiyor. Bellek ortak adreslenebiliyorsa bu hangi modeli gösterir?",
+    "choices": ["UMA", "NUMA", "Tek programlı yürütme", "Asimetrik kümeleme"],
+    "correctIndex": 1,
+    "explanation": "NUMA’da bellek erişiminin maliyeti işlemciye ve belleğin konumuna göre değişebilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [33]
+    }
+  },
+  {
+    "id": "os-intro-blade",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Aynı kasadaki iki blade ayrı ayrı önyükleniyor ve farklı işletim sistemi örnekleri çalıştırıyor. Hangi sınıflandırma veriye en iyi uyar?",
+    "choices": [
+      "Tek işletim sistemi çalıştıran çok çekirdekli bir yonga",
+      "Ortak bir çekirdek örneğine bağlı iki SMP işlemcisi",
+      "Ayrı bilgisayar düğümleri",
+      "Tek ana bilgisayarın iki G/Ç denetleyicisi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ortak kasa, kartların kendi başlarına önyüklenen sistemler olmasını değiştirmez.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [34, 35]
+    }
+  },
+  {
+    "id": "os-intro-failover",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir kümedeki yedek düğüm birincilin arızasını algılayıp onun görevini devralıyor. Tasarımın temel hedefi nedir?",
+    "choices": [
+      "İş yükünü iki etkin düğüm arasında paylaştırma",
+      "Tek hesaplama işini paralelleştirerek hızlandırma",
+      "Bir düğümün bellek erişim süresini azaltma",
+      "Yüksek erişilebilirlik"
+    ],
+    "correctIndex": 3,
+    "explanation": "Devralma, fiziksel düğüm arızasına rağmen hizmeti sürdürmeye yöneliktir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [35]
+    }
+  },
+  {
+    "id": "os-intro-multiprogram",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "A işi disk beklerken B işi CPU’da çalıştırılıyor. Bu geçişin çoklu programlama açısından temel amacı nedir?",
+    "choices": [
+      "A’nın beklediği sırada işlemcinin boş kalmasını önlemek",
+      "A’nın disk işlemini B’nin adres alanına taşımak",
+      "Her işi ayrı bir fiziksel işlemciye bağlamak",
+      "A işini CPU zamanından kalıcı olarak çıkarmak"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hazır başka işe geçerek G/Ç beklemesiyle CPU çalışması örtüştürülebilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [36, 37]
+    }
+  },
+  {
+    "id": "os-intro-time-sharing",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Hiç G/Ç yapmayan bir hesaplama, etkileşimli kullanıcı işlerinin CPU almasını engelliyor. Zaman paylaşımı bunu nasıl sınırlar?",
+    "choices": [
+      "CPU yalnızca hesaplama kendi isteğiyle beklerse alınabilir.",
+      "Zaman dilimi sonunda CPU başka bir hazır işe verilebilir.",
+      "Hesaplama her zaman diğer işlerden daha uzun zaman dilimi alır.",
+      "Etkileşimli işlerin dosyaları önbelleğe alınarak CPU sırası değişir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Zaman dilimleri CPU’yu bırakmayan bir işin diğer hazır işleri sürekli dışlamasını önler.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [37]
+    }
+  },
+  {
+    "id": "os-intro-mode-bit",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir uygulamanın aygıt denetleyicisine ayrıcalıklı talimatı doğrudan yürütmesini hangi mekanizma önler?",
+    "choices": [
+      "Dosya dizinlerinin ağaç halinde düzenlenmesi",
+      "Önbelleğin küçük ve hızlı olması",
+      "Donanımın yürütme kipini denetlemesi",
+      "Sistem servislerinin ayrı daemon’larda çalışması"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kip bilgisi çekirdek ayrıcalıkları gerektiren komutların kullanıcı kipinde yürütülmesini engeller.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [40]
+    }
+  },
+  {
+    "id": "os-intro-mode-and-process",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Bir çalışan süreç sistem çağrısıyla çekirdek kipine geçti. Yalnız bu bilgiden ne çıkarılabilir?",
+    "choices": [
+      "Yeni süreç kesinlikle oluşturulmuştur.",
+      "Çağıran süreç hazır kuyruğuna kesinlikle taşınmıştır.",
+      "CPU çekirdeği fiziksel olarak değiştirilmiştir.",
+      "Ayrıcalık düzeyi değişmiştir, başka bir sürece geçilip geçilmediği henüz bilinmez."
+    ],
+    "correctIndex": 3,
+    "explanation": "Kip değişimi aynı süreç adına çekirdek kodu çalıştırabilir. Süreç değişimi ayrı bir karardır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [13, 40, 43]
+    }
+  },
+  {
+    "id": "os-intro-idle",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Çalışmaya hazır iş ve dış etkinlik yokken beklemeye geçen bir sistemin tekrar iş yapmasını hangi olay başlatabilir?",
+    "choices": [
+      "Aygıtın gönderdiği bir donanım kesmesi",
+      "Aygıtın, bildirim yapmadan kendi tamponunu doldurması",
+      "Önbellekte geçerli bir kopyanın bulunması",
+      "CPU’nun henüz başlayamayacak bir G/Ç sürecini seçmesi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kesme donanımdan bir olay bildirir ve CPU’nun ilgili yordamı yürütmesini tetikleyebilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [12, 39]
+    }
+  },
+  {
+    "id": "os-intro-memory-management",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "İşletim sistemi RAM’in hangi aralıklarının hangi süreçlerde olduğunu tutuyor. Bu görev hangi yönetim alanındadır?",
+    "choices": [
+      "Dosya adlandırma",
+      "Bellek yönetimi",
+      "Depolama spooling’i",
+      "Kullanıcı arayüzü yönetimi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bellek yönetimi kullanım durumunu izler ve süreçlerin bellek alanlarını tahsis eder.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [44, 45]
+    }
+  },
+  {
+    "id": "os-intro-files-abstraction",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Aynı dosya işlemlerini fiziksel özellikleri farklı iki depolama aygıtında kullanmayı hangi soyutlama kolaylaştırır?",
+    "choices": [
+      "Kesme vektörleri",
+      "CPU yazmaçları",
+      "Dosya ve dizinler",
+      "Bellek kip bitleri"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dosya sistemi fiziksel saklama ayrıntılarının üstünde mantıksal adlar ve işlemler sağlar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [46, 47]
+    }
+  },
+  {
+    "id": "os-intro-disk-admin",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "basic",
+    "question": "Diskte hangi blokların yeni veriye ayrılabileceğini izlemek hangi işletim sistemi sorumluluğudur?",
+    "choices": [
+      "Çekirdek kipinin seçimi",
+      "Süreç yazmaçlarının saklanması",
+      "Kullanıcı kabuğunun ayrıştırılması",
+      "Kütlesel depolama yönetimi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Boş alan yönetimi depolama bloklarının tahsis edilmesini destekler.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [48]
+    }
+  },
+  {
+    "id": "os-intro-protection",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir süreç çalıştırma yetkisine sahip fakat başka kullanıcıya ait bir dosyayı açamıyor. Bu karar hangi işlevi örnekler?",
+    "choices": [
+      "Koruma mekanizmasının kaynak erişimini sınırlaması",
+      "Önbellekten okumanın başarısız olması",
+      "Yazdırma kuyruğuna girişin ertelenmesi",
+      "Çekirdeğin önyükleme aşamasını tamamlamaması"
+    ],
+    "correctIndex": 0,
+    "explanation": "Koruma, süreç veya kullanıcıların belirli kaynaklara erişim kurallarını uygular.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [53]
+    }
+  },
+  {
+    "id": "os-intro-array-access",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Sabit boyutlu PCB kayıtlarında sıfırdan başlayan n indeksli öğeye, önceki öğeleri dolaşmadan erişmek gerekiyor. Hangi yapı bu erişimi doğrudan sağlar?",
+    "choices": [
+      "Tek yönlü bağlı liste",
+      "Bir dizi",
+      "LIFO yığını",
+      "FIFO kuyruğu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dizide öğe adresi = taban adresi + n × öğe boyutu. Tek bağlı listede ise önceki bağlantılar izlenir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [54]
+    }
+  },
+  {
+    "id": "os-intro-queue-order",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "FIFO aygıt kuyruğuna sırasıyla A, B ve C ekleniyor. A henüz hizmet almamışsa ve öncelik veya iptal yoksa hizmet sırası nedir?",
+    "choices": ["C, B, A", "B, A, C", "A, B, C", "C, A, B"],
+    "correctIndex": 2,
+    "explanation": "FIFO’da yeni öğe sona eklenir ve hizmet baştan alınır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [56]
+    }
+  },
+  {
+    "id": "os-intro-stack-order",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Boş bir yığına A ve B ekleniyor, bir öğe çıkarılıyor, ardından C ekleniyor. Kalan öğelerin çıkarılma sırası nedir?",
+    "choices": ["A, C", "C, B", "B, A", "C, A"],
+    "correctIndex": 3,
+    "explanation": "İlk çıkarma B’yi kaldırır. En son eklenen C, A’dan önce çıkar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [56]
+    }
+  },
+  {
+    "id": "os-intro-directory-tree",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir dizinin hem dosyaları hem de başka dizinleri içerebilmesini hangi yapı doğal biçimde modeller?",
+    "choices": ["Ağaç", "Düz FIFO kuyruk", "Atomik sayaç", "Kesme vektörü"],
+    "correctIndex": 0,
+    "explanation": "Ebeveyn-çocuk ilişkisi, dizin içindeki alt dizinlerin özyinelemeli düzenini ifade eder.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [47, 56]
+    }
+  },
+  {
+    "id": "os-intro-hash-collision",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "İki farklı anahtar aynı karma tablo konumuna eşleniyor. Bu durumda neden yalnız konuma bakmak yeterli değildir?",
+    "choices": [
+      "Karma fonksiyonu farklı anahtarlar için her zaman farklı konum üretir.",
+      "Aynı konuma düşen anahtarları ayırt etmek için bir çakışma çözümü gerekir.",
+      "Tablonun FIFO olması doğru anahtarı otomatik seçer.",
+      "Aynı konuma eşlenen iki anahtar aynı kaynağı ifade etmek zorundadır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Karma değeri anahtarın kimliği değildir. Çakışan kayıtlar anahtarları karşılaştırarak ayırt edilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [57]
+    }
+  },
+  {
+    "id": "os-intro-distributed",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Farklı makinelerdeki kaynaklara ağ üzerinden erişen bir çalışma ortamını tek makinedeki SMP’den ayıran özellik nedir?",
+    "choices": [
+      "Tüm işlemcilerin tek RAM adres alanını kullanması",
+      "Her ayrık makinenin aynı CPU yazmaçlarını kullanması",
+      "İşlem birimlerinin fiziksel olarak ayrı bilgisayarlar olması",
+      "Aygıtlara erişimde dosya soyutlamasının bulunması"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dağıtık sistem düğümleri ayrı fiziksel sistemlerdir ve ağ üzerinden haberleşir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [32, 60]
+    }
+  },
+  {
+    "id": "os-intro-compute-server",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir istemci model eğitim işini sunucuya gönderiyor ve tamamlanmış sonucu alıyor. Sunucunun baskın rolü hangisidir?",
+    "choices": [
+      "Dosya sunucusu",
+      "Veritabanı sunucusu",
+      "İstemci için görev yönlendiren ağ geçidi",
+      "Hesaplama sunucusu"
+    ],
+    "correctIndex": 3,
+    "explanation": "İstemci salt dosyaya erişmek yerine uzak bir hesaplama hizmeti istiyor.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [61]
+    }
+  },
+  {
+    "id": "os-intro-peer-role",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir ağ uygulamasında her katılımcı veri isteyebiliyor ve başka katılımcılara veri sunabiliyor. Hangi modelin rol dağılımına uyar?",
+    "choices": [
+      "Eşler arası",
+      "Katı istemci-sunucu",
+      "Tek işlemcili zaman paylaşımı",
+      "Asimetrik çok işlemcili"
+    ],
+    "correctIndex": 0,
+    "explanation": "Eşler arası modelde düğümler sabit istemci ve sunucu rollerine ayrılmak zorunda değildir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [62]
+    }
+  },
+  {
+    "id": "os-intro-virtualization",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir dizüstünde çalışan ana işletim sistemi üzerinde bir hipervizör, kendi çekirdeğini ve uygulamalarını çalıştıran ikinci bir sistem başlatıyor. Hangi düzen söz konusudur?",
+    "choices": [
+      "Yeniden başlatma ile çift önyükleme",
+      "Sanal makinede konuk işletim sistemi",
+      "Ana çekirdeği paylaşan işletim sistemi kapsayıcısı",
+      "Uzak fiziksel bilgisayara istemci bağlantısı"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sanallaştırma, ayrı bir konuk işletim sistemine sanal bir makine ortamı sunabilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [63]
+    }
+  },
+  {
+    "id": "os-intro-chip-cores",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Tek yongada dört genel amaçlı çekirdek var. Bu yapı için hangi ifade doğrudur?",
+    "choices": [
+      "Çekirdekler ortak bir program sayacına bağlıdır.",
+      "Aynı yongada bulundukları için her çekirdek ayrı işletim sistemi açar.",
+      "Çekirdekler farklı yürütme akışlarını çalıştırabilir.",
+      "Çekirdekler farklı akışları ancak ortak bellek kullanılmazsa çalıştırabilir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Multicore yapı birden fazla yürütme birimini aynı yonga üzerinde birleştirir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [31, 33]
+    }
+  },
+  {
+    "id": "os-intro-address-lines",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Bellek için a adet adres hattı her erişimde bir ikili adresi paralel taşıyor. Adreslerin yeniden eşlenmediği modelde a bir artırılırsa adreslenebilir konum sayısı ne olur?",
+    "choices": [
+      "Bir artar.",
+      "Veri yolu genişliği sabit olduğundan değişmez.",
+      "Dört katına çıkar.",
+      "İki katına çıkar."
+    ],
+    "correctIndex": 3,
+    "explanation": "a bit ile 2 üzeri a farklı konum gösterilebilir. Bir bit eklemek uzayı ikiye katlar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [28]
+    }
+  },
+  {
+    "id": "os-intro-interrupt-vs-poll",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Aygıt saniyede yalnız birkaç olay üretiyor ve en pahalı işlem CPU’nun boş yere durum yazmacı okuması. Hangi değişiklik bu maliyeti hedefler?",
+    "choices": [
+      "Sürekli sorgulama yerine olay geldiğinde aygıt kesmesi kullanmak",
+      "Veri tamponunu küçültüp sorgulama sıklığını artırmak",
+      "Aygıtın her olayda ayrı bir süreç yüklemesini istemek",
+      "Kesme yordamını çağıran her işlemi yeniden önyüklemek"
+    ],
+    "correctIndex": 0,
+    "explanation": "Olaylar seyrekse kesme, sürekli durum sorgulama döngüsüne harcanan CPU zamanını önler.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [13, 23]
+    }
+  },
+  {
+    "id": "os-intro-multicore-failure",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir donanım arızasından sonra hizmetin başka bir makinede sürmesi isteniyor. Tek makineye çekirdek eklemek yerine ne gerekir?",
+    "choices": [
+      "Aynı makinede yedek bir CPU çekirdeği",
+      "Ayrı düğümler ve bir hizmet devralma düzeni",
+      "Aynı makinede aynalanmış iki disk",
+      "Aynı çekirdek üzerinde farklı önceliklerde iki hizmet süreci"
+    ],
+    "correctIndex": 1,
+    "explanation": "Makine düzeyindeki arızadan kurtulmak için hizmeti taşıyabilecek bağımsız bir düğüm gerekir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [31, 35]
+    }
+  },
+  {
+    "id": "os-intro-cache-versus-buffer",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "intermediate",
+    "question": "Bir ağ alıcısı paketleri tüketici okuyana kadar tutuyor, ayrıca diskten sık okunan bloklar daha hızlı belleğe kopyalanıyor. Kavram sırası nedir?",
+    "choices": [
+      "Önbellekleme, tamponlama",
+      "Spooling, zaman paylaşımı",
+      "Tamponlama, önbellekleme",
+      "DMA, spooling"
+    ],
+    "correctIndex": 2,
+    "explanation": "İlk işlem üretici ile tüketiciyi ayırır, ikincisi sonraki okumalara hızlı kopya sunar.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [22, 51]
+    }
+  },
+  {
+    "id": "os-intro-cache-working-set",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Başlangıçta boş bir önbellek A ve B bloklarını aynı anda tutabiliyor ve her okuma ıskasında ilgili blok yükleniyor. A, B, A, B erişim dizisinde, araya başka erişim veya geçersizleştirme girmezse kaç isabet olur?",
+    "choices": ["0", "1", "4", "2"],
+    "correctIndex": 3,
+    "explanation": "İlk iki erişim iki bloğu getirir. İkisi de önbelleğe sığdığı için sonraki erişimler isabet olur.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [21, 22]
+    }
+  },
+  {
+    "id": "os-intro-cache-moving-data",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Bir iş yalnız bir kez okuduğu çok büyük bir veri kümesini sırayla geziyor. Önbelleğe sığan küçük bir veri kümesini tekrar tekrar okuyan işe göre neden daha az önbellek yararı görebilir?",
+    "choices": [
+      "İlk işte yeniden kullanım az, ikincide hızlı kopyalara tekrar erişim çoktur.",
+      "Önbellek yalnız yazma işlemlerinde işe yarar.",
+      "İlk işte bütün veri CPU yazmaçlarında kalır.",
+      "Küçük veri kümesinde her erişim diske gitmek zorundadır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Önbelleğin getirisi verinin daha hızlı katmanda tekrar bulunabilmesine bağlıdır.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [21, 22]
+    }
+  },
+  {
+    "id": "os-intro-cluster-smp-tradeoff",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "İki hesaplama düzeninden birinde çekirdekler ortak RAM’de bir dizi kullanıyor. Diğerinde bağımsız düğümler kısmi sonuçları birleştiriyor. Hangi ek tasarım işi özellikle ikinci düzende beklenir?",
+    "choices": [
+      "Tüm düğümlerin aynı yerel RAM adresinde kendiliğinden güncel veri görmesi",
+      "Kısmi sonuçların düğümler arasında taşınması ve birleştirilmesi",
+      "Düğüm başına yazmaçların ortak bir yazmaç kümesine dönüştürülmesi",
+      "Parçaların yalnızca tek düğümde sırayla yürütülmesi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Küme düğümleri ayrı sistemlerdir. Ortak sonucun üretilmesi için üretilen veriler düğümler arasında iletilir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [31, 32, 35]
+    }
+  },
+  {
+    "id": "os-intro-interrupt-source",
+    "courseId": "operating-systems",
+    "topicId": "intro",
+    "difficulty": "advanced",
+    "question": "Bir klavye aygıtının kesmesi ile kullanıcı programının ayrıcalıklı bir hizmet istemek için yaptığı kontrollü çekirdek girişini ayıran nedir?",
+    "choices": [
+      "İkisi de her durumda yalnız diskin işlemi bitirmesinden doğar.",
+      "Klavye kesmesi, CPU’nun her karakteri uygulamadan istemesiyle oluşur.",
+      "İlki dış aygıt olayından, ikincisi programın yürüttüğü bir talimattan kaynaklanır.",
+      "Kontrollü hizmet girişi her zaman fiziksel düğüm arızasıdır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Donanım kesmesi dışarıdan gelir. Programın başlattığı sistem çağrısında çekirdek girişi program yürütmesiyle ilişkilidir.",
+    "source": {
+      "id": "os-week-1",
+      "slides": [12, 13, 39, 40]
+    }
+  }
+]

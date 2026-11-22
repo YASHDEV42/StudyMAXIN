@@ -1,0 +1,1221 @@
+[
+  {
+    "id": "os-synchronization-race",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "basic",
+    "question": "Paylaşılan bir sayaca iki süreç erişiyor. Aynı başlangıçta farklı yürütme sıraları farklı sonuçlar veriyor. Bu durumun adı nedir?",
+    "choices": ["Yarış durumu", "Kilitlenme", "Açlık", "Karşılıklı dışlama"],
+    "correctIndex": 0,
+    "explanation": "Sonucun erişim sırasına bağlı olması yarış durumunun göstergesidir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [2, 9]
+    }
+  },
+  {
+    "id": "os-synchronization-increment-loss",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Sayaç 10. A ve B değeri ayrı yazmaçlarına okuyor, ikisi de bir artırıyor, sonra A ve B sırasıyla yazıyor. Son değer nedir?",
+    "choices": ["12", "11", "10", "9"],
+    "correctIndex": 1,
+    "explanation": "İkisi de 10’u okuyup 11 hesaplar. İkinci yazma ilk artırmayı görünür sonuçtan siler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [7, 8, 9]
+    }
+  },
+  {
+    "id": "os-synchronization-increment-decrement",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Sayaç 5. Üretici 5’i okuyup yerel olarak 6 hesaplıyor. Tüketici, üretici yazmadan önce 5’i okuyup 4 hesaplıyor. Önce tüketici, sonra üretici yazarsa sonuç nedir?",
+    "choices": ["4", "5", "6", "7"],
+    "correctIndex": 2,
+    "explanation": "Paylaşılan sayaca son yazılan değer 6’dır. Tüketicinin azaltması üreticinin yazmasıyla kaybolur.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [7, 9]
+    }
+  },
+  {
+    "id": "os-synchronization-race-sequential",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Sayaç 5. Üretici oku–artır–yaz adımlarını tamamen bitiriyor. Tüketici ancak sonra oku–azalt–yaz adımlarını yapıyor. Her biri işlemini bir kez yaparsa son değer nedir?",
+    "choices": ["6", "4", "0", "5"],
+    "correctIndex": 3,
+    "explanation": "Tüketici bu kez güncellenmiş 6’yı okur ve 5 yazar. Güncellemeler üst üste binmez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [7, 9]
+    }
+  },
+  {
+    "id": "os-synchronization-atomic-increment",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Tek bir kaynak kodu satırı olan count++ neden donanım düzeyinde her zaman bölünmez sayılmaz?",
+    "choices": [
+      "Okuma, hesaplama ve yazma ayrı adımlar olarak gerçekleşebilir.",
+      "Bir yazma atomikse artırmanın tamamı da atomiktir.",
+      "Tek kaynak kodu ifadesi her zaman bir atomik talimat üretir.",
+      "Değişken bellekteyse artırma için mevcut değeri okumak gerekmez."
+    ],
+    "correctIndex": 0,
+    "explanation": "Araya başka yürütme girebildiğinde bir satırın basit görünmesi atomiklik garantilemez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [7, 18]
+    }
+  },
+  {
+    "id": "os-synchronization-critical-object",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "İki süreç aynı bağlı listeyi güncelliyor. Kritik bölümü en iyi tanımlayan iş hangisidir?",
+    "choices": [
+      "Her sürecin yalnız kendi yerel değişkenine yazdığı bölüm",
+      "Ortak listenin bağlantılarını ve ilgili sayacı değiştiren bölüm",
+      "Listeden bağımsız bir sabiti derleyen işlem",
+      "Her sürecin ayrı dosyasını okuduğu adım"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kritik bölüm ortak verinin tutarlılığına bağlı erişim ve güncellemeleri içerir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [10, 11]
+    }
+  },
+  {
+    "id": "os-synchronization-critical-flow",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "basic",
+    "question": "Kritik bölüme giriş protokolünden başlanırsa, bir döngü yinelemesindeki bölüm sırası nedir?",
+    "choices": [
+      "Kritik bölüm → giriş bölümü → çıkış bölümü → kalan bölüm",
+      "Çıkış bölümü → kritik bölüm → giriş bölümü → kalan bölüm",
+      "Giriş bölümü → kritik bölüm → çıkış bölümü → kalan bölüm",
+      "Kalan bölüm → çıkış bölümü → kritik bölüm → giriş bölümü"
+    ],
+    "correctIndex": 2,
+    "explanation": "Giriş kodu izin edinir, çıkış kodu izni bırakır. Kalan kod bu korumanın dışındadır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [11]
+    }
+  },
+  {
+    "id": "os-synchronization-exclusion",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Kritik bölüm boşken A içeri giriyor. B, A henüz çıkmadan aynı ortak veri için içeri girerse hangi koşul ihlal edilir?",
+    "choices": [
+      "İlerleme",
+      "Sınırlı bekleme",
+      "Bekleyenler arasında FIFO sırası",
+      "Karşılıklı dışlama"
+    ],
+    "correctIndex": 3,
+    "explanation": "Karşılıklı dışlama aynı ortak kritik bölgeyi aynı anda en çok bir yürütmeye açar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [12]
+    }
+  },
+  {
+    "id": "os-synchronization-progress",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Kritik bölüm boş ve yalnız A girmek istiyor. Buna rağmen seçim, giriş talebi olmayan B yüzünden süresiz erteleniyor. Hangi koşul doğrudan bu ertelemeyi yasaklar?",
+    "choices": [
+      "İlerleme (progress)",
+      "Karşılıklı dışlama",
+      "Kritik bölümlerin ortak veriye erişmesi",
+      "Kilit güncellemesinin atomikliği"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kritik bölge boşken, girmesi gerekmeyen bir süreç giriş kararını sonsuza kadar ertelememelidir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [12]
+    }
+  },
+  {
+    "id": "os-synchronization-bounded",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "A giriş isteğini bildirdikten sonra, A içeri girmeden önce diğerlerinin kaç kez girebileceğine bir üst sınır yok. Hangi kritik bölüm koşulu sağlanmamıştır?",
+    "choices": [
+      "Karşılıklı dışlama",
+      "Sınırlı bekleme",
+      "En az bir sürecin ilerleyebilmesi",
+      "Kilit işleminin atomikliği"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sınırlı bekleme, talep sonrası diğer girişlerin sayısına üst sınır ister.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [12, 20]
+    }
+  },
+  {
+    "id": "os-synchronization-strict-alternation",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Katı sıra kuralında yalnız turn değişkeninde adı yazan süreç girebilir ve çıkarken sırasını devreder. Sıra P1’de, P1 kalan bölümde ve girmeyi düşünmüyor. Girmek isteyen P0 için ne olur?",
+    "choices": [
+      "Bölüm boş olduğu için P0 sırayı denetlemeden girer.",
+      "P0, P1’in talep etmemesini giriş izni olarak kullanır.",
+      "Kritik bölüm boş olsa da P0 ilerleyemez.",
+      "P0 ve P1 ancak aynı anda girerse sıra değişebilir."
+    ],
+    "correctIndex": 2,
+    "explanation": "İstek durumunu dikkate almayan katı sıra kuralı karşılıklı dışlamayı koruyabilir ama ilerlemeyi bozabilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [12, 14]
+    }
+  },
+  {
+    "id": "os-synchronization-preemptive-kernel",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Çekirdek kipindeki bir görev, başka bir görev tarafından zamanlama yoluyla kesilebiliyorsa yaklaşım hangisidir?",
+    "choices": [
+      "Kesmeyen çekirdek (nonpreemptive kernel)",
+      "Yalnız G/Ç tamamlandığında iş değiştiren çekirdek",
+      "Yalnız kullanıcı kipinde zaman dilimiyle kesmeye izin veren çekirdek",
+      "Kesilebilir çekirdek (preemptive kernel)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Preemptive çekirdekte çekirdek kipindeki yürütme de zamanlayıcı tarafından kesilebilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "os-synchronization-nonpreemptive-limit",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki CPU’lu bir sistemde çalışan çekirdek kodu bulunduğu CPU’da zamanlayıcı tarafından kesilmiyor. Bu kural neden ortak çekirdek verisini tek başına korumaz?",
+    "choices": [
+      "Başka CPU aynı anda o veriye erişen çekirdek kodunu çalıştırabilir.",
+      "İlk CPU kesilmediği sürece ikinci CPU yalnız kullanıcı kodu çalıştırabilir.",
+      "İlk CPU’daki kesilememe, ikincideki aynı veri erişimini de otomatik engeller.",
+      "Her CPU’nun özel yazmaçları olması, bütün çekirdek verisinin de ayrı olduğu anlamına gelir."
+    ],
+    "correctIndex": 0,
+    "explanation": "Yerel preemption kısıtı başka CPU’nun eşzamanlı erişimine karşı küresel dışlama sağlamaz.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [13, 17]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-flag",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Peterson algoritmasında flag[i] = true hangi durumu bildirir?",
+    "choices": [
+      "Pi kritik bölümden çıkmış ve isteğini geri çekmiştir.",
+      "Pi giriş istemiştir veya kritik bölümde çalışıyordur.",
+      "Sıra kesin olarak Pi’dedir.",
+      "Pj kritik bölüme girmek istediğini duyurmuştur."
+    ],
+    "correctIndex": 1,
+    "explanation": "Bayrak giriş niyetini tutar. Pi kritik bölgeden çıkınca false yapılır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [14, 15]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-turn",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Ardışık tutarlı Peterson modelinde Pi, flag[j] = true ve turn = j iken giriş sınamasına ulaşıyor. Bu iki değer değişmezken Pi ne yapar?",
+    "choices": [
+      "flag[j] değerine rağmen turn = j olduğu için girer.",
+      "flag[j] değerini false yapıp girer.",
+      "Giriş döngüsünde bekler.",
+      "Kendi bayrağını temizleyip kritik bölüme girer."
+    ],
+    "correctIndex": 2,
+    "explanation": "Bekleme koşulunun iki parçası da doğrudur. Pi, diğerinin isteği ve sıra tercihi birlikte sürdükçe bekler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [14, 15]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-no-contest",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Peterson’da Pi girmek istiyor, Pj’nin bayrağı false ve turn = j. Ardışık tutarlı modelde ne olur?",
+    "choices": [
+      "Pi yalnız turn değeri i yapılınca girebilir.",
+      "Pi, Pj de flag[j] değerini true yapana kadar bekler.",
+      "Pi, flag[j] false olduğu için kendi isteğinden vazgeçer.",
+      "Pi girebilir, çünkü Pj’nin giriş isteği yoktur."
+    ],
+    "correctIndex": 3,
+    "explanation": "Bekleme için hem flag[j] hem turn = j gerekir. Bayrak false olunca bekleme koşulu sağlanmaz.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [14, 15]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-both",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Peterson’da ikisi de giriş bayrağını true yaptı. P0 turn = 1 yazdı, ardından P1 turn = 0 yazdı. Ardışık tutarlı modelde ilk kim girebilir?",
+    "choices": ["P0", "P1", "İkisi de", "Hiçbiri"],
+    "correctIndex": 0,
+    "explanation": "Son değer 0’dır. P0 için bekleme turn = 1 ister ve sağlanmaz. P1 için turn = 0 koşulu sağlanır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [14, 15]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-exit",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Peterson’da Pi kritik bölümden çıkarken kendi flag[i] değerini neden false yapar?",
+    "choices": [
+      "Diğer sürece flag[j] değerini true olarak yazdırır.",
+      "Bekleyen eşe artık giriş isteği olmadığını bildirir.",
+      "turn değerini kendi numarasına eşitleyerek kendisine öncelik verir.",
+      "Çıkıştan sonra da giriş isteğinin devam ettiğini gösterir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Karşı tarafın bekleme koşulu Pi’nin giriş bayrağına da bağlıdır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [15]
+    }
+  },
+  {
+    "id": "os-synchronization-peterson-model",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Klasik Peterson kodunun modern bir işlemcide yalın yükleme ve saklamalarla çalışacağı neden garanti değildir?",
+    "choices": [
+      "Zaman dilimi uzadığında bellek işlemleri her zaman program sırasıyla görünür.",
+      "İki bayrağı ayrı adreslere yazmak tek başına gerekli sıralamayı garanti eder.",
+      "Bellek erişimlerinin sırası ve görünürlüğü algoritmanın varsayımından sapabilir.",
+      "İşlemci sayısı iki olunca iki süreç aynı yazmaç değerlerini paylaşır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Klasik çözüm belirli işlem sırası ve görünürlük varsayımlarıyla incelenir. Daha zayıf modelde uygun atomikler veya sıralama gerekir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "os-synchronization-irq-local",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki CPU’lu sistemde CPU0 kendi kesmelerini kapatıyor ve paylaşılan veriye giriyor. CPU1 için hangi sonuç geçerlidir?",
+    "choices": [
+      "CPU1’in çekirdek kipi, CPU0’ın kesmeleri açmasına kadar engellenir.",
+      "CPU1’in kesmeleri de CPU0 ile birlikte otomatik kapanır.",
+      "CPU1 yalnızca aynı veriyi okur, ancak yerel kesme maskesi yazma erişimini engeller.",
+      "CPU1 aynı veriye kendi çekirdek koduyla erişebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Bir CPU’nun yerel kesme ayarı diğer CPU’da çalışan talimatları durdurmaz.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [17]
+    }
+  },
+  {
+    "id": "os-synchronization-tas-old",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Atomik test_and_set(lock) çağrısından önce lock = false. Bu çağrının dönüş değeri ve çağrıdan hemen sonraki lock değeri sırasıyla nedir?",
+    "choices": ["false, true", "true, false", "false, false", "true, true"],
+    "correctIndex": 0,
+    "explanation": "test_and_set eski false değerini döndürür, kilit değişkeninde ise true kalır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [18]
+    }
+  },
+  {
+    "id": "os-synchronization-tas-contention",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "lock başlangıçta false. A ve B atomik test_and_set(lock) uyguluyor, A’nın çağrısı önce gerçekleşiyor ve arada bırakma yok. Dönüşler nedir?",
+    "choices": [
+      "A true, B false",
+      "A false, B true",
+      "İkisi de false",
+      "İkisi de true"
+    ],
+    "correctIndex": 1,
+    "explanation": "A önceki false değerini alıp true yazar. B daha sonraki atomik işleminde true görür.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [18]
+    }
+  },
+  {
+    "id": "os-synchronization-cas-match",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bir CAS işlemi eski değeri döndürüyor ve ancak beklenen değerle eşleştiğinde yeni değeri yazıyor. Başlangıç 7, beklenen 7, yeni 9. Ne olur?",
+    "choices": [
+      "9 döner ve değer 7 kalır.",
+      "7 döner ve değer 7 kalır.",
+      "7 döner ve değer 9 olur.",
+      "9 döner ve değer 9 olur."
+    ],
+    "correctIndex": 2,
+    "explanation": "Eşleşme yazmayı etkinleştirir. Dönüş, işlem öncesindeki değerdir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "os-synchronization-cas-mismatch",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "CAS eski değeri döndüren bir uygulama. Başlangıç 5, beklenen 4 ve yeni 8 ise sonuç nedir?",
+    "choices": [
+      "4 döner ve değer 8 olur.",
+      "8 döner ve değer 8 olur.",
+      "5 döner ve değer 4 olur.",
+      "5 döner ve değer 5 kalır."
+    ],
+    "correctIndex": 3,
+    "explanation": "Karşılaştırma başarısız olduğu için istenen güncelleme yapılmaz, eski 5 değeri döner.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "os-synchronization-cas-lock",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Dersteki eski değeri döndüren CAS ile lock = 0 boş, lock = 1 dolu. CAS(lock, 0, 1) hangi dönüşle başarılı edinimi bildirir?",
+    "choices": ["0", "1", "Her iki değer", "Hiçbiri"],
+    "correctIndex": 0,
+    "explanation": "Eski 0, beklenenle eşleştiğini ve 1 yazıldığını gösterir. Eski 1 edinimin başarısız olduğudur.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "os-synchronization-test-then-set",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Başta kilit boş. Her akış, kilidi önce okuyup boş gördüyse ayrı bir adımda dolu yazıyor. Hangi sıra iki akışın da aynı anda girmesine izin verebilir?",
+    "choices": [
+      "A kilidi dolu yazar, B o anda dolu okuyup bekler.",
+      "A ve B kilidi herhangi biri dolu yazmadan önce boş okur.",
+      "A içeri girip kilidi bırakır, B ancak sonra boş okur.",
+      "B kilidi dolu okur ve A onu bırakana kadar bu değer değişmez."
+    ],
+    "correctIndex": 1,
+    "explanation": "Sınama ve yazma tek atomik adım değilse iki çağıran da aynı eski değere dayanarak girebilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [16, 18, 21]
+    },
+    "clarificationAr": "الفحص والتعديل يجب أن يحدثا كوحدة واحدة، وإلا فقد يدخل خيطان بعد أن يرى كلاهما القفل فارغًا."
+  },
+  {
+    "id": "os-synchronization-atomic-vs-fair",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Basit bir test-and-set kilidi aynı anda tek girişe izin veriyor. Kritik bölüm sorununa ilişkin hangi güvence yalnızca bu kilit düzeniyle sağlanmaz?",
+    "choices": [
+      "Test ve yazma adımının bölünmezliği",
+      "Aynı anda en çok bir giriş",
+      "Giriş talebinin başkaları tarafından sınırlı sayıda geçilmesi",
+      "Kilit boşta iken bir çağrının onu edinebilmesi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Atomik kilit karşılıklı dışlama sağlayabilir, fakat adil bir sıra veya sınırlı bekleme için ek mekanizma gerekir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [18, 20]
+    }
+  },
+  {
+    "id": "os-synchronization-mutex-usage",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "basic",
+    "question": "Ortak bir koleksiyona tutarlı güncelleme için mutex kullanan doğru düzen hangisidir?",
+    "choices": [
+      "release, koleksiyonu güncelle, acquire",
+      "acquire, release, koleksiyonu güncelle",
+      "Koleksiyonu güncelle, acquire, release",
+      "acquire, koleksiyonu güncelle, release"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kilit ortak güncellemenin tamamı boyunca tutulur ve ardından bırakılır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "os-synchronization-spin",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "P kilit boşalana kadar kesintisiz olarak bellekteki kilit değerini yeniden okuyor. Bu bekleme biçimi hangisidir?",
+    "choices": [
+      "Meşgul bekleme",
+      "Engelleyerek uyutma",
+      "Süreç sonlandırma",
+      "Durum değişkeni uyandırması"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spin beklemede yürütme sürer, dolayısıyla boş bekleme sırasında da CPU zamanı harcanabilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "os-synchronization-spin-choice",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Birden fazla çekirdek var ve kilit tutan akış başka çekirdekte çok kısa sürede bırakacak. Düşük maliyetli spin hangi koşul nedeniyle anlamlı olabilir?",
+    "choices": [
+      "Bekleme ne kadar uzarsa, döngüde beklemek CPU açısından o kadar ucuzlar.",
+      "Kilit kısa sürede bırakılıyorsa uyutma ve uyandırma maliyeti beklemeden daha yüksek olabilir.",
+      "Döngüde beklemek, iş parçacığını daima hazır listesinden çıkarır.",
+      "Döngüde bekleme kilidi sahibinden hemen alır ve kalan beklemeyi sıfırlar."
+    ],
+    "correctIndex": 1,
+    "explanation": "Çok kısa beklemede bağlam ve uyandırma maliyetinden kaçınmak faydalı olabilir. Uzun spin ise CPU tüketir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [21, 26]
+    }
+  },
+  {
+    "id": "os-synchronization-counting-start",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bir havuzda başlangıçta kullanılabilir üç özdeş bağlantı var. Her edinim bir izin kullanacaksa sayan semafor hangi değerden başlatılır?",
+    "choices": ["0", "1", "3", "−3"],
+    "correctIndex": 2,
+    "explanation": "İlk değer aynı anda edinilebilecek izin sayısını temsil eder.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-synchronization-counting-trace",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Sayan semafor 2’den başlıyor. İki başarılı wait, bir signal, sonra bir başarılı wait uygulanıyor. Kullanılabilir izin sayısı kaçtır?",
+    "choices": ["1", "2", "3", "0"],
+    "correctIndex": 3,
+    "explanation": "İzinler 2 → 1 → 0 → 1 → 0 olarak değişir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-synchronization-binary-case",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "İkilik semafor, tek erişim izinli bir kaynağı koruyor ve başlangıçta kaynak kullanılmıyor. Semafor hangi değerden başlamalıdır?",
+    "choices": ["1", "0", "2", "−1"],
+    "correctIndex": 0,
+    "explanation": "İlk wait tek izni tüketir. Çıkıştaki signal izni geri verebilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-signal",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bir iş bir semafor izniyle kaynağı kullandı ve işi tamamladı. İzni kullanılabilir kılmak için hangi işlem gerekir?",
+    "choices": [
+      "wait (P) ile ikinci bir izin almak",
+      "signal (V) ile izni iade etmek",
+      "Yalnız semafor değerini okuyup değişiklik yapmamak",
+      "Kaynağı kullanan sürecin tekrar wait çağırmasını beklemek"
+    ],
+    "correctIndex": 1,
+    "explanation": "signal izni geri verir veya bekleyene devredilmesini sağlar. wait bir izin edinmeye çalışır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [24]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-dependency",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "B’nin S2 deyimi yalnız A’nın S1 deyiminden sonra çalışmalı. Başlangıçta 0 olan done semaforu için doğru düzen hangisidir?",
+    "choices": [
+      "A: wait(done), S1. B: S2, signal(done).",
+      "A: signal(done), S1. B: S2, wait(done).",
+      "A: S1, signal(done). B: wait(done), S2.",
+      "A ve B: önce wait(done), sonra kendi deyimi."
+    ],
+    "correctIndex": 2,
+    "explanation": "S1 tamamlanınca izin oluşur. B, izin olmadan S2’ye ulaşamaz.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-event-start",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "A işini bitirince signal(done), B işine başlamadan wait(done) çağırıyor. done semaforunu 0 yerine 1 başlatmanın tehlikesi nedir?",
+    "choices": [
+      "B, ilk izin bulunduğu halde A sinyal verene kadar bekler.",
+      "A’nın sinyali B işlemeden önce semafor değeri mutlaka sıfıra iner.",
+      "Semaforun 1’den başlaması A’nın işini B’den önce çalışmaya zorlar.",
+      "B ilk izni kullanıp A tamamlanmadan ilerleyebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Başlangıç izni, gerçekleşmemiş bir olayı gerçekleşmiş gibi temsil eder.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-queue",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bloklayan bir semaforda hiç izin yokken bir süreç wait çağırıyor. Bu süreç ilk olarak ne yapar?",
+    "choices": [
+      "Semaforun bekleme listesine alınıp CPU’yu bırakır.",
+      "CPU’da kalıp izin değerini sürekli yoklar.",
+      "Bekleme listesine alınıp izni hemen kullanır.",
+      "İzin yokken beklemeden başarılı dönüş yapar."
+    ],
+    "correctIndex": 0,
+    "explanation": "Bekleme listesi sürecin uygun bir signal sonrasında uyandırılmasını sağlar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [26, 27]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-negative",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Bir bloklayan semaforda wait önce sayacı azaltıyor, yalnız sonuç negatifse çağıranı kuyruğa alıp bloke ediyor. Başlangıç 1; üç ayrı süreç wait çağırıyor, hiç signal yok. İç değer ve bekleyen sayısı nedir?",
+    "choices": ["0 ve 0", "−2 ve 2", "−3 ve 3", "1 ve 2"],
+    "correctIndex": 1,
+    "explanation": "İlk wait değeri 0 yapıp izin alır. İki sonraki wait negatif değere inip engellenir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [27]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-wakeup",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Önce azaltan semafor uygulamasında iç değer −2. Bir signal işlemi yapılırsa hangi sonuç oluşur?",
+    "choices": [
+      "Değer 0 olur ve iki bekleyen uyandırılır.",
+      "Değer −3 olur ve yeni bir bekleyen eklenir.",
+      "Değer −1 olur ve bir bekleyen uyandırılır.",
+      "Değer −1 olur, fakat negatif kaldığı için hiç kimse uyandırılmaz."
+    ],
+    "correctIndex": 2,
+    "explanation": "signal önce artırır. Yeni değer ≤ 0 ise bir bekleyen listeden çıkarılıp uyandırılır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [27]
+    }
+  },
+  {
+    "id": "os-synchronization-semaphore-indivisible",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Sayan semaforda tek izin varken iki wait çağrısının her ikisi de eski 1 değerini okuyup aynı izni almamalıdır. Bu hangi gereksinimdir?",
+    "choices": [
+      "Yalnız okuma atomik olursa azaltmayı ayırmak güvenlidir.",
+      "Yalnız signal için atomiklik gerekir; wait işlemleri yarışamaz.",
+      "İzin sayısı önceden sabitlenirse atomikliğe gerek kalmaz.",
+      "wait’in izin denetimi ve güncellemesi tek atomik işlem olmalıdır."
+    ],
+    "correctIndex": 3,
+    "explanation": "İki çağrı aynı izni tüketemez. Denetim ve değişiklik birbirine bölünmez şekilde bağlanır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [24, 27]
+    }
+  },
+  {
+    "id": "os-synchronization-deadlock",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "A, S’yi tutup Q’yu bekliyor. B, Q’yu tutup S’yi bekliyor. Kilitler bırakılmadan iki taraf da devam edemiyor. Hangi durum vardır?",
+    "choices": [
+      "Kilitlenme (deadlock)",
+      "Açlık (starvation)",
+      "Karşılıklı dışlama ihlali",
+      "Bir akış ilerlerken diğerinin kısa süreli bloklanması"
+    ],
+    "correctIndex": 0,
+    "explanation": "Taraflar birbirinin elindeki kaynağın bırakılmasını bekler ve bırakma adımına ulaşamaz.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [28]
+    }
+  },
+  {
+    "id": "os-synchronization-deadlock-order",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki akış S ve Q kilitlerine birlikte ihtiyaç duyuyor. Bu iki kilit arasındaki döngüsel beklemeyi hangi kural engeller?",
+    "choices": [
+      "İlk akış önce S’yi, ikinci akış önce Q’yu alır.",
+      "Her akış önce S’yi, sonra Q’yu alır.",
+      "Her akış o an daha boş görüneni alır ve diğerini bekler.",
+      "İlk kilidin sırası serbesttir; yalnız bırakma sırası ortaktır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Ortak edinim sırası, bir taraf S’yi tutarken diğerinin Q’yu tutup S istemesini önler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [28]
+    }
+  },
+  {
+    "id": "os-synchronization-deadlock-release",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "A, S kilidini aldı ancak Q’yu beklemeden edinme denemesi başarısız oldu. Başarılı olana kadar S’yi tutmak yerine hangi davranış bu adımda elde tutarak beklemeyi önler?",
+    "choices": [
+      "S’yi elinde tutup Q’yu bloke olan bir çağrıyla beklemek",
+      "S’yi tutup Q’yu döngüde tekrar tekrar yoklamak",
+      "S’yi bırakıp her iki kilidi daha sonra yeniden edinmeyi denemek",
+      "S’yi korurken Q bırakılana kadar işlemi askıya almak"
+    ],
+    "correctIndex": 2,
+    "explanation": "A, Q’yu beklemeye geçmeden S’yi bırakır. Bu adımda bir kilidi tutarken ötekini bekleme koşulu ortadan kalkar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [28, 31]
+    }
+  },
+  {
+    "id": "os-synchronization-starvation",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bir semafor sırasına sürekli yeni işler geliyor. Son gelenler hep seçilirken daha eski bir süreç hiç seçilmiyor. Hangi sorun gözlenir?",
+    "choices": [
+      "Döngüsel beklemeye dayalı kilitlenme (deadlock)",
+      "Sınırlı bekleme",
+      "Aynı kaynağa eşzamanlı yetkisiz giriş",
+      "Açlık (starvation)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bazı süreçler ilerlerken özel bir süreç sınırsız ertelenebilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [30]
+    }
+  },
+  {
+    "id": "os-synchronization-starvation-vs-deadlock",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "A, bekleme döngüsüne girmeden aynı kaynak için bekliyor; kaynak her boşaldığında B veya C seçiliyor, A hiç seçilmiyor. Bu durum kilitlenmeden nasıl ayrılır?",
+    "choices": [
+      "A açlık yaşar; kilitlenmede döngüye giren grup ilerleyemez.",
+      "A kilitlenir; kaynak diğerlerine verilebildiği için bu bir bekleme döngüsüdür.",
+      "Bu sınırlı beklemedir; kaç kez geçileceği garanti edilmese de yeterlidir.",
+      "Bu dışlama ihlalidir; B ve C ayrı zamanlarda kaynak kullanamaz."
+    ],
+    "correctIndex": 0,
+    "explanation": "Açlık tek bir katılımcının ilerletilmemesidir. Kilitlenmede bekleme ilişkisi bir grubun ilerlemesini durdurabilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [28, 30]
+    }
+  },
+  {
+    "id": "os-synchronization-fifo-wait",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Sabit bir FIFO bekleme listesi LIFO’nun hangi sorununu azaltır?",
+    "choices": [
+      "Kritik bölümün atomik komut kullanmasını",
+      "Sürekli gelen yeni bekleyenlerin eski bir bekleyeni geçmesini",
+      "Bir izin geri verildiğinde uyanmanın mümkün olmasını",
+      "Kilit bırakıldıktan sonra değerin artmasını"
+    ],
+    "correctIndex": 1,
+    "explanation": "FIFO yeni bekleyenleri sona ekler. Hizmet sürüyorsa kuyruktaki eski öğelerin sürekli ötelenmesini önler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [27, 30]
+    }
+  },
+  {
+    "id": "os-synchronization-swap-wait-signal",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Karşılıklı dışlama için kullanılacak sayan semafor 1’den başlıyor. Yanlışlıkla kritik bölümden önce signal, sonra wait çalıştırılıyor. İki süreç için hangi risk oluşur?",
+    "choices": [
+      "İlk signal tek izni tükettiği için ilk giriş bloke olur.",
+      "Dışlama korunur, çünkü izin sayısı ancak kritik bölümden önce azalır.",
+      "İkisi de girişte izin tüketmediği için kritik bölümleri çakışabilir.",
+      "Her süreç girişte ikinci bir wait yaptığından iki süreç de bloke olur."
+    ],
+    "correctIndex": 2,
+    "explanation": "Dışlama için izin girişten önce tüketilmelidir. İşlem sayısının eşitliği yanlış sırayı düzeltmez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-synchronization-double-wait",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Tek izinli bir semaforda A girişte başarılı wait yapıyor. Çıkışta signal yerine ikinci wait çağırıyor ve başka kimse signal yapmayacak. Ne olur?",
+    "choices": [
+      "İkinci wait ilk izni iade eder ve A devam eder.",
+      "A zaten izni aldığı için aynı semaforda ikinci wait beklemez.",
+      "İzin sayısı ikinci wait ile bire çıkar ve A devam eder.",
+      "A’nın ikinci wait çağrısı, yeni bir izin oluşmadığı için bloke olur."
+    ],
+    "correctIndex": 3,
+    "explanation": "İlk wait izni tüketir. İkinci wait kullanılabilir izin yoksa ilerleyemez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-synchronization-missing-signal",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Bir hata yolu kritik bölgeden signal çağırmadan dönüyor. İzin sayısı 0’da kaldıysa sonraki çağrılar nasıl etkilenir?",
+    "choices": [
+      "İzin geri verilmezse sonraki wait çağrıları bloke olabilir.",
+      "İşlev döndüğünde semafor izni kendiliğinden geri verilir.",
+      "Önceki süreç artık içeride olmadığı için her yeni wait bir izin bulur.",
+      "Bir sonraki wait eksik signal çağrısı yerine geçerek izni geri koyar."
+    ],
+    "correctIndex": 0,
+    "explanation": "Bırakma adımını atlamak izni kaybettirir. Dönüş yolu da olağan çıkış gibi izni geri vermelidir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [24, 31]
+    }
+  },
+  {
+    "id": "os-synchronization-monitor",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Paylaşılan veriyi, ona erişen işlemler ve karşılıklı dışlama ile bir araya getiren yüksek düzeyli araç hangisidir?",
+    "choices": [
+      "İkilik semafor",
+      "Monitör (izleyici)",
+      "Spinlock",
+      "Atomik karşılaştır-ve-değiştir işlemi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Monitör ortak durumu kapsüller ve monitör içi yürütmeyi karşılıklı dışlamayla düzenler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [32]
+    }
+  },
+  {
+    "id": "os-synchronization-monitor-entry",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Bir thread monitör yordamı yürütürken diğeri aynı monitörün farklı bir yordamına girmek istiyor. Monitörün dışlama modeli neyi sağlar?",
+    "choices": [
+      "Her yordam ayrı korunur, bu yüzden ikinci farklı yordama hemen girebilir.",
+      "İkinci akış yalnız aynı alanı yazıyorsa bekler; bunu monitör her çağrıda kendisi belirler.",
+      "İkinci akış, birinci monitörü bırakana kadar giriş için bekler.",
+      "İkinci akış girince ilk akışın yordamı sonlandırılır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Dışlama aynı monitördeki ortak durumu kapsar. Ayrı yordam adı eşzamanlı giriş garantilemez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [32, 33]
+    }
+  },
+  {
+    "id": "os-synchronization-condition-wait",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Monitör içindeyken bir thread x koşulunu beklemeye geçiyor. Başka bir akışın koşulu sağlayabilmesi için bekleme neyi bırakır?",
+    "choices": [
+      "Kilit elde kalır, başka bir iş parçacığı içeri girmeden koşulu sağlamalıdır.",
+      "Koşul kuyruğunu serbest bırakır ama monitör kilidini tutar.",
+      "Kilit yalnızca wait tamamlandıktan sonra ilk kez bırakılır.",
+      "Monitörün kilidini, başka iş parçacığı girebilsin diye bırakır."
+    ],
+    "correctIndex": 3,
+    "explanation": "condition wait bekleyeni askıya alır ve başka bir akışın monitöre girmesine izin verir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [33]
+    }
+  },
+  {
+    "id": "os-synchronization-condition-no-credit",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Bir koşul değişkeninde hiç bekleyen yokken signal çağrılıyor. Yalnız bu çağrı, daha sonra gelen wait’e semafordaki gibi bir izin kazandırır mı?",
+    "choices": [
+      "Hayır. Bekleyeni olmayan koşul değişkeni sonraki wait için bildirim biriktirmez.",
+      "Evet. Her signal ileride kullanılabilecek bir izin ekler.",
+      "Evet. Bildirim, sonraki wait monitörün kilidini alıncaya kadar saklanır.",
+      "Hayır. signal yapıldıktan sonra o koşul üzerinde yeniden wait yapılamaz."
+    ],
+    "correctIndex": 0,
+    "explanation": "Koşul değişkeni hazır olan bekleyeni bildirir. Olayı kalıcı temsil etmek için ortak durum ayrıca tutulmalıdır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [25, 33]
+    }
+  },
+  {
+    "id": "os-synchronization-condition-target",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "A, x üzerinde bekliyor, B, y üzerinde bekliyor. Yalnız x.signal() çağrılırsa hangi bekleme doğrudan hedeflenir?",
+    "choices": [
+      "B’nin y beklemesi",
+      "A’nın x beklemesi",
+      "İki bekleme birden",
+      "Monitör dışındaki son süreç"
+    ],
+    "correctIndex": 1,
+    "explanation": "Koşul değişkenleri ayrı bekleme kümeleri taşır. x üzerindeki sinyal y’yi hedeflemez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [33]
+    }
+  },
+  {
+    "id": "os-synchronization-signal-wait",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Signal-and-wait kuralında P, x’i sinyaller ve Q x üzerinde bekliyordur. Q monitörde ilerlerken P’ye ne olur?",
+    "choices": [
+      "P devam eder, Q ancak P kilidi bırakınca ilerler.",
+      "P ile Q monitörde aynı anda çalışır.",
+      "P, Q monitörden çıkana veya yeniden bekleyene kadar bekler.",
+      "P, Q monitör dışındaki işi de bitirip tamamen sonlanana kadar bekler."
+    ],
+    "correctIndex": 2,
+    "explanation": "Bu monitör disiplininde etkin yürütme hakkı uyandırılana geçer. Sinyal veren sırasını bekler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [33]
+    }
+  },
+  {
+    "id": "os-synchronization-signal-continue",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Signal-and-continue kuralında P, Q’yu x koşulunda uyandırıyor ama henüz kendi monitör işini bitirmedi. Hangisi mümkündür?",
+    "choices": [
+      "P sinyal verince hemen bekler ve Q yürütme hakkını alır.",
+      "P ile Q bir süre aynı anda monitör içinde çalışır.",
+      "P devam eder, ancak Q bekleme kuyruğundan hiçbir zaman çıkarılmaz.",
+      "P devam eder, Q ancak P monitörü bırakınca ilerleyebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Sinyal veren mevcut hakkı korur. Uyanan akış ancak monitörü tekrar edindiğinde ilerler.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [33]
+    }
+  },
+  {
+    "id": "os-synchronization-transaction",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Paylaşılan iki alan birlikte güncelleniyor. İşlem başarısız olduğunda birinci yazmanın dışarı görünür kalması istenmiyor. İşlemsel belleğin hedefi nedir?",
+    "choices": [
+      "İki güncellemeyi tek işlem olarak birlikte yayımlamak veya ikisini de iptal etmek",
+      "İlk güncellemeyi hemen yayımlayıp ikinciyi işlem tamamlanana kadar saklamak",
+      "İki alanı birbirinden bağımsız işlemlerde tamamlamak",
+      "İşlem iptal olursa ilk yazmayı kesinleştirip yalnız ikincisini geri almak"
+    ],
+    "correctIndex": 0,
+    "explanation": "İşlemsel yaklaşım gruptaki yazmaları birlikte ele alır ve kısmi sonuçları görünür bırakmamayı amaçlar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [34, 35]
+    }
+  },
+  {
+    "id": "os-synchronization-transaction-conflict",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki işlem aynı veriyi güncellemeye çalışıyor ve yürütme ortamı çakışmayı algılıyor. İşlemsel yaklaşım hangi tepkiye izin verir?",
+    "choices": [
+      "Her iki işlemin yaptığı kısmi yazmaları kesinleştirmek",
+      "İşlemlerden birini iptal edip güncel durumla yeniden denemek",
+      "Çakışmayı saptadıktan sonra ilk işlemin ara sonuçlarını görünür bırakmak",
+      "İşlemler çakışsa da aynı eski değere dayanarak ikisini de kesinleştirmek"
+    ],
+    "correctIndex": 1,
+    "explanation": "Çakışan işlem tamamlanmış sayılmadan geri alınabilir ve yeniden yürütülebilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [34, 35]
+    }
+  },
+  {
+    "id": "os-synchronization-omp-critical",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "OpenMP paralel bölgesindeki thread’ler aynı ortak sayacı değiştiriyor. Verilen ders mekanizmasıyla güncellemeyi tek tek geçirmek için hangi direktif kullanılır?",
+    "choices": [
+      "#pragma omp parallel",
+      "#pragma omp for",
+      "#pragma omp critical",
+      "#pragma omp single"
+    ],
+    "correctIndex": 2,
+    "explanation": "critical bölgesi ortak işlemi yaparken thread’lerin aynı anda girmesini engeller.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [36]
+    }
+  },
+  {
+    "id": "os-synchronization-omp-scope",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Yalnız ortak listeye ekleme kritik bloğa alındı. Öncesinde her thread kendi yerel sonucunu hesaplıyor. Yapının etkisi nedir?",
+    "choices": [
+      "Her thread tüm uygulama boyunca diğerlerini engeller.",
+      "Kritik blok ortak eklemeyi atlayarak veri bütünlüğünü sağlar.",
+      "Kritik bloğun dışındaki her yerel değişken paylaşılmış olur.",
+      "Yerel hesaplamalar paralel kalabilir, ortak eklemeler sırayla yürütülür."
+    ],
+    "correctIndex": 3,
+    "explanation": "Koruma bloğun kapsadığı ortak güncellemeyi serileştirir. Bağımsız hazırlık aynı anda yapılabilir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [36]
+    }
+  },
+  {
+    "id": "os-synchronization-producer-mutex",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki üretici aynı tamponun sonraki boş yuva indeksini kilitsiz okuyor. Yalnız sayaç artışı ayrı bir kilitle korunuyor. Kilit dışında okunan yuva indeksi hangi hataya yol açabilir?",
+    "choices": [
+      "İki üretici, ayrı ayrı artırılmış sayaca rağmen aynı yuvaya yazabilir.",
+      "Sayacın kilitli olması okunan iki boş yuva indeksinin de birbirinden farklı olmasını garanti eder.",
+      "Yuva indeksi kilitsiz okunsa da her üretici ayrı bir tampon kullanır.",
+      "Sayaç kilidi, yuva seçimi ondan önce olsa bile bütün yazmaları sıralar."
+    ],
+    "correctIndex": 0,
+    "explanation": "İki üretici de aynı eski indeksi okuyup aynı yuvaya yazabilir. Yuva seçimi ve güncellemesi ortak bir eşgüdüm protokolüyle korunmalıdır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [5, 6, 21]
+    }
+  },
+  {
+    "id": "os-synchronization-false-signaling",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Üç izinle başlatılan kaynak semaforunda bir worker tek kaynağı iade ederken yanlışlıkla iki signal çalıştırıyor. Ne olabilir?",
+    "choices": [
+      "İki signal da aynı kaynağı iade ettiği için semafor bunları tek çağrı sayar.",
+      "Gerçekten boş olandan daha fazla izin görünür hale gelebilir.",
+      "İzin sayısı iki kez azalır, boş kaynaklar kullanılamaz.",
+      "Semafor her signal çağrısında sayacı otomatik olarak başlangıç değerine döndürür."
+    ],
+    "correctIndex": 1,
+    "explanation": "Sayan semafor izinleri geri verilen kaynaklarla eşleştirmeye dayanır. Fazla signal bu eşleşmeyi bozar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [23, 24]
+    }
+  },
+  {
+    "id": "os-synchronization-one-lock-all-callers",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "İki iş parçacığı aynı veriyi değiştiriyor. Her biri diğerinden bağımsız, farklı bir mutex ediniyor. Bu düzen neden karşılıklı dışlama sağlamaz?",
+    "choices": [
+      "Aynı sürece ait farklı mutex’ler edinilince tek ortak kilit gibi davranır.",
+      "İlk mutex edinilince diğer mutex otomatik olarak kilitlenir.",
+      "İki akış farklı kilitleri aynı anda tutabilir.",
+      "Veri ortak olduğu için farklı mutex’ler birbirlerinin sahibini devralır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Rakip erişimler aynı dışlama protokolüne ve aynı kaynağı koruyan kilide katılmalıdır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [10, 21]
+    }
+  },
+  {
+    "id": "os-synchronization-blocking-vs-spin",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "intermediate",
+    "question": "Kilit bekleme süresinin uzun olması bekleniyor ve CPU’da başka işler hazır. Hangi bekleme mekanizması işlemci açısından daha uygundur?",
+    "choices": [
+      "Bekleyenin kilidi sürekli yeniden okuması",
+      "Bütün hazır işlerin zaman dilimlerini kaldırmak",
+      "Bekleyenin kaynağın sahibi olduğunu varsaymak",
+      "Bekleyeni bloke edip serbest kalınca uyandırmak"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bloke bekleme CPU’yu diğer işlere verir. Spin uzun süre devam ederse işlemciyi verimsiz kullanır.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [21, 26, 27]
+    }
+  },
+  {
+    "id": "os-synchronization-criteria-combine",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Bir protokol aynı anda yalnız bir girişe izin vermeli. Ayrıca bir istekten sonra diğer akışların en fazla belirli sayıda girişine izin vermeli. Hangi iki koşul isteniyor?",
+    "choices": [
+      "Karşılıklı dışlama ve sınırlı bekleme",
+      "Karşılıklı dışlama ve yalnız ilerleme",
+      "İlerleme ve sınırlı bekleme",
+      "İlerleme ve kilit adımlarının atomikliği"
+    ],
+    "correctIndex": 0,
+    "explanation": "Karşılıklı dışlama aynı andaki giriş sayısını, sınırlı bekleme ise bir isteğin kaç kez geçilebileceğini kısıtlar.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [12, 20]
+    }
+  },
+  {
+    "id": "os-synchronization-critical-read-invariant",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Basit bir ardışık tutarlı yürütme modelinde A ve B iki ayrı bellek yazmasıyla güncelleniyor. Yazıcı iki işlemi bir mutex altında yapıyor, okuyucu aynı mutex’i edinmiyor. Okuyucu neden birbirine uymayan iki değer görebilir?",
+    "choices": [
+      "Mutex edinmeyen okuyucu, kilidi yazıcı bırakıncaya kadar otomatik olarak bekler.",
+      "Okuyucunun erişimi iki yazmanın arasına girebilir.",
+      "Bir mutex altındaki iki yazma, kilitsiz okuyucu için tek bölünmez yazmaya dönüşür.",
+      "Yazıcı mutex kullanınca okuyucu ancak iki eski değeri birlikte görebilir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Birden çok alanın değişmezini okuyucu da aynı kilit altında gözlemlemelidir.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [10, 11, 21]
+    }
+  },
+  {
+    "id": "os-synchronization-condition-predicate",
+    "courseId": "operating-systems",
+    "topicId": "synchronization",
+    "difficulty": "advanced",
+    "question": "Signal-and-continue monitöründe bir tüketici uyandırıldı. Kilidi tekrar almadan önce başka bir tüketici kalan son öğeyi aldı. Uyanan tüketici nasıl davranmalıdır?",
+    "choices": [
+      "Uyandırıldığı için tamponu yeniden denetlemeden okur.",
+      "Başka bir öğe gelene kadar monitör kilidini bırakmadan bekler.",
+      "Kilidi tekrar aldıktan sonra koşulu sınar, tampon boşsa yeniden bekler.",
+      "Uyandırma bir semafor izni gibi saklandığı için olmayan öğeyi tüketilmiş sayar."
+    ],
+    "correctIndex": 2,
+    "explanation": "Uyandırma, monitörü yeniden edinene kadar koşulun doğru kalacağını garanti etmez.",
+    "source": {
+      "id": "os-week-5",
+      "slides": [32, 33]
+    }
+  }
+]

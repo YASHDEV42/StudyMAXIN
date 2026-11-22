@@ -1,0 +1,4364 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "os-intro-allocator",
+      "status": "verified",
+      "subtopic": "os-roles",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [5, 8],
+        "visualSlides": [],
+        "note": "5 defines allocation against conflicting demands, and 8 identifies CPU time and memory as allocatable resources."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-control",
+      "status": "verified",
+      "subtopic": "os-roles",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [5, 8],
+        "visualSlides": [],
+        "note": "5 defines control-program duties. 8 explicitly names both program and I/O supervision, which fits the printer scenario."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Cite the slide that directly covers I/O and program supervision. Use OS management alternatives."
+      }
+    },
+    {
+      "id": "os-intro-perspective",
+      "status": "verified",
+      "subtopic": "os-roles",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [7, 8],
+        "visualSlides": [],
+        "note": "7 and 8 contrast personal usability with utilization of shared resources."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace implausible absolutes with plausible reversals and interpretations."
+      }
+    },
+    {
+      "id": "os-intro-kernel-daemon",
+      "status": "verified",
+      "subtopic": "os-roles",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [6, 12],
+        "visualSlides": [12],
+        "note": "6 separates the kernel from system programs. 12 explicitly describes services furnished by daemons outside the kernel."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "The deck starts daemons during startup. Ask about an active daemon without asserting a boot order."
+      }
+    },
+    {
+      "id": "os-intro-bootstrap",
+      "status": "verified",
+      "subtopic": "boot",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [11],
+        "visualSlides": [],
+        "note": "11 identifies the firmware bootstrap, initialization and loading the kernel into memory."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-interrupt-flow",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [13, 14],
+        "visualSlides": [],
+        "note": "13 traces the handler and return, and 14 identifies the saved instruction address and CPU state."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use credible sequencing errors and align option length."
+      }
+    },
+    {
+      "id": "os-intro-vector",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [14],
+        "visualSlides": [],
+        "note": "14 explains that the interrupt vector holds service routine addresses used to dispatch each interrupt."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-intro-disk-completion",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [23],
+        "visualSlides": [],
+        "note": "23 explicitly says the device controller signals completion by an interrupt. The scenario distinguishes this from polling."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use realistic event delivery mechanisms rather than unrelated boot/disk statements."
+      }
+    },
+    {
+      "id": "os-intro-driver-controller",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [23, 51],
+        "visualSlides": [],
+        "note": "23 describes the driver configuring the controller's registers. 51 locates the driver and its interface in the OS I/O subsystem."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace generic distractors with credible role confusions."
+      }
+    },
+    {
+      "id": "os-intro-dma",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [23, 24],
+        "visualSlides": [24],
+        "note": "23 names DMA for direct block transfer between device and memory. 24 contrasts the PIO and DMA paths."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-intro-dma-tradeoff",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [23, 24],
+        "visualSlides": [24],
+        "note": "The device-to-memory arrow in 24 bypasses CPU copying but still terminates at memory. 23 describes transfer and completion."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add the slide describing actual transfer, and distinguish CPU work from device/bus use."
+      }
+    },
+    {
+      "id": "os-intro-main-memory",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [15, 18],
+        "visualSlides": [],
+        "note": "15 explicitly describes instruction fetch from memory. 18 explains why durable program images start on secondary storage."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-intro-volatile",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [18, 21],
+        "visualSlides": [],
+        "note": "18 describes loss of volatile memory on power removal. 21 places solid-state storage in the nonvolatile class."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-hierarchy",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [21],
+        "visualSlides": [],
+        "note": "21 shows increasing access speed and decreasing capacity moving upward, so the stated downward direction reverses both."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-intro-cache-hit",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [22, 50],
+        "visualSlides": [],
+        "note": "22 distinguishes hit from miss. 50 says repeat requests can use the copy in cache."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-intro-cache-miss",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [22, 50],
+        "visualSlides": [],
+        "note": "22 and 50 teach fetching from the backing level and using a cache copy. The stem now bounds the answer to that model."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Bound fill-on-miss behavior to the lecture's teaching model and use credible reversed actions."
+      }
+    },
+    {
+      "id": "os-intro-spooling",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [51, 56],
+        "visualSlides": [],
+        "note": "51 lists spooling as an I/O memory-management technique. 56 gives printers as an OS queue use case."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["source"],
+        "note": "Add the slide explicitly giving print queues as an example."
+      }
+    },
+    {
+      "id": "os-intro-buffering",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [51],
+        "visualSlides": [],
+        "note": "51 defines buffering as temporary storage during transfer. A buffer decouples producer and consumer timing."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast buffering with neighboring I/O concepts."
+      }
+    },
+    {
+      "id": "os-intro-bus-lines",
+      "status": "verified",
+      "subtopic": "interconnect",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [27, 28],
+        "visualSlides": [27, 28],
+        "note": "27 labels the memory module's address, data and read/write control. 28 groups these as distinct line classes."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["source"],
+        "note": "Add the read/write control illustration, not just the bus taxonomy."
+      }
+    },
+    {
+      "id": "os-intro-single-core",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [30],
+        "visualSlides": [],
+        "note": "30 distinguishes the one general-purpose instruction stream from devices with special-purpose controllers."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Remove unrelated scheduling citation and use plausible criteria for hardware classification."
+      }
+    },
+    {
+      "id": "os-intro-smp",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-1",
+        "slides": [31, 32],
+        "visualSlides": [],
+        "note": "31 introduces shared hardware resources. 32 describes private registers/local cache with shared memory in the illustrated SMP."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-numa",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [33],
+        "visualSlides": [],
+        "note": "33 contrasts equal access in UMA with processor-dependent memory access in NUMA. The revised stem isolates topology from temporary contention."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question"],
+        "note": "Rule out temporary contention or cache effects as alternative explanations."
+      }
+    },
+    {
+      "id": "os-intro-blade",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [34, 35],
+        "visualSlides": [],
+        "note": "34 explicitly says each blade board boots separately and runs its own OS. 35 distinguishes independent systems from shared-memory CPUs."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast with shared-memory layouts instead of unrelated register and call options."
+      }
+    },
+    {
+      "id": "os-intro-failover",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [35],
+        "visualSlides": [],
+        "note": "35 shows a hot standby monitoring and taking over on node failure. This is an availability goal."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use viable cluster design goals as distractors."
+      }
+    },
+    {
+      "id": "os-intro-multiprogram",
+      "status": "verified",
+      "subtopic": "scheduling-and-modes",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [36, 37],
+        "visualSlides": [],
+        "note": "36 keeps multiple jobs resident. 37 says to run another job while the first waits."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-time-sharing",
+      "status": "verified",
+      "subtopic": "scheduling-and-modes",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [37],
+        "visualSlides": [],
+        "note": "37 contrasts time sharing with a scheme that switches only on blocking. A finite time slice is the scenario's scheduling mechanism."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-intro-mode-bit",
+      "status": "verified",
+      "subtopic": "scheduling-and-modes",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [40],
+        "visualSlides": [40],
+        "note": "40 separates user and privileged kernel modes using the mode bit in the system-call diagram."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-intro-mode-and-process",
+      "status": "verified",
+      "subtopic": "scheduling-and-modes",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [13, 40, 43],
+        "visualSlides": [40],
+        "note": "40 shows the same user process entering the kernel for a call. 43 identifies scheduling as a separate responsibility."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-intro-idle",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [12, 39],
+        "visualSlides": [12, 39],
+        "note": "39 states the system waits in the absence of events. 12 identifies a hardware interrupt as event notification."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add explicit event notification evidence and contrast runnable events with passive state."
+      }
+    },
+    {
+      "id": "os-intro-memory-management",
+      "status": "verified",
+      "subtopic": "resource-management",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [44, 45],
+        "visualSlides": [],
+        "note": "44 lists tracking occupied memory and its owners. 45 depicts process ranges."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-intro-files-abstraction",
+      "status": "verified",
+      "subtopic": "resource-management",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [46, 47],
+        "visualSlides": [],
+        "note": "46 describes logical file abstraction over physical storage. 47 shows meaningful file paths and hierarchy."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-intro-disk-admin",
+      "status": "verified",
+      "subtopic": "resource-management",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [48],
+        "visualSlides": [],
+        "note": "48 lists free-space tracking, storage allocation and disk scheduling as separate duties."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-intro-protection",
+      "status": "verified",
+      "subtopic": "resource-management",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [53],
+        "visualSlides": [],
+        "note": "53 explicitly defines protection as control over which process or user can access a resource."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-array-access",
+      "status": "verified",
+      "subtopic": "data-structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [54],
+        "visualSlides": [],
+        "note": "54 shows direct indexing of fixed-size array elements using the count of preceding records. The stem specifies zero-based indexing."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "explanation"],
+        "note": "Fix zero-based versus ordinal indexing ambiguity in the address formula."
+      }
+    },
+    {
+      "id": "os-intro-queue-order",
+      "status": "verified",
+      "subtopic": "data-structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [56],
+        "visualSlides": [],
+        "note": "56 specifies FIFO removal from the head. The stem now fixes A's arrival before B, giving A, B, C."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question"],
+        "note": "The previous wording left A and B’s arrival order implicit."
+      }
+    },
+    {
+      "id": "os-intro-stack-order",
+      "status": "verified",
+      "subtopic": "data-structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [56],
+        "visualSlides": [],
+        "note": "56 specifies LIFO push/pop. First pop removes B, then C is above A."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-intro-directory-tree",
+      "status": "verified",
+      "subtopic": "data-structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [47, 56],
+        "visualSlides": [],
+        "note": "47 diagrams a directory tree and 56 describes parent-child hierarchy in trees."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-hash-collision",
+      "status": "verified",
+      "subtopic": "data-structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [57],
+        "visualSlides": [57],
+        "note": "57 shows a hash yielding a location. Given the stem's explicit collision, location alone cannot distinguish the two keys."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-intro-distributed",
+      "status": "verified",
+      "subtopic": "computing-environments",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [32, 60],
+        "visualSlides": [],
+        "note": "60 describes distinct physical systems connected by a network, in contrast with the shared-memory SMP model on 32."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["source"],
+        "note": "Add the shared-memory SMP source needed for the comparison."
+      }
+    },
+    {
+      "id": "os-intro-compute-server",
+      "status": "verified",
+      "subtopic": "computing-environments",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [61],
+        "visualSlides": [],
+        "note": "61 contrasts compute servers that execute a request with file servers that manipulate stored files."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use roles that could plausibly be confused with a compute server."
+      }
+    },
+    {
+      "id": "os-intro-peer-role",
+      "status": "verified",
+      "subtopic": "computing-environments",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [62],
+        "visualSlides": [],
+        "note": "62 gives peers distributed resource access without fixed client/server roles. The question does not depend on identical hardware capability."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-virtualization",
+      "status": "verified",
+      "subtopic": "computing-environments",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [63],
+        "visualSlides": [],
+        "note": "63 depicts a guest OS running on a virtual machine above a host. The revised stem requires the hypervisor."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Require a hosted hypervisor to exclude dual hardware or another machine and make distractors neighboring architectures."
+      }
+    },
+    {
+      "id": "os-intro-chip-cores",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [31, 33],
+        "visualSlides": [],
+        "note": "31 introduces multiple execution units. 33 distinguishes a multicore chip and gives each core its own registers."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Match the single-chip claim to the stem and remove unrelated options."
+      }
+    },
+    {
+      "id": "os-intro-address-lines",
+      "status": "verified",
+      "subtopic": "interconnect",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [28],
+        "visualSlides": [28],
+        "note": "28 distinguishes address lines from data lines. Under the question's one-bit-per-line model, the number of binary addresses is 2^a and doubles."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-intro-interrupt-vs-poll",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [13, 23],
+        "visualSlides": [],
+        "note": "13 shows an I/O completion interrupt while CPU executes other work. 23 explicitly contrasts CPU work with device completion notification."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-multicore-failure",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [31, 35],
+        "visualSlides": [],
+        "note": "31 puts multiple processing units in one machine. 35 describes takeover across distinct nodes, which survives the stated machine-level fault."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast machine-level failover with plausible single-node redundancy."
+      }
+    },
+    {
+      "id": "os-intro-cache-versus-buffer",
+      "status": "verified",
+      "subtopic": "io",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [22, 51],
+        "visualSlides": [],
+        "note": "22 describes cache reuse and 51 defines buffering during transfer. The two scenarios serve different purposes."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-intro-cache-working-set",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [21, 22],
+        "visualSlides": [],
+        "note": "21 establishes finite cache capacity. 22 establishes fill on miss and direct use on hit. With no mapping conflict, the stipulated trace has two hits."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "Capacity alone does not rule out set-index conflicts, bypass or eviction. State the needed assumptions."
+      }
+    },
+    {
+      "id": "os-intro-cache-moving-data",
+      "status": "verified",
+      "subtopic": "storage",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [21, 22],
+        "visualSlides": [],
+        "note": "22 and 50 explain reuse of fast copies. The repeated fitting working set supplies opportunities unavailable in a one-pass scan."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-intro-cluster-smp-tradeoff",
+      "status": "verified",
+      "subtopic": "hardware",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [31, 32, 35],
+        "visualSlides": [],
+        "note": "32 shows shared memory in SMP. 35 describes separate cluster nodes combining partial outputs."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Supply plausible alternatives on shared memory and interconnect, without changing the assessed trade-off."
+      }
+    },
+    {
+      "id": "os-intro-interrupt-source",
+      "status": "verified",
+      "subtopic": "interrupts",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-1",
+        "slides": [12, 13, 39, 40],
+        "visualSlides": [12, 39, 40],
+        "note": "12 separates hardware signalling from software-initiated system calls. 39 and 40 distinguish event sources and controlled entry."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["source"],
+        "note": "Cite the controlled system-call transition diagram as well as the event source slides."
+      }
+    },
+    {
+      "id": "os-services-services-boundary",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [4, 10],
+        "visualSlides": [],
+        "note": "4 connects file operations to OS services and 10 uses open/read/close rather than controller commands."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-cli",
+      "status": "verified",
+      "subtopic": "interfaces",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [5, 8],
+        "visualSlides": [],
+        "note": "5 identifies textual commands as CLI input. 8 identifies the command interpreter as the component accepting and executing them."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-services-cli-gui",
+      "status": "verified",
+      "subtopic": "interfaces",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [8, 9, 19],
+        "visualSlides": [],
+        "note": "8 describes CLI commands, 9 describes graphical actions, and 19 places file operations below those user interfaces."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Distinguish front ends from the filesystem layer, using credible paired mechanisms."
+      }
+    },
+    {
+      "id": "os-services-shell-external",
+      "status": "verified",
+      "subtopic": "interfaces",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [8],
+        "visualSlides": [],
+        "note": "8 contrasts internal shell commands with names that identify programs the shell loads and executes."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use neighboring extension mechanisms rather than unrelated boot activity."
+      }
+    },
+    {
+      "id": "os-services-allocation",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [7],
+        "visualSlides": [],
+        "note": "7 names CPU time and memory as resources allocated between concurrent jobs."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-accounting",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [7],
+        "visualSlides": [],
+        "note": "7 describes tracking resource use per user for statistical or billing purposes, which supports the lab report."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast accounting with resource allocation, auditing access and performance analysis."
+      }
+    },
+    {
+      "id": "os-services-error-detection",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [7, 39],
+        "visualSlides": [39],
+        "note": "7 explicitly names error monitoring and reporting. 39 gives a log record as a diagnostic artifact."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-services-syscall-vs-api",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [10, 11],
+        "visualSlides": [],
+        "note": "10 describes system calls as an OS service interface. 11 places libraries and their interfaces above the kernel call interface."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-printf",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-2",
+        "slides": [16],
+        "visualSlides": [16],
+        "note": "16 shows printf calling write through the C library but does not show buffering. Linux libc documentation distinguishes line, full, and unbuffered modes.",
+        "references": [
+          "https://man7.org/linux/man-pages/man3/setbuf.3.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Mark the buffering detail as independently verified and contrast plausible flushing misconceptions."
+      }
+    },
+    {
+      "id": "os-services-process-control",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [13, 15],
+        "visualSlides": [],
+        "note": "13 groups normal and abnormal termination under process control. 15 gives representative exit calls in both OS families."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-services-abort",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [13],
+        "visualSlides": [],
+        "note": "13 contrasts normal end and abnormal abort. The wording confines the answer to the lecture's terminology."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "Ask about the slide's operation class rather than implying Standard C abort is itself a syscall or the only possible failure mechanism."
+      }
+    },
+    {
+      "id": "os-services-file-calls",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-2",
+        "slides": [15, 19],
+        "visualSlides": [],
+        "note": "15 and 19 supply opening, reading, and closing. The Linux manual separately establishes repositioning the offset of an already open regular file.",
+        "references": [
+          "https://man7.org/linux/man-pages/man2/lseek.2.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Specify a seekable regular file and replace unrelated action lists with meaningful ordering errors."
+      }
+    },
+    {
+      "id": "os-services-create-vs-open",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [19],
+        "visualSlides": [],
+        "note": "19 explicitly distinguishes creating a file from opening one that exists. The stem now excludes creation flags from the open case."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Clarify the open-without-create case and state the result of creating a new file."
+      }
+    },
+    {
+      "id": "os-services-device-calls",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [15, 20],
+        "visualSlides": [],
+        "note": "15 lists SetConsoleMode and ioctl under device management. 20 describes requesting and operating on an OS-managed device."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["source"],
+        "note": "Cite the device-management examples, including setting a console mode."
+      }
+    },
+    {
+      "id": "os-services-information",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [21],
+        "visualSlides": [],
+        "note": "21 explicitly lists the current date/time among information-maintenance calls."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-services-communication",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [22],
+        "visualSlides": [],
+        "note": "22 describes sending/receiving messages between processes in the communication call category."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-permission-call",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [23],
+        "visualSlides": [],
+        "note": "23 lists set/get permission as protection. 19 mentions file attributes, so the revised distractors avoid a competing classification."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question"],
+        "note": "Make the requested taxonomy explicit, since file-management slides separately mention attributes and access rights."
+      }
+    },
+    {
+      "id": "os-services-utility",
+      "status": "verified",
+      "subtopic": "utilities",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [19, 24],
+        "visualSlides": [],
+        "note": "24 includes renaming among file-management utilities and puts system programs above the OS. 19 supplies corresponding file operations."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Cite the file layer and contrast plausible implementations of a user utility."
+      }
+    },
+    {
+      "id": "os-services-system-status",
+      "status": "verified",
+      "subtopic": "utilities",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [24],
+        "visualSlides": [],
+        "note": "24 explicitly lists memory and disk free space as status information reported by system utilities."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-services-loader",
+      "status": "verified",
+      "subtopic": "utilities",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [25],
+        "visualSlides": [],
+        "note": "25 names a class of system tools that load compiled programs into memory and run them."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "Remove the Turkish modifier error; call out the tool's purpose."
+      }
+    },
+    {
+      "id": "os-services-policy",
+      "status": "verified",
+      "subtopic": "design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [26],
+        "visualSlides": [],
+        "note": "26 separates what the OS decides from how it executes the decision. Priority selects, while context loading implements the handoff."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-policy-flexibility",
+      "status": "verified",
+      "subtopic": "design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [26],
+        "visualSlides": [],
+        "note": "26 distinguishes policy from mechanism. Switching scheduling rules without replacing the context mechanism shows practical separation."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace architecture non sequiturs with policy/mechanism confusions."
+      }
+    },
+    {
+      "id": "os-services-design-goals",
+      "status": "verified",
+      "subtopic": "design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [26],
+        "visualSlides": [],
+        "note": "26 identifies ease of use as a user goal and ease of maintenance as a system goal."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Test classification of the two concrete goals, with symmetric distractors."
+      }
+    },
+    {
+      "id": "os-services-portability",
+      "status": "verified",
+      "subtopic": "design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [27],
+        "visualSlides": [],
+        "note": "27 compares compiled high-level code with architecture-specific code and discusses porting."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-simple-design",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [28],
+        "visualSlides": [],
+        "note": "28 explicitly notes that MS-DOS lacked clean boundaries between layers and exposed low-level I/O routines to applications."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-unix-division",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [29],
+        "visualSlides": [],
+        "note": "29 places both filesystem and CPU scheduling below the system-call interface in the early UNIX kernel."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use other historically relevant software layers as alternatives."
+      }
+    },
+    {
+      "id": "os-services-layers-direction",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [30, 31],
+        "visualSlides": [31],
+        "note": "30 shows hardware at the bottom. 31 says a layer uses functions of the layers below it and hides implementation details."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-services-layers-test",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [31],
+        "visualSlides": [31],
+        "note": "31 describes separate verification/debugging of layers built upon the tested operations of lower layers."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Distinguish the separation that enables bottom-up tests from adjacent architecture ideas."
+      }
+    },
+    {
+      "id": "os-services-layers-overhead",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [31],
+        "visualSlides": [31],
+        "note": "31 says traversing more layers can reduce performance because layers invoke the lower-level functions."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use plausible costs while keeping the answer specific to layered traversal."
+      }
+    },
+    {
+      "id": "os-services-microkernel",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [32, 33],
+        "visualSlides": [32],
+        "note": "32 puts file service above and IPC inside the microkernel. 33 describes messages as the communication route."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use competing kernel structures in the distractors."
+      }
+    },
+    {
+      "id": "os-services-microkernel-fault",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [32, 33],
+        "visualSlides": [32],
+        "note": "32 shows the file server in user mode and IPC in kernel mode. Under the isolated-process assumption, loss of the service need not crash the kernel."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Do not imply that every user-space crash is harmless. Assess the isolation consequence with comparable choices."
+      }
+    },
+    {
+      "id": "os-services-microkernel-cost",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [32, 33],
+        "visualSlides": [32],
+        "note": "32 explicitly warns of communication overhead across the user/kernel boundary. 33 describes interprocess messages."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace unrelated properties with plausible performance mechanisms."
+      }
+    },
+    {
+      "id": "os-services-loadable-module",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [34],
+        "visualSlides": [34],
+        "note": "34 gives dynamically loaded filesystem modules as an example while core CPU and memory components stay in the kernel."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-module-risk",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [32, 34],
+        "visualSlides": [32, 34],
+        "note": "32 places a user-mode device driver outside the microkernel. 34 places loadable drivers in the kernel-module architecture."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast fault isolation with interface modularity more directly."
+      }
+    },
+    {
+      "id": "os-services-module-vs-layer",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [31, 34],
+        "visualSlides": [31, 34],
+        "note": "31 requires lower-directed layer dependencies. 34 explicitly lets one loaded module call other modules."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use alternatives about dependency direction and interface restrictions."
+      }
+    },
+    {
+      "id": "os-services-hybrid",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [35, 36],
+        "visualSlides": [],
+        "note": "35 describes hybrid structures as combining designs. 36 depicts BSD, Mach, I/O Kit and extensions coexisting in one OS architecture."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-android-stack",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [38],
+        "visualSlides": [],
+        "note": "38 lists process and memory management under the Linux kernel beneath Android libraries and the application framework."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-dump",
+      "status": "verified",
+      "subtopic": "diagnostics",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [13, 39],
+        "visualSlides": [39],
+        "note": "39 describes recording the memory snapshot when an application process fails. 13 mentions examining that memory dump with a debugger."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add the process-termination/debugging illustration and compare diagnostic artifacts."
+      }
+    },
+    {
+      "id": "os-services-crash-dump",
+      "status": "verified",
+      "subtopic": "diagnostics",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-2",
+        "slides": [39],
+        "visualSlides": [39],
+        "note": "39 gives a memory dump for diagnosis and identifies a kernel crash. Linux Kdump documentation confirms retaining system memory at kernel panic when capture is configured.",
+        "references": [
+          "https://docs.kernel.org/6.16/admin-guide/kdump/kdump.html"
+        ]
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices", "explanation"],
+        "note": "Qualify that kernel dump capture must be configured and distinguish it from application-level artifacts."
+      }
+    },
+    {
+      "id": "os-services-tuning",
+      "status": "verified",
+      "subtopic": "diagnostics",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [40],
+        "visualSlides": [],
+        "note": "40 explicitly calls for monitoring system activity to identify bottlenecks, with an OS resource monitor as its example."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-sysgen",
+      "status": "verified",
+      "subtopic": "boot-and-configuration",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [41],
+        "visualSlides": [],
+        "note": "41 lists CPU, disks and memory among the configuration details required to prepare the OS for a machine."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-boot-order",
+      "status": "verified",
+      "subtopic": "boot-and-configuration",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [25, 42],
+        "visualSlides": [42],
+        "note": "42 says bootstrap loads the kernel. 25 describes loading an ordinary program from within the already initialized working environment."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Cite the ordinary loader as well as bootstrap, and use plausible order reversals."
+      }
+    },
+    {
+      "id": "os-services-api-failure",
+      "status": "verified",
+      "subtopic": "syscalls",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [10, 23],
+        "visualSlides": [],
+        "note": "10 defines the system-call interface, and 23 says permission mechanisms determine resource access. A valid argument shape does not imply authorization."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Remove unnecessary user-service slide and distinguish valid arguments from permissions."
+      }
+    },
+    {
+      "id": "os-services-foreground",
+      "status": "verified",
+      "subtopic": "interfaces",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [18],
+        "visualSlides": [],
+        "note": "18 describes the FreeBSD command interpreter remaining active while other processes run. The shell can take a new command without waiting for the child to exit."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Differentiate foreground wait, background dispatch, and I/O completion."
+      }
+    },
+    {
+      "id": "os-services-dual-services",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [6, 7],
+        "visualSlides": [],
+        "note": "6 covers reading/writing files and 7 covers tracking resource consumption. The two actions belong to different service categories."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-services-gui-selection",
+      "status": "verified",
+      "subtopic": "interfaces",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-2",
+        "slides": [9],
+        "visualSlides": [],
+        "note": "9 treats icons as GUI representations whose click actions can open programs or files."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-services-system-vs-app",
+      "status": "verified",
+      "subtopic": "utilities",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [24, 25],
+        "visualSlides": [],
+        "note": "24 places system utilities above the OS, and 25 lists tools for preparing/loading programs. Development utilities may invoke ordinary services."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-services-resource-vs-accounting",
+      "status": "verified",
+      "subtopic": "services",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [7],
+        "visualSlides": [],
+        "note": "7 distinguishes giving a job CPU resources from keeping an account of the CPU time it used."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-services-layer-cycle",
+      "status": "verified",
+      "subtopic": "structures",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [30, 31],
+        "visualSlides": [31],
+        "note": "30 orders the layers and 31 requires downward dependencies. Adding the reverse call closes the A-B dependency cycle."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Ask for the new dependency explicitly and distinguish it from permissible designs."
+      }
+    },
+    {
+      "id": "os-services-program-execution",
+      "status": "verified",
+      "subtopic": "utilities",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-2",
+        "slides": [8, 25],
+        "visualSlides": [],
+        "note": "8 describes command interpretation and launching programs. 25 distinguishes the service that loads a program into its execution environment."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices", "explanation", "source"],
+        "note": "Separate shell dispatch from the loader, so this applies the division of roles rather than repeating the loader identification item."
+      }
+    },
+    {
+      "id": "os-process-ipc-program-image",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [3, 4],
+        "visualSlides": [],
+        "note": "3 explicitly gives one executable associated with multiple processes, each with its own execution state. 4 describes that state."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace arbitrary alternatives with misconceptions about program instances and execution state."
+      }
+    },
+    {
+      "id": "os-process-ipc-sections-heap",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [4, 5],
+        "visualSlides": [5],
+        "note": "4 describes runtime allocation as heap; the malloc arrow in 5 points to heap while the local pointer is on the stack."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Text and read-only program code duplicated the same distractor. Use distinct process regions and the lecture model."
+      }
+    },
+    {
+      "id": "os-process-ipc-sections-stack",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [4, 5],
+        "visualSlides": [5],
+        "note": "4 lists function parameters, return addresses and local variables. The stack arrows in 5 show this simplified layout."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Frame the architecture-dependent claim as a lecture stack diagram; compare four process regions."
+      }
+    },
+    {
+      "id": "os-process-ipc-sections-data",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [4, 5],
+        "visualSlides": [5],
+        "note": "4 calls the data region the home of globals. The source diagram distinguishes data from code, stack and heap, without subdividing data into binary sections."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "The slide supports the data region but does not distinguish ELF initialized data from BSS."
+      }
+    },
+    {
+      "id": "os-process-ipc-program-counter",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [4, 28],
+        "visualSlides": [],
+        "note": "4 lists the PC in process state and 28 states that it provides the next instruction address."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-process-ipc-address-space",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [6],
+        "visualSlides": [6],
+        "note": "6 depicts independent base/limit-protected regions. The same logical address need not denote the same location in distinct regions."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Stay within the deck's address-space model and use alternatives about address translations."
+      }
+    },
+    {
+      "id": "os-process-ipc-trace",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [7, 9],
+        "visualSlides": [],
+        "note": "7 defines a process trace as the ordered instructions for one process; 9 illustrates switching among per-process instruction sequences."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Replace tautological recall and implausible distractors with an interpretation of a CPU-wide versus per-process trace."
+      }
+    },
+    {
+      "id": "os-process-ipc-dispatcher",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [8],
+        "visualSlides": [],
+        "note": "8 calls the dispatcher the component that passes the chosen waiting process to the CPU."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-process-ipc-kernel-context",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [10, 22],
+        "visualSlides": [22],
+        "note": "10 describes mode/privilege; the 22 state diagram describes running by executing instructions. The two labels can coexist."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices", "source"],
+        "note": "Distinguish the currently executing state from the more general week 1 question about a possible process switch."
+      }
+    },
+    {
+      "id": "os-process-ipc-pid",
+      "status": "verified",
+      "subtopic": "process-model",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [15, 27],
+        "visualSlides": [],
+        "note": "15 explicitly assigns a unique PID and 27 lists the process ID as process identification information."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question"],
+        "note": "State the single process table scope in which the two live PID values must differ."
+      }
+    },
+    {
+      "id": "os-process-ipc-tree",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [15],
+        "visualSlides": [],
+        "note": "15 shows direct child links in a process hierarchy. Applying them to the stem puts Q immediately above S."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-fork-returns",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [14, 17],
+        "visualSlides": [17],
+        "note": "14 branches the parent and child after fork. 17 labels the branches as positive PID in the parent and zero in the child."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-process-ipc-fork-branch",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [17],
+        "visualSlides": [17],
+        "note": "17 demonstrates different branches immediately after fork. Without the example's wait relation, either branch can print first."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question"],
+        "note": "State normal completion and successful output, so fork success alone is not mistaken for an output guarantee."
+      }
+    },
+    {
+      "id": "os-process-ipc-fork-count",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [14, 17],
+        "visualSlides": [17],
+        "note": "14 and 17 show one caller creating one child. Both resulting processes reach the second call under the stated conditions, yielding four."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-wait-order",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [17],
+        "visualSlides": [17],
+        "note": "17 shows the parent wait returning only after child exit. With immediate visible output, A precedes B."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-exec",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [17],
+        "visualSlides": [17],
+        "note": "17 shows an existing child calling execlp to run ls, with no new fork in that branch."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-process-ipc-exit-status",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [17],
+        "visualSlides": [17],
+        "note": "17 describes child exit with integer status returned to the waiting parent."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Differentiate exit from related lifecycle calls instead of unrelated input."
+      }
+    },
+    {
+      "id": "os-process-ipc-state-new",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [18, 22],
+        "visualSlides": [22],
+        "note": "18 and 22 label New as creation and place admission before Ready."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-state-timeout",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [21, 22, 38],
+        "visualSlides": [22, 38],
+        "note": "21/22 depict interruption of Running; 38 explicitly routes Timeout from CPU back to the ready queue."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-state-io",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [20, 22, 41],
+        "visualSlides": [22],
+        "note": "20 and 22 define Waiting for an event/resource; 41 puts a blocking I/O request in the device queue."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "Use blocking terminology instead of ambiguous 'eşzamanlı disk okuması'."
+      }
+    },
+    {
+      "id": "os-process-ipc-state-wake",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [20, 22, 38],
+        "visualSlides": [22, 38],
+        "note": "22 shows Waiting to Ready on completion, then a separate dispatch; 38 routes the completed event to the ready queue."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-process-ipc-state-dispatch",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [18, 22, 38],
+        "visualSlides": [22, 38],
+        "note": "22 labels scheduler dispatch from Ready to Running. 38 shows the same dispatch from queue to CPU."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-state-chain",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [22, 38, 41],
+        "visualSlides": [22, 38],
+        "note": "22 and 38 show all three required transitions. 41 maps the I/O request to queue and completion back to readiness."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-pcb-fields",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [26, 27, 28],
+        "visualSlides": [],
+        "note": "27 explicitly lists priority under scheduling and status information. 28 also gives the PCB's CPU scheduling category."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add the slide explicitly listing priority and use plausible PCB field alternatives."
+      }
+    },
+    {
+      "id": "os-process-ipc-pcb-not-image",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [24, 25, 28],
+        "visualSlides": [],
+        "note": "24 associates process records with resource tables, 25 pairs the PCB with process address space, and 28 lists the management fields."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-process-ipc-pcb-io",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [27, 28],
+        "visualSlides": [],
+        "note": "27 lists control/resource data, and 28 states that I/O information includes allocated devices and open files."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Use nearby process structures as alternatives. Simplify the Turkish stem."
+      }
+    },
+    {
+      "id": "os-process-ipc-context-order",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [30, 33, 34],
+        "visualSlides": [34],
+        "note": "30 and 33 explain saving interrupted work. 34 explicitly saves P0's PCB then loads P1's PCB before execution."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-context-overhead",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [32, 34],
+        "visualSlides": [34],
+        "note": "32 and 34 describe switching overhead. Timing spent saving/reloading state is unavailable for the work of either application."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace absurd alternatives with distinctions between switching and other costs."
+      }
+    },
+    {
+      "id": "os-process-ipc-context-corruption",
+      "status": "verified",
+      "subtopic": "context",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [26, 28, 33, 34],
+        "visualSlides": [34],
+        "note": "26 and 33 distinguish saved register state; 34 depicts restoring the state, and 28 names the PC as the next-instruction address."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add the slide naming the next-instruction address and compare plausible state loss types."
+      }
+    },
+    {
+      "id": "os-process-ipc-ready-queue",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [38, 40],
+        "visualSlides": [38],
+        "note": "38 separates blocked and ready queues; 40 defines ready as waiting for CPU rather than an incomplete device operation."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-job-queue",
+      "status": "verified",
+      "subtopic": "states-and-queues",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [40],
+        "visualSlides": [],
+        "note": "40 calls the collection of jobs submitted to the system the job queue, and distinguishes its resident ready subset."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use alternative queue classes rather than unrelated kernel objects."
+      }
+    },
+    {
+      "id": "os-process-ipc-long-term",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [42],
+        "visualSlides": [],
+        "note": "42 puts admission of submitted jobs under the long-term job scheduler and ties it to multiprogramming degree."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "Describe job admission instead of asking which component merely sets a numeric cap."
+      }
+    },
+    {
+      "id": "os-process-ipc-short-term",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [42],
+        "visualSlides": [],
+        "note": "42 names the short-term scheduler as the frequently invoked chooser of an eligible process for the CPU."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Remove arbitrary frequency and use neighboring scheduler roles."
+      }
+    },
+    {
+      "id": "os-process-ipc-medium-term",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [43],
+        "visualSlides": [],
+        "note": "43 illustrates swap-out/swap-in in the medium-term scheduling diagram and mentions freeing memory."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use plausible alternative scheduling actions, with terminology from the surrounding lessons."
+      }
+    },
+    {
+      "id": "os-process-ipc-io-bound",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [43],
+        "visualSlides": [],
+        "note": "43 contrasts time spent in I/O versus calculation. Frequent short CPU bursts with device waits characterize P, long bursts characterize Q."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-queue-mix",
+      "status": "verified",
+      "subtopic": "scheduling",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [40, 43],
+        "visualSlides": [],
+        "note": "40 states the utilization objective, and 43 explains why an all-I/O-bound workload can leave the ready queue empty. Mixing jobs creates runnable work during waits."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Differentiate this item from week 1's generic multiprogramming question by comparing workload mixes."
+      }
+    },
+    {
+      "id": "os-process-ipc-cooperation",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [44],
+        "visualSlides": [],
+        "note": "44 defines cooperating processes by influence via shared information. B depends on the records produced by A."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-process-ipc-shared-vs-message",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [44, 46],
+        "visualSlides": [],
+        "note": "44 contrasts data read from a shared region with messages; 46 supplies the explicit send/receive operations."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-shared-setup",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [44, 45],
+        "visualSlides": [45],
+        "note": "44 describes the shared region. 45 shows producer and consumer operating directly on it and explicitly checking buffer conditions."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-shared-local",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [44, 46],
+        "visualSlides": [],
+        "note": "44 supplies the shared-memory alternative and 46 identifies message passing as useful between processes in distributed systems."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-process-ipc-buffer-flow",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [45],
+        "visualSlides": [45],
+        "note": "45's producer checks isBufferFull and waits before writing. The consumer can free a slot by taking an item."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Bound to the fixed-capacity lecture model and use real buffer conditions as alternatives."
+      }
+    },
+    {
+      "id": "os-process-ipc-buffer-empty",
+      "status": "verified",
+      "subtopic": "ipc",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [45],
+        "visualSlides": [45],
+        "note": "45's consumer checks isBufferEmpty and only reads when an item exists; an entire full buffer is unnecessary."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Test the readiness condition with comparable buffer actions."
+      }
+    },
+    {
+      "id": "os-process-ipc-ipc-selection",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [44, 46, 47, 50],
+        "visualSlides": [47],
+        "note": "44 and 46 establish the message model, 47 defines IP/port socket endpoints, and 50's client uses the local loopback endpoint. The transport preserves the application's message convention."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Add the client loopback example and use alternatives that differ in portability or process isolation."
+      }
+    },
+    {
+      "id": "os-process-ipc-socket-endpoint",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [47],
+        "visualSlides": [47],
+        "note": "47 identifies a socket endpoint by IP and port, and its figure distinguishes two endpoints. Distinct listening ports on one IP identify distinct service origins in the stated transport."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Use an explicit transport context and distinguish local service addressing from remote endpoint and process identifiers."
+      }
+    },
+    {
+      "id": "os-process-ipc-tcp-udp",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-3",
+        "slides": [48],
+        "visualSlides": [48],
+        "note": "48 contrasts reliable connection-oriented TCP with connectionless UDP and mentions DatagramSocket. RFC 768 confirms datagram delivery limitations."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast shape and reliability using actual socket models and precise delivery claims."
+      }
+    },
+    {
+      "id": "os-process-ipc-tcp-stream",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-3",
+        "slides": [48],
+        "visualSlides": [48],
+        "note": "48 distinguishes TCP from UDP but does not discuss read/write application boundaries. RFC 9293 sections 2.2 and 3.7 explicitly give byte stream semantics and no write/read boundary guarantee.",
+        "references": [
+          "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.7"
+        ]
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Remove a misleading phrasing and make distractors about stream framing."
+      }
+    },
+    {
+      "id": "os-process-ipc-server-listen",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [47, 49, 50],
+        "visualSlides": [47],
+        "note": "47 defines an address-port endpoint, 49 listens on 6013, and 50 supplies that port and the server address to the client."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Fix the Turkish subject construction and use realistic server and client endpoints."
+      }
+    },
+    {
+      "id": "os-process-ipc-socket-pairs",
+      "status": "verified",
+      "subtopic": "sockets",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-3",
+        "slides": [47, 49],
+        "visualSlides": [47],
+        "note": "47 shows a pair of socket endpoints and 49 uses accept on one listening port. RFC 9293 defines the TCP connection by the pair, qualifying the slide's oversimplified separate-port wording.",
+        "references": [
+          "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.4.1",
+          "https://man7.org/linux/man-pages/man2/accept.2.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices", "explanation"],
+        "note": "Correct the deck's oversimplified port uniqueness claim. Make the options genuine endpoint tuples and avoid assuming an ephemeral port is mandatory."
+      }
+    },
+    {
+      "id": "os-process-ipc-sjf-order",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 chooses the shortest ready CPU burst at each dispatch. Sorting 3, 5, 8 gives B, C, A."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-process-ipc-sjf-arrival",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 shows no preemption by a shorter arrival. A runs first, then C has the shorter ready burst at time 7."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-sjf-wait",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 gives the dispatch rule. Starts at 0, 2 and 6 yield a total waiting time of 8 over three jobs."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "explanation"],
+        "note": "State single CPU, one burst each and give the actual average in the explanation."
+      }
+    },
+    {
+      "id": "os-process-ipc-sjf-turnaround",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 puts the shorter ready burst first. B runs 0–3 and A then 3–12, so A finishes at clock time 12."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "Distinguish finish clock time from CPU burst and turnaround terminology."
+      }
+    },
+    {
+      "id": "os-process-ipc-sjf-timing",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 demonstrates that a late shorter burst waits while another burst runs. With zero overhead, B starts at 4 and remains on CPU at 5."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "State zero switch cost and contrast counterfactual arrival timing with a preemptive rule, differentiating it from the other run-order exercise."
+      }
+    },
+    {
+      "id": "os-process-ipc-wait-independent",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [17, 22],
+        "visualSlides": [17, 22],
+        "note": "17 shows a waiting parent and executing child, while 22 distinguishes Waiting from the ready/running states of other processes."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-process-ipc-fork-conditional",
+      "status": "verified",
+      "subtopic": "lifecycle",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [14, 17],
+        "visualSlides": [17],
+        "note": "14 and 17 branch fork into parent and child. Restricting the second call to the first child yields three processes."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-process-ipc-sjf-idle",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [51],
+        "visualSlides": [51],
+        "note": "51 selects the shortest currently ready burst, with no preemption later. CPU is idle before 2, then runs A until 6 before B."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question"],
+        "note": "State zero dispatch cost and distinguish arrival from start time."
+      }
+    },
+    {
+      "id": "os-process-ipc-scheduling-overhead",
+      "status": "verified",
+      "subtopic": "sjf",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-3",
+        "slides": [32, 34, 51],
+        "visualSlides": [34, 51],
+        "note": "32/34 describe switching overhead, and 51 establishes B before A. Adding B's 2, the 1-unit switch and A's 5 gives t=8."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-threads-thread-state",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [3],
+        "visualSlides": [3],
+        "note": "3 shows private register/stack state and shared code/data/files. Independent call and return state belongs to the running thread."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["source"],
+        "note": "Use the slide on private/shared thread state, removing the unrelated mapping reference."
+      }
+    },
+    {
+      "id": "os-threads-thread-sharing",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [3, 7],
+        "visualSlides": [3],
+        "note": "3 depicts a shared data area. 7 says threads share the process's resources by default. Safe observation can still require synchronization."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-threads-file-sharing",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [3, 7],
+        "visualSlides": [3],
+        "note": "3 labels files as shared per-process resources, and 7 describes resource sharing between threads."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Clarify the object is an open file descriptor and compare resource-sharing misconceptions."
+      }
+    },
+    {
+      "id": "os-threads-responsiveness",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [6, 7],
+        "visualSlides": [],
+        "note": "6 illustrates independent paths of work. 7 names responsiveness when lengthy work occurs in a separate thread."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use the deck's other thread benefits as plausible alternatives."
+      }
+    },
+    {
+      "id": "os-threads-economy",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [7],
+        "visualSlides": [],
+        "note": "7 contrasts process creation's memory/resource allocation cost with reusing existing process resources for a new thread."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Compare legitimate thread benefits but ask about reduced creation overhead."
+      }
+    },
+    {
+      "id": "os-threads-server-worker",
+      "status": "verified",
+      "subtopic": "thread-resources",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [6, 7],
+        "visualSlides": [],
+        "note": "6 shows a server delegating requests to threads; 7 describes continued responsiveness when one part blocks."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Specify a blocking long operation and distinguish overlap from unconditional speedup."
+      }
+    },
+    {
+      "id": "os-threads-one-core",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [8, 9],
+        "visualSlides": [],
+        "note": "8 introduces multicore execution; 9 contrasts one core's interleaving with simultaneous work on multiple cores."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "State one hardware stream to rule out SMT and use symmetric concurrency/parallelism alternatives."
+      }
+    },
+    {
+      "id": "os-threads-parallel-capacity",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [9, 16],
+        "visualSlides": [],
+        "note": "9 shows separate time lines running together; 16 gives concurrent work on different cores as the basis for data and task parallelism."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-threads-ready-vs-parallel",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [9],
+        "visualSlides": [],
+        "note": "9 shows two independent physical streams. Under the explicit one-stream-per-core model, four runnable threads can use at most two execution slots."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["difficulty", "source"],
+        "note": "Remove unrelated source and grade as a direct capacity application."
+      }
+    },
+    {
+      "id": "os-threads-amdahl-basic",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10 defines S as the serial fraction of the one-core workload, explicitly distinct from N cores."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["difficulty", "choices"],
+        "note": "Use proportions from the actual model and classify symbol recall as basic."
+      }
+    },
+    {
+      "id": "os-threads-amdahl-four",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10's formula yields 1/(1/4+3/16)=16/7. The slide gives the corresponding rounded result for four cores."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["difficulty"],
+        "note": "Align the classification with a direct substitution of the exact worked example."
+      }
+    },
+    {
+      "id": "os-threads-amdahl-limit",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10 states the 1/S asymptote. Substituting S=0.20 gives 5."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-threads-amdahl-time",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "Using 10's fixed serial fraction, 40 ms remains unchanged and the 60 ms parallel fraction becomes 30 ms on two cores."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-threads-amdahl-improve",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10 gives the upper limit 1/S, hence lowering S raises that bound; the question asks about the bound, independently of load balances."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "source"],
+        "note": "Use the limit's slide alone and contrast plausible optimizations with unchanged serial fraction."
+      }
+    },
+    {
+      "id": "os-threads-amdahl-compare",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10's denominator for fixed N>1 increases with S. A's lower serial fraction produces the greater ideal speedup."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-threads-amdahl-all-serial",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10's formula at S=1 has zero parallel fraction, giving a speedup of one for any positive N."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-threads-task-split",
+      "status": "verified",
+      "subtopic": "multicore-design",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [12],
+        "visualSlides": [],
+        "note": "12 lists identifying which tasks can run in parallel as a multicore programming challenge."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use the adjacent multicore design challenges as distractors."
+      }
+    },
+    {
+      "id": "os-threads-balance",
+      "status": "verified",
+      "subtopic": "multicore-design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [13],
+        "visualSlides": [],
+        "note": "13 calls for balancing work between cores. The gather point must wait for the 15 ms part rather than sum or average simultaneous work."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Supply plausible numeric interpretations of the gather time."
+      }
+    },
+    {
+      "id": "os-threads-data-dependency",
+      "status": "verified",
+      "subtopic": "multicore-design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [14],
+        "visualSlides": [],
+        "note": "14 describes dependencies across data shared by tasks. B cannot consume A's result before it is ready."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-threads-debug-interleavings",
+      "status": "verified",
+      "subtopic": "multicore-design",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [15],
+        "visualSlides": [],
+        "note": "15 identifies testing/debugging difficulties with concurrent execution paths; differing interleavings account for intermittent failures."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Make all options concern test reproducibility and scheduling."
+      }
+    },
+    {
+      "id": "os-threads-data-parallel",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [16],
+        "visualSlides": [],
+        "note": "16 defines data parallelism as the same operation over a partitioned data set. The filter stays the same across image regions."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-threads-task-parallel",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [16],
+        "visualSlides": [],
+        "note": "16 defines task parallelism as different work on different cores. Compression and hashing are different tasks on the same input."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-threads-combined-parallel",
+      "status": "verified",
+      "subtopic": "parallelism",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [16],
+        "visualSlides": [],
+        "note": "16 defines both modes. The filter partitions data, and metadata indexing is a different concurrently scheduled function."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast reasonable classifications of the two subtasks."
+      }
+    },
+    {
+      "id": "os-threads-user-thread",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [17, 22],
+        "visualSlides": [17],
+        "note": "17 places user-thread management in the application and kernel-thread management in the OS. 22 describes library implementations in user and kernel environments."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace distractors with alternative management roles."
+      }
+    },
+    {
+      "id": "os-threads-many-to-one-parallel",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [20],
+        "visualSlides": [],
+        "note": "20 says many user threads share one kernel thread and explains why they cannot execute physically in parallel despite multiple CPUs."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Move distractors to mapping boundaries rather than processor impossibilities."
+      }
+    },
+    {
+      "id": "os-threads-many-to-one-block",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [20],
+        "visualSlides": [],
+        "note": "20 explicitly says a blocking system call blocks all execution via the single kernel thread in the many-to-one example."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-threads-one-to-one-block",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [19, 20],
+        "visualSlides": [],
+        "note": "19 gives one kernel mapping per user thread; the whole-process blockage documented on 20 follows from a different single-carrier mapping."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use comparable consequences for a blocked versus independently schedulable thread."
+      }
+    },
+    {
+      "id": "os-threads-one-to-one-cost",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [19],
+        "visualSlides": [],
+        "note": "19 identifies kernel creation per user thread and explicitly warns about the resulting limits and overhead."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast scheduling objects with duplication of unrelated process resources."
+      }
+    },
+    {
+      "id": "os-threads-many-to-many-bound",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [21],
+        "visualSlides": [],
+        "note": "21 multiplexes user threads over a number of kernel threads. Two carriers cap simultaneous execution at two even on four cores."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question"],
+        "note": "Specify contexts have runnable work and physical concurrency uses only the two carriers."
+      }
+    },
+    {
+      "id": "os-threads-many-to-many-choice",
+      "status": "verified",
+      "subtopic": "thread-models",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [19, 20, 21],
+        "visualSlides": [],
+        "note": "19–21 compare the choices: only many-to-many simultaneously satisfies multiple carriers and fewer carriers than user threads."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-threads-pthread-standard",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [22, 23],
+        "visualSlides": [],
+        "note": "22 defines thread-library API operations and 23 identifies the POSIX Pthreads interface standard."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use plausible kinds of portability, without implying identical scheduling or resource limits."
+      }
+    },
+    {
+      "id": "os-threads-pthread-start",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [24],
+        "visualSlides": [24],
+        "note": "24 labels the runner argument of pthread_create as the starting function for the new thread."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-threads-pthread-join",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [24, 25],
+        "visualSlides": [24, 25],
+        "note": "24 waits using pthread_join before printing the result. 25 uses join for a set of workers."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-threads-join-all",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [25],
+        "visualSlides": [25],
+        "note": "25 loops over the existing worker handles with join. To both overlap work and collect all results, start all before waiting, and join them all before reading."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "The earlier item did not ask to preserve concurrency, so sequential create/join could also be correct."
+      }
+    },
+    {
+      "id": "os-threads-windows-wait",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [27],
+        "visualSlides": [27],
+        "note": "27 assigns the CreateThread return to ThreadHandle and uses that handle as the argument to WaitForSingleObject."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Name the Windows wait operation and contrast the handle with the nearby ID/result objects."
+      }
+    },
+    {
+      "id": "os-threads-java-start",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-4",
+        "slides": [28, 29],
+        "visualSlides": [29],
+        "note": "29 shows construction from a Runnable and start invoking run. The Java 21 API distinguishes direct run on this platform-thread example from starting the thread, and documents different behavior for virtual threads.",
+        "references": [
+          "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Thread.html#run()"
+        ]
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Limit direct run behavior to the Runnable-backed platform thread shown in the lecture. Virtual threads differ."
+      }
+    },
+    {
+      "id": "os-threads-java-join",
+      "status": "verified",
+      "subtopic": "thread-apis",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [29],
+        "visualSlides": [29],
+        "note": "29 calls join after start and reads the accumulated sum only after waiting for that worker. The stem now requires successful, uninterrupted completion of join."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["explanation"],
+        "note": "Avoid treating InterruptedException or timed join as proof of termination."
+      }
+    },
+    {
+      "id": "os-threads-implicit",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [30],
+        "visualSlides": [],
+        "note": "30 explicitly shifts creation/management from the application programmer to compiler or runtime."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-threads-pool-reuse",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [31],
+        "visualSlides": [],
+        "note": "31 says an available thread services a request and returns to the pool for the next demand, avoiding repeated creation."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-threads-pool-queue",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [31],
+        "visualSlides": [],
+        "note": "31 describes a predetermined number of workers and queued work. Four workers can execute at most four of ten one-worker jobs concurrently."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["difficulty", "question"],
+        "note": "State one task per worker and distinguish logical concurrency from physical slots."
+      }
+    },
+    {
+      "id": "os-threads-pool-bound",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [31],
+        "visualSlides": [],
+        "note": "31 presents a limited thread pool as a response to unlimited per-request thread creation exhausting CPU/memory."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-threads-openmp-directive",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [35],
+        "visualSlides": [35],
+        "note": "35 gives the exact parallel directive and a separate parallel-for example. The revised stem distinguishes whole-block execution from work sharing."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Differentiate the exact whole-block form from the parallel-loop form shown on the same slide."
+      }
+    },
+    {
+      "id": "os-threads-openmp-region",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [35],
+        "visualSlides": [35],
+        "note": "35 depicts an unguarded printf in a parallel region. OpenMP 5.2 section 10.1 confirms each of the four team threads executes it once under the stated condition."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-threads-gcd",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [36],
+        "visualSlides": [],
+        "note": "36 sends blocks to dispatch queues in GCD, with worker management delegated to the runtime."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use neighboring queue types instead of unrelated register addresses."
+      }
+    },
+    {
+      "id": "os-threads-fork-thread",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-4",
+        "slides": [37],
+        "visualSlides": [37],
+        "note": "37 raises the single/all-thread fork comparison but erroneously describes exec as duplication. Linux execve replaces the process image and discards other threads; Linux fork produces only the calling thread in the child.",
+        "references": [
+          "https://man7.org/linux/man-pages/man2/execve.2.html#DESCRIPTION",
+          "https://man7.org/linux/man-pages/man2/fork.2.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "Correct the lecture's erroneous duplication phrasing with independent execve and fork evidence. Preserve the intended process-image concept."
+      }
+    },
+    {
+      "id": "os-threads-signal-sync",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [37, 38],
+        "visualSlides": [37],
+        "note": "37 gives invalid memory access as a synchronous example. 38 identifies the causative thread as the intended thread-directed case."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Use the term senkron and distinguish signal delivery scopes with plausible alternatives."
+      }
+    },
+    {
+      "id": "os-threads-signal-async",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [37, 38],
+        "visualSlides": [37],
+        "note": "37/38 distinguish external events such as terminal input from a fault attributable to the receiver's instruction. A timer-generated alarm is likewise asynchronous to that instruction."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Distinguish the question about signal timing from signal targets and use nearby concepts for alternatives."
+      }
+    },
+    {
+      "id": "os-threads-cancel-deferred",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-4",
+        "slides": [39],
+        "visualSlides": [39],
+        "note": "39 distinguishes deferred and asynchronous cancellation. The Linux pthread_cancel documentation specifies that enabled deferred cancellation waits for a cancellation point.",
+        "references": [
+          "https://man7.org/linux/man-pages/man3/pthread_cancel.3.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "Use the API term cancellation point and distinguish disabled from deferred cancellation."
+      }
+    },
+    {
+      "id": "os-threads-cancel-risk",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [39],
+        "visualSlides": [39],
+        "note": "39 characterizes asynchronous cancellation as abrupt, which can interrupt a held lock or a partial update if no cleanup handles it."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "explanation"],
+        "note": "Acknowledge cleanup handlers and state the absence of suitable cleanup as a premise."
+      }
+    },
+    {
+      "id": "os-threads-cancel-disabled",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-4",
+        "slides": [39],
+        "visualSlides": [39],
+        "note": "39's table distinguishes disabled from enabled modes but omits pending-request semantics. pthread_cancel documents queuing until re-enabling, with the cancellation type then determining delivery.",
+        "references": [
+          "https://man7.org/linux/man-pages/man3/pthread_cancel.3.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices", "explanation"],
+        "note": "The disabled request stays pending rather than merely possibly pending. Timing after re-enable depends on cancellation type."
+      }
+    },
+    {
+      "id": "os-threads-linux-clone",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-4",
+        "slides": [41],
+        "visualSlides": [41],
+        "note": "41 directly labels CLONE_VM as sharing the same memory space."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use the other clone sharing flags as distractors."
+      }
+    },
+    {
+      "id": "os-threads-clone-flags",
+      "status": "verified",
+      "subtopic": "thread-control",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [41],
+        "visualSlides": [41],
+        "note": "41 independently identifies sharing of open files with CLONE_FILES and memory with CLONE_VM. Under the stated combination only the former sharing is requested."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "Distinguish parent and child of one successful clone, and sharing the table from mere inherited entries."
+      }
+    },
+    {
+      "id": "os-threads-serial-work-difference",
+      "status": "verified",
+      "subtopic": "amdahl",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [10],
+        "visualSlides": [10],
+        "note": "10's equation gives (100−75)×2=50 ms of one-core parallel work, hence 50 ms of serial work and S=0.50."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question"],
+        "note": "State the one-core baseline explicitly before using the inverse Amdahl calculation."
+      }
+    },
+    {
+      "id": "os-threads-bounded-queue-vs-pool",
+      "status": "verified",
+      "subtopic": "implicit-threading",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-4",
+        "slides": [31],
+        "visualSlides": [],
+        "note": "31 bounds threads separately from outstanding work. Given the stem's unbounded queue, these queued jobs can still consume additional memory."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-race",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [2, 9],
+        "visualSlides": [9],
+        "note": "2 motivates synchronizing shared data; 9 calls an outcome that changes with execution order a race condition."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use mechanisms that could account for scheduling behavior instead of unrelated concepts."
+      }
+    },
+    {
+      "id": "os-synchronization-increment-loss",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [7, 8, 9],
+        "visualSlides": [9],
+        "note": "7–9 show read/modify/write as separate operations. Applying the shown interleaving to two increments from 10 produces two writes of 11."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-increment-decrement",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [7, 9],
+        "visualSlides": [9],
+        "note": "7 gives the increment/decrement operations, and 9 explicitly notes the result 6 when the producer's write is last."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-race-sequential",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [7, 9],
+        "visualSlides": [9],
+        "note": "7 and 9 supply the read/modify/write steps. With the complete first operation preceding the second read, 5 becomes 6 and then 5."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["difficulty", "question"],
+        "note": "State explicitly that the second operation is one decrement, and classify the short serial trace as intermediate."
+      }
+    },
+    {
+      "id": "os-synchronization-atomic-increment",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [7, 18],
+        "visualSlides": [18],
+        "note": "7 decomposes count++ into separate steps. 18 contrasts this with purpose-built atomic read/modify/write instructions."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace unrelated distractors with actual atomicity misconceptions."
+      }
+    },
+    {
+      "id": "os-synchronization-critical-object",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [10, 11],
+        "visualSlides": [],
+        "note": "10 gives shared variable and table updates as critical-section examples; 11 includes shared structures in the protected body."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-critical-flow",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [11],
+        "visualSlides": [],
+        "note": "11 depicts entry, critical section, exit and remainder in that order. The revised stem starts the loop at the entry protocol."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question"],
+        "note": "The loop can be rotated logically. Anchor the ordering at the entry protocol."
+      }
+    },
+    {
+      "id": "os-synchronization-exclusion",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [12],
+        "visualSlides": [12],
+        "note": "12 says no second process may be in the corresponding critical section while the first is there."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use concurrency properties as credible alternatives and isolate simultaneous entry."
+      }
+    },
+    {
+      "id": "os-synchronization-progress",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [12],
+        "visualSlides": [12],
+        "note": "12 defines progress as selecting a waiting entrant without indefinite postponement while the shared section is empty."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Specify that the forbidden delay concerns selection while nobody is inside, removing distracting overlap with bounded service."
+      }
+    },
+    {
+      "id": "os-synchronization-bounded",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [12, 20],
+        "visualSlides": [],
+        "note": "12 bounds the number of intervening admissions after a request. 20 contrasts this with an unfair basic lock."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Bounded waiting is stated in admissions by others, not as an elapsed time limit."
+      }
+    },
+    {
+      "id": "os-synchronization-strict-alternation",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [12, 14],
+        "visualSlides": [12, 14],
+        "note": "12 requires progress and 14 uses turn as an arbiter alongside expressed interest. A strict-turn model without the flag cannot advance in the given case."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "State that only the holder can pass the turn on exit, and distinguish progress from exclusion."
+      }
+    },
+    {
+      "id": "os-synchronization-preemptive-kernel",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [13],
+        "visualSlides": [13],
+        "note": "13 distinguishes preemptible and nonpreemptible kernel execution. Its Turkish shorthand is awkward, so the item states the shared scheduling property."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Phrase as the preemption capability, with neighboring scheduling policies as distractors."
+      }
+    },
+    {
+      "id": "os-synchronization-nonpreemptive-limit",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [13, 17],
+        "visualSlides": [13, 17],
+        "note": "13 gives the kernel-preemption contrast but does not qualify its single-active-process claim. 17 explicitly warns the local scheme is insufficient on multiprocessors."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Scope nonpreemption to per-CPU scheduling, qualifying the deck's uniprocessor shorthand."
+      }
+    },
+    {
+      "id": "os-synchronization-peterson-flag",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [14, 15],
+        "visualSlides": [14, 15],
+        "note": "14 sets flag[i] before the wait, and 15 keeps it true until the exit assignment. It indicates a request or current use."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast the flag's request/lifetime with ownership and priority."
+      }
+    },
+    {
+      "id": "os-synchronization-peterson-turn",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [14, 15],
+        "visualSlides": [14, 15],
+        "note": "14/15 show while(flag[j] && turn == j). Both conjuncts are true in the stated snapshot, so Pi waits."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "State the abstract algorithm's memory model and use precise possible transitions."
+      }
+    },
+    {
+      "id": "os-synchronization-peterson-no-contest",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [14, 15],
+        "visualSlides": [14, 15],
+        "note": "14/15 show a conjunction, so false flag[j] defeats waiting even with turn still equal to j. This qualifies the prose shortcut on 15."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["difficulty", "choices"],
+        "note": "Treat it as one Boolean guard application and remove impossible unrelated actions."
+      }
+    },
+    {
+      "id": "os-synchronization-peterson-both",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [14, 15],
+        "visualSlides": [14, 15],
+        "note": "14/15 show each process giving the turn to its peer. The final turn=0 permits P0 and keeps P1 waiting when both flags are true."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-synchronization-peterson-exit",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [15],
+        "visualSlides": [15],
+        "note": "15's exit resets flag[i], which can end the other process's waiting condition; the peer need not wait for turn to change."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Focus the exit behavior on the waiting test and use the actual flag/turn distinction."
+      }
+    },
+    {
+      "id": "os-synchronization-peterson-model",
+      "status": "verified",
+      "subtopic": "peterson",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-5",
+        "slides": [16],
+        "visualSlides": [],
+        "note": "16 says the classic software solution is not guaranteed on modern machines. Linux memory-barrier documentation describes ordering and visibility constraints for shared accesses.",
+        "references": [
+          "https://docs.kernel.org/core-api/wrappers/memory-barriers.html"
+        ]
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Compare the memory-model issue to plausible but insufficient changes in platform design."
+      }
+    },
+    {
+      "id": "os-synchronization-irq-local",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [17],
+        "visualSlides": [17],
+        "note": "17 restricts interrupt masking to a single-CPU setting for simple protection and explains why it does not apply to multiple CPUs."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Make alternatives about the scope of local interrupt masking."
+      }
+    },
+    {
+      "id": "os-synchronization-tas-old",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [18],
+        "visualSlides": [18],
+        "note": "18's test_and_set saves the previous Boolean, writes true, and returns the saved value. From false, the pair is (false, true)."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "Replace two implausible non-Boolean options with the two Boolean dimensions and distinguish return from stored state."
+      }
+    },
+    {
+      "id": "os-synchronization-tas-contention",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [18],
+        "visualSlides": [18],
+        "note": "18 defines the same transition; two serialized calls without release observe false then true."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-cas-match",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [19],
+        "visualSlides": [19],
+        "note": "19's CAS compares the current value, writes the new value on a match, and returns the old value. Equal 7 changes memory to 9."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-cas-mismatch",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [19],
+        "visualSlides": [19],
+        "note": "19's old-value CAS returns 5 without changing memory because expected 4 differs from 5."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-synchronization-cas-lock",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [19],
+        "visualSlides": [19],
+        "note": "19 waits while the old value returned by CAS(lock,0,1) is nonzero. Returning zero means the free-to-held transition succeeded."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["difficulty", "question"],
+        "note": "Recognizing a single old-value test is intermediate. Clarify that this is the lecture's particular CAS interface."
+      }
+    },
+    {
+      "id": "os-synchronization-test-then-set",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [16, 18, 21],
+        "visualSlides": [18, 21],
+        "note": "16 introduces locking, 18 couples test/set atomically, and 21 illustrates acquire/release. Separating test and write admits two false observations."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Specify the precise non-atomic pair, including the first state. Remove the distractor that changes the premises to an atomic admission."
+      }
+    },
+    {
+      "id": "os-synchronization-atomic-vs-fair",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [18, 20],
+        "visualSlides": [18],
+        "note": "18 shows mutual exclusion using a basic atomic primitive. 20 says that the basic versions fail bounded waiting and presents an additional protocol."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-mutex-usage",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [21],
+        "visualSlides": [21],
+        "note": "21 explicitly places acquire before and release after the shared update."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["difficulty"],
+        "note": "Classify recall of the acquire/update/release protocol as basic."
+      }
+    },
+    {
+      "id": "os-synchronization-spin",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [21],
+        "visualSlides": [21],
+        "note": "21 labels the continuously checking acquire loop as busy waiting/spinlock."
+      },
+      "reviewedAnswerIndex": 0
+    },
+    {
+      "id": "os-synchronization-spin-choice",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [21, 26],
+        "visualSlides": [21],
+        "note": "21 illustrates checking without blocking and 26 illustrates blocking and later waking. Comparing the remaining wait to the block/wake cost gives the conditional answer."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Make the cost comparison conditional and contrast with real spin/block trade-offs."
+      }
+    },
+    {
+      "id": "os-synchronization-counting-start",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [23, 24],
+        "visualSlides": [23, 24],
+        "note": "23 explicitly initializes a counting semaphore from the number of interchangeable resources. 24 gives the atomically consumed permit."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-counting-trace",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [23, 24],
+        "visualSlides": [23, 24],
+        "note": "23/24 describe one decrement per successful wait and one increment per signal. The sequence is 2,1,0,1,0."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-synchronization-binary-case",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [23, 24],
+        "visualSlides": [23, 24],
+        "note": "23 describes the two-value semaphore. 24 consumes the sole initial permit at the first successful acquisition."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question"],
+        "note": "Use 'kaynak kullanılmıyorken' instead of the ambiguous empty semaphore wording."
+      }
+    },
+    {
+      "id": "os-synchronization-semaphore-signal",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [24],
+        "visualSlides": [24],
+        "note": "24 labels signal as V and increments the semaphore while wait (P) obtains a permit."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Make distractors operations in the same critical section attempt, not unrelated interrupt operations."
+      }
+    },
+    {
+      "id": "os-synchronization-semaphore-dependency",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [25],
+        "visualSlides": [25],
+        "note": "25 gives a semaphore initialized to zero with S1 preceding signal and wait preceding S2."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-semaphore-event-start",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [25],
+        "visualSlides": [25],
+        "note": "25 uses zero to force waiting if B reaches its wait first. An initial one lets B consume a permit before S1 has run."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use plausible permit-order misconceptions in the distractors."
+      }
+    },
+    {
+      "id": "os-synchronization-semaphore-queue",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [26, 27],
+        "visualSlides": [27],
+        "note": "26 assigns a wait list to the nonspinning design; the conditional-block model clarified in the stem is the intent of 27's acquire sketch."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Scope the behavior to a blocking semaphore rather than all semaphore implementations."
+      }
+    },
+    {
+      "id": "os-synchronization-semaphore-negative",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [27],
+        "visualSlides": [27],
+        "note": "27 gives decrement then queue on value < 0. In the specified model the calls take the count 1→0→−1→−2 and leave two waiters."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question"],
+        "note": "State the corrected conditional-block model explicitly because the slide's braces make the block placement ambiguous."
+      }
+    },
+    {
+      "id": "os-synchronization-semaphore-wakeup",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [27],
+        "visualSlides": [27],
+        "note": "27 gives increment then wake one when the resulting value is ≤0; from −2 that is −1 and one wake."
+      },
+      "reviewedAnswerIndex": 2
+    },
+    {
+      "id": "os-synchronization-semaphore-indivisible",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [24, 27],
+        "visualSlides": [24, 27],
+        "note": "24 explicitly requires atomic semaphore operations. 27 shows the count change and waiter handling as parts of one semaphore operation."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast atomic permit consumption with related but insufficient protections."
+      }
+    },
+    {
+      "id": "os-synchronization-deadlock",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [28],
+        "visualSlides": [28],
+        "note": "28 depicts opposite order acquisitions of S and Q leading each process to wait for the other."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use neighboring liveness concepts rather than obvious non sequiturs."
+      }
+    },
+    {
+      "id": "os-synchronization-deadlock-order",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [28],
+        "visualSlides": [28],
+        "note": "28's counterexample requires opposing order. The revised common order removes the edge where Q is held while S is awaited."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use plausible lock-order protocols rather than nonsensical permanent retention."
+      }
+    },
+    {
+      "id": "os-synchronization-deadlock-release",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [28, 31],
+        "visualSlides": [28],
+        "note": "28's cycle depends on a process holding S while requesting Q. Given a nonblocking failed attempt for Q, releasing S before retrying breaks that premise at this step."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices", "explanation"],
+        "note": "State that the failed attempt for Q was nonblocking and limit the claim to breaking hold-and-wait at that step."
+      }
+    },
+    {
+      "id": "os-synchronization-starvation",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [30],
+        "visualSlides": [],
+        "note": "30 names indefinite blocking of an older waiter under continuing LIFO service as starvation."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Distinguish starvation, deadlock and bounded waiting with realistic classifications."
+      }
+    },
+    {
+      "id": "os-synchronization-starvation-vs-deadlock",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [28, 30],
+        "visualSlides": [28],
+        "note": "28 shows a group with no progress because of a cycle; 30 gives a bypassed waiter in a continuing service system. The stem explicitly excludes a cycle for A."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Other unrelated work progressing does not rule out a deadlocked subset. Explicitly state the absence of a cycle and persistent bypass."
+      }
+    },
+    {
+      "id": "os-synchronization-fifo-wait",
+      "status": "verified",
+      "subtopic": "deadlock-and-fairness",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [27, 30],
+        "visualSlides": [27],
+        "note": "27 shows removing a waiting process, and 30 explains why LIFO can repeatedly bypass an old waiter. Strict FIFO service prevents later arrivals overtaking it."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-swap-wait-signal",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [31],
+        "visualSlides": [31],
+        "note": "31 explicitly demonstrates signal-before-entry as a misuse that allows concurrent critical-section entry."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Name the counting semaphore used to enforce one entrant and distinguish excess permits from a second blocking wait."
+      }
+    },
+    {
+      "id": "os-synchronization-double-wait",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [31],
+        "visualSlides": [31],
+        "note": "31 illustrates replacing the post-section signal with a second wait. With no other signal, no permit can become available."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Under no other signal, the second wait blocks rather than merely possibly blocking."
+      }
+    },
+    {
+      "id": "os-synchronization-missing-signal",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [24, 31],
+        "visualSlides": [24, 31],
+        "note": "24 assigns permit return to signal. 31 identifies an omitted exit signal as causing blocking if no other permit becomes available."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Replace hardware-distraction options with ownership and automatic release misconceptions."
+      }
+    },
+    {
+      "id": "os-synchronization-monitor",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [32],
+        "visualSlides": [],
+        "note": "32 groups shared state and procedures within the monitor's mutual-exclusion construct."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Contrast monitor encapsulation with plausible synchronization primitives."
+      }
+    },
+    {
+      "id": "os-synchronization-monitor-entry",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [32, 33],
+        "visualSlides": [33],
+        "note": "32 makes exclusion apply to the monitor as a whole. 33 expressly avoids two active monitor participants simultaneously."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Make the effect of monitor-wide exclusion explicit and use plausible per-method alternatives."
+      }
+    },
+    {
+      "id": "os-synchronization-condition-wait",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-5",
+        "slides": [33],
+        "visualSlides": [33],
+        "note": "33 diagrams blocked and active competitors in the monitor. POSIX condition wait gives a concrete implementation where waiting releases the associated mutex and the return reacquires it.",
+        "references": [
+          "https://man7.org/linux/man-pages/man3/pthread_cond_wait.3p.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use mutex or monitor access alternatives rather than unrelated OS resources."
+      }
+    },
+    {
+      "id": "os-synchronization-condition-no-credit",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-5",
+        "slides": [25, 33],
+        "visualSlides": [25, 33],
+        "note": "25 shows semaphore notification creating a permit and 33 describes signalling a waiting condition participant. POSIX explicitly documents no effect with no existing waiter.",
+        "references": [
+          "https://man7.org/linux/man-pages/man3/pthread_cond_broadcast.3p.html#DESCRIPTION"
+        ]
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Distinguish a condition notification from a semaphore permit and use plausible completion conditions."
+      }
+    },
+    {
+      "id": "os-synchronization-condition-target",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [33],
+        "visualSlides": [33],
+        "note": "33 declares condition variables x and y, with x.signal operating on waiters for x."
+      },
+      "reviewedAnswerIndex": 1
+    },
+    {
+      "id": "os-synchronization-signal-wait",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [33],
+        "visualSlides": [33],
+        "note": "33 describes the signal-and-wait signaler waiting for the awakened participant to leave or suspend."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use alternative monitor scheduling disciplines for comparison."
+      }
+    },
+    {
+      "id": "os-synchronization-signal-continue",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [33],
+        "visualSlides": [33],
+        "note": "33 describes signal-and-continue: the signaler retains access until leaving or waiting, and the awakened participant cannot run in the monitor before that."
+      },
+      "reviewedAnswerIndex": 3,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Separate signal-and-continue from immediate handoff and ensure the timing model is specific."
+      }
+    },
+    {
+      "id": "os-synchronization-transaction",
+      "status": "verified",
+      "subtopic": "alternatives",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [34, 35],
+        "visualSlides": [35],
+        "note": "34 introduces grouped shared updates and 35 defines an atomic block as a transaction. The transactional-memory paper confirms commit/abort all-or-nothing visibility."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use comparable visibility models and keep the claim to transactional writes."
+      }
+    },
+    {
+      "id": "os-synchronization-transaction-conflict",
+      "status": "verified",
+      "subtopic": "alternatives",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-5",
+        "slides": [34, 35],
+        "visualSlides": [35],
+        "note": "34–35 motivate transactional memory and show an atomic block but omit conflict handling. Herlihy and Moss sections 2.1–2.2 specify conflict abort and retry of failed operations.",
+        "references": [
+          "https://people.cs.umass.edu/~moss/papers/isca-1993-trans-mem.pdf"
+        ]
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Mark conflict handling as supplementary and use alternatives about commit and retry behavior."
+      }
+    },
+    {
+      "id": "os-synchronization-omp-critical",
+      "status": "verified",
+      "subtopic": "alternatives",
+      "evidence": {
+        "kind": "direct-slides",
+        "sourceId": "os-week-5",
+        "slides": [36],
+        "visualSlides": [36],
+        "note": "36 shows the critical directive around the shared counter update."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use neighboring OpenMP directives and state the named lecture mechanism."
+      }
+    },
+    {
+      "id": "os-synchronization-omp-scope",
+      "status": "verified",
+      "subtopic": "alternatives",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [36],
+        "visualSlides": [36],
+        "note": "36 applies exclusion to the structured statement inside the critical block. The independent local work in the stem is outside that section."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-synchronization-producer-mutex",
+      "status": "verified",
+      "subtopic": "races",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [5, 6, 21],
+        "visualSlides": [5, 21],
+        "note": "5 shows multiple producers sharing a buffer, 6 describes producer/consumer buffer access, and 21 puts locking around the entire critical update. Two writers can select one slot before the separately protected counter changes."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices", "explanation", "source"],
+        "note": "One producer and one consumer can have separate slot pointers. Give two producers competing for a shared free-slot index, making the claimed race concrete."
+      }
+    },
+    {
+      "id": "os-synchronization-false-signaling",
+      "status": "verified",
+      "subtopic": "semaphores",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [23, 24],
+        "visualSlides": [23, 24],
+        "note": "23 sets permits equal to resources. 24 increments on each signal, so two signals for one return can create a surplus permit."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Use permit-accounting distractors and distinguish over-release from an idempotent unlock."
+      }
+    },
+    {
+      "id": "os-synchronization-one-lock-all-callers",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [10, 21],
+        "visualSlides": [21],
+        "note": "10 motivates protecting a common resource and 21's mutex example uses one shared lock for the competing entries."
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Contrast lock identity with process sharing. State the locks are independent."
+      }
+    },
+    {
+      "id": "os-synchronization-blocking-vs-spin",
+      "status": "verified",
+      "subtopic": "atomic-locks",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [21, 26, 27],
+        "visualSlides": [21, 27],
+        "note": "21 demonstrates continuous spinning; 26–27 demonstrate suspension and wakeup. Blocking leaves the CPU available while long waits run."
+      },
+      "reviewedAnswerIndex": 3
+    },
+    {
+      "id": "os-synchronization-criteria-combine",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [12, 20],
+        "visualSlides": [12],
+        "note": "12 defines exclusion and bounded waiting separately. 20's simple locks show one may be present without the other."
+      },
+      "reviewedAnswerIndex": 0,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "Use an explicit bound on intervening admissions, and distinguish all neighboring critical-section criteria."
+      }
+    },
+    {
+      "id": "os-synchronization-critical-read-invariant",
+      "status": "verified",
+      "subtopic": "critical-sections",
+      "evidence": {
+        "kind": "slide-application",
+        "sourceId": "os-week-5",
+        "slides": [10, 11, 21],
+        "visualSlides": [21],
+        "note": "10/11 require synchronization on shared objects, and 21 illustrates locking around the complete update. Under the interleaving model an unlocked read can occur between writes."
+      },
+      "reviewedAnswerIndex": 1,
+      "correction": {
+        "fields": ["question", "choices"],
+        "note": "State the abstract interleaving model rather than implying unsynchronized C data races have specified results."
+      }
+    },
+    {
+      "id": "os-synchronization-condition-predicate",
+      "status": "verified",
+      "subtopic": "monitors",
+      "evidence": {
+        "kind": "supplementary",
+        "sourceId": "os-week-5",
+        "slides": [32, 33],
+        "visualSlides": [33],
+        "note": "32–33 demonstrate monitor exclusion and signal-and-continue handoff. The authors' Mesa manual explains why the predicate must be checked again because it may change before resumption.",
+        "references": [
+          "https://bwlampson.site/23a-MesaManual/23a-MesaManualOCR.htm"
+        ]
+      },
+      "reviewedAnswerIndex": 2,
+      "correction": {
+        "fields": ["choices"],
+        "note": "Clarify recheck under the re-acquired lock and the next action when the predicate is false."
+      }
+    }
+  ]
+}

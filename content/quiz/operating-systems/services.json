@@ -1,0 +1,927 @@
+[
+  {
+    "id": "os-services-services-boundary",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "basic",
+    "question": "Bir dosya kopyalama uygulaması disk aygıtının yazmaçlarını bilmeden çalışıyor. Bu bağımsızlığı hangi arayüz sağlar?",
+    "choices": [
+      "İşletim sisteminin dosya işlemleri arayüzü",
+      "CPU’nun kesme vektörü",
+      "Yükleyicinin donanım tablosu",
+      "Aygıtın fiziksel blok numaraları"
+    ],
+    "correctIndex": 0,
+    "explanation": "Uygulama mantıksal dosya işlemi ister. Alt katmanlar aygıta özgü ayrıntıları üstlenir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [4, 10]
+    }
+  },
+  {
+    "id": "os-services-cli",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "basic",
+    "question": "Komutları bir metin girdisinden okuyup yorumlayarak çalıştıran bileşen hangisidir?",
+    "choices": [
+      "Sistem yükleyicisi",
+      "Komut yorumlayıcısı",
+      "Süreç denetim bloğu",
+      "Dosya aygıtı sürücüsü"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kabuk, komutları ayrıştırır ve yerleşik işlem veya dış program olarak yürütür.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [5, 8]
+    }
+  },
+  {
+    "id": "os-services-cli-gui",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "GUI üzerinden bir dosyanın taşınması ve komut satırından aynı işlemin yapılması hakkında en doğru yorum hangisidir?",
+    "choices": [
+      "Grafik arayüz taşıma yapabilir, kabuk yalnızca dosya listeleyebilir.",
+      "İki arayüz aynı dosyayı taşıyabilmek için iki ayrı dosya sistemi kullanır.",
+      "İki arayüz farklıdır, ancak aynı çekirdek dosya hizmetini kullanabilir.",
+      "Taşıma işlemini hangi arayüzün seçildiğine göre aygıt denetleyicisi yetkilendirir."
+    ],
+    "correctIndex": 2,
+    "explanation": "GUI ve CLI kullanıcı etkileşimini değiştirir. Aynı çekirdek dosya işlemlerine ulaşabilirler.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [8, 9, 19]
+    }
+  },
+  {
+    "id": "os-services-shell-external",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir kabuğa yeni komut eklemek için kabuğun kodunu değiştirmeden yürütülebilir bir dosya kuruluyor. Bu nasıl mümkün olur?",
+    "choices": [
+      "Addan bağımsız olarak yalnız kabuğa gömülmüş komut tablosuna bakılır.",
+      "Yeni komut için önce sistem çağrısı tablosunda ayrı bir numara ayrılır.",
+      "Dış program, çalıştırılmadan önce kabuğun yerleşik koduna yeniden bağlanır.",
+      "Kabuk komut adını dış programla eşleyip çalıştırabilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Komut yorumlayıcısı her davranışı kendisi uygulamak zorunda değildir. Dış program başlatabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [8]
+    }
+  },
+  {
+    "id": "os-services-allocation",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Aynı anda başlayan çok sayıda işin CPU zamanı ve RAM isteğinin karşılanması hangi sistem hizmetine örnektir?",
+    "choices": [
+      "Kaynak tahsisi",
+      "Kullanıcı arayüzü",
+      "Hata ayıklama",
+      "Dosya adlandırma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kaynak tahsisi, sınırlı sistem kaynaklarının işler arasında dağıtılmasıdır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [7]
+    }
+  },
+  {
+    "id": "os-services-accounting",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir laboratuvar hangi kullanıcının ne kadar CPU zamanı tükettiğini dönem sonunda raporluyor. Bu hizmet nasıl sınıflandırılır?",
+    "choices": [
+      "Kaynak tahsisi",
+      "Kullanım muhasebesi",
+      "Erişim denetimi",
+      "Darboğaz ölçümü"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kullanım muhasebesi tüketimi ölçer ve kaydeder. Ölçülen bilgi kota veya raporlama için kullanılabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [7]
+    }
+  },
+  {
+    "id": "os-services-error-detection",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir depolama işlemi hata koduyla sona eriyor ve işletim sistemi olayı kayda geçiriyor. Bu hangi iki işi gösterir?",
+    "choices": [
+      "Kaynak tahsisi ve kullanıcı arayüzü seçme",
+      "Önyükleme ve komut ayrıştırma",
+      "Hata algılama ve tanılama için kayıt tutma",
+      "Yetkilendirme ve dosya arşivleme"
+    ],
+    "correctIndex": 2,
+    "explanation": "G/Ç hatası algılanır. Günlük kaydı daha sonra neden araştırması için kanıt sağlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [7, 39]
+    }
+  },
+  {
+    "id": "os-services-syscall-vs-api",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir uygulama taşınabilir bir dosya API’si çağırıyor. API ile sistem çağrısı arasındaki ilişki hakkında hangisi doğrudur?",
+    "choices": [
+      "API’deki her işlev doğrudan bir çekirdek talimatıdır.",
+      "API çağrısı kullanan program ayrıcalıklı kipte kalır.",
+      "Sistem çağrısı yalnız komut satırından başlatılabilir.",
+      "Kitaplık API’si gereken çekirdek işlemini uygun sistem çağrısıyla isteyebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "API uygulamaya bir programlama sözleşmesi sunar. Çekirdeğe giriş bunun altındaki uygulama ayrıntısıdır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [10, 11]
+    }
+  },
+  {
+    "id": "os-services-printf",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Tamponlu standart çıktı kullanılırken printf() çağrısı uygulama düzeyinde başarılı oluyor. Neden her çağrıyı bir çekirdek write çağrısıyla eşlemek doğru değildir?",
+    "choices": [
+      "Kitaplık veriyi tamponlayabilir ve yazmayı erteleyebilir.",
+      "Tampon, her printf çağrısı başında boşaltılır.",
+      "Tamponlu bir akışta başarı ancak disk yazması tamamlanınca döner.",
+      "Kitaplık her printf çağrısında bayt başına bir write çağırır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Biçimleme ve tamponlama kullanıcı alanında yapılabilir. Tampon boşaltıldığında çekirdeğe yazma isteği gider.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "os-services-process-control",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "basic",
+    "question": "Bir sistem çağrısı yürütülen sürecin işini tamamlayıp bitmesini istiyor. Hangi çağrı grubuna girer?",
+    "choices": ["Aygıt yönetimi", "Süreç kontrolü", "Bilgi bakımı", "İletişim"],
+    "correctIndex": 1,
+    "explanation": "Süreç kontrolü oluşturma, yürütme ve sonlandırma gibi yaşam döngüsü işlemlerini kapsar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [13, 15]
+    }
+  },
+  {
+    "id": "os-services-abort",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Slayttaki süreç kontrolü sınıflandırmasında, normal tamamlanma yerine olağandışı sonlandırmayı hangi işlem temsil eder?",
+    "choices": ["end", "load", "abort", "wait"],
+    "correctIndex": 2,
+    "explanation": "Slayt normal bitişi end, olağandışı bitişi abort ile gösterir. Her ikisi de süreç yaşam döngüsüne aittir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "os-services-file-calls",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Açık olmayan, konumlandırılabilir bir dosyanın belirli konumundaki baytları okumak için hangi işlem sırası uygundur?",
+    "choices": [
+      "Konumu ayarla → aç → oku → kapat",
+      "Aç → oku → konumu ayarla → kapat",
+      "Aç → konumu ayarla → kapat → oku",
+      "Aç → konumu ayarla → oku → kapat"
+    ],
+    "correctIndex": 3,
+    "explanation": "Geçerli bir açık dosya tanıtıcısı edinilir, okuma konumu ayarlanır, veri okunur ve tanıtıcı kapatılır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [15, 19]
+    }
+  },
+  {
+    "id": "os-services-create-vs-open",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Yeni dosya oluşturma ile oluşturma bayrağı kullanmadan mevcut bir dosyayı salt okumak için açma arasındaki fark nedir?",
+    "choices": [
+      "Oluşturma yeni bir dosya nesnesi yaratır, açma mevcut nesneye bir tanıtıcı edinir.",
+      "Oluşturma yalnız bir tanıtıcı döndürür, açma diskte yeni bir dosya yaratır.",
+      "Açma mevcut dosyanın izinlerini değiştirir, oluşturma yalnız izinleri okur.",
+      "İki işlem de mevcut dosyanın içeriğini boşaltır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Oluşturma ve açma farklı amaçlara hizmet eder. Bazı API’lerde bu davranışlar bayraklarla tek çağrıda birleşebilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "os-services-device-calls",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir sürecin belirli bir aygıtın çalışma modunu belgelenmiş denetim arayüzünden değiştirmesi hangi sistem çağrısı sınıfına en iyi uyar?",
+    "choices": [
+      "Süreç kontrolü",
+      "Aygıt yönetimi",
+      "Bilgi bakımı",
+      "Kabuk komut çözümleme"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aygıta özgü denetim işlemleri aygıt yönetiminin parçasıdır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [15, 20]
+    }
+  },
+  {
+    "id": "os-services-information",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "basic",
+    "question": "Bir uygulamanın işletim sisteminden geçerli tarih ve saati sorgulaması hangi çağrı türüne örnektir?",
+    "choices": ["Program yükleme", "İletişim", "Bilgi bakımı", "Koruma"],
+    "correctIndex": 2,
+    "explanation": "Sistem bilgilerini edinmek bilgi bakımı kapsamındadır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "os-services-communication",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir süreç başka bir sürece bir iş tanımı gönderip sonuç mesajı bekliyor. Gönderme ve alma işlemleri hangi çağrı sınıfındadır?",
+    "choices": ["Koruma", "Önyükleme", "Bilgi bakımı", "İletişim"],
+    "correctIndex": 3,
+    "explanation": "Mesaj gönderme ve alma süreçler arasında veri taşır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [22]
+    }
+  },
+  {
+    "id": "os-services-permission-call",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Slaytın, kaynak erişimine izin vermek veya izni kaldırmak için tanımladığı set permission işlemi hangi sistem çağrısı grubundadır?",
+    "choices": ["Koruma", "İletişim", "Program yürütme", "Bilgi sorgulama"],
+    "correctIndex": 0,
+    "explanation": "Dosya erişim kuralları, kaynaklara hangi işlemlerin yapılabileceğini belirleyen koruma mekanizmasıdır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [23]
+    }
+  },
+  {
+    "id": "os-services-utility",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir dosyanın adını değiştiren kabuk aracı ile çekirdek dosya çağrısı arasındaki fark hangisidir?",
+    "choices": [
+      "Araç, çekirdekteki sistem çağrısının kendisidir.",
+      "Araç kullanıcı komutunu alır ve çekirdek dosya hizmetini isteyebilir.",
+      "Araç depolama sürücüsüdür ve doğrudan fiziksel blokları yönetir.",
+      "Araç yalnız komutu ayrıştırır ve yeniden adlandırmayı önyükleyiciye bırakır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Sistem programları kullanıcıya kolaylık sağlar. Çekirdeğin dosya işlemlerini yeniden uygulamaları gerekmez.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [19, 24]
+    }
+  },
+  {
+    "id": "os-services-system-status",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir komut kullanılabilir disk alanını ve boş bellek miktarını insanın okuyacağı biçimde yazıyor. Ne tür bir sistem programıdır?",
+    "choices": [
+      "Dil derleyicisi",
+      "Program bağlayıcısı",
+      "Durum bilgisi aracı",
+      "Aygıt sürücüsü"
+    ],
+    "correctIndex": 2,
+    "explanation": "Durum aracı sistemin ölçümlerini ve durum bilgilerini okunabilir biçime getirir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [24]
+    }
+  },
+  {
+    "id": "os-services-loader",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Derlenmiş bir yürütülebilir dosyayı belleğe alıp çalıştırmaya hazırlayan sistem aracı hangi gruba girer?",
+    "choices": [
+      "Kaynak metni düzenleme",
+      "Sistem durum raporlama",
+      "Dosya koruma",
+      "Program yükleme ve yürütme"
+    ],
+    "correctIndex": 3,
+    "explanation": "Program yükleyicisi yürütülebilir imajı çalışma ortamına hazırlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "os-services-policy",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "CPU’nun hangi sürece verileceğini önceliğe göre seçmek ile seçilen sürecin bağlamını yüklemek nasıl ayrılır?",
+    "choices": [
+      "Öncelik seçimi politika, bağlam yükleme mekanizmadır.",
+      "Öncelik seçimi mekanizma, bağlam yükleme politikadır.",
+      "İkisi de politikadır, çünkü ikisi de CPU ile ilgilidir.",
+      "İkisi de mekanizmadır, çünkü ikisi de kodla uygulanır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Politika ne yapılacağını seçer. Mekanizma seçimi uygulayacak yeteneği sağlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [26]
+    }
+  },
+  {
+    "id": "os-services-policy-flexibility",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Bir sistem, süreçlerin bağlamını değiştiren kodu koruyarak sıra seçimini FIFO’dan önceliğe dönüştürebiliyor. Bu neyi gösterir?",
+    "choices": [
+      "Seçim mekanizması değişmiştir, hangi sürece öncelik verileceği aynı kalmıştır.",
+      "Seçim politikası, bağlam değiştirme mekanizmasından ayrılmıştır.",
+      "Bağlam değiştirme politikası değişmiştir, FIFO seçim mekanizması korunmuştur.",
+      "FIFO ve öncelik, farklı bağlam saklama biçimleri kullanmak zorundadır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Aynı bağlam değiştirme mekanizması farklı sıra seçme politikalarının kararlarını uygulayabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [26]
+    }
+  },
+  {
+    "id": "os-services-design-goals",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Kullanıcı kolay etkileşim, çekirdek geliştiricisi bakım kolaylığı istiyor. Bunlar sırasıyla hangi tasarım hedefi türleridir?",
+    "choices": [
+      "Sistem hedefi ve kullanıcı hedefi",
+      "İki kullanıcı hedefi",
+      "Kullanıcı hedefi ve sistem hedefi",
+      "İki sistem hedefi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Arayüz ve kullanım hedefleriyle bakım, güvenilirlik ve yönetilebilirlik gibi sistem hedefleri farklı ölçütlerdir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [26]
+    }
+  },
+  {
+    "id": "os-services-portability",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Çekirdeğin geniş bir bölümü yüksek seviyeli dille, az bir bölümü mimariye özgü kodla yazılmış. Donanım değişiminde ne yarar sağlar?",
+    "choices": [
+      "Yeni donanımın tüm düşük düzeyli kodu kendiliğinden aynen çalıştırması garanti olur.",
+      "Yüksek seviyeli kod, derleyici ve donanım arayüzü gereksinimini kaldırır.",
+      "Her donanım için bütün işletim sisteminin makine dilinde yeniden yazılması gerekir.",
+      "Donanıma bağımlı çalışmanın daha küçük bir bölgede yoğunlaşması taşımayı kolaylaştırabilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Taşınabilir kod ile mimariye bağımlı parçaların ayrılması uyarlanacak kod yüzeyini azaltır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [27]
+    }
+  },
+  {
+    "id": "os-services-simple-design",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir sistemde uygulama kodu alt düzey aygıt işlevlerine iyi tanımlanmış katman sınırları olmadan erişiyor. Bu en çok hangi yapıyla uyumludur?",
+    "choices": [
+      "Az yapılandırılmış basit tasarım",
+      "Katı katmanlı tasarım",
+      "Zorunlu mesaj tabanlı mikroçekirdek",
+      "Sanal makine yalıtımı"
+    ],
+    "correctIndex": 0,
+    "explanation": "Basit MS-DOS örneğinde işlev düzeyleri iyi ayrılmamıştır. Katı katmanlama bu tür geçişleri sınırlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [28]
+    }
+  },
+  {
+    "id": "os-services-unix-division",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Erken UNIX’te sistem programları kullanıcıya araç sunarken dosya sistemi ve CPU zamanlama kodu nerede kümelenir?",
+    "choices": [
+      "Sistem kitaplıklarında",
+      "Çekirdek tarafında",
+      "Kabuğun komut yorumlayıcısında",
+      "Bağımsız kullanıcı alanı sunucularında"
+    ],
+    "correctIndex": 1,
+    "explanation": "Erken UNIX ayrımında temel hizmetler çekirdekte, birçok kullanıcı aracı sistem programları katmanındadır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [29]
+    }
+  },
+  {
+    "id": "os-services-layers-direction",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Katı katmanlı tasarımda bir üst katman karmaşık işlemi tamamlamak için nereden hizmet alır?",
+    "choices": [
+      "Yalnızca kendi üstündeki katmandan",
+      "Her alt katmanın özel veri yapısından doğrudan",
+      "Tanımlı arayüzü üzerinden daha alt katmandan",
+      "Kullanıcı sürecinin rastgele bellek alanından"
+    ],
+    "correctIndex": 2,
+    "explanation": "Katman alt düzeyin sunduğu arayüze dayanır ve uygulama ayrıntılarını bilmek zorunda değildir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [30, 31]
+    }
+  },
+  {
+    "id": "os-services-layers-test",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Her alt katmanın arayüzü doğrulandıktan sonra bir üst katman sınanıyor. Bu yöntemin dayandığı özellik nedir?",
+    "choices": [
+      "Daha alt katmanlar hata ayıklarken üst katman hizmetlerine bağımlıdır.",
+      "Sınama için her katman donanıma doğrudan erişmek zorundadır.",
+      "Katman arayüzü yerine tüm özel veri yapıları ortak kullanılır.",
+      "Bağımlılıklar aşağı yönlü ve arayüzler tanımlıdır."
+    ],
+    "correctIndex": 3,
+    "explanation": "Daha alt katmanların davranışı doğrulandığında üst katman kendi arayüzü ve varsayımları üzerinden sınanabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-services-layers-overhead",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Tek bir G/Ç isteği, her biri yalnız alt katmanına çağrı yapan birkaç katmandan geçiyor. Yapısal sadeliğin olası bedeli nedir?",
+    "choices": [
+      "Her ara çağrının ve dönüşün ek maliyet getirebilmesi",
+      "Aygıt kesmelerinin tümünün yazılım yoklamasına dönüşmesi",
+      "Her alt katmanın ayrı bir kullanıcı sürecine taşınması",
+      "Her çağrıda dosya izinlerinin yeniden kurulmak zorunda olması"
+    ],
+    "correctIndex": 0,
+    "explanation": "Katman sınırları tasarımı kolaylaştırabilir, fakat her katmanda ek çağrı ve veri işleme oluşabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-services-microkernel",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Dosya hizmeti kullanıcı alanına taşınırken temel IPC çekirdekte bırakılıyor. Hangi yapı hedeflenmiştir?",
+    "choices": [
+      "Yüklenebilir çekirdek modülleri",
+      "Mikroçekirdek",
+      "Geleneksel monolitik çekirdek",
+      "Katı katmanlı çekirdek"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mikroçekirdek az sayıda temel işlevi çekirdekte tutar. Diğer hizmetler mesajlarla erişilen ayrı süreçlerde çalışabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [32, 33]
+    }
+  },
+  {
+    "id": "os-services-microkernel-fault",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Ayrı kullanıcı alanı sunucusu olarak çalışan dosya hizmeti çökerse, çekirdek içi karşılığına göre hangi sonuç tasarım açısından daha olasıdır?",
+    "choices": [
+      "Dosya erişimi kesilmez, çünkü ayrı süreç otomatik olarak yeniden başlar.",
+      "Dosya hizmetinin çökmesi çekirdeğin de aynı anda çökmesini zorunlu kılar.",
+      "Dosya erişimi kesilebilir, çekirdeğin çalışması sürebilir.",
+      "Dosya hizmetinin çökmesi yalnız kernel kipinde gerçekleşebilir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Kullanıcı alanındaki adres alanı sınırı hatayı yalıtabilir. Hizmetin kendisi yine de kullanılamaz hale gelebilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [32, 33]
+    }
+  },
+  {
+    "id": "os-services-microkernel-cost",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Çekirdek içindeki doğrudan hizmet çağrısı kullanıcı alanındaki bir sunucuyla değiştirildi. Hangi ek maliyet özellikle incelenmelidir?",
+    "choices": [
+      "Her istekte sürücünün yeniden yüklenmesi",
+      "Her dosyanın tam içeriğinin zorunlu olarak kopyalanması",
+      "Aynı CPU çekirdeğinde fiziksel aygıt gecikmesinin artması",
+      "Mesaj aktarımı ve kullanıcı-çekirdek geçişleri"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sunucuya erişim için kullanılan IPC ve bağlam geçişleri doğrudan çağrıya göre ek iş yaratabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [32, 33]
+    }
+  },
+  {
+    "id": "os-services-loadable-module",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Çalışan bir sisteme yeni bir dosya sistemi desteği çekirdeği baştan derlemeden ekleniyor ve kod çekirdek kipinde çalışıyor. Hangi model uygundur?",
+    "choices": [
+      "Yüklenebilir çekirdek modülü",
+      "Kullanıcı alanı mikroçekirdek sunucusu",
+      "Kabuk komut takma adı",
+      "Önyükleme sırasında sabitlenmiş tek program"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yüklenebilir modüller çalışan çekirdeğe belirlenmiş arayüzler üzerinden çekirdek kodu ekleyebilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [34]
+    }
+  },
+  {
+    "id": "os-services-module-risk",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "İki sürücüden biri ayrı kullanıcı süreci, diğeri yüklenebilir çekirdek modülü olarak çalışıyor. Modülerliğin yalıtım anlamına gelmediği hangi durumdan anlaşılır?",
+    "choices": [
+      "Modül arayüzü kullanınca ayrı adres alanı kendiliğinden oluşur.",
+      "Modül hatası çekirdek kipinde oluşabilir ve sistemi etkileyebilir.",
+      "Ayrı kullanıcı süreci de çekirdek modülü ile aynı ayrıcalıklara sahiptir.",
+      "Yüklenebilir modül, çekirdek kipine geçmeden yürütülür."
+    ],
+    "correctIndex": 1,
+    "explanation": "Çekirdek modülü dinamik yüklenebilir ama yürütüldüğü ayrıcalık alanı değişmez.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [32, 34]
+    }
+  },
+  {
+    "id": "os-services-module-vs-layer",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir sistemde iki yüklenebilir çekirdek modülü tanımlı arayüzler üzerinden birbirini çağırabiliyor. Katı katmanlardan farkı nedir?",
+    "choices": [
+      "Bir modül yalnız kendisinden sonra yüklenen modülleri çağırabilir.",
+      "Modüller birbirini tanımlı arayüz üzerinden çağıramaz.",
+      "Modül ilişkileri sabit bir katman sırasına uymak zorunda değildir.",
+      "Katmanlı yapıda çağrılar yalnız üst katmanlara gider."
+    ],
+    "correctIndex": 2,
+    "explanation": "Modüller uygun arayüzleri kullandığında katman numaralarına bağlı olmadan bağlanabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [31, 34]
+    }
+  },
+  {
+    "id": "os-services-hybrid",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir tasarım, farklı çekirdek yapılarından mekanizmaları aynı sistemde birleştiriyor. Hangi terim bunu en iyi karşılar?",
+    "choices": [
+      "Katı katmanlama",
+      "Tek kullanıcılı kip",
+      "Aygıt sanallaştırması",
+      "Hibrit yapı"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hibrit yapılar performans ve tasarım ihtiyaçlarına göre birden fazla yapı yaklaşımını birleştirir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [35, 36]
+    }
+  },
+  {
+    "id": "os-services-android-stack",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Android mimarisinde uygulama çerçevesi yerine Linux çekirdek katmanına ait iş hangisidir?",
+    "choices": [
+      "Temel bellek ve süreç yönetimi",
+      "Uygulama ekranlarının düzenlenmesi",
+      "Uygulamaya ait iş kurallarının yürütülmesi",
+      "Kullanıcıya ait gezinme akışının tasarlanması"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linux çekirdeği alt düzey kaynak yönetimi sağlar. Uygulama çerçevesi bunun üzerinde çalışır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [38]
+    }
+  },
+  {
+    "id": "os-services-dump",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir uygulama çöktü ve geliştirici hata anındaki süreç belleğini incelemek istiyor. En uygun çıktı hangisidir?",
+    "choices": [
+      "Çekirdek bellek dökümü",
+      "Süreç bellek dökümü (core dump)",
+      "CPU kullanım örneklemesi",
+      "Uygulamanın çalışma günlüğü"
+    ],
+    "correctIndex": 1,
+    "explanation": "Süreç dökümü hata anındaki yürütme ve bellek durumunu incelemeye yardımcı olur.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [13, 39]
+    }
+  },
+  {
+    "id": "os-services-crash-dump",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Hata tek uygulama yerine çekirdeğin çalışmasını durduruyor. Olayı sonradan incelemek için hangi kayıt hedeflenir?",
+    "choices": [
+      "Tek sürece ait kullanıcı alanı bellek dökümü",
+      "Olağan sonlandırma durum kodu",
+      "Sistem çökme dökümü",
+      "Örneklenmiş işlemci kullanım grafiği"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sistem çökme dökümü, yakalama yapılandırılmışsa çekirdeğin arıza anındaki durumunu incelemek için bellek görüntüsü sağlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [39]
+    }
+  },
+  {
+    "id": "os-services-tuning",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Yanıt süresi kötü ama hangi bileşenin darboğaz olduğu bilinmiyor. Ayar yapmadan önce ilk doğru adım nedir?",
+    "choices": [
+      "Rastgele bir sistem hizmetini kaldırmak",
+      "Çekirdeği ölçüm yapmadan farklı mimariyle değiştirmek",
+      "Tüm kullanıcıların önceliklerini aynı anda artırmak",
+      "CPU, bellek ve G/Ç gibi ilgili kaynakların kullanımını ölçmek"
+    ],
+    "correctIndex": 3,
+    "explanation": "Performans iyileştirmesinde önce ölçümle darboğazı belirlemek gerekir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [40]
+    }
+  },
+  {
+    "id": "os-services-sysgen",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Aynı işletim sistemi farklı aygıt ve bellek düzenlerine sahip makineler için hazırlanıyor. Sistemin üretilmesi veya yapılandırılması (SYSGEN) neyi hedefler?",
+    "choices": [
+      "Kurulumun hedef donanım yapılandırmasına uyarlanmasını",
+      "Her kullanıcı programının kaynak kodunun kopyalanmasını",
+      "Her açılışta yeni bir kullanıcı arayüzü seçilmesini",
+      "Yürütülen her sürecin adres alanının sıfırlanmasını"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sistem oluşturma, işletim sistemi yapılandırmasını donanım ve kurulum gereksinimlerine uyarlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [41]
+    }
+  },
+  {
+    "id": "os-services-boot-order",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Önyüklemeyi olağan bir uygulamanın yüklenmesinden ayıran olay hangisidir?",
+    "choices": [
+      "Önyükleme, zaten çalışan çekirdeğin yeni bir kullanıcı programını yüklemesidir.",
+      "Önyükleme, olağan program yürütme ortamı kullanılmadan önce çekirdeği başlatır.",
+      "Önyükleme, kabuk çalışmaya başladıktan sonra çekirdeği belleğe alır.",
+      "Önyükleme ile uygulama yükleme aynı yüklü çekirdek hizmetine dayanır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Bootstrap işletim sistemi yürütme ortamını hazırlar, oysa olağan program yükleme bu ortamı kullanır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [25, 42]
+    }
+  },
+  {
+    "id": "os-services-api-failure",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Bir uygulama dosya açma API’sini doğru parametrelerle çağırıyor ancak dosyaya okuma izni yok. API’nin varlığı neden başarı garantilemez?",
+    "choices": [
+      "Geçerli parametreler başarılı erişim için tek koşuldur.",
+      "API erişim denetimini çekirdekten alıp uygulamaya bırakır.",
+      "Arayüz isteği iletir, işletim sistemi erişim kurallarını ayrıca uygular.",
+      "Dosya izni yalnız yazma isteklerinde kontrol edilir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Sistem çağrısı sınırında isteğin biçimi kadar başvuranın kaynak üzerindeki yetkisi de önemlidir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [10, 23]
+    }
+  },
+  {
+    "id": "os-services-foreground",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir kabuk bir işi arka planda başlatıp sonraki komut için hemen istem gösteriyor. Hangi davranış bunu sağlar?",
+    "choices": [
+      "Kabuk child işlemini başlatıp sonlanana kadar bekler.",
+      "Kabuk, yeni girdiyi ancak çocuğun ilk G/Ç işlemi tamamlanınca alır.",
+      "Kabuk ve çocuk aynı yürütme akışında sırayla komut işler.",
+      "Kabuk, çocuğun bitmesini beklemeden komut almaya devam eder."
+    ],
+    "correctIndex": 3,
+    "explanation": "Arka plan çalıştırmada kabuk çocuk süreç bitene kadar bloke olmaz. İki süreç ayrı ayrı zamanlanabilir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [18]
+    }
+  },
+  {
+    "id": "os-services-dual-services",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Bir iş önce dosya okuyup sonuç yazıyor, sonra kullandığı CPU süresi raporlanıyor. İki sistem hizmeti hangi sırayla örneklenmiştir?",
+    "choices": [
+      "Dosya sistemi işlemleri, kullanım muhasebesi",
+      "Kullanım muhasebesi, koruma",
+      "Kaynak tahsisi, önyükleme",
+      "İletişim, hata algılama"
+    ],
+    "correctIndex": 0,
+    "explanation": "İlk iş dosya verisiyle çalışır. Sonraki kayıt kaynak tüketimini ölçen muhasebe işlevine aittir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [6, 7]
+    }
+  },
+  {
+    "id": "os-services-gui-selection",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Dosya simgesine çift tıklayıp uygulamanın başlatılmasında simge hangi katmanın öğesidir?",
+    "choices": [
+      "Çekirdeğin sistem çağrısı tablosu",
+      "Grafik kullanıcı arayüzü",
+      "Aygıtın G/Ç denetim kaydı",
+      "Yürütülebilir dosyanın program sayacı"
+    ],
+    "correctIndex": 1,
+    "explanation": "Simgeler dosya, eylem veya uygulamaları kullanıcıya temsil eder. Gerçek başlatma için alttaki işletim sistemi hizmeti kullanılır.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [9]
+    }
+  },
+  {
+    "id": "os-services-system-vs-app",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Bir derleme ve bağlama aracı neden işletim sistemi çekirdeğinin parçası olmak zorunda değildir?",
+    "choices": [
+      "Program geliştirme araçları her komut için doğrudan aygıt erişimi gerektirir.",
+      "Sistem programı olmak zorunlu olarak çekirdek kipinde çalışmak demektir.",
+      "Program geliştirme kolaylığı sağlar ve normal işletim sistemi çağrılarını kullanabilir.",
+      "Bağlama işlemi önyükleme kodu çalışmadan önce gerçekleşir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Sistem yardımcıları çekirdek hizmetlerinin üzerinde çalışabilir. Sağladıkları geliştirme işlevi çekirdeği genişletmelerini gerektirmez.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [24, 25]
+    }
+  },
+  {
+    "id": "os-services-resource-vs-accounting",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Bir sistem bir işe en çok iki çekirdek verecek ve sonra işin kullandığı CPU süresini kaydedecek. İlk ve ikinci işlev sırasıyla hangileridir?",
+    "choices": [
+      "Kullanım muhasebesi, kaynak tahsisi",
+      "Hata algılama, dosya sistemi",
+      "Koruma, önyükleme",
+      "Kaynak tahsisi, kullanım muhasebesi"
+    ],
+    "correctIndex": 3,
+    "explanation": "Çekirdek sınırı kaynak verme kararına aittir. İş bitince tüketimin kaydı muhasebedir.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [7]
+    }
+  },
+  {
+    "id": "os-services-layer-cycle",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "advanced",
+    "question": "Katı katmanlı bir sistemde üst katman A, alt katman B’den hizmet alıyor. B’den A’ya yeni bir çağrı eklemek neden sorun yaratır?",
+    "choices": [
+      "Alt katman üst katmana bağımlı olur ve bir bağımlılık döngüsü oluşur.",
+      "Bağımlılık hâlâ yalnızca aşağı yönlüdür.",
+      "A ile B birbirinden tamamen bağımsız olur.",
+      "Sorun yalnız iki katmanın aynı alt katmanı kullanmasıdır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Aşağı yönlü bağımlılık alt katmanların daha üstteki işlevlerden bağımsız kurulmasını ve sınanmasını sağlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [30, 31]
+    }
+  },
+  {
+    "id": "os-services-program-execution",
+    "courseId": "operating-systems",
+    "topicId": "services",
+    "difficulty": "intermediate",
+    "question": "Kabuk, kullanıcı komutunun hangi dosyayı çalıştıracağını belirledi. Bundan sonra program yükleme ve yürütme hizmetinin görevi nedir?",
+    "choices": [
+      "Komuttaki takma adları ve bağımsız değişkenleri çözmek",
+      "Program imajını belleğe alıp yürütme ortamını hazırlamak",
+      "Biten sürecin CPU kullanımını raporlamak",
+      "Yürütülebilir dosyayı izin denetiminden bağımsız biçimde doğrudan çalıştırmak"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kabuk komutu yorumlayıp hedefi belirler. Yükleyici program imajını ve yürütme ortamını hazırlar.",
+    "source": {
+      "id": "os-week-2",
+      "slides": [8, 25]
+    }
+  }
+]

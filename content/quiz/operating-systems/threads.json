@@ -1,0 +1,984 @@
+[
+  {
+    "id": "os-threads-thread-state",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "basic",
+    "question": "Aynı süreçteki iki thread’in farklı fonksiyon çağrılarından dönebilmesi için hangisi thread başına ayrı olmalıdır?",
+    "choices": [
+      "Yığın ve program sayacı",
+      "Açık dosya tablosunun tamamı",
+      "Çalıştırılabilir kodun disk kopyası",
+      "Sürecin statik veri bölümü"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thread yürütme bağlamı kendi yığınını, yazmaçlarını ve program sayacını içerir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [3]
+    }
+  },
+  {
+    "id": "os-threads-thread-sharing",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir thread süreçteki global sayacı değiştiriyor. Aynı süreçteki başka bir thread hangi nedenle bu veriyle çalışabilir?",
+    "choices": [
+      "Her thread işlemci yazmaçlarının tümünü paylaşır.",
+      "İkisi aynı süreç adres alanını paylaşır.",
+      "İkisi her zaman aynı yığın işaretçisine sahiptir.",
+      "Her thread’e bağımsız bir fiziksel adres uzayı atanır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Global veri süreç düzeyinde ortaktır. Görülme sırası ve eşzamanlı erişim için senkronizasyon gerekebilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [3, 7]
+    }
+  },
+  {
+    "id": "os-threads-file-sharing",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir iş parçacığı dosyayı açtı. Tanıtıcının değeri güvenli biçimde iletildiyse aynı sürecin başka bir iş parçacığı bunu neden kullanabilir?",
+    "choices": [
+      "Dosya tanıtıcısı her iş parçacığı için ayrı bir dosyayı temsil eder.",
+      "Dosya tanıtıcısını kullanmak için iki iş parçacığının yığını ortak olmalıdır.",
+      "Açık dosya tablosu süreç düzeyinde paylaşılır.",
+      "Bir iş parçacığının dosyaya erişmesi diğerine aynı program sayacını vermeyi gerektirir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Süreç kaynakları, ayrı yürütme bağlamlarına sahip thread’ler arasında paylaşılabilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [3, 7]
+    }
+  },
+  {
+    "id": "os-threads-responsiveness",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir arayüz uzun disk işlemini arka plan thread’ine veriyor. Kullanıcı aynı anda pencereyi taşımaya devam edebiliyor. Hangi yarar gözlenir?",
+    "choices": [
+      "Kaynak paylaşımı",
+      "Oluşturma maliyetinden tasarruf",
+      "Çekirdek sayısıyla ölçeklenme",
+      "Tepki verebilirlik"
+    ],
+    "correctIndex": 3,
+    "explanation": "Arka plan işi sürerken arayüz thread’i olaylara yanıt verebilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [6, 7]
+    }
+  },
+  {
+    "id": "os-threads-economy",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Çok sayıda kısa yürütme akışı başlatılacak. Ayrı süreçler yerine thread kullanmak hangi neden yüzünden daha az maliyetli olabilir?",
+    "choices": [
+      "Süreç kaynakları yeniden kurulmadan paylaşılabilir.",
+      "Yeni işin yanıt süresi her zaman daha kısa olur.",
+      "Her iş parçacığı yeni bir adres alanı ve yeni dosya tablosu oluşturur.",
+      "İş parçacığı oluşturmak için zamanlama bilgisi tutulmaz."
+    ],
+    "correctIndex": 0,
+    "explanation": "Thread için bağlam gerekir, fakat süreç adres alanı ve çeşitli kaynaklar mevcut süreçten paylaşılır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [7]
+    }
+  },
+  {
+    "id": "os-threads-server-worker",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Tek akışlı bir sunucuda, uzun isteğin disk sonucunu beklemesi kısa istekleri geciktiriyor. Ayrı zamanlanabilen iş parçacıkları hangi olanağı sağlar?",
+    "choices": [
+      "Disk sonucunu bekleyen istek, disk tamamlanmadan sonlanır.",
+      "Sunucu bir istek bloke iken hazır başka bir isteği işleyebilir.",
+      "Diğer istekler yalnız birinci istek tamamen bitince zamanlanabilir.",
+      "İsteklerin paylaştığı veriler ayrı iş parçacıkları kullanınca otomatik olarak yalıtılır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Ayrı yürütme akışları hizmetleri örtüştürebilir. Paylaşılan veriye erişim yine eşgüdüm ister.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [6, 7]
+    }
+  },
+  {
+    "id": "os-threads-one-core",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Tek donanımsal yürütme akışı olan bir çekirdekte A ve B farklı zaman dilimlerinde sırayla ilerliyor. Bu örnek nasıl sınıflandırılır?",
+    "choices": [
+      "Eşzamanlı ilerleme ve aynı anda fiziksel paralellik var.",
+      "Fiziksel paralellik var, eşzamanlı ilerleme yok.",
+      "Eşzamanlı ilerleme var, aynı anda fiziksel paralellik yok.",
+      "İki iş sırayla çalıştığı için ikisi de yok."
+    ],
+    "correctIndex": 2,
+    "explanation": "Concurrency dilimlerle de sağlanır. Paralellik aynı anda birden fazla yürütme biriminin iş yapmasını gerektirir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [8, 9]
+    }
+  },
+  {
+    "id": "os-threads-parallel-capacity",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "İki ayrı çekirdekte bağımsız A ve B aynı zaman aralığında ilerliyor. Tek çekirdekli zaman paylaşımından farkı nedir?",
+    "choices": [
+      "İki görevin daima tek bir program sayacını kullanması gerekir.",
+      "Her görev diğerinin bitmesiyle başlayabilir.",
+      "Çekirdekler yalnız programlar birbirine bağımlıysa çalışabilir.",
+      "Talimatlar farklı çekirdeklerde aynı anda yürütülebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Ayrı çekirdekler farklı talimat akışlarına eşzamanlı fiziksel yürütme sağlar.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [9, 16]
+    }
+  },
+  {
+    "id": "os-threads-ready-vs-parallel",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Dört hazır CPU-ağırlıklı thread, iki çekirdekli ve çekirdek başına tek akış çalıştıran bir sistemde başlatılıyor. Bir anda en çok kaçı gerçekten yürütülür?",
+    "choices": ["2", "4", "1", "8"],
+    "correctIndex": 0,
+    "explanation": "İki çekirdek aynı anda iki akış yürütür. Diğer hazır akışlar zaman dilimlerini bekleyebilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [9]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-basic",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "basic",
+    "question": "Amdahl modelinde S hangi oranı ifade eder?",
+    "choices": [
+      "İşin tek çekirdekteki süresinin paralel payını",
+      "İşin tek çekirdekteki süresinin seri payını",
+      "Paralel payın bir çekirdeğe düşen bölümünü",
+      "N çekirdekte kalan toplam süre oranını"
+    ],
+    "correctIndex": 1,
+    "explanation": "S, çekirdek sayısı artırılarak bölünemeyen iş payıdır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-four",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "İşin %25’i seri, kalanı kusursuz paralel ve ek maliyet yok. Dört çekirdekle Amdahl modeline göre hızlanma nedir?",
+    "choices": ["4", "3", "16/7", "7/4"],
+    "correctIndex": 2,
+    "explanation": "Payda 0,25 + 0,75/4 = 7/16 olur. Hızlanma bunun tersidir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-limit",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir uygulamada seri bölüm toplam işin %20’si. Çekirdek sayısı çok büyütülürse ideal hızlanma hangi değere yaklaşır?",
+    "choices": ["20", "Sonsuz", "4", "5"],
+    "correctIndex": 3,
+    "explanation": "Paralel bölümün katkısı sıfıra yaklaşır. Geriye 1/0,20 = 5 sınırı kalır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    },
+    "clarificationAr": "الجزء التسلسلي يحدّ من التسريع حتى لو زاد عدد الأنوية كثيرًا."
+  },
+  {
+    "id": "os-threads-amdahl-time",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Tek çekirdekte 100 ms süren işin 40 ms’si seri. Paralel bölüm iki çekirdeğe kusursuz bölünürse toplam süre ne olur?",
+    "choices": ["70 ms", "50 ms", "60 ms", "80 ms"],
+    "correctIndex": 0,
+    "explanation": "Seri 40 ms sabit kalır. Paralel 60 ms iki çekirdekte 30 ms sürer.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-improve",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir program çekirdek sayısı artsa da hızlanma sınırına takılıyor. Amdahl sınırını yükseltmek için hangi değişiklik doğrudan etkilidir?",
+    "choices": [
+      "Seri oranı aynı tutup yalnız çekirdek sayısını artırmak",
+      "Paralelleştirilebilen payı artırarak seri oranı düşürmek",
+      "Aynı seri bölümü çekirdek sayısı kadar tekrarlamak",
+      "Seri ve paralel süreyi eşit oranda kısaltıp seri oranı sabit tutmak"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sınır 1/S olduğundan seri payı düşürmek ulaşılabilir ideal hızlanmayı artırır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-compare",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "A ve B tek çekirdekte eşit zaman alıyor. A’nın seri oranı %10, B’nin %30. Aynı sayıda iki veya daha fazla çekirdekte ve ideal bölünmede hangi uygulama daha çok hızlanır?",
+    "choices": [
+      "B, çünkü daha uzun seri kısmı vardır.",
+      "İkisi de eşit, çünkü tek çekirdekte eşit süre alır.",
+      "A, çünkü daha küçük seri oranına sahiptir.",
+      "Seri oran bu karşılaştırmayı etkilemez."
+    ],
+    "correctIndex": 2,
+    "explanation": "Aynı N için S azaldıkça S + (1 − S)/N azalır ve ideal hızlanma artar.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-amdahl-all-serial",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir iş yükü tamamen seriyse Amdahl modelinde çekirdek eklemenin ideal hızlanması nedir?",
+    "choices": ["N", "1/N", "0", "1"],
+    "correctIndex": 3,
+    "explanation": "S = 1 olduğunda paralel katkı yoktur ve süre değişmez.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-task-split",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Paralelleştirilecek bir uygulamada geliştirici önce hangi bölümlerin birbirinden bağımsız yürütülebileceğini araştırıyor. Hangi zorluğu ele alıyor?",
+    "choices": [
+      "Paralel görevleri belirleme",
+      "Yükü çekirdekler arasında dengeleme",
+      "Girdi verisini parçalara ayırma",
+      "Çalıştırma sıralarını sınama"
+    ],
+    "correctIndex": 0,
+    "explanation": "Paralel iş tasarımının ilk adımı aynı anda çalışabilecek görevleri tanımlamaktır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [12]
+    }
+  },
+  {
+    "id": "os-threads-balance",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Dört bağımsız parçanın süreleri 1, 1, 1 ve 15 ms. Hepsi ayrı çekirdekte başlıyor ve sonuçlar ancak hepsi bitince toplanıyor. Neden daha dengeli bölme yararlı olabilir?",
+    "choices": [
+      "Dört süre toplamı 18 ms olduğundan çekirdekler hep birlikte 18 ms çalışır.",
+      "15 ms süren en uzun parça toplam süreyi belirler, diğer üç çekirdek erken boş kalır.",
+      "Dört sürenin ortalaması 4,5 ms olduğundan sonuçlar bu anda birleştirilebilir.",
+      "İlk parça 1 ms’de bitince diğer parçaların sonuçları da hazır sayılır."
+    ],
+    "correctIndex": 1,
+    "explanation": "Birleşme noktasında herkes en uzun görevi bekler. İş yükünü dengelemek beklemeyi azaltabilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [13]
+    }
+  },
+  {
+    "id": "os-threads-data-dependency",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "B adımı, A’nın hesapladığı çıktıyı doğrudan kullanıyor. Doğru paralelleştirme için ne gerekir?",
+    "choices": [
+      "A ve B’yi farklı çekirdeğe koyup hiçbir sıra kuralı uygulamamak",
+      "İki görevi aynı anda başlatıp sonucu her durumda B’den almak",
+      "B’nin tükettiği değerin A tarafından üretilmiş olmasını sağlayan bağımlılık düzeni",
+      "A’nın çıktısını B bitene kadar saklamamak"
+    ],
+    "correctIndex": 2,
+    "explanation": "Veri bağımlılığı tüketicinin geçerli sonuç hazır olmadan ilerlememesini gerektirir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [14]
+    }
+  },
+  {
+    "id": "os-threads-debug-interleavings",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Tek thread’li programda hiç görülmeyen bir hata paralel sürümde seyrek oluşuyor. Testi zorlaştıran temel neden nedir?",
+    "choices": [
+      "İş parçacıkları aynı kodu çalıştırdığında yürütme sıraları değişmez.",
+      "Bir iş parçacığına aynı önceliği vermek bütün yürütme sıralarını sabitler.",
+      "Her hata, yalnız tek aynı işlem dizisiyle yeniden üretilebilir.",
+      "Yürütmeler arasında iş parçacıklarının adımları farklı sıralarda iç içe geçebilir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Zamanlamaya bağlı davranışın tek bir test çalıştırmasında yeniden oluşması garanti değildir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [15]
+    }
+  },
+  {
+    "id": "os-threads-data-parallel",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir görüntü dört bölgeye ayrılıyor ve her bölgeye aynı filtre uygulanıyor. Bu hangi paralellik türüdür?",
+    "choices": [
+      "Veri paralelliği",
+      "Görev paralelliği",
+      "Yalnız ardışık işleyiş",
+      "Süreç değişimi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aynı işlem veri kümesinin farklı parçalarına eşzamanlı uygulanır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "os-threads-task-parallel",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir çekirdek veriyi sıkıştırırken diğeri aynı girdinin özetini hesaplıyor. Bu örnekte hangi tür baskındır?",
+    "choices": [
+      "Veri paralelliği",
+      "Görev paralelliği",
+      "Tek thread’de zaman paylaşımı",
+      "Önyükleme paralelliği"
+    ],
+    "correctIndex": 1,
+    "explanation": "Çekirdekler aynı veri üzerinde farklı işlemler yapar. Ayrım gerçekleştirilen işe göredir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "os-threads-combined-parallel",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir iş akışında filtre farklı görüntü parçalarında aynı anda uygulanıyor. Ayrıca bağımsız bir çekirdek, girdinin meta verisini dizinliyor. Hangi yorum uygundur?",
+    "choices": [
+      "İki bölüm de yalnız veri paralelliği örneğidir.",
+      "Filtreleme görev paralelliği, bağımsız dizinleme veri paralelliği örneğidir.",
+      "Filtreleme veri paralelliği, bağımsız dizinleme görev paralelliği örneğidir.",
+      "Farklı çekirdekler kullanılsa da çalışma yalnız tek akışta zaman paylaşımıdır."
+    ],
+    "correctIndex": 2,
+    "explanation": "Uygulamanın farklı bölümleri veri bölme ve farklı görevleri eşzamanlı çalıştırma yaklaşımlarını birleştirebilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [16]
+    }
+  },
+  {
+    "id": "os-threads-user-thread",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "basic",
+    "question": "Kullanıcı düzeyinde oluşturulan ve kitaplıkça yönetilen thread ile kernel thread arasındaki temel ayrım nedir?",
+    "choices": [
+      "Her kullanıcı thread’ini çekirdek yönetir, kernel thread’ini uygulama kitaplığı yönetir.",
+      "İki türü de yalnız kullanıcı alanındaki kitaplık zamanlar.",
+      "İki tür de her zaman ayrı çekirdek zamanlama nesnesi olarak doğrudan yönetilir.",
+      "Kullanıcı thread’ini kullanıcı alanındaki kitaplık, kernel thread’ini işletim sistemi yönetir."
+    ],
+    "correctIndex": 3,
+    "explanation": "Yönetimin nerede yapıldığı eşlemenin ve bloklama davranışının temelini oluşturur.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [17, 22]
+    }
+  },
+  {
+    "id": "os-threads-many-to-one-parallel",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Sekiz kullanıcı thread’i tek kernel thread’e eşleniyor. Dört çekirdek olsa bile süreç niçin en fazla bir kullanıcı thread’ini fiziksel olarak yürütür?",
+    "choices": [
+      "Çekirdeğin bu süreç adına zamanlayabildiği tek akış vardır.",
+      "Çekirdek sekiz kullanıcı akışını birbirinden bağımsız zamanlar.",
+      "Kullanıcı kitaplığı, tek taşıyıcıyı eş zamanlı dört çekirdeğe böler.",
+      "Aynı eşlemedeki iş parçacıkları kilit olmasa da aynı anda farklı çekirdeklerde çalışır."
+    ],
+    "correctIndex": 0,
+    "explanation": "Many-to-one düzeninde çekirdek yalnız bir taşıyıcı zamanlar. Kullanıcı thread’leri onun üzerinde sırayla ilerleyebilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [20]
+    }
+  },
+  {
+    "id": "os-threads-many-to-one-block",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Many-to-one modelinde bir kullanıcı thread’i, taşıyıcı kernel thread’i bloke eden sistem çağrısına giriyor. Süreçteki diğer thread’lere ne olur?",
+    "choices": [
+      "Diğerleri otomatik olarak yeni kernel thread’ler oluşturur.",
+      "Taşıyıcı bloke olduğundan onlar da o anda yürütülemez.",
+      "Diğerleri her biri ayrı bir çekirdekte aynı anda çalışır.",
+      "Bloke çağrı uygulamaya her zaman senkronizasyon kesmesi gönderir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Paylaşılan tek kernel thread çalışamıyorsa diğer kullanıcı thread’lerine CPU sağlayamaz.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [20]
+    }
+  },
+  {
+    "id": "os-threads-one-to-one-block",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir one-to-one uygulamasında bir thread’in G/Ç çağrısı kendi kernel thread’ini bloke ediyor. Başka bir hazır thread için hangisi doğrudur?",
+    "choices": [
+      "İlk thread’in G/Ç çağrısı dönene kadar tüm süreç Waiting olur.",
+      "Hazır thread çalışabilmek için bloke olan kernel thread’i devralmalıdır.",
+      "Kendi kernel thread’i üzerinden çalışmaya devam edebilir.",
+      "Çekirdek, hazır thread’i ancak ilk thread sonlanırsa zamanlayabilir."
+    ],
+    "correctIndex": 2,
+    "explanation": "Her kullanıcı thread’inin ayrı kernel eşlemesi vardır. Bir eşlemenin bloklanması diğerini zorunlu olarak durdurmaz.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [19, 20]
+    }
+  },
+  {
+    "id": "os-threads-one-to-one-cost",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "One-to-one eşlemede kullanıcı thread sayısı binlere çıktığında hangi maliyet özellikle artabilir?",
+    "choices": [
+      "Her thread için uygulama kodunun ayrı disk kopyası",
+      "Her thread için aynı süreç verisinin yeni bir adres alanına kopyası",
+      "Her thread için tüm açık dosyaların yeni bir dosya sistemine taşınması",
+      "Kernel thread nesneleri ve bunların zamanlama yükü"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bire bir eşlemede her yeni kullanıcı thread’i kernel tarafında ayrı bir eşleme ve yönetim maliyeti getirir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [19]
+    }
+  },
+  {
+    "id": "os-threads-many-to-many-bound",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Altı hazır kullanıcı thread’i iki kernel thread üzerinde çoğullanıyor. Dört çekirdekli sistemde ek taşıyıcı açılmadan en fazla kaç kullanıcı thread’i aynı anda yürütülebilir?",
+    "choices": ["2", "4", "6", "1"],
+    "correctIndex": 0,
+    "explanation": "Kullanıcı thread’leri iki kernel akışıyla taşınır. Çekirdek sayısı daha yüksek olsa da bu eşleme sınırı ikidir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [21]
+    }
+  },
+  {
+    "id": "os-threads-many-to-many-choice",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Kullanıcı düzeyinde çok sayıda thread istiyoruz, ancak her birine kernel thread ayırmak istemiyoruz. Tek taşıyıcının da darboğaz olmasını istemiyoruz. Uygun model hangisidir?",
+    "choices": [
+      "Many-to-one",
+      "Many-to-many",
+      "One-to-one",
+      "Tek thread’li süreç"
+    ],
+    "correctIndex": 1,
+    "explanation": "Many-to-many birden fazla taşıyıcı ile çok sayıda kullanıcı thread’ini daha az kernel thread üzerinde çoğullayabilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [19, 20, 21]
+    }
+  },
+  {
+    "id": "os-threads-pthread-standard",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Pthreads iki farklı işletim sisteminde uygulanıyorsa taşınabilir kod bunlardan ne bekleyebilir?",
+    "choices": [
+      "Aynı kullanıcı–çekirdek thread eşlemesini",
+      "Aynı zamanlama sırasını",
+      "POSIX thread işlevlerinin tanımlı API davranışını",
+      "Süreç başına aynı üst iş parçacığı sınırını"
+    ],
+    "correctIndex": 2,
+    "explanation": "Pthreads bir arayüz standardıdır. Sistemler iç uygulamayı farklı yapabilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [22, 23]
+    }
+  },
+  {
+    "id": "os-threads-pthread-start",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir pthread_create çağrısına verilen işlev işaretçisi yeni thread için neyi belirler?",
+    "choices": [
+      "Çağıran thread’in açık dosya sınırını",
+      "Sürecin disk üzerindeki başlangıç adresini",
+      "Tüm thread’lerin sonlandırılma sırasını",
+      "Yürütmeye başlayacağı rutini"
+    ],
+    "correctIndex": 3,
+    "explanation": "Oluşturma çağrısı, yeni thread’in hangi başlangıç işlevini çalıştıracağını alır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [24]
+    }
+  },
+  {
+    "id": "os-threads-pthread-join",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Ana thread, hesaplamayı yapan worker’ın tamamlanmış sonucunu okumak istiyor. Tamamlanmayı beklemek için hangi işlem uygundur?",
+    "choices": [
+      "Worker üzerinde pthread_join çağırmak",
+      "Sadece pthread_create dönüşünü kontrol etmek",
+      "Worker’a ikinci kez aynı giriş işlevini vermek",
+      "İki thread için aynı yığın adresini seçmek"
+    ],
+    "correctIndex": 0,
+    "explanation": "Başarılı oluşturma sadece worker’ın başlatılmasını sağlar. join onun sonlanmasını bekler.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [24, 25]
+    }
+  },
+  {
+    "id": "os-threads-join-all",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Üç bağımsız ve join edilebilir worker’ın çalışması örtüşebilsin, ama hiçbir sonuç tamamlanmadan okunmasın. Hangi oluşturma ve bekleme düzeni uygundur?",
+    "choices": [
+      "Her worker’ı başlattıktan hemen sonra join yapıp bir sonrakini ancak öyle başlat.",
+      "Üçünü başlat, her biri için join yap, sonra sonuçları birleştir.",
+      "Üçünü başlat, yalnız ilkini join et, sonra üçünün sonucunu oku.",
+      "Üçünü başlat ve beklemeden sonuçları birleştir."
+    ],
+    "correctIndex": 1,
+    "explanation": "Hepsini başta oluşturmak yürütmenin örtüşmesini sağlar. Her join, ilgili worker sonucunun tamamlanmasını bekler.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [25]
+    }
+  },
+  {
+    "id": "os-threads-windows-wait",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Windows örneğinde ana iş parçacığı, çalışanın bitmesini WaitForSingleObject ile bekliyor. Bu çağrıya hangi değer verilir?",
+    "choices": [
+      "CreateThread’in çıkış parametresine yazdığı iş parçacığı kimliği",
+      "Çalışan iş parçacığının döndüreceği çıkış durumu",
+      "CreateThread’in döndürdüğü iş parçacığı tanıtıcısı (handle)",
+      "Çalışana verilen argümanın adresi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thread handle’ı bekleme işlemlerinde worker’ın durumunu temsil eden tanıtıcıdır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [27]
+    }
+  },
+  {
+    "id": "os-threads-java-start",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Java’daki slayt örneğinde new Thread(görev) ile oluşturulan ve henüz başlatılmamış platform iş parçacığında, run() doğrudan çağrılırsa start() çağrısından farkı nedir?",
+    "choices": [
+      "run(), ayrı yürütmeyi başlatır. start(), görevi çağıranın akışında yürütür.",
+      "İkisi de çağıran akışta yürütür, yalnızca çalışma önceliği değişir.",
+      "İkisi de ayrı yürütme başlatır, yalnızca bitişi bekleme biçimi değişir.",
+      "run(), görevi çağıran akışta çalıştırır. start(), ayrı yürütmeyi başlatır."
+    ],
+    "correctIndex": 3,
+    "explanation": "run işin gövdesidir. Yeni thread’in planlanmasını start başlatır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [28, 29]
+    }
+  },
+  {
+    "id": "os-threads-java-join",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Java örneğinde hesaplama thread’i sonucu paylaşılan bir nesneye yazıyor. Ana thread sonucun tamamlanmasını hangi çağrıyla güvenceye alır?",
+    "choices": [
+      "Hesaplama thread’inde join()",
+      "Hesaplama thread’inde start() çağrısını tekrarlama",
+      "Ana thread’de run() çağırma",
+      "Mevcut nesneyi çalışan thread’den ayırma"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hesaplama thread’i üzerinde zaman sınırı olmayan join() çağrısı normal döndüğünde hedef thread sonlanmıştır. start() tek başına bu beklemeyi sağlamaz.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [29]
+    }
+  },
+  {
+    "id": "os-threads-implicit",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir uygulama her iş için ayrı thread yaratmak yerine paralel çalışacak kodu bildiriyor ve yürütme ortamı thread’leri yönetiyor. Bu yaklaşım nedir?",
+    "choices": [
+      "Elle bağlam değiştirme",
+      "Dolaylı thread oluşturma",
+      "Thread başına ayrı süreç",
+      "Katı katmanlama"
+    ],
+    "correctIndex": 1,
+    "explanation": "Implicit threading, thread yaşam döngüsü ve zamanlama işinin bir kısmını derleyiciye veya çalışma zamanına devreder.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [30]
+    }
+  },
+  {
+    "id": "os-threads-pool-reuse",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Web sunucusuna art arda çok sayıda kısa istek geliyor. Her istekte thread oluşturma maliyetini hangi havuz özelliği azaltır?",
+    "choices": [
+      "Her iş için yeni bir adres alanı açılması",
+      "Havuzdaki her thread’in yalnız bir kez çalıştırılması",
+      "Mevcut worker thread’lerin yeniden kullanılması",
+      "İsteklerin her defasında yeni çekirdeğe taşınması"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hazır worker sonraki isteği de işleyebilir. Böylece her istek için oluşturma ve yok etme maliyeti ödenmez.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-threads-pool-queue",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Dört worker’lı, büyümeyen bir thread havuzu aynı anda on iş alıyor. Her worker bir seferde tek iş yürütüyorsa aynı anda en çok kaç iş worker’da bulunabilir?",
+    "choices": ["10", "6", "14", "4"],
+    "correctIndex": 3,
+    "explanation": "Her worker bir işi yürütüyorsa dört iş aynı anda işlenir. Diğer altısı boş worker bekler.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-threads-pool-bound",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir hizmet bir anda gelen binlerce istek yüzünden sınırsız thread oluşturup bellek tüketiyor. Hangi değişiklik doğrudan bu riski azaltır?",
+    "choices": [
+      "Sınırlı sayıda worker ile bir thread havuzu kullanmak",
+      "Her isteğe daha büyük bir yığın vermek",
+      "Bir iş için birden fazla yeni thread açmak",
+      "Sürekli yeni süreçler başlatıp worker’ları korumamak"
+    ],
+    "correctIndex": 0,
+    "explanation": "Worker sayısını sınırlamak yürütme akışları için ayrılan kaynakları denetim altında tutar.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [31]
+    }
+  },
+  {
+    "id": "os-threads-openmp-directive",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Slayttaki basit OpenMP örneğinde döngü bölüştürmeden bir kod bloğunu bir iş parçacığı takımıyla yürütmek için hangi direktif kullanılır?",
+    "choices": [
+      "#pragma omp critical",
+      "#pragma omp parallel",
+      "#pragma omp parallel for",
+      "#pragma omp single"
+    ],
+    "correctIndex": 1,
+    "explanation": "OpenMP parallel direktifi paralel bölge oluşturur. critical ise bir bölgeye eşzamanlı girişleri sınırlar.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [35]
+    }
+  },
+  {
+    "id": "os-threads-openmp-region",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "OpenMP parallel bloğunda sıradan bir printf var ve takımın dört thread’i bloğun başından yürütmeye giriyor. İş paylaşımı direktifi yoksa printf kaç kez çağrılır?",
+    "choices": ["1", "0", "4", "16"],
+    "correctIndex": 2,
+    "explanation": "parallel bölgesinin gövdesini takımdaki her thread yürütür. İş paylaşımı ayrıca belirtilmelidir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [35]
+    }
+  },
+  {
+    "id": "os-threads-gcd",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "GCD kullanan bir uygulama, bir işi doğrudan thread yaratmadan yürütme ortamına veriyor. İşi nereye teslim eder?",
+    "choices": [
+      "İşletim sisteminin hazır iş parçacığı kuyruğuna doğrudan",
+      "Aygıtın tamamlanma kuyruğuna",
+      "Mevcut bir iş parçacığının çağrı yığınına",
+      "Dispatch kuyruğuna"
+    ],
+    "correctIndex": 3,
+    "explanation": "GCD iş bloklarını kuyruklar. Uygulama onları çalıştıran worker’ları tek tek yönetmez.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [36]
+    }
+  },
+  {
+    "id": "os-threads-fork-thread",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Çok iş parçacıklı bir sürecin çocuğu hemen başarılı bir exec ile farklı bir program çalıştıracak. Ebeveynin bütün iş parçacıklarını çocuğa kopyalamak bu kullanımda neden gereksizdir?",
+    "choices": [
+      "exec, program imajını değiştirir ve eski iş parçacıklarını sürdürmez.",
+      "exec, önceki iş parçacıklarını yeni programla aynı anda yürütür.",
+      "Çocuk yeni programı ancak ebeveynin bütün iş parçacıkları sonlanınca yükleyebilir.",
+      "exec yeni bir süreç yaratır, mevcut çocuk eski programı sürdürür."
+    ],
+    "correctIndex": 0,
+    "explanation": "Başarılı exec yeni program imajıyla yürütmeye başlar. Önceki programın diğer iş parçacıkları yeni imajda sürdürülmez.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [37]
+    }
+  },
+  {
+    "id": "os-threads-signal-sync",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir iş parçacığının talimatı geçersiz bellek erişimi nedeniyle senkron bir sinyal üretiyor. Sinyal hangi yürütme akışına yönelir?",
+    "choices": [
+      "Süreçteki bütün iş parçacıklarına",
+      "Hatalı talimatı yürüten iş parçacığına",
+      "Aynı süreçte zamanlayıcının bir sonraki seçeceği iş parçacığına",
+      "Sürecin ilk başlatılan iş parçacığına"
+    ],
+    "correctIndex": 1,
+    "explanation": "Senkron sinyal belirli bir yürütmenin neden olduğu olaya bağlıdır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [37, 38]
+    }
+  },
+  {
+    "id": "os-threads-signal-async",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Bir süreç dışından gelen zamanlanmış alarmın sinyali, alıcı thread’in yürüttüğü belirli talimat nedeniyle oluşmamış. Zaman ilişkisi nasıldır?",
+    "choices": [
+      "Hatalı erişimin tetiklediği senkron bir sinyal",
+      "Sistem çağrısı sonucunun senkron bildirimi",
+      "Asenkron bir olay bildirimi",
+      "Bir iş parçacığının sonlanmasını bekleyen join bildirimi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Asenkron sinyal, alıcının belirli bir talimatı yürütmesinden bağımsız bir olayla oluşur.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [37, 38]
+    }
+  },
+  {
+    "id": "os-threads-cancel-deferred",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "İptal etkin, ancak izin verilen bir iptal noktasına ulaşana kadar istek işlenmiyor. Bu hangi iptal türüdür?",
+    "choices": [
+      "Asenkron iptal",
+      "İptalin devre dışı olması",
+      "İptal isteğinin iptal noktasında yok sayılması",
+      "Ertelenmiş iptal"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ertelenmiş iptal, etkin bir iptal isteğini bir sonraki iptal noktasında işler. Asenkron iptal bu noktaya ulaşmayı beklemez.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [39]
+    }
+  },
+  {
+    "id": "os-threads-cancel-risk",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir iş parçacığı mutex tutarken asenkron iptal ediliyor. Uygun bir temizleme işleyicisi yoksa hangi risk ortaya çıkar?",
+    "choices": [
+      "Kilit bırakılamayabilir veya veri yarım güncellenmiş kalabilir.",
+      "Bütün kaynaklar mutlaka düzgün şekilde serbest bırakılır.",
+      "Kilit tutan thread asenkron olarak hiçbir koşulda durdurulamaz.",
+      "Paylaşılan veri otomatik olarak bir önceki disk kaydına döner."
+    ],
+    "correctIndex": 0,
+    "explanation": "İptal kritik güncellemeyi yarıda kesebilir. Normal bırakma adımı yürütülmezse kilit de elde kalabilir.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [39]
+    }
+  },
+  {
+    "id": "os-threads-cancel-disabled",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Pthreads worker iptali geçici olarak devre dışı bırakmış. O anda gelen iptal isteği için hangisi doğrudur?",
+    "choices": [
+      "İstek iptal kapalıyken gönderildiği için silinir.",
+      "İstek iptal yeniden etkinleştirilene kadar beklemede kalır.",
+      "Worker, iptal kapalı olsa da bir sonraki iptal noktasında sonlanır.",
+      "Worker, iptal durumu kapalıyken isteği hemen uygular."
+    ],
+    "correctIndex": 1,
+    "explanation": "İptal kapalıyken başarılı istek beklemede kalır. İptal yeniden etkinleştiğinde ne zaman uygulanacağını iptal türü belirler.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [39]
+    }
+  },
+  {
+    "id": "os-threads-linux-clone",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "intermediate",
+    "question": "Linux clone() çağrısında CLONE_VM bayrağı hangi paylaşımı ifade eder?",
+    "choices": [
+      "Açık dosya tanıtıcı tablosunu paylaşma",
+      "Dosya sistemi bağlamını paylaşma",
+      "Bellek adres alanını paylaşma",
+      "Sinyal işleyicilerini paylaşma"
+    ],
+    "correctIndex": 2,
+    "explanation": "CLONE_VM seçimi görevlerin aynı bellek alanını paylaşmasını sağlar.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [41]
+    }
+  },
+  {
+    "id": "os-threads-clone-flags",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Linux’ta başarılı bir clone() çağrısı CLONE_FILES kullanıyor, CLONE_VM kullanmıyor. Ebeveyn ve yeni görev bakımından ne gerçekleşir?",
+    "choices": [
+      "Dosya tanıtıcısı tablosu ayrı, bellek adres alanı ortaktır.",
+      "Hem dosya tanıtıcısı tablosu hem bellek adres alanı ortaktır.",
+      "Hem dosya tanıtıcısı tablosu hem bellek adres alanı ayrıdır.",
+      "Dosya tanıtıcısı tablosu ortak, bellek adres alanları ayrıdır."
+    ],
+    "correctIndex": 3,
+    "explanation": "CLONE_FILES aynı dosya tanıtıcısı tablosunu paylaşır. CLONE_VM yoksa görevlerin bellek adres alanları ayrıdır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [41]
+    }
+  },
+  {
+    "id": "os-threads-serial-work-difference",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir iş tek çekirdekte 100 ms sürüyor. İki çekirdekte paralel kısım kusursuz bölündüğünde ve ek maliyet yokken süre 75 ms oluyor. Amdahl modelinde seri pay nedir?",
+    "choices": ["%50", "%25", "%75", "%100"],
+    "correctIndex": 0,
+    "explanation": "Paralel kısım yarıya inerek 25 ms kazandırdığına göre önce 50 ms idi. Geriye kalan 50 ms seri çalışır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [10]
+    }
+  },
+  {
+    "id": "os-threads-bounded-queue-vs-pool",
+    "courseId": "operating-systems",
+    "topicId": "threads",
+    "difficulty": "advanced",
+    "question": "Bir sunucuda worker sayısı sekizle sınırlandı, fakat gelen işler sınırsız bir kuyrukta birikiyor. Hangi çıkarım doğrudur?",
+    "choices": [
+      "Havuz iş sayısını kendiliğinden sekizle sınırlar.",
+      "Thread sayısı sınırlanır, bekleyen işlerin kullandığı bellek ayrıca büyüyebilir.",
+      "Kuyrukta saklanan işlerin hiçbiri belleğe ihtiyaç duymaz.",
+      "Her kuyruk öğesi beklerken ayrı bir thread yürütür."
+    ],
+    "correctIndex": 1,
+    "explanation": "Worker sınırı yürütme bağlamlarını kısıtlar. Kuyruk sınırı veya geri basınç ayrı bir tasarım kararıdır.",
+    "source": {
+      "id": "os-week-4",
+      "slides": [31]
+    }
+  }
+]
