@@ -5,8 +5,8 @@
     "ar": "نظم إدارة قواعد البيانات"
   },
   "description": {
-    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli Arapça ve Türkçe dersleri ve Türkçe sınav özetleri. İlk üç hafta yayımlandı.",
-    "ar": "شرح عربي وتركي وملخصات امتحانية تركية لمادة نظم إدارة قواعد البيانات. الأسابيع الثلاثة الأولى متاحة بعد مراجعة محاضراتها."
+    "tr": "Modern Veritabanı Yönetim Sistemleri: İlk dört haftanın slaytlara dayalı Arapça/Türkçe dersleri ve Türkçe sınav özetleri yayımlandı.",
+    "ar": "شروحات عربية وتركية وملخصات امتحانية تركية للأسبوع الأول حتى الرابع من محاضرات نظم إدارة قواعد البيانات."
   },
   "order": 3,
   "chapters": [
@@ -33,6 +33,14 @@
         "ar": "الأسبوع الثالث: التطبيع وإلغاء التطبيع"
       },
       "order": 2
+    },
+    {
+      "id": "week-04",
+      "title": {
+        "tr": "SQL Temelleri ve İleri SQL",
+        "ar": "الأسبوع الرابع: أساسيات SQL وSQL المتقدم"
+      },
+      "order": 3
     }
   ]
 }

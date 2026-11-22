@@ -418,5 +418,20 @@
       "sha256": "01c5f6b69101dc2d0c47f3490a544dbfa45adceb6cf640090f6efc94ced7a02b",
       "reason": "User-provided original reviewed for week 3; kept private and not redistributed."
     }
+  },
+  {
+    "id": "db-week-04-hafta",
+    "title": "Modern Veritabanı Yönetim Sistemleri — Hafta 4: SQL Temelleri ve İleri SQL (Prof. Dr. Özal Yıldırım)",
+    "language": "tr",
+    "courseIds": [
+      "database-management"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "hafta04.pdf",
+      "pageCount": 86,
+      "sha256": "8df4fb211942da787b3fea5c30c1ec54b404bcf69b4da35463727cd05c873935",
+      "reason": "User-provided original PDF reviewed for week 4; retained privately, not distributed in the public repository."
+    }
   }
 ]
