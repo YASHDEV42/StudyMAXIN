@@ -5,8 +5,8 @@
     "ar": "نظم إدارة قواعد البيانات"
   },
   "description": {
-    "tr": "Modern Veritabanı Yönetim Sistemleri: İlk dört haftanın slaytlara dayalı Arapça/Türkçe dersleri ve Türkçe sınav özetleri yayımlandı.",
-    "ar": "شروحات عربية وتركية وملخصات امتحانية تركية للأسبوع الأول حتى الرابع من محاضرات نظم إدارة قواعد البيانات."
+    "tr": "Modern Veritabanı Yönetim Sistemleri dersinin kaynak temelli ilk beş haftalık Arapça/Türkçe dersleri ve Türkçe sınav özetleri yayımlandı. Altıncı hafta bekleniyor.",
+    "ar": "شروح بالعربي والتركي وملخصات امتحانية تركية للأسابيع الخمسة الأولى؛ الأسبوع السادس لسه بانتظار المحاضرة."
   },
   "order": 3,
   "chapters": [
@@ -41,6 +41,14 @@
         "ar": "الأسبوع الرابع: أساسيات SQL وSQL المتقدم"
       },
       "order": 3
+    },
+    {
+      "id": "week-05",
+      "title": {
+        "tr": "RDBMS Mimarisi ve ACID",
+        "ar": "الأسبوع الخامس: بنية RDBMS وخصائص ACID"
+      },
+      "order": 4
     }
   ]
 }

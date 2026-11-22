@@ -433,5 +433,20 @@
       "sha256": "8df4fb211942da787b3fea5c30c1ec54b404bcf69b4da35463727cd05c873935",
       "reason": "User-provided original PDF reviewed for week 4; retained privately, not distributed in the public repository."
     }
+  },
+  {
+    "id": "db-week-05-hafta",
+    "title": "Modern Veritabanı Yönetim Sistemleri — Hafta 5: RDBMS Mimarisi ve ACID (Prof. Dr. Özal Yıldırım)",
+    "language": "tr",
+    "courseIds": [
+      "database-management"
+    ],
+    "location": {
+      "kind": "private",
+      "filename": "hafta05.pdf",
+      "pageCount": 41,
+      "sha256": "9d3124aa3a163b2dd5348c903edd1a9bffde886dcd5d917d953ff84be442e813",
+      "reason": "User-provided 41-page PDF reviewed for week 5; the original remains private and is not redistributed."
+    }
   }
 ]
