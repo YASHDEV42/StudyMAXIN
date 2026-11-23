@@ -289,7 +289,7 @@
       "N+1 sorgu problemi"
     ],
     "correctIndex": 4,
-    "explanation": "Bir ana sorguya ek olarak her öğe için ayrı sorgu başlatılması N+1'dir.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Bir ana sorguya ek olarak her öğe için ayrı sorgu başlatılması N+1'dir.",
     "source": {
       "id": "db-book-ch3-week-4",
       "slides": [

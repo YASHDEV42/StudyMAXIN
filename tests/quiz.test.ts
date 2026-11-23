@@ -475,8 +475,8 @@ test("database bank and course-scoped progress remain isolated", async () => {
     "database-management",
   );
   assert.equal(database.topics.length, 6);
-  assert.equal(database.questions.length, 60);
-  assert.equal(new Set(database.questions.map((q) => q.id)).size, 60);
+  assert.equal(database.questions.length, 93);
+  assert.equal(new Set(database.questions.map((q) => q.id)).size, 93);
   assert.equal(
     database.questions.every((q) => q.courseId === "database-management"),
     true,
@@ -510,10 +510,15 @@ test("database bank and course-scoped progress remain isolated", async () => {
 });
 
 test("five-choice textbook questions use the fifth answer without changing four-choice exams", async () => {
-  const database = await loadQuizBank(undefined, undefined, "database-management");
+  const database = await loadQuizBank(
+    undefined,
+    undefined,
+    "database-management",
+  );
   const book = database.questions.filter((question) =>
-    database.sources.some((source) =>
-      source.id === question.source.id && source.kind === "textbook-excerpt",
+    database.sources.some(
+      (source) =>
+        source.id === question.source.id && source.kind === "textbook-excerpt",
     ),
   );
   assert.ok(book.length >= 30);
@@ -524,5 +529,8 @@ test("five-choice textbook questions use the fifth answer without changing four-
   assert.equal(session.items[0].order.length, 5);
   const index = session.items[0].order.indexOf(4);
   assert.equal(selectAnswer(session, index, 1).items[0].answer, 4);
-  assert.equal(createSession([first], "topic", 1, null, () => 0)!.items[0].order.length, 4);
+  assert.equal(
+    createSession([first], "topic", 1, null, () => 0)!.items[0].order.length,
+    4,
+  );
 });

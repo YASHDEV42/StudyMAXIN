@@ -311,7 +311,7 @@
       "Serializable"
     ],
     "correctIndex": 4,
-    "explanation": "Serializable, eşzamanlı yürütmenin seri işlemeye eşdeğer olmasını hedefler.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Serializable, eşzamanlı yürütmenin seri işlemeye eşdeğer olmasını hedefler.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -334,7 +334,7 @@
       "Bitmap indeks"
     ],
     "correctIndex": 0,
-    "explanation": "MVCC farklı veri sürümlerini tutarak tutarlı okumaları destekler.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): MVCC farklı veri sürümlerini tutarak tutarlı okumaları destekler.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -357,7 +357,7 @@
       "Log Replay"
     ],
     "correctIndex": 1,
-    "explanation": "Döngüsel kilit bekleme, deadlock oluşturur.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Döngüsel kilit bekleme, deadlock oluşturur.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -380,7 +380,7 @@
       "Materialized View"
     ],
     "correctIndex": 0,
-    "explanation": "Bağlantı havuzu mevcut bağlantıları yeniden kullanarak kurulma maliyetini azaltır.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Bağlantı havuzu mevcut bağlantıları yeniden kullanarak kurulma maliyetini azaltır.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -403,7 +403,7 @@
       "Write Amplification"
     ],
     "correctIndex": 1,
-    "explanation": "Asenkron replikada replika birincilin biraz gerisinde kalabilir.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Asenkron replikada replika birincilin biraz gerisinde kalabilir.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -426,7 +426,7 @@
       "SLA'nın tüm anlamları"
     ],
     "correctIndex": 2,
-    "explanation": "RPO ne kadar veri kaybının zaman olarak kabul edilebildiğini tanımlar; RTO ise toparlanma süresi hedefidir.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): RPO ne kadar veri kaybının zaman olarak kabul edilebildiğini tanımlar; RTO ise toparlanma süresi hedefidir.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [
@@ -449,7 +449,7 @@
       "Connection Pool"
     ],
     "correctIndex": 3,
-    "explanation": "PITR belirli zamana kurtarma sağlar; WAL replay ile hedefe kadar gidilir.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): PITR belirli zamana kurtarma sağlar; WAL replay ile hedefe kadar gidilir.",
     "source": {
       "id": "db-book-ch3-week-5",
       "slides": [

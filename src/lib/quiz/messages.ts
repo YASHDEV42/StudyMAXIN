@@ -17,7 +17,7 @@ export const quizMessages = {
     modeDetail: {
       topic: "Bir haftaya odaklan ve her sorunun açıklamasını hemen gör.",
       random: "Beş haftadan karışık sorularla bilgini tazele.",
-      book: "Kitaptaki değerlendirme sorularının mantığıyla sınava hazırlan.",
+      book: "Kitaptaki değerlendirme sorularının mantığıyla sınava hazırlan. Bazı ileri konular ilk altı haftanın slaytlarında yer almaz.",
       exam: "60 farklı soru. Puan ve açıklamalar teslimden sonra açılır.",
       wrong: "Yanlış yaptığın soruları öncelik sırasıyla yeniden çöz.",
       bookmarks: "Daha sonra dönmek için işaretlediğin soruları gözden geçir.",
@@ -108,7 +108,7 @@ export const quizMessages = {
     modeDetail: {
       topic: "ركّز على أسبوع واحد واطّلع على شرح كل سؤال بعد الإجابة.",
       random: "راجع ما تعلمته بأسئلة متنوعة من الأسابيع الخمسة.",
-      book: "تدرّب على أسئلة التقييم الموجودة بالكتاب وبنفس مستوى الخيارات.",
+      book: "تدرّب على نمط أسئلة الكتاب. بعض المواضيع المتقدمة تتجاوز نطاق المحاضرات الست.",
       exam: "٦٠ سؤالًا مختلفًا. تظهر النتيجة والشروح بعد التسليم.",
       wrong: "أعد حلّ الأسئلة التي أخطأت فيها حسب الأولوية.",
       bookmarks: "راجع الأسئلة التي حفظتها للعودة إليها.",

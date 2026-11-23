@@ -112,9 +112,7 @@ export function publishAuditedBank(
       (evidence.kind !== "direct-book" &&
         sourceKinds.get(evidence.sourceId) !== "original-slides")
     ) {
-      throw new Error(
-        `Source evidence type mismatch: ${question.id}`,
-      );
+      throw new Error(`Source evidence type mismatch: ${question.id}`);
     }
     questions.push(question);
   }

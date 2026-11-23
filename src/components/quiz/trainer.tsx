@@ -163,7 +163,8 @@ export function QuizTrainer({
           : mode === "book"
             ? bank.questions.filter(({ source }) =>
                 bank.sources.some(
-                  (item) => item.id === source.id && item.kind === "textbook-excerpt",
+                  (item) =>
+                    item.id === source.id && item.kind === "textbook-excerpt",
                 ),
               )
             : bank.questions;
@@ -488,7 +489,13 @@ export function QuizTrainer({
             </button>
           )}
         </div>
-        <p className="quiz-key-hint">{bank.courseId === "database-management" ? (locale === "tr" ? "Seçenekler: 1–5, sonraki soru: N." : "الاختيارات: 1–5، السؤال التالي: N.") : t.keys}</p>
+        <p className="quiz-key-hint">
+          {bank.courseId === "database-management"
+            ? locale === "tr"
+              ? "Seçenekler: 1–5, sonraki soru: N."
+              : "الاختيارات: 1–5، السؤال التالي: N."
+            : t.keys}
+        </p>
         {exam && (
           <details className="quiz-card quiz-map" open>
             <summary>{t.map}</summary>
@@ -579,25 +586,33 @@ export function QuizTrainer({
           )}
           <fieldset disabled={!ready || !!active} className="quiz-modes">
             <legend className="quiz-visually-hidden">{t.home}</legend>
-            {modes.filter((value) => value !== "book" || bank.sources.some((source) => source.kind === "textbook-excerpt")).map((value) => (
-              <label key={value}>
-                <input
-                  type="radio"
-                  name="quiz-mode"
-                  value={value}
-                  checked={value === mode}
-                  onChange={() => setMode(value)}
-                />
-                <span>
-                  {t.mode[value]}
-                  {value === "wrong"
-                    ? ` (${wrong.length})`
-                    : value === "bookmarks"
-                      ? ` (${bookmarks.length})`
-                      : ""}
-                </span>
-              </label>
-            ))}
+            {modes
+              .filter(
+                (value) =>
+                  value !== "book" ||
+                  bank.sources.some(
+                    (source) => source.kind === "textbook-excerpt",
+                  ),
+              )
+              .map((value) => (
+                <label key={value}>
+                  <input
+                    type="radio"
+                    name="quiz-mode"
+                    value={value}
+                    checked={value === mode}
+                    onChange={() => setMode(value)}
+                  />
+                  <span>
+                    {t.mode[value]}
+                    {value === "wrong"
+                      ? ` (${wrong.length})`
+                      : value === "bookmarks"
+                        ? ` (${bookmarks.length})`
+                        : ""}
+                  </span>
+                </label>
+              ))}
           </fieldset>
           <h2>{t.mode[mode]}</h2>
           <p>

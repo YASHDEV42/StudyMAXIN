@@ -267,7 +267,7 @@
       "Denormalizasyon"
     ],
     "correctIndex": 2,
-    "explanation": "WAL veriyi diske yazmadan önce ilgili günlüğü kalıcılaştırma ilkesini uygular.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): WAL veriyi diske yazmadan önce ilgili günlüğü kalıcılaştırma ilkesini uygular.",
     "source": {
       "id": "db-book-ch3-week-6",
       "slides": [
@@ -290,7 +290,7 @@
       "Heap"
     ],
     "correctIndex": 3,
-    "explanation": "B+ Tree sıralamayı koruyarak hem aralık hem eşitlik erişimini destekler.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): B+ Tree sıralamayı koruyarak hem aralık hem eşitlik erişimini destekler.",
     "source": {
       "id": "db-book-ch3-week-6",
       "slides": [
@@ -335,7 +335,7 @@
       "Lider seçimi sonucu"
     ],
     "correctIndex": 0,
-    "explanation": "2PC prepare aşaması katılımcıların hazır olup olmadığını oylatır.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): 2PC prepare aşaması katılımcıların hazır olup olmadığını oylatır.",
     "source": {
       "id": "db-book-ch3-week-6",
       "slides": [
@@ -358,7 +358,7 @@
       "Geçişli bağımlılık"
     ],
     "correctIndex": 1,
-    "explanation": "Klasik 2PC koordinatör arızasında bloklanabilen bir protokoldür.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Klasik 2PC koordinatör arızasında bloklanabilen bir protokoldür.",
     "source": {
       "id": "db-book-ch3-week-6",
       "slides": [
@@ -381,7 +381,7 @@
       "İndeksleme stratejisi"
     ],
     "correctIndex": 2,
-    "explanation": "Consensus protokolleri düğümlerin ortak bir karar üzerinde anlaşmasını hedefler.",
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Consensus protokolleri düğümlerin ortak bir karar üzerinde anlaşmasını hedefler.",
     "source": {
       "id": "db-book-ch3-week-6",
       "slides": [

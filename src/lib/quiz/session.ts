@@ -1,7 +1,14 @@
 import { z } from "zod";
 import { answerIndex, stableId, type Question } from "./bank";
 
-export const modes = ["topic", "random", "book", "exam", "wrong", "bookmarks"] as const;
+export const modes = [
+  "topic",
+  "random",
+  "book",
+  "exam",
+  "wrong",
+  "bookmarks",
+] as const;
 export const examSize = 60;
 export const batchSizes = [10, 20, 30] as const;
 export const timerMinutes = [0, 45, 60, 75, 90, 120] as const;
@@ -68,9 +75,12 @@ export function createSession(
     mode === "wrong" || mode === "bookmarks" ? unique : shuffle(unique, rng);
   return {
     mode,
-    items: ordered.slice(0, count).map(({ id }) => ({
+    items: ordered.slice(0, count).map(({ id, choices }) => ({
       id,
-      order: shuffle(ordered.find((q) => q.id === id)!.choices.map((_, index) => index), rng),
+      order: shuffle(
+        choices.map((_, index) => index),
+        rng,
+      ),
       answer: null,
     })),
     position: 0,
