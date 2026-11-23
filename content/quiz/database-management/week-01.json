@@ -188,5 +188,25 @@
       "id": "db-week-1",
       "slides": [32]
     }
+  },
+  {
+    "id": "db-book-ch2-q01",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "basic",
+    "question": "Bir sütunun veri tipi, izin verilen biçimi ve kuralları hakkında bilgi hangi kavramla açıklanır?",
+    "choices": [
+      "Demet (Tuple)",
+      "İlişki (Relation)",
+      "Metadata",
+      "Transaksiyon",
+      "Önbellek"
+    ],
+    "correctIndex": 2,
+    "explanation": "Metadata verinin yapısını ve kurallarını anlatan üstveridir.",
+    "source": {
+      "id": "db-book-ch2-week-1",
+      "slides": [72]
+    }
   }
 ]

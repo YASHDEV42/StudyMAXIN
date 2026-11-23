@@ -63,17 +63,30 @@ Playwright runs against `out/` from the production build. The tests cover bank i
 
 The same trainer is available at `/tr/quiz/database-management/` and
 `/ar/quiz/database-management/`, with six weekly topic files in
-`content/quiz/database-management/`. This is a separate **60-question Turkish
-multiple-choice bank**, with four choices, one answer, Turkish explanation and
-physical page citations to the six original `hafta01.pdf`–`hafta06.pdf` sources.
+`content/quiz/database-management/`. This is a **93-question Turkish multiple-choice bank**: 60 four-choice
+slide-based questions and 33 five-choice textbook-style questions, with one
+answer, Turkish explanation and physical source-page citations.
 The corresponding audit ledger is `docs/database-quiz-audit.json`; the
 original PDFs remain private. Source SHA-256 digests and page counts are
 preserved in the manifest.
 
 The Operating Systems page remains at `/tr/quiz/` and `/ar/quiz/`. Storage,
 backup imports and active sessions are isolated by course; existing Operating
-Systems storage keys and backups are retained. The fixed-size 60-question mock
-covers the entire first database bank; practice can draw 10 questions per
-individual week. The bank is an initial assessment set and can be expanded
-after the instructor's textbook-style sample questions are received. Audit
-every new question against the original slide before publishing.
+Systems storage keys and backups are retained. The fixed-size 60-question mock samples from the full 93-question database
+bank; topic practice can draw 10 questions per individual week. Book-only
+practice offers 10, 20 or 30 questions from the 33 photographed-book concepts.
+Audit every new question against the corresponding original source before publishing.
+
+## Textbook-style five-choice questions
+
+Photographed textbook end-of-chapter questions are source references, not a
+license to redistribute the book pages. Questions are **newly paraphrased**
+Turkish assessments following the same concept and difficulty. They are
+identified by `textbook-excerpt` sources with printed book-page references
+and verified in `docs/database-quiz-audit.json` as `direct-book` evidence.
+The original eight photographs are private and are not uploaded into the repo.
+The database quiz exposes a `Kitap soruları` practice mode using five choices
+(A–E), while legacy Operating Systems questions continue using four (A–D).
+Some chapter 3 book topics (WAL, MVCC, 2PC, consensus, HA/DR) go beyond the
+first six lecture decks; these questions explicitly identify that boundary in
+their explanations or Arabic clarification.

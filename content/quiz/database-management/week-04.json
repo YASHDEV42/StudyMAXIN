@@ -178,5 +178,74 @@
       "id": "db-week-4",
       "slides": [54]
     }
+  },
+  {
+    "id": "db-book-ch2-q05",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "basic",
+    "question": "Tablo şemasındaki bir sütunun tanımını değiştirmek için kullanılan SQL komutu hangisidir?",
+    "choices": ["INSERT", "ALTER", "UPDATE", "SELECT", "COMMIT"],
+    "correctIndex": 1,
+    "explanation": "ALTER TABLE mevcut tablonun şemasını değiştirir; DDL kapsamındadır.",
+    "source": {
+      "id": "db-book-ch2-week-4",
+      "slides": [73]
+    }
+  },
+  {
+    "id": "db-book-ch2-q06",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "GROUP BY ile oluşmuş gruplara COUNT(*) koşulu uygulamak için hangi SQL ifadesi gerekir?",
+    "choices": ["WHERE", "ORDER BY", "HAVING", "LIMIT", "DEFAULT"],
+    "correctIndex": 2,
+    "explanation": "HAVING toplama sonrasındaki grupları filtreler.",
+    "source": {
+      "id": "db-book-ch2-week-4",
+      "slides": [73]
+    }
+  },
+  {
+    "id": "db-book-ch2-q07",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "intermediate",
+    "question": "Bölümlerin tümünü, hiç öğrencisi olmayanlar dahil, listelemek istiyorsunuz. Bölümler sağ taraftayken hangi JOIN uygundur?",
+    "choices": [
+      "INNER JOIN",
+      "CROSS JOIN",
+      "SELF JOIN",
+      "RIGHT JOIN",
+      "INNER NATURAL JOIN"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sağ taraftaki tüm satırların korunması RIGHT JOIN ile sağlanır.",
+    "source": {
+      "id": "db-book-ch2-week-4",
+      "slides": [73]
+    }
+  },
+  {
+    "id": "db-book-ch3-q17",
+    "courseId": "database-management",
+    "topicId": "week-04",
+    "difficulty": "advanced",
+    "question": "Bir liste için tek sorgu ve listedeki her 100 kayıt için ayrı bir sorgu çalıştırılması hangi anti-pattern'dir?",
+    "choices": [
+      "Deadlock",
+      "Phantom Read",
+      "Split-brain",
+      "Kartezyen çarpımın tüm biçimleri",
+      "N+1 sorgu problemi"
+    ],
+    "correctIndex": 4,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Bir ana sorguya ek olarak her öğe için ayrı sorgu başlatılması N+1'dir.",
+    "source": {
+      "id": "db-book-ch3-week-4",
+      "slides": [135]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   }
 ]

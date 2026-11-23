@@ -1,7 +1,14 @@
 import { z } from "zod";
 import { answerIndex, stableId, type Question } from "./bank";
 
-export const modes = ["topic", "random", "exam", "wrong", "bookmarks"] as const;
+export const modes = [
+  "topic",
+  "random",
+  "book",
+  "exam",
+  "wrong",
+  "bookmarks",
+] as const;
 export const examSize = 60;
 export const batchSizes = [10, 20, 30] as const;
 export const timerMinutes = [0, 45, 60, 75, 90, 120] as const;
@@ -12,8 +19,14 @@ const itemSchema = z.strictObject({
   id: stableId,
   order: z
     .array(answerIndex)
-    .length(4)
-    .refine((order) => new Set(order).size === 4),
+    .min(4)
+    .max(5)
+    .refine(
+      (order) =>
+        new Set(order).size === order.length &&
+        order.every((value) => value < order.length),
+      "Answer order must be a permutation of 0..n-1",
+    ),
   answer: answerIndex.nullable(),
 });
 export const sessionSchema = z
@@ -62,9 +75,12 @@ export function createSession(
     mode === "wrong" || mode === "bookmarks" ? unique : shuffle(unique, rng);
   return {
     mode,
-    items: ordered.slice(0, count).map(({ id }) => ({
+    items: ordered.slice(0, count).map(({ id, choices }) => ({
       id,
-      order: shuffle([0, 1, 2, 3], rng),
+      order: shuffle(
+        choices.map((_, index) => index),
+        rng,
+      ),
       answer: null,
     })),
     position: 0,

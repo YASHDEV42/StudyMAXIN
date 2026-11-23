@@ -3,30 +3,39 @@ import { z } from "zod";
 export const operatingSystemsId = "operating-systems";
 export const stableId = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const line = z.string().trim().min(1);
-export const answerIndex = z.number().int().min(0).max(3);
+export const answerIndex = z.number().int().min(0).max(4);
 export const normalizeText = (value: string) =>
   value.normalize("NFKC").trim().replace(/\s+/g, " ").toLocaleLowerCase("tr");
 
-export const questionSchema = z.strictObject({
-  id: stableId,
-  courseId: stableId,
-  topicId: stableId,
-  difficulty: z.enum(["basic", "intermediate", "advanced"]),
-  question: line,
-  choices: z
-    .tuple([line, line, line, line])
-    .refine(
-      (choices) => new Set(choices.map(normalizeText)).size === 4,
-      "Answer choices must be distinct",
-    ),
-  correctIndex: answerIndex,
-  explanation: line,
-  source: z.strictObject({
+export const questionSchema = z
+  .strictObject({
     id: stableId,
-    slides: z.array(z.number().int().positive()).min(1),
-  }),
-  clarificationAr: line.optional(),
-});
+    courseId: stableId,
+    topicId: stableId,
+    difficulty: z.enum(["basic", "intermediate", "advanced"]),
+    question: line,
+    choices: z
+      .union([
+        z.tuple([line, line, line, line]),
+        z.tuple([line, line, line, line, line]),
+      ])
+      .refine(
+        (choices) =>
+          new Set(choices.map(normalizeText)).size === choices.length,
+        "Answer choices must be distinct",
+      ),
+    correctIndex: answerIndex,
+    explanation: line,
+    source: z.strictObject({
+      id: stableId,
+      slides: z.array(z.number().int().positive()).min(1),
+    }),
+    clarificationAr: line.optional(),
+  })
+  .refine((question) => question.correctIndex < question.choices.length, {
+    path: ["correctIndex"],
+    message: "Correct answer index exceeds the available choices",
+  });
 
 const localized = z.strictObject({ tr: line, ar: line });
 export const manifestSchema = z.strictObject({
@@ -38,7 +47,11 @@ export const manifestSchema = z.strictObject({
       z.strictObject({
         id: stableId,
         topicId: stableId,
-        kind: z.enum(["original-slides", "secondary-notes"]),
+        kind: z.enum([
+          "original-slides",
+          "secondary-notes",
+          "textbook-excerpt",
+        ]),
         title: line,
         slideCount: z.number().int().positive(),
         sha256: z.string().regex(/^[a-f0-9]{64}$/),

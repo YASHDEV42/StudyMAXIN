@@ -780,6 +780,435 @@
         "visualSlides": [],
         "note": "Original hafta06.pdf, physical page 24; answer key reviewed against the slide text and example."
       }
+    },
+    {
+      "id": "db-book-ch2-q01",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-1",
+        "slides": [72],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 72; concept checked against end-of-chapter question 1. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q02",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-2",
+        "slides": [72],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 72; concept checked against end-of-chapter question 2. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q03",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-2",
+        "slides": [72],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 72; concept checked against end-of-chapter question 3. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q04",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-3",
+        "slides": [72],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 72; concept checked against end-of-chapter question 4. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q05",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-4",
+        "slides": [73],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 73; concept checked against end-of-chapter question 5. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q06",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-4",
+        "slides": [73],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 73; concept checked against end-of-chapter question 6. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q07",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-4",
+        "slides": [73],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 73; concept checked against end-of-chapter question 7. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q08",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-3",
+        "slides": [73],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 73; concept checked against end-of-chapter question 8. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q09",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-2",
+        "slides": [73],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 73; concept checked against end-of-chapter question 9. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q10",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-3",
+        "slides": [74],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 74; concept checked against end-of-chapter question 10. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q11",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-3",
+        "slides": [74],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 74; concept checked against end-of-chapter question 11. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch2-q12",
+      "status": "verified",
+      "subtopic": "db-book-ch2",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch2-week-3",
+        "slides": [74],
+        "visualSlides": [],
+        "note": "Photographed book chapter 2, printed page 74; concept checked against end-of-chapter question 12. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q01",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [132],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 132; concept checked against end-of-chapter question 1. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q02",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [132],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 132; concept checked against end-of-chapter question 2. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q03",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [132],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 132; concept checked against end-of-chapter question 3. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q04",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [132],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 132; concept checked against end-of-chapter question 4. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q05",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [133],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 133; concept checked against end-of-chapter question 5. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q06",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [133],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 133; concept checked against end-of-chapter question 6. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q07",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [133],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 133; concept checked against end-of-chapter question 7. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q08",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [133],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 133; concept checked against end-of-chapter question 8. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q09",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [133],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 133; concept checked against end-of-chapter question 9. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q10",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [134],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 134; concept checked against end-of-chapter question 10. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q11",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [134],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 134; concept checked against end-of-chapter question 11. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q12",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [134],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 134; concept checked against end-of-chapter question 12. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q13",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [134],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 134; concept checked against end-of-chapter question 13. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q14",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [135],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 135; concept checked against end-of-chapter question 14. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q15",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [135],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 135; concept checked against end-of-chapter question 15. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q16",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-6",
+        "slides": [135],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 135; concept checked against end-of-chapter question 16. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q17",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 4,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-4",
+        "slides": [135],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 135; concept checked against end-of-chapter question 17. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q18",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 0,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [135],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 135; concept checked against end-of-chapter question 18. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q19",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 1,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [136],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 136; concept checked against end-of-chapter question 19. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q20",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 2,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [136],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 136; concept checked against end-of-chapter question 20. Authored question is paraphrased."
+      }
+    },
+    {
+      "id": "db-book-ch3-q21",
+      "status": "verified",
+      "subtopic": "db-book-ch3",
+      "reviewedAnswerIndex": 3,
+      "evidence": {
+        "kind": "direct-book",
+        "sourceId": "db-book-ch3-week-5",
+        "slides": [136],
+        "visualSlides": [],
+        "note": "Photographed book chapter 3, printed page 136; concept checked against end-of-chapter question 21. Authored question is paraphrased."
+      }
     }
   ]
 }

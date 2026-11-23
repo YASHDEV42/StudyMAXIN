@@ -183,5 +183,184 @@
       "id": "db-week-6",
       "slides": [24]
     }
+  },
+  {
+    "id": "db-book-ch3-q04",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Bir veritabanı indeksi en doğrudan hangi iş yüküne fayda sağlamak için oluşturulur?",
+    "choices": [
+      "Her UPDATE'i bedelsiz hızlandırmak",
+      "SELECT sorgularında erişim performansını iyileştirmek",
+      "Kullanıcı parolalarını şifrelemek",
+      "Depolama alanı kullanımını sıfırlamak",
+      "Yalnızca veri türlerini doğrulamak"
+    ],
+    "correctIndex": 1,
+    "explanation": "İndeksler seçili okuma yollarını hızlandırabilir; yazma ve alan maliyeti vardır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [132]
+    }
+  },
+  {
+    "id": "db-book-ch3-q05",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "basic",
+    "question": "Açık bir işlemin bütün onaylanmamış değişikliklerini geri almak için hangi TCL komutu kullanılır?",
+    "choices": ["COMMIT", "SAVEPOINT", "ROLLBACK", "BEGIN", "ALTER TABLE"],
+    "correctIndex": 2,
+    "explanation": "ROLLBACK transaction içindeki onaylanmamış değişiklikleri geri alır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [133]
+    }
+  },
+  {
+    "id": "db-book-ch3-q10",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Bir değişikliği veri dosyasından önce işlem günlüğüne kaydedip çökme sonrası yeniden uygulamayı sağlayan yöntem hangisidir?",
+    "choices": [
+      "Hash Join",
+      "Clustered Index",
+      "Write-Ahead Logging (WAL)",
+      "Shared Lock",
+      "Denormalizasyon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): WAL veriyi diske yazmadan önce ilgili günlüğü kalıcılaştırma ilkesini uygular.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [134]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q11",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Eşitlik, BETWEEN ve ORDER BY sorguları için sıralı düğümler kullanan yaygın indeks yapısı hangisidir?",
+    "choices": [
+      "Hash Index",
+      "Bitmap Index",
+      "Linked List",
+      "B+ ağacı (B+ Tree)",
+      "Heap"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): B+ Tree sıralamayı koruyarak hem aralık hem eşitlik erişimini destekler.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [134]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q12",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "EXPLAIN ANALYZE'da planlanan satır sayısı gerçek satır sayısından çok farklıysa öncelikle ne araştırılmalıdır?",
+    "choices": [
+      "Yalnızca ağ bant genişliği",
+      "Kullanıcının metin kodlaması",
+      "Parola politikası",
+      "Yedek dosyası adı",
+      "Yanlış veya güncelliğini yitirmiş istatistikler"
+    ],
+    "correctIndex": 4,
+    "explanation": "Büyük estimated/actual rows farkı çoğunlukla optimizer tahmin ve istatistik sorunlarına işaret eder.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [134]
+    }
+  },
+  {
+    "id": "db-book-ch3-q13",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Dağıtık transaction için iki aşamalı commit'in ilk adımında katılımcılardan ne toplanır?",
+    "choices": [
+      "Commit için hazır olduklarına ilişkin oy",
+      "En hızlı sorgu planı",
+      "Yeni indeks isimleri",
+      "Ölü tuple sayısı",
+      "Lider seçimi sonucu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): 2PC prepare aşaması katılımcıların hazır olup olmadığını oylatır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [134]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q14",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "2PC'de koordinatör kritik anda çökerse katılımcıların uzun süre beklemesi hangi tasarım zayıflığıdır?",
+    "choices": [
+      "Kayıpsız JOIN",
+      "Blocking: belirsiz karar nedeniyle bekleme",
+      "Diskte tek tablo zorunluluğu",
+      "Sadece indeks eksikliği",
+      "Geçişli bağımlılık"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Klasik 2PC koordinatör arızasında bloklanabilen bir protokoldür.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [135]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q15",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Raft veya Paxos gibi yöntemlerin çözdüğü ortak dağıtık sistem problemi hangisidir?",
+    "choices": [
+      "Normalizasyon",
+      "Sorgu izdüşümü",
+      "Consensus (uzlaşma)",
+      "Şifreleme algoritması seçimi",
+      "İndeksleme stratejisi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Consensus protokolleri düğümlerin ortak bir karar üzerinde anlaşmasını hedefler.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [135]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q16",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "PostgreSQL EXPLAIN çıktısında Seq Scan ve büyük tahmin hatası birlikte görüldüğünde uygun ilk inceleme hangisidir?",
+    "choices": [
+      "Yedekleme dosya adının değişimi",
+      "Farklı TLS portu seçimi",
+      "DML'i tamamen yasaklamak",
+      "İndeks ihtiyacı ve istatistiklerin güncelliği",
+      "Tüm SQL tablolarını silmek"
+    ],
+    "correctIndex": 3,
+    "explanation": "Eksik indeks veya güncel olmayan istatistikler kötü erişim planlarına yol açabilir.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [135]
+    }
   }
 ]
