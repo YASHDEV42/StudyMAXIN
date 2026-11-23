@@ -35,7 +35,12 @@ export function SourceNote({
                 ? "Kitap değerlendirme soruları"
                 : "أسئلة التقييم في الكتاب"
               : t.notes}{" "}
-        · <bdi lang="tr">{source.title}</bdi> · {source.kind === "textbook-excerpt" ? (locale === "tr" ? "sayfa" : "صفحة") : t.slides}{" "}
+        · <bdi lang="tr">{source.title}</bdi> ·{" "}
+        {source.kind === "textbook-excerpt"
+          ? locale === "tr"
+            ? "sayfa"
+            : "صفحة"
+          : t.slides}{" "}
         <bdi>{question.source.slides.join(", ")}</bdi>
       </p>
       {references && (

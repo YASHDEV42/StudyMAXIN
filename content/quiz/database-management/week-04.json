@@ -5,19 +5,12 @@
     "topicId": "week-04",
     "difficulty": "basic",
     "question": "İlişkisel cebirde σ (selection) SQL'de hangi yapı ile karşılanır?",
-    "choices": [
-      "ORDER BY",
-      "CREATE TABLE",
-      "COMMIT",
-      "WHERE"
-    ],
+    "choices": ["ORDER BY", "CREATE TABLE", "COMMIT", "WHERE"],
     "correctIndex": 3,
     "explanation": "Seçme satırları koşula göre filtreler; SQL karşılığı WHERE'dir.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        8
-      ]
+      "slides": [8]
     }
   },
   {
@@ -26,19 +19,12 @@
     "topicId": "week-04",
     "difficulty": "basic",
     "question": "INSERT, UPDATE ve DELETE komutları hangi SQL alt dilindedir?",
-    "choices": [
-      "DML",
-      "DDL",
-      "TCL",
-      "DQL"
-    ],
+    "choices": ["DML", "DDL", "TCL", "DQL"],
     "correctIndex": 0,
     "explanation": "Data Manipulation Language verilerin değiştirilmesini kapsar.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        14
-      ]
+      "slides": [14]
     }
   },
   {
@@ -57,9 +43,7 @@
     "explanation": "DELETE DML satır işlemi; DROP TABLE nesneyi kaldıran DDL işlemidir.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        23
-      ]
+      "slides": [23]
     }
   },
   {
@@ -78,9 +62,7 @@
     "explanation": "Slayt 25'te çoklu INSERT tek ifade olduğu için FK hatasında tamamı başarısızdır.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        25
-      ]
+      "slides": [25]
     }
   },
   {
@@ -99,9 +81,7 @@
     "explanation": "SQL'de NULL karşılaştırması IS NULL kullanır.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        32
-      ]
+      "slides": [32]
     }
   },
   {
@@ -120,9 +100,7 @@
     "explanation": "HAVING grupları aggregate sonrası filtreler, WHERE satırları öncesinde filtreler.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        36
-      ]
+      "slides": [36]
     }
   },
   {
@@ -141,9 +119,7 @@
     "explanation": "LEFT JOIN sol tablodaki eşleşmeyen satırları NULL sağ değerlerle korur.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        40
-      ]
+      "slides": [40]
     }
   },
   {
@@ -162,9 +138,7 @@
     "explanation": "Common Table Expression karmaşık sorguları anlamlı adımlara ayırır.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        45
-      ]
+      "slides": [45]
     }
   },
   {
@@ -183,9 +157,7 @@
     "explanation": "Normal görünüm tanımlı sorguyu temsil eder; materialized view'den farklıdır.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        49
-      ]
+      "slides": [49]
     }
   },
   {
@@ -204,9 +176,7 @@
     "explanation": "SQL Server UPDATE'te yeni satır sürümleri inserted, eski sürümler deleted'dedir.",
     "source": {
       "id": "db-week-4",
-      "slides": [
-        54
-      ]
+      "slides": [54]
     }
   },
   {
@@ -215,20 +185,12 @@
     "topicId": "week-04",
     "difficulty": "basic",
     "question": "Tablo şemasındaki bir sütunun tanımını değiştirmek için kullanılan SQL komutu hangisidir?",
-    "choices": [
-      "INSERT",
-      "ALTER",
-      "UPDATE",
-      "SELECT",
-      "COMMIT"
-    ],
+    "choices": ["INSERT", "ALTER", "UPDATE", "SELECT", "COMMIT"],
     "correctIndex": 1,
     "explanation": "ALTER TABLE mevcut tablonun şemasını değiştirir; DDL kapsamındadır.",
     "source": {
       "id": "db-book-ch2-week-4",
-      "slides": [
-        73
-      ]
+      "slides": [73]
     }
   },
   {
@@ -237,20 +199,12 @@
     "topicId": "week-04",
     "difficulty": "intermediate",
     "question": "GROUP BY ile oluşmuş gruplara COUNT(*) koşulu uygulamak için hangi SQL ifadesi gerekir?",
-    "choices": [
-      "WHERE",
-      "ORDER BY",
-      "HAVING",
-      "LIMIT",
-      "DEFAULT"
-    ],
+    "choices": ["WHERE", "ORDER BY", "HAVING", "LIMIT", "DEFAULT"],
     "correctIndex": 2,
     "explanation": "HAVING toplama sonrasındaki grupları filtreler.",
     "source": {
       "id": "db-book-ch2-week-4",
-      "slides": [
-        73
-      ]
+      "slides": [73]
     }
   },
   {
@@ -270,9 +224,7 @@
     "explanation": "Sağ taraftaki tüm satırların korunması RIGHT JOIN ile sağlanır.",
     "source": {
       "id": "db-book-ch2-week-4",
-      "slides": [
-        73
-      ]
+      "slides": [73]
     }
   },
   {
@@ -292,9 +244,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Bir ana sorguya ek olarak her öğe için ayrı sorgu başlatılması N+1'dir.",
     "source": {
       "id": "db-book-ch3-week-4",
-      "slides": [
-        135
-      ]
+      "slides": [135]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   }

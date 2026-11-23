@@ -15,9 +15,7 @@
     "explanation": "2-Tier istemci doğrudan VT'ye erişir ve iş mantığı güncellemeleri dağıtılmalıdır.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        9
-      ]
+      "slides": [9]
     }
   },
   {
@@ -36,9 +34,7 @@
     "explanation": "3-Tier'da sunum katmanı uygulama katmanına; uygulama katmanı VT'ye gider.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        10
-      ]
+      "slides": [10]
     }
   },
   {
@@ -57,9 +53,7 @@
     "explanation": "Önce ayrıştırma, sonra plan seçimi, ardından yürütme yapılır.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        14
-      ]
+      "slides": [14]
     }
   },
   {
@@ -78,9 +72,7 @@
     "explanation": "İyileştirici istatistiklerle erişim ve JOIN stratejilerinin maliyetini tahmin eder.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        16
-      ]
+      "slides": [16]
     }
   },
   {
@@ -99,9 +91,7 @@
     "explanation": "Buffer pool, disk I/O gereksinimini azaltır.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        17
-      ]
+      "slides": [17]
     }
   },
   {
@@ -120,9 +110,7 @@
     "explanation": "Slayt 24 PostgreSQL'in genişletilebilirliğini PostGIS ile örneklendirir.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        24
-      ]
+      "slides": [24]
     }
   },
   {
@@ -141,9 +129,7 @@
     "explanation": "PK her satırı benzersiz ve tanımlanabilir yapar.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        30
-      ]
+      "slides": [30]
     }
   },
   {
@@ -152,19 +138,12 @@
     "topicId": "week-05",
     "difficulty": "intermediate",
     "question": "Mevcut olmayan OgrenciID için Notlar kaydı eklenmesini hangi kısıt önler?",
-    "choices": [
-      "DEFAULT",
-      "ORDER BY",
-      "DISTINCT",
-      "FOREIGN KEY"
-    ],
+    "choices": ["DEFAULT", "ORDER BY", "DISTINCT", "FOREIGN KEY"],
     "correctIndex": 3,
     "explanation": "Referential Integrity yabancı anahtarla korunur.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        30
-      ]
+      "slides": [30]
     }
   },
   {
@@ -183,9 +162,7 @@
     "explanation": "Atomicity bütün adımların birlikte başarılı olmasını veya geri alınmasını sağlar.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        32
-      ]
+      "slides": [32]
     }
   },
   {
@@ -204,9 +181,7 @@
     "explanation": "Durability onaylanmış işlemin kalıcı ve kurtarılabilir olmasını hedefler.",
     "source": {
       "id": "db-week-5",
-      "slides": [
-        35
-      ]
+      "slides": [35]
     }
   },
   {
@@ -226,9 +201,7 @@
     "explanation": "Optimizer istatistiklere dayanan plan alternatiflerini değerlendirir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        132
-      ]
+      "slides": [132]
     }
   },
   {
@@ -248,9 +221,7 @@
     "explanation": "Ya hep ya hiç davranışı Atomicity ilkesidir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        132
-      ]
+      "slides": [132]
     }
   },
   {
@@ -270,9 +241,7 @@
     "explanation": "Kitabın bölüm değerlendirmesi PostgreSQL'i bu niteliklerle tanımlar.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        132
-      ]
+      "slides": [132]
     }
   },
   {
@@ -292,9 +261,7 @@
     "explanation": "Kirli okuma başka bir işlemin henüz kalıcılaştırmadığı veriyi görmektir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        133
-      ]
+      "slides": [133]
     }
   },
   {
@@ -314,9 +281,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Serializable, eşzamanlı yürütmenin seri işlemeye eşdeğer olmasını hedefler.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        133
-      ]
+      "slides": [133]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -337,9 +302,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): MVCC farklı veri sürümlerini tutarak tutarlı okumaları destekler.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        133
-      ]
+      "slides": [133]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -360,9 +323,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Döngüsel kilit bekleme, deadlock oluşturur.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        133
-      ]
+      "slides": [133]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -383,9 +344,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Bağlantı havuzu mevcut bağlantıları yeniden kullanarak kurulma maliyetini azaltır.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        135
-      ]
+      "slides": [135]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -406,9 +365,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Asenkron replikada replika birincilin biraz gerisinde kalabilir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        136
-      ]
+      "slides": [136]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -429,9 +386,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): RPO ne kadar veri kaybının zaman olarak kabul edilebildiğini tanımlar; RTO ise toparlanma süresi hedefidir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        136
-      ]
+      "slides": [136]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -452,9 +407,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): PITR belirli zamana kurtarma sağlar; WAL replay ile hedefe kadar gidilir.",
     "source": {
       "id": "db-book-ch3-week-5",
-      "slides": [
-        136
-      ]
+      "slides": [136]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   }

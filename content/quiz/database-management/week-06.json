@@ -15,9 +15,7 @@
     "explanation": "ACID, birden çok komutu kapsayabilen transaction bütününe uygulanır.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        6
-      ]
+      "slides": [6]
     }
   },
   {
@@ -36,9 +34,7 @@
     "explanation": "ROLLBACK TO SAVEPOINT ile belirtilen noktaya kadar geri dönülebilir.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        7
-      ]
+      "slides": [7]
     }
   },
   {
@@ -57,9 +53,7 @@
     "explanation": "Başlangıç 1000+500; 200 TL aktarılınca toplam 1500 TL korunur.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        10
-      ]
+      "slides": [10]
     }
   },
   {
@@ -68,19 +62,12 @@
     "topicId": "week-06",
     "difficulty": "intermediate",
     "question": "Transferde ikinci UPDATE hata verip ROLLBACK uygulanırsa Ali'nin bakiyesi nedir?",
-    "choices": [
-      "1000.00 TL",
-      "800.00 TL",
-      "1200.00 TL",
-      "700.00 TL"
-    ],
+    "choices": ["1000.00 TL", "800.00 TL", "1200.00 TL", "700.00 TL"],
     "correctIndex": 0,
     "explanation": "İlk UPDATE geçicidir; transaction geri alınırsa Ali başlangıç bakiyesine döner.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        11
-      ]
+      "slides": [11]
     }
   },
   {
@@ -99,9 +86,7 @@
     "explanation": "Hata transaction'ı aborted yapar; ROLLBACK veya uygun savepoint kurtarma gerekir.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        12
-      ]
+      "slides": [12]
     }
   },
   {
@@ -120,9 +105,7 @@
     "explanation": "Transfer çok adımlı tek mantıksal işlem olduğundan explicit BEGIN gerekir.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        13
-      ]
+      "slides": [13]
     }
   },
   {
@@ -141,9 +124,7 @@
     "explanation": "Fihrist benzetmesi indeksin aranan konuma hızla erişimini açıklar.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        16
-      ]
+      "slides": [16]
     }
   },
   {
@@ -162,9 +143,7 @@
     "explanation": "Her indeks alan kaplar ve DML sırasında bakım gerektirir.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        18
-      ]
+      "slides": [18]
     }
   },
   {
@@ -183,9 +162,7 @@
     "explanation": "(Soyad, Ad) sırası sorgu kullanımında (Ad, Soyad) ile her zaman aynı değildir.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        21
-      ]
+      "slides": [21]
     }
   },
   {
@@ -204,9 +181,7 @@
     "explanation": "EXPLAIN tahmini planı verir; ANALYZE yürütür ve gerçek zaman/işlem ölçer.",
     "source": {
       "id": "db-week-6",
-      "slides": [
-        24
-      ]
+      "slides": [24]
     }
   },
   {
@@ -226,9 +201,7 @@
     "explanation": "İndeksler seçili okuma yollarını hızlandırabilir; yazma ve alan maliyeti vardır.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        132
-      ]
+      "slides": [132]
     }
   },
   {
@@ -237,20 +210,12 @@
     "topicId": "week-06",
     "difficulty": "basic",
     "question": "Açık bir işlemin bütün onaylanmamış değişikliklerini geri almak için hangi TCL komutu kullanılır?",
-    "choices": [
-      "COMMIT",
-      "SAVEPOINT",
-      "ROLLBACK",
-      "BEGIN",
-      "ALTER TABLE"
-    ],
+    "choices": ["COMMIT", "SAVEPOINT", "ROLLBACK", "BEGIN", "ALTER TABLE"],
     "correctIndex": 2,
     "explanation": "ROLLBACK transaction içindeki onaylanmamış değişiklikleri geri alır.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        133
-      ]
+      "slides": [133]
     }
   },
   {
@@ -270,9 +235,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): WAL veriyi diske yazmadan önce ilgili günlüğü kalıcılaştırma ilkesini uygular.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        134
-      ]
+      "slides": [134]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -293,9 +256,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): B+ Tree sıralamayı koruyarak hem aralık hem eşitlik erişimini destekler.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        134
-      ]
+      "slides": [134]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -316,9 +277,7 @@
     "explanation": "Büyük estimated/actual rows farkı çoğunlukla optimizer tahmin ve istatistik sorunlarına işaret eder.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        134
-      ]
+      "slides": [134]
     }
   },
   {
@@ -338,9 +297,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): 2PC prepare aşaması katılımcıların hazır olup olmadığını oylatır.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        134
-      ]
+      "slides": [134]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -361,9 +318,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Klasik 2PC koordinatör arızasında bloklanabilen bir protokoldür.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        135
-      ]
+      "slides": [135]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -384,9 +339,7 @@
     "explanation": "Kitapta geçen ek konu (ilk altı haftanın slaytları dışında): Consensus protokolleri düğümlerin ortak bir karar üzerinde anlaşmasını hedefler.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        135
-      ]
+      "slides": [135]
     },
     "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   },
@@ -407,9 +360,7 @@
     "explanation": "Eksik indeks veya güncel olmayan istatistikler kötü erişim planlarına yol açabilir.",
     "source": {
       "id": "db-book-ch3-week-6",
-      "slides": [
-        135
-      ]
+      "slides": [135]
     }
   }
 ]

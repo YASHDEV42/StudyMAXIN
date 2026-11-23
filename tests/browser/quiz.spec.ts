@@ -270,7 +270,9 @@ test("database quiz keeps course progress separate", async ({ page }) => {
   await expect(page.locator(".quiz-intro")).toContainText("soru hazır");
 });
 
-test("textbook practice renders all five choices without changing the original OS mode", async ({ page }) => {
+test("textbook practice renders all five choices without changing the original OS mode", async ({
+  page,
+}) => {
   await page.goto("/tr/quiz/database-management/");
   await page.getByRole("radio", { name: "Kitap soruları" }).check();
   await page.getByRole("button", { name: "Başla · 10" }).click();
