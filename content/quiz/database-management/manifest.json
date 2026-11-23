@@ -96,6 +96,62 @@
       "title": "hafta06.pdf",
       "slideCount": 31,
       "sha256": "85601e3769d76d7acf0d396a2c97ef1123db23fd43ce471fa72d8b70ba9045d6"
+    },
+    {
+      "id": "db-book-ch2-week-1",
+      "topicId": "week-01",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 2, s.72–74 (fotoğraf)",
+      "slideCount": 74,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch2-week-2",
+      "topicId": "week-02",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 2, s.72–74 (fotoğraf)",
+      "slideCount": 74,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch2-week-3",
+      "topicId": "week-03",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 2, s.72–74 (fotoğraf)",
+      "slideCount": 74,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch2-week-4",
+      "topicId": "week-04",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 2, s.72–74 (fotoğraf)",
+      "slideCount": 74,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch3-week-4",
+      "topicId": "week-04",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 3, s.132–136 (fotoğraf)",
+      "slideCount": 136,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch3-week-5",
+      "topicId": "week-05",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 3, s.132–136 (fotoğraf)",
+      "slideCount": 136,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
+    },
+    {
+      "id": "db-book-ch3-week-6",
+      "topicId": "week-06",
+      "kind": "textbook-excerpt",
+      "title": "Modern Veritabanı Yönetim Sistemleri — Bölüm 3, s.132–136 (fotoğraf)",
+      "slideCount": 136,
+      "sha256": "00ba52ede5fe848d8b75d62b5f0413e24a15e23e85d2c1e8db3d56d857ba548e"
     }
   ]
 }

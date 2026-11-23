@@ -15,7 +15,9 @@
     "explanation": "Aynı bilginin bazı satırlarda eski kalması güncelleme tutarsızlığıdır.",
     "source": {
       "id": "db-week-3",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     }
   },
   {
@@ -34,7 +36,9 @@
     "explanation": "Bir varlığı başka varlığa ait kayıt olmadan ekleyememe ekleme anomalisidir.",
     "source": {
       "id": "db-week-3",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     }
   },
   {
@@ -53,7 +57,9 @@
     "explanation": "Bir kayıt silinirken farklı varlığa ilişkin bilginin de yok olması silme anomalisidir.",
     "source": {
       "id": "db-week-3",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     }
   },
   {
@@ -72,7 +78,9 @@
     "explanation": "Slayt 1NF'de atomiklik ve PK kullanımını vurgular.",
     "source": {
       "id": "db-week-3",
-      "slides": [11]
+      "slides": [
+        11
+      ]
     }
   },
   {
@@ -91,7 +99,9 @@
     "explanation": "DersAdi birleşik anahtarın yalnız DersKodu kısmına bağımlıdır; 2NF sorunudur.",
     "source": {
       "id": "db-week-3",
-      "slides": [14]
+      "slides": [
+        14
+      ]
     }
   },
   {
@@ -110,7 +120,9 @@
     "explanation": "Öğrenci ve ders tanımları ayrı tutulur; M:N kayıtları ara tabloda kalır.",
     "source": {
       "id": "db-week-3",
-      "slides": [15]
+      "slides": [
+        15
+      ]
     }
   },
   {
@@ -129,7 +141,9 @@
     "explanation": "Fakülte adı öğrenci anahtarına bölüm üzerinden dolaylı bağımlıdır.",
     "source": {
       "id": "db-week-3",
-      "slides": [18]
+      "slides": [
+        18
+      ]
     }
   },
   {
@@ -148,7 +162,9 @@
     "explanation": "Kontrollü tekrar JOIN ihtiyacını azaltabilir ancak tutarlılık ve DML bakımını zorlaştırır.",
     "source": {
       "id": "db-week-3",
-      "slides": [24]
+      "slides": [
+        24
+      ]
     }
   },
   {
@@ -167,7 +183,9 @@
     "explanation": "OgrNo, üçlü tablonun süper anahtarı değilken Danisman'ı belirlerse BCNF ihlal edilir.",
     "source": {
       "id": "db-week-3",
-      "slides": [29]
+      "slides": [
+        29
+      ]
     }
   },
   {
@@ -186,7 +204,119 @@
     "explanation": "HocaDersDil'de bağımsız ders ve dil kümeleri MVD oluşturur; HocaDers/HocaDil ayrımı gerekir.",
     "source": {
       "id": "db-week-3",
-      "slides": [38]
+      "slides": [
+        38
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q04",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "1NF açısından, tek hücrede virgülle ayrılmış birkaç telefon saklanan tasarımın temel sorunu nedir?",
+    "choices": [
+      "Hücre değerlerinin atomik olmaması",
+      "Tablonun mutlaka 3NF olması",
+      "Bütün anahtarların yabancı olması",
+      "Verinin yalnızca bellekte tutulması",
+      "Tablo adının çok kısa olması"
+    ],
+    "correctIndex": 0,
+    "explanation": "1NF atomik hücre değerlerini hedefler; çoklu telefonlar satırlara ayrılır.",
+    "source": {
+      "id": "db-book-ch2-week-3",
+      "slides": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q08",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Bileşik anahtarın yalnızca bir alt kümesinin belirlediği anahtar olmayan sütun hangi normal formu ihlal eder?",
+    "choices": [
+      "1NF (atomiklik)",
+      "3NF (geçişli bağımlılık)",
+      "4NF (çok değerli bağımlılık)",
+      "BCNF (yalnızca anahtar olmayan öznitelikler)",
+      "2NF (kısmi bağımlılık)"
+    ],
+    "correctIndex": 4,
+    "explanation": "Birleşik anahtarın bir parçasına bağımlılık 2NF'nin kaldırmayı hedeflediği kısmi bağımlılıktır.",
+    "source": {
+      "id": "db-book-ch2-week-3",
+      "slides": [
+        73
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q10",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "BCNF koşuluna uygun bir ilişkide her önemsiz olmayan fonksiyonel bağımlılığın sol tarafı nasıl olmalıdır?",
+    "choices": [
+      "Tek bir atomik alan olmalıdır",
+      "Süper anahtar olmalıdır",
+      "Yabancı anahtar olmalıdır",
+      "Mutlaka NULL içermelidir",
+      "Yalnızca üç sütun içermelidir"
+    ],
+    "correctIndex": 1,
+    "explanation": "BCNF'de X→Y önemsiz değilse X süper anahtar olmak zorundadır.",
+    "source": {
+      "id": "db-book-ch2-week-3",
+      "slides": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q11",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "Bağımsız ders ve dil kümelerinin tek tabloda gereksiz kartezyen birleşimleri hangi normal forma geçişte ayrıştırılır?",
+    "choices": [
+      "1NF",
+      "2NF",
+      "4NF",
+      "3NF",
+      "Yalnızca BCNF"
+    ],
+    "correctIndex": 2,
+    "explanation": "4NF, önemsiz olmayan MVD'lerin belirleyicisinin süper anahtar olmasını ister.",
+    "source": {
+      "id": "db-book-ch2-week-3",
+      "slides": [
+        74
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q12",
+    "courseId": "database-management",
+    "topicId": "week-03",
+    "difficulty": "intermediate",
+    "question": "İki tabloya ayrıştırılan ilişkiler JOIN ile birleştirildiğinde ek ya da kayıp satır oluşmaması hangi özelliktir?",
+    "choices": [
+      "Denormalizasyon",
+      "İndeks kapsaması",
+      "Önbellekleme",
+      "Kayıpsız birleşim (lossless join)",
+      "Geçişli bağımlılık"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kayıpsız ayrıştırma orijinal ilişkinin tam yeniden kurulmasını sağlar.",
+    "source": {
+      "id": "db-book-ch2-week-3",
+      "slides": [
+        74
+      ]
     }
   }
 ]

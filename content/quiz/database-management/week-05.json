@@ -15,7 +15,9 @@
     "explanation": "2-Tier istemci doğrudan VT'ye erişir ve iş mantığı güncellemeleri dağıtılmalıdır.",
     "source": {
       "id": "db-week-5",
-      "slides": [9]
+      "slides": [
+        9
+      ]
     }
   },
   {
@@ -34,7 +36,9 @@
     "explanation": "3-Tier'da sunum katmanı uygulama katmanına; uygulama katmanı VT'ye gider.",
     "source": {
       "id": "db-week-5",
-      "slides": [10]
+      "slides": [
+        10
+      ]
     }
   },
   {
@@ -53,7 +57,9 @@
     "explanation": "Önce ayrıştırma, sonra plan seçimi, ardından yürütme yapılır.",
     "source": {
       "id": "db-week-5",
-      "slides": [14]
+      "slides": [
+        14
+      ]
     }
   },
   {
@@ -72,7 +78,9 @@
     "explanation": "İyileştirici istatistiklerle erişim ve JOIN stratejilerinin maliyetini tahmin eder.",
     "source": {
       "id": "db-week-5",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   },
   {
@@ -91,7 +99,9 @@
     "explanation": "Buffer pool, disk I/O gereksinimini azaltır.",
     "source": {
       "id": "db-week-5",
-      "slides": [17]
+      "slides": [
+        17
+      ]
     }
   },
   {
@@ -110,7 +120,9 @@
     "explanation": "Slayt 24 PostgreSQL'in genişletilebilirliğini PostGIS ile örneklendirir.",
     "source": {
       "id": "db-week-5",
-      "slides": [24]
+      "slides": [
+        24
+      ]
     }
   },
   {
@@ -129,7 +141,9 @@
     "explanation": "PK her satırı benzersiz ve tanımlanabilir yapar.",
     "source": {
       "id": "db-week-5",
-      "slides": [30]
+      "slides": [
+        30
+      ]
     }
   },
   {
@@ -138,12 +152,19 @@
     "topicId": "week-05",
     "difficulty": "intermediate",
     "question": "Mevcut olmayan OgrenciID için Notlar kaydı eklenmesini hangi kısıt önler?",
-    "choices": ["DEFAULT", "ORDER BY", "DISTINCT", "FOREIGN KEY"],
+    "choices": [
+      "DEFAULT",
+      "ORDER BY",
+      "DISTINCT",
+      "FOREIGN KEY"
+    ],
     "correctIndex": 3,
     "explanation": "Referential Integrity yabancı anahtarla korunur.",
     "source": {
       "id": "db-week-5",
-      "slides": [30]
+      "slides": [
+        30
+      ]
     }
   },
   {
@@ -162,7 +183,9 @@
     "explanation": "Atomicity bütün adımların birlikte başarılı olmasını veya geri alınmasını sağlar.",
     "source": {
       "id": "db-week-5",
-      "slides": [32]
+      "slides": [
+        32
+      ]
     }
   },
   {
@@ -181,7 +204,258 @@
     "explanation": "Durability onaylanmış işlemin kalıcı ve kurtarılabilir olmasını hedefler.",
     "source": {
       "id": "db-week-5",
-      "slides": [35]
+      "slides": [
+        35
+      ]
     }
+  },
+  {
+    "id": "db-book-ch3-q01",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "basic",
+    "question": "Bir SQL sorgusunun olası indeks kullanımını ve JOIN sırasını maliyete göre seçen bileşen hangisidir?",
+    "choices": [
+      "Parser (ayrıştırıcı)",
+      "Executor (yürütücü)",
+      "Buffer Manager",
+      "Optimizer (iyileştirici)",
+      "Lock Manager"
+    ],
+    "correctIndex": 3,
+    "explanation": "Optimizer istatistiklere dayanan plan alternatiflerini değerlendirir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q02",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Para aktarımının iki adımı da başarıyla tamamlanmazsa tümünün geri alınmasını hangi ACID ilkesi sağlar?",
+    "choices": [
+      "Consistency (tutarlılık)",
+      "Isolation (izolasyon)",
+      "Durability (kalıcılık)",
+      "Integrity (veri bütünlüğü)",
+      "Atomicity (atomiklik)"
+    ],
+    "correctIndex": 4,
+    "explanation": "Ya hep ya hiç davranışı Atomicity ilkesidir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q03",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Açık kaynak oluşu, genişletilebilirlik ve SQL standartlarına yakınlığıyla kitapta öne çıkan RDBMS hangisidir?",
+    "choices": [
+      "PostgreSQL",
+      "MySQL",
+      "Microsoft SQL Server",
+      "Oracle Database",
+      "SQLite"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kitabın bölüm değerlendirmesi PostgreSQL'i bu niteliklerle tanımlar.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q06",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "intermediate",
+    "question": "Bir işlem henüz COMMIT edilmemiş veriyi okuyor ve sonra bu veri geri alınıyorsa hangi anomali yaşanmıştır?",
+    "choices": [
+      "Lost Update",
+      "Phantom Read",
+      "Deadlock",
+      "Dirty Read (kirli okuma)",
+      "Repeatable Read"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kirli okuma başka bir işlemin henüz kalıcılaştırmadığı veriyi görmektir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q07",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Kirli, tekrarlanamayan ve hayalet okumayı birlikte önlemeyi amaçlayan en güçlü standart izolasyon düzeyi hangisidir?",
+    "choices": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Autocommit",
+      "Serializable"
+    ],
+    "correctIndex": 4,
+    "explanation": "Serializable, eşzamanlı yürütmenin seri işlemeye eşdeğer olmasını hedefler.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        133
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q08",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Eski sürümü koruyarak okuyucular ile yazarların birbirini mümkün olduğunca engellememesini hangi yöntem sağlar?",
+    "choices": [
+      "MVCC (çok sürümlü eşzamanlılık kontrolü)",
+      "İki aşamalı kilitleme",
+      "Tam tablo kilidi",
+      "Checkpoint",
+      "Bitmap indeks"
+    ],
+    "correctIndex": 0,
+    "explanation": "MVCC farklı veri sürümlerini tutarak tutarlı okumaları destekler.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        133
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q09",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "İki transaction'ın birbirinin tuttuğu kilidi bekleyip ilerleyememesi nasıl adlandırılır?",
+    "choices": [
+      "Dirty Read",
+      "Deadlock (kilitlenme)",
+      "Index Seek",
+      "Checkpoint",
+      "Log Replay"
+    ],
+    "correctIndex": 1,
+    "explanation": "Döngüsel kilit bekleme, deadlock oluşturur.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        133
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q18",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Her HTTP isteğinde yeni DB bağlantısı kurma maliyetini ve bağlantı sınırı baskısını azaltmak için hangi yapı kullanılır?",
+    "choices": [
+      "Connection Pool (bağlantı havuzu)",
+      "Bitmap Index",
+      "Denormalizasyon",
+      "2PC",
+      "Materialized View"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bağlantı havuzu mevcut bağlantıları yeniden kullanarak kurulma maliyetini azaltır.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        135
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q19",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Asenkron replikadan hemen okuyan bir istemcinin henüz kopyalanmamış veriyi görmemesine neden olan gecikme nedir?",
+    "choices": [
+      "Deadlock",
+      "Replication Lag (replikasyon gecikmesi)",
+      "Phantom Read",
+      "Split-brain",
+      "Write Amplification"
+    ],
+    "correctIndex": 1,
+    "explanation": "Asenkron replikada replika birincilin biraz gerisinde kalabilir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        136
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q20",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Felaket kurtarmada kabul edilebilecek en yüksek veri kaybı aralığını belirleyen hedef hangisidir?",
+    "choices": [
+      "RTO (Recovery Time Objective)",
+      "TPS",
+      "RPO (Recovery Point Objective)",
+      "IOPS",
+      "SLA'nın tüm anlamları"
+    ],
+    "correctIndex": 2,
+    "explanation": "RPO ne kadar veri kaybının zaman olarak kabul edilebildiğini tanımlar; RTO ise toparlanma süresi hedefidir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        136
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q21",
+    "courseId": "database-management",
+    "topicId": "week-05",
+    "difficulty": "advanced",
+    "question": "Tam yedek ve WAL kayıtları kullanılarak veritabanını geçmişte seçilen bir ana döndürme tekniği hangisidir?",
+    "choices": [
+      "Failover",
+      "Replication Lag",
+      "Sharding",
+      "PITR (Point-in-Time Recovery)",
+      "Connection Pool"
+    ],
+    "correctIndex": 3,
+    "explanation": "PITR belirli zamana kurtarma sağlar; WAL replay ile hedefe kadar gidilir.",
+    "source": {
+      "id": "db-book-ch3-week-5",
+      "slides": [
+        136
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
   }
 ]

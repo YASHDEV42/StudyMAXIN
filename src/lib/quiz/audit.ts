@@ -6,6 +6,7 @@ const note = z.string().trim().min(1);
 const positions = z.array(z.number().int().positive());
 const evidenceKind = z.enum([
   "direct-slides",
+  "direct-book",
   "slide-application",
   "studymaxin-teaching",
   "supplementary",
@@ -105,9 +106,14 @@ export function publishAuditedBank(
           `Missing supporting quiz audit reference: ${question.id}`,
         );
       referencesByQuestion[question.id] = evidence.references;
-    } else if (sourceKinds.get(evidence.sourceId) !== "original-slides") {
+    } else if (
+      (evidence.kind === "direct-book" &&
+        sourceKinds.get(evidence.sourceId) !== "textbook-excerpt") ||
+      (evidence.kind !== "direct-book" &&
+        sourceKinds.get(evidence.sourceId) !== "original-slides")
+    ) {
       throw new Error(
-        `Slide verification requires an original deck: ${question.id}`,
+        `Source evidence type mismatch: ${question.id}`,
       );
     }
     questions.push(question);

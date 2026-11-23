@@ -160,7 +160,13 @@ export function QuizTrainer({
         ? bookmarks
         : mode === "topic"
           ? bank.questions.filter(({ topicId }) => topicId === topic)
-          : bank.questions;
+          : mode === "book"
+            ? bank.questions.filter(({ source }) =>
+                bank.sources.some(
+                  (item) => item.id === source.id && item.kind === "textbook-excerpt",
+                ),
+              )
+            : bank.questions;
   const limit =
     mode === "exam"
       ? examSize
@@ -244,7 +250,7 @@ export function QuizTrainer({
         move(session.position + 1);
       else if (session.mode !== "exam") finish(now);
     }
-    if (/^[1-4]$/.test(event.key)) {
+    if (/^[1-5]$/.test(event.key)) {
       event.preventDefault();
       if (!event.repeat) answer(Number(event.key) - 1, now);
     }
@@ -405,7 +411,7 @@ export function QuizTrainer({
                   onClick={() => answer(displayed, Date.now())}
                 >
                   <span className="quiz-letter" aria-hidden="true">
-                    {["A", "B", "C", "D"][displayed]}
+                    {["A", "B", "C", "D", "E"][displayed]}
                   </span>
                   {question.choices[original]}
                   {reveal && original === question.correctIndex && (
@@ -482,7 +488,7 @@ export function QuizTrainer({
             </button>
           )}
         </div>
-        <p className="quiz-key-hint">{t.keys}</p>
+        <p className="quiz-key-hint">{bank.courseId === "database-management" ? (locale === "tr" ? "Seçenekler: 1–5, sonraki soru: N." : "الاختيارات: 1–5، السؤال التالي: N.") : t.keys}</p>
         {exam && (
           <details className="quiz-card quiz-map" open>
             <summary>{t.map}</summary>
@@ -573,7 +579,7 @@ export function QuizTrainer({
           )}
           <fieldset disabled={!ready || !!active} className="quiz-modes">
             <legend className="quiz-visually-hidden">{t.home}</legend>
-            {modes.map((value) => (
+            {modes.filter((value) => value !== "book" || bank.sources.some((source) => source.kind === "textbook-excerpt")).map((value) => (
               <label key={value}>
                 <input
                   type="radio"

@@ -30,7 +30,9 @@ export function SourceNote({
           ? t.sourceContext
           : source.kind === "original-slides"
             ? t.original
-            : t.notes}{" "}
+            : source.kind === "textbook-excerpt"
+              ? locale === "tr" ? "Kitap değerlendirme soruları" : "أسئلة التقييم في الكتاب"
+              : t.notes}{" "}
         · <bdi lang="tr">{source.title}</bdi> · {t.slides}{" "}
         <bdi>{question.source.slides.join(", ")}</bdi>
       </p>

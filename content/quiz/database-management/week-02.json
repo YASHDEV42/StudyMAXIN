@@ -15,7 +15,9 @@
     "explanation": "Tuple ilişki içindeki tek bir kayıt, yani satırdır.",
     "source": {
       "id": "db-week-2",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     }
   },
   {
@@ -34,7 +36,9 @@
     "explanation": "İlişkide satır sırası önemsiz, satırlar benzersiz ve değerler atomiktir.",
     "source": {
       "id": "db-week-2",
-      "slides": [9]
+      "slides": [
+        9
+      ]
     }
   },
   {
@@ -53,7 +57,9 @@
     "explanation": "Primary Key satırı tekil belirler ve NULL kabul etmez.",
     "source": {
       "id": "db-week-2",
-      "slides": [10]
+      "slides": [
+        10
+      ]
     }
   },
   {
@@ -72,7 +78,9 @@
     "explanation": "Foreign Key, başvurulan öğrenci kimliğinin geçerliliğini denetler.",
     "source": {
       "id": "db-week-2",
-      "slides": [11]
+      "slides": [
+        11
+      ]
     }
   },
   {
@@ -91,7 +99,9 @@
     "explanation": "Slaytta çift oval, örneğin birden fazla Telefon değerini belirtir.",
     "source": {
       "id": "db-week-2",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   },
   {
@@ -110,7 +120,9 @@
     "explanation": "Yaş gibi başka nitelikten hesaplanan değer türetilmiş niteliktir.",
     "source": {
       "id": "db-week-2",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   },
   {
@@ -129,7 +141,9 @@
     "explanation": "Kardinalite karşı uçtan okunur; FK N tarafındaki Öğrenci tablosuna eklenir.",
     "source": {
       "id": "db-week-2",
-      "slides": [19]
+      "slides": [
+        19
+      ]
     }
   },
   {
@@ -148,7 +162,9 @@
     "explanation": "1:N dönüşümünde bir tarafının PK'si çok tarafında FK olur.",
     "source": {
       "id": "db-week-2",
-      "slides": [25]
+      "slides": [
+        25
+      ]
     }
   },
   {
@@ -167,7 +183,9 @@
     "explanation": "M:N ilişki için OgrenciDersKayit gibi junction table kurulur.",
     "source": {
       "id": "db-week-2",
-      "slides": [26]
+      "slides": [
+        26
+      ]
     }
   },
   {
@@ -186,7 +204,75 @@
     "explanation": "Candidate Key minimal Super Key'dir; gereksiz sütun içermez.",
     "source": {
       "id": "db-week-2",
-      "slides": [34]
+      "slides": [
+        34
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q02",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "Bir tablonun her kaydını tekil tanımlayan ve NULL kabul etmeyen anahtar hangisidir?",
+    "choices": [
+      "Yabancı anahtar",
+      "Sadece bileşik anahtar",
+      "Herhangi bir süper anahtar",
+      "Birincil anahtar (Primary Key)",
+      "İkincil indeks"
+    ],
+    "correctIndex": 3,
+    "explanation": "Primary Key benzersiz ve NULL olmayan tanımlayıcıdır.",
+    "source": {
+      "id": "db-book-ch2-week-2",
+      "slides": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q03",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "intermediate",
+    "question": "Her öğrencinin birçok ders alabildiği ve her dersin birçok öğrenci tarafından alınabildiği ilişkide kardinalite nedir?",
+    "choices": [
+      "1:1",
+      "1:N",
+      "N:1",
+      "0:1",
+      "M:N (çoka-çok)"
+    ],
+    "correctIndex": 4,
+    "explanation": "Her iki tarafta da birden fazla eşleşme bulunduğundan M:N ilişki vardır.",
+    "source": {
+      "id": "db-book-ch2-week-2",
+      "slides": [
+        72
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q09",
+    "courseId": "database-management",
+    "topicId": "week-02",
+    "difficulty": "basic",
+    "question": "Öznitelik kümesi X'in kapanışı, ilişkinin bütün özniteliklerini içeriyorsa X hakkında hangisi söylenir?",
+    "choices": [
+      "X bir süper anahtardır",
+      "X yalnızca yabancı anahtardır",
+      "X kesinlikle tek sütundur",
+      "X mutlaka bir MVD'dir",
+      "X hiçbir bağımlılık içermez"
+    ],
+    "correctIndex": 0,
+    "explanation": "X+ bütün öznitelikleri kapsarsa X tüm ilişkiyi fonksiyonel olarak belirler; süper anahtardır.",
+    "source": {
+      "id": "db-book-ch2-week-2",
+      "slides": [
+        73
+      ]
     }
   }
 ]

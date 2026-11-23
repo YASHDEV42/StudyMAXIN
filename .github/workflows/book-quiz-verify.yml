@@ -1,0 +1,28 @@
+name: Book quiz format and check
+on:
+  push:
+    branches:
+      - maintenance/book-quiz-check-20261123
+permissions:
+  contents: read
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format
+      - name: Capture formatted changes
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync } from "node:fs";
+          import { execFileSync } from "node:child_process";
+          const names = execFileSync("git", ["diff", "--name-only"], { encoding: "utf8" }).trim().split("\n").filter(Boolean);
+          const output = names.map(path => ({ path, content: readFileSync(path, "utf8") }));
+          console.log("FORMATTED_BOOK_FILES_START" + JSON.stringify(output) + "FORMATTED_BOOK_FILES_END");
+          NODE
+      - run: npm run check

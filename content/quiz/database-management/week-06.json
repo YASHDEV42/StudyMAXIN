@@ -15,7 +15,9 @@
     "explanation": "ACID, birden çok komutu kapsayabilen transaction bütününe uygulanır.",
     "source": {
       "id": "db-week-6",
-      "slides": [6]
+      "slides": [
+        6
+      ]
     }
   },
   {
@@ -34,7 +36,9 @@
     "explanation": "ROLLBACK TO SAVEPOINT ile belirtilen noktaya kadar geri dönülebilir.",
     "source": {
       "id": "db-week-6",
-      "slides": [7]
+      "slides": [
+        7
+      ]
     }
   },
   {
@@ -53,7 +57,9 @@
     "explanation": "Başlangıç 1000+500; 200 TL aktarılınca toplam 1500 TL korunur.",
     "source": {
       "id": "db-week-6",
-      "slides": [10]
+      "slides": [
+        10
+      ]
     }
   },
   {
@@ -62,12 +68,19 @@
     "topicId": "week-06",
     "difficulty": "intermediate",
     "question": "Transferde ikinci UPDATE hata verip ROLLBACK uygulanırsa Ali'nin bakiyesi nedir?",
-    "choices": ["1000.00 TL", "800.00 TL", "1200.00 TL", "700.00 TL"],
+    "choices": [
+      "1000.00 TL",
+      "800.00 TL",
+      "1200.00 TL",
+      "700.00 TL"
+    ],
     "correctIndex": 0,
     "explanation": "İlk UPDATE geçicidir; transaction geri alınırsa Ali başlangıç bakiyesine döner.",
     "source": {
       "id": "db-week-6",
-      "slides": [11]
+      "slides": [
+        11
+      ]
     }
   },
   {
@@ -86,7 +99,9 @@
     "explanation": "Hata transaction'ı aborted yapar; ROLLBACK veya uygun savepoint kurtarma gerekir.",
     "source": {
       "id": "db-week-6",
-      "slides": [12]
+      "slides": [
+        12
+      ]
     }
   },
   {
@@ -105,7 +120,9 @@
     "explanation": "Transfer çok adımlı tek mantıksal işlem olduğundan explicit BEGIN gerekir.",
     "source": {
       "id": "db-week-6",
-      "slides": [13]
+      "slides": [
+        13
+      ]
     }
   },
   {
@@ -124,7 +141,9 @@
     "explanation": "Fihrist benzetmesi indeksin aranan konuma hızla erişimini açıklar.",
     "source": {
       "id": "db-week-6",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   },
   {
@@ -143,7 +162,9 @@
     "explanation": "Her indeks alan kaplar ve DML sırasında bakım gerektirir.",
     "source": {
       "id": "db-week-6",
-      "slides": [18]
+      "slides": [
+        18
+      ]
     }
   },
   {
@@ -162,7 +183,9 @@
     "explanation": "(Soyad, Ad) sırası sorgu kullanımında (Ad, Soyad) ile her zaman aynı değildir.",
     "source": {
       "id": "db-week-6",
-      "slides": [21]
+      "slides": [
+        21
+      ]
     }
   },
   {
@@ -181,7 +204,212 @@
     "explanation": "EXPLAIN tahmini planı verir; ANALYZE yürütür ve gerçek zaman/işlem ölçer.",
     "source": {
       "id": "db-week-6",
-      "slides": [24]
+      "slides": [
+        24
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q04",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "Bir veritabanı indeksi en doğrudan hangi iş yüküne fayda sağlamak için oluşturulur?",
+    "choices": [
+      "Her UPDATE'i bedelsiz hızlandırmak",
+      "SELECT sorgularında erişim performansını iyileştirmek",
+      "Kullanıcı parolalarını şifrelemek",
+      "Depolama alanı kullanımını sıfırlamak",
+      "Yalnızca veri türlerini doğrulamak"
+    ],
+    "correctIndex": 1,
+    "explanation": "İndeksler seçili okuma yollarını hızlandırabilir; yazma ve alan maliyeti vardır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        132
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q05",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "basic",
+    "question": "Açık bir işlemin bütün onaylanmamış değişikliklerini geri almak için hangi TCL komutu kullanılır?",
+    "choices": [
+      "COMMIT",
+      "SAVEPOINT",
+      "ROLLBACK",
+      "BEGIN",
+      "ALTER TABLE"
+    ],
+    "correctIndex": 2,
+    "explanation": "ROLLBACK transaction içindeki onaylanmamış değişiklikleri geri alır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        133
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q10",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Bir değişikliği veri dosyasından önce işlem günlüğüne kaydedip çökme sonrası yeniden uygulamayı sağlayan yöntem hangisidir?",
+    "choices": [
+      "Hash Join",
+      "Clustered Index",
+      "Write-Ahead Logging (WAL)",
+      "Shared Lock",
+      "Denormalizasyon"
+    ],
+    "correctIndex": 2,
+    "explanation": "WAL veriyi diske yazmadan önce ilgili günlüğü kalıcılaştırma ilkesini uygular.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        134
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q11",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Eşitlik, BETWEEN ve ORDER BY sorguları için sıralı düğümler kullanan yaygın indeks yapısı hangisidir?",
+    "choices": [
+      "Hash Index",
+      "Bitmap Index",
+      "Linked List",
+      "B+ ağacı (B+ Tree)",
+      "Heap"
+    ],
+    "correctIndex": 3,
+    "explanation": "B+ Tree sıralamayı koruyarak hem aralık hem eşitlik erişimini destekler.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        134
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q12",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "EXPLAIN ANALYZE'da planlanan satır sayısı gerçek satır sayısından çok farklıysa öncelikle ne araştırılmalıdır?",
+    "choices": [
+      "Yalnızca ağ bant genişliği",
+      "Kullanıcının metin kodlaması",
+      "Parola politikası",
+      "Yedek dosyası adı",
+      "Yanlış veya güncelliğini yitirmiş istatistikler"
+    ],
+    "correctIndex": 4,
+    "explanation": "Büyük estimated/actual rows farkı çoğunlukla optimizer tahmin ve istatistik sorunlarına işaret eder.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        134
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch3-q13",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Dağıtık transaction için iki aşamalı commit'in ilk adımında katılımcılardan ne toplanır?",
+    "choices": [
+      "Commit için hazır olduklarına ilişkin oy",
+      "En hızlı sorgu planı",
+      "Yeni indeks isimleri",
+      "Ölü tuple sayısı",
+      "Lider seçimi sonucu"
+    ],
+    "correctIndex": 0,
+    "explanation": "2PC prepare aşaması katılımcıların hazır olup olmadığını oylatır.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        134
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q14",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "2PC'de koordinatör kritik anda çökerse katılımcıların uzun süre beklemesi hangi tasarım zayıflığıdır?",
+    "choices": [
+      "Kayıpsız JOIN",
+      "Blocking: belirsiz karar nedeniyle bekleme",
+      "Diskte tek tablo zorunluluğu",
+      "Sadece indeks eksikliği",
+      "Geçişli bağımlılık"
+    ],
+    "correctIndex": 1,
+    "explanation": "Klasik 2PC koordinatör arızasında bloklanabilen bir protokoldür.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        135
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q15",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "advanced",
+    "question": "Raft veya Paxos gibi yöntemlerin çözdüğü ortak dağıtık sistem problemi hangisidir?",
+    "choices": [
+      "Normalizasyon",
+      "Sorgu izdüşümü",
+      "Consensus (uzlaşma)",
+      "Şifreleme algoritması seçimi",
+      "İndeksleme stratejisi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Consensus protokolleri düğümlerin ortak bir karar üzerinde anlaşmasını hedefler.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        135
+      ]
+    },
+    "clarificationAr": "سؤال إضافي مستند لقسم التقييم بالكتاب. تفاصيل هذا المفهوم أوسع من شرح المحاضرات الست الأولى."
+  },
+  {
+    "id": "db-book-ch3-q16",
+    "courseId": "database-management",
+    "topicId": "week-06",
+    "difficulty": "intermediate",
+    "question": "PostgreSQL EXPLAIN çıktısında Seq Scan ve büyük tahmin hatası birlikte görüldüğünde uygun ilk inceleme hangisidir?",
+    "choices": [
+      "Yedekleme dosya adının değişimi",
+      "Farklı TLS portu seçimi",
+      "DML'i tamamen yasaklamak",
+      "İndeks ihtiyacı ve istatistiklerin güncelliği",
+      "Tüm SQL tablolarını silmek"
+    ],
+    "correctIndex": 3,
+    "explanation": "Eksik indeks veya güncel olmayan istatistikler kötü erişim planlarına yol açabilir.",
+    "source": {
+      "id": "db-book-ch3-week-6",
+      "slides": [
+        135
+      ]
     }
   }
 ]

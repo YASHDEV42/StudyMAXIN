@@ -15,7 +15,9 @@
     "explanation": "Veritabanları salt depolama değil, karar ve süreç desteği sunar.",
     "source": {
       "id": "db-week-1",
-      "slides": [6]
+      "slides": [
+        6
+      ]
     }
   },
   {
@@ -34,7 +36,9 @@
     "explanation": "Dosya tabanlı yapılar bütünlük ve ilişkilerin yönetiminde zorlanır.",
     "source": {
       "id": "db-week-1",
-      "slides": [12]
+      "slides": [
+        12
+      ]
     }
   },
   {
@@ -53,7 +57,9 @@
     "explanation": "Hiyerarşik model ebeveyn-çocuk ağacı oluşturur.",
     "source": {
       "id": "db-week-1",
-      "slides": [13]
+      "slides": [
+        13
+      ]
     }
   },
   {
@@ -72,7 +78,9 @@
     "explanation": "Ağ modeli çoklu ebeveyn ilişkilerine olanak verir.",
     "source": {
       "id": "db-week-1",
-      "slides": [13]
+      "slides": [
+        13
+      ]
     }
   },
   {
@@ -91,7 +99,9 @@
     "explanation": "Bildirimsel SQL ile ne istendiği belirtilir; erişim yöntemi VTYS'ye bırakılır.",
     "source": {
       "id": "db-week-1",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   },
   {
@@ -110,7 +120,9 @@
     "explanation": "Nesneler ve tablo satır-sütun modeli arasında eşleme gerekir.",
     "source": {
       "id": "db-week-1",
-      "slides": [17]
+      "slides": [
+        17
+      ]
     }
   },
   {
@@ -129,7 +141,9 @@
     "explanation": "Graf veritabanları düğüm ve ilişkiler odaklı veri için uygundur.",
     "source": {
       "id": "db-week-1",
-      "slides": [19]
+      "slides": [
+        19
+      ]
     }
   },
   {
@@ -148,7 +162,9 @@
     "explanation": "Slayt MongoDB'yi doküman modeliyle eşleştirir.",
     "source": {
       "id": "db-week-1",
-      "slides": [19]
+      "slides": [
+        19
+      ]
     }
   },
   {
@@ -167,7 +183,9 @@
     "explanation": "Bağlam ham veriyi enformasyona dönüştürür; üstveri alanı açıklar.",
     "source": {
       "id": "db-week-1",
-      "slides": [28]
+      "slides": [
+        28
+      ]
     }
   },
   {
@@ -186,7 +204,31 @@
     "explanation": "Metadata veri hakkındaki veridir; alanın yapısı ve geçerlilik kurallarını tanımlar.",
     "source": {
       "id": "db-week-1",
-      "slides": [32]
+      "slides": [
+        32
+      ]
+    }
+  },
+  {
+    "id": "db-book-ch2-q01",
+    "courseId": "database-management",
+    "topicId": "week-01",
+    "difficulty": "basic",
+    "question": "Bir sütunun veri tipi, izin verilen biçimi ve kuralları hakkında bilgi hangi kavramla açıklanır?",
+    "choices": [
+      "Demet (Tuple)",
+      "İlişki (Relation)",
+      "Metadata",
+      "Transaksiyon",
+      "Önbellek"
+    ],
+    "correctIndex": 2,
+    "explanation": "Metadata verinin yapısını ve kurallarını anlatan üstveridir.",
+    "source": {
+      "id": "db-book-ch2-week-1",
+      "slides": [
+        72
+      ]
     }
   }
 ]

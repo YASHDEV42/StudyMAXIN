@@ -77,3 +77,17 @@ covers the entire first database bank; practice can draw 10 questions per
 individual week. The bank is an initial assessment set and can be expanded
 after the instructor's textbook-style sample questions are received. Audit
 every new question against the original slide before publishing.
+
+## Textbook-style five-choice questions
+
+Photographed textbook end-of-chapter questions are source references, not a
+license to redistribute the book pages. Questions are **newly paraphrased**
+Turkish assessments following the same concept and difficulty. They are
+identified by `textbook-excerpt` sources with printed book-page references
+and verified in `docs/database-quiz-audit.json` as `direct-book` evidence.
+The original eight photographs are private and are not uploaded into the repo.
+The database quiz exposes a `Kitap soruları` practice mode using five choices
+(A–E), while legacy Operating Systems questions continue using four (A–D).
+Some chapter 3 book topics (WAL, MVCC, 2PC, consensus, HA/DR) go beyond the
+first six lecture decks; these questions explicitly identify that boundary in
+their explanations or Arabic clarification.

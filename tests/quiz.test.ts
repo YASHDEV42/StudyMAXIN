@@ -508,3 +508,21 @@ test("database bank and course-scoped progress remain isolated", async () => {
     60,
   );
 });
+
+test("five-choice textbook questions use the fifth answer without changing four-choice exams", async () => {
+  const database = await loadQuizBank(undefined, undefined, "database-management");
+  const book = database.questions.filter((question) =>
+    database.sources.some((source) =>
+      source.id === question.source.id && source.kind === "textbook-excerpt",
+    ),
+  );
+  assert.ok(book.length >= 30);
+  assert.ok(book.every((question) => question.choices.length === 5));
+  const fifth = book.find((question) => question.correctIndex === 4)!;
+  assert.ok(questionSchema.safeParse(fifth).success);
+  const session = createSession([fifth], "book", 1, null, () => 0)!;
+  assert.equal(session.items[0].order.length, 5);
+  const index = session.items[0].order.indexOf(4);
+  assert.equal(selectAnswer(session, index, 1).items[0].answer, 4);
+  assert.equal(createSession([first], "topic", 1, null, () => 0)!.items[0].order.length, 4);
+});
