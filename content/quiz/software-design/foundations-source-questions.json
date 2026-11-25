@@ -9,13 +9,13 @@
     },
     "question": "JWT tüm sistemin kimlik doğrulamasını etkiliyorsa karar türü?",
     "choices": [
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez",
       "Mimari",
       "Kod/tasarım",
-      "İletişim ve operasyonel mimari",
-      "Yalnızca görsel karar",
-      "Bağlama göre değişmez"
+      "İletişim ve operasyonel mimari"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
   },
@@ -49,13 +49,13 @@
     },
     "question": "PostgreSQL seçimi çoğu sistemde hangi karar türüdür?",
     "choices": [
-      "Mimari",
-      "Kod/tasarım",
       "İletişim ve operasyonel mimari",
       "Yalnızca görsel karar",
-      "Bağlama göre değişmez"
+      "Bağlama göre değişmez",
+      "Mimari",
+      "Kod/tasarım"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
   },
@@ -69,13 +69,13 @@
     },
     "question": "Servisler arası Kafka kullanımı neyi etkiler?",
     "choices": [
+      "Bağlama göre değişmez",
       "İletişim ve operasyonel mimari",
       "Mimari",
       "Kod/tasarım",
-      "Yalnızca görsel karar",
-      "Bağlama göre değişmez"
+      "Yalnızca görsel karar"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: İletişim ve operasyonel mimari. PDF sayfa 36."
   },
@@ -89,13 +89,13 @@
     },
     "question": "Merkezi analizde kullanılan ortak log formatı değişirse karar türü ne olabilir?",
     "choices": [
-      "Mimari",
       "Kod/tasarım",
       "İletişim ve operasyonel mimari",
       "Yalnızca görsel karar",
-      "Bağlama göre değişmez"
+      "Bağlama göre değişmez",
+      "Mimari"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
   },
@@ -109,13 +109,13 @@
     },
     "question": "Abstraction ile Encapsulation arasındaki temel fark?",
     "choices": [
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
       "Önemli davranışı seçmek ile iç durumu korumak",
       "İlişkili sorumlulukları odaklamak",
-      "Gereksiz modüller arası bağımlılığı azaltmak",
-      "Sıfır/bir, en az bir, sıfır veya daha çok",
-      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+      "Gereksiz modüller arası bağımlılığı azaltmak"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Önemli davranışı seçmek ile iç durumu korumak. PDF sayfa 40."
   },
@@ -149,13 +149,13 @@
     },
     "question": "Low coupling neyi hedefler?",
     "choices": [
-      "Gereksiz modüller arası bağımlılığı azaltmak",
-      "Önemli davranışı seçmek ile iç durumu korumak",
       "İlişkili sorumlulukları odaklamak",
       "Sıfır/bir, en az bir, sıfır veya daha çok",
-      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Önemli davranışı seçmek ile iç durumu korumak"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Gereksiz modüller arası bağımlılığı azaltmak. PDF sayfa 40."
   },
@@ -169,13 +169,13 @@
     },
     "question": "UML'de 0..1, 1..*, 0..* neyi gösterir?",
     "choices": [
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
       "Sıfır/bir, en az bir, sıfır veya daha çok",
       "Önemli davranışı seçmek ile iç durumu korumak",
       "İlişkili sorumlulukları odaklamak",
-      "Gereksiz modüller arası bağımlılığı azaltmak",
-      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+      "Gereksiz modüller arası bağımlılığı azaltmak"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Sıfır/bir, en az bir, sıfır veya daha çok. PDF sayfa 40."
   },
@@ -189,13 +189,13 @@
     },
     "question": "Composition'ı aggregation'dan ayıran temel anlam?",
     "choices": [
-      "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
       "Önemli davranışı seçmek ile iç durumu korumak",
       "İlişkili sorumlulukları odaklamak",
       "Gereksiz modüller arası bağımlılığı azaltmak",
-      "Sıfır/bir, en az bir, sıfır veya daha çok"
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Güçlü bütün-parça ve yaşam döngüsü sahipliği. PDF sayfa 40."
   },
@@ -209,13 +209,13 @@
     },
     "question": "Generalization ile realization arasındaki fark?",
     "choices": [
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
       "Kalıtım ile arayüz sözleşmesini uygulama",
       "Önemli davranışı seçmek ile iç durumu korumak",
-      "İlişkili sorumlulukları odaklamak",
-      "Gereksiz modüller arası bağımlılığı azaltmak",
-      "Sıfır/bir, en az bir, sıfır veya daha çok"
+      "İlişkili sorumlulukları odaklamak"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Kalıtım ile arayüz sözleşmesini uygulama. PDF sayfa 40."
   },
@@ -249,13 +249,13 @@
     },
     "question": "Use Case nasıl adlandırılmalıdır?",
     "choices": [
-      "Kullanıcı hedefini anlatan fiille",
-      "Kişiyi değil rolü",
       "Zorunlu ortak davranış ile koşullu davranış",
       "Ne yapılır ve nasıl/hangi sırada yapılır",
-      "Katılımcının etkileşimdeki varlığını"
+      "Katılımcının etkileşimdeki varlığını",
+      "Kullanıcı hedefini anlatan fiille",
+      "Kişiyi değil rolü"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Kullanıcı hedefini anlatan fiille. PDF sayfa 32."
   },
@@ -269,13 +269,13 @@
     },
     "question": "Include ile extend farkı?",
     "choices": [
+      "Katılımcının etkileşimdeki varlığını",
       "Zorunlu ortak davranış ile koşullu davranış",
       "Kişiyi değil rolü",
       "Kullanıcı hedefini anlatan fiille",
-      "Ne yapılır ve nasıl/hangi sırada yapılır",
-      "Katılımcının etkileşimdeki varlığını"
+      "Ne yapılır ve nasıl/hangi sırada yapılır"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Zorunlu ortak davranış ile koşullu davranış. PDF sayfa 32."
   },
@@ -289,13 +289,13 @@
     },
     "question": "Use Case ve Sequence hangi soruları yanıtlar?",
     "choices": [
-      "Ne yapılır ve nasıl/hangi sırada yapılır",
       "Kişiyi değil rolü",
       "Kullanıcı hedefini anlatan fiille",
       "Zorunlu ortak davranış ile koşullu davranış",
-      "Katılımcının etkileşimdeki varlığını"
+      "Katılımcının etkileşimdeki varlığını",
+      "Ne yapılır ve nasıl/hangi sırada yapılır"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Ne yapılır ve nasıl/hangi sırada yapılır. PDF sayfa 32."
   },
@@ -309,13 +309,13 @@
     },
     "question": "Lifeline neyi temsil eder?",
     "choices": [
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
       "Katılımcının etkileşimdeki varlığını",
       "Kişiyi değil rolü",
-      "Kullanıcı hedefini anlatan fiille",
-      "Zorunlu ortak davranış ile koşullu davranış",
-      "Ne yapılır ve nasıl/hangi sırada yapılır"
+      "Kullanıcı hedefini anlatan fiille"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Katılımcının etkileşimdeki varlığını. PDF sayfa 32."
   },
@@ -349,13 +349,13 @@
     },
     "question": "Guard ne zaman kullanılır?",
     "choices": [
-      "Koşullu mesaj veya akışta",
-      "Kişiyi değil rolü",
       "Kullanıcı hedefini anlatan fiille",
       "Zorunlu ortak davranış ile koşullu davranış",
-      "Ne yapılır ve nasıl/hangi sırada yapılır"
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
+      "Koşullu mesaj veya akışta",
+      "Kişiyi değil rolü"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Koşullu mesaj veya akışta. PDF sayfa 32."
   },
@@ -369,13 +369,13 @@
     },
     "question": "PaymentService doğrudan tek bankanın somut sınıfına bağlı. İlgili ilke?",
     "choices": [
+      "YAGNI",
       "DIP",
       "ISP",
       "SRP",
-      "OCP",
-      "YAGNI"
+      "OCP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: DIP. PDF sayfa 38."
   },
@@ -389,13 +389,13 @@
     },
     "question": "IWorker arayüzünde kullanılmayan 15 metot var. İlgili ilke?",
     "choices": [
-      "ISP",
       "DIP",
       "SRP",
       "OCP",
-      "YAGNI"
+      "YAGNI",
+      "ISP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: ISP. PDF sayfa 38."
   },
@@ -409,13 +409,13 @@
     },
     "question": "StudentService kayıt, PDF ve SMS yapıyor. İlgili ilke?",
     "choices": [
+      "OCP",
+      "YAGNI",
       "SRP",
       "DIP",
-      "ISP",
-      "OCP",
-      "YAGNI"
+      "ISP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: SRP. PDF sayfa 38."
   },
@@ -449,13 +449,13 @@
     },
     "question": "Henüz istenmeyen 10 yıllık özellikler kodlanıyor. İlgili ilke?",
     "choices": [
-      "YAGNI",
-      "DIP",
       "ISP",
       "SRP",
-      "OCP"
+      "OCP",
+      "YAGNI",
+      "DIP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: YAGNI. PDF sayfa 38."
   },
@@ -469,13 +469,13 @@
     },
     "question": "Alt sınıf üst türün zorunlu metodunu her zaman reddediyor. İlgili ilke?",
     "choices": [
+      "OCP",
       "LSP",
       "DIP",
       "ISP",
-      "SRP",
-      "OCP"
+      "SRP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: LSP. PDF sayfa 38."
   },
@@ -489,13 +489,13 @@
     },
     "question": "Küçük kulüp uygulaması için gereksiz mikroservis mimarisi kuruluyor. İlgili ilke?",
     "choices": [
-      "KISS",
       "DIP",
       "ISP",
       "SRP",
-      "OCP"
+      "OCP",
+      "KISS"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: KISS. PDF sayfa 38."
   },
@@ -509,13 +509,13 @@
     },
     "question": "Aynı doğrulama kodu beş sınıfta tekrar ediyor. İlgili ilke?",
     "choices": [
+      "SRP",
+      "OCP",
       "DRY",
       "DIP",
-      "ISP",
-      "SRP",
-      "OCP"
+      "ISP"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: DRY. PDF sayfa 38."
   }
