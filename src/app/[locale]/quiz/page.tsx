@@ -39,6 +39,9 @@ export default async function QuizPage({ params }: Props) {
           >
             {locale === "tr" ? "Veritabanı testi" : "اختبار قواعد البيانات"}
           </Link>
+          <Link className="quiz-docs" href={`/${locale}/quiz/software-design/`}>
+            {locale === "tr" ? "Yazılım Tasarımı testi" : "اختبار تصميم البرمجيات"}
+          </Link>
           <Link className="quiz-docs" href={routes.docs(locale)}>
             {quizMessages[locale].docs}
           </Link>
