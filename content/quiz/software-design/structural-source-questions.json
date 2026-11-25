@@ -27,13 +27,13 @@
     },
     "question": "OBS harici fetchPersonRecord() metodunu getStudentInfo() arayüzüne uyarlıyor. Hangi desen?",
     "choices": [
-      "Adapter",
-      "Flyweight",
       "Composite",
       "Facade",
-      "Proxy"
+      "Proxy",
+      "Adapter",
+      "Flyweight"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37."
   },
@@ -46,13 +46,13 @@
     },
     "question": "50.000 ağaç aynı 3D modelini paylaşıyor. Hangi desen?",
     "choices": [
+      "Proxy",
       "Flyweight",
       "Adapter",
       "Composite",
-      "Facade",
-      "Proxy"
+      "Facade"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 37."
   },
@@ -65,13 +65,13 @@
     },
     "question": "Farklı kargo API'leri tek createShipment() arayüzüne bağlanıyor. Hangi desen?",
     "choices": [
-      "Adapter",
       "Flyweight",
       "Composite",
       "Facade",
-      "Proxy"
+      "Proxy",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37."
   },
@@ -84,13 +84,13 @@
     },
     "question": "Stok, ödeme ve bildirim servisleri placeOrder() ile tek çağrıdan yönetiliyor. Hangi desen?",
     "choices": [
+      "Composite",
+      "Proxy",
       "Facade",
       "Adapter",
-      "Flyweight",
-      "Composite",
-      "Proxy"
+      "Flyweight"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 59."
   },
@@ -122,13 +122,13 @@
     },
     "question": "Facade arka plandaki servisleri ortadan kaldırır mı?",
     "choices": [
-      "Hayır, servisler çalışmaya devam eder",
-      "Evet, hepsi silinir",
       "Evet, veritabanına dönüşür",
       "Evet, tek nesneye birleşir",
-      "Yalnızca ağ servisleri silinir"
+      "Yalnızca ağ servisleri silinir",
+      "Hayır, servisler çalışmaya devam eder",
+      "Evet, hepsi silinir"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Hayır, servisler çalışmaya devam eder. Kaynak: PDF sayfa 59."
   },
@@ -141,13 +141,13 @@
     },
     "question": "Bildirim sistemine loglama ve retry isteğe bağlı ekleniyor. Hangi desen?",
     "choices": [
+      "Facade",
       "Decorator",
       "Adapter",
       "Flyweight",
-      "Composite",
-      "Facade"
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 75."
   },
@@ -160,13 +160,13 @@
     },
     "question": "Hasta dosyasına erişmeden önce yetki kontrolü yapılıyor. Hangi desen?",
     "choices": [
-      "Proxy",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Proxy"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 75."
   },
@@ -179,13 +179,13 @@
     },
     "question": "50 TL kahveye iki kez 10 TL MilkDecorator uygulanırsa fiyat?",
     "choices": [
+      "80 TL",
+      "100 TL",
       "70 TL",
       "50 TL",
-      "60 TL",
-      "80 TL",
-      "100 TL"
+      "60 TL"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: 70 TL. Kaynak: PDF sayfa 75."
   },
@@ -217,13 +217,13 @@
     },
     "question": "Normal ve acil bildirimler SMS, e-posta ve mobil kanallardan bağımsız gelişiyor. Hangi desen?",
     "choices": [
-      "Bridge",
-      "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Bridge",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 83."
   },
@@ -236,13 +236,13 @@
     },
     "question": "3 rapor türü × 4 çıktı biçiminin her kombinasyonuna bir sınıf yazılırsa kaç sınıf?",
     "choices": [
+      "24",
       "12",
       "3",
       "4",
-      "7",
-      "24"
+      "7"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: 12. Kaynak: PDF sayfa 83."
   },
@@ -255,13 +255,13 @@
     },
     "question": "Çalışma sırasında loglama ve yeniden deneme davranışı ekleniyor. Hangi desen?",
     "choices": [
-      "Decorator",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Decorator"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 83."
   },
@@ -274,13 +274,13 @@
     },
     "question": "Yeni banka makePayment() metodunu pay() bekleyen sisteme dönüştürücüyle sunuyor. Hangi desen?",
     "choices": [
+      "Facade",
+      "Proxy",
       "Adapter",
       "Flyweight",
-      "Composite",
-      "Facade",
-      "Proxy"
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84."
   },
@@ -312,13 +312,13 @@
     },
     "question": "Siparişi Tamamla; stok, ödeme ve bildirimi tek metotla başlatıyor. Hangi desen?",
     "choices": [
-      "Facade",
-      "Adapter",
       "Flyweight",
       "Composite",
-      "Proxy"
+      "Proxy",
+      "Facade",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 84."
   },
@@ -331,13 +331,13 @@
     },
     "question": "Hasta dosyasına yetkisiz erişim aracı tarafından engelleniyor. Hangi desen?",
     "choices": [
+      "Facade",
       "Proxy",
       "Adapter",
       "Flyweight",
-      "Composite",
-      "Facade"
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84."
   },
@@ -350,13 +350,13 @@
     },
     "question": "Kahveye süt, karamel, çikolata dinamik katmanlar olarak ekleniyor. Hangi desen?",
     "choices": [
-      "Decorator",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Decorator"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 84."
   },
@@ -369,13 +369,13 @@
     },
     "question": "Dosya ve klasörler aynı getSize() arayüzünü kullanıyor. Hangi desen?",
     "choices": [
+      "Facade",
+      "Proxy",
       "Composite",
       "Adapter",
-      "Flyweight",
-      "Facade",
-      "Proxy"
+      "Flyweight"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 84."
   },
@@ -407,13 +407,13 @@
     },
     "question": "30.000 restoran aynı ikon grafiğini paylaşıyor. Hangi desen?",
     "choices": [
-      "Flyweight",
-      "Adapter",
       "Composite",
       "Facade",
-      "Proxy"
+      "Proxy",
+      "Flyweight",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 84."
   },
@@ -426,13 +426,13 @@
     },
     "question": "Dış öğrenci verisi üniversitenin beklediği arayüze dönüştürülüyor. Hangi desen?",
     "choices": [
+      "Proxy",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade",
-      "Proxy"
+      "Facade"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84."
   },
@@ -445,13 +445,13 @@
     },
     "question": "Fotoğraf gerçek yüklemesi sadece açıldığında yapılıyor. Hangi desen?",
     "choices": [
-      "Proxy",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Proxy"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84."
   },
@@ -464,13 +464,13 @@
     },
     "question": "Bildirimlere isteğe bağlı loglama ve retry davranışı ekleniyor. Hangi desen?",
     "choices": [
+      "Composite",
+      "Facade",
       "Decorator",
       "Adapter",
-      "Flyweight",
-      "Composite",
-      "Facade"
+      "Flyweight"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85."
   },
@@ -502,13 +502,13 @@
     },
     "question": "Para gönderme doğrulama, limit, transfer ve bildirimi tek çağrıyla yönetiyor. Hangi desen?",
     "choices": [
-      "Facade",
-      "Adapter",
       "Flyweight",
       "Composite",
-      "Proxy"
+      "Proxy",
+      "Facade",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 85."
   },
@@ -521,13 +521,13 @@
     },
     "question": "Kumanda türleri ile televizyon/radyo/hoparlör türleri ayrı geliştiriliyor. Hangi desen?",
     "choices": [
+      "Facade",
       "Bridge",
       "Adapter",
       "Flyweight",
-      "Composite",
-      "Facade"
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 85."
   },
@@ -540,13 +540,13 @@
     },
     "question": "Büyük PDF nesnesi belge açılana kadar oluşturulmuyor. Hangi desen?",
     "choices": [
-      "Proxy",
       "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Proxy"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 85."
   },
@@ -559,13 +559,13 @@
     },
     "question": "Eski calculateOldInvoice() metodu generateInvoice() arayüzüne bağlanıyor. Hangi desen?",
     "choices": [
+      "Facade",
+      "Proxy",
       "Adapter",
       "Flyweight",
-      "Composite",
-      "Facade",
-      "Proxy"
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 85."
   },
@@ -597,13 +597,13 @@
     },
     "question": "Siparişe hediye paketi ve sigorta dinamik ekleniyor. Hangi desen?",
     "choices": [
-      "Decorator",
-      "Adapter",
       "Flyweight",
       "Composite",
-      "Facade"
+      "Facade",
+      "Decorator",
+      "Adapter"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85."
   },
@@ -616,13 +616,13 @@
     },
     "question": "500 öğrenci aynı CourseInfo nesnesini paylaşıyor. Hangi desen?",
     "choices": [
+      "Proxy",
       "Flyweight",
       "Adapter",
       "Composite",
-      "Facade",
-      "Proxy"
+      "Facade"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 85."
   },
@@ -635,13 +635,13 @@
     },
     "question": "Tek şekil ve şekil grubu aynı move() işlemini kullanıyor. Hangi desen?",
     "choices": [
-      "Composite",
       "Adapter",
       "Flyweight",
       "Facade",
-      "Proxy"
+      "Proxy",
+      "Composite"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 85."
   }
