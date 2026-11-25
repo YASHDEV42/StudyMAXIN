@@ -7,6 +7,7 @@ import {
 } from "./bank";
 import {
   examSize,
+  examSizeFor,
   modeSchema,
   sessionSchema,
   type Mode,
@@ -49,7 +50,7 @@ const resultSchema = z
     ({ mode, items }) =>
       new Set(items.map(({ id }) => id)).size === items.length &&
       (mode === "exam"
-        ? items.length === examSize
+        ? [50, examSize].includes(items.length)
         : items.every(({ answer }) => answer !== null)),
   );
 const progressSchema = z.strictObject({
@@ -60,7 +61,9 @@ const progressSchema = z.strictObject({
     .array(stableId)
     .refine((ids) => new Set(ids).size === ids.length),
   results: z.array(resultSchema),
-});
+}).refine(({ courseId, results }) =>
+  results.every(({ mode, items }) => mode !== "exam" || items.length === examSizeFor(courseId)),
+);
 const localSchema = z.strictObject({
   progress: progressSchema,
   active: sessionSchema.nullable(),
@@ -123,7 +126,7 @@ export function readLocal(
     const { active, progress } = parsed.data;
     if (progress.courseId !== courseId)
       return { data: fallback, recovered: true };
-    if (active && active.items.some(({ id }) => !questions.has(id))) {
+    if (active && (active.items.some(({ id }) => !questions.has(id)) || (active.mode === "exam" && active.items.length !== examSizeFor(courseId)))) {
       return { data: { progress, active: null }, recovered: true };
     }
     return { data: parsed.data, recovered: false };
