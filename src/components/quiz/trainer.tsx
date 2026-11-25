@@ -31,7 +31,7 @@ import {
 import {
   batchSizes,
   createSession,
-  examSize,
+  examSizeFor,
   modes,
   moveSession,
   selectAnswer,
@@ -64,7 +64,7 @@ export function QuizTrainer({
   const [mode, setMode] = useState<Mode>("topic");
   const [topic, setTopic] = useState(bank.topics[0].id);
   const [size, setSize] = useState(10);
-  const [minutes, setMinutes] = useState(75);
+  const [minutes, setMinutes] = useState(bank.courseId === "software-design" ? 60 : 75);
   const [clock, setClock] = useState(0);
   const [notice, setNotice] = useState("");
   const [storageFailed, setStorageFailed] = useState(false);
@@ -170,10 +170,10 @@ export function QuizTrainer({
             : bank.questions;
   const limit =
     mode === "exam"
-      ? examSize
+      ? examSizeFor(bank.courseId)
       : mode === "wrong" || mode === "bookmarks"
         ? Math.min(pool.length, size)
-        : size;
+        : Math.min(pool.length, size);
 
   function start() {
     const now = Date.now();
@@ -490,7 +490,7 @@ export function QuizTrainer({
           )}
         </div>
         <p className="quiz-key-hint">
-          {bank.courseId === "database-management"
+          {bank.courseId !== "operating-systems"
             ? locale === "tr"
               ? "Seçenekler: 1–5, sonraki soru: N."
               : "الاختيارات: 1–5، السؤال التالي: N."
@@ -620,7 +620,11 @@ export function QuizTrainer({
               ? locale === "tr"
                 ? "Altı haftadan karışık test sorularıyla tekrar yap."
                 : "راجع المحاضرات الست بأسئلة اختيار من متعدد."
-              : t.modeDetail[mode]}
+              : bank.courseId === "software-design" && mode === "exam"
+                ? locale === "tr"
+                  ? "50 farklı soru. Puan ve açıklamalar teslimden sonra açılır."
+                  : "50 سؤالًا مختلفًا. تظهر النتيجة والشروح بعد التسليم."
+                : t.modeDetail[mode]}
           </p>
           <div className="quiz-settings">
             {mode === "topic" && (
