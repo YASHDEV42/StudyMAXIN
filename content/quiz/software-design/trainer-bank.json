@@ -1,0 +1,2413 @@
+{
+  "courseId": "software-design",
+  "title": {
+    "tr": "Yazılım Tasarımı ve Mimarisi Soru Bankası",
+    "ar": "بنك أسئلة تصميم البرمجيات ومعماريتها"
+  },
+  "topics": [
+    {
+      "id": "architecture",
+      "title": {
+        "tr": "Mimariye Giriş",
+        "ar": "مقدمة في المعمارية"
+      }
+    },
+    {
+      "id": "ood",
+      "title": {
+        "tr": "Class Diagram",
+        "ar": "مخطط الأصناف"
+      }
+    },
+    {
+      "id": "uml",
+      "title": {
+        "tr": "Use Case ve Sequence",
+        "ar": "حالات الاستخدام والتتابع"
+      }
+    },
+    {
+      "id": "solid",
+      "title": {
+        "tr": "SOLID ve Tasarım İlkeleri",
+        "ar": "مبادئ التصميم"
+      }
+    },
+    {
+      "id": "structural",
+      "title": {
+        "tr": "Yapısal Tasarım Desenleri",
+        "ar": "الأنماط الهيكلية"
+      }
+    },
+    {
+      "id": "creational",
+      "title": {
+        "tr": "Yaratımsal Tasarım Desenleri",
+        "ar": "الأنماط الإنشائية"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "sd-source-architecture",
+      "topicId": "architecture",
+      "kind": "original-slides",
+      "title": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "slideCount": 40,
+      "sha256": "7a6856ad90692350862b9dfeafe6abe973f53f6ede7c09c9cd5eaced58ac4543"
+    },
+    {
+      "id": "sd-source-ood",
+      "topicId": "ood",
+      "kind": "original-slides",
+      "title": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "slideCount": 42,
+      "sha256": "c086c77b315223b9bdd88caff24aad44c718d00239b77d4887376db4dcd9b758"
+    },
+    {
+      "id": "sd-source-uml",
+      "topicId": "uml",
+      "kind": "original-slides",
+      "title": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "slideCount": 33,
+      "sha256": "cbc812029c6aea72b72a7a130292e493bee4c0e22fcb0f4f8b64a981b36efcbb"
+    },
+    {
+      "id": "sd-source-solid",
+      "topicId": "solid",
+      "kind": "original-slides",
+      "title": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "slideCount": 39,
+      "sha256": "27e6743fa9af6ecafe7bbd3f3fc58e03e4d01577f92b9715c621c7a5227667f2"
+    },
+    {
+      "id": "sd-source-structural",
+      "topicId": "structural",
+      "kind": "original-slides",
+      "title": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "slideCount": 86,
+      "sha256": "38c0e433d2e8e422fc0811a94a23eaa27e9b31b5c6108f40a641241c7829f4f5"
+    },
+    {
+      "id": "sd-source-creational",
+      "topicId": "creational",
+      "kind": "original-slides",
+      "title": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "slideCount": 55,
+      "sha256": "39710e64c982b00c1f4e727e081a7e9eccd601bb798bc903fd1e3262518a9a0c"
+    }
+  ],
+  "questions": [
+    {
+      "id": "sd-foundations-001",
+      "courseId": "software-design",
+      "topicId": "architecture",
+      "difficulty": "intermediate",
+      "question": "JWT tüm sistemin kimlik doğrulamasını etkiliyorsa karar türü?",
+      "choices": [
+        "Yalnızca görsel karar",
+        "Bağlama göre değişmez",
+        "Mimari",
+        "Kod/tasarım",
+        "İletişim ve operasyonel mimari"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Mimari. PDF sayfa 36.",
+      "source": {
+        "id": "sd-source-architecture",
+        "slides": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-002",
+      "courseId": "software-design",
+      "topicId": "architecture",
+      "difficulty": "intermediate",
+      "question": "Tek fonksiyon adının değiştirilmesi genelde hangi karar türüdür?",
+      "choices": [
+        "Kod/tasarım",
+        "Mimari",
+        "İletişim ve operasyonel mimari",
+        "Yalnızca görsel karar",
+        "Bağlama göre değişmez"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Kod/tasarım. PDF sayfa 36.",
+      "source": {
+        "id": "sd-source-architecture",
+        "slides": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-003",
+      "courseId": "software-design",
+      "topicId": "architecture",
+      "difficulty": "intermediate",
+      "question": "PostgreSQL seçimi çoğu sistemde hangi karar türüdür?",
+      "choices": [
+        "İletişim ve operasyonel mimari",
+        "Yalnızca görsel karar",
+        "Bağlama göre değişmez",
+        "Mimari",
+        "Kod/tasarım"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Mimari. PDF sayfa 36.",
+      "source": {
+        "id": "sd-source-architecture",
+        "slides": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-004",
+      "courseId": "software-design",
+      "topicId": "architecture",
+      "difficulty": "intermediate",
+      "question": "Servisler arası Kafka kullanımı neyi etkiler?",
+      "choices": [
+        "Bağlama göre değişmez",
+        "İletişim ve operasyonel mimari",
+        "Mimari",
+        "Kod/tasarım",
+        "Yalnızca görsel karar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: İletişim ve operasyonel mimari. PDF sayfa 36.",
+      "source": {
+        "id": "sd-source-architecture",
+        "slides": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-005",
+      "courseId": "software-design",
+      "topicId": "architecture",
+      "difficulty": "intermediate",
+      "question": "Merkezi analizde kullanılan ortak log formatı değişirse karar türü ne olabilir?",
+      "choices": [
+        "Kod/tasarım",
+        "İletişim ve operasyonel mimari",
+        "Yalnızca görsel karar",
+        "Bağlama göre değişmez",
+        "Mimari"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Mimari. PDF sayfa 36.",
+      "source": {
+        "id": "sd-source-architecture",
+        "slides": [
+          36
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-006",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "Abstraction ile Encapsulation arasındaki temel fark?",
+      "choices": [
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
+        "Önemli davranışı seçmek ile iç durumu korumak",
+        "İlişkili sorumlulukları odaklamak",
+        "Gereksiz modüller arası bağımlılığı azaltmak"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Önemli davranışı seçmek ile iç durumu korumak. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-007",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "High cohesion neyi hedefler?",
+      "choices": [
+        "İlişkili sorumlulukları odaklamak",
+        "Önemli davranışı seçmek ile iç durumu korumak",
+        "Gereksiz modüller arası bağımlılığı azaltmak",
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: İlişkili sorumlulukları odaklamak. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-008",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "Low coupling neyi hedefler?",
+      "choices": [
+        "İlişkili sorumlulukları odaklamak",
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
+        "Gereksiz modüller arası bağımlılığı azaltmak",
+        "Önemli davranışı seçmek ile iç durumu korumak"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Gereksiz modüller arası bağımlılığı azaltmak. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-009",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "UML'de 0..1, 1..*, 0..* neyi gösterir?",
+      "choices": [
+        "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Önemli davranışı seçmek ile iç durumu korumak",
+        "İlişkili sorumlulukları odaklamak",
+        "Gereksiz modüller arası bağımlılığı azaltmak"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Sıfır/bir, en az bir, sıfır veya daha çok. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-010",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "Composition'ı aggregation'dan ayıran temel anlam?",
+      "choices": [
+        "Önemli davranışı seçmek ile iç durumu korumak",
+        "İlişkili sorumlulukları odaklamak",
+        "Gereksiz modüller arası bağımlılığı azaltmak",
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Güçlü bütün-parça ve yaşam döngüsü sahipliği. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-011",
+      "courseId": "software-design",
+      "topicId": "ood",
+      "difficulty": "intermediate",
+      "question": "Generalization ile realization arasındaki fark?",
+      "choices": [
+        "Gereksiz modüller arası bağımlılığı azaltmak",
+        "Sıfır/bir, en az bir, sıfır veya daha çok",
+        "Kalıtım ile arayüz sözleşmesini uygulama",
+        "Önemli davranışı seçmek ile iç durumu korumak",
+        "İlişkili sorumlulukları odaklamak"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Kalıtım ile arayüz sözleşmesini uygulama. PDF sayfa 40.",
+      "source": {
+        "id": "sd-source-ood",
+        "slides": [
+          40
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-012",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Use Case içindeki Actor neyi temsil eder?",
+      "choices": [
+        "Kişiyi değil rolü",
+        "Kullanıcı hedefini anlatan fiille",
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Ne yapılır ve nasıl/hangi sırada yapılır",
+        "Katılımcının etkileşimdeki varlığını"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Kişiyi değil rolü. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-013",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Use Case nasıl adlandırılmalıdır?",
+      "choices": [
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Ne yapılır ve nasıl/hangi sırada yapılır",
+        "Katılımcının etkileşimdeki varlığını",
+        "Kullanıcı hedefini anlatan fiille",
+        "Kişiyi değil rolü"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Kullanıcı hedefini anlatan fiille. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-014",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Include ile extend farkı?",
+      "choices": [
+        "Katılımcının etkileşimdeki varlığını",
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Kişiyi değil rolü",
+        "Kullanıcı hedefini anlatan fiille",
+        "Ne yapılır ve nasıl/hangi sırada yapılır"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Zorunlu ortak davranış ile koşullu davranış. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-015",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Use Case ve Sequence hangi soruları yanıtlar?",
+      "choices": [
+        "Kişiyi değil rolü",
+        "Kullanıcı hedefini anlatan fiille",
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Katılımcının etkileşimdeki varlığını",
+        "Ne yapılır ve nasıl/hangi sırada yapılır"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Ne yapılır ve nasıl/hangi sırada yapılır. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-016",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Lifeline neyi temsil eder?",
+      "choices": [
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Ne yapılır ve nasıl/hangi sırada yapılır",
+        "Katılımcının etkileşimdeki varlığını",
+        "Kişiyi değil rolü",
+        "Kullanıcı hedefini anlatan fiille"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Katılımcının etkileşimdeki varlığını. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-017",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Senkron ve asenkron çağrı farkı?",
+      "choices": [
+        "Yanıtı bekleme ile beklemeden ilerleme",
+        "Kişiyi değil rolü",
+        "Kullanıcı hedefini anlatan fiille",
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Ne yapılır ve nasıl/hangi sırada yapılır"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Yanıtı bekleme ile beklemeden ilerleme. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-018",
+      "courseId": "software-design",
+      "topicId": "uml",
+      "difficulty": "intermediate",
+      "question": "Guard ne zaman kullanılır?",
+      "choices": [
+        "Kullanıcı hedefini anlatan fiille",
+        "Zorunlu ortak davranış ile koşullu davranış",
+        "Ne yapılır ve nasıl/hangi sırada yapılır",
+        "Koşullu mesaj veya akışta",
+        "Kişiyi değil rolü"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Koşullu mesaj veya akışta. PDF sayfa 32.",
+      "source": {
+        "id": "sd-source-uml",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-019",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "PaymentService doğrudan tek bankanın somut sınıfına bağlı. İlgili ilke?",
+      "choices": [
+        "YAGNI",
+        "DIP",
+        "ISP",
+        "SRP",
+        "OCP"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: DIP. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-020",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "IWorker arayüzünde kullanılmayan 15 metot var. İlgili ilke?",
+      "choices": [
+        "DIP",
+        "SRP",
+        "OCP",
+        "YAGNI",
+        "ISP"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: ISP. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-021",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "StudentService kayıt, PDF ve SMS yapıyor. İlgili ilke?",
+      "choices": [
+        "OCP",
+        "YAGNI",
+        "SRP",
+        "DIP",
+        "ISP"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: SRP. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-022",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "Yeni indirim için switch sürekli değişiyor. İlgili ilke?",
+      "choices": [
+        "OCP",
+        "DIP",
+        "ISP",
+        "SRP",
+        "YAGNI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: OCP. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-023",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "Henüz istenmeyen 10 yıllık özellikler kodlanıyor. İlgili ilke?",
+      "choices": [
+        "ISP",
+        "SRP",
+        "OCP",
+        "YAGNI",
+        "DIP"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: YAGNI. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-024",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "Alt sınıf üst türün zorunlu metodunu her zaman reddediyor. İlgili ilke?",
+      "choices": [
+        "OCP",
+        "LSP",
+        "DIP",
+        "ISP",
+        "SRP"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: LSP. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-025",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "Küçük kulüp uygulaması için gereksiz mikroservis mimarisi kuruluyor. İlgili ilke?",
+      "choices": [
+        "DIP",
+        "ISP",
+        "SRP",
+        "OCP",
+        "KISS"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: KISS. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-foundations-026",
+      "courseId": "software-design",
+      "topicId": "solid",
+      "difficulty": "intermediate",
+      "question": "Aynı doğrulama kodu beş sınıfta tekrar ediyor. İlgili ilke?",
+      "choices": [
+        "SRP",
+        "OCP",
+        "DRY",
+        "DIP",
+        "ISP"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: DRY. PDF sayfa 38.",
+      "source": {
+        "id": "sd-source-solid",
+        "slides": [
+          38
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-001",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Oyunda 100.000 düşman aynı 3D modeli kullanıyor; hangi özellik paylaşılır?",
+      "choices": [
+        "Ortak 3D model ve doku",
+        "Can puanı",
+        "Konum",
+        "Kimlik",
+        "Hareket yönü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Ortak 3D model ve doku. Kaynak: PDF sayfa 21.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          21
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-002",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "OBS harici fetchPersonRecord() metodunu getStudentInfo() arayüzüne uyarlıyor. Hangi desen?",
+      "choices": [
+        "Composite",
+        "Facade",
+        "Proxy",
+        "Adapter",
+        "Flyweight"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          37
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-003",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "50.000 ağaç aynı 3D modelini paylaşıyor. Hangi desen?",
+      "choices": [
+        "Proxy",
+        "Flyweight",
+        "Adapter",
+        "Composite",
+        "Facade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 37.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          37
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-004",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Farklı kargo API'leri tek createShipment() arayüzüne bağlanıyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Proxy",
+        "Adapter"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          37
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-005",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Stok, ödeme ve bildirim servisleri placeOrder() ile tek çağrıdan yönetiliyor. Hangi desen?",
+      "choices": [
+        "Composite",
+        "Proxy",
+        "Facade",
+        "Adapter",
+        "Flyweight"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 59.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          59
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-006",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "pay() bekleyen sisteme makePayment() sunan banka bağlanıyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 59.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          59
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-007",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Facade arka plandaki servisleri ortadan kaldırır mı?",
+      "choices": [
+        "Evet, veritabanına dönüşür",
+        "Evet, tek nesneye birleşir",
+        "Yalnızca ağ servisleri silinir",
+        "Hayır, servisler çalışmaya devam eder",
+        "Evet, hepsi silinir"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Hayır, servisler çalışmaya devam eder. Kaynak: PDF sayfa 59.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          59
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-008",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Bildirim sistemine loglama ve retry isteğe bağlı ekleniyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Decorator",
+        "Adapter",
+        "Flyweight",
+        "Composite"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 75.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-009",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Hasta dosyasına erişmeden önce yetki kontrolü yapılıyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 75.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-010",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "50 TL kahveye iki kez 10 TL MilkDecorator uygulanırsa fiyat?",
+      "choices": [
+        "80 TL",
+        "100 TL",
+        "70 TL",
+        "50 TL",
+        "60 TL"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: 70 TL. Kaynak: PDF sayfa 75.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-011",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Decorator temel nesnenin sınıfının değiştirilmesini gerektirir mi?",
+      "choices": [
+        "Hayır",
+        "Evet",
+        "Yalnızca Java'da",
+        "Yalnızca Singleton'da",
+        "Yalnızca çoklu kalıtımda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Hayır. Kaynak: PDF sayfa 75.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          75
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-012",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Normal ve acil bildirimler SMS, e-posta ve mobil kanallardan bağımsız gelişiyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Bridge",
+        "Adapter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 83.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          83
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-013",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "3 rapor türü × 4 çıktı biçiminin her kombinasyonuna bir sınıf yazılırsa kaç sınıf?",
+      "choices": [
+        "24",
+        "12",
+        "3",
+        "4",
+        "7"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: 12. Kaynak: PDF sayfa 83.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          83
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-014",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Çalışma sırasında loglama ve yeniden deneme davranışı ekleniyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Decorator"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 83.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          83
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-015",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Yeni banka makePayment() metodunu pay() bekleyen sisteme dönüştürücüyle sunuyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Proxy",
+        "Adapter",
+        "Flyweight",
+        "Composite"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-016",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "20.000 asker ortak 3B model ve dokuyu paylaşıyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Adapter",
+        "Composite",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-017",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Siparişi Tamamla; stok, ödeme ve bildirimi tek metotla başlatıyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Composite",
+        "Proxy",
+        "Facade",
+        "Adapter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-018",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Hasta dosyasına yetkisiz erişim aracı tarafından engelleniyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Proxy",
+        "Adapter",
+        "Flyweight",
+        "Composite"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-019",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Kahveye süt, karamel, çikolata dinamik katmanlar olarak ekleniyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Decorator"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-020",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Dosya ve klasörler aynı getSize() arayüzünü kullanıyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Proxy",
+        "Composite",
+        "Adapter",
+        "Flyweight"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-021",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Rapor türü ve PDF/Excel/HTML üretim motoru bağımsız değişiyor. Hangi desen?",
+      "choices": [
+        "Bridge",
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-022",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "30.000 restoran aynı ikon grafiğini paylaşıyor. Hangi desen?",
+      "choices": [
+        "Composite",
+        "Facade",
+        "Proxy",
+        "Flyweight",
+        "Adapter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-023",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Dış öğrenci verisi üniversitenin beklediği arayüze dönüştürülüyor. Hangi desen?",
+      "choices": [
+        "Proxy",
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-024",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Fotoğraf gerçek yüklemesi sadece açıldığında yapılıyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          84
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-025",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Bildirimlere isteğe bağlı loglama ve retry davranışı ekleniyor. Hangi desen?",
+      "choices": [
+        "Composite",
+        "Facade",
+        "Decorator",
+        "Adapter",
+        "Flyweight"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-026",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Departmanlar ve çalışanlar tek hiyerarşide personel sayısını hesaplıyor. Hangi desen?",
+      "choices": [
+        "Composite",
+        "Adapter",
+        "Flyweight",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-027",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Para gönderme doğrulama, limit, transfer ve bildirimi tek çağrıyla yönetiyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Composite",
+        "Proxy",
+        "Facade",
+        "Adapter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-028",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Kumanda türleri ile televizyon/radyo/hoparlör türleri ayrı geliştiriliyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Bridge",
+        "Adapter",
+        "Flyweight",
+        "Composite"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-029",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Büyük PDF nesnesi belge açılana kadar oluşturulmuyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Proxy"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-030",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Eski calculateOldInvoice() metodu generateInvoice() arayüzüne bağlanıyor. Hangi desen?",
+      "choices": [
+        "Facade",
+        "Proxy",
+        "Adapter",
+        "Flyweight",
+        "Composite"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-031",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Şekiller SVG ve Canvas motorlarından bağımsız geliştiriliyor. Hangi desen?",
+      "choices": [
+        "Bridge",
+        "Adapter",
+        "Flyweight",
+        "Composite",
+        "Facade"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-032",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Siparişe hediye paketi ve sigorta dinamik ekleniyor. Hangi desen?",
+      "choices": [
+        "Flyweight",
+        "Composite",
+        "Facade",
+        "Decorator",
+        "Adapter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-033",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "500 öğrenci aynı CourseInfo nesnesini paylaşıyor. Hangi desen?",
+      "choices": [
+        "Proxy",
+        "Flyweight",
+        "Adapter",
+        "Composite",
+        "Facade"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-structural-034",
+      "courseId": "software-design",
+      "topicId": "structural",
+      "difficulty": "intermediate",
+      "question": "Tek şekil ve şekil grubu aynı move() işlemini kullanıyor. Hangi desen?",
+      "choices": [
+        "Adapter",
+        "Flyweight",
+        "Facade",
+        "Proxy",
+        "Composite"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 85.",
+      "source": {
+        "id": "sd-source-structural",
+        "slides": [
+          85
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-001",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Singleton DatabasePoolManager, tek bir veritabanı bağlantısı olduğu anlamına gelir mi?",
+      "choices": [
+        "Sadece bir sorgu çalışır",
+        "Hayır",
+        "Evet",
+        "Her kullanıcıya tek bağlantı",
+        "Bütün bağlantılar kapatılır"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 13.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          13
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-002",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "OBS ekranlarının aynı sistem ayarı yöneticisini kullanması için hangi desen?",
+      "choices": [
+        "Factory",
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Singleton"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 13.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          13
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-003",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "LoggerManager.getInstance() iki kez çağrıldığında ne döner?",
+      "choices": [
+        "Silinen nesne",
+        "Her seferinde kopya",
+        "Aynı nesne",
+        "İki ayrı nesne",
+        "null"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Aynı nesne. Kaynak PDF, sayfa 13.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          13
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-004",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Çoktan seçmeli veya doğru-yanlış sorusu türüne göre nesne oluşturulur. Hangi desen?",
+      "choices": [
+        "Factory",
+        "Singleton",
+        "Abstract Factory",
+        "Builder",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 23.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-005",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Factory kullanıldığında somut nesneyi hangi yapı oluşturur?",
+      "choices": [
+        "Veritabanı",
+        "Görünüm katmanı",
+        "Logger",
+        "Factory sınıfı veya oluşturucu yapı",
+        "Her zaman Client"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Factory sınıfı veya oluşturucu yapı. Kaynak PDF, sayfa 23.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-006",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Bütün modüller aynı SystemConfig nesnesini kullanıyor. Hangi desen?",
+      "choices": [
+        "Prototype",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Builder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 23.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-007",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Factory.create('SMS') nesnesi hangi ortak tür üzerinden kullanılabilir?",
+      "choices": [
+        "Mutlaka String",
+        "Yalnızca SmsNotification",
+        "Builder",
+        "DatabaseConnection",
+        "Notification arayüzü"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Notification arayüzü. Kaynak PDF, sayfa 23.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-008",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Factory'nin temel amacı hangisidir?",
+      "choices": [
+        "Örnek sayısını bire indirmek",
+        "Nesneleri silmek",
+        "Nesne oluşturma işlemini soyutlamak",
+        "Bütün nesneleri paylaşmak",
+        "Davranış eklemek"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Nesne oluşturma işlemini soyutlamak. Kaynak PDF, sayfa 23.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          23
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-009",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Android ve iOS için uyumlu buton, menü ve metin kutusu aileleri üretiliyor. Hangi desen?",
+      "choices": [
+        "Abstract Factory",
+        "Singleton",
+        "Factory",
+        "Builder",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-010",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Yalnızca SMS veya EmailNotification nesnesi seçilerek üretiliyor. Daha basit uygun desen?",
+      "choices": [
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Factory",
+        "Singleton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-011",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Abstract Factory'nin temel amacı?",
+      "choices": [
+        "Çalışma sırasında davranış eklemek",
+        "İlişkili nesne aileleri oluşturmak",
+        "Tek örnek sağlamak",
+        "Mevcut nesneyi kopyalamak",
+        "Adım adım inşa etmek"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: İlişkili nesne aileleri oluşturmak. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-012",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "OnlineExamFactory, OnlineQuestionView ve OnlineAnswerCollector üretiyor. Bu neye örnektir?",
+      "choices": [
+        "Singleton nesnesi",
+        "Shallow copy",
+        "Decorator zinciri",
+        "Proxy erişimi",
+        "Ürün ailesi"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Ürün ailesi. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-013",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "MedievalFactory için en tutarlı ürün grubu hangisi?",
+      "choices": [
+        "SpaceSoldier + LaserGun + RobotEnemy",
+        "Knight + SpaceShip + LaserGun",
+        "Knight + Sword + Dragon",
+        "Knight + LaserGun + RobotEnemy",
+        "SpaceSoldier + Sword + Dragon"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Knight + Sword + Dragon. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-014",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Abstract Factory istemcisi doğrudan new AndroidButton() yazmak zorunda mı?",
+      "choices": [
+        "Hayır",
+        "Evet",
+        "Sadece Singleton ile",
+        "Sadece Prototype ile",
+        "Her ürün için zorunlu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 32.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          32
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-015",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Sınav süresi, soru sayısı ve tarih aşamalı belirleniyor. Hangi desen?",
+      "choices": [
+        "Factory",
+        "Abstract Factory",
+        "Prototype",
+        "Builder",
+        "Singleton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 41.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          41
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-016",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "SMS ve e-posta seçimine göre bildirim nesnesi oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Prototype",
+        "Factory",
+        "Singleton",
+        "Abstract Factory",
+        "Builder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 41.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          41
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-017",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Builder'da build() metodunun görevi?",
+      "choices": [
+        "Nesneyi silmek",
+        "Her zaman sınıf tanımlamak",
+        "Nesneyi klonlamak",
+        "Tek örneği kilitlemek",
+        "Nihai nesneyi oluşturup döndürmek"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Nihai nesneyi oluşturup döndürmek. Kaynak PDF, sayfa 41.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          41
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-018",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Builder'da bütün özellikler zorunlu mudur?",
+      "choices": [
+        "Sadece Java'da evet",
+        "Her zaman tek parametre vardır",
+        "Hayır",
+        "Evet",
+        "Sadece String alanlar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 41.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          41
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-019",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "AndroidButton ve AndroidMenu birlikte oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Abstract Factory",
+        "Singleton",
+        "Factory",
+        "Builder",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 41.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          41
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-020",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Hazır sınav şablonu farklı dersler için kopyalanıyor. Hangi desen?",
+      "choices": [
+        "Factory",
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Singleton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-021",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Java'da Exam exam2 = exam1 sonucu nedir?",
+      "choices": [
+        "Clone constructor çağrılır",
+        "İki değişken aynı nesneyi gösterir",
+        "Deep copy yapılır",
+        "Bağımsız nesne oluşur",
+        "Factory çalışır"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-022",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Shallow Copy sırasında ne olabilir?",
+      "choices": [
+        "Her iç nesne bağımsızdır",
+        "Hiç yeni nesne oluşmaz",
+        "Yalnızca bir Singleton vardır",
+        "Kopya derlenmez",
+        "Dış nesne yeni, iç referanslar ortak olabilir"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Dış nesne yeni, iç referanslar ortak olabilir. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-023",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Prototype'nin temel amacı?",
+      "choices": [
+        "Servisleri birleştirmek",
+        "Arayüz dönüştürmek",
+        "Mevcut nesneyi kopyalayarak üretmek",
+        "Adım adım kurmak",
+        "Tek örnek garantilemek"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Mevcut nesneyi kopyalayarak üretmek. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-024",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "RAM ve SSD özellikleri sırayla seçilerek bilgisayar oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Builder",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-025",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Prototype kopyasında değiştirilebilir liste de bağımsız olmalıysa ne yapılır?",
+      "choices": [
+        "Singleton kullanılmalı",
+        "Liste static olmalı",
+        "Aynı liste paylaşılmalı",
+        "Liste de kopyalanmalı",
+        "Referans atanmalı"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Liste de kopyalanmalı. Kaynak PDF, sayfa 51.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          51
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-026",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Üniversite modülleri ortak ayar yöneticisi istiyor. Hangi desen?",
+      "choices": [
+        "Prototype",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Builder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-027",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Bir sınıfın tek örneğine ortak erişim sağlama hangi desenin amacı?",
+      "choices": [
+        "Factory",
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Singleton"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-028",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Seçilen ödeme yöntemine uygun nesne hangi desenle üretilir?",
+      "choices": [
+        "Builder",
+        "Prototype",
+        "Factory",
+        "Singleton",
+        "Abstract Factory"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 52.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-029",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Factory'nin Client'a sağladığı temel yarar nedir?",
+      "choices": [
+        "Somut nesne oluşturma bağımlılığını azaltmak",
+        "Bütün nesneleri aynı yapmak",
+        "Nesneleri silmek",
+        "Tek örnek oluşturmak",
+        "Veritabanını kaldırmak"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Somut nesne oluşturma bağımlılığını azaltmak. Kaynak PDF, sayfa 52.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-030",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Android ve iOS için uyumlu bileşen aileleri üretmek hangi desen?",
+      "choices": [
+        "Factory",
+        "Builder",
+        "Prototype",
+        "Abstract Factory",
+        "Singleton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 52.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          52
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-031",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Abstract Factory içindeki ConcreteFactory nedir?",
+      "choices": [
+        "Ürün arayüzü",
+        "Belirli ürün ailesini üreten somut fabrika",
+        "Client",
+        "Kopyalama metodu",
+        "Tekil nesne"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Belirli ürün ailesini üreten somut fabrika. Kaynak PDF, sayfa 53.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          53
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-032",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Sınav seçenekleri adım adım belirlenip sınav oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Prototype",
+        "Builder"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 53.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          53
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-033",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "build() metodu hangi işi yapar?",
+      "choices": [
+        "Veritabanına bağlanmak",
+        "İstemciyi değiştirmek",
+        "Nihai ürünü oluşturup döndürmek",
+        "Kopya üretmek",
+        "Nesneyi silmek"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Nihai ürünü oluşturup döndürmek. Kaynak PDF, sayfa 53.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          53
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-034",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Sınav şablonu kopyalanarak farklı sınavlar hazırlanıyor. Hangi desen?",
+      "choices": [
+        "Prototype",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Builder"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 53.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          53
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-035",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Exam exam2 = exam1 ne anlama gelir?",
+      "choices": [
+        "Yeni bağımsız nesne",
+        "Factory çağrısı",
+        "Builder kurulumu",
+        "İki değişken aynı nesneyi gösterir",
+        "Deep copy"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 53.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          53
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-036",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Ortak hastane bağlantı havuzu yöneticisi için desen?",
+      "choices": [
+        "Prototype",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Builder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 54.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-037",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Orta Çağ ve bilim kurgu temalarında uyumlu karakter/silah/düşman aileleri üretiliyor. Hangi desen?",
+      "choices": [
+        "Singleton",
+        "Factory",
+        "Builder",
+        "Prototype",
+        "Abstract Factory"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 54.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-038",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Hazır bilgisayar kopyalanıp RAM/SSD değiştirilerek yeni ürün hazırlanıyor. Hangi desen?",
+      "choices": [
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Singleton",
+        "Factory"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 54.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-039",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Başlık, tarih aralığı, grafikler ve tablolar seçilerek rapor oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Builder",
+        "Singleton",
+        "Factory",
+        "Abstract Factory",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 54.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-040",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "NotificationFactory.create('SMS') hangi desene örnek?",
+      "choices": [
+        "Abstract Factory",
+        "Builder",
+        "Prototype",
+        "Factory",
+        "Singleton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 54.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          54
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-041",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Shallow Copy için doğru ifade nedir?",
+      "choices": [
+        "Aynı referans atamasıyla özdeştir",
+        "Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir",
+        "Hiç yeni nesne oluşmaz",
+        "Bütün alt nesneler bağımsızdır",
+        "Tek örnek oluşturulur"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doğru cevap: Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir. Kaynak PDF, sayfa 55.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          55
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-042",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Factory ile Abstract Factory'nin temel farkı?",
+      "choices": [
+        "Factory sadece tek örnek üretir",
+        "Abstract Factory sadece Singleton üretir",
+        "Factory mutlaka kopyalar",
+        "Abstract Factory nesne üretmez",
+        "Abstract Factory ilişkili ürün aileleri oluşturur"
+      ],
+      "correctIndex": 4,
+      "explanation": "Doğru cevap: Abstract Factory ilişkili ürün aileleri oluşturur. Kaynak PDF, sayfa 55.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          55
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-043",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Builder ile Prototype arasındaki fark?",
+      "choices": [
+        "Prototype nesne üretmez",
+        "Builder mutlaka Singleton kullanır",
+        "Builder aşamalı kurar, Prototype kopyalar",
+        "İkisi tek örnektir",
+        "Builder yalnızca interface kurar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Doğru cevap: Builder aşamalı kurar, Prototype kopyalar. Kaynak PDF, sayfa 55.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          55
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-044",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Ülkeye göre ödeme, fatura ve vergi bileşenleri birlikte oluşturuluyor. Hangi desen?",
+      "choices": [
+        "Abstract Factory",
+        "Singleton",
+        "Factory",
+        "Builder",
+        "Prototype"
+      ],
+      "correctIndex": 0,
+      "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 55.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          55
+        ]
+      }
+    },
+    {
+      "id": "sd-creational-045",
+      "courseId": "software-design",
+      "topicId": "creational",
+      "difficulty": "intermediate",
+      "question": "Beş yaratım deseninin doğru eşleştirmesi hangisi?",
+      "choices": [
+        "Factory aşamalı; Prototype tek örnek; Builder kopya",
+        "Abstract Factory kopya; Singleton aile; Factory tek örnek",
+        "Factory sadece davranış ekler; Builder erişim kontrolü yapar",
+        "Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya",
+        "Singleton kopya; Builder tek örnek; Prototype aile"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doğru cevap: Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya. Kaynak PDF, sayfa 55.",
+      "source": {
+        "id": "sd-source-creational",
+        "slides": [
+          55
+        ]
+      }
+    }
+  ]
+}
