@@ -15,24 +15,30 @@ export function generateStaticParams() {
   return [
     { locale: "tr", courseId: "database-management" },
     { locale: "ar", courseId: "database-management" },
+    { locale: "tr", courseId: "software-design" },
+    { locale: "ar", courseId: "software-design" },
   ];
 }
 
 export async function generateMetadata({ params }: Props) {
   const { locale, courseId } = await params;
-  if (!isLocale(locale) || courseId !== "database-management") notFound();
+  if (!isLocale(locale) || !["database-management", "software-design"].includes(courseId)) notFound();
   return {
     title:
-      locale === "tr"
-        ? "Veritabanı Yönetim Sistemleri Soru Bankası"
-        : "بنك أسئلة نظم إدارة قواعد البيانات",
+      courseId === "software-design"
+        ? locale === "tr"
+          ? "Yazılım Tasarımı ve Mimarisi Soru Bankası"
+          : "بنك أسئلة تصميم البرمجيات ومعماريتها"
+        : locale === "tr"
+          ? "Veritabanı Yönetim Sistemleri Soru Bankası"
+          : "بنك أسئلة نظم إدارة قواعد البيانات",
     description: quizMessages[locale].intro,
   };
 }
 
-export default async function DatabaseQuizPage({ params }: Props) {
+export default async function CourseQuizPage({ params }: Props) {
   const { locale, courseId } = await params;
-  if (!isLocale(locale) || courseId !== "database-management") notFound();
+  if (!isLocale(locale) || !["database-management", "software-design"].includes(courseId)) notFound();
   const bank = await loadQuizBank(undefined, undefined, courseId);
   return (
     <div className="quiz-shell">
@@ -47,6 +53,11 @@ export default async function DatabaseQuizPage({ params }: Props) {
             {locale === "tr"
               ? "İşletim Sistemleri testi"
               : "اختبار نظم التشغيل"}
+          </Link>
+          <Link className="quiz-docs" href={`/${locale}/quiz/${courseId === "software-design" ? "database-management" : "software-design"}/`}>
+            {courseId === "software-design"
+              ? locale === "tr" ? "Veritabanı testi" : "اختبار قواعد البيانات"
+              : locale === "tr" ? "Yazılım Tasarımı testi" : "اختبار تصميم البرمجيات"}
           </Link>
           <Link className="quiz-docs" href={routes.docs(locale)}>
             {quizMessages[locale].docs}
