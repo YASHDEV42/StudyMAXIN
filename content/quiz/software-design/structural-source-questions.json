@@ -1,0 +1,648 @@
+[
+  {
+    "id": "sd-structural-001",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 21
+    },
+    "question": "Oyunda 100.000 düşman aynı 3D modeli kullanıyor; hangi özellik paylaşılır?",
+    "choices": [
+      "Ortak 3D model ve doku",
+      "Can puanı",
+      "Konum",
+      "Kimlik",
+      "Hareket yönü"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Ortak 3D model ve doku. Kaynak: PDF sayfa 21."
+  },
+  {
+    "id": "sd-structural-002",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 37
+    },
+    "question": "OBS harici fetchPersonRecord() metodunu getStudentInfo() arayüzüne uyarlıyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37."
+  },
+  {
+    "id": "sd-structural-003",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 37
+    },
+    "question": "50.000 ağaç aynı 3D modelini paylaşıyor. Hangi desen?",
+    "choices": [
+      "Flyweight",
+      "Adapter",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 37."
+  },
+  {
+    "id": "sd-structural-004",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 37
+    },
+    "question": "Farklı kargo API'leri tek createShipment() arayüzüne bağlanıyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 37."
+  },
+  {
+    "id": "sd-structural-005",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 59
+    },
+    "question": "Stok, ödeme ve bildirim servisleri placeOrder() ile tek çağrıdan yönetiliyor. Hangi desen?",
+    "choices": [
+      "Facade",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 59."
+  },
+  {
+    "id": "sd-structural-006",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 59
+    },
+    "question": "pay() bekleyen sisteme makePayment() sunan banka bağlanıyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 59."
+  },
+  {
+    "id": "sd-structural-007",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 59
+    },
+    "question": "Facade arka plandaki servisleri ortadan kaldırır mı?",
+    "choices": [
+      "Hayır, servisler çalışmaya devam eder",
+      "Evet, hepsi silinir",
+      "Evet, veritabanına dönüşür",
+      "Evet, tek nesneye birleşir",
+      "Yalnızca ağ servisleri silinir"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Hayır, servisler çalışmaya devam eder. Kaynak: PDF sayfa 59."
+  },
+  {
+    "id": "sd-structural-008",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 75
+    },
+    "question": "Bildirim sistemine loglama ve retry isteğe bağlı ekleniyor. Hangi desen?",
+    "choices": [
+      "Decorator",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 75."
+  },
+  {
+    "id": "sd-structural-009",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 75
+    },
+    "question": "Hasta dosyasına erişmeden önce yetki kontrolü yapılıyor. Hangi desen?",
+    "choices": [
+      "Proxy",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 75."
+  },
+  {
+    "id": "sd-structural-010",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 75
+    },
+    "question": "50 TL kahveye iki kez 10 TL MilkDecorator uygulanırsa fiyat?",
+    "choices": [
+      "70 TL",
+      "50 TL",
+      "60 TL",
+      "80 TL",
+      "100 TL"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: 70 TL. Kaynak: PDF sayfa 75."
+  },
+  {
+    "id": "sd-structural-011",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 75
+    },
+    "question": "Decorator temel nesnenin sınıfının değiştirilmesini gerektirir mi?",
+    "choices": [
+      "Hayır",
+      "Evet",
+      "Yalnızca Java'da",
+      "Yalnızca Singleton'da",
+      "Yalnızca çoklu kalıtımda"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Hayır. Kaynak: PDF sayfa 75."
+  },
+  {
+    "id": "sd-structural-012",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 83
+    },
+    "question": "Normal ve acil bildirimler SMS, e-posta ve mobil kanallardan bağımsız gelişiyor. Hangi desen?",
+    "choices": [
+      "Bridge",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 83."
+  },
+  {
+    "id": "sd-structural-013",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 83
+    },
+    "question": "3 rapor türü × 4 çıktı biçiminin her kombinasyonuna bir sınıf yazılırsa kaç sınıf?",
+    "choices": [
+      "12",
+      "3",
+      "4",
+      "7",
+      "24"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: 12. Kaynak: PDF sayfa 83."
+  },
+  {
+    "id": "sd-structural-014",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 83
+    },
+    "question": "Çalışma sırasında loglama ve yeniden deneme davranışı ekleniyor. Hangi desen?",
+    "choices": [
+      "Decorator",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 83."
+  },
+  {
+    "id": "sd-structural-015",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Yeni banka makePayment() metodunu pay() bekleyen sisteme dönüştürücüyle sunuyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-016",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "20.000 asker ortak 3B model ve dokuyu paylaşıyor. Hangi desen?",
+    "choices": [
+      "Flyweight",
+      "Adapter",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-017",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Siparişi Tamamla; stok, ödeme ve bildirimi tek metotla başlatıyor. Hangi desen?",
+    "choices": [
+      "Facade",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-018",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Hasta dosyasına yetkisiz erişim aracı tarafından engelleniyor. Hangi desen?",
+    "choices": [
+      "Proxy",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-019",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Kahveye süt, karamel, çikolata dinamik katmanlar olarak ekleniyor. Hangi desen?",
+    "choices": [
+      "Decorator",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-020",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Dosya ve klasörler aynı getSize() arayüzünü kullanıyor. Hangi desen?",
+    "choices": [
+      "Composite",
+      "Adapter",
+      "Flyweight",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-021",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Rapor türü ve PDF/Excel/HTML üretim motoru bağımsız değişiyor. Hangi desen?",
+    "choices": [
+      "Bridge",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-022",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "30.000 restoran aynı ikon grafiğini paylaşıyor. Hangi desen?",
+    "choices": [
+      "Flyweight",
+      "Adapter",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-023",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Dış öğrenci verisi üniversitenin beklediği arayüze dönüştürülüyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-024",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 84
+    },
+    "question": "Fotoğraf gerçek yüklemesi sadece açıldığında yapılıyor. Hangi desen?",
+    "choices": [
+      "Proxy",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 84."
+  },
+  {
+    "id": "sd-structural-025",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Bildirimlere isteğe bağlı loglama ve retry davranışı ekleniyor. Hangi desen?",
+    "choices": [
+      "Decorator",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-026",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Departmanlar ve çalışanlar tek hiyerarşide personel sayısını hesaplıyor. Hangi desen?",
+    "choices": [
+      "Composite",
+      "Adapter",
+      "Flyweight",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-027",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Para gönderme doğrulama, limit, transfer ve bildirimi tek çağrıyla yönetiyor. Hangi desen?",
+    "choices": [
+      "Facade",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Facade. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-028",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Kumanda türleri ile televizyon/radyo/hoparlör türleri ayrı geliştiriliyor. Hangi desen?",
+    "choices": [
+      "Bridge",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-029",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Büyük PDF nesnesi belge açılana kadar oluşturulmuyor. Hangi desen?",
+    "choices": [
+      "Proxy",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Proxy. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-030",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Eski calculateOldInvoice() metodu generateInvoice() arayüzüne bağlanıyor. Hangi desen?",
+    "choices": [
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Adapter. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-031",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Şekiller SVG ve Canvas motorlarından bağımsız geliştiriliyor. Hangi desen?",
+    "choices": [
+      "Bridge",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Bridge. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-032",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Siparişe hediye paketi ve sigorta dinamik ekleniyor. Hangi desen?",
+    "choices": [
+      "Decorator",
+      "Adapter",
+      "Flyweight",
+      "Composite",
+      "Facade"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Decorator. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-033",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "500 öğrenci aynı CourseInfo nesnesini paylaşıyor. Hangi desen?",
+    "choices": [
+      "Flyweight",
+      "Adapter",
+      "Composite",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Flyweight. Kaynak: PDF sayfa 85."
+  },
+  {
+    "id": "sd-structural-034",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta6_7_Yapisal_Tasarim_Desenleri.pdf",
+      "page": 85
+    },
+    "question": "Tek şekil ve şekil grubu aynı move() işlemini kullanıyor. Hangi desen?",
+    "choices": [
+      "Composite",
+      "Adapter",
+      "Flyweight",
+      "Facade",
+      "Proxy"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Composite. Kaynak: PDF sayfa 85."
+  }
+]
