@@ -1,0 +1,857 @@
+[
+  {
+    "id": "sd-creational-001",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 13
+    },
+    "question": "Singleton DatabasePoolManager, tek bir veritabanı bağlantısı olduğu anlamına gelir mi?",
+    "choices": [
+      "Hayır",
+      "Evet",
+      "Her kullanıcıya tek bağlantı",
+      "Bütün bağlantılar kapatılır",
+      "Sadece bir sorgu çalışır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 13."
+  },
+  {
+    "id": "sd-creational-002",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 13
+    },
+    "question": "OBS ekranlarının aynı sistem ayarı yöneticisini kullanması için hangi desen?",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 13."
+  },
+  {
+    "id": "sd-creational-003",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 13
+    },
+    "question": "LoggerManager.getInstance() iki kez çağrıldığında ne döner?",
+    "choices": [
+      "Aynı nesne",
+      "İki ayrı nesne",
+      "null",
+      "Silinen nesne",
+      "Her seferinde kopya"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Aynı nesne. Kaynak PDF, sayfa 13."
+  },
+  {
+    "id": "sd-creational-004",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 23
+    },
+    "question": "Çoktan seçmeli veya doğru-yanlış sorusu türüne göre nesne oluşturulur. Hangi desen?",
+    "choices": [
+      "Factory",
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 23."
+  },
+  {
+    "id": "sd-creational-005",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 23
+    },
+    "question": "Factory kullanıldığında somut nesneyi hangi yapı oluşturur?",
+    "choices": [
+      "Factory sınıfı veya oluşturucu yapı",
+      "Her zaman Client",
+      "Veritabanı",
+      "Görünüm katmanı",
+      "Logger"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory sınıfı veya oluşturucu yapı. Kaynak PDF, sayfa 23."
+  },
+  {
+    "id": "sd-creational-006",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 23
+    },
+    "question": "Bütün modüller aynı SystemConfig nesnesini kullanıyor. Hangi desen?",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 23."
+  },
+  {
+    "id": "sd-creational-007",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 23
+    },
+    "question": "Factory.create('SMS') nesnesi hangi ortak tür üzerinden kullanılabilir?",
+    "choices": [
+      "Notification arayüzü",
+      "Mutlaka String",
+      "Yalnızca SmsNotification",
+      "Builder",
+      "DatabaseConnection"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Notification arayüzü. Kaynak PDF, sayfa 23."
+  },
+  {
+    "id": "sd-creational-008",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 23
+    },
+    "question": "Factory'nin temel amacı hangisidir?",
+    "choices": [
+      "Nesne oluşturma işlemini soyutlamak",
+      "Bütün nesneleri paylaşmak",
+      "Davranış eklemek",
+      "Örnek sayısını bire indirmek",
+      "Nesneleri silmek"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Nesne oluşturma işlemini soyutlamak. Kaynak PDF, sayfa 23."
+  },
+  {
+    "id": "sd-creational-009",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "Android ve iOS için uyumlu buton, menü ve metin kutusu aileleri üretiliyor. Hangi desen?",
+    "choices": [
+      "Abstract Factory",
+      "Singleton",
+      "Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-010",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "Yalnızca SMS veya EmailNotification nesnesi seçilerek üretiliyor. Daha basit uygun desen?",
+    "choices": [
+      "Factory",
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-011",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "Abstract Factory'nin temel amacı?",
+    "choices": [
+      "İlişkili nesne aileleri oluşturmak",
+      "Tek örnek sağlamak",
+      "Mevcut nesneyi kopyalamak",
+      "Adım adım inşa etmek",
+      "Çalışma sırasında davranış eklemek"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: İlişkili nesne aileleri oluşturmak. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-012",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "OnlineExamFactory, OnlineQuestionView ve OnlineAnswerCollector üretiyor. Bu neye örnektir?",
+    "choices": [
+      "Ürün ailesi",
+      "Singleton nesnesi",
+      "Shallow copy",
+      "Decorator zinciri",
+      "Proxy erişimi"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Ürün ailesi. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-013",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "MedievalFactory için en tutarlı ürün grubu hangisi?",
+    "choices": [
+      "Knight + Sword + Dragon",
+      "Knight + LaserGun + RobotEnemy",
+      "SpaceSoldier + Sword + Dragon",
+      "SpaceSoldier + LaserGun + RobotEnemy",
+      "Knight + SpaceShip + LaserGun"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Knight + Sword + Dragon. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-014",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 32
+    },
+    "question": "Abstract Factory istemcisi doğrudan new AndroidButton() yazmak zorunda mı?",
+    "choices": [
+      "Hayır",
+      "Evet",
+      "Sadece Singleton ile",
+      "Sadece Prototype ile",
+      "Her ürün için zorunlu"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 32."
+  },
+  {
+    "id": "sd-creational-015",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 41
+    },
+    "question": "Sınav süresi, soru sayısı ve tarih aşamalı belirleniyor. Hangi desen?",
+    "choices": [
+      "Builder",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 41."
+  },
+  {
+    "id": "sd-creational-016",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 41
+    },
+    "question": "SMS ve e-posta seçimine göre bildirim nesnesi oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Factory",
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 41."
+  },
+  {
+    "id": "sd-creational-017",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 41
+    },
+    "question": "Builder'da build() metodunun görevi?",
+    "choices": [
+      "Nihai nesneyi oluşturup döndürmek",
+      "Nesneyi silmek",
+      "Her zaman sınıf tanımlamak",
+      "Nesneyi klonlamak",
+      "Tek örneği kilitlemek"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Nihai nesneyi oluşturup döndürmek. Kaynak PDF, sayfa 41."
+  },
+  {
+    "id": "sd-creational-018",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 41
+    },
+    "question": "Builder'da bütün özellikler zorunlu mudur?",
+    "choices": [
+      "Hayır",
+      "Evet",
+      "Sadece String alanlar",
+      "Sadece Java'da evet",
+      "Her zaman tek parametre vardır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 41."
+  },
+  {
+    "id": "sd-creational-019",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 41
+    },
+    "question": "AndroidButton ve AndroidMenu birlikte oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Abstract Factory",
+      "Singleton",
+      "Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 41."
+  },
+  {
+    "id": "sd-creational-020",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "Hazır sınav şablonu farklı dersler için kopyalanıyor. Hangi desen?",
+    "choices": [
+      "Prototype",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-021",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "Java'da Exam exam2 = exam1 sonucu nedir?",
+    "choices": [
+      "İki değişken aynı nesneyi gösterir",
+      "Deep copy yapılır",
+      "Bağımsız nesne oluşur",
+      "Factory çalışır",
+      "Clone constructor çağrılır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-022",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "Shallow Copy sırasında ne olabilir?",
+    "choices": [
+      "Dış nesne yeni, iç referanslar ortak olabilir",
+      "Her iç nesne bağımsızdır",
+      "Hiç yeni nesne oluşmaz",
+      "Yalnızca bir Singleton vardır",
+      "Kopya derlenmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Dış nesne yeni, iç referanslar ortak olabilir. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-023",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "Prototype'nin temel amacı?",
+    "choices": [
+      "Mevcut nesneyi kopyalayarak üretmek",
+      "Adım adım kurmak",
+      "Tek örnek garantilemek",
+      "Servisleri birleştirmek",
+      "Arayüz dönüştürmek"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Mevcut nesneyi kopyalayarak üretmek. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-024",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "RAM ve SSD özellikleri sırayla seçilerek bilgisayar oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Builder",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-025",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 51
+    },
+    "question": "Prototype kopyasında değiştirilebilir liste de bağımsız olmalıysa ne yapılır?",
+    "choices": [
+      "Liste de kopyalanmalı",
+      "Referans atanmalı",
+      "Singleton kullanılmalı",
+      "Liste static olmalı",
+      "Aynı liste paylaşılmalı"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Liste de kopyalanmalı. Kaynak PDF, sayfa 51."
+  },
+  {
+    "id": "sd-creational-026",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 52
+    },
+    "question": "Üniversite modülleri ortak ayar yöneticisi istiyor. Hangi desen?",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52."
+  },
+  {
+    "id": "sd-creational-027",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 52
+    },
+    "question": "Bir sınıfın tek örneğine ortak erişim sağlama hangi desenin amacı?",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52."
+  },
+  {
+    "id": "sd-creational-028",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 52
+    },
+    "question": "Seçilen ödeme yöntemine uygun nesne hangi desenle üretilir?",
+    "choices": [
+      "Factory",
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 52."
+  },
+  {
+    "id": "sd-creational-029",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 52
+    },
+    "question": "Factory'nin Client'a sağladığı temel yarar nedir?",
+    "choices": [
+      "Somut nesne oluşturma bağımlılığını azaltmak",
+      "Bütün nesneleri aynı yapmak",
+      "Nesneleri silmek",
+      "Tek örnek oluşturmak",
+      "Veritabanını kaldırmak"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Somut nesne oluşturma bağımlılığını azaltmak. Kaynak PDF, sayfa 52."
+  },
+  {
+    "id": "sd-creational-030",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 52
+    },
+    "question": "Android ve iOS için uyumlu bileşen aileleri üretmek hangi desen?",
+    "choices": [
+      "Abstract Factory",
+      "Singleton",
+      "Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 52."
+  },
+  {
+    "id": "sd-creational-031",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 53
+    },
+    "question": "Abstract Factory içindeki ConcreteFactory nedir?",
+    "choices": [
+      "Belirli ürün ailesini üreten somut fabrika",
+      "Client",
+      "Kopyalama metodu",
+      "Tekil nesne",
+      "Ürün arayüzü"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Belirli ürün ailesini üreten somut fabrika. Kaynak PDF, sayfa 53."
+  },
+  {
+    "id": "sd-creational-032",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 53
+    },
+    "question": "Sınav seçenekleri adım adım belirlenip sınav oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Builder",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 53."
+  },
+  {
+    "id": "sd-creational-033",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 53
+    },
+    "question": "build() metodu hangi işi yapar?",
+    "choices": [
+      "Nihai ürünü oluşturup döndürmek",
+      "Kopya üretmek",
+      "Nesneyi silmek",
+      "Veritabanına bağlanmak",
+      "İstemciyi değiştirmek"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Nihai ürünü oluşturup döndürmek. Kaynak PDF, sayfa 53."
+  },
+  {
+    "id": "sd-creational-034",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 53
+    },
+    "question": "Sınav şablonu kopyalanarak farklı sınavlar hazırlanıyor. Hangi desen?",
+    "choices": [
+      "Prototype",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 53."
+  },
+  {
+    "id": "sd-creational-035",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 53
+    },
+    "question": "Exam exam2 = exam1 ne anlama gelir?",
+    "choices": [
+      "İki değişken aynı nesneyi gösterir",
+      "Deep copy",
+      "Yeni bağımsız nesne",
+      "Factory çağrısı",
+      "Builder kurulumu"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 53."
+  },
+  {
+    "id": "sd-creational-036",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 54
+    },
+    "question": "Ortak hastane bağlantı havuzu yöneticisi için desen?",
+    "choices": [
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 54."
+  },
+  {
+    "id": "sd-creational-037",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 54
+    },
+    "question": "Orta Çağ ve bilim kurgu temalarında uyumlu karakter/silah/düşman aileleri üretiliyor. Hangi desen?",
+    "choices": [
+      "Abstract Factory",
+      "Singleton",
+      "Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 54."
+  },
+  {
+    "id": "sd-creational-038",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 54
+    },
+    "question": "Hazır bilgisayar kopyalanıp RAM/SSD değiştirilerek yeni ürün hazırlanıyor. Hangi desen?",
+    "choices": [
+      "Prototype",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Builder"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 54."
+  },
+  {
+    "id": "sd-creational-039",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 54
+    },
+    "question": "Başlık, tarih aralığı, grafikler ve tablolar seçilerek rapor oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Builder",
+      "Singleton",
+      "Factory",
+      "Abstract Factory",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 54."
+  },
+  {
+    "id": "sd-creational-040",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 54
+    },
+    "question": "NotificationFactory.create('SMS') hangi desene örnek?",
+    "choices": [
+      "Factory",
+      "Singleton",
+      "Abstract Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 54."
+  },
+  {
+    "id": "sd-creational-041",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 55
+    },
+    "question": "Shallow Copy için doğru ifade nedir?",
+    "choices": [
+      "Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir",
+      "Hiç yeni nesne oluşmaz",
+      "Bütün alt nesneler bağımsızdır",
+      "Tek örnek oluşturulur",
+      "Aynı referans atamasıyla özdeştir"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir. Kaynak PDF, sayfa 55."
+  },
+  {
+    "id": "sd-creational-042",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 55
+    },
+    "question": "Factory ile Abstract Factory'nin temel farkı?",
+    "choices": [
+      "Abstract Factory ilişkili ürün aileleri oluşturur",
+      "Factory sadece tek örnek üretir",
+      "Abstract Factory sadece Singleton üretir",
+      "Factory mutlaka kopyalar",
+      "Abstract Factory nesne üretmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory ilişkili ürün aileleri oluşturur. Kaynak PDF, sayfa 55."
+  },
+  {
+    "id": "sd-creational-043",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 55
+    },
+    "question": "Builder ile Prototype arasındaki fark?",
+    "choices": [
+      "Builder aşamalı kurar, Prototype kopyalar",
+      "İkisi tek örnektir",
+      "Builder yalnızca interface kurar",
+      "Prototype nesne üretmez",
+      "Builder mutlaka Singleton kullanır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Builder aşamalı kurar, Prototype kopyalar. Kaynak PDF, sayfa 55."
+  },
+  {
+    "id": "sd-creational-044",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 55
+    },
+    "question": "Ülkeye göre ödeme, fatura ve vergi bileşenleri birlikte oluşturuluyor. Hangi desen?",
+    "choices": [
+      "Abstract Factory",
+      "Singleton",
+      "Factory",
+      "Builder",
+      "Prototype"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 55."
+  },
+  {
+    "id": "sd-creational-045",
+    "courseId": "software-design",
+    "source": {
+      "file": "Hafta8_Yaratimsal_Tasarim_Desenleri.pdf",
+      "page": 55
+    },
+    "question": "Beş yaratım deseninin doğru eşleştirmesi hangisi?",
+    "choices": [
+      "Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya",
+      "Singleton kopya; Builder tek örnek; Prototype aile",
+      "Factory aşamalı; Prototype tek örnek; Builder kopya",
+      "Abstract Factory kopya; Singleton aile; Factory tek örnek",
+      "Factory sadece davranış ekler; Builder erişim kontrolü yapar"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya. Kaynak PDF, sayfa 55."
+  }
+]
