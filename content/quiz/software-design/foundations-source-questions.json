@@ -1,0 +1,522 @@
+[
+  {
+    "id": "sd-foundations-001",
+    "courseId": "software-design",
+    "topic": "architecture",
+    "source": {
+      "file": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "page": 36
+    },
+    "question": "JWT tüm sistemin kimlik doğrulamasını etkiliyorsa karar türü?",
+    "choices": [
+      "Mimari",
+      "Kod/tasarım",
+      "İletişim ve operasyonel mimari",
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
+  },
+  {
+    "id": "sd-foundations-002",
+    "courseId": "software-design",
+    "topic": "architecture",
+    "source": {
+      "file": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "page": 36
+    },
+    "question": "Tek fonksiyon adının değiştirilmesi genelde hangi karar türüdür?",
+    "choices": [
+      "Kod/tasarım",
+      "Mimari",
+      "İletişim ve operasyonel mimari",
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Kod/tasarım. PDF sayfa 36."
+  },
+  {
+    "id": "sd-foundations-003",
+    "courseId": "software-design",
+    "topic": "architecture",
+    "source": {
+      "file": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "page": 36
+    },
+    "question": "PostgreSQL seçimi çoğu sistemde hangi karar türüdür?",
+    "choices": [
+      "Mimari",
+      "Kod/tasarım",
+      "İletişim ve operasyonel mimari",
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
+  },
+  {
+    "id": "sd-foundations-004",
+    "courseId": "software-design",
+    "topic": "architecture",
+    "source": {
+      "file": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "page": 36
+    },
+    "question": "Servisler arası Kafka kullanımı neyi etkiler?",
+    "choices": [
+      "İletişim ve operasyonel mimari",
+      "Mimari",
+      "Kod/tasarım",
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: İletişim ve operasyonel mimari. PDF sayfa 36."
+  },
+  {
+    "id": "sd-foundations-005",
+    "courseId": "software-design",
+    "topic": "architecture",
+    "source": {
+      "file": "2026_Hafta1_Yazilim_Tasarimi_ve_Mimariye_Giris_BDas.pdf",
+      "page": 36
+    },
+    "question": "Merkezi analizde kullanılan ortak log formatı değişirse karar türü ne olabilir?",
+    "choices": [
+      "Mimari",
+      "Kod/tasarım",
+      "İletişim ve operasyonel mimari",
+      "Yalnızca görsel karar",
+      "Bağlama göre değişmez"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Mimari. PDF sayfa 36."
+  },
+  {
+    "id": "sd-foundations-006",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "Abstraction ile Encapsulation arasındaki temel fark?",
+    "choices": [
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "İlişkili sorumlulukları odaklamak",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Önemli davranışı seçmek ile iç durumu korumak. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-007",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "High cohesion neyi hedefler?",
+    "choices": [
+      "İlişkili sorumlulukları odaklamak",
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: İlişkili sorumlulukları odaklamak. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-008",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "Low coupling neyi hedefler?",
+    "choices": [
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "İlişkili sorumlulukları odaklamak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Gereksiz modüller arası bağımlılığı azaltmak. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-009",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "UML'de 0..1, 1..*, 0..* neyi gösterir?",
+    "choices": [
+      "Sıfır/bir, en az bir, sıfır veya daha çok",
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "İlişkili sorumlulukları odaklamak",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Sıfır/bir, en az bir, sıfır veya daha çok. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-010",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "Composition'ı aggregation'dan ayıran temel anlam?",
+    "choices": [
+      "Güçlü bütün-parça ve yaşam döngüsü sahipliği",
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "İlişkili sorumlulukları odaklamak",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Güçlü bütün-parça ve yaşam döngüsü sahipliği. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-011",
+    "courseId": "software-design",
+    "topic": "ood",
+    "source": {
+      "file": "Hafta2A_Nesne_Yonelimli_Tasarim_Class_Diyagramlari [Otomatik kaydedildi].pdf",
+      "page": 40
+    },
+    "question": "Generalization ile realization arasındaki fark?",
+    "choices": [
+      "Kalıtım ile arayüz sözleşmesini uygulama",
+      "Önemli davranışı seçmek ile iç durumu korumak",
+      "İlişkili sorumlulukları odaklamak",
+      "Gereksiz modüller arası bağımlılığı azaltmak",
+      "Sıfır/bir, en az bir, sıfır veya daha çok"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Kalıtım ile arayüz sözleşmesini uygulama. PDF sayfa 40."
+  },
+  {
+    "id": "sd-foundations-012",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Use Case içindeki Actor neyi temsil eder?",
+    "choices": [
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
+      "Katılımcının etkileşimdeki varlığını"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Kişiyi değil rolü. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-013",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Use Case nasıl adlandırılmalıdır?",
+    "choices": [
+      "Kullanıcı hedefini anlatan fiille",
+      "Kişiyi değil rolü",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
+      "Katılımcının etkileşimdeki varlığını"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Kullanıcı hedefini anlatan fiille. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-014",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Include ile extend farkı?",
+    "choices": [
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
+      "Katılımcının etkileşimdeki varlığını"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Zorunlu ortak davranış ile koşullu davranış. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-015",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Use Case ve Sequence hangi soruları yanıtlar?",
+    "choices": [
+      "Ne yapılır ve nasıl/hangi sırada yapılır",
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Katılımcının etkileşimdeki varlığını"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Ne yapılır ve nasıl/hangi sırada yapılır. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-016",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Lifeline neyi temsil eder?",
+    "choices": [
+      "Katılımcının etkileşimdeki varlığını",
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Katılımcının etkileşimdeki varlığını. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-017",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Senkron ve asenkron çağrı farkı?",
+    "choices": [
+      "Yanıtı bekleme ile beklemeden ilerleme",
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Yanıtı bekleme ile beklemeden ilerleme. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-018",
+    "courseId": "software-design",
+    "topic": "uml",
+    "source": {
+      "file": "Hafta3_UseCase_Sequence_Diyagramlari (1).pdf",
+      "page": 32
+    },
+    "question": "Guard ne zaman kullanılır?",
+    "choices": [
+      "Koşullu mesaj veya akışta",
+      "Kişiyi değil rolü",
+      "Kullanıcı hedefini anlatan fiille",
+      "Zorunlu ortak davranış ile koşullu davranış",
+      "Ne yapılır ve nasıl/hangi sırada yapılır"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: Koşullu mesaj veya akışta. PDF sayfa 32."
+  },
+  {
+    "id": "sd-foundations-019",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "PaymentService doğrudan tek bankanın somut sınıfına bağlı. İlgili ilke?",
+    "choices": [
+      "DIP",
+      "ISP",
+      "SRP",
+      "OCP",
+      "YAGNI"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: DIP. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-020",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "IWorker arayüzünde kullanılmayan 15 metot var. İlgili ilke?",
+    "choices": [
+      "ISP",
+      "DIP",
+      "SRP",
+      "OCP",
+      "YAGNI"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: ISP. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-021",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "StudentService kayıt, PDF ve SMS yapıyor. İlgili ilke?",
+    "choices": [
+      "SRP",
+      "DIP",
+      "ISP",
+      "OCP",
+      "YAGNI"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: SRP. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-022",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "Yeni indirim için switch sürekli değişiyor. İlgili ilke?",
+    "choices": [
+      "OCP",
+      "DIP",
+      "ISP",
+      "SRP",
+      "YAGNI"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: OCP. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-023",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "Henüz istenmeyen 10 yıllık özellikler kodlanıyor. İlgili ilke?",
+    "choices": [
+      "YAGNI",
+      "DIP",
+      "ISP",
+      "SRP",
+      "OCP"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: YAGNI. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-024",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "Alt sınıf üst türün zorunlu metodunu her zaman reddediyor. İlgili ilke?",
+    "choices": [
+      "LSP",
+      "DIP",
+      "ISP",
+      "SRP",
+      "OCP"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: LSP. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-025",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "Küçük kulüp uygulaması için gereksiz mikroservis mimarisi kuruluyor. İlgili ilke?",
+    "choices": [
+      "KISS",
+      "DIP",
+      "ISP",
+      "SRP",
+      "OCP"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: KISS. PDF sayfa 38."
+  },
+  {
+    "id": "sd-foundations-026",
+    "courseId": "software-design",
+    "topic": "solid",
+    "source": {
+      "file": "Hafta5_Tasarim_Ilkeleri_SOLID.pdf",
+      "page": 38
+    },
+    "question": "Aynı doğrulama kodu beş sınıfta tekrar ediyor. İlgili ilke?",
+    "choices": [
+      "DRY",
+      "DIP",
+      "ISP",
+      "SRP",
+      "OCP"
+    ],
+    "correctIndex": 0,
+    "origin": "lecture-question-adapted",
+    "explanation": "Doğru cevap: DRY. PDF sayfa 38."
+  }
+]
