@@ -2,12 +2,14 @@ import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { publishAuditedBank } from "./audit";
 import { operatingSystemsId, validateBank } from "./bank";
+import { loadSoftwareDesignBank } from "./software-design";
 
 export async function loadQuizBank(
   root = join(process.cwd(), "content", "quiz"),
   auditPath?: string,
   courseId = operatingSystemsId,
 ) {
+  if (courseId === "software-design") return loadSoftwareDesignBank(root);
   const dir = join(root, courseId);
   const read = async (name: string): Promise<unknown> =>
     JSON.parse(await readFile(join(dir, name), "utf8"));
