@@ -8,13 +8,13 @@
     },
     "question": "Singleton DatabasePoolManager, tek bir veritabanı bağlantısı olduğu anlamına gelir mi?",
     "choices": [
+      "Sadece bir sorgu çalışır",
       "Hayır",
       "Evet",
       "Her kullanıcıya tek bağlantı",
-      "Bütün bağlantılar kapatılır",
-      "Sadece bir sorgu çalışır"
+      "Bütün bağlantılar kapatılır"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 13."
   },
@@ -27,13 +27,13 @@
     },
     "question": "OBS ekranlarının aynı sistem ayarı yöneticisini kullanması için hangi desen?",
     "choices": [
-      "Singleton",
       "Factory",
       "Abstract Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 13."
   },
@@ -46,13 +46,13 @@
     },
     "question": "LoggerManager.getInstance() iki kez çağrıldığında ne döner?",
     "choices": [
+      "Silinen nesne",
+      "Her seferinde kopya",
       "Aynı nesne",
       "İki ayrı nesne",
-      "null",
-      "Silinen nesne",
-      "Her seferinde kopya"
+      "null"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Aynı nesne. Kaynak PDF, sayfa 13."
   },
@@ -84,13 +84,13 @@
     },
     "question": "Factory kullanıldığında somut nesneyi hangi yapı oluşturur?",
     "choices": [
-      "Factory sınıfı veya oluşturucu yapı",
-      "Her zaman Client",
       "Veritabanı",
       "Görünüm katmanı",
-      "Logger"
+      "Logger",
+      "Factory sınıfı veya oluşturucu yapı",
+      "Her zaman Client"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Factory sınıfı veya oluşturucu yapı. Kaynak PDF, sayfa 23."
   },
@@ -103,13 +103,13 @@
     },
     "question": "Bütün modüller aynı SystemConfig nesnesini kullanıyor. Hangi desen?",
     "choices": [
+      "Prototype",
       "Singleton",
       "Factory",
       "Abstract Factory",
-      "Builder",
-      "Prototype"
+      "Builder"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 23."
   },
@@ -122,13 +122,13 @@
     },
     "question": "Factory.create('SMS') nesnesi hangi ortak tür üzerinden kullanılabilir?",
     "choices": [
-      "Notification arayüzü",
       "Mutlaka String",
       "Yalnızca SmsNotification",
       "Builder",
-      "DatabaseConnection"
+      "DatabaseConnection",
+      "Notification arayüzü"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Notification arayüzü. Kaynak PDF, sayfa 23."
   },
@@ -141,13 +141,13 @@
     },
     "question": "Factory'nin temel amacı hangisidir?",
     "choices": [
+      "Örnek sayısını bire indirmek",
+      "Nesneleri silmek",
       "Nesne oluşturma işlemini soyutlamak",
       "Bütün nesneleri paylaşmak",
-      "Davranış eklemek",
-      "Örnek sayısını bire indirmek",
-      "Nesneleri silmek"
+      "Davranış eklemek"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Nesne oluşturma işlemini soyutlamak. Kaynak PDF, sayfa 23."
   },
@@ -179,13 +179,13 @@
     },
     "question": "Yalnızca SMS veya EmailNotification nesnesi seçilerek üretiliyor. Daha basit uygun desen?",
     "choices": [
-      "Factory",
-      "Singleton",
       "Abstract Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Factory",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 32."
   },
@@ -198,13 +198,13 @@
     },
     "question": "Abstract Factory'nin temel amacı?",
     "choices": [
+      "Çalışma sırasında davranış eklemek",
       "İlişkili nesne aileleri oluşturmak",
       "Tek örnek sağlamak",
       "Mevcut nesneyi kopyalamak",
-      "Adım adım inşa etmek",
-      "Çalışma sırasında davranış eklemek"
+      "Adım adım inşa etmek"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: İlişkili nesne aileleri oluşturmak. Kaynak PDF, sayfa 32."
   },
@@ -217,13 +217,13 @@
     },
     "question": "OnlineExamFactory, OnlineQuestionView ve OnlineAnswerCollector üretiyor. Bu neye örnektir?",
     "choices": [
-      "Ürün ailesi",
       "Singleton nesnesi",
       "Shallow copy",
       "Decorator zinciri",
-      "Proxy erişimi"
+      "Proxy erişimi",
+      "Ürün ailesi"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Ürün ailesi. Kaynak PDF, sayfa 32."
   },
@@ -236,13 +236,13 @@
     },
     "question": "MedievalFactory için en tutarlı ürün grubu hangisi?",
     "choices": [
+      "SpaceSoldier + LaserGun + RobotEnemy",
+      "Knight + SpaceShip + LaserGun",
       "Knight + Sword + Dragon",
       "Knight + LaserGun + RobotEnemy",
-      "SpaceSoldier + Sword + Dragon",
-      "SpaceSoldier + LaserGun + RobotEnemy",
-      "Knight + SpaceShip + LaserGun"
+      "SpaceSoldier + Sword + Dragon"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Knight + Sword + Dragon. Kaynak PDF, sayfa 32."
   },
@@ -274,13 +274,13 @@
     },
     "question": "Sınav süresi, soru sayısı ve tarih aşamalı belirleniyor. Hangi desen?",
     "choices": [
-      "Builder",
-      "Singleton",
       "Factory",
       "Abstract Factory",
-      "Prototype"
+      "Prototype",
+      "Builder",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 41."
   },
@@ -293,13 +293,13 @@
     },
     "question": "SMS ve e-posta seçimine göre bildirim nesnesi oluşturuluyor. Hangi desen?",
     "choices": [
+      "Prototype",
       "Factory",
       "Singleton",
       "Abstract Factory",
-      "Builder",
-      "Prototype"
+      "Builder"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 41."
   },
@@ -312,13 +312,13 @@
     },
     "question": "Builder'da build() metodunun görevi?",
     "choices": [
-      "Nihai nesneyi oluşturup döndürmek",
       "Nesneyi silmek",
       "Her zaman sınıf tanımlamak",
       "Nesneyi klonlamak",
-      "Tek örneği kilitlemek"
+      "Tek örneği kilitlemek",
+      "Nihai nesneyi oluşturup döndürmek"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Nihai nesneyi oluşturup döndürmek. Kaynak PDF, sayfa 41."
   },
@@ -331,13 +331,13 @@
     },
     "question": "Builder'da bütün özellikler zorunlu mudur?",
     "choices": [
+      "Sadece Java'da evet",
+      "Her zaman tek parametre vardır",
       "Hayır",
       "Evet",
-      "Sadece String alanlar",
-      "Sadece Java'da evet",
-      "Her zaman tek parametre vardır"
+      "Sadece String alanlar"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Hayır. Kaynak PDF, sayfa 41."
   },
@@ -369,13 +369,13 @@
     },
     "question": "Hazır sınav şablonu farklı dersler için kopyalanıyor. Hangi desen?",
     "choices": [
-      "Prototype",
-      "Singleton",
       "Factory",
       "Abstract Factory",
-      "Builder"
+      "Builder",
+      "Prototype",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 51."
   },
@@ -388,13 +388,13 @@
     },
     "question": "Java'da Exam exam2 = exam1 sonucu nedir?",
     "choices": [
+      "Clone constructor çağrılır",
       "İki değişken aynı nesneyi gösterir",
       "Deep copy yapılır",
       "Bağımsız nesne oluşur",
-      "Factory çalışır",
-      "Clone constructor çağrılır"
+      "Factory çalışır"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 51."
   },
@@ -407,13 +407,13 @@
     },
     "question": "Shallow Copy sırasında ne olabilir?",
     "choices": [
-      "Dış nesne yeni, iç referanslar ortak olabilir",
       "Her iç nesne bağımsızdır",
       "Hiç yeni nesne oluşmaz",
       "Yalnızca bir Singleton vardır",
-      "Kopya derlenmez"
+      "Kopya derlenmez",
+      "Dış nesne yeni, iç referanslar ortak olabilir"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Dış nesne yeni, iç referanslar ortak olabilir. Kaynak PDF, sayfa 51."
   },
@@ -426,13 +426,13 @@
     },
     "question": "Prototype'nin temel amacı?",
     "choices": [
+      "Servisleri birleştirmek",
+      "Arayüz dönüştürmek",
       "Mevcut nesneyi kopyalayarak üretmek",
       "Adım adım kurmak",
-      "Tek örnek garantilemek",
-      "Servisleri birleştirmek",
-      "Arayüz dönüştürmek"
+      "Tek örnek garantilemek"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Mevcut nesneyi kopyalayarak üretmek. Kaynak PDF, sayfa 51."
   },
@@ -464,13 +464,13 @@
     },
     "question": "Prototype kopyasında değiştirilebilir liste de bağımsız olmalıysa ne yapılır?",
     "choices": [
-      "Liste de kopyalanmalı",
-      "Referans atanmalı",
       "Singleton kullanılmalı",
       "Liste static olmalı",
-      "Aynı liste paylaşılmalı"
+      "Aynı liste paylaşılmalı",
+      "Liste de kopyalanmalı",
+      "Referans atanmalı"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Liste de kopyalanmalı. Kaynak PDF, sayfa 51."
   },
@@ -483,13 +483,13 @@
     },
     "question": "Üniversite modülleri ortak ayar yöneticisi istiyor. Hangi desen?",
     "choices": [
+      "Prototype",
       "Singleton",
       "Factory",
       "Abstract Factory",
-      "Builder",
-      "Prototype"
+      "Builder"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52."
   },
@@ -502,13 +502,13 @@
     },
     "question": "Bir sınıfın tek örneğine ortak erişim sağlama hangi desenin amacı?",
     "choices": [
-      "Singleton",
       "Factory",
       "Abstract Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 52."
   },
@@ -521,13 +521,13 @@
     },
     "question": "Seçilen ödeme yöntemine uygun nesne hangi desenle üretilir?",
     "choices": [
+      "Builder",
+      "Prototype",
       "Factory",
       "Singleton",
-      "Abstract Factory",
-      "Builder",
-      "Prototype"
+      "Abstract Factory"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 52."
   },
@@ -559,13 +559,13 @@
     },
     "question": "Android ve iOS için uyumlu bileşen aileleri üretmek hangi desen?",
     "choices": [
-      "Abstract Factory",
-      "Singleton",
       "Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Abstract Factory",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 52."
   },
@@ -578,13 +578,13 @@
     },
     "question": "Abstract Factory içindeki ConcreteFactory nedir?",
     "choices": [
+      "Ürün arayüzü",
       "Belirli ürün ailesini üreten somut fabrika",
       "Client",
       "Kopyalama metodu",
-      "Tekil nesne",
-      "Ürün arayüzü"
+      "Tekil nesne"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Belirli ürün ailesini üreten somut fabrika. Kaynak PDF, sayfa 53."
   },
@@ -597,13 +597,13 @@
     },
     "question": "Sınav seçenekleri adım adım belirlenip sınav oluşturuluyor. Hangi desen?",
     "choices": [
-      "Builder",
       "Singleton",
       "Factory",
       "Abstract Factory",
-      "Prototype"
+      "Prototype",
+      "Builder"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Builder. Kaynak PDF, sayfa 53."
   },
@@ -616,13 +616,13 @@
     },
     "question": "build() metodu hangi işi yapar?",
     "choices": [
+      "Veritabanına bağlanmak",
+      "İstemciyi değiştirmek",
       "Nihai ürünü oluşturup döndürmek",
       "Kopya üretmek",
-      "Nesneyi silmek",
-      "Veritabanına bağlanmak",
-      "İstemciyi değiştirmek"
+      "Nesneyi silmek"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Nihai ürünü oluşturup döndürmek. Kaynak PDF, sayfa 53."
   },
@@ -654,13 +654,13 @@
     },
     "question": "Exam exam2 = exam1 ne anlama gelir?",
     "choices": [
-      "İki değişken aynı nesneyi gösterir",
-      "Deep copy",
       "Yeni bağımsız nesne",
       "Factory çağrısı",
-      "Builder kurulumu"
+      "Builder kurulumu",
+      "İki değişken aynı nesneyi gösterir",
+      "Deep copy"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: İki değişken aynı nesneyi gösterir. Kaynak PDF, sayfa 53."
   },
@@ -673,13 +673,13 @@
     },
     "question": "Ortak hastane bağlantı havuzu yöneticisi için desen?",
     "choices": [
+      "Prototype",
       "Singleton",
       "Factory",
       "Abstract Factory",
-      "Builder",
-      "Prototype"
+      "Builder"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton. Kaynak PDF, sayfa 54."
   },
@@ -692,13 +692,13 @@
     },
     "question": "Orta Çağ ve bilim kurgu temalarında uyumlu karakter/silah/düşman aileleri üretiliyor. Hangi desen?",
     "choices": [
-      "Abstract Factory",
       "Singleton",
       "Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Abstract Factory"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Abstract Factory. Kaynak PDF, sayfa 54."
   },
@@ -711,13 +711,13 @@
     },
     "question": "Hazır bilgisayar kopyalanıp RAM/SSD değiştirilerek yeni ürün hazırlanıyor. Hangi desen?",
     "choices": [
+      "Abstract Factory",
+      "Builder",
       "Prototype",
       "Singleton",
-      "Factory",
-      "Abstract Factory",
-      "Builder"
+      "Factory"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Prototype. Kaynak PDF, sayfa 54."
   },
@@ -749,13 +749,13 @@
     },
     "question": "NotificationFactory.create('SMS') hangi desene örnek?",
     "choices": [
-      "Factory",
-      "Singleton",
       "Abstract Factory",
       "Builder",
-      "Prototype"
+      "Prototype",
+      "Factory",
+      "Singleton"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Factory. Kaynak PDF, sayfa 54."
   },
@@ -768,13 +768,13 @@
     },
     "question": "Shallow Copy için doğru ifade nedir?",
     "choices": [
+      "Aynı referans atamasıyla özdeştir",
       "Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir",
       "Hiç yeni nesne oluşmaz",
       "Bütün alt nesneler bağımsızdır",
-      "Tek örnek oluşturulur",
-      "Aynı referans atamasıyla özdeştir"
+      "Tek örnek oluşturulur"
     ],
-    "correctIndex": 0,
+    "correctIndex": 1,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Yeni dış nesne oluşabilir ama iç referanslar paylaşılabilir. Kaynak PDF, sayfa 55."
   },
@@ -787,13 +787,13 @@
     },
     "question": "Factory ile Abstract Factory'nin temel farkı?",
     "choices": [
-      "Abstract Factory ilişkili ürün aileleri oluşturur",
       "Factory sadece tek örnek üretir",
       "Abstract Factory sadece Singleton üretir",
       "Factory mutlaka kopyalar",
-      "Abstract Factory nesne üretmez"
+      "Abstract Factory nesne üretmez",
+      "Abstract Factory ilişkili ürün aileleri oluşturur"
     ],
-    "correctIndex": 0,
+    "correctIndex": 4,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Abstract Factory ilişkili ürün aileleri oluşturur. Kaynak PDF, sayfa 55."
   },
@@ -806,13 +806,13 @@
     },
     "question": "Builder ile Prototype arasındaki fark?",
     "choices": [
+      "Prototype nesne üretmez",
+      "Builder mutlaka Singleton kullanır",
       "Builder aşamalı kurar, Prototype kopyalar",
       "İkisi tek örnektir",
-      "Builder yalnızca interface kurar",
-      "Prototype nesne üretmez",
-      "Builder mutlaka Singleton kullanır"
+      "Builder yalnızca interface kurar"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Builder aşamalı kurar, Prototype kopyalar. Kaynak PDF, sayfa 55."
   },
@@ -844,13 +844,13 @@
     },
     "question": "Beş yaratım deseninin doğru eşleştirmesi hangisi?",
     "choices": [
-      "Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya",
-      "Singleton kopya; Builder tek örnek; Prototype aile",
       "Factory aşamalı; Prototype tek örnek; Builder kopya",
       "Abstract Factory kopya; Singleton aile; Factory tek örnek",
-      "Factory sadece davranış ekler; Builder erişim kontrolü yapar"
+      "Factory sadece davranış ekler; Builder erişim kontrolü yapar",
+      "Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya",
+      "Singleton kopya; Builder tek örnek; Prototype aile"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "origin": "lecture-question-adapted",
     "explanation": "Doğru cevap: Singleton tek örnek; Factory uygun nesne; Abstract Factory ürün ailesi; Builder aşamalı; Prototype kopya. Kaynak PDF, sayfa 55."
   }
