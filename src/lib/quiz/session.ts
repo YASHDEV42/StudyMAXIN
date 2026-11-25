@@ -10,6 +10,8 @@ export const modes = [
   "bookmarks",
 ] as const;
 export const examSize = 60;
+export const examSizeFor = (courseId: string) =>
+  courseId === "software-design" ? 50 : examSize;
 export const batchSizes = [10, 20, 30] as const;
 export const timerMinutes = [0, 45, 60, 75, 90, 120] as const;
 export const modeSchema = z.enum(modes);
@@ -40,7 +42,7 @@ export const sessionSchema = z
     ({ mode, position, items, deadline }) =>
       position < items.length &&
       new Set(items.map(({ id }) => id)).size === items.length &&
-      (mode === "exam" ? items.length === examSize : deadline === null),
+      (mode === "exam" ? [50, examSize].includes(items.length) : deadline === null),
   );
 export type Session = z.infer<typeof sessionSchema>;
 
@@ -63,7 +65,7 @@ export function createSession(
   const unique = [
     ...new Map(pool.map((question) => [question.id, question])).values(),
   ];
-  const count = mode === "exam" ? examSize : size;
+  const count = mode === "exam" ? examSizeFor(pool[0]?.courseId ?? "") : size;
   if (
     !Number.isInteger(count) ||
     count < 1 ||
